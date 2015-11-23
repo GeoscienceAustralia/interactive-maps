@@ -2,6 +2,8 @@
 
 Interactive Maps is a configuration driven web mapping application that allows web map oriented applications to be deployed with minimal development overhead. The application is implemented using AngularJS/Bootstrap. Interactive maps utilises the GeoWebToolkit https://github.com/GeoscienceAustralia/geo-web-toolkit. 
 
+![](https://github.com/GeoscienceAustralia/interactive-maps/blob/master/docs/imgs/interactive_maps_home.png)
+
 ## Requirements
 Required:
 
@@ -33,4 +35,4 @@ The application can be built using Maven by running the following command
 
 mvn clean package
 
-This will generate gamaps.war in the target folder. This can then deployed to your application server.
+This will generate gamaps.war in the target folder. This can then be deployed to your application server.

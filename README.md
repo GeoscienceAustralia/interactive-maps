@@ -17,6 +17,8 @@ The configuration files are written in JSON format. The files can be found in sr
 
 The application also contains a config creator (BETA) which allows you to easily generate a JSON file with your requested configuration. The configuration allows you to configure things like base maps, layers, and which tools you want to use. The config creator can be accessed by appending configCreator to the homepage URL.
 
+For more information please look at the wiki https://github.com/GeoscienceAustralia/interactive-maps/wiki
+
 ## Running locally
 
 Run npm and bower install from the directory where you have the project checked out

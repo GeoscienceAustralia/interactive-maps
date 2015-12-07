@@ -1,6 +1,6 @@
 # Interactive Maps
 
-Interactive Maps is a configuration driven web mapping application that allows web map oriented applications to be deployed with minimal development overhead. The application is implemented using AngularJS/Bootstrap. Interactive maps utilises the GeoWebToolkit https://github.com/GeoscienceAustralia/geo-web-toolkit. 
+Interactive Maps is a configuration driven web mapping application that allows web map oriented applications to be deployed with minimal development overhead. The application is implemented using AngularJS/Bootstrap. Interactive maps utilises the [GeoWebToolkit](https://github.com/GeoscienceAustralia/geo-web-toolkit). 
 
 ![](https://github.com/GeoscienceAustralia/interactive-maps/blob/master/docs/imgs/interactive_maps_home.png)
 

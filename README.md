@@ -15,9 +15,9 @@ Required:
 
 The configuration files are written in JSON format. The files can be found in src/main/webapp/config. Currently these are all implemented under the file system, in future we wish to implement a database solution to store the configuration. 
 
-The application also contains a config creator (BETA) which allows you to easily generate a JSON file with your requested configuration. The configuration allows you to configure things like base maps, layers, and which tools you want to use. The config creator can be accessed by appending configCreator to the homepage URL.
+The application also contains a config creator (BETA) which allows you to easily generate a JSON file with your requested configuration. The configuration allows you to configure things like base maps, layers, and which tools you want to use. The config creator can be accessed by prepending `configCreator` to the homepage URL. For example, `/interactive-maps/#/configCreator/theme/marine/map/oceanbathymetry`.
 
-For more information please look at the wiki https://github.com/GeoscienceAustralia/interactive-maps/wiki
+[For more information please refer to the wiki](https://github.com/GeoscienceAustralia/interactive-maps/wiki).
 
 ## Running locally
 

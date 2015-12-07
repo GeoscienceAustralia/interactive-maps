@@ -1,0 +1,69 @@
+{
+    "title": "Geographic Information",
+    "id": "national-location-information",
+    "blurb": "Geoscience Australia is the Australian Government's national mapping agency. We provide authoritative geographic information services and products to enable evidence-based decision making, deliver government policy, assist industry development needs and support community wellbeing.",
+    "headerConfig": {
+        "title": "Applying geoscience to Australia's most important challenges",
+        "backgroundImageUrl": "resources/img/header_bg.png"
+    },
+    "maps": [
+        {
+            "title": "Australian Topography",
+            "id": "australiantopography",
+            "previewImageUrl": "content/national-location-information/australiantopography/mapPreview.png",
+            "previewDescription": "The Australian Topographic map provides a seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and infrastructure themes."
+        },
+        {
+            "title": "Australian Global Map Contribution",
+            "id": "globalmap",
+            "previewImageUrl": "content/national-location-information/globalmap/mapPreview.png",
+            "previewDescription": "The Australian Global Map Contribution contains layers which have been developed by Geoscience Australia to match the 1 million scale Global Map specifications.  It includes features such as Airports, Roads, Coastlines and Landcover."
+        },
+		{
+            "title": "National Map Basemaps",
+            "id": "nationalmap",
+            "previewImageUrl": "content/national-location-information/nationalmap/mapPreview.png",
+            "previewDescription": "This is a map of the world, Australia and it's external territories. These basemaps have been created specifically for display in the National Map application."
+        },		
+        {
+            "title": "National Elevation Data Framework Portal",
+            "tags": "Other",
+            "previewImageUrl": "content/national-location-information/nedf.png",
+            "previewDescription": "The NEDF-Portal has been developed to serve as a 'Virtual Data Repository' and on-line portal that allows easy discovery and access to existing elevation data holdings and metadata.",
+            "applicationUrl": "http://nedf.ga.gov.au/geoportal/catalog/main/home.page"
+        },
+		{
+            "title": "National Energy",
+			"tags": "Infrastructure",
+            "id": "nationalenergy",
+            "previewImageUrl": "content/national-location-information/nationalenergy/mapPreview.png",
+            "previewDescription": "This map depicts a collection of national energy map services."
+        },
+		{
+            "title": "National Transport",
+			"tags": "Infrastructure",
+            "id": "nationaltransport",
+            "previewImageUrl": "content/national-location-information/nationaltransport/mapPreview.png",
+            "previewDescription": "The national transport datasets represent major ports in Australian waters that include infrastructure facilities where maritime vessels have the ability to load and unload commodities. "
+        },
+        {
+            "title": "National Elevation Data Framework Portal",
+            "tags": "Other",
+            "previewImageUrl": "content/national-location-information/nedf.png",
+            "previewDescription": "The NEDF-Portal has been developed to serve as a 'Virtual Data Repository' and on-line portal that allows easy discovery and access to existing elevation data holdings and metadata.",
+            "applicationUrl": "http://nedf.ga.gov.au/geoportal/catalog/main/home.page"
+        }
+    ],
+    "tags": [
+		{
+            "id": "Infrastructure",
+            "description": "Detailed Australian topographic infrastructure web services.",
+            "title": "Topographic Infrastructure"
+        },
+        {
+            "id": "Other",
+            "description": "Relevant geographic mapping applications.",
+            "title": "Related Applications"
+        }
+    ]
+}

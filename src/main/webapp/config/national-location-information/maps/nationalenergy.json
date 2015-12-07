@@ -1,0 +1,153 @@
+{
+    "id": "nationalenergy",
+    "title": "National Energy",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "National Energy"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/national-location-information/nationalenergy/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/national-location-information/nationalenergy/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+			"id" : "info",
+			"toolPanelUrl" : "resources/partial/infoPanel.html",
+			"toolToggleUrl": "resources/partial/infoToggle.html",			
+			"config": {
+				"titleText": "Download dataset",
+				"panelHeading": "Download Dataset",
+				"infoList": [
+					{ "id" : "National Electricity Transmission Lines Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1185c97c-c042-be90-e053-12a3070a969b/National+Electricity+Transmission+Lines+Database" },
+					{ "id" : "National Electricity Transmission Substations", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_13be62a4-4fe3-f812-e053-12a3070a22be/National+Electricity+Transmission+Substations" }
+					]
+				}
+			},		
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "draw"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "NAME",
+                        "CAPACITY_kV",
+						"CLASSIFICATION",
+						"SITESUBURB",
+                        "CONSTRUCTIONTYPE",
+                        "SPATIALCONFIDENCE",
+                        "STATE",
+                        "STATUS",
+                        "FEATURERELIABILITY",
+                        "FEATURESOURCE",
+                        "ATTRIBUTERELIABILITY",
+                        "ATTRIBUTESOURCE",
+                        "REVISED"
+					],
+                    "propertiesAlias": [
+                        "NAME",
+                        "CAPACITY_kV",
+						"CLASSIFICATION",
+						"SITESUBURB",
+                        "CONSTRUCTIONTYPE",
+                        "SPATIALCONFIDENCE",
+                        "STATE",
+                        "STATUS",
+                        "FEATURERELIABILITY",
+                        "FEATURESOURCE",
+                        "ATTRIBUTERELIABILITY",
+                        "ATTRIBUTESOURCE",
+                        "REVISED"
+                    ],
+                    "endpoints": [
+                        {
+                            "featureTitle": "National Electricity Transmission Lines",
+                            "queryUrl": "/gis/services/topography/National_Electricity_Transmission_Lines/MapServer/WMSServer",
+                            "queryLayers": "National_Electricity_Transmission_Lines",
+                            "queryVersion": "1.1.0",
+                            "queryType": "WMS"
+                        },
+						{
+                            "featureTitle": "National Electricity Transmission Substations",
+                            "queryUrl": "/gis/services/topography/National_Electricity_Transmission_Substations/MapServer/WMSServer",
+                            "queryLayers": "National_Electricity_Transmission_Substations",
+                            "queryVersion": "1.1.0",
+                            "queryType": "WMS"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+			"maxZoomLevel": 12
+			
+        }
+    ],
+    "layerMaps": [
+		{
+            "slug": "Hillshade_And_Vegetation"
+        },
+		{
+            "slug": "Oil_Pipelines"
+        },
+		{
+            "slug": "Gas_Pipelines"
+        },
+        {
+            "slug": "National_Electricty_Lines"
+        },
+		{
+            "slug": "National_Electricty_Substations"
+        },
+        {
+            "slug": "Population_Centres"
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+    "addLayerMaps": [
+		{
+            "slug": "Ferry_Terminals"
+		},
+		{
+            "slug": "Major_Ports"
+		}		
+    ]
+}

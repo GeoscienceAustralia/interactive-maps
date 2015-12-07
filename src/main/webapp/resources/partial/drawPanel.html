@@ -1,0 +1,70 @@
+<div ng-controller="drawPanelController">
+    <form name="drawPanelForm">
+        <div>
+            <h2>Drawing Tools</h2>
+            <div>
+                <div>
+                    <h3>Select a drawing tool, then click on the map. Double click to finish drawing.</h3>
+
+               		<div ng-repeat="tool in drawingTools">
+                        <input type="radio" name="id"
+                               id="{{tool.id}}" value="{{$index}}" ng-click="toggleDrawTool(tool.id)"
+                               ng-model="$parent[$parent.tool.id].selectedDrawingTool" /> <label
+                            for="{{tool.id}}">{{tool.name}}</label>
+                    </div>
+				</div>
+				<br/>
+				<div ng-show="$parent[$parent.tool.id].selectedDrawingTool != 6">
+                	<label>Options</label>
+                </div>
+				<div ng-show="$parent[$parent.tool.id].selectedDrawingTool != 5 && $parent[$parent.tool.id].selectedDrawingTool != 6">	
+                    <div class="colourPallette">
+						<button colorpicker type="button" colorpicker-position="top" ng-model="drawSelectedColor" ng-change="optionsChanged()">Draw Colour</button>
+						<div class="circle" ng-style="{'background':drawSelectedColor}"></div>
+					</div>
+					<div class="drawingToolsColour">
+						<label>Opacity</label>
+	                    <select ng-options="opacity.name for opacity in drawOpacityOptions" ng-model="selectedDrawOpacity" ng-change="optionsChanged()"></select>
+					</div>
+				</div>
+				<div ng-show="$parent[$parent.tool.id].selectedDrawingTool == 4 || $parent[$parent.tool.id].selectedDrawingTool == 5">
+					<div class="colourPallette">
+						<button colorpicker type="button" colorpicker-position="top" ng-model="textSelectedColor" ng-change="optionsChanged()">Text Colour</button>
+						<div class="circle" ng-style="{'background':textSelectedColor}"></div>
+                   </div> 
+                </div>                 
+                <div class="searchInput" ng-show="$parent[$parent.tool.id].selectedDrawingTool == 4 || $parent[$parent.tool.id].selectedDrawingTool == 5">
+                	<div>
+	                	<label>Font Size</label>
+	                    <select ng-options="font.name for font in fontOptions" ng-model="selectedFontSize" ng-change="optionsChanged()"></select>
+                    </div>
+                   	<div>
+						<label>Longitude</label> <input
+							type="text" id="drawingToolLon" name="lonInput"
+							ng-model="$parent[$parent.tool.id].drawingToolLon" 
+							gis-longitude-validator="$parent[$parent.tool.id].drawingToolLon"/>
+					</div>
+					<div class="error" ng-show="!drawPanelForm.lonInput.$valid">Longitude must be between 180 and -180.
+					</div>
+					<div>
+						<label>Latitude</label> <input
+								type="text" id="drawingToolLat" name="latInput"
+								ng-model="$parent[$parent.tool.id].drawingToolLat" 
+								gis-latitude-validator="$parent[$parent.tool.id].drawingToolLat"/>
+					</div>
+					<div class="error" ng-show="!drawPanelForm.latInput.$valid">Latitude must be between 90 and -90.
+					</div>
+					<div>
+						<label>Text</label> 
+	                   	<input type="text"  ng-model="$parent[$parent.tool.id].text"/>
+					</div>
+				</div>   
+            </div>
+            <br/>
+			<div class="buttonContainer">
+				<button type="button" ng-click="addText()" ng-show="$parent[$parent.tool.id].selectedDrawingTool == 4 || $parent[$parent.tool.id].selectedDrawingTool == 5" ng-disabled="!$parent[$parent.tool.id].text">Add</button>
+				<button type="button" ng-click="resetDrawingTools()">Reset</button>
+			</div>
+        </div>
+    </form>
+</div>

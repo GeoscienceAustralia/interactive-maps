@@ -1,0 +1,317 @@
+{
+    "id": "geology",
+    "title": "Geophysics",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Geophysics"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/minerals/geophysics/about.html"
+    },
+    "layersConfig": {
+        "enabled": true,
+		"open": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/minerals/geophysics/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Digital files for the Index of airborne geophysical surveys, Fourteenth edition, 2014",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_f3ad4f15-96bd-0cf3-e044-00144fdd4fa6/Digital+files+for+the+Index+of+airborne+geophysical+surveys%2C+Fourteenth+edition%2C+2014"
+                        },
+                        {
+                            "id": "Geophysical Archive Data Delivery System",
+                            "url": "http://www.geoscience.gov.au/cgi-bin/mapserv?map=/nas/web/ops/prod/apps/mapserver/gadds/wms_map/gadds.map&mode=browse"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "SURVEYID",
+                        "SURVEYNAME",
+                        "DATATYPES",
+                        "DIGITAL",
+                        "TYPE",
+                        "CRAFTTYPE",
+                        "STARTDATE",
+                        "ENDDATE",
+                        "OPERATOR",
+                        "SPACEMIN",
+                        "SPACEMAX",
+                        "CONTRACTOR",
+                        "PROCESSOR",
+                        "AGL",
+                        "ASL",
+                        "LINEKM",
+                        "RELEASED",
+                        "SAMPLEINT",
+                        "LINES",
+                        "DIRECTION",
+                        "XTALVOL",
+                        "UPXTALVOL",
+                        "LEGISLATION",
+                        "STATE",
+                        "CRAFTNAME",
+                        "ONOFFSHORE",
+                        "WLONG",
+                        "ELONG",
+                        "NLAT",
+                        "SLAT",
+                        "TIEKM",
+                        "TOTALKM",
+                        "AREA",
+                        "TIESPACING",
+						"plotSymbol",
+						"contactType",
+                        "Stretched value",
+                        "Pixel Value",
+						"FEATURETYPE"
+                    ],
+                    "propertiesAlias": [
+                        "Survey Id",
+                        "Survey Name",
+                        "Datatypes",
+                        "Digital",
+                        "Type",
+                        "Craft Type",
+                        "Start Date",
+                        "End Date",
+                        "Operator",
+                        "Space Min",
+                        "Space Max",
+                        "Contractor",
+                        "Processor",
+                        "Agl",
+                        "Asl",
+                        "Line km",
+                        "Released",
+                        "Sample Int",
+                        "Lines",
+                        "Direction",
+                        "Xtal Vol",
+                        "Upxtal Vol",
+                        "Legislation",
+                        "State",
+                        "Craftname",
+                        "Onoffshore",
+                        "W long",
+                        "E long",
+                        "N lat",
+                        "S lat",
+                        "Tie km",
+                        "Total km",
+                        "Area",
+                        "Tie Spacing",
+						"Plot Symbol",
+						"Contact Type",
+                        "Stretched value",
+                        "Pixel Value",
+						"Feature type"
+                    ],
+                    "primaryPropertyName": "SURVEYNAME"
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "visibility": false,
+            "queryFeatures": false
+        },        
+        {
+            "slug": "Surface_Geology_Of_Australia_1M",
+            "queryFeatures": false
+        },
+		{
+            "slug": "Surface_Geology_Of_Australia_2500K",
+            "queryFeatures": false
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Radiometrics",
+            "groupId": "radiometrics",
+            "visibility": false,
+            "defaultLayerId": "Radiometrics2015ternaryKThU"
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Gravity",
+            "groupId": "gravity",
+            "visibility": false,
+            "defaultLayerId": "GravityAnomaly2010_greyscale"
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Total Magnetic Intensity",
+            "groupId": "totalmagneticintensity",
+            "visibility": true,
+            "defaultLayerId": "TotalMagneticIntensity2015_HSI"
+        },
+        {
+            "slug": "Airborne_Surveys_2014"
+        },
+        {
+            "slug": "Population_Centres"
+        }
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "totalmagneticintensity",
+            "layerMaps": [
+                {
+                    "slug": "Total_Magnetic_Intensity_2015_HSI",
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Total_Magnetic_Intensity_2015_Greyscale",
+                    "visibility": false,
+                    "opacity": 0.7
+                }
+            ]
+        },
+        {
+            "groupId": "gravity",
+            "layerMaps": [
+                {
+                    "slug": "Gravity_Anomaly_2010_Greyscale",
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Gravity_Bouguer_Onshore_2010_Greyscale",
+                    "visibility": false,
+                    "opacity": 0.4
+                },
+                {
+                    "slug": "Gravity_Anomaly_2010_HSI",
+                    "visibility": false,
+                    "opacity": 0.7
+                }
+            ]
+        },
+        {
+            "groupId": "radiometrics",
+            "layerMaps": [
+                {
+                    "slug": "Radiometrics_2015_Ternary_KThU",
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Unfiltered_Dose",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Unfiltered_PcK",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Unfiltered_PpmTh",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Unfiltered_PpmU",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Filtered_Dose",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Filtered_PcK",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Filtered_PpmTh",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Filtered_PpmU",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Filtered_ThK_Ratio",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Filtered_UK_Ratio",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Filtered_UTh_Ratio",
+                    "visibility": false,
+                    "opacity": 0.7
+                },
+                {
+                    "slug": "Radiometrics_2015_Filtered_U2Th_Ratio",
+                    "visibility": false,
+                    "opacity": 0.7
+                }
+            ]
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

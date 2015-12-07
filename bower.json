@@ -1,0 +1,38 @@
+{
+  "name": "interactive-maps",
+  "version": "1.1.0",
+  "keywords": [
+    "maps"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui": "~0.4.0",
+    "angular-ui-utils": "~0.1.1",
+    "angular": "~1.3.20",
+    "angularjs": "~1.2.8",
+    "angular-route": "~1.3.20",
+    "angular-mocks": "~1.3.20",
+    "angular-bootstrap": "~0.10.0",
+    "angulartics": "~0.17.0",
+    "angular-sanitize": "~1.3.11",
+    "geo-web-toolkit": "git://github.com/GeoscienceAustralia/geo-web-toolkit#e6e0bfbf2997b699899b1d5f27f713f409185fee",
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "bootstrap": "3.0.3",
+    "modernizr": "~2.6.2",
+    "webshim": "~1.14.2",
+    "OpenLayers-2.13.1": "https://github.com/openlayers/openlayers/releases/download/release-2.13.1/OpenLayers-2.13.1.zip"
+  },"resolutions": {
+    "angular": "~1.3.20",
+    "angular-animate": "~1.3.20",
+    "bootstrap": "3.0.3"
+  }
+}

@@ -1,0 +1,9 @@
+<div ng-controller="addLayerToggleController" title="Add custom layer toggle">
+    <geo-config-tool-toggle
+            tool-config="$parent.tool"
+            on-toggle-on="addLayerToggleOn(toolConfig)"
+            on-toggle-off="addLayerToggleOff(toolConfig)"
+            controller-emit-event-name="layerExplorerToggleReady"
+            on-resolve-parent-toolbar="resolveParentToolbar(toolbarScope)">
+    </geo-config-tool-toggle>
+</div>

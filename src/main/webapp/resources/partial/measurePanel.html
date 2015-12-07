@@ -1,0 +1,24 @@
+<div ng-controller="clientMeasurePanelController">
+    <h2>Distance between points</h2>
+    <p class="toolInstruction">Click on the map to select a point.</p>
+    <p class="toolInstruction">Double-click to end.</p>
+    <p class="toolDescription">The tool displays the distance in km or meters between each point and the total distance between the first and last point.</p>
+    <div ng-show="$parent.clientMeasure.initialPoint != null">
+        <div class="panel panel-info">
+        <h3>Initial point</h3>
+        <div>Long {{$parent.clientMeasure.initialPoint.lon}}°, Lat {{$parent.clientMeasure.initialPoint.lat}}°</div>
+        </div>
+    </div>
+    <div ng-repeat="distance in $parent.clientMeasure.distances">
+        <div class="panel panel-info">
+            <h3>Distance</h3>
+            <div>{{distance.measurement.toFixed(3)}} {{distance.units}}</div>
+            <h3>Point</h3>
+            <div>Long {{distance.lonLat.lon}}°, Lat {{distance.lonLat.lat}}°</div>
+        </div>
+    </div>
+
+    <div class="panel panel-primary">
+        Total: {{$parent.clientMeasure.totalClientMeasurement}} {{$parent.clientMeasure.totalClientMeasurementUnits}}
+    </div>
+</div>

@@ -1,0 +1,213 @@
+{
+    "id": "australiantopography",
+    "title": "Australian Topography",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv3",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Australian Topography"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/national-location-information/australiantopography/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/national-location-information/australiantopography/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "GEODATA TOPO 250K Series 3",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-eab0-7506-e044-00144fdd4fa6/GEODATA+TOPO+250K+Series+3+-+Packaged+%28Personal+Geodatabase+format%29"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "draw"
+            },
+			 {
+                "id": "clientMeasure"
+            },
+			{
+                "id": "distanceBoundary",
+                "config": {
+                    "boundaries": [
+                        {
+                            "id": "Australian Coastline",
+                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToAustralianCoast/"
+                        },
+                        {
+                            "id": "Coastal Waters",
+                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToCoastalWatersLimit/"
+                        },
+                        {
+                            "id": "Territorial Sea",
+                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToTerritorialSeaZoneLimit/"
+                        },
+                        {
+                            "id": "Contiguous Zone",
+                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContiguousZoneLimit/"
+                        },
+                        {
+                            "id": "Exclusive Economic Zone",
+                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneLimit/"
+                        },
+                        {
+                            "id": "Exclusive Economic Zone as Amended by the Perth Treaty 1997",
+                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneAmendedPerthLimit/"
+                        },
+                        {
+                            "id": "Continental Shelf",
+                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContinentalShelf/"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "CLASS",
+                        "FEATURETYPE",
+                        "TYPE",
+                        "ROUTENAME",
+                        "SECTIONNAME",
+                        "NAME",
+                        "PERENNIALITY",
+                        "HIERARCHY",
+                        "FORMATION",
+                        "NRN",
+                        "SRN",
+                        "GAUGE",
+                        "OWNER",
+                        "RELATIONSHIP",
+                        "STATUS",
+                        "TRACKS",
+                        "POPULATION",
+                        "FEATURERELIABILITY",
+                        "FEATURESOURCE",
+                        "ATTRIBUTERELIABILITY",
+                        "ATTRIBUTESOURCE",
+                        "PLANIMETRICACCURACY",
+                        "SOURCE",
+                        "CREATIONDATE",
+                        "RETIREMENTDATE",
+                        "REVISED",
+                        "UPPERSCALE",
+                        "USCERTAINTY",
+                        "TEXTNOTE",
+                        "METADATACOMMENT",
+                        "ELEVATION",
+                        "AUSHYDRO_ID"
+                    ],
+                    "propertiesAlias": [
+                        "Class",
+                        "Feature Type",
+                        "Type",
+                        "Route Name",
+                        "Section Name",
+                        "Name",
+                        "Perenniality",
+                        "Hierarchy",
+                        "Formation",
+                        "National Route Number",
+                        "State Route Number",
+                        "Gauge",
+                        "Owner",
+                        "Relationship",
+                        "Status",
+                        "Tracks",
+                        "Population",
+                        "Feature Reliability",
+                        "Feature Source",
+                        "Attribute Reliability",
+                        "Attribute Source",
+                        "Planimetric Accuracy (m)",
+                        "Source",
+                        "Creation Date",
+                        "Retirement Date",
+                        "Revised",
+                        "Upperscale",
+                        "Upperscale Certainty",
+                        "Textnote",
+                        "Metadata Comment",
+                        "Elevation",
+                        "Aushydro_Id"
+                    ],
+					"primaryPropertyName": "FEATURETYPE"
+                }
+            },
+			{
+                "id": "legalInterest"
+            }
+        ]
+    },	
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS"
+        },
+        {
+            "slug": "Australian_Topographic_250K_Mosaic",
+            "visibility": false
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+	"addLayerMaps": [
+        {
+            "slug": "Oil_Pipelines",
+			"visibility": true
+        },
+		{
+            "slug": "Gas_Pipelines",
+			"visibility": true			
+        },
+        {
+            "slug": "Major_Ports",
+			"visibility": true
+        },
+		{
+            "slug": "Ferry_Terminals",
+			"visibility": true
+        }
+    ]
+}

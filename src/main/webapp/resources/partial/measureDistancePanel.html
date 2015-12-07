@@ -1,0 +1,73 @@
+<div ng-controller="distanceToBoundaryPanelController">
+    <form name="measureDialogForm">
+	<div>
+		<h2>Distance to Boundary</h2> - {{$parent.tool.id}}
+
+		<div ng-show="!hasResult">
+			<div class="searchInput">
+				<h3>1. Click on the map to select a point. You can edit the
+					displayed coordinates.</h3>
+				<div>
+					<label for="searchCriteriaLatInput">Longitude</label> <input
+						type="text" id="searchCriteriaLonInput" name="lonInput"
+						ng-model="$parent[$parent.tool.id].dialogCriteriaLon" gis-longitude-validator="$parent[$parent.tool.id].dialogCriteriaLon"/>
+				</div>
+				<div class="error" ng-show="!measureDialogForm.lonInput.$valid">Longitude must be between 180 and -180.
+				</div>
+				<div>
+					<label for="searchCriteriaLonInput">Latitude</label> <input
+						type="text" id="searchCriteriaLatInput" name="latInput"
+						ng-model="$parent[$parent.tool.id].dialogCriteriaLat" gis-latitude-validator="$parent[$parent.tool.id].dialogCriteriaLat"/>
+				</div>
+				<div class="error" ng-show="!measureDialogForm.latInput.$valid">Latitude must be between 90 and -90.
+				</div>
+				<h3>2. Choose a boundary.</h3>
+			</div>
+			<div class="searchOptions">
+				<div ng-repeat="boundary in boundaries">
+					<input type="radio" name="id"
+						id="searchCriteriaBoundary_{{boundary.id}}" value="{{$index}}"
+						ng-model="selectedBoundary" required /> <label
+						for="searchCriteriaBoundary_{{boundary.id}}">{{boundary.id}}</label>
+				</div>
+			</div>
+			<br />
+			<div class="buttonContainer">
+				<button type="button" ng-click="submitSearchDistance()"
+					ng-disabled="waitingForResponse">Search distance to
+					boundary</button>
+			</div>
+            <div ng-show="waitingForResponse">
+                Loading...
+                <div class="progress progress-striped active">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                         style="width: 100%">
+                        <span class="sr-only">100%</span>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+
+	<div class="distanceToBoundary" ng-show="hasResult">
+		<div class="highlight">Selected coordinate position</div>
+		<div>{{$parent[$parent.tool.id].dialogCriteriaLon}},
+			{{$parent[$parent.tool.id].dialogCriteriaLat}}</div>
+		<br />
+		<div class="highlight">Selected boundary</div>
+		<div>{{boundaries[selectedBoundary].id}}</div>
+		<br />
+		<div class="highlight">Distance</div>
+		<div>{{resultData.value.features[0].attributes.Distance}}</div>
+		<br />
+		<div ng-show="hasError">
+			<div style="color: red">Error : {{errorMessage}}</div>
+		</div>
+		<br />
+		<div class="buttonContainer">
+			<button type="button" ng-click="resetSearchDistance()"
+				ng-disabled="waitingForResponse">Reset and search again</button>
+		</div>
+	</div>
+</form>
+</div>

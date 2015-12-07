@@ -1,0 +1,218 @@
+{
+    "title" : "Petroleum with Topography",
+    "id": "PT",
+    "previewImageUrl": "resources/img/map-previews/Maritime.png",
+    "previewDescription": "AMSIS is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction.",
+    "datumProjection":"EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "backgroundcolour": "#21468b",
+    "centerPosition": {"lat" : "-2944965",
+    				   "lon" :  "15300000"},
+    "zoomLevel": 3,
+    "requiresTermsAndConditions" : false,
+    "headerConfig": {
+        "title": "AMSIS -Dev",
+        "backgroundImageUrl" : "resources/img/header_bg.png"
+    },
+    "aboutConfig" : {
+        "enabled" : true,
+        "bodyUrl": "resources/custom/amsis/PT/about.html",
+        "bodyText": "AMSIS is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction."
+    },
+    "layersConfig": {
+        "enabled" : true
+    },
+    "baseLayersConfig" : {
+        "enabled" : true
+    },
+    "legendConfig": {
+        "enabled": false,
+        "legendImgUrl": "resources/img/legends/topolegend.png",
+        "legendUrl" : "resources/custom/amsis/PT/legend.html"
+    },
+    "toolsConfig": {
+        "enabled" : true,
+		"timeout": 5000,
+        "tools":[{
+                "id": "clientMeasure",
+                "toolPanelUrl" : "resources/partial/measurePanel.html",
+                "toolToggleUrl": "resources/partial/measureToggle.html"
+            },
+		    {
+                "id": "draw",
+                "toolPanelUrl" : "resources/partial/drawPanel.html",
+                "toolToggleUrl": "resources/partial/drawToggle.html"
+            },
+            {
+                "id": "distanceBoundary",
+                "toolPanelUrl": "resources/partial/boundaryToolPanel.html",
+                "toolToggleUrl": "resources/partial/boundaryToolToggle.html",
+				"config": {
+					"markerUrl": "resources/css/images/marker.png",
+					"markerWidth": "21",
+					"markerHeight": "25",
+					"boundaries" : [
+						{
+							"id": "Australian Coastline",
+							"url": "/gisgp/rest/services/marine_coastal/AMSIS_Info_Service/GPServer/DistanceToAustralianCoast/"
+						},
+						{
+							"id": "Coastal Waters",
+							"url": "/gisgp/rest/services/marine_coastal/AMSIS_Info_Service/GPServer/DistanceToCoastalWatersLimit/"
+						},
+						{
+							"id": "Territorial Sea",
+							"url": "/gisgp/rest/services/marine_coastal/AMSIS_Info_Service/GPServer/DistanceToTerritorialSea/"
+						},
+						{
+							"id": "Contiguous Zone",
+							"url": "/gisgp/rest/services/marine_coastal/AMSIS_Info_Service/GPServer/DistanceToContiguousZoneLimit/"
+						},
+						{
+							"id": "Exclusive Economic Zone",
+							"url": "/gisgp/rest/services/marine_coastal/AMSIS_Info_Service/GPServer/DistanceToExclusiveEconomicZoneLimit/"
+						},
+						{
+							"id": "Continental Shelf",
+							"url": "/gisgp/rest/services/marine_coastal/AMSIS_Info_Service/GPServer/DistanceToContinentalShelf/"
+						}
+					]
+				}
+            },
+            {
+                "id": "dynamicLayer",
+                "toolPanelUrl": "resources/partial/newLayerPanel.html",
+                "toolToggleUrl": "resources/partial/newLayerToggle.html"
+            },
+            {
+                "id" : "layerExplorer",
+                "toolPanelUrl": "resources/partial/layerExplorerPanel.html",
+                "toolToggleUrl": "resources/partial/layerExplorerToggle.html"
+            },
+			{
+				"id" : "interrogateData",
+				"toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+				"toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+				"config" : {
+					"titleText" : "Interrogate Data",
+					"symbol" : "<span class='glyphicon'>+</span>",
+					"propertiesOfInterest" : ["Name","State_ID"],
+					"propertiesAlias": ["Feature","State"],		
+					"markerUrl": "resources/css/images/marker.png",
+					"markerWidth": "21",
+					"markerHeight": "25",
+					"endpoints": [{
+						"url":"/gis/services/topography/Gazetteer_of_Australia/MapServer/WFSServer",
+						"featureType":"GazetteerOfAustralia",
+						"featurePrefix":"topography_Gazetteer_of_Australia",
+						"geometryName":"Shape"
+					}]
+				}
+			},{
+				"id" : "anotherInterrogateData",
+				"toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+				"toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+				"config" : {
+					"titleText" : "Interrogate Data",
+					"symbol" : "<span class='glyphicon'>+</span>",
+					"propertiesOfInterest" : ["NameU","State_ID"],
+					"propertiesAlias": ["Test Upper","Foo"],			
+					"markerUrl": "resources/css/images/marker.png",
+					"markerWidth": "21",
+					"markerHeight": "25",
+					"endpoints": [{
+						"url":"/gis/services/topography/Gazetteer_of_Australia/MapServer/WFSServer",
+						"featureType":"GazetteerOfAustralia",
+						"featurePrefix":"topography_Gazetteer_of_Australia",
+						"geometryName":"Shape"
+					}]
+				}
+			}]
+
+    },
+    "baseMaps": [
+		{"mapType":"GoogleStreet", "visibility": true,"name": "Google Street","opacity":1.0,"wrapDateLine":true}
+    ],
+    "layerMaps": [
+        {
+			"mapType":"WMS",
+			"visibility":false,
+			"name":"Australian Seabed Features",
+			"url":"/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WMSServer",
+			"layers":"Geomorphic_Features",
+			"opacity":1.0,
+			"layerTimeout": 5000,
+			"queryFeatures" : true
+		},
+        {
+			"mapType":"WMS",
+			"visibility":false,
+			"name":"Topographic",
+			"url":"http://www.ga.gov.au/gis/services/topography/Australian_Topography_NoAntiAliasing/MapServer/WMSServer",
+			"layers":"Framework Boundaries,Framework Boundaries SS,Roads SS,Roads MS,Roads,State Names on Boundaries,State Names Anno MS,State Names Anno SS,Populated Places,Populated Places MS,Populated Places SS,Cities",
+			"tileType":"large",
+			"attribution":"Geoscience Australia Topography <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>",
+			"opacity":1.0,
+			"layerTimeout": 5000},
+        {"isGroupedLayers": true, "groupTitle":"Exclusive Layers", "groupId":"specialGroup", "visibility": true}
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "specialGroup",
+            "layerMaps": [
+                {
+                    "id": "foo1",
+                    "groupId": "specialGroup",
+                    "mapType": "WMS",
+                    "visibility": true,
+                    "name": "Exclusive - Landsat",
+                    "url": "http://www.ga.gov.au/gisimg/services/topography/World_Bathymetry_Image_WM/MapServer/WMSServer",
+                    "layers": "Australian Landsat",
+                    "opacity": 1.0,
+                    "tileType": "large"
+                },
+                {
+                    "id": "foo2",
+                    "groupId": "specialGroup",
+                    "mapType": "WMS",
+                    "visibility": true,
+                    "name": "Exclusive - Geomorphic Seabed",
+                    "url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WMSServer",
+                    "layers": "Geomorphic_Features",
+                    "opacity": 1.0
+                },
+                {
+                    "id": "foo3",
+                    "groupId": "specialGroup",
+                    "mapType": "WMS",
+                    "visibility": true,
+                    "name": "Exclusive - Topographic",
+                    "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_NoAntiAliasing/MapServer/WMSServer",
+                    "layers": "Framework Boundaries,Framework Boundaries SS,Roads SS,Roads MS,Roads,State Names on Boundaries,State Names Anno MS,State Names Anno SS,Populated Places,Populated Places MS,Populated Places SS,Cities",
+                    "tileType": "large",
+                    "attribution": "Geoscience Australia Topography <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>",
+                    "opacity": 1.0
+                }
+            ]
+        }],
+    "search": {
+		"typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+		"primaryWfsProperty": "name",
+		"endPoints":
+		[
+			{
+				"id":"placeNameSearch",
+				"url":"/gis/services/topography/Gazetteer_of_Australia/MapServer/WFSServer?",
+				"featureType":"GazetteerOfAustralia",
+				"featurePrefix":"topography_Gazetteer_of_Australia",
+				"version":"1.1.0",
+				"geometryName":"Shape",
+				"featureAttributes":"NameU",
+				"visibility":0,
+				"datumProjection":"EPSG:4326",
+				"isLonLatOrderValid":false,
+				"inputFormat":"geoJSON"
+			}
+		]
+    }
+}

@@ -1,0 +1,12 @@
+<div ng-controller="distanceToBoundaryToggleController" title="{{$parent.tool.config.titleText}}">
+    <geo-layer-interaction-toggle map-controller="mapController"
+                                 layer-interaction-id="distanceDialogId"
+                                 toggle-on-callback="distanceMeasureOn()"
+                                 toggle-off-callback="distanceMeasureOff()"
+                                 controller-emit-event-name="distanceBoundaryToggleReady"
+                                 on-layer-click-callback="distanceMeasure(point,interactionId)"
+                                 class="toolItem toolBarItem"
+                                 alt="{{altText}}">
+                                    <img src="resources/img/distance to.png" />
+    </geo-layer-interaction-toggle>
+</div>

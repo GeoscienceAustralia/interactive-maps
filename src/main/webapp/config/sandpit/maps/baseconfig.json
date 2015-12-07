@@ -1,0 +1,24 @@
+{
+    "id": "baseconfig",
+    "datumProjection": "EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [100, 10],
+        [176, -55]
+    ],
+    "baseMaps": [		
+        {
+            "mapType": "XYZTileCache",
+            "visibility": false,
+            "name": "XYZ Tile Cache World Image",
+            "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        }
+		
+    ],
+    "layerMaps": [      
+    ]
+}

@@ -1,0 +1,169 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:inherit;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:21.0cm 842.0pt;
+	margin:2.0cm 2.0cm 2.0cm 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+
+body{
+margin-left:auto;
+margin-right:auto;
+width:800px;
+}	
+-->
+</style>
+
+<script>
+        var mapController;
+		var myLayer;
+
+        window.addEventListener('message', function (event) {
+            var mapFrame = document.getElementById('mapFrame');
+            if (event.data === 'mapControllerReady') {
+                mapController = mapFrame.contentWindow.mapController;
+            }
+        });
+
+        function zoomToExtent() {
+            var extent = [
+                [
+					99,
+					10
+				],
+				[
+					169,
+					-55
+				]
+            ];
+            mapController.zoomToExtent(extent);
+        }
+		
+		myLayer = mapController.getLayerByName("National Electricity Transmission Lines");
+		
+    </script>
+
+</head>
+
+<body lang=EN-AU link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<div style='mso-element:para-border-div;border-top:solid #006983 1.5pt;
+border-left:none;border-bottom:solid #006983 1.5pt;border-right:none;
+padding:15.0pt 0cm 15.0pt 0cm;background:white'>
+
+<p class=MsoNormal style='margin-bottom:14.25pt;mso-outline-level:1;background:
+white;mso-layout-grid-align:auto;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto;border:none;mso-border-top-alt:solid #006983 1.5pt;
+mso-border-bottom-alt:solid #006983 1.5pt;padding:0cm;mso-padding-alt:15.0pt 0cm 15.0pt 0cm'><span
+style='font-size:24.0pt;font-family:"Helvetica","sans-serif";color:#2F2F2F;
+mso-font-kerning:18.0pt'>
+National Energy Data</span></p>
+
+</div>
+<br>
+
+<div style="float:right;">
+
+<iframe id="mapFrame" src="/interactive-maps/embedded.html#/version/olv2/config/api/config/national-location-information/maps/nationalenergy.json" 
+        frameborder="0" 
+        style="left:50px;top:50px;width:400px;height:300px;border:1px solid black;"></iframe>
+		<br>
+		
+		<button type="button" name="btnSwitchFramework" onclick="zoomToExtent()">Reset Map</button>
+		
+</div>
+
+		
+<p class=MsoNormal style='margin-bottom:14.25pt;line-height:15.75pt;background:
+white;mso-layout-grid-align:auto;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#2F2F2F'>Infrastructure refers to the fundamental facilities and systems serving a country, city, or area, including the services and facilities necessary for its economy to function. It typically characterises technical structures such as roads, bridges, tunnels, water supply, sewers, electrical grids, telecommunications, and so forth, and can be defined as "the physical components of interrelated systems providing commodities and services essential to enable, sustain, or enhance societal living conditions." <a target='_blank' href='https://en.wikipedia.org/wiki/Infrastructure'> Wikipedia</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.25pt;line-height:15.75pt;background:
+white;mso-layout-grid-align:auto;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#2F2F2F'>The electricity transmission lines were digitized in 2011 from the library of imagery held within Geoscience Australia. Imagery used ranged from 0.15m resolution aerial photos to 2.5m resolution satellite images. The database was revised in January 2014 to reflect the most current version of the Australian Energy Market Operator (AEMO) Transmission Network Diagrams dated 14 February 2013.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:14.25pt;line-height:15.75pt;background:
+white;mso-layout-grid-align:auto;punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other;
+mso-vertical-align-alt:auto'><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:#2F2F2F'>The national onshore oil and gas pipelines datasets represent the spatial locations of pipelines for the transmission of oil and natural gas within mainland Australia complimented with feature attribution.<o:p></o:p></span></p>
+
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

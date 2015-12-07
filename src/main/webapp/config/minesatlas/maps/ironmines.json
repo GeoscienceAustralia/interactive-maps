@@ -1,0 +1,337 @@
+{
+    "id": "ironmines",
+    "title": "Iron Mines Atlas",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Iron Mines Atlas"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/minesatlas/aboutIron.html"
+    },
+    "layersConfig": {
+        "enabled": true,
+		"open": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/minesatlas/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "ENO",
+						"NAME",
+						"STATE",
+						"SYNONYMS",
+						"COMMOD_NAME",
+						"CT_COMMODNAME",
+						"OPERATING_STATUS",
+						"LONGITUDE",
+						"LATITUDE",
+						"DESCRIPTION",
+						"TYPE",
+						"CODE",
+						"VALUE",
+						"GA_CLASS",
+						"COMMODID",
+						"RESOURCE_UNIT",
+						"ACCESS_CODE",
+						"ORE_UNIT",
+						"GRADE_UNIT",
+						"ORE",
+						"RESOURCES",
+						"AV_GRADE",
+						"RESTRICTED",
+						"MINLOCNO",
+						"OTHERID",
+						"PROJECT",
+						"CLASS",
+						"COMMODS",
+						"COMMDNAMES",
+						"ACCURACY",
+						"EASTING",
+						"NORTHING",
+						"ZONE",
+						"LOC_METHOD",
+						"HMAPNO",
+						"HMAPNAME",
+						"QMAPID",
+						"QMAPNAME",
+						"SOURCE"						
+                    ],
+                    "propertiesAlias": [
+                        "Eno",
+						"Name",
+						"State",
+						"Synonyms",
+						"Commod_Name",
+						"Ct_Commodname",
+						"Operating_Status",
+						"Longitude",
+						"Latitude",
+						"Description",
+						"Type",
+						"Code",
+						"Value",
+						"Ga_Class",
+						"Commodid",
+						"Resource_Unit",
+						"Access_Code",
+						"Ore_Unit",
+						"Grade_Unit",
+						"Ore",
+						"Resources",
+						"Av_Grade",
+						"Restricted",
+						"Minlocno",
+						"Otherid",
+						"Project",
+						"Class",
+						"Commods",
+						"Commdnames",
+						"Accuracy",
+						"Easting",
+						"Northing",
+						"Zone",
+						"Loc_Method",
+						"Hmapno",
+						"Hmapname",
+						"Qmapid",
+						"Qmapname",
+						"Source"
+                    ],
+                    "primaryPropertyName": "VALUE"
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ",
+            "maxZoomLevel": 12
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "queryFeatures": false,
+			"opacity": 0.5
+			
+        },        
+        {
+            "slug": "Surface_Geology_Of_Australia_1M",
+			"visibility": false,
+            "opacity": 0.5,
+            "queryFeatures": false
+        },
+		{
+            "slug": "Surface_Geology_Of_Australia_2500K",
+			"visibility": false,
+            "opacity": 0.5,
+            "queryFeatures": false
+        },
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Iron",
+            "groupId": "Iron",
+            "visibility": true,
+            "defaultLayerId": "Iron_Operating_Mines"
+        }
+		
+    ],    
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+	"groupedLayers": [
+        {
+            "groupId": "Iron",
+            "layerMaps": [			
+				{
+				"id": "Iron_Operating_Mines",
+				"slug": "Iron_Operating_Mines",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": true,
+				"name": "Iron Operating Mines",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Iron_Operating_Mines",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Iron Operating Mines.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Iron_Operating_Mines"					
+				},
+				{
+				"id": "Iron_Historical_Mines",
+				"slug": "Iron_Historical_Mines",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Iron Historical Mines",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Iron_Historical_Mines",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Iron Historical Mines.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Iron_Historical_Mines"					
+				},
+				{
+				"id": "Iron_Mineral_Deposits",
+				"slug": "Iron_Mineral_Deposits",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Iron Mineral Deposits",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Iron_Mineral_Deposits",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Iron Mineral Deposits.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Iron_Mineral_Deposits"					
+				},
+				{
+				"id": "Iron_Occurrences",
+				"slug": "Iron_Occurrences",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Iron Occurrences",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Iron_Occurrences",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Iron Occurrences.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Iron_Occurrences"					
+				},
+				{
+				"id": "Iron_Operating_Mines_by_Ore",
+				"slug": "Iron_Operating_Mines_by_Ore",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Iron Operating Mines by Ore",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Iron_Operating_Mines_by_Ore",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Iron Operating Mines by Ore.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Iron_Operating_Mines_by_Ore"					
+				},
+				{
+				"id": "Iron_Operating_Mines_by_Av_Grade",
+				"slug": "Iron_Operating_Mines_by_Av_Grade",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Iron Operating Mines by Av Grade",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Iron_Operating_Mines_by_Av_Grade",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Iron Operating Mines by Av Grade.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Iron_Operating_Mines_by_Av_Grade"					
+				}	
+			]
+		}
+	]	
+}

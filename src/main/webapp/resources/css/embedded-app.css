@@ -1,0 +1,97 @@
+/* Element CSS overrides */
+body {
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+#main {
+    overflow-y: inherit;
+    padding: 0;
+}
+
+.mapLoadingOverlay {
+    top:0;
+    bottom: 0;
+}
+
+.mapLoadingFinished {
+    top:0;
+    bottom: 0;
+    -webkit-animation-duration: 0s
+}
+
+.leftMenuContentOuterContainer {
+    margin-top: 30px;
+    padding-bottom: 0;
+}
+
+.rightMenuContentOuterContainer {
+    margin-top: 30px;
+    padding-bottom: 0;
+}
+
+
+@media screen and (max-width: 640px), screen and (max-height: 640px) {
+    .olControlMousePosition {
+        display: none !important;
+    }
+    .olControlScaleLine {
+        right: 0;
+        bottom: 25px !important;
+    }
+    .olControlAttribution {
+        bottom:5px;
+    }
+
+    .olControlPanZoomBar {
+        top:inherit !important;
+    }
+
+    .ol-mouse-position {
+        display: none;
+    }
+
+    .ol-zoomslider {
+        top:0.5em;
+    }
+
+    .ol-attribution {
+        bottom: 0.5em;
+    }
+
+    .ol-scale-line {
+        bottom: 3.5em;
+    }
+
+    .switchTo3DBtn {
+        display: none;
+    }
+
+    .searchContainer {
+        display: none;
+    }
+
+    /*#rightHandMenu {*/
+        /*display: none;*/
+    /*}*/
+    .toolBarContainer {
+        display:none;
+    }
+    #leftHandMenuNav {
+        display:none;
+    }
+    .leftDialogButtonContainer {
+        display: none;
+    }
+    .toolbar {
+        display: none;
+    }
+
+    .olControlOverviewMap {
+        display:none;
+    }
+
+    .ol-overviewmap {
+        display:none;
+    }
+}

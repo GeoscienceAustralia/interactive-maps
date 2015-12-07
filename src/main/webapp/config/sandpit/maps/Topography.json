@@ -1,0 +1,90 @@
+{
+    "title": "Topography",
+    "id": "Topography",
+    "enableLegend": "true",
+    "previewImageUrl": "resources/img/map-previews/NewTopo.png",
+    "previewDescription": "Geoscience Australia's National Geographic Information Group is the Australian Government's national mapping agency. We provide authoritative geographic information services and products to enable evidence-based decision making, deliver government policy, assist industry development needs and support community wellbeing.",
+    "datumProjection": "EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "backgroundcolour": "#21468b",
+    "centerPosition": {
+        "lat": "-2944965",
+        "lon": "15300000"
+    },
+    "zoomLevel": 3,
+    "headerConfig": {
+        "title": "AMSIS -Dev",
+        "backgroundImageUrl": "resources/img/header_bg.png"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyText": "AMSIS is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction."
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendImgUrl": "resources/img/legends/topolegend.png"
+    },
+    "toolsConfig": {
+        "enabled": false
+    },
+    "baseMaps": [
+        {
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "World Image",
+            "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        }
+    ],
+    "layerMaps": [
+        {
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Topographic",
+            "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_NoAntiAliasing/MapServer/WMSServer",
+            "layers": "Framework Boundaries,Framework Boundaries SS,Roads SS,Roads MS,Roads,State Names on Boundaries,State Names Anno MS,State Names Anno SS,Populated Places,Populated Places MS,Populated Places SS,Cities",
+            "tileType": "large",
+            "attribution": "Geoscience Australia Topography <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>",
+            "opacity": 1.0
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Exclusive Layers",
+            "groupId": "specialGroup"
+        }
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "specialGroup",
+            "layerMaps": [
+                {
+                    "id": "foo1",
+                    "groupId": "specialGroup",
+                    "mapType": "WMS",
+                    "visibility": true,
+                    "name": "Exclusive - Landsat",
+                    "url": "http://www.ga.gov.au/gisimg/services/topography/World_Bathymetry_Image_WM/MapServer/WMSServer",
+                    "layers": "Australian Landsat",
+                    "opacity": 1.0,
+                    "tileType": "large"
+                },
+                {
+                    "id": "foo2",
+                    "groupId": "specialGroup",
+                    "mapType": "WMS",
+                    "visibility": true,
+                    "name": "Exclusive - Geomorphic Seabed",
+                    "url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WMSServer",
+                    "layers": "Geomorphic_Features",
+                    "opacity": 1.0
+                }
+            ]
+        }
+    ]
+}

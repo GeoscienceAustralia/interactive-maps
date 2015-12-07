@@ -1,0 +1,151 @@
+{
+    "id": "nexis",
+    "title": "National Exposure Information System",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+			72.56,
+			16.67
+		],
+		[
+			167.49,
+			-60.87
+		]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "National Exposure Information System"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/hazards/nexis/about.html",
+		"open": true
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/hazards/nexis/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+			{
+			"slug": "NEXIS_EXPOSURE",
+			"id": "nexisexposure",
+			"toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+			"toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+			"config": {
+				"titleText": "NEXIS exposure",
+				"panelHeading": "NEXIS exposure",
+				"symbol": "<img src=\"resources/img/legal.png\"/>",
+				"primaryPropertyName": "NAME",
+				"showEmptyFeatures": true,
+				"requiresGeometry": true,
+				"markerUrl": "content/marker/marker-legal.png",
+				"markerWidth": "55",
+				"markerHeight": "40",
+				"propertiesOfInterest": [
+					"POPULATION_ESTIMATE",
+					"TOTAL_NUMBER_OF_DWELLINGS",
+					"TOTAL_NUMBER_OF_BUILDINGS",
+					"NUMBER_OF_SEPARATE_HOUSES",
+					"NUMBER_OF_SEMI_DETACHED_HOUSES",
+					"NUMBER_OF_2_STOREY_APARTMENTS",
+					"NUMBER_OF_3_STOREY_APARTMENTS",
+					"NUMBER_OF_4_PLUS_STOREY_APARTMENTS",
+					"NUMBER_OF_BUILDINGS_PRE_1980",
+					"NUMBER_OF_BUILDINGS_POST_1981",
+					"NUMBER_OF_BUILDINGS_WITH_UNKNOWN_AGE"
+				],
+				"propertiesAlias": [
+					"POPULATION ESTIMATE",
+					"Total number of dwellings",
+					"Total number if buildings",
+					"Number of separate houses",
+					"Number of semi detached houses",
+					"Number of 2 storey apartments",
+					"Number of 3 storey apartments",
+					"Number of 4 plus storey apartments",
+					"Number of buildings pre 1980",
+					"Number of buildings post 1981",
+					"Number of buildings with unknown age"
+				],
+				"primaryPropertyName": "POPULATION_ESTIMATE",
+				"endpoints": [
+					{
+						"featureTitle": "Residential Building Exposure Statistical Area Level 1",
+						"url": "/gis/services/hazards/NEXIS_National_Exposure_Information_System_Building_Exposure/MapServer/WFSServer",
+						"featureType": "NEXIS_Residential_Building_Exposure_SA1",
+						"featurePrefix": "hazards_NEXIS_National_Exposure_Information_System_Building_Exposure",
+						"geometryName": "Shape",
+						"queryType": "WFS"
+					},
+					{
+						"featureTitle": "Commercial Building Exposure Statistical Area Level 1",
+						"url": "/gis/services/hazards/NEXIS_National_Exposure_Information_System_Building_Exposure/MapServer/WFSServer",
+						"featureType": "NEXIS_Commercial_Building_Exposure_SA1",
+						"featurePrefix": "hazards_NEXIS_National_Exposure_Information_System_Building_Exposure",
+						"geometryName": "Shape",
+						"queryType": "WFS"
+					}
+				]
+			}
+	}
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+			"queryFeatures": false,
+			"visibility": true
+        },		
+		{
+		"id": "PopulationDensityExposure",
+		"slug": "PopulationDensityExposure",
+		"extent": [[99,10],[169,-55]],
+		"mapType": "WMS",
+		"visibility": true,
+		"name": "Population Density Exposure",
+		"url": "http://www.ga.gov.au/gis/services/hazards/NEXIS_National_Exposure_Information_System_Population_Density_Exposure/MapServer/WMSServer",
+		"layers": "0,1,2,3,4,5",
+		"metadataText": "NEXIS Population density is a representation of the number of people per NEXIS residential building within a neighbourhood radius. Population density is calculated by the number of people within 10sqkm, 5sqkm, 1sqkm, 500sqm and 100sqm.",
+		"ogcLinks": [
+			{
+				"description": "WMS Capabilities",
+				"url": "http://www.ga.gov.au/gis/services/hazards/NEXIS_National_Exposure_Information_System_Population_Density_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+			}
+		],
+		"opacity": 0.8,
+		"queryFeatures": true,
+		"queryUrl": "http://www.ga.gov.au/gis/services/hazards/NEXIS_National_Exposure_Information_System_Population_Density_Exposure/MapServer/WMSServer",
+		"queryUrlType": "WMS",
+		"queryVersion": "1.3.0",
+		"queryLayers": "0,1,2,3,4,5"
+		}
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+			
+			
+}

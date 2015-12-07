@@ -1,0 +1,197 @@
+{
+	"id": "ndrra",
+	"title": "NDRRA",
+	"previewImageUrl": "content/national-location-information/ndrra/mapPreview.gif",
+	"previewDescription": "NDRRA features",
+	"datumProjection": "EPSG:3857",
+	"displayProjection": "EPSG:4326",
+	"initialExtent": [
+		[
+			125.36,
+			-1.28
+		],
+		[
+			172.61,
+			-39.88
+		]
+	],
+	"zoomLevel": 0,
+	"requiresTermsAndConditions": false,
+	"headerConfig": {
+		"title": "NDRRA"
+	},
+	"aboutConfig": {
+		"enabled": true,
+		"bodyUrl": "content/national-location-information/ndrra/about.html"
+	},
+	"layersConfig": {
+		"enabled": true
+	},
+	"baseLayersConfig": {
+		"enabled": true
+	},
+	"legendConfig": {
+		"enabled": true,
+		"legendUrl": "content/national-location-information/ndrra/legend.html"
+	},
+	"toolsConfig": {
+		"enabled": true,
+		"timeout": 5000,
+		"tools": [
+			{
+				"id": "export",
+				"toolPanelUrl": "resources/partial/exportPanel.html",
+				"toolToggleUrl": "resources/partial/exportToggle.html",
+				"config": {
+					"titleText": "Print PDF",
+					"panelHeading": "Print PDF",
+					"url": "/gisgp/services/topography/Print_Service/GPServer/PrintPoint/",
+					"templatesList": [
+						"Landscape_A4",
+						"Portrait_A4",
+						"Landscape_A3",
+						"Portrait_A3"
+					],
+					"markerUrl": "content/marker/marker-print.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+			},
+			{
+				"id": "identifyTool",
+				"toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+				"toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+				"config": {
+					"titleText": "Identify Features",
+					"panelHeading": "Identify Features",
+					"symbol": "<img src=\"content/marker/identify.png\"/>",
+					"propertiesOfInterest": [
+						"CLASS",
+						"FEATURETYPE",
+						"TYPE",
+						"ROUTENAME",
+						"SECTIONNAME",
+						"NAME",
+						"PERENNIALITY",
+						"HIERARCHY",
+						"FORMATION",
+						"NRN",
+						"SRN",
+						"GAUGE",
+						"OWNER",
+						"RELATIONSHIP",
+						"STATUS",
+						"TRACKS",
+						"POPULATION",
+						"FEATURERELIABILITY",
+						"FEATURESOURCE",
+						"ATTRIBUTERELIABILITY",
+						"ATTRIBUTESOURCE",
+						"PLANIMETRICACCURACY",
+						"SOURCE",
+						"CREATIONDATE",
+						"RETIREMENTDATE",
+						"REVISED",
+						"UPPERSCALE",
+						"USCERTAINTY",
+						"TEXTNOTE",
+						"METADATACOMMENT",
+						"ELEVATION",
+						"AUSHYDRO_ID"
+					],
+					"propertiesAlias": [
+						"Class",
+						"Feature Type",
+						"Type",
+						"Route Name",
+						"Section Name",
+						"Name",
+						"Perenniality",
+						"Hierarchy",
+						"Formation",
+						"NRN",
+						"SRN",
+						"Gauge",
+						"Owner",
+						"Relationship",
+						"Status",
+						"Tracks",
+						"Population",
+						"Feature Reliability",
+						"Feature Source",
+						"Attribute Reliability",
+						"Attribute Source",
+						"Planimetric Accuracy",
+						"Source",
+						"Creation Date",
+						"Retirement Date",
+						"Revised",
+						"Upperscale",
+						"Upperscale Certainty",
+						"Textnote",
+						"Metadata Comment",
+						"Elevation",
+						"Aushydro_Id"
+					],
+					"primaryPropertyName": "NAME",
+					"showEmptyFeatures": true,
+					"requiresGeometry": true,
+					"markerUrl": "content/marker/marker-identify.png",
+					"markerWidth": "55",
+					"markerHeight": "40",
+					"endpoints": [
+						{
+							"queryUrl": "/gis/services/topography/Australian_Topography_2014/MapServer/WMSServer",
+							"queryLayers": "Populated_Places_8,Locations_7,TOPO250K_Mine_Locations,Caves,Pinnacles,TOPO250K_Lighthouses,TOPO250K_Aircraft_Facilities,TOPO250K_Aircraft_Runways,Railway_Stops,Railway_Crossings,Railways_3,TOPO250K_Road_Crossings,TOPO250K_Roads,TOPO250K_Ferry_Routes,TOPO250K_Reserves,TOPO250K_Prohibited_Areas,TOPO250K_Vertical_Obstructions,TOPO250K_Powerlines",
+							"queryVersion": "1.1.0",
+							"queryType": "WMS"
+						}
+					]
+				}
+			}
+		]
+	},
+	"baseMaps": [
+		{
+			"slug": "World_Image_XYZ",
+			"$$hashKey": "01F"
+		}
+	],
+	"layerMaps": [
+		{
+			"id": "NDRRA",
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "NDRRA",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/int_topography/NDRRA/MapServer/WMSServer",
+			"layers": "0",
+			"metadataText": "This point dataset contains ferry terminals in Australian waters that include infrastructure facilities for maritime vessels to load and unload passengers and/or vehicles.",
+			"ogcLinks": [
+				{
+					"description": "REST",
+					"url": "http://intranet-dev.ga.gov.au/gis/rest/services/int_topography/NDRRA/MapServer"
+				},
+				{
+					"description": "WMS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/int_topography/NDRRA/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				},
+				{
+					"description": "ArcMap Layerfile",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/int_topography/NDRRA/MapServer?f=lyr&v=9.3"
+				},
+				{
+					"description": "Service Metadata",
+					"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0f41bfd1-67bf-7a2a-e053-10a3070a4514/National+Onshore+Oil+Pipelines+Database"
+				}
+			],
+			"opacity": 1,
+			"queryFeatures": false,
+			"$$hashKey": "01H"
+		}
+	],
+	"search": {
+		"type": "geonames",
+		"typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+		"primaryWfsProperty": "name"
+	}
+}

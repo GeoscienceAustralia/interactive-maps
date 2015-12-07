@@ -1,0 +1,13 @@
+<div ng-controller="clientMeasureController" title="{{$parent.tool.config.titleText}}">
+<geo-measure-toggle map-controller="mapController"
+                   map-control-id="myMeasureTest"
+                   toggle-on-callback="measureToolToggleOn()"
+                   toggle-off-callback="measureToolToggleOff()"
+                   controller-emit-event-name="measureLineToggleReady"
+                   class="toolItem toolBarItem"
+                   ng-class="{geoUiToggleOn:measureToggleActive}"
+                   on-finish="clientDistanceFinish(event)"
+                   on-update="clientDistanceUpdate(event)">
+    <img src="resources/img/distance point to.png" />
+</geo-measure-toggle>
+</div>

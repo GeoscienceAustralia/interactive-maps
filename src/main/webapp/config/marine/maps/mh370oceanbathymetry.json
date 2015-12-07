@@ -1,0 +1,110 @@
+{
+    "id": "mh370oceanbathymetry",
+    "title": "MH370 Ocean Bathymetry",
+    "previewImageUrl": "content/marine/mh370oceanbathymetry/mapPreview.png",
+    "previewDescription": "Geoscience Australia provides advice, expertise and support to the ATSB in sea floor mapping (bathymetric survey) and the underwater search.",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [80, -15],
+        [121, -45]
+    ],
+	"zoomLevel": 2,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "MH370 Ocean Bathymetry"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/marine/mh370oceanbathymetry/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/marine/mh370oceanbathymetry/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+		{
+                "id": "export",
+                "toolPanelUrl" : "resources/partial/exportPanel.html",
+                "toolToggleUrl": "resources/partial/exportToggle.html",
+				"config": {
+					"titleText": "Print PDF",
+					"panelHeading": "Print PDF",
+					"url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+					"templatesList": ["Landscape_A4", "Portrait_A4", "Landscape_A3", "Portrait_A3"],
+					"markerUrl": "content/marker/marker-print.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+		}		
+        ]
+    },
+    "baseMaps": [
+		{
+            "slug": "World_Image_XYZ"
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }		
+    ],
+    "layerMaps": [
+		{
+            "slug": "Australian_Topography_2014_ARCGIS"
+        },		
+		{
+            "mapType": "WMS",
+			"extent": [[80, -15],[121, -45]],			
+            "visibility": true,
+            "name": "Ocean Trench Seabed Lines and Ridges",
+            "queryFeatures" : true,
+            "url": "http://intranet-dev.ga.gov.au/gis/services/marine_coastal/Phase1_Bathymetry/MapServer/WMSServer",
+            "layers": "Seabed_Name_Lines,Ridge_Name_Lines,Trench_Name_Lines",
+            "opacity": 0.5,
+            "metadataText": "Ocean Trench, Seabed Lines and Ridges.",
+			"ogcLinks" : [{"description": "REST","url": "http://intranet-dev.ga.gov.au/gis/rest/services/marine_coastal/Phase1_Bathymetry/MapServer"},
+			{"description": "WMS Capabilities","url": "http://intranet-dev.ga.gov.au/gis/services/marine_coastal/Phase1_Bathymetry/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://intranet-dev.ga.gov.au/gis/services/marine_coastal/Phase1_Bathymetry/MapServer/WMSServer?f=lyr&v=9.3"},
+			{"description": "Service Metadata","url": ""}]
+        },
+		{
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "MH 370 Search Phase 1 Outline",
+            "queryFeatures" : true,
+            "queryUrl": "http://intranet-dev.ga.gov.au/gis/services/marine_coastal/Phase1_Bathymetry/MapServer/WMSServer",
+            "queryUrlType":"WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "Phase1_Outline_November_2014",
+            "url": "http://intranet-dev.ga.gov.au/gis/services/marine_coastal/Phase1_Bathymetry/MapServer/WMSServer",
+            "layers": "Phase1_Outline_November_2014",
+            "opacity": 0.5,
+            "metadataText": "Phase 1 outline November 2014.",
+			"ogcLinks" : [{"description": "REST","url": "http://intranet-dev.ga.gov.au/gis/rest/services/marine_coastal/Phase1_Bathymetry/MapServer"},
+			{"description": "WMS Capabilities","url": "http://intranet-dev.ga.gov.au/gis/services/marine_coastal/Phase1_Bathymetry/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://intranet-dev.ga.gov.au/gis/services/marine_coastal/Phase1_Bathymetry/MapServer/WMSServer?f=lyr&v=9.3"},
+			{"description": "Service Metadata","url": ""}]
+        }
+    ],	
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

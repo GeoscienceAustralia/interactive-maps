@@ -1,0 +1,71 @@
+{
+    "id": "minesatlas",
+    "title": "Australian Mines Atlas",
+    "blurb": "The Australian Atlas of Mineral Resources, Mines, and Processing Centres. Australia has the world's largest resources of gold, iron ore, lead, nickel, rutile, uranium, zinc and zircon as well as the second largest resources of bauxite, cobalt, copper, ilmenite, niobium, silver, tantalum and thorium. Australia's resources of black coal, brown coal, magnesite, tungsten, lithium, manganese ore, rare earths and vanadium are ranked in the top five in the world. Geoscience Australia compiles and reports on an annual basis the national inventory of mineral resources from information released publically by mining companies in Australia's Identified Mineral Resources and Australia's Mineral Resource Assessment. Geoscience Australia also provides national scale maps showing Australia's mineral deposits and endowment by region for a wide range of mineral commodities.",
+    "headerConfig": {
+        "title": "Applying geoscience to Australia's most important challenges"
+    },
+    "maps": [
+        {
+            "id": "minesatlas",
+            "title": "Mine and Mineral Occurrences",
+            "previewImageUrl": "content/minesatlas/mapPreviewMin.jpg",
+            "previewDescription": "Mines atlas and resource locations.",
+			"tags": "MinesMaps"
+        },		
+		{
+            "title": "Gold",
+            "previewImageUrl": "content/minesatlas/infoPreviewGold.jpg",
+            "previewDescription": "The principal uses for gold (Au) are as an investment instrument for governments, central banks and private investors, and as jewellery, which accounts for most of its annual usage. The main industrial use for gold is in the electronics industry, taking advantage of its high conductivity and corrosion-resistance properties. ",
+			"applicationUrl": "http://www.ga.gov.au/scientific-topics/minerals/mineral-resources/aimr/gold",
+			"tags": "MineralInformation"
+        },
+		{
+            "title": "Zinc, Lead and Silver",
+            "previewImageUrl": "content/minesatlas/infoPreviewSilver.jpg",
+            "previewDescription": "Silver is mined and produced mainly as a co-product or by-product of lead, zinc, copper and, to a lesser extent, gold (Au). In 2012, the global supply totalled 32.6 kilotonnes (kt), of which 24.5 kt was mine production (75%) with the balance from scrap, de-hedging and government sales.",
+			"applicationUrl": "http://www.ga.gov.au/scientific-topics/minerals/mineral-resources/aimr/zinc-lead-silver",
+			"tags": "MineralInformation"
+        },
+		{
+            "title": "Iron Ore",
+            "previewImageUrl": "content/minesatlas/infoPreviewIron.jpg",
+            "previewDescription": "Iron (Fe) is a metallic element which constitutes about 5% of the Earth's crust and is the fourth most abundant element in the crust. Iron ores are rocks from which metallic iron can be economically extracted. The principal iron ores are hematite (Fe2O3) and magnetite (Fe3O4).",
+			"applicationUrl": "http://www.ga.gov.au/scientific-topics/minerals/mineral-resources/aimr/iron-ore",
+			"tags": "MineralInformation"
+        },
+		{
+            "title": "Tin",
+            "previewImageUrl": "content/minesatlas/infoPreviewTin.jpg",
+            "previewDescription": "Tin (Sn) is used in solders for joining metals and pipes, as a coating for steel cans and in metal alloys.",
+			"applicationUrl": "http://www.australianminesatlas.gov.au/aimr/commodity/tin.html",
+			"tags": "MineralInformation"
+        },
+		{
+            "title": "Tungsten",
+            "previewImageUrl": "content/minesatlas/infoPreviewTungsten.jpg",
+            "previewDescription": "Tungsten (W) metal and its alloys are amongst the hardest of all metals and tungsten itself has the highest melting point of all pure metals.",
+			"applicationUrl": "http://www.australianminesatlas.gov.au/aimr/commodity/tungsten.html",
+			"tags": "MineralInformation"
+        },
+		{
+            "title": "Australia's Identified Mineral Resources",
+            "previewImageUrl": "content/minesatlas/infoPreviewMin.jpg",
+            "previewDescription": "Australia's Identified Mineral Resources as at December 2014.",
+			"applicationUrl": "http://www.ga.gov.au/scientific-topics/minerals/mineral-resources/aimr/table1",
+			"tags": "MineralInformation"
+        }
+    ],
+	"tags": [
+		{
+            "id": "MinesMaps",
+            "description": "The coverage contains data such as locations, mine names, commodity and weblinks. The information was sourced from Geoscience Australia's OZMIN database",
+            "title": "Mines Maps"
+        },
+		{
+            "id": "MineralInformation",
+            "description": "Geoscience Australia provides pre-competitive geoscience information to address greenfield exploration challenges and identify new mineral provinces within Australia. This pre-competitive information is acquired through integrated programs of national strategic importance, such as the Unlocking Australia's Hidden Mineral Resource Potential Program which commenced in July 2013. The Agency also advises the Australian Government on mineral resources, mining and land use which is integral to decisions on the nation's known mineral endowment, the sustainable development of mineral resources and levels of exploration activity.",
+            "title": "Mineral Basics"
+        }
+	]
+}

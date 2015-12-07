@@ -1,0 +1,40 @@
+<div class="modal-header"><h3>Select layers from WMS</h3></div>
+<div class="modal-body" style="min-height: 650px;">
+    <div style="display:inline-block;max-width:300px;">
+        <h3>Available layers</h3>
+        <ul class="list-group">
+           <li class="list-group-item" ng-repeat="layer in layers" ng-click="addToWMSLayer(layer)" ng-show="!layer.isSelected">
+               <span class="glyphicon glyphicon-plus-sign" ng-style="{'color': 'green'}"></span>
+               <span> {{layer.name | replaceUnderscore}}</span>
+           </li>
+        </ul>
+    </div>
+    <div style="display: inline-block;max-width: 300px;position: absolute;margin-left: 10px">
+    <h3>Selected layers</h3>
+    <ul class="list-group" ui-sortable="sortableOptions" ng-model="selectedLayers">
+        <li class="list-group-item" ng-repeat="selectedLayer in selectedLayers" ng-click="removeWMSLayer($index)">
+            <span class="glyphicon glyphicon-minus-sign" style="color:red"></span><span> {{selectedLayer.name | replaceUnderscore}}</span>
+        </li>
+    </ul>
+    </div>
+
+    <div style="display: inline-block;position: absolute;top:50px;right:15px;">
+        <div id="layerPreview" style="width:700px;height:500px">
+
+        </div>
+    </div>
+    <div class="progress" ng-show="tempMapLoading" style="position: absolute;top: 10px;width:96%">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+            Loading...
+        </div>
+    </div>
+
+    <geo-map ng-if="delayReady" map-element-id="layerPreview" zoom-level="4" center-position="[130, -25]" framework="olv3">
+        <geo-osm-layer></geo-osm-layer>
+    </geo-map>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="ok()" ng-disabled="selectedLayers == null || selectedLayers.length === 0">Add</button>
+    <button type="button" class="btn btn-warning" ng-click="resetLayer()">Clear</button>
+    <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+</div>

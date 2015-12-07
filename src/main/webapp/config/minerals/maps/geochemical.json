@@ -1,0 +1,368 @@
+{
+    "id": "geology",
+    "title": "Geochemistry",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Geochemistry"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/minerals/geochemical/about.html"
+    },
+    "layersConfig": {
+        "enabled": true,
+		"open": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/minerals/geochemical/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "National Geochemical Survey of Australia: The Geochemical Atlas of Australia: Dataset",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_82869"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "siteID",
+                        "state",
+                        "geographicArea",
+                        "locationDescription",
+                        "easting",
+                        "northing",
+                        "utmZone",
+                        "latitude",
+                        "longitude",
+                        "absoluteAccuracy",
+                        "sampleOriginator",
+                        "GAsampleNo",
+                        "originatorSampleID",
+                        "alternativeOriginatorSampleID",
+                        "geologicalRegionName",
+                        "provinceName",
+                        "stratno",
+                        "stratigraphicUnit",
+                        "informalStratigraphicUnit",
+                        "dominantLithologicalGrouping",
+                        "qualifier",
+                        "lithologyName",
+                        "originatorGrouping",
+                        "description",
+                        "occurrenceMode",
+                        "SiO2",
+                        "TiO2",
+                        "Al2O3",
+                        "Fe2O3tot",
+                        "Fe2O3",
+                        "FeO",
+                        "MnO",
+                        "MgO",
+                        "CaO",
+                        "Na2O",
+                        "K2O",
+                        "P2O5",
+                        "H2Oplus",
+                        "H2Omin",
+                        "CO2",
+                        "LOi",
+                        "Rest",
+                        "Total",
+                        "Ag",
+                        "As_",
+                        "Au",
+                        "B",
+                        "Ba",
+                        "Be",
+                        "Bi",
+                        "Cd",
+                        "Ce",
+                        "Cl",
+                        "Co",
+                        "Cr",
+                        "Cs",
+                        "Cu",
+                        "Dy",
+                        "Er",
+                        "Eu",
+                        "F",
+                        "Ga",
+                        "Gd",
+                        "Ge",
+                        "Hf",
+                        "Hg",
+                        "Ho",
+                        "In_",
+                        "Ir",
+                        "La",
+                        "Li",
+                        "Lu",
+                        "Mo",
+                        "Nb",
+                        "Nd",
+                        "Ni",
+                        "Os",
+                        "P",
+                        "Pb",
+                        "Pd",
+                        "Pr",
+                        "Pt",
+                        "Rh",
+                        "Ru",
+                        "Rb",
+                        "S",
+                        "Sb",
+                        "Sc",
+                        "Se",
+                        "Sm",
+                        "Sn",
+                        "Sr",
+                        "Ta",
+                        "Tb",
+                        "Te",
+                        "Th",
+                        "Ti",
+                        "Tm",
+                        "U",
+                        "V",
+                        "W",
+                        "Y",
+                        "Yb",
+                        "Zn",
+                        "Zr",
+                        "Y,10.1",
+                        "Yb,1.41",
+                        "Zn,4",
+                        "Zr,394",
+						"FEATURETYPE"
+                    ],
+                    "propertiesAlias": [
+                        "Site ID",
+                        "State",
+                        "Geographic Area",
+                        "Location Description",
+                        "Easting",
+                        "Northing",
+                        "UTM Zone",
+                        "Latitude",
+                        "Longitude",
+                        "Absolute Accuracy",
+                        "Sample Originator",
+                        "GA Sample No",
+                        "Originator Sample ID",
+                        "Alternative Originator Sample Id",
+                        "Geological Region Name",
+                        "Province Name",
+                        "Strat No",
+                        "Stratigraphic Unit",
+                        "Informal Stratigraphic Unit",
+                        "Dominant Lithological Grouping",
+                        "Qualifier",
+                        "Lithology Name",
+                        "Originator Grouping",
+                        "Description",
+                        "Occurrence Mode",
+                        "SiO2",
+                        "TiO2",
+                        "Al2O3",
+                        "Fe2O3tot",
+                        "Fe2O3",
+                        "FeO",
+                        "MnO",
+                        "MgO",
+                        "CaO",
+                        "Na2O",
+                        "K2O",
+                        "P2O5",
+                        "H2Oplus",
+                        "H2Omin",
+                        "CO2",
+                        "LOi",
+                        "Rest",
+                        "Total",
+                        "Ag",
+                        "As_",
+                        "Au",
+                        "B",
+                        "Ba",
+                        "Be",
+                        "Bi",
+                        "Cd",
+                        "Ce",
+                        "Cl",
+                        "Co",
+                        "Cr",
+                        "Cs",
+                        "Cu",
+                        "Dy",
+                        "Er",
+                        "Eu",
+                        "F",
+                        "Ga",
+                        "Gd",
+                        "Ge",
+                        "Hf",
+                        "Hg",
+                        "Ho",
+                        "In_",
+                        "Ir",
+                        "La",
+                        "Li",
+                        "Lu",
+                        "Mo",
+                        "Nb",
+                        "Nd",
+                        "Ni",
+                        "Os",
+                        "P",
+                        "Pb",
+                        "Pd",
+                        "Pr",
+                        "Pt",
+                        "Rh",
+                        "Ru",
+                        "Rb",
+                        "S",
+                        "Sb",
+                        "Sc",
+                        "Se",
+                        "Sm",
+                        "Sn",
+                        "Sr",
+                        "Ta",
+                        "Tb",
+                        "Te",
+                        "Th",
+                        "Ti",
+                        "Tm",
+                        "U",
+                        "V",
+                        "W",
+                        "Y",
+                        "Yb",
+                        "Zn",
+                        "Zr",
+                        "Y,10.1",
+                        "Yb,1.41",
+                        "Zn,4",
+                        "Zr,394",
+						"Feature type"
+                    ],
+                    "primaryPropertyName": "siteID"
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "queryFeatures": false
+        },        
+        {
+            "slug": "Surface_Geology_Of_Australia_1M",
+            "opacity": 0.5,
+            "queryFeatures": false
+        },
+		{
+            "slug": "Surface_Geology_Of_Australia_2500K",
+            "opacity": 0.5,
+            "queryFeatures": false
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Geochemical Analyses",
+            "groupId": "geochemical",
+            "visibility": true,
+            "defaultLayerId": "RockGeochemistry"
+        }
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "geochemical",
+            "layerMaps": [
+                {
+                    "slug": "Rock_Geochemistry",
+                    "queryFeatures": true
+                },
+                {
+                    "slug": "Regolith_Geochemistry",
+                    "visibility": false,
+                    "queryFeatures": true
+                },
+                {
+                    "slug": "RockGeochemistry_Igneous",
+                    "visibility": false,
+                    "queryFeatures": true
+                },
+                {
+                    "slug": "RockGeochemistry_Metamorphic",
+                    "visibility": false,
+                    "queryFeatures": true
+                },
+                {
+                    "slug": "RockGeochemistry_Sedimentary",
+                    "visibility": false,
+                    "queryFeatures": true
+                },
+                {
+                    "slug": "Seismic_Geochemistry",
+                    "visibility": false,
+                    "queryFeatures": true
+                }
+            ]
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

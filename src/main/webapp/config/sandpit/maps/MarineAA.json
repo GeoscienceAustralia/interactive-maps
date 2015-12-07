@@ -1,0 +1,42 @@
+{
+    "id": "baseconfig",
+    "datumProjection": "EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [142, -10.4],
+        [142.8, -11.1]
+    ],
+	    "layersConfig": {
+        "enabled": true
+    },
+    "baseMaps": [		
+         {
+            "mapType": "XYZTileCache",
+            "visibility": false,
+            "name": "XYZ Tile Cache GA World Image",
+            "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        }		
+    ],
+    "layerMaps": [
+		{
+			"mapType":"WMS",
+			"visibility":true,
+			"name":"Text AA",
+			"url":"http://www-test.ga.gov.au/gis/services/topography/Dynamic_National_Map_Hydrography_and_Marine_new/MapServer/WMSServer",
+			"layers":"Offshore_Rocks_and_Wrecks_Labels,Lighthouses_Labels,Reefs_and_Shoals_Labels,Locks_Labels,Waterfalls_Labels,Springs_Labels,Waterholes_Labels,Bores_Labels,Natural_Water_Points_Labels,Water_Storage_Points_Labels,Dam_Walls_Labels,Watercourse_Areas_Labels,Watercourses_Major_Rivers_Scale_10Million_to_5Million_Labels,Watercourses_Major_Rivers_Scale_5Million_to_300000_Labels,Watercourses_All_Rivers_Labels,Waterbody_Lakes_Scale_10Million_to_5Million_Labels,Waterbody_Lakes_Scale_5Million_to_300000_Labels,Waterbody_Reservoirs_Scale_10Million_to_300000_Labels,Waterbody_Extra_Lakes_and_Reservoirs_Labels,Waterbody_All_Lakes_Labels,Waterbody_All_Reservoirs_Labels,Swamps_and_Marine_Swamps_Labels",
+			"metadataText": "This is a topographic reference map showing the populated places of Australia.",
+            "ogcLinks" : [
+			{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B8239E8C0-2D4F-49C2-9A86-159566568965%7D"},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer?f=lyr&v=9.3"}
+			],
+			"opacity":1.0,
+			"layerTimeout": 5000
+		}	
+    ]
+}

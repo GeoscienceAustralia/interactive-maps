@@ -1,0 +1,78 @@
+<div class="applicationPageContainer panel">
+    <div class="panel">
+        <div>
+            <div class="panel-heading">
+                <h2 ng-bind="geoConfig.title"></h2>
+                <div ng-bind="geoConfig.blurb"></div>
+            </div>
+        </div>
+        <!-- Show with no tags -->
+        <div class="configuredItemsContainer">
+            <div ng-repeat="map in maps | hasNoTag" class="configuredItemContainer">
+                <div ng-show="{{map.applicationUrl == null}}">
+                    <a href="#/r/reload/theme/{{geoConfig.id}}/map/{{map.id}}">
+                        <div class="panel-body">
+                            <div class="applicationPreviewContainer">
+                                <img ng-src="{{map.previewImageUrl}}" class="img-responsive applicationPreviewImage" title="{{map.title}}"/>
+                            </div>
+                            <div class="panel-heading"><a href="#/r/reload/theme/{{geoConfig.id}}/map/{{map.id}}"><h5 ng-bind="map.title"></h5></a></div>
+                            <div class="list-group-item-text"
+                                 ng-bind="map.previewDescription"></div>
+                        </div>
+                    </a>
+                </div>
+                <div ng-show="{{map.applicationUrl != null}}">
+                    <a href="{{map.applicationUrl}}" target="_blank">
+                        <div class="panel-body">
+                            <div class="applicationPreviewContainer">
+                                <img ng-src="{{map.previewImageUrl}}" class="img-responsive applicationPreviewImage" title="{{map.title}}"/>
+                                <img ng-src="resources/img/arrow-diagonal-64.png" class="applicationPreviewImageLink img-responsive" title="Link to application"/>
+                            </div>
+                            <div class="panel-heading"><a href="{{map.applicationUrl}}" target="_blank"><h5 ng-bind="map.title"></h5></a></div>
+                            <div class="list-group-item-text"
+                                 ng-bind="map.previewDescription"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tag driven display-->
+        <div ng-if="tags != null" ng-repeat="tag in tags" class="configuredItemsContainer">
+            <div class="tagHeading panel-heading">
+                <h3 ng-bind="tag.title"></h3>
+                <div ng-bind="tag.description"></div>
+            </div>
+            <div ng-repeat="map in maps | hasTag : tag" class="panel-default configuredItemContainer">
+                <div ng-show="{{map.applicationUrl == null}}">
+                    <a href="#/r/reload/theme/{{geoConfig.id}}/map/{{map.id}}">
+                        <div class="panel-body">
+                            <div class="applicationPreviewContainer">
+                                <img ng-src="{{map.previewImageUrl}}" class="img-responsive applicationPreviewImage" title="{{map.title}}"/>
+                            </div>
+                            <div class="panel-heading"><a href="#/r/reload/theme/{{geoConfig.id}}/map/{{map.id}}"><h5 ng-bind="map.title"></h5></a></div>
+                            <div class="list-group-item-text"
+                                 ng-bind="map.previewDescription"></div>
+                        </div>
+                    </a>
+                </div>
+                <div ng-show="{{map.applicationUrl != null}}">
+                    <a href="{{map.applicationUrl}}" target="_blank">
+                        <div class="panel-body">
+                            <div class="applicationPreviewContainer">
+                                <img ng-src="{{map.previewImageUrl}}" class="img-responsive applicationPreviewImage" title="{{map.title}}"/>
+                                <img ng-src="resources/img/arrow-diagonal-64.png" class="applicationPreviewImageLink img-responsive" title="Link to application"/>
+                            </div>
+                            <div class="panel-heading"><a href="{{map.applicationUrl}}" target="_blank"><h5 ng-bind="map.title"></h5></a></div>
+                            <div class="list-group-item-text"
+                                 ng-bind="map.previewDescription"></div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--HACK to get Chrome to behave like Firefox and IE-->
+<div style="height:30px;width:100%;margin-bottom: -70px"></div>

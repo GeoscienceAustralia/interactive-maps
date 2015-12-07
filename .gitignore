@@ -1,0 +1,9 @@
+.idea/
+target/
+build/
+node/
+node_modules/
+*.iml
+WebContent/
+coverage/
+src/main/webapp/bower_components/

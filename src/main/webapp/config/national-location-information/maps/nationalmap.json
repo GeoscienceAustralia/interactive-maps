@@ -1,0 +1,62 @@
+{
+    "id": "nationalmap",
+    "title": "National Base Map with External Territories",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "National Base Map with External Territories"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/national-location-information/nationalmap/about.html"
+    },
+    "layersConfig": {
+        "enabled": false
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/national-location-information/nationalmap/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "export"
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+		"slug": "National_Color_Base_Map"
+		}
+    ],
+    "layerMaps": [],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

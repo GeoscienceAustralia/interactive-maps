@@ -1,0 +1,153 @@
+<div ng-controller="distanceToBoundaryPanelController">
+    <form name="distanceToBoundaryForm">
+        <div>
+            <h2>Distance to Boundary</h2>
+
+            <div ng-show="!$parent[$parent.tool.id].hasResult">
+                <div class="searchInput">
+                    <h3>1. Click on the map to select a point. You can edit the
+                        displayed coordinates.</h3>
+
+                    <div ng-show="!$parent[$parent.tool.id].convertCoordsToDms">
+                        <label for="searchCriteriaLonInput">Latitude</label> <input
+                            type="text" name="latInput"
+                            ng-model="$parent[$parent.tool.id].dialogCriteriaLat"
+                            gis-latitude-validator="$parent[$parent.tool.id].dialogCriteriaLat"/>
+                    </div>
+                    
+                    <div ng-show="$parent[$parent.tool.id].convertCoordsToDms" gis-latitude-dms-validator lat-degrees-input="$parent[$parent.tool.id].dialogCriteriaLatDegrees"
+                    		lat-minutes-input="$parent[$parent.tool.id].dialogCriteriaLatMinutes" lat-seconds-input="$parent[$parent.tool.id].dialogCriteriaLatSeconds">
+                    	<label>Latitude</label>
+                        <label class="dmsLabel">D</label> <input class="dmsInput"
+                            type="text" name="latDegreesInput" ng-model="$parent[$parent.tool.id].dialogCriteriaLatDegrees" 
+                            gis-latitude-validator="$parent[$parent.tool.id].dialogCriteriaLatDegrees" ng-change="validateDms()"/>
+                        <label class="dmsLabel">M</label> <input class="dmsInput"
+                            type="text" name="latMinutesInput" ng-model="$parent[$parent.tool.id].dialogCriteriaLatMinutes"/>
+                        <label class="dmsLabel">S</label> <input class="dmsInput"
+                            type="text" name="latSecondsInput" ng-model="$parent[$parent.tool.id].dialogCriteriaLatSeconds"/>
+                    </div>
+                    
+                    <div class="error" ng-show="!distanceToBoundaryForm.latDegreesInput.$valid || !distanceToBoundaryForm.latMinutesInput.$valid ||
+                    	!distanceToBoundaryForm.latSecondsInput.$valid">Latitude must be between 90 and -90.
+                    </div>
+                    
+                    <div class="error" ng-show="!distanceToBoundaryForm.latInput.$valid">Latitude must be between 90 and -90.
+                    </div>
+
+                    <div ng-show="!$parent[$parent.tool.id].convertCoordsToDms">
+                        <label for="searchCriteriaLatInput">Longitude</label> <input
+                            type="text" name="lonInput"
+                            ng-model="$parent[$parent.tool.id].dialogCriteriaLon"
+                            gis-longitude-validator="$parent[$parent.tool.id].dialogCriteriaLon"/>
+                    </div>
+                    
+                    <div ng-show="$parent[$parent.tool.id].convertCoordsToDms" gis-longitude-dms-validator lon-degrees-input="$parent[$parent.tool.id].dialogCriteriaLonDegrees"
+                    		lon-minutes-input="$parent[$parent.tool.id].dialogCriteriaLonMinutes" lon-seconds-input="$parent[$parent.tool.id].dialogCriteriaLonSeconds">
+                    	<label>Longitude</label>
+                        <label class="dmsLabel">D</label> <input class="dmsInput"
+                            type="text" name="lonDegreesInput" ng-model="$parent[$parent.tool.id].dialogCriteriaLonDegrees"/>
+                        <label class="dmsLabel">M</label> <input class="dmsInput"
+                            type="text" name="lonMinutesInput" ng-model="$parent[$parent.tool.id].dialogCriteriaLonMinutes"/>
+                        <label class="dmsLabel">S</label> <input class="dmsInput"
+                            type="text" name="lonSecondsInput" ng-model="$parent[$parent.tool.id].dialogCriteriaLonSeconds"/>
+                    </div>
+                    
+                    <div class="error" ng-show="!distanceToBoundaryForm.lonDegreesInput.$valid || !distanceToBoundaryForm.lonMinutesInput.$valid ||
+                    	!distanceToBoundaryForm.lonSecondsInput.$valid">Longitude must be between 180 and
+                        -180.
+                    </div>
+                    
+                    <div class="error" ng-show="!distanceToBoundaryForm.lonInput.$valid">Longitude must be between 180 and
+                        -180.
+                    </div>
+               </div>
+               <div>
+                   <label class="dmsText" for="convertCoordsToDms">Degrees Minutes Seconds</label> <input 
+                       type="checkbox" id="convertCoordsToDms"
+                       ng-model="$parent[$parent.tool.id].convertCoordsToDms" ng-change="changeCoordsFormat()"
+                       ng-disabled="!distanceToBoundaryForm.lonInput.$valid || !distanceToBoundaryForm.latInput.$valid || !distanceToBoundaryForm.lonDegreesInput.$valid || 
+				      		!distanceToBoundaryForm.lonMinutesInput.$valid || !distanceToBoundaryForm.lonSecondsInput.$valid || !distanceToBoundaryForm.latDegreesInput.$valid || 
+				            !distanceToBoundaryForm.latMinutesInput.$valid || !distanceToBoundaryForm.latSecondsInput.$valid">
+               </div>
+               <div class="buttonContainer">
+                    <button type="button" ng-click="updateMarker()"
+                            ng-disabled="$parent[$parent.tool.id].waitingForResponse ||
+                            (!distanceToBoundaryForm.$pristine && !distanceToBoundaryForm.$valid) ||
+                            ($parent[$parent.tool.id].dialogCriteriaLon == null || $parent[$parent.tool.id].dialogCriteriaLon == '' &&
+                            $parent[$parent.tool.id].dialogCriteriaLat == null || $parent[$parent.tool.id].dialogCriteriaLat == '')">
+                        Update marker position
+                    </button>
+                </div>
+               <h3>2. Choose a boundary.</h3>
+                <div class="searchOptions">
+                    <div ng-repeat="boundary in boundaries">
+                        <input type="radio" name="id"
+                               id="searchCriteriaBoundary_{{boundary.id}}" value="{{$index}}"
+                               ng-model="$parent.selectedBoundary" required/> <label
+                            for="searchCriteriaBoundary_{{boundary.id}}">{{boundary.id}}</label>
+                    </div>
+                </div>
+                <br/>
+
+                <div class="buttonContainer">
+                    <button type="button" ng-click="submitSearchDistance()"
+                            ng-disabled="$parent[$parent.tool.id].waitingForResponse ||
+                            (!distanceToBoundaryForm.$pristine && !distanceToBoundaryForm.$valid) ||
+                            ($parent[$parent.tool.id].dialogCriteriaLon == null || $parent[$parent.tool.id].dialogCriteriaLon == '' &&
+                            $parent[$parent.tool.id].dialogCriteriaLat == null || $parent[$parent.tool.id].dialogCriteriaLat == '')">
+                        Search distance to
+                        boundary
+                    </button>
+                </div>
+                <div ng-show="$parent[$parent.tool.id].waitingForResponse">
+                	<br>
+                    Loading...
+                    <div class="progress progress-striped active">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                             aria-valuemax="100"
+                             style="width: 100%">
+                            <span class="sr-only">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="distanceToBoundary" ng-show="$parent[$parent.tool.id].hasResult">
+            <div class="highlight">Selected coordinate position</div>
+            <div>{{$parent[$parent.tool.id].dialogCriteriaLat}},
+                {{$parent[$parent.tool.id].dialogCriteriaLon}}
+            </div>
+            <div>{{dmsFormattedLat}},
+                {{dmsFormattedLon}}
+            </div>
+            <br/>
+
+            <div class="highlight">Selected boundary</div>
+            <div>{{boundaries[selectedBoundary].id}}</div>
+            <br/>
+
+            <div class="highlight">Distance</div>
+            <div>{{resultData.value.features[0].attributes.Distance}}</div>
+            <div>{{resultInNauticalMiles}}</div>
+            <br/>
+
+            <div ng-show="resultData.isInsideBoundary !== undefined">
+                <div class="highlight">Is inside boundary</div>
+                <div><span ng-show="resultData.isInsideBoundary">Yes</span><span ng-show="!resultData.isInsideBoundary">No</span>
+                </div>
+                <div ng-show="hasError">
+                    <div style="color: red">Error : {{errorMessage}}</div>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="buttonContainer">
+                <button type="button" ng-click="resetSearchDistance()"
+                        ng-disabled="$parent[$parent.tool.id].waitingForResponse">Reset and search again
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

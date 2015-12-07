@@ -1,0 +1,12 @@
+<div ng-controller="infoToggleController" title="{{$parent.tool.config.titleText}}">
+    <geo-layer-interaction-toggle map-controller="mapController"
+                                 layer-interaction-id="infoDialogId"
+                                 toggle-on-callback="infoOn()"
+                                 toggle-off-callback="infoOff()"
+                                 controller-emit-event-name="infoToggleReady"
+                                 on-layer-click-callback="infoMap(point,interactionId)"
+                                 class="toolItem toolBarItem"
+                                 alt="{{altText}}">
+                                    <img src="resources/img/download-64.png" />
+    </geo-layer-interaction-toggle>
+</div>

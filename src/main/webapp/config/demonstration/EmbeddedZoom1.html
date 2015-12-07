@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var mapController;
+
+        window.addEventListener('message', function (event) {
+            var mapFrame = document.getElementById('mapFrame');
+            if (event.data === 'mapControllerReady') {
+                mapController = mapFrame.contentWindow.mapController;
+            }
+        });
+
+        function zoomToExtent() {
+            var extent = [
+                [
+                    110,
+                    -25
+                ],
+                [
+                    132,
+                    -35
+                ]
+            ];
+            mapController.zoomToExtent(extent)
+        }
+    </script>
+</head>
+<body>
+
+<h1>My Title</h1>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada sagittis arcu, sodales dignissim nisl
+    sollicitudin non. Nullam tincidunt tristique vulputate. Etiam eu elit placerat, lobortis turpis quis, dignissim
+    ipsum. Duis commodo justo vel porttitor interdum. Morbi massa nunc, pellentesque id nulla non, aliquet feugiat
+    felis. Morbi vel vulputate felis. Duis id posuere eros. Suspendisse eleifend enim eget tellus consequat, non maximus
+    arcu commodo. Maecenas non est lorem. Praesent sed suscipit libero, ut iaculis mi. Aenean fringilla arcu vitae
+    volutpat tincidunt. Etiam eu sodales tellus. Vestibulum tincidunt est id risus faucibus, quis sagittis odio finibus.
+    Phasellus eu aliquet justo.
+</p>
+<iframe src="/interactive-maps/embedded.html#/version/olv2/config/api/config/demonstration/maps/twf.json"
+        allowTransparency="true" background="transparent"
+        frameborder="0" id="mapFrame"
+        style="float:right;left:50px;top:50px;width:400px;height:300px;border:1px solid black;"></iframe>
+<button type="button" name="btnSwitchFramework" onclick="zoomToExtent()">Zoom</button>
+<p>
+    Quisque augue justo, lacinia vitae augue quis, interdum condimentum neque. Donec vel maximus magna. Ut scelerisque
+    eros nec massa iaculis maximus. Integer eget leo tempor, venenatis magna id, luctus quam. In a velit sit amet mauris
+    tincidunt lacinia. Duis in mauris non metus sodales pretium vel ut lorem. Integer congue molestie feugiat. Duis ante
+    justo, suscipit et viverra id, ornare eget mauris. Donec a congue quam, vitae euismod erat. Vestibulum ultricies
+    justo diam, nec iaculis lacus mattis a.
+</p>
+
+<p>
+    Nam hendrerit erat ac ex vulputate, a varius arcu molestie. In venenatis est at ex ultrices, vitae pretium justo
+    euismod. Aliquam feugiat elementum ex, vitae cursus erat dapibus sed. Vestibulum eget porta nibh. Suspendisse
+    ultrices dapibus condimentum. Maecenas dapibus tortor at volutpat faucibus. In hac habitasse platea dictumst.
+    Maecenas euismod tellus viverra lorem ultrices, sed rhoncus leo mollis. Duis quis quam imperdiet, dapibus lorem sed,
+    aliquam justo. Duis nec pharetra enim.
+</p>
+
+<p>
+    Cras gravida sit amet ante vitae interdum. Duis pharetra nec orci sit amet bibendum. Donec aliquam ligula ex, eget
+    malesuada neque semper ut. Quisque eget venenatis turpis. Sed vestibulum est ac ipsum fringilla scelerisque. Cras
+    dui felis, aliquam non rhoncus eget, semper id dolor. Maecenas hendrerit nibh et nisl congue, sit amet blandit elit
+    auctor. Cras mollis est at quam porta, vel accumsan purus congue. Praesent condimentum nulla id imperdiet accumsan.
+    Suspendisse sodales elit finibus massa accumsan laoreet. Duis quis vestibulum quam. Morbi porta sed quam pretium
+    interdum.
+</p>
+
+<p>
+    Maecenas pharetra mi vel tortor commodo, quis commodo magna volutpat. Donec libero enim, sagittis placerat odio
+    eleifend, efficitur suscipit risus. Vestibulum facilisis varius euismod. Etiam id arcu vel sapien lobortis
+    sollicitudin. Nulla sodales tempus massa quis eleifend. In hac habitasse platea dictumst. Nulla facilisi. Nullam sed
+    sem dolor. Fusce molestie purus a tellus vehicula sodales. Integer at ipsum auctor, gravida sem eu, bibendum erat.
+    Vivamus malesuada massa in eros egestas sodales. Duis nisl nunc, ullamcorper non bibendum eget, tempor eu lectus.
+    Curabitur at eros vel urna tempus mattis ac maximus leo.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+{
+    "id": "tinmines",
+    "title": "Tin Tungsten Mines Atlas",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+         [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Tin Tungsten Mines Atlas"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/minesatlas/aboutTin Tungsten.html"
+    },
+    "layersConfig": {
+        "enabled": true,
+		"open": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/minesatlas/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "ENO",
+						"NAME",
+						"STATE",
+						"SYNONYMS",
+						"COMMOD_NAME",
+						"CT_COMMODNAME",
+						"OPERATING_STATUS",
+						"LONGITUDE",
+						"LATITUDE",
+						"DESCRIPTION",
+						"TYPE",
+						"CODE",
+						"VALUE",
+						"GA_CLASS",
+						"COMMODID",
+						"RESOURCE_UNIT",
+						"ACCESS_CODE",
+						"ORE_UNIT",
+						"GRADE_UNIT",
+						"ORE",
+						"RESOURCES",
+						"AV_GRADE",
+						"RESTRICTED",
+						"MINLOCNO",
+						"OTHERID",
+						"PROJECT",
+						"CLASS",
+						"COMMODS",
+						"COMMDNAMES",
+						"ACCURACY",
+						"EASTING",
+						"NORTHING",
+						"ZONE",
+						"LOC_METHOD",
+						"HMAPNO",
+						"HMAPNAME",
+						"QMAPID",
+						"QMAPNAME",
+						"SOURCE"						
+                    ],
+                    "propertiesAlias": [
+                        "Eno",
+						"Name",
+						"State",
+						"Synonyms",
+						"Commod_Name",
+						"Ct_Commodname",
+						"Operating_Status",
+						"Longitude",
+						"Latitude",
+						"Description",
+						"Type",
+						"Code",
+						"Value",
+						"Ga_Class",
+						"Commodid",
+						"Resource_Unit",
+						"Access_Code",
+						"Ore_Unit",
+						"Grade_Unit",
+						"Ore",
+						"Resources",
+						"Av_Grade",
+						"Restricted",
+						"Minlocno",
+						"Otherid",
+						"Project",
+						"Class",
+						"Commods",
+						"Commdnames",
+						"Accuracy",
+						"Easting",
+						"Northing",
+						"Zone",
+						"Loc_Method",
+						"Hmapno",
+						"Hmapname",
+						"Qmapid",
+						"Qmapname",
+						"Source"
+                    ],
+                    "primaryPropertyName": "VALUE"
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ",
+            "maxZoomLevel": 12
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "queryFeatures": false,
+			"opacity": 0.5
+			
+        },        
+        {
+            "slug": "Surface_Geology_Of_Australia_1M",
+			"visibility": false,
+            "opacity": 0.5,
+            "queryFeatures": false
+        },
+		{
+            "slug": "Surface_Geology_Of_Australia_2500K",
+			"visibility": false,
+            "opacity": 0.5,
+            "queryFeatures": false
+        },
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Tin Tungsten",
+            "groupId": "Tin Tungsten",
+            "visibility": true,
+            "defaultLayerId": "Tin Tungsten_Operating_Mines"
+        }
+		
+    ],    
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+	"groupedLayers": [
+        {
+            "groupId": "Tin Tungsten",
+            "layerMaps": [			
+				{
+				"id": "Tin Tungsten_Operating_Mines",
+				"slug": "Tin Tungsten_Operating_Mines",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": true,
+				"name": "Tin Tungsten Operating Mines",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Tin_Tungsten_Operating_Mines",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Tin Tungsten Operating Mines.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Tin_Tungsten_Operating_Mines"					
+				},
+				{
+				"id": "Tin Tungsten_Historical_Mines",
+				"slug": "Tin Tungsten_Historical_Mines",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Tin Tungsten Historical Mines",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Tin_Tungsten_Historical_Mines",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Tin Tungsten Historical Mines.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Tin_Tungsten_Historical_Mines"					
+				},
+				{
+				"id": "Tin Tungsten_Mineral_Deposits",
+				"slug": "Tin Tungsten_Mineral_Deposits",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Tin Tungsten Mineral Deposits",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Tin_Tungsten_Mineral_Deposits",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Tin Tungsten Mineral Deposits.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Tin_Tungsten_Mineral_Deposits"					
+				},
+				{
+				"id": "Tin Tungsten_Occurrences",
+				"slug": "Tin Tungsten_Occurrences",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Tin Tungsten Occurrences",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Tin_Tungsten_Occurrences",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Tin Tungsten Occurrences.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Tin_Tungsten_Occurrences"					
+				},
+				{
+				"id": "Tin Tungsten_Operating_Mines_by_Ore",
+				"slug": "Tin Tungsten_Operating_Mines_by_Ore",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Tin Tungsten Operating Mines by Ore",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Tin_Tungsten_Operating_Mines_by_Ore",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Tin Tungsten Operating Mines by Ore.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Tin_Tungsten_Operating_Mines_by_Ore"					
+				},
+				{
+				"id": "Tin Tungsten_Operating_Mines_by_Av_Grade",
+				"slug": "Tin Tungsten_Operating_Mines_by_Av_Grade",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"visibility": false,
+				"name": "Tin Tungsten Operating Mines by Av Grade",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"layers": "Tin_Tungsten_Operating_Mines_by_Av_Grade",
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"metadataText": "Tin Tungsten Operating Mines by Av Grade.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/MinesAtlasMinerals/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Tin_Tungsten_Operating_Mines_by_Av_Grade"					
+				}	
+			]
+		}
+	]	
+}

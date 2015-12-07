@@ -1,0 +1,28 @@
+{
+    "id": "marine",
+    "title": "Marine and Coastal",
+    "blurb": "Information regarding Australia's coasts and estuaries, seabed mapping and Antarctica. Coasts and estuaries form a dynamic, transition zone between the land and the sea and help Australians achieve many economic, social and environmental benefits. As an island continent, Australia has sovereign rights over a vast area of ocean, along with the fishery, mineral, and petroleum resources found in that area.",
+    "headerConfig": {
+        "title": "Applying geoscience to Australia's most important challenges"
+    },
+    "maps": [
+        {
+            "title": "Ocean Bathymetry",
+            "id": "oceanbathymetry",
+            "previewImageUrl": "content/marine/oceanbathymetry/mapPreview.png",
+            "previewDescription": "Bathymetry is the study and mapping of seafloor topography. It involves obtaining measurements of the depth of the ocean and is equivalent to mapping the topography on land."
+        },
+		{
+            "title": "Offshore Environmental Acreage",
+            "id": "environmentalacreage",
+            "previewImageUrl": "content/marine/environmentalacreage/mapAcreagePreview.png",
+            "previewDescription": "The responsible development of offshore resources is a high priority for the Australian Government and is directly supported by the annual release of acreage for petroleum exploration. The release enables industry to undertake longer term planning, provides certainty in the release process, ensures access to comprehensive pre-competitive geological and geophysical data, and ensures the provision of quality information about issues that may impact on successful applicants."
+        },
+		{
+            "title": "Seabed Mapping",
+            "id": "marineseabed",
+            "previewImageUrl": "content/marine/environmentalacreage/mapSeabedPreview.png",
+            "previewDescription": "Geoscience Australia is investigating a range of spatial interpolation methods to identify those that best model seafloor physical properties for resource management applications."
+        }
+    ]
+}

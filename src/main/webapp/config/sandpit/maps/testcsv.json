@@ -1,0 +1,481 @@
+{
+    "id": "rechargedischarge",
+    "title": "Recharge Discharge",
+    "datumProjection": "EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [99, 10],
+        [169, -55]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Recharge Discharge"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/water/rechargedischarge/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/water/rechargedischarge/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+			"id" : "info",
+			"toolPanelUrl" : "resources/partial/infoPanel.html",
+			"toolToggleUrl": "resources/partial/infoToggle.html",			
+			"config": {
+				"titleText": "Download data",
+				"panelHeading": "Download Data",
+				"infoList": [
+					{ "id" : "Review of mapping approaches to recharge and discharge estimation", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-f780-7506-e044-00144fdd4fa6/Review+of+mapping+approaches+to+recharge+and+discharge+estimation" },
+					{ "id" : "Recharge and discharge estimation in data poor areas: User guide for the recharge and discharge estimation spreadsheets and MapConnect", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a412161b-2716-5d23-e044-00144fdd4fa6/Recharge+and+discharge+estimation+in+data+poor+areas%3A+User+guide+for+the+recharge+and+discharge+estimation+spreadsheets+and+MapConnect" }
+					]
+				}
+			},
+			{
+                "id": "export",
+                "toolPanelUrl" : "resources/partial/exportPanel.html",
+                "toolToggleUrl": "resources/partial/exportToggle.html",
+				"config": {
+					"titleText": "Print to PDF",
+					"panelHeading": "Print to PDF",
+					"url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+					"templatesList": ["Landscape_A4", "Portrait_A4", "Landscape_A3", "Portrait_A3"],
+					"markerUrl": "content/marker/marker-print.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+			},
+			{
+				"id": "identifyTool",
+				"toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+				"toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+				"config": {
+					"titleText": "Field Site Data",
+					"panelHeading": "Field Site Data",
+					"symbol": "<img src=\"content/marker/identify.png\"/>",
+					"propertiesOfInterest": ["TITLE","AUTHOR","DATE_","LOCATION","LATITUDE","LONGITUDE","TECHNIQUE","LANDUSE_DETAILED","LANDUSE_SIMPLIFIED","COMMENTS","RAINFALL_MM_YR","RECHARGE_MM_YR"],
+					"propertiesAlias": ["Title","Author","Date","Location","Latitude","Longitude","Technique","Landuse Detailed","Landuse Simplified","Comments","Rainfall MM/YR","Recharge MM/YR"],
+					"primaryPropertyName": "TITLE",
+					"showEmptyFeatures": true,
+					"requiresGeometry": true,		
+					"markerUrl": "content/marker/marker-identify.png",
+					"markerWidth": "55",
+					"markerHeight": "40",					
+					"endpoints": [
+						{
+							"queryUrl": "/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+							"queryLayers": "Discharge_Database,Recharge_Database",
+							"queryVersion": "1.1.0",
+							"queryType": "WMS"
+						},
+						{
+							"queryUrl": "/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+							"queryLayers": "Evapotranspiration",
+							"queryVersion": "1.1.0",
+							"queryType": "WMS"
+						}
+
+					]
+				}
+			},
+			{
+		"id": "identifyExportTool",
+		"toolPanelUrl": "resources/partial/interrogateExportPanel.html",
+		"toolToggleUrl": "resources/partial/interrogateExportToggle.html",
+		"config": {
+		"titleText": "Field Site Data",
+		"panelHeading": "Field Site Data",
+		"symbol": "<img src=\"content/marker/excel-64.png\"/>",
+		"propertiesOfInterest": ["TITLE","STATE"],
+		"propertiesAlias": ["Title","STATE"],
+		"primaryPropertyName": "TITLE",
+		"showEmptyFeatures": true,
+		"requiresGeometry": true, 
+		"markerUrl": "content/marker/marker-identify.png",
+		"markerWidth": "55",
+		"markerHeight": "40",
+		"sizeOfBBox": 5.0,
+		"endpoints": [
+		{ 
+		"url": "/gis/rest/services/groundwater/RechargeDischarge/MapServer", 
+		"featureType": "Surface_Water_Management_Area_2006", 
+		"featurePrefix": "groundwater_RechargeDischarge", 
+		"geometryName": "Shape", 
+		"layers":"3,4,5,6,7", 
+		"imageDisplay": "600,550,96", 
+		"featureTitle": "myTest Feature Title", 
+		"queryType": "ArcGISREST" }
+		]
+		}
+		}
+			
+        ]
+
+    },
+    "baseMaps": [
+        {
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "World Image",
+            "url": "http://www-test.ga.gov.au/gis/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a>"
+        },
+        {
+            "mapType": "XYZTileCache",
+            "visibility": false,
+            "name": "World Political Boundaries",
+            "url": "http://www-test.ga.gov.au/gis/rest/services/topography/World_Political_Boundaries_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a>"
+        }
+    ],
+    "layerMaps": [
+		{
+            "id":"topography",
+            "mapType":"ArcGISCache",
+            "visibility":true,
+			"queryFeatures" : false,
+            "name":"Australian Topography",
+            "url":"http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_WM/MapServer",
+            "opacity":0.6,
+            "layerTimeout": 5000
+        },
+        {
+            "id":"surfaceGeology",
+            "mapType":"ArcGISCache",
+            "visibility":false,
+			"queryFeatures" : false,
+            "name":"Surface Geology of Australia",
+            "url":"http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer",            
+            "opacity":0.6,
+            "layerTimeout": 5000
+        },
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Chloride",
+            "groupId": "chloride",
+            "visibility": false,
+            "defaultLayerId": "Chloride_Deposition_in_Rainfall"
+        },
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Vegetation",
+            "groupId": "vegetation",
+            "visibility": false,
+            "defaultLayerId": "Vegetation_Type"
+        },
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Method of last resort (MOLR)",
+            "groupId": "MOLR",
+            "visibility": false,
+            "defaultLayerId": "MOLR_Best"
+        },
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Geology Cover",
+            "groupId": "geologycover",
+            "visibility": false,
+            "defaultLayerId": "Geology_Regolith"
+        },		
+		{
+            "mapType": "WMS",
+            "visibility": false,
+            "queryFeatures" : false,
+            "name": "Average Annual Rainfall",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Average_Annual_Rainfall",
+            "metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+			"ogcLinks" : [
+			{"description": "Service Metadata","url": ""},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+			],
+            "opacity": 1.0
+        },		
+		{
+            "mapType": "WMS",
+            "visibility": false,
+            "queryFeatures" : false,
+            "name": "Evapotranspiration",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Evapotranspiration",
+            "metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+			"ogcLinks" : [
+			{"description": "Service Metadata","url": ""},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+			],
+            "opacity": 1.0
+        },
+		{
+            "mapType": "WMS",
+            "visibility": false,
+            "queryFeatures" : false,
+            "name": "Surface Water Management Area 2006",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Surface_Water_Management_Area_2006",
+            "metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+			"ogcLinks" : [
+			{"description": "Service Metadata","url": ""},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+			],
+            "opacity": 1.0
+        },
+		{
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures" : false,
+            "name": "Discharge Database",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Discharge_Database",
+            "metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+			"ogcLinks" : [
+			{"description": "Service Metadata","url": ""},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+			],
+            "opacity": 1.0
+        },
+		{
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures" : false,
+            "name": "Recharge Database",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Recharge_Database",
+            "metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+			"ogcLinks" : [
+			{"description": "Service Metadata","url": ""},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+			],
+            "opacity": 1.0
+        },
+		{
+			"mapType":"WMS",
+			"visibility":true,
+			"name":"Population Centers",
+			"url":"http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer",
+			"layers":"Locations_1,Locations_2,Locations_3,Locations_4,Locations_5,Locations_6,Locations_7,Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8",
+			"metadataText": "This is a topographic reference map showing the populated places of Australia.",
+            "ogcLinks" : [
+			{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B8239E8C0-2D4F-49C2-9A86-159566568965%7D"},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer?f=lyr&v=9.3"}
+			],
+			"opacity":1.0,
+			"layerTimeout": 5000
+		}
+    ],
+	"groupedLayers": [
+		{
+            "groupId": "MOLR",
+            "layerMaps": [
+			{
+				"id": "MOLR_Best",
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Method of last resort (MORL) Best",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "MOLR_Best",
+				"metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+				"ogcLinks" : [
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			},			
+			{
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Method of last resort (MORL) Upper",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "MOLR_Upper",
+				"metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+				"ogcLinks" : [
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			},
+			{
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Method of last resort (MORL) Lower",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "MOLR_Lower",
+				"metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+				"ogcLinks" : [
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			}
+            ]
+        },
+        {
+            "groupId": "chloride",
+            "layerMaps": [
+			{
+				"id": "Chloride_Deposition_in_Rainfall",
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Chloride Deposition in Rainfall",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "Chloride_Deposition_in_Rainfall",
+				"metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+				"ogcLinks" : [
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			},			
+			{
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Chloride Deposition in Rainfall Upper",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "Chloride_Deposition_in_Rainfall_Upper",
+				"metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+				"ogcLinks" : [
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			},
+			{
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Chloride Deposition in Rainfall Lower",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "Chloride_Deposition_in_Rainfall_Lower",
+				"metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+				"ogcLinks" : [
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			}
+				
+            ]
+        },
+        {
+            "groupId": "vegetation",
+            "layerMaps": [
+			{
+				"id": "Vegetation_Type",
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Vegetation Type",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "Vegetation_Type",
+				"metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+				"ogcLinks" : [
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			},
+			{
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Vegetation Cleared",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "Vegetation_Cleared",
+				"metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+				"ogcLinks" : [
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			}				
+				
+            ]
+        },
+		{
+            "groupId": "geologycover",
+            "layerMaps": [
+			{
+				"id": "Geology_Regolith",
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Geology Regolith",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "Geology_Regolith,Geology_Regolith_Cover",
+				"metadataText": "The Geology Regolith dataset is a generalised version based on regolith type of the Surface Geology of Australia (2010 edition) released by Geoscience Australia. This dataset is a seamless national coverage of outcrop and surficial geology, compiled for use at or around 1:1 million scale. The data maps outcropping bedrock geology and unconsolidated or poorly consolidated regolith material covering bedrock. For more information on the Surface Geology of Australia, go to https://www.ga.gov.au/products/servlet/controller?event=GEOCAT_DETAILS&catno=70311.",
+				"opacity": 1.0
+			},			
+			{
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Soil Classification",
+				"url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+				"layers": "Soil_Classification,Soil_Classification_Cover",
+				"metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+				"ogcLinks" : [
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			}
+            ]
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

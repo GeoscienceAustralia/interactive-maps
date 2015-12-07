@@ -1,0 +1,25 @@
+<div ng-controller="addDynamicLayerPanelController">
+    <form name="dynLayer">
+        <div class="form-group">
+            <label for="layerNameText">Name</label>
+            <input type="text" id="layerNameText"  ng-model="dialogModel.layerName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="layerUrlText">Url</label>
+            <input type="text" id="layerUrlText" ng-model="dialogModel.layerUrl" size="10" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="layersText">Layers</label>
+            <input type="text" id="layersText" ng-model="dialogModel.includedLayers" size="10" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="layerTypeText">Type</label>
+            <select id="layerTypeText" ng-model="dialogModel.layerType" class="form-control">
+                <option value="WMS">WMS</option>
+                <option value="XYZTileCache">XYZ</option>
+                <option value="ArcGISCache">ArcGIS</option>
+            </select>
+        </div>
+        <input type="button" id="btnAddDynamicLayer" ng-click="createLayer()" value="Create" />
+    </form>
+</div>

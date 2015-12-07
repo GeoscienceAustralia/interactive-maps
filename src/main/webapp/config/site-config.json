@@ -1,0 +1,45 @@
+{
+    "title": "Interactive Maps",
+    "blurb": "Interactive Maps is a discovery and exploration view of Geoscience Australia's geospatial services. The following scientific and decision support themes have curated content comprised of maps and functions. Each map has queries and functions with linked access to OGC (Open Geospatial Consortium) web services and metadata. This system replaces MapConnect and AMSIS applications.",
+    "headerConfig": {
+        "title": "Applying geoscience to Australia's most important challenges"
+    },
+    "themes": [
+        {
+            "id": "amsis",
+            "title": "Australian Marine Spatial Information System",
+            "previewImageUrl": "content/amsis/themePreview.png",
+            "previewDescription": "Australian Marine Spatial Information System (AMSIS) is a web based interactive mapping and decision support system that provides access to integrated government and non-government information in the Australian Marine Jurisdiction."
+        },		
+        {
+            "id": "national-location-information",
+            "title": "National Location Information",
+            "previewImageUrl": "content/national-location-information/themePreview.png",
+            "previewDescription": "Geoscience Australia provides authoritative geographic information services and products to enable evidence-based decision making, deliver government policy, assist industry development needs and support community wellbeing."
+        },
+        {
+            "id": "minerals",
+            "title": "Geology and Geophysics",
+            "previewImageUrl": "content/minerals/themePreview.png",
+            "previewDescription": "Geoscience Australia provides pre-competitive geoscience information to address greenfield exploration challenges and identify new mineral provinces within Australia."
+        },		
+        {
+            "id": "hazards",
+            "title": "Hazards",
+            "previewImageUrl": "content/hazards/themePreview.png",
+            "previewDescription": "Historically, bushfires, floods, earthquakes, landslides and cyclones have caused loss of life and significant damage to property and infrastructure."
+        },
+        {
+            "id": "marine",
+            "title": "Marine and Coastal",
+            "previewImageUrl": "content/marine/themePreview.png",
+            "previewDescription": "Information regarding Australia's coasts and estuaries, seabed mapping and Antarctica."
+        },
+        {
+            "id": "water",
+            "title": "Water",
+            "previewImageUrl": "content/water/themePreview.png",
+            "previewDescription": "Geoscience Australia provides information and advice towards the management of Australia's groundwater and surface water resources."
+        }
+    ]
+}

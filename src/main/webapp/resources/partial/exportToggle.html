@@ -1,0 +1,12 @@
+<div ng-controller="exportToggleController" title="{{$parent.tool.config.titleText}}">
+    <geo-layer-interaction-toggle map-controller="mapController"
+                                 layer-interaction-id="exportDialogId"
+                                 toggle-on-callback="exportOn()"
+                                 toggle-off-callback="exportOff()"
+                                 controller-emit-event-name="exportToggleReady"
+                                 on-layer-click-callback="exportMap(point,interactionId)"
+                                 class="toolItem toolBarItem"
+                                 alt="{{altText}}">
+                                    <img src="resources/img/adobe-reader-64.png" />
+    </geo-layer-interaction-toggle>
+</div>

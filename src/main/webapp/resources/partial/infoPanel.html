@@ -1,0 +1,14 @@
+<div ng-controller="infoPanelController">
+    <form name="infoForm">
+        <div>
+            <h2 ng-bind="$parent.tool.config.panelHeading"></h2>
+            <table class="table table-striped">
+                <tbody>
+                    <tr ng-repeat="infoUrl in infoList">
+                        <td><a href={{infoUrl.url}} target="_blank">{{infoUrl.id}}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>

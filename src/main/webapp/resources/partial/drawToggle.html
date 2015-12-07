@@ -1,0 +1,12 @@
+<div ng-controller="drawToggleController" title="{{$parent.tool.config.titleText}}">
+    <geo-draw-toggle map-controller="mapController"
+                    layer-interaction-id="drawDialogId"
+                    toggle-on-callback="drawOn()"
+                    toggle-off-callback="drawOff()"
+                    controller-emit-event-name="drawToggleReady"
+                    on-layer-click-callback="drawTool(point,interactionId)"
+                    class="toolItem toolBarItem"
+                    alt="{{altText}}">
+                    <img src="resources/img/pencil-64.png" />
+    </geo-draw-toggle>
+</div>

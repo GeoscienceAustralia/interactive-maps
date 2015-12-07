@@ -1,0 +1,9 @@
+<div ng-controller="addLayerToggleController" title="{{$parent.tool.config.titleText}}">
+    <geo-add-layer-toggle map-controller="mapController"
+                         toggle-on-callback="addLayerToggleOn()"
+                         toggle-off-callback="addLayerToggleOff()"
+                         controller-emit-event-name="addLayerToggleReady"
+                         class="toolItem toolBarItem">
+        <img src="resources/img/Layers.png"/>
+    </geo-add-layer-toggle>
+</div>

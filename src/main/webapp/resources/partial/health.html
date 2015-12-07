@@ -1,0 +1,22 @@
+<div class="container panel-body">
+    <a class="anchor" id="help-Top"></a>
+
+    <h2>Health Check</h2>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>URL</th>
+                <th style="text-align:center;">Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="layer in layers">
+                <td>{{layer.name}}</td>
+                <td ng-class="(layer.status==true) ? 'healthGood' : 'healthBad'"><img/></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

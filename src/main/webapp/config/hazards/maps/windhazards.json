@@ -1,0 +1,1693 @@
+{
+	"id": "windhazards",
+	"title": "Cyclone Wind Hazards",
+	"datumProjection": "EPSG:3857",
+	"displayProjection": "EPSG:4326",
+	"initialExtent": [
+		[
+			6.34,
+			43.49
+		],
+		[
+			192.85,
+			-77.15
+		]
+	],
+	"requiresTermsAndConditions": false,
+	"headerConfig": {
+		"title": "Cyclone Wind Hazards"
+	},
+	"aboutConfig": {
+		"enabled": true,
+		"bodyUrl": "content/hazards/windhazards/about.html"
+	},
+	"layersConfig": {
+		"enabled": true,
+		"open": true
+	},
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+	"baseLayersConfig": {
+		"enabled": true
+	},
+	"legendConfig": {
+		"enabled": true,
+		"legendUrl": "content/hazards/windhazards/legend.html"
+	},
+	"toolsConfig": {
+		"enabled": true,
+		"timeout": 5000,
+		"tools": [
+			{
+				"id": "addLayer"
+			}
+		]
+	},
+	"baseMaps": [
+		{
+			"slug": "World_Political_Boundaries_XYZ",
+			"maxZoomLevel": 12
+			
+		},
+		{
+			"slug": "World_Image_XYZ"
+		}
+		
+	],
+	"layerMaps": [
+		{
+            "slug": "Australian_Topography_2014_ARCGIS",
+			"queryFeatures": false,
+			"visibility": false
+        },		
+		{
+			"isGroupedLayers": true,
+			"groupTitle": "Scale parameter for GEV distribution",
+			"groupId": "ScaleParameter",
+			"visibility": false,
+			"defaultLayerId": "ScaleParameter2y"
+		},
+		{
+			"isGroupedLayers": true,
+			"groupTitle": "Shape  parameter for GEV distribution",
+			"groupId": "ShapeParameter",
+			"visibility": false,
+			"defaultLayerId": "ShapeParameter2y"
+		},
+		{
+			"isGroupedLayers": true,
+			"groupTitle": "Location parameter for GEV distribution",
+			"groupId": "LocationParameter",
+			"visibility": false,
+			"defaultLayerId": "LocationParameter2y"
+		},		
+		{
+			"isGroupedLayers": true,
+			"groupTitle": "Lower percentile return period",
+			"groupId": "LowerPercentile",
+			"visibility": false,
+			"defaultLayerId": "LowerPercentile2y"
+		},
+		{
+			"isGroupedLayers": true,
+			"groupTitle": "Upper percentile return period",
+			"groupId": "UpperPercentile",
+			"visibility": false,
+			"defaultLayerId": "UpperPercentile2y"
+		},
+		{
+			"isGroupedLayers": true,
+			"groupTitle": "Return Period",
+			"groupId": "ReturnPeriod",
+			"visibility": true,
+			"defaultLayerId": "ReturnPeriod2y"
+		},
+		{
+            "slug": "Population_Centres"
+        }
+	],
+	"groupedLayers": [
+		{
+			"groupId": "ReturnPeriod",
+			"layerMaps": [
+				{
+					"id": "ReturnPeriod2y",
+					"slug": "ReturnPeriod2y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 2 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8,
+					"queryFeatures": true,
+					"queryUrl": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.3.0",
+					"queryLayers": "wspd"
+				},
+				{
+					"id": "ReturnPeriod5y",
+					"slug": "ReturnPeriod5y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 5 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod10y",
+					"slug": "ReturnPeriod10y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 10 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod20y",
+					"slug": "ReturnPeriod20y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 20 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=20&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod25y",
+					"slug": "ReturnPeriod25y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 25 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=25&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod50y",
+					"slug": "ReturnPeriod50y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 50 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=50&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod100y",
+					"slug": "ReturnPeriod100y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 100 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=100&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod200y",
+					"slug": "ReturnPeriod200y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 200 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=200&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod250y",
+					"slug": "ReturnPeriod250y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 250 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=250&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod500y",
+					"slug": "ReturnPeriod500y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 500 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=500&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod1000y",
+					"slug": "ReturnPeriod1000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 1 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=1000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod2000y",
+					"slug": "ReturnPeriod2000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 2 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod5000y",
+					"slug": "ReturnPeriod5000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 5 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ReturnPeriod10000y",
+					"slug": "ReturnPeriod10000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Return Period wind speed 10 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspd",
+					"metadataText": "Return Period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				}
+			]
+		},
+		{
+			"groupId": "UpperPercentile",
+			"layerMaps": [
+				{
+					"id": "UpperPercentile2y",
+					"slug": "UpperPercentile2y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 2 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8,
+					"queryFeatures": true,
+					"queryUrl": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.3.0",
+					"queryLayers": "wspdupper"
+				},
+				{
+					"id": "UpperPercentile5y",
+					"slug": "UpperPercentile5y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 5 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile10y",
+					"slug": "UpperPercentile10y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 10 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile20y",
+					"slug": "UpperPercentile20y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 20 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=20&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile25y",
+					"slug": "UpperPercentile25y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 25 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=25&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile50y",
+					"slug": "UpperPercentile50y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 50 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=50&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile100y",
+					"slug": "UpperPercentile100y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 100 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=100&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile200y",
+					"slug": "UpperPercentile200y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 200 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=200&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile250y",
+					"slug": "UpperPercentile250y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 250 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=250&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile500y",
+					"slug": "UpperPercentile500y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 500 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=500&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile1000y",
+					"slug": "UpperPercentile1000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 1 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=1000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile2000y",
+					"slug": "UpperPercentile2000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 2 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile5000y",
+					"slug": "UpperPercentile5000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 5 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "UpperPercentile10000y",
+					"slug": "UpperPercentile10000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Upper percentile return period wind speed 10 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdupper",
+					"metadataText": "Upper percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				}
+			]
+		},
+		{
+			"groupId": "LowerPercentile",
+			"layerMaps": [
+			{
+					"id": "LowerPercentile2y",
+					"slug": "LowerPercentile2y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 2 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8,
+					"queryFeatures": true,
+					"queryUrl": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.3.0",
+					"queryLayers": "wspdlower"
+				},
+				{
+					"id": "LowerPercentile5y",
+					"slug": "LowerPercentile5y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 5 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile10y",
+					"slug": "LowerPercentile10y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 10 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile20y",
+					"slug": "LowerPercentile20y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 20 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=20&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile25y",
+					"slug": "LowerPercentile25y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 25 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=25&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile50y",
+					"slug": "LowerPercentile50y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 50 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=50&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile100y",
+					"slug": "LowerPercentile100y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 100 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=100&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile200y",
+					"slug": "LowerPercentile200y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 200 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=200&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile250y",
+					"slug": "LowerPercentile250y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 250 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=250&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile500y",
+					"slug": "LowerPercentile500y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 500 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=500&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile1000y",
+					"slug": "LowerPercentile1000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 1 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=1000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile2000y",
+					"slug": "LowerPercentile2000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 2 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile5000y",
+					"slug": "LowerPercentile5000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 5 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LowerPercentile10000y",
+					"slug": "LowerPercentile10000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Lower percentile return period wind speed 10 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "wspdlower",
+					"metadataText": "Lower percentile return period wind speed.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				}
+			]
+		},
+		{
+			"groupId": "LocationParameter",
+			"layerMaps": [
+				{
+					"id": "LocationParameter2y",
+					"slug": "LocationParameter2y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 2 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8,
+					"queryFeatures": true,
+					"queryUrl": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.3.0",
+					"queryLayers": "loc"
+				},
+				{
+					"id": "LocationParameter5y",
+					"slug": "LocationParameter5y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 5 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter10y",
+					"slug": "LocationParameter10y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 10 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter20y",
+					"slug": "LocationParameter20y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 20 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=20&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter25y",
+					"slug": "LocationParameter25y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 25 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=25&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter50y",
+					"slug": "LocationParameter50y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 50 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=50&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter100y",
+					"slug": "LocationParameter100y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 100 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=100&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter200y",
+					"slug": "LocationParameter200y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 200 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=200&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter250y",
+					"slug": "LocationParameter250y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 250 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=250&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter500y",
+					"slug": "LocationParameter500y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 500 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=500&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter1000y",
+					"slug": "LocationParameter1000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 1 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=1000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter2000y",
+					"slug": "LocationParameter2000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 2 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter5000y",
+					"slug": "LocationParameter5000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 5 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "LocationParameter10000y",
+					"slug": "LocationParameter10000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Location parameter for GEV distribution 10 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "loc",
+					"metadataText": "Location parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				}
+			]
+		},
+		{
+			"groupId": "ScaleParameter",
+			"layerMaps": [
+				{
+					"id": "ScaleParameter2y",
+					"slug": "ScaleParameter2y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 2 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8,
+					"queryFeatures": true,
+					"queryUrl": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.3.0",
+					"queryLayers": "scale"
+				},
+				{
+					"id": "ScaleParameter5y",
+					"slug": "ScaleParameter5y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 5 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter10y",
+					"slug": "ScaleParameter10y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 10 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter20y",
+					"slug": "ScaleParameter20y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 20 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=20&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter25y",
+					"slug": "ScaleParameter25y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 25 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=25&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter50y",
+					"slug": "ScaleParameter50y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 50 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=50&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter100y",
+					"slug": "ScaleParameter100y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 100 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=100&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter200y",
+					"slug": "ScaleParameter200y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 200 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=200&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter250y",
+					"slug": "ScaleParameter250y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 250 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=250&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter500y",
+					"slug": "ScaleParameter500y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 500 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=500&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter1000y",
+					"slug": "ScaleParameter1000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 1 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=1000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter2000y",
+					"slug": "ScaleParameter2000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 2 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter5000y",
+					"slug": "ScaleParameter5000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 5 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ScaleParameter10000y",
+					"slug": "ScaleParameter10000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Scale parameter for GEV distribution 10 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "scale",
+					"metadataText": "Scale parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				}
+			]
+		},
+		{
+			"groupId": "ShapeParameter",
+			"layerMaps": [
+				{
+					"id": "ShapeParameter2y",
+					"slug": "ShapeParameter2y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 2 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8,
+					"queryFeatures": true,
+					"queryUrl": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.3.0",
+					"queryLayers": "shp"
+				},
+				{
+					"id": "ShapeParameter5y",
+					"slug": "ShapeParameter5y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 5 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter10y",
+					"slug": "ShapeParameter10y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 10 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter20y",
+					"slug": "ShapeParameter20y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 20 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=20&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter25y",
+					"slug": "ShapeParameter25y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 25 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=25&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter50y",
+					"slug": "ShapeParameter50y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 50 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=50&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter100y",
+					"slug": "ShapeParameter100y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 100 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=100&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter200y",
+					"slug": "ShapeParameter200y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 200 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=200&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter250y",
+					"slug": "ShapeParameter250y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 250 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=250&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter500y",
+					"slug": "ShapeParameter500y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 500 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=500&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter1000y",
+					"slug": "ShapeParameter1000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 1 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=1000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter2000y",
+					"slug": "ShapeParameter2000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 2 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=2000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter5000y",
+					"slug": "ShapeParameter5000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 5 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=5000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				},
+				{
+					"id": "ShapeParameter10000y",
+					"slug": "ShapeParameter10000y",
+					"extent": [[99,10],[169,-55]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Shape parameter for GEV distribution 10 000 years",
+					"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?ELEVATION=10000&TIME=2015-08-18T12%3A57%3A32Z&STYLES=boxfill%2Frainbow&CRS=EPSG%3A4326&COLORSCALERANGE=-50%2C50&NUMCOLORBANDS=20&LOGSCALE=false",
+					"layers": "shp",
+					"metadataText": "Shape parameter for GEV distribution.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://dapds00.nci.org.au/thredds/wms/fj6/TCRM/benchmark/hazard/hazard.nc?request=GetCapabilities&service=WMS"
+						}
+					],
+					"opacity": 0.8
+				}
+			]
+		}
+	],
+	"search": {
+		"type": "geonames",
+		"typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+		"primaryWfsProperty": "name"
+	}
+}

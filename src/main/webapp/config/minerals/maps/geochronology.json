@@ -1,0 +1,320 @@
+{
+    "id": "geology",
+    "title": "Geochronology",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            30,
+            10
+        ],
+        [
+            176,
+            -75
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Geochronology"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/minerals/geochronology/about.html"
+    },
+    "layersConfig": {
+        "enabled": true,
+		"open": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/minerals/geochronology/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Geoscience Australia's Geochron Delivery system (first release: September 2011)",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_acf759f9-fea2-1f37-e044-00144fdd4fa6/Geoscience+Australia%27s+Geochron+Delivery+system+%28first+release%3A+September+2011%29"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "Site_Number",
+                        "Sample_ID",
+                        "Record_Number",
+                        "Age_Ma",
+                        "Age_95conf_Ma",
+                        "Sr87_86_Init",
+                        "Sr87_86_Init_95conf",
+                        "MSWD",
+                        "Comments",
+                        "LowerIntercept_Age_Ma",
+                        "LowerIntercept_Age_95conf",
+                        "SiteID",
+                        "SampleID",
+                        "Fieldid",
+                        "Drillhole",
+                        "Upper_Depth",
+                        "Lower_Depth",
+                        "Datum",
+                        "Location_Comments",
+                        "Locational_Accuracy",
+                        "Stratno",
+                        "Unitname",
+                        "Lithname",
+                        "Description",
+                        "LithGroup",
+                        "Occurrence_mode",
+                        "Felsic_Igneous_Rock",
+                        "Granite_Rock_Type",
+                        "Unit_Comments",
+                        "State",
+                        "Region",
+                        "Element",
+                        "Isotope_Data_Source",
+                        "Numeric_Age",
+                        "Numeric_Age_Error",
+                        "Numeric_Age_source",
+                        "Age_Comments",
+                        "Sm_ppm",
+                        "Nd_ppm",
+                        "Sm147_Nd144",
+                        "Nd143_Nd144_Meas",
+                        "Nd143_Nd144_Error",
+                        "Std_nNd1",
+                        "Std_LaJolla",
+                        "Std_BCR1",
+                        "Isotope_Comments",
+                        "Nd143_Nd144_Corr",
+                        "Epsilon_Nd",
+                        "Epsilon_Nd_Error",
+                        "TDM",
+                        "TDM_Error",
+                        "T2DM",
+                        "Residence_Time",
+                        "Sampleno",
+                        "GDA94_Latitude",
+                        "GDA94_Longitude",
+                        "Entity_ID",
+                        "Entity_Type",
+                        "Sample_No",
+                        "Originator",
+                        "Sample_Type",
+                        "Top_Depth_M",
+                        "Base_Depth_M",
+                        "Stratigraphic_Unit",
+                        "Province",
+                        "Lithology_Group",
+                        "Qualifier_3",
+                        "Qualifier_2",
+                        "Qualifier_1",
+                        "Lithology_Name",
+                        "Remark",
+                        "Geochron_Mineral",
+                        "Physical_Form",
+                        "Geological_Attribution",
+                        "Age_Qualifier",
+                        "Sym_Error_Ma",
+                        "Asym_Pos_Error_Ma",
+                        "Asym_Neg_Error_Ma",
+                        "Uncertainty",
+                        "Age_Type",
+                        "Intercept",
+                        "Isotopic_Ratio",
+                        "Num_Analyses",
+                        "MSWD_Concordance",
+                        "Longitude",
+                        "Latitude",
+						"plotSymbol",
+						"contactType",
+						"FEATURETYPE"
+                    ],
+                    "propertiesAlias": [
+                        "Site Number",
+                        "Sample ID",
+                        "Record Number",
+                        "Age Ma",
+                        "Age 95conf Ma",
+                        "Sr87 86 Init",
+                        "Sr87 86 Init 95conf",
+                        "MSWD",
+                        "Comments",
+                        "LowerIntercept Age Ma",
+                        "LowerIntercept Age 95conf",
+                        "SiteID",
+                        "SampleID",
+                        "Fieldid",
+                        "Drillhole",
+                        "Upper Depth",
+                        "Lower Depth",
+                        "Datum",
+                        "Location Comments",
+                        "Locational Accuracy",
+                        "Stratno",
+                        "Unit Name",
+                        "Lithname",
+                        "Description",
+                        "LithGroup",
+                        "Occurrence mode",
+                        "Felsic Igneous Rock",
+                        "Granite Rock Type",
+                        "Unit Comments",
+                        "State",
+                        "Region",
+                        "Element",
+                        "Isotope Data Source",
+                        "Numeric Age",
+                        "Numeric Age Error",
+                        "Numeric Age source",
+                        "Age Comments",
+                        "Sm ppm",
+                        "Nd ppm",
+                        "Sm147 Nd144",
+                        "Nd143 Nd144 Meas",
+                        "Nd143 Nd144 Error",
+                        "Std nNd1",
+                        "Std LaJolla",
+                        "Std BCR1",
+                        "Isotope Comments",
+                        "Nd143 Nd144 Corr",
+                        "Epsilon Nd",
+                        "Epsilon Nd Error",
+                        "TDM",
+                        "TDM Error",
+                        "T2DM",
+                        "Residence Time",
+                        "Sampleno",
+                        "GDA94 Latitude",
+                        "GDA94 Longitude",
+                        "Entity ID",
+                        "Entity Type",
+                        "Sample No",
+                        "Originator",
+                        "Sample Type",
+                        "Top Depth M",
+                        "Base Depth M",
+                        "Stratigraphic Unit",
+                        "Province",
+                        "Lithology Group",
+                        "Qualifier 3",
+                        "Qualifier 2",
+                        "Qualifier 1",
+                        "Lithology Name",
+                        "Remark",
+                        "Geochron Mineral",
+                        "Physical Form",
+                        "Geological Attribution",
+                        "Age Qualifier",
+                        "Sym Error Ma",
+                        "Asym Pos Error Ma",
+                        "Asym Neg Error Ma",
+                        "Uncertainty",
+                        "Age Type",
+                        "Intercept",
+                        "Isotopic Ratio",
+                        "Num Analyses",
+                        "MSWD Concordance",
+                        "Longitude",
+                        "Latitude",
+						"Plot Symbol",
+						"Contact Type",
+						"Feature type"
+                    ],
+                    "primaryPropertyName": "Site_Number"
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ",
+            "maxZoomLevel": 12
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "queryFeatures": false
+			
+        },        
+        {
+            "slug": "Surface_Geology_Of_Australia_1M",
+            "opacity": 0.5,
+            "queryFeatures": false
+        },
+		{
+            "slug": "Surface_Geology_Of_Australia_2500K",
+            "opacity": 0.5,
+            "queryFeatures": false
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Geochronology Group",
+            "groupId": "Geochronology",
+            "visibility": true,
+            "defaultLayerId": "All_Geochronology"
+        }
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "Geochronology",
+            "layerMaps": [
+                {
+                    "slug": "All_Geochronology"
+                },
+                {
+                    "slug": "Sm_Nd"
+                },
+                {
+                    "slug": "U_Pb_SHRIMP_Magmatic"
+                },
+                {
+                    "slug": "U_Pb_SHRIMP_Maximum_Depositional"
+                },
+                {
+                    "slug": "U_Pb_SHRIMP_Metamorphic"
+                },
+                {
+                    "slug": "U_Pb_TIMS_Conventional"
+                },
+                {
+                    "slug": "Rb_Sr"
+                }
+            ]
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

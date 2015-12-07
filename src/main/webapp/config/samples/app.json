@@ -1,0 +1,22 @@
+{
+    "id": "samples",
+    "title": "Interactive Maps Code Samples",
+    "blurb": "Here are a set of simple map samples to explain how configuation works.",
+    "headerConfig": {
+        "title": "Interactive Maps Code Samples"
+    },
+    "maps": [
+        {
+            "id": "basemapsample",
+            "title" : "Base Map Sample",
+            "previewImageUrl": "content/samples/basemapsamples.png",
+            "previewDescription": "Base map sample showing all kinds of selectable base maps."
+        },
+		{
+            "id": "basemapsample",
+            "title" : "Base Map Sample",
+            "previewImageUrl": "content/samples/wmslayersample.png",
+            "previewDescription": "Base map sample showing all kinds of selectable base maps."
+        }
+    ]
+}

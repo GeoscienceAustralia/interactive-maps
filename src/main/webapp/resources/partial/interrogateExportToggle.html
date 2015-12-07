@@ -1,0 +1,9 @@
+<div ng-controller="interrogateExportToggleController" title="{{$parent.tool.config.titleText}}">
+    <geo-config-tool-toggle
+            tool-config="$parent.tool"
+            on-toggle-on="interrogateExportToggleOn(toolConfig)"
+            on-toggle-off="interrogateExportToggleOff(toolConfig)"
+            controller-emit-event-name="{{toolControllerEventName}}"
+            on-resolve-parent-toolbar="resolveParentToolbar(toolbarScope)">
+    </geo-config-tool-toggle>
+</div>

@@ -1,0 +1,105 @@
+{
+    "id": "AusimageCanberra2014",
+    "title": "Ausimage Canberra 2014",
+    "previewImageUrl": "content/national-location-information/AusimageCanberra2014/mapPreview.png",
+    "previewDescription": "Ausimage Canberra 2014 is an OGC WMS web service of high resolution aerial imagery (10 cm to 18 cm) over Canberra and Queanbeyan, acquired in February and April 2014.",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [140, -29],
+        [151, -35]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Ausimage Canberra 2014"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/national-location-information/AusimageCanberra2014/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/national-location-information/AusimageCanberra2014/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+		{
+                "id": "export",
+                "toolPanelUrl" : "resources/partial/exportPanel.html",
+                "toolToggleUrl": "resources/partial/exportToggle.html",
+				"config": {
+					"titleText": "Print PDF",
+					"panelHeading": "Print PDF",
+					"url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+					"templatesList": ["Landscape_A4", "Portrait_A4", "Landscape_A3", "Portrait_A3"],
+					"markerUrl": "content/marker/marker-print.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+		},
+		{
+				"id": "identifyTool",
+				"toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+				"toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+				"config": {
+					"titleText": "Identify Features",
+					"panelHeading": "Identify Features",
+					"symbol": "<img src=\"content/marker/identify.png\"/>",
+					"propertiesOfInterest": ["ID","PIXEL"],
+					"propertiesAlias": ["Id","Pixel"],
+					"primaryPropertyName": "ID",
+					"showEmptyFeatures": true,
+					"requiresGeometry": true,		
+					"markerUrl": "content/marker/marker-identify.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+			}		
+        ]
+    },
+    "baseMaps": [
+		{
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "World Image",
+            "url": "http://www-test.ga.gov.au/gis/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+			"maxZoomLevel" : 13,
+            "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        },
+        {
+            "mapType": "XYZTileCache",
+            "visibility": false,
+            "name": "World Political Boundaries",
+            "url": "http://www-test.ga.gov.au/gis/rest/services/topography/World_Political_Boundaries_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "attribution": "World Political Boundaries <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>"
+        }
+		
+    ],
+    "layerMaps": [
+		
+		{
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Ausimage Canberra 2014",
+            "url": "http://www.ga.gov.au/gisimg/rest/services/earth_observation/Ausimage_Canberra_2014/ImageServer/WMSServer",
+            "metadataText": "Test.",
+            "ogcLinks" : [{"description": "REST","url": "http://www.ga.gov.au/gisimg/rest/services/earth_observation/Ausimage_Canberra_2014/ImageServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gisimg/services/earth_observation/Ausimage_Canberra_2014/ImageServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gisimg/rest/services/earth_observation/Ausimage_Canberra_2014/ImageServer?f=lyr&v=9.3"}]
+        }			
+       ]
+}

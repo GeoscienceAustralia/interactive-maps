@@ -1,0 +1,110 @@
+{
+    "id": "MDBEP",
+    "title": "Murray-Darling Basin - Elevation Project",
+    "previewImageUrl": "content/national-location-information/MDBEP/mapPreview.png",
+    "previewDescription": "Geoscience Australia provides advice, expertise and support to the Murray Darling Basin in capturing high resolution elevation products.",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            140,
+            -29
+        ],
+        [
+            151,
+            -35
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Murray-Darling Basin - Elevation Project"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/national-location-information/MDBEP/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/national-location-information/MDBEP/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "export"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "ID",
+                        "PIXEL"
+                    ],
+                    "propertiesAlias": [
+                        "Id",
+                        "Pixel"
+                    ],
+                    "primaryPropertyName": "ID"
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Elevation_Z54",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Elevation_Z55",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Elevation_Z56",
+            "queryFeatures": true
+        },
+		{
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "MDBEPShapes",
+            "url": "http://intranet-dev.ga.gov.au/gis/rest/services/topography/MDBEP_Shapes/MapServer",
+            "layers": ["0", "1", "3", "4"],
+            "opacity": 1,
+            "metadataText": "Test.",
+            "ogcLinks" : [{"description": "REST","url": "http://intranet-dev.ga.gov.au/gis/rest/services/topography/MDBEP_Shapes/MapServer"},
+			{"description": "WMS Capabilities","url": "http://intranet-dev.ga.gov.au/gis/services/topography/MDBEP_Shapes/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://intranet-dev.ga.gov.au/gis/rest/services/topography/MDBEP_Shapes/MapServer?f=lyr&v=9.3"}]
+        },
+		{
+			"mapType":"WMS",
+			"visibility":true,
+			"name":"MDBEP Reference Map",
+			"url":"http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer",
+			"layers":"Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8,TOPO250K_Roads,Roads_4,Roads_3,Roads_2,Roads_1",
+			"metadataText": "This is a topographic reference map showing the populated places of Australia.",
+            "ogcLinks" : [
+			{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B8239E8C0-2D4F-49C2-9A86-159566568965%7D"},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer?f=lyr&v=9.3"}
+			],
+			"opacity":1.0,
+			"layerTimeout": 5000
+		}		
+       ]
+}

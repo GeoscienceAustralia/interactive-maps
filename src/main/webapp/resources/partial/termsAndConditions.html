@@ -1,0 +1,12 @@
+<div class="modal-header termsAndConditions">
+    <img src="resources/css/images/geoscience_inline_padded_small.png" />
+	<h3>Terms and Conditions</h3>
+</div>
+<div ng-if="!useTermsUrl" class="modal-body" ng-bind="termsBody"></div>
+<div ng-if="useTermsUrl" class="modal-body">
+    <div ng-include="termsUrl"></div>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-primary" ng-click="ok()">I Agree</button>
+	<button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

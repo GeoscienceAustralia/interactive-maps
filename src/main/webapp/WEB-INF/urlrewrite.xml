@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN" "urlrewrite3.2.dtd">
+<urlrewrite default-match-type="wildcard">
+    <rule>
+        <name>forward / to index.html</name>
+        <from>/</from>
+        <to type="forward" last="true">index.html</to>
+    </rule>
+    <rule match-type="regex">
+        <name>redirect /index.* but not index.html to /</name>
+        <from>^/index\.(?!html).*$</from>
+        <to
+                type="redirect"
+                last="true">%{context-path}/</to>
+    </rule>
+</urlrewrite>

@@ -1,0 +1,43 @@
+{
+    "id": "baseconfig",
+    "datumProjection": "EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [145.5, -16.5],
+        [145.69, -17.8]
+    ],
+	    "layersConfig": {
+        "enabled": true
+    },
+    "baseMaps": [		
+         {
+            "mapType": "XYZTileCache",
+            "visibility": false,
+            "name": "XYZ Tile Cache GA World Image",
+            "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        }
+		
+    ],
+    "layerMaps": [
+		{
+			"mapType":"WMS",
+			"visibility":true,
+			"name":"Text AA",
+			"url":"http://intranet-test.ga.gov.au/gis/services/topography/Dynamic_National_Map_Labelling_and_Boundaries_new/MapServer/WMSServer",
+			"layers":"PopulatedPlaces_Canberra,CapitalCities1,CapitalCities2,CapitalCities3,PopulatedPlaces_20Mill_to_10Mill_Scale,PopulatedPlaces_10Mill_to_7Mill_Scale,PopulatedPlaces_7Mill_to_1Mill_Scale,PopulatedPlaces_1Mill_to_150K_Scale,PopulatedPlaces_150K_to_100K_Scale,PopulatedPlaces_100K_to_73K_Scale,PopulatedPlaces_73K_to_5K_Scale,Great_Barrier_Reef,Great_Dividing_Range,Linear_Relief_Features,Linear_Hydro_Features,Area_Relief_Features,Area_Hydro_Features,State_Names_Points,Locations_10Mill_to_7Mill_Scale,Locations_7Mill_to_5Mill_Scale,Locations_5Mill_to_750K_Scale,Locations_750K_to_500K_Scale,Locations_500K_to_200K_Scale_NamedBuildings,Locations_500K_to_200K_Scale_PlacenameMountains,Locations_500K_to_200K_Scale_GeneralPlaceNames,Locations_200K_to_73K_Scale_NamedBuildings,Locations_200K_to_73K_Scale_Rocks_and_Pinnacles,Locations_200K_to_73K_Scale_GeneralPlaceNames,Locations_73K_to_5K_Scale_Rocks_and_Pinnacles,Locations_73K_to_5K_Scale_Mountains,Locations_73K_to_5K_Scale_GeneralPlaceNames,Locations_73K_to_5K_Scale_Capes",
+			"metadataText": "This is a topographic reference map showing the populated places of Australia.",
+            "ogcLinks" : [
+			{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B8239E8C0-2D4F-49C2-9A86-159566568965%7D"},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer?f=lyr&v=9.3"}
+			],
+			"opacity":1.0,
+			"layerTimeout": 5000
+		}	
+    ]
+}

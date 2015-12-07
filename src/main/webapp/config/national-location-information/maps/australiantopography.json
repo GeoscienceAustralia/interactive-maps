@@ -1,0 +1,186 @@
+{
+    "id": "australiantopography",
+    "title": "Australian Topography",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Australian Topography"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/national-location-information/australiantopography/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/national-location-information/australiantopography/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "GEODATA TOPO 250K Series 3",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-eab0-7506-e044-00144fdd4fa6/GEODATA+TOPO+250K+Series+3+-+Packaged+%28Personal+Geodatabase+format%29"
+                        },
+						{ "id" : "National Onshore Oil Pipeline Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0f41bfd1-67bf-7a2a-e053-10a3070a4514/National+Onshore+Oil+Pipelines+Database" },
+						{ "id" : "National Onshore Gas Pipeline Database", "url" : 	"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0a3ae167-c002-5f77-e054-00144fdd4fa6/National+Onshore+Gas+Pipelines+Database" },
+						{ "id" : "National Major Ports Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_04ca8df7-4b3b-73a3-e054-00144fdd4fa6/National+Major+Ports+Database" },
+						{ "id" : "National Ferry Terminals Database", "url" : 	"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_04ca8df7-4b3a-73a3-e054-00144fdd4fa6/National+Ferry+Terminals+Database" },
+						{ "id" : "National Electricity Transmission Lines Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1185c97c-c042-be90-e053-12a3070a969b/National+Electricity+Transmission+Lines+Database" },
+						{ "id" : "National Electricity Transmission Substations", "url" : 	"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_13be62a4-4fe3-f812-e053-12a3070a22be/National+Electricity+Transmission+Substations" }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "draw"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "CLASS",
+                        "FEATURETYPE",
+                        "TYPE",
+                        "ROUTENAME",
+                        "SECTIONNAME",
+                        "NAME",
+                        "PERENNIALITY",
+                        "HIERARCHY",
+                        "FORMATION",
+                        "NRN",
+                        "SRN",
+                        "GAUGE",
+                        "OWNER",
+                        "RELATIONSHIP",
+                        "STATUS",
+                        "TRACKS",
+                        "POPULATION",
+                        "FEATURERELIABILITY",
+                        "FEATURESOURCE",
+                        "ATTRIBUTERELIABILITY",
+                        "ATTRIBUTESOURCE",
+                        "PLANIMETRICACCURACY",
+                        "SOURCE",
+                        "CREATIONDATE",
+                        "RETIREMENTDATE",
+                        "REVISED",
+                        "UPPERSCALE",
+                        "USCERTAINTY",
+                        "TEXTNOTE",
+                        "METADATACOMMENT",
+                        "ELEVATION",
+                        "AUSHYDRO_ID"
+                    ],
+                    "propertiesAlias": [
+                        "Class",
+                        "Feature Type",
+                        "Type",
+                        "Route Name",
+                        "Section Name",
+                        "Name",
+                        "Perenniality",
+                        "Hierarchy",
+                        "Formation",
+                        "National Route Number",
+                        "State Route Number",
+                        "Gauge",
+                        "Owner",
+                        "Relationship",
+                        "Status",
+                        "Tracks",
+                        "Population",
+                        "Feature Reliability",
+                        "Feature Source",
+                        "Attribute Reliability",
+                        "Attribute Source",
+                        "Planimetric Accuracy (m)",
+                        "Source",
+                        "Creation Date",
+                        "Retirement Date",
+                        "Revised",
+                        "Upperscale",
+                        "Upperscale Certainty",
+                        "Textnote",
+                        "Metadata Comment",
+                        "Elevation",
+                        "Aushydro_Id"
+                    ],
+					"primaryPropertyName": "FEATURETYPE"
+                }
+            }
+        ]
+    },	
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS"
+        },
+        {
+            "slug": "Australian_Topographic_250K_Mosaic",
+            "visibility": false
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+	"addLayerMaps": [
+        {
+            "slug": "National_Electricty_Lines"
+        },
+		{
+            "slug": "National_Electricty_Substations"
+        },
+		{
+            "slug": "Ferry_Terminals"
+		},
+		{
+            "slug": "Major_Ports"
+		},
+		{
+            "slug": "Oil_Pipelines"
+        },
+		{
+            "slug": "Gas_Pipelines"
+        }
+    ]
+}

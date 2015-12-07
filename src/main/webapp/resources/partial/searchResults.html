@@ -1,0 +1,13 @@
+<div class="searchResults" id="searchResultsPanelRight">
+	<h3>Search Results</h3>
+    <div><span ng-bind="$parent.searchResults.searchResults.length"></span> results found.</div>
+	<div ng-repeat="result in $parent.searchResults.searchResults ">
+		<geo-zoom-to-center-position-anchor
+			   geo-json-coord="result.geometry.coordinates" 
+               projection="{{result.crs.properties.name}}"
+               map-controller="$parent.mapController"
+               zoom-level="8">{{result.properties.name}}
+            </geo-zoom-to-center-position-anchor>
+	</div>
+	<div ng-show="$parent.searchResults.searchResults != null && $parent.searchResults.searchResults.length == 0">No results</div>
+</div>

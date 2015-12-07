@@ -1,0 +1,31 @@
+{
+    "id": "australiantopography",
+    "title": "Australian Topography",
+    "datumProjection": "EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [100, 10],
+        [176, -55]
+    ],
+    "headerConfig": {
+        "title": "Australian Topography"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "baseMaps": [
+        {
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "World Image",
+            "url": "http://www-test.ga.gov.au/gis/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        }
+    ]
+}

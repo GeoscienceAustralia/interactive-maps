@@ -1,0 +1,181 @@
+{
+    "id": "marineseabed",
+    "title": "Marine Seabed",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv3",
+    "initialExtent": [
+        [99, 10],
+        [169, -55]
+    ],
+	"zoomLevel": 0,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Marine Seabed"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/marine/marineseabed/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/marine/marineseabed/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+		{
+                "id": "addLayer"
+        },
+		{
+                "id": "export",
+                "toolPanelUrl" : "resources/partial/exportPanel.html",
+                "toolToggleUrl": "resources/partial/exportToggle.html",
+				"config": {
+					"titleText": "Print to PDF",
+					"panelHeading": "Print to PDF",
+					"url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+					"templatesList": ["Landscape_A4", "Portrait_A4", "Landscape_A3", "Portrait_A3"],
+					"markerUrl": "content/marker/marker-print.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+		}	
+        ]
+    },
+    "baseMaps": [
+		{
+            "slug": "World_Image_XYZ"
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }		
+    ],
+    "layerMaps": [
+		{
+            "slug": "Australian_Topography_2014_ARCGIS"
+        },
+		{
+            "id":"SeabedFeatures",
+            "mapType":"WMS",
+            "visibility":false,
+            "name":"Seabed Features",
+            "url":"http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WMSServer",
+            "layers":"geomorphic_features",
+            "opacity":1.0,
+            "layerTimeout": 5000,
+            "queryFeatures" : true,
+			"metadataText": "This web service describes the distribution of seabed geomorphic features on the Australian continental margin, identified and mapped using the Australian Bathymetry and Topography dataset (Webster & Petkovic 2005). Twenty one feature types are shown for the seafloor within the Australian Marine Jurisdiction, including territories around Christmas Island, Cocos (Keeling) Island, Macquarie Island and Norfolk Island (Heam & Harris 2008).",
+			"ogcLinks" : [
+			{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B565270D8-D06D-4AFA-A0A6-D1CE7EB9491A%7D"},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/marine_coastal/Australian_Seabed_Features/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/marine_coastal/Australian_Seabed_Features/MapServer?f=lyr&v=9.3"}
+			]
+        },
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Seabed",
+            "groupId": "seabed",
+            "visibility": true,
+            "defaultLayerId": "SeabedSand"
+        },
+		{
+			"mapType":"WMS",
+			"visibility":true,
+			"name":"Population Centers",
+			"url":"http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer",
+			"layers":"Locations_1,Locations_2,Locations_3,Locations_4,Locations_5,Locations_6,Locations_7,Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8",
+			"metadataText": "This is a topographic reference map showing the populated places of Australia.",
+            "ogcLinks" : [
+			{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B8239E8C0-2D4F-49C2-9A86-159566568965%7D"},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer?f=lyr&v=9.3"}
+			],
+			"opacity":1.0,
+			"layerTimeout": 5000
+		}
+    ],
+	"groupedLayers": [
+		{
+            "groupId": "seabed",
+            "layerMaps": [
+			{
+				"id": "SeabedSand",
+				"mapType": "WMS",
+				"visibility": true,
+				"queryFeatures" : false,
+				"name": "Seabed Sand",
+				"url": "http://intranet-test.ga.gov.au/gis/services/marine_coastal/Marine_Seabed/MapServer/WMSServer",
+				"layers": "Sand",
+				"metadataText": "This dataset provides the spatially continuous data of the seabed sand content (sediment fraction 63-2000 mm) expressed as a weight percentage ranging from 0 to 100%, presented in 0.01 decimal degree resolution raster format. The dataset covers the Australian continental EEZ, including seabed surrounding Tasmania. It does not include areas surrounding Macquarie Island, and the Australian Territories of Norfolk Island, Christmas Island, and Cocos (Keeling) Islands or Australia's marine jurisdiction off of the Territory of Heard and McDonald Islands and the Australian Antarctic Territory. This dataset supersedes previous predictions of sediment sand content for the Australian Margin with demonstrated improvements in accuracy. Accuracy of predictions varies based on density of underlying data and level of seabed complexity. Artefacts occur in this dataset as a result of insufficient samples in relevant regions. This dataset is intended for use at national and regional scales. The dataset may not be appropriate for use at local scales in areas where sample density is insufficient to detect local variation in sediment properties. To obtain the most accurate interpretation of sediment distribution in these areas, it is recommended that additional samples be collected and interpolations updated.",
+				"ogcLinks" : [
+				{"description": "Data Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a4c78d63-3040-0e18-e044-00144fdd4fa6/Seabed+Sand+Content+Across+the+Australian+Continental+EEZ%2C+2011"},
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/marine/Marine_Seabed/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/marine/Marine_Seabed/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/marine/Marine_Seabed/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			},
+			{
+				"id": "Seabed Mud",
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Seabed Mud",
+				"url": "http://intranet-test.ga.gov.au/gis/services/marine_coastal/Marine_Seabed/MapServer/WMSServer",
+				"layers": "Mud",
+				"metadataText": "This dataset provides the spatially continuous data of seabed mud content (sediment fraction < 63 µm) expressed as a weight percentage ranging from 0 to 100%, presented in 0.01 decimal degree resolution raster format. The dataset covers the Australian continental EEZ, including seabed surrounding Tasmania. It does not include areas surrounding Macquarie Island, and the Australian Territories of Norfolk Island, Christmas Island, and Cocos (Keeling) Islands or Australia's marine jurisdiction off of the Territory of Heard and McDonald Islands and the Australian Antarctic Territory. This dataset supersedes previous predictions of sediment mud content for the Australian Margin with demonstrated improvements in accuracy. Accuracy of predictions varies based on density of underlying data and level of seabed complexity. Artefacts occur in this dataset as a result of insufficient samples in relevant regions. This dataset is intended for use at national and regional scales. The dataset may not be appropriate for use at local scales in areas where sample density is insufficient to detect local variation in sediment properties. To obtain the most accurate interpretation of sediment distribution in these areas, it is recommended that additional samples be collected and interpolations updated.",
+				"ogcLinks" : [
+				{"description": "Data Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a4c4754b-58ce-4c48-e044-00144fdd4fa6/Seabed+Mud+Content+Across+the+Australian+Continental+EEZ%2C+2011"},
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/marine_coastal/Marine_Seabed/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/marine_coastal/Marine_Seabed/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/marine_coastal/Marine_Seabed/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			},
+			{
+				"id": "SeabedGravel",
+				"mapType": "WMS",
+				"visibility": false,
+				"queryFeatures" : false,
+				"name": "Seabed Gravel",
+				"url": "http://intranet-test.ga.gov.au/gis/services/marine_coastal/Marine_Seabed/MapServer/WMSServer",
+				"layers": "Gravel",
+				"metadataText": "The dataset provides the spatially continuous data of the seabed gravel content (sediment fraction >2000 µm) expressed as a weight percentage ranging from 0 to 100%, presented in 0.01 decimal degree resolution raster format. The dataset covers the Australian continental EEZ, including seabed surrounding Tasmania. It does not include areas surrounding Macquarie Island, and the Australian Territories of Norfolk Island, Christmas Island, and Cocos (Keeling) Islands or Australia's marine jurisdiction off of the Territory of Heard and McDonald Islands and the Australian Antarctic Territory. This dataset supersedes previous predictions of sediment gravel content for the Australian Margin with demonstrated improvements in accuracy. Accuracy of predictions varies based on density of underlying data and level of seabed complexity. Artefacts occur in this dataset as a result of insufficient samples in relevant regions. This dataset is intended for use at national and regional scales. The dataset may not be appropriate for use at local scales in areas where sample density is insufficient to detect local variation in sediment properties. To obtain the most accurate interpretation of sediment distribution in these areas, it is recommended that additional samples be collected and interpolations updated.",
+				"ogcLinks" : [
+				{"description": "Data Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a4c78d63-303f-0e18-e044-00144fdd4fa6/Seabed+Gravel+Content+Across+the+Australian+Continental+EEZ%2C+2011"},
+				{"description": "Service Metadata","url": ""},
+				{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/marine_coastal/Marine_Seabed/MapServer"},
+				{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/marine_coastal/Marine_Seabed/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+				{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/marine_coastal/Marine_Seabed/MapServer?f=lyr&v=9.3"}
+				],
+				"opacity": 1.0
+			}
+			]
+		}
+	],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

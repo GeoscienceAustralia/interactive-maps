@@ -1,0 +1,138 @@
+{
+    "id": "geology",
+    "title": "Australian and Region Surface Geology",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            70,
+            10
+        ],
+        [
+            180,
+            -70
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Australian and Region Surface Geology"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/minerals/geology/about.html"
+    },
+    "layersConfig": {
+        "enabled": true,
+		"open": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/minerals/geology/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Surface Geology of Australia 1:1 million scale dataset 2012 edition",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/74619/"
+                        },
+                        {
+                            "id": "Surface Geology of Australia 1:2.5 million scale dataset 2012 edition",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/73140/"
+                        },
+                        {
+                            "id": "Geological Regions of Australia, 1:5 000 000 scale",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/32366/"
+                        },
+                        {
+                            "id": "Surface Geology of Australia (1:1M scale dataset) A3 map",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/73360/"
+                        },
+                        {
+                            "id": "Surface geology of Australia 1:1 million scale (data plotted at 1:5 million scale)",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/69455/"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+			{
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [                     "REGNO","REGNAME","AGE_CLASS","MAIN_AGE","APROX_AREA","LANDFORMS","STRATIG","IGNEOUS","REG_META","DEFORMATN","MINDEPS","GEODX_REF","UFI","ROCK_CLASS","METAGRADE","FAC_SERIES","IG_CLASS","ERA","LITH_DESC","contactType","contactType_uri","contactID","faultType","faultType_uri","structureName","exposure","faultFill","deformationStyle","deformationStyle_uri","movementType","movementType_uri","movementSense","displacement","dip","dipDirection","width","faultSystemName","faultSystemID","faultID","featureType","positionalAccuracy_m","captureScale","symbol","mapSymbol","plotSymbol","stratno","name","description","geologicUnitType","geologicUnitType_uri","geologicHistory","representativeAge_uri","representativeYoungerAge_uri","representativeOlderAge_uri","lithology","representativeLithology_uri","bodyMorphology","observationMethod","identityConfidence","source","metadata_uri","mappingFrame","resolutionScale","captureDate","modifiedDate","plotRank","mappedFeatureID","geologicUnitID","FEATURETYPE"
+                    ],
+                    "propertiesAlias": [
+                        "Region Number","Region Name","Age Class","Main Age","Approximate Area km","Landforms","Stratigraphy","Igneous","Regional Metamorphism","Deformation","Mineral Deposits","GEODX Reference","UFI","Rock Class","grade","Facies Series","Igneous Class","Igneous Age","Lithological Description","Contact Type","Contact Type URI","Contact ID","Fault Type","Fault Type URI","Structure Name","Exposure","Fault Fill","Deformation Style","Deformation Style URI","Movement Type","Movement Type URI","Movement Sense","Displacement","Dip","Dip Direction","Width","Fault System Name","Fault System Id","Fault Id","Feature Type","Positional Accuracy m","Capture Scale","Symbol","Map Symbol","Plot Symbol","Stratigraphy Number","Name","Description","Geological Unit Type","Geological Unit Type URI","Geological History","Representative Age URI","Representative Younger Age URI","Representative Older Age URI","Lithology","Representative Lithology URI","Body Morphology","Observation Method","Identity Confidence","Source","Metadata URI","Mapping Frame","Resolution Scale","Capture Date","Modified Date","Plot Rank","Mapped Feature Id","Geological Unit Id","Feature type"
+                    ],
+				"primaryPropertyName": "plotSymbol"
+                }
+            }
+		]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "queryFeatures": false
+        },
+        {
+            "slug": "EASIA_CCOP 1:2M_Combined_Bedrock_And_Superficial_Geology_And_Age"
+        },
+        {
+            "slug": "NZL_GNS_1_1M_Lithostratigraphy"
+        },
+        {
+            "slug": "Antarctica_10_Million_Geology"
+        },
+        {
+            "slug": "AUS_GA_1:5M_Metamorphic_Geology_Polygons",
+            "visibility": false
+        },
+        {
+            "slug": "AUS_GA_1:5M_Geological_Regions",
+            "visibility": false
+        },        
+		{
+			"slug": "Surface_Geology_Of_Australia_1M",
+			"opacity": 0.8
+        },
+		{
+			"slug": "Surface_Geology_Of_Australia_2500K_WM",
+			"opacity": 0.8
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

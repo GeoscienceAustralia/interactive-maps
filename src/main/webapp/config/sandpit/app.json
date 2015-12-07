@@ -1,0 +1,41 @@
+{
+    "id": "sandpit",
+    "title": "Sandpit",
+    "blurb": "Sandpit environment to test tools etc.",
+    "headerConfig": {
+        "title": "GAMaps - Sandpit",
+        "backgroundImageUrl": "resources/img/header_bg.png"
+    },
+    "maps": [
+        {
+            "title": "Place Labels",
+            "id": "PlaceLabelsAA",
+            "previewImageUrl": "http://placehold.it/250x200",
+            "previewDescription": "Label testing sandpit area"
+        },
+        {
+            "title": "Elevation Labels",
+            "id": "ElevationAA",
+            "previewImageUrl": "http://placehold.it/250x200",
+            "previewDescription": "Label testing sandpit area"
+        },
+        {
+            "title": "Reserves Labels",
+            "id": "ReservesAA",
+            "previewImageUrl": "http://placehold.it/250x200",
+            "previewDescription": "Label testing sandpit area"
+        },
+		{
+            "title": "Roads Labels",
+            "id": "RoadsAA",
+            "previewImageUrl": "http://placehold.it/250x200",
+            "previewDescription": "Label testing sandpit area"
+        },
+		{
+            "title": "Marine Labels",
+            "id": "MarineAA",
+            "previewImageUrl": "http://placehold.it/250x200",
+            "previewDescription": "Label testing sandpit area"
+        }
+    ]
+}

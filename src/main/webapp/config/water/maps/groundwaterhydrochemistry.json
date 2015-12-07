@@ -1,0 +1,562 @@
+{
+	"id": "groundwaterhydrochemistry",
+	"title": "Groundwater Hydrochemistry",
+	"datumProjection": "EPSG:3857",
+	"displayProjection": "EPSG:4326",
+	"initialExtent": [
+		[
+			116.92,
+			-3.6
+		],
+		[
+			169.56,
+			-46.65
+		]
+	],
+	"requiresTermsAndConditions": false,
+	"headerConfig": {
+		"title": "Groundwater Hydrochemistry"
+	},
+	"aboutConfig": {
+		"enabled": true,
+		"bodyUrl": "content/water/groundwaterhydrochemistry/about.html"
+	},
+	"layersConfig": {
+		"enabled": true
+	},
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+	"baseLayersConfig": {
+		"enabled": true
+	},
+	"legendConfig": {
+		"enabled": false,
+		"legendUrl": "content/water/groundwaterhydrochemistry/legend.html"
+	},
+	"toolsConfig": {
+		"enabled": true,
+		"timeout": 5000,
+		"tools": [
+			{
+				"id": "addLayer"
+			},
+			{
+				"id": "identifyTool",
+				"config": {
+					"propertiesOfInterest": [
+						"Source",
+						"ID_Base",
+						"CONFIDENTI",
+						"REGNO",
+						"Bore_Name",
+						"LAT",
+						"LONG_",
+						"Date_sampl",
+						"Date_analy",
+						"Depth_m",
+						"Screen_dep",
+						"Screen_d_1",
+						"Screen2_de",
+						"Screen2__1",
+						"Aquifer_de",
+						"Completed_",
+						"FIELDNO",
+						"LABID",
+						"C14_age_ye",
+						"Aquifer_s",
+						"Additional",
+						"Resistivit",
+						"ECBest_Ava",
+						"EC__field_",
+						"LAB_EC_25C",
+						"TDS__mgper",
+						"TDS_Solids",
+						"Temp_and_F",
+						"Turbidity",
+						"Eh__field_",
+						"pe",
+						"Diss_Oxy_m",
+						"Free_Carbo",
+						"CO3_mg_L",
+						"TDI",
+						"pH__field",
+						"LabPh",
+						"Sulphur_To",
+						"Na",
+						"Potassium_",
+						"Ca",
+						"Magnesium_",
+						"Cl",
+						"SO4",
+						"Magic_Alka",
+						"Alkalinity",
+						"Field_Alka",
+						"Bicarbobat",
+						"CarbonateM",
+						"Alkalini_1",
+						"Hardness",
+						"Hardness_a",
+						"CATIONS",
+						"ANIONS",
+						"TOT_IONS",
+						"IONIC_BAL",
+						"ION_QC",
+						"Al_mgL",
+						"Ag_silver",
+						"Antimony_a",
+						"Arsenic_as",
+						"Ba_mgperL",
+						"Beryllium",
+						"Bismuth",
+						"Boron",
+						"Bromate",
+						"Bromide_Br",
+						"Cadmium__C",
+						"Chromium_C",
+						"Cobalt_Co",
+						"Cu",
+						"Dysprosium",
+						"Erbium",
+						"Fe",
+						"Field_Fe2p",
+						"Fe_soluabl",
+						"Fluoride",
+						"F_mgperL",
+						"Gold_AU",
+						"Iodide",
+						"Iodine_I_m",
+						"Lanthanum",
+						"Li_mgperL",
+						"Mercury_as",
+						"Manganese_",
+						"Molybdenum",
+						"Monochlora",
+						"Nickel",
+						"Phos_phoro",
+						"Pb",
+						"Selenium_a",
+						"Si_mgperL",
+						"SiO2",
+						"Strontium",
+						"Thorium",
+						"Tin_Sn",
+						"U",
+						"V",
+						"Yttrium",
+						"Zn",
+						"NGIS_No",
+						"GA_REGONO",
+						"NGIS_depth",
+						"NGIS_depth"
+					],
+					"propertiesAlias": [
+						"Source",
+						"ID_Base",
+						"CONFIDENTI",
+						"REGNO",
+						"Bore_Name",
+						"LAT",
+						"LONG_",
+						"Date_sampl",
+						"Date_analy",
+						"Depth_m",
+						"Screen_dep",
+						"Screen_d_1",
+						"Screen2_de",
+						"Screen2__1",
+						"Aquifer_de",
+						"Completed_",
+						"FIELDNO",
+						"LABID",
+						"C14_age_ye",
+						"Aquifer_s",
+						"Additional",
+						"Resistivit",
+						"ECBest_Ava",
+						"EC__field_",
+						"LAB_EC_25C",
+						"TDS__mgper",
+						"TDS_Solids",
+						"Temp_and_F",
+						"Turbidity",
+						"Eh__field_",
+						"pe",
+						"Diss_Oxy_m",
+						"Free_Carbo",
+						"CO3_mg_L",
+						"TDI",
+						"pH__field",
+						"LabPh",
+						"Sulphur_To",
+						"Na",
+						"Potassium_",
+						"Ca",
+						"Magnesium_",
+						"Cl",
+						"SO4",
+						"Magic_Alka",
+						"Alkalinity",
+						"Field_Alka",
+						"Bicarbobat",
+						"CarbonateM",
+						"Alkalini_1",
+						"Hardness",
+						"Hardness_a",
+						"CATIONS",
+						"ANIONS",
+						"TOT_IONS",
+						"IONIC_BAL",
+						"ION_QC",
+						"Al_mgL",
+						"Ag_silver",
+						"Antimony_a",
+						"Arsenic_as",
+						"Ba_mgperL",
+						"Beryllium",
+						"Bismuth",
+						"Boron",
+						"Bromate",
+						"Bromide_Br",
+						"Cadmium__C",
+						"Chromium_C",
+						"Cobalt_Co",
+						"Cu",
+						"Dysprosium",
+						"Erbium",
+						"Fe",
+						"Field_Fe2p",
+						"Fe_soluabl",
+						"Fluoride",
+						"F_mgperL",
+						"Gold_AU",
+						"Iodide",
+						"Iodine_I_m",
+						"Lanthanum",
+						"Li_mgperL",
+						"Mercury_as",
+						"Manganese_",
+						"Molybdenum",
+						"Monochlora",
+						"Nickel",
+						"Phos_phoro",
+						"Pb",
+						"Selenium_a",
+						"Si_mgperL",
+						"SiO2",
+						"Strontium",
+						"Thorium",
+						"Tin_Sn",
+						"U",
+						"V",
+						"Yttrium",
+						"Zn",
+						"NGIS_No",
+						"GA_REGONO",
+						"NGIS_depth",
+						"NGIS_depth"
+					],
+					"primaryPropertyName": "Source",
+					"endpoints": [
+						{
+							"featureTitle": "Great Artesian Basin Wells",
+                            "queryUrl": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+							"queryUrlType": "WMS",
+							"queryVersion": "1.1.1",
+							"queryLayers": "GAB_Well_Sources"							
+                        }
+                    ]
+				}
+			}
+		]
+	},
+	"baseMaps": [
+		{
+			"slug": "World_Image_XYZ",
+			"$$hashKey": "03X"
+		}
+	],
+	"layerMaps": [
+		{
+			"slug": "National_Color_Base_Map",
+			"visibility": true,
+			"queryFeatures": false,
+			"$$hashKey": "03Z"
+		},
+		{
+			"slug": "GAB_Hydrology",
+			"extent": [
+				[
+					99,
+					10
+				],
+				[
+					169,
+					-55
+				]
+			],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Great Artesian Basin Hydrology",
+			"layers": "GAB_Hydrogeology,GAB_Hydrological_Boundary",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"metadataText": "Entity Information of the groundwater hydrochemistry.",
+			"ogcLinks": [
+				{
+					"description": "REST",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer"
+				},
+				{
+					"description": "WMS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				},
+				{
+					"description": "WFS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+				},
+				{
+					"description": "ArcMap Layerfile",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer?f=lyr&v=9.3"
+				}
+			],
+			"opacity": 0.7,
+			"queryFeatures": true,
+			"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Hydro_Chemistry_Sites",
+			"layerTimeout": 5000
+		},
+		{
+			"slug": "GAB_Well_Sources",
+			"extent": [
+				[
+					99,
+					10
+				],
+				[
+					169,
+					-55
+				]
+			],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Great Artesian Basin Well Locations",
+			"layers": "GAB_Well_Sources",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"metadataText": "Entity Information of the groundwater hydrochemistry.",
+			"ogcLinks": [
+				{
+					"description": "REST",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer"
+				},
+				{
+					"description": "WMS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				},
+				{
+					"description": "WFS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+				},
+				{
+					"description": "ArcMap Layerfile",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer?f=lyr&v=9.3"
+				}
+			],
+			"opacity": 1,
+			"queryFeatures": true,
+			"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "GAB_Well_Sources",
+			"layerTimeout": 5000
+		},
+		{
+			"slug": "Cadna_owie_Hooray_TDS",
+			"extent": [
+				[
+					99,
+					10
+				],
+				[
+					169,
+					-55
+				]
+			],
+			"mapType": "WMS",
+			"visibility": false,
+			"name": "Cadna-owie Hooray Aquifer - Total Dissolved Solids",
+			"layers": "Cadna_owie_Hooray_TDS",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"metadataText": "Entity Information of the groundwater hydrochemistry.",
+			"ogcLinks": [
+				{
+					"description": "REST",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer"
+				},
+				{
+					"description": "WMS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				},
+				{
+					"description": "WFS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+				},
+				{
+					"description": "ArcMap Layerfile",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer?f=lyr&v=9.3"
+				}
+			],
+			"opacity": 1,
+			"queryFeatures": true,
+			"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Hydro_Chemistry_Sites",
+			"layerTimeout": 5000
+		},
+		{
+			"slug": "Cadna_owie_Hooray_Aquifer_pH",
+			"extent": [
+				[
+					99,
+					10
+				],
+				[
+					169,
+					-55
+				]
+			],
+			"mapType": "WMS",
+			"visibility": false,
+			"name": "Cadna-owie Hooray Aquifer - pH",
+			"layers": "Cadna_owie_Hooray_Aquifer_pH",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"metadataText": "Entity Information of the groundwater hydrochemistry.",
+			"ogcLinks": [
+				{
+					"description": "REST",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer"
+				},
+				{
+					"description": "WMS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				},
+				{
+					"description": "WFS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+				},
+				{
+					"description": "ArcMap Layerfile",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer?f=lyr&v=9.3"
+				}
+			],
+			"opacity": 1,
+			"queryFeatures": true,
+			"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Hydro_Chemistry_Sites",
+			"layerTimeout": 5000
+		},
+		{
+			"slug": "Cadna_owie_Hooray_Aquifer_Cl",
+			"extent": [
+				[
+					99,
+					10
+				],
+				[
+					169,
+					-55
+				]
+			],
+			"mapType": "WMS",
+			"visibility": false,
+			"name": "Cadna-owie Hooray 36Cl/Cl Ratio",
+			"layers": "Cadna_owie_Hooray_Aquifer_Cl",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"metadataText": "Entity Information of the groundwater hydrochemistry.",
+			"ogcLinks": [
+				{
+					"description": "REST",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer"
+				},
+				{
+					"description": "WMS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				},
+				{
+					"description": "WFS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+				},
+				{
+					"description": "ArcMap Layerfile",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer?f=lyr&v=9.3"
+				}
+			],
+			"opacity": 1,
+			"queryFeatures": true,
+			"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Cadna_owie_Hooray_Aquifer_Cl",
+			"layerTimeout": 5000,
+			"$$hashKey": "044"
+		},
+		{
+			"slug": "Cadna_owie_Hooray_Alkalinity",
+			"extent": [
+				[
+					99,
+					10
+				],
+				[
+					169,
+					-55
+				]
+			],
+			"mapType": "WMS",
+			"visibility": false,
+			"name": "Cadna-owie Hooray Alkalinity",
+			"layers": "Cadna_owie_Hooray_Alkalinity",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"metadataText": "Entity Information of the groundwater hydrochemistry.",
+			"ogcLinks": [
+				{
+					"description": "REST",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer"
+				},
+				{
+					"description": "WMS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				},
+				{
+					"description": "WFS Capabilities",
+					"url": "http://intranet-dev.ga.gov.au/gis/services/groundwater/Groundwater_Hydrochemistry/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+				},
+				{
+					"description": "ArcMap Layerfile",
+					"url": "http://www-dev.ga.gov.au/gis/rest/services/groundwater/Groundwater_Hydrochemistry/MapServer?f=lyr&v=9.3"
+				}
+			],
+			"opacity": 1,
+			"queryFeatures": true,
+			"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/HydroChemistry/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Cadna_owie_Hooray_Alkalinity",
+			"layerTimeout": 5000,
+			"$$hashKey": "045"
+		}
+	],
+	"search": {
+		"type": "geonames",
+		"typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+		"primaryWfsProperty": "name"
+	}
+}

@@ -1,0 +1,166 @@
+{
+    "id": "nationalmarineterminals",
+    "title": "Test Cache",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "National Marine Terminals"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/national-location-information/nationalmarineterminals/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/national-location-information/nationalmarineterminals/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+			"id" : "info",
+			"toolPanelUrl" : "resources/partial/infoPanel.html",
+			"toolToggleUrl": "resources/partial/infoToggle.html",			
+			"config": {
+				"titleText": "Download dataset",
+				"panelHeading": "Download Dataset",
+				"infoList": [
+					{ "id" : "National Major Ports Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_04ca8df7-4b3b-73a3-e054-00144fdd4fa6/National+Major+Ports+Database" },
+					{ "id" : "National Ferry Terminals Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_04ca8df7-4b3a-73a3-e054-00144fdd4fa6/National+Ferry+Terminals+Database" }
+					]
+				}
+			},		
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "draw"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+						"NAME",
+						"LICENCENUMBER",
+						"PRODUCT",
+						"OWNER",
+						"RELATIONSHIP",
+						"SPATIALCONFIDENCE",
+						"STATE",
+						"STATUS",
+						"LENGTH_km",
+						"DIAMETER_mm",
+						"CONSTRUCTION",
+						"FEATURERELIABILITY",
+						"FEATURESOURCE",
+						"ATTRIBUTERELIABILITY",
+						"ATTRIBUTESOURCE",
+						"PLANIMETRICACCURACY_m",
+						"REVISED",
+						"RESTRICTIONS"
+					],
+                    "propertiesAlias": [
+                        "Name",
+						"License Number",
+						"Product",
+						"Owner",
+						"Relationship",
+						"Spatial Confidence",
+						"State",
+						"Status",
+						"Length (km)",
+						"Diameter (mm)",
+						"Construction",
+						"Feature Reliability",
+						"Feature Source",
+						"Attribute Reliability",
+						"Attribute Source",
+						"Planimetric Accuracy (m)",
+						"Revised",
+						"Restrictions"
+                    ],
+                    "endpoints": [                        
+						{
+                            "featureTitle": "National Onshore Gas Pipeline",
+                            "queryUrl": "http://www.ga.gov.au/gis/services/topography/National_Onshore_Gas_Pipelines/MapServer/WMSServer",
+                            "queryLayers": "Gas_Pipelines",
+                            "queryVersion": "1.1.0",
+                            "queryType": "WMS"
+                        },
+						{
+                            "featureTitle": "National Onshore Oil Pipeline",
+                            "queryUrl": "http://www.ga.gov.au/gis/services/topography/National_Onshore_Oil_Pipelines/MapServer/WMSServer",
+                            "queryLayers": "Oil_Pipelines",
+                            "queryVersion": "1.1.0",
+                            "queryType": "WMS"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+       {
+            "slug": "World_Image_XYZ"
+        }
+    ],
+    "layerMaps": [
+		{
+            "slug": "Hillshade_And_Vegetation"
+        },
+       {
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "World Image",
+            "url": "http://win-amap-dev01:6080/arcgis/rest/services/Test_National_Major_Ports/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+			"maxZoomLevel" : 13,
+            "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        },
+        {
+            "slug": "Population_Centres"
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+    "addLayerMaps": [
+        {
+            "slug": "National_Electricty_Lines"
+        },
+		{
+            "slug": "National_Electricty_Substations"
+        },
+		{
+            "slug": "Oil_Pipelines"
+        },
+		{
+            "slug": "Gas_Pipelines"
+        }
+	]
+}

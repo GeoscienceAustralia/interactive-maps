@@ -1,0 +1,208 @@
+{
+    "id": "globalmap",
+    "title": "Australian Global Map Contribution",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv3",
+    "initialExtent": [
+        [99, 10],
+        [169, -55]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Australian Global Map Contribution Framework Demonstration (BETA)"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/geographic-information/globalmap/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/geographic-information/globalmap/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+		{
+			"id" : "info",
+			"toolPanelUrl" : "resources/partial/infoPanel.html",
+			"toolToggleUrl": "resources/partial/infoToggle.html",			
+			"config": {
+				"titleText": "Download dataset",
+				"panelHeading": "Download Dataset",
+				"symbol": "<img src=\"content/marker/download-64.png\"/>",
+				"infoList": [
+					{ "id" : "Global Map, 1 Million 2001", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_f8d9bb54-1e11-6406-e044-00144fdd4fa6/Global+Map%2C+1+Million+2001" }
+					]
+				}
+			},
+		{
+                "id": "export",
+                "toolPanelUrl" : "resources/partial/exportPanel.html",
+                "toolToggleUrl": "resources/partial/exportToggle.html",
+				"config": {
+					"titleText": "Print PDF",
+					"panelHeading": "Print PDF",
+					"url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+					"templatesList": ["Landscape_A4", "Portrait_A4", "Landscape_A3", "Portrait_A3"],
+					"markerUrl": "content/marker/marker-print.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+			},
+		{
+				"id": "identifyTool",
+				"toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+				"toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+				"config": {
+					"titleText": "Identify features",
+					"panelHeading": "Identify Features",
+					"symbol": "<img src=\"content/marker/identify.png\"/>",
+					"propertiesOfInterest": ["nam","f_codedesc"],
+					"propertiesAlias": ["Name","Description"],
+					"primaryPropertyName": "f_codedesc",
+					"showEmptyFeatures": true,
+					"requiresGeometry": true,		
+					"markerUrl": "content/marker/marker-identify.png",
+					"markerWidth": "55",
+					"markerHeight": "40",
+					"endpoints": [
+						{
+							"queryUrl": "/gis/services/topography/Global_Map/MapServer/WMSServer",
+							"queryLayers": "Built Up Area,Watercourse,Inland Water,Aqueduct Canals,Road Minor,Road Major,Railroad,Bridge,Political Boundary Line,Coastline,Railyard,Airport,Political Boundary Point,Miscellaneous Drainage,Miscellaneous Population,Built Up Points,Landuse,Vegetation,Landcover,Elevation",
+							"queryVersion": "1.1.0",
+							"queryType": "WMS"
+						}
+					]
+				}
+			}
+        ]
+
+    },
+    "baseMaps": [
+        {
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "World Political Boundaries",
+            "url": "http://www.ga.gov.au/gis/rest/services/topography/World_Political_Boundaries_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+			"maxZoomLevel" : 11,
+            "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        }
+    ],
+    "layerMaps": [
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Global Map Images",
+            "groupId": "globalmapimage",
+            "visibility": false,
+            "defaultLayerId": "landuse"
+        },
+		{
+			"id":"globalmapvector",
+			"mapType":"WMS",
+			"visibility":true,
+			"name":"Global Map",
+			"url":"/gis/services/topography/Global_Map/MapServer/WMSServer",
+			"layers":"Built Up Area,Watercourse,Inland Water,Aqueduct Canals,Road Minor,Road Major,Railroad,Bridge,Political Boundary Line,Coastline,Railyard,Airport,Political Boundary Point,Miscellaneous Drainage,Miscellaneous Population,Built Up Points",
+			"metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world.",
+			"ogcLinks" : [
+			{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B1DAA141C-6ACE-4C25-BF72-A6EEEF9BCCF7%7D"},
+			{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"}
+			],
+			"opacity":1.0,
+			"layerTimeout": 5000
+		}
+	],
+	"groupedLayers": [
+			{
+			"groupId": "globalmapimage",
+			"layerMaps": [
+				{
+					"id":"landuse",
+					"mapType":"WMS",
+					"visibility":true,
+					"name":"Landuse",
+					"url":"/gis/services/topography/Global_Map/MapServer/WMSServer",
+					"layers":"Landuse",
+					"metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
+					"ogcLinks" : [
+					{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B1DAA141C-6ACE-4C25-BF72-A6EEEF9BCCF7%7D"},
+					{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"},
+					{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+					{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"}					
+					],
+					"opacity":1.0,
+					"layerTimeout": 5000
+				},
+				{
+					"id":"vegetation",
+					"mapType":"WMS",
+					"visibility":false,
+					"name":"Vegetation",
+					"url":"/gis/services/topography/Global_Map/MapServer/WMSServer",
+					"layers":"Vegetation",
+					"metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
+					"ogcLinks" : [
+					{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B1DAA141C-6ACE-4C25-BF72-A6EEEF9BCCF7%7D"},
+					{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"},
+					{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+					{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"}
+					],
+					"opacity":1.0,
+					"layerTimeout": 5000
+				},
+				{
+					"id":"landcover",
+					"mapType":"WMS",
+					"visibility":false,
+					"name":"Landcover",
+					"url":"/gis/services/topography/Global_Map/MapServer/WMSServer",
+					"layers":"Landcover",
+					"metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
+					"ogcLinks" : [
+					{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B1DAA141C-6ACE-4C25-BF72-A6EEEF9BCCF7%7D"},
+					{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"},
+					{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+					{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"}
+					],
+					"opacity":1.0,
+					"layerTimeout": 5000
+				},
+				{
+					"id":"elevation",
+					"mapType":"WMS",
+					"visibility":false,
+					"name":"Elevation",
+					"url":"/gis/services/topography/Global_Map/MapServer/WMSServer",
+					"layers":"Elevation",
+					"metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
+					"ogcLinks" : [
+					{"description": "Service Metadata","url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B1DAA141C-6ACE-4C25-BF72-A6EEEF9BCCF7%7D"},
+					{"description": "REST","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"},
+					{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+					{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"}
+					],
+					"opacity":1.0,
+					"layerTimeout": 5000
+				}
+			]
+		}
+	],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

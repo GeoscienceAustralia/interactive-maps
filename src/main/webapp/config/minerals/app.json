@@ -1,0 +1,54 @@
+{
+    "id": "minerals",
+    "title": "Geology and Geophysics",
+    "blurb": "Geoscience Australia provides pre-competitive geoscience information to address greenfield exploration challenges and identify new mineral provinces within Australia. This pre-competitive information is acquired through integrated programs of national strategic importance, such as the Unlocking Australia's Hidden Mineral Resource Potential Program which commenced in July 2013. The Agency also advises the Australian Government on mineral resources, mining and land use which is integral to decisions on the nation's known mineral endowment, the sustainable development of mineral resources and levels of exploration activity.",
+    "headerConfig": {
+        "title": "Applying geoscience to Australia's most important challenges"
+    },
+    "maps": [
+        {
+            "id": "geology",
+            "title": "Australian and Region Surface Geology",
+            "previewImageUrl": "content/minerals/geology/mapPreview.png",
+            "previewDescription": "National scale coverages of surface geology with topography base map.  Australian Surface Geology (1:1M & 1:2.5M) using 2012 data release."
+        },
+        {
+            "id": "geomorphology",
+            "title": "Coastal and Seabed Geomorphology",
+            "previewImageUrl": "content/minerals/geomorphology/mapPreview.png",
+            "previewDescription": "The Coastal Geomorphology of Australia Web Map Service contains the two nationally consistent coastal geomorphology classifications created for the Commonwealth to support a national coastal risk assessment."
+        },
+        {
+            "id": "geophysics",
+            "title": "Geophysics",
+            "previewImageUrl": "content/minerals/geophysics/mapPreview.jpg",
+            "previewDescription": "These magnetic and radiometric datasets are a compilation of numerous geophysical surveys conducted over more than 50 years by Geoscience Australia, the State and Territory Geological Surveys and industry."
+        },
+        {
+            "id": "geochronology",
+            "title": "Geochronology",
+            "previewImageUrl": "content/minerals/geochronology/mapPreview.png",
+            "previewDescription": "National scale coverages of surface geology and geochronology. There are layers for SHRIMP, Sm-Nd, Rb-Sr and U-Pb."
+        },
+        {
+            "id": "geochemical",
+            "title": "Geochemistry",
+            "previewImageUrl": "content/minerals/geochemical/mapPreview.png",
+            "previewDescription": "OZCHEM is Geoscience Australia's national whole-rock geochemical database. This map service contains over 50,000 analyses of rocks, regolith and stream sediments from many regions of Australia."
+        },
+        {
+            "title": "Geophysical Archive Data Delivery System",
+            "tags": "Other",
+            "previewImageUrl": "content/minerals/gadds.png",
+            "previewDescription": "This system provides magnetic, radiometric, gravity and digital elevation data from Australian National, State and Territory Government geophysical data archives.",
+            "applicationUrl": "http://www.geoscience.gov.au/cgi-bin/mapserv?map=/nas/web/ops/prod/apps/mapserver/gadds/wms_map/gadds.map&mode=browse"
+        }
+    ],
+    "tags": [
+        {
+            "id": "Other",
+            "description": "Relevant geology and geophysics mapping applications.",
+            "title": "Related Applications"
+        }
+    ]
+}

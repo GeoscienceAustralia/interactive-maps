@@ -1,0 +1,120 @@
+﻿{
+    "id": "sasla1973",
+    "title": "Seas and Submerged Lands Act 1973",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            30,
+            10
+        ],
+        [
+            180,
+            -70
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Seas and Submerged Lands Act 1973"
+    },
+    "aboutConfig": {
+        "enabled": false
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": false
+    },
+    "toolsConfig": {
+        "enabled": false
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+			"maxZoomLevel": 5
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
+			"visibility": false,
+            "opacity": 1,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
+            "visibility": false,
+            "opacity": 1,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Contiguous_Zone_AMB_2014",
+			"visibility": false,
+            "opacity": 1,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Continental_Shelf_AMB_2014",
+			"visibility": false,
+            "opacity": 1,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Territorial_Sea_AMB_2014",
+			"visibility": false,
+            "opacity": 1,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Coastal_Waters_AMB_2014",
+			"visibility": false,
+            "opacity": 1,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Straight_Baselines_AMB_2014",
+			"visibility": true,
+            "opacity": 1,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Normal_Baselines_AMB_2014",
+			"visibility": true,
+            "opacity": 1,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Seas_And_Submerged_Lands_Act_1973_Reference_Map"
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+    "addLayerMaps": [
+        {
+            "slug": "Offshore_Areas_Of_The_States_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Scheduled_Areas_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Australian_Petroleum_Blocks_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Treaties_Of_Australia_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        }
+    ]
+}

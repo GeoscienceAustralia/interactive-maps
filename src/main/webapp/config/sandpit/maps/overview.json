@@ -1,0 +1,26 @@
+{
+    "id": "baseconfig",
+    "datumProjection": "EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [100, 10],
+        [176, -55]
+    ],
+	    "layersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			 {
+            "slug": "World_Image_XYZ"
+			}
+		]
+	},
+    "baseMaps": [		
+        {
+            "slug": "World_Image_XYZ"
+        }		
+    ],
+    "layerMaps": [      
+    ]
+}

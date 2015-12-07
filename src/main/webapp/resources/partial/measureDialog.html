@@ -1,0 +1,36 @@
+<form name="measureDialogForm" >
+	<div ui-jq="dialog" ui-options="dialogConfig" id="{{dialogId}}">
+		<div>
+            <label for="searchCriteriaLatInput">Latitude</label>
+			<input type="text" size="10" id="searchCriteriaLatInput"
+				ng-model="dialogModel.searchCriteriaLat"/>
+		</div>
+		<div>
+            <label for="searchCriteriaLonInput">Longitude</label>
+			<input id="searchCriteriaLonInput" type="text" size="10"
+				ng-model="dialogModel.searchCriteriaLon"/>
+		</div>
+		<br />
+		<div ng-repeat="boundary in boundaries">
+			<input type="radio" name="id" id="searchCriteriaBoundary_{{boundary.id}}" value="{{boundary.url}}"
+				ng-model="$parent.selectedBoundary" required /><label for="searchCriteriaBoundary_{{boundary.id}}">{{boundary.id}}</label>
+		</div>
+		<br />
+		<button type="button" ng-click="resetSearchDistance()" ng-disabled="waitingForResponse">Reset</button>
+		<button type="button" ng-click="submitSearchDistance()" ng-disabled="waitingForResponse">Search</button>
+		<div ng-show="hasResult">
+			<div>
+				<b>Search Results</b>
+			</div>
+			<div>Distance(km) :
+				{{resultData.value.features[0].attributes.Distance}}</div>
+		</div>
+		<div ng-show="hasError">
+			<div>
+				<b>Search Results</b>
+			</div>
+			<div style="color:red">Error :
+				{{errorMessage}}</div>
+		</div>
+	</div>
+</form>

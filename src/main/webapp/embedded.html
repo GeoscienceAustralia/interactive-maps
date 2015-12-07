@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Geoscience Australia">
+    <meta name="version" content="INTERACTIVE-MAPS-VERSION">
+    <script src="resources/jsnomin/ol-debug.js"></script>
+    <title>Interactive Maps</title>
+    <link rel="stylesheet" href="resources/css/ga.css"/>
+    <!-- Bootstrap core CSS -->
+    <!--build:css lib/css/bootstrap.min.css-->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- endbuild -->
+
+    <!-- TODO:  Toggle Toolbar Item display-->
+    <style type="text/css">
+        .show{display:block}
+        .hide{display:none}
+    </style>
+
+    <!-- Custom styles for this template -->
+    <!--build:css lib/css/jquery-ui.min.css-->
+    <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/base/jquery-ui.css" />
+    <!-- endbuild -->
+    <!--build:css lib/css/style.min.css-->
+    <link rel="stylesheet" type="text/css" href="bower_components/OpenLayers-2.13.1/theme/default/style.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="resources/css/ol.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/app.header.footer.css" />
+    <link rel="stylesheet" href="resources/css/app.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/embedded-app.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/colorpicker.css" />
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="resources/css/ie.css" /><![endif]-->
+
+    <!--build:js lib/js/jquery.min.js-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- endbuild -->
+    <!--build:js lib/js/bootstrap.min.js-->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js /lib/js/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <!-- build:js /lib/js/polyfiller.min.js -->
+    <script src="bower_components/webshim/js-webshim/minified/polyfiller.js"></script>
+    <!-- endbuild -->
+
+    <script src="http://maps.google.com/maps/api/js?.js&libraries=places"></script>
+    <script>
+        webshims.polyfill();
+    </script>
+</head>
+<body ng-app="interactive-maps-embedded" ng-controller="applicationController">
+
+<!-- Main view port -->
+<div id="main" ng-view>
+
+</div>
+
+<div style="display:none;" id="warningDialog" title="Browser not supported">
+    <p>This application does not support Internet Explorer 8 or lower. Please upgrade to a later
+        version or use one of the supported browsers listed on the Geoscience Australia home page.</p>
+</div>
+<!-- end Footer -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="resources/jsnomin/browserSupportWarning.js"></script>
+
+<!--build:js lib/js/jquery-ui.min.js-->
+<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/angular.min.js-->
+<script src="bower_components/angular/angular.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/ui-utils.min.js-->
+<script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/angulartics.min.js-->
+<script src="bower_components/angulartics/dist/angulartics.min.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/ui-bootstrap-tpls.min.js-->
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/angular-route.min.js-->
+<script src="bower_components/angular-route/angular-route.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/angulartics-ga.min.js-->
+<script src="bower_components/angulartics/dist/angulartics-ga.min.js"></script>
+<!-- endbuild -->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-1501753-1', 'ga.gov.au');
+</script>
+<script src="resources/js/sortable.js"></script>
+<script src="resources/js/xml2json.js"></script>
+<!--build:js lib/js/geo-web-toolkit-min.js-->
+<script src="bower_components/geo-web-toolkit/dist/geo-web-toolkit-min.js"></script>
+<!-- endbuild -->
+
+<script src="resources/js/ngStorage.js"></script>
+
+<script src="resources/jsnomin/Cesium/Cesium.js"></script>
+<script src="resources/jsnomin/ol3cesium.js"></script>
+<!--build:js lib/js/OpenLayers.min.js-->
+<script src="bower_components/OpenLayers-2.13.1/OpenLayers.js"></script>
+<!-- endbuild -->
+<script src="resources/jsnomin/openLayersZoomBarOverride.js"></script>
+<script src="resources/js/InteractiveMapsPermalink.js"></script>
+<script src="resources/js/FeaturePopups.js"></script>
+<!--build:js lib/js/interactivemaps-min.js-->
+<script src="resources/js/services.js"></script>
+<script src="resources/js/menus/menus.js"></script>
+<script src="resources/js/validation/validation.js"></script>
+<script src="resources/js/tools/tools.js"></script>
+<script src="resources/js/toolbar/keepMapExtent.js"></script>
+<script src="resources/js/controllers.js"></script>
+<script src="resources/js/catalogue/catalogue.js"></script>
+<script src="resources/js/catalogue/site-catalogue.js"></script>
+<script src="resources/js/catalogue/theme-catalogue.js"></script>
+<script src="resources/js/menus/leftDialogs.js"></script>
+<script src="resources/js/menus/rightDialogs.js"></script>
+<script src="resources/js/menus/bottomMenu.js"></script>
+<script src="resources/js/alerts/alerts.js"></script>
+<script src="resources/js/embedded/embedded.js"></script>
+<script src="resources/js/embedded/embedded-map.js"></script>
+<script src="resources/js/toolbar/toolbar.js"></script>
+<script src="resources/js/toolbar/reset.js"></script>
+<script src="resources/js/toolbar/search.js"></script>
+<script src="resources/js/toolbar/addLayer.js"></script>
+<script src="resources/js/toolbar/draw.js"></script>
+<script src="resources/js/toolbar/clientmeasure.js"></script>
+<script src="resources/js/toolbar/distanceToBoundary.js"></script>
+<script src="resources/js/layers/layers-controllers.js"></script>
+<script src="resources/js/layers/layers.js"></script>
+<script src="resources/js/filters.js"></script>
+<script src="resources/js/map/map-services.js"></script>
+<script src="resources/js/map/map-controller.js"></script>
+<script src="resources/js/map/map-position-controller.js"></script>
+<script src="resources/js/map/map.js"></script>
+<script src="resources/js/map/related-maps.js"></script>
+<script src="resources/js/map/map-config-services.js"></script>
+<script src="resources/js/toolbar/addDynamicLayer.js"></script>
+<script src="resources/js/toolbar/interrogate.js"></script>
+<script src="resources/js/stringFormatting.js"></script>
+<script src="resources/js/tools/tool-services.js"></script>
+<script src="resources/js/tools/tool-directives.js"></script>
+<script src="resources/js/tools/tools.js"></script>
+<script src="resources/js/configCreator/mapPreview.js"></script>
+<script src="resources/js/configCreator/configCreator.js"></script>
+<script src="resources/js/configCreator/services.js"></script>
+<script src="resources/js/configCreator/mapLayersAccordion.js"></script>
+<script src="resources/js/configCreator/browseWMSDialog.js"></script>
+<script src="resources/js/configCreator/baseMapLayersAccordion.js"></script>
+<script src="resources/js/configCreator/toolsAccordion.js"></script>
+<script src="resources/js/configCreator/navigationAccordion.js"></script>
+<script src="resources/js/configCreator/mapConfigAccordion.js"></script>
+<script src="resources/js/configCreator/mapDetailsAccordion.js"></script>
+<script src="resources/js/termsAndConditions/termsAndConditions.js"></script>
+<script src="resources/js/validation/gisValidation.js"></script>
+<script src="resources/jsnomin/bootstrap-colorpicker-module.js"></script>
+<script src="resources/jsnomin/placeholders.js"></script>
+<script src="resources/js/toolbar/export.js"></script>
+<script src="resources/js/toolbar/info.js"></script>
+<script src="resources/js/ngCsv.js"></script>
+<script src="resources/js/toolbar/interrogateExport.js"></script>
+<script src="resources/js/toolbar/queryServices.js"></script>
+<script src="resources/jsnomin/fuzzysearch.js"></script>
+<script src="resources/js/health/health.js"></script>
+<script src="resources/js/health/health-controller.js"></script>
+<script src="resources/js/health/health-services.js"></script>
+<!--endbuild -->
+<!--build:js lib/js/angular-sanitize.min.js-->
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<!-- endbuild -->
+<script>
+    if (typeof console == "undefined") {
+        window.console = {
+            log: function () {
+            }
+        };
+    }
+</script>
+<script src="resources/js/embedded-app.js"></script>
+</body>
+</html>

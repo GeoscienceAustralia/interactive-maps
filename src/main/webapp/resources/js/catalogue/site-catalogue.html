@@ -1,0 +1,40 @@
+<div class="applicationPageContainer panel">
+    <div class="panel">
+        <div class="panel-heading">
+            <h2 ng-bind="siteConfig.title"></h2>
+            <div ng-bind="siteConfig.blurb"></div>
+        </div>
+        <div class="configuredItemsContainer">
+            <div>
+                <div ng-repeat="theme in themes" class="panel panel-default configuredItemContainer">
+                    <div ng-show="{{theme.applicationUrl == null}}">
+                        <a href="#/theme/{{theme.id}}">
+                            <div class="panel-body">
+                                <div class="applicationPreviewContainer">
+                                    <img ng-src="{{theme.previewImageUrl}}" class="img-responsive applicationPreviewImage" title="{{theme.title}}"/>
+                                </div>
+                                <div class="panel-heading"><a href="#/theme/{{theme.id}}"><h5 ng-bind="theme.title"></h5></a></div>
+                                <div class="list-group-item-text"
+                                     ng-bind="theme.previewDescription"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div ng-show="{{theme.applicationUrl != null}}">
+                        <a href="{{theme.applicationUrl}}" target="_blank">
+                            <div class="panel-body">
+                                <div class="applicationPreviewContainer">
+                                    <img ng-src="{{theme.previewImageUrl}}" class="img-responsive applicationPreviewImage" title="{{theme.title}}"/>
+                                    <img ng-src="resources/img/arrow-diagonal-64.png" class="applicationPreviewImageLink img-responsive" title="Link to application"/>
+                                </div>
+                                <div class="panel-heading"><a href="{{theme.applicationUrl}}" target="_blank"><h5 ng-bind="theme.title"></h5></a></div>
+                                <div class="list-group-item-text"
+                                     ng-bind="theme.previewDescription"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height:30px;width:100%;"></div>

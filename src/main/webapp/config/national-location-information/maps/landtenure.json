@@ -1,0 +1,208 @@
+{
+    "id": "landtenure",
+    "title": "Northern Australian Land Tenure",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Northern Australian Land Tenure"
+    },
+    "aboutConfig": {
+        "enabled": false,
+        "bodyUrl": "content/national-location-information/landtenure/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/national-location-information/landtenure/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "GEODATA TOPO 250K Series 3",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-eab0-7506-e044-00144fdd4fa6/GEODATA+TOPO+250K+Series+3+-+Packaged+%28Personal+Geodatabase+format%29"
+                        },
+						{ "id" : "National Onshore Oil Pipeline Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0f41bfd1-67bf-7a2a-e053-10a3070a4514/National+Onshore+Oil+Pipelines+Database" },
+						{ "id" : "National Onshore Gas Pipeline Database", "url" : 	"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0a3ae167-c002-5f77-e054-00144fdd4fa6/National+Onshore+Gas+Pipelines+Database" },
+						{ "id" : "National Major Ports Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_04ca8df7-4b3b-73a3-e054-00144fdd4fa6/National+Major+Ports+Database" },
+						{ "id" : "National Ferry Terminals Database", "url" : 	"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_04ca8df7-4b3a-73a3-e054-00144fdd4fa6/National+Ferry+Terminals+Database" },
+						{ "id" : "National Electricity Transmission Lines Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1185c97c-c042-be90-e053-12a3070a969b/National+Electricity+Transmission+Lines+Database" },
+						{ "id" : "National Electricity Transmission Substations", "url" : 	"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_13be62a4-4fe3-f812-e053-12a3070a22be/National+Electricity+Transmission+Substations" }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "draw"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "CAD_POLYGON_PID",
+						"DATE_CREATED_POLYGON",
+						"DATE_RETIRED_POLYGON",
+						"CAD_PID",
+						"DATE_CREATED_TAB",
+						"JURISDICTION_ID",
+						"DATE_RETIRED_TAB",
+						"LGA_PID",
+						"LOCALITY_PID",
+						"STATE_PID",
+						"PARCEL_STATUS_CODE",
+						"PARCEL_STATUS_NAME",
+						"PARCEL_STATUS_DESCRIPTION",
+						"PARCEL_TYPE_CODE",
+						"PARENT_PARCEL_TYPE_CODE",
+						"PARCEL_TYPE_NAME",
+						"PARCEL_TYPE_DESCRIPTION",
+						"TENURE_PID",
+						"DATE_CREATED_TENURE_TAB",
+						"DATE_RETIRED_TENURE_TAB",
+						"LEVEL1_TENURE_TYPE_CODE",
+						"LEVEL2_TENURE_TYPE_CODE",
+						"LEVEL3_TENURE_TYPE_CODE",
+						"LEVEL4_TENURE_TYPE_CODE",
+						"TENURE_JTT_PID",
+						"JURISDICTION_TENURE_TYPE_PID",
+						"DATE_CREATED_TENURE_JTT",
+						"DATE_RETIRED_TENURE_JTT",
+						"DATE_CREATED_JURISDICTION_TENURE_TYPE",
+						"DATE_RETIRED_JURISDICTION_TENURE_TYPE",
+						"JURISDICTION_TENURE_TYPE_CODE",
+						"JURISDICTION_TENURE_TYPE_NAME",
+						"JURISDICTION_TENURE_TYPE_DESCRIPTION",
+						"GA_DATA_SOURCE",
+						"GA_CREATE_DATE",
+						"CLASS",
+                        "FEATURETYPE",
+                        "TYPE",
+						"NAME"
+                    ],
+                    "propertiesAlias": [
+                        "Cad Polygon Pid",
+						"Date Created Polygon",
+						"Date Retired Polygon",
+						"Cad Pid",
+						"Date Created Tab",
+						"Jurisdiction Id",
+						"Date Retired Tab",
+						"Lga Pid",
+						"Locality Pid",
+						"State Pid",
+						"Parcel Status Code",
+						"Parcel Status Name",
+						"Parcel Status Description",
+						"Parcel Type Code",
+						"Parent Parcel Type Code",
+						"Parcel Type Name",
+						"Parcel Type Description",
+						"Tenure Pid",
+						"Date Created Tenure Tab",
+						"Date Retired Tenure Tab",
+						"Level1 Tenure Type Code",
+						"Level2 Tenure Type Code",
+						"Level3 Tenure Type Code",
+						"Level4 Tenure Type Code",
+						"Tenure Jtt Pid",
+						"Jurisdiction Tenure Type Pid",
+						"Date Created Tenure Jtt",
+						"Date Retired Tenure Jtt",
+						"Date Created Jurisdiction Tenure Type",
+						"Date Retired Jurisdiction Tenure Type",
+						"Jurisdiction Tenure Type Code",
+						"Jurisdiction Tenure Type Name",
+						"Jurisdiction Tenure Type Description",
+						"Ga Data Source",
+						"Ga Create Date",
+						"Class",
+                        "Feature Type",
+                        "Type",
+						"Name"
+                    ],
+					"primaryPropertyName": "JURISDICTION_TENURE_TYPE_NAME"
+                }
+            }
+        ]
+    },	
+    "baseMaps": [
+        {
+            "slug": "World_Image_WMS"
+        }
+    ],
+    "layerMaps": [
+		{
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "visibility": true,
+			"opacity": 0.5
+        },
+        {
+            "slug": "Northern_Australian_Land_Tenure",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "ArcGISCache",
+            "visibility": true,
+            "name": "Northern Australian Land Tenure",
+            "url": "http://intranet-test.ga.gov.au/gis/rest/services/Northern_Australia_Land_Tenure/MapServer",
+            "metadataText": "This cached map service contains northern Australian land tenure information above the tropic of Capricorn and whole of the northern territory.",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://intranet-test.ga.gov.au/gis/rest/services/Northern_Australia_Land_Tenure/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://intranet-test.ga.gov.au/gis/services/Northern_Australia_Land_Tenure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://intranet-test.ga.gov.au/gis/rest/services/Northern_Australia_Land_Tenure/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 0.7,
+            "layerTimeout": 5000,
+			"queryFeatures": true,
+			"queryUrl": "http://intranet-test.ga.gov.au/gis/services/Northern_Australia_Land_Tenure/MapServer/WMSServer",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "Western_Australia,Northern_Territory,Queensland"
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

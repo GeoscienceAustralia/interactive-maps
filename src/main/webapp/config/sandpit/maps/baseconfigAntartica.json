@@ -1,0 +1,28 @@
+{
+    "id": "baseconfig",
+    "datumProjection": "EPSG:3031",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [100, 10],
+        [176, -55]
+    ],
+	    "layersConfig": {
+        "enabled": true
+    },
+    "baseMaps": [		
+        {
+            "slug": "Test",
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Antarctic Bathymetry Hillshade Basemap",
+            "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Antarctic_Bathymetry_Hillshade_Basemap/MapServer/WMSServer",
+            "layers": "Land_Hillshade,Bathymetry,Bathymetry_Hillshade",
+            "opacity": 1,
+            "layerTimeout": 5000,
+            "queryFeatures": false
+        }
+		
+    ],
+    "layerMaps": [      
+    ]
+}

@@ -1,0 +1,16 @@
+<div ng-controller="addLayerPanelController">
+    <h2 ng-bind="$parent.tool.config.titleText || 'Add Layers'"></h2>
+    <div ng-repeat="layer in geoConfig.addLayerMaps | filter:filterLayers">
+        <div title="{{layer.metadataText}}">
+            <button type="button" ng-attr-class="{{ layer.isActive &&  'removeLayer' || 'addLayer'}}" ng-click="addRemoveLayer(layer)"></button> {{layer.name}}
+        </div>
+    </div>
+<br/>
+    <div>
+        <label>Search</label>
+    </div>
+    <div class="addLayers">
+        <input ng-model="selected" typeahead="result as result.name for result in layerCriteria | filter: fuzzySearch | orderBy:searchScore" typeahead-on-select="onSelected($item, $model, $label)"
+               typeahead-wait-ms="200" typeahead-editable="true" />
+    </div>
+</div>

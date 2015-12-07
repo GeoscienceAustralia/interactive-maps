@@ -1,0 +1,149 @@
+{
+    "id": "globalmap",
+    "title": "Australian Global Map Contribution",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Australian Global Map Contribution"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/national-location-information/globalmap/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/national-location-information/globalmap/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Global Map, 1 Million 2001",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_f8d9bb54-1e11-6406-e044-00144fdd4fa6/Global+Map%2C+1+Million+2001"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "nam",
+                        "f_codedesc"
+                    ],
+                    "propertiesAlias": [
+                        "Name",
+                        "Description"
+                    ],
+                    "primaryPropertyName": "f_codedesc"                    
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "maxZoomLevel": 11
+        }
+    ],
+    "layerMaps": [
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Global Map Images",
+            "groupId": "globalmapimage",
+            "visibility": false,
+            "defaultLayerId": "landuse"
+        },
+        {
+            "slug": "Global_Map"
+        }
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "globalmapimage",
+            "layerMaps": [
+                {
+                    "slug": "Landuse"
+                },
+                {
+                    "slug": "Vegetation",
+                    "visibility": false
+                },
+                {
+                    "slug": "Landcover",
+                    "visibility": false
+                },
+                {
+                    "slug": "Elevation",
+                    "visibility": false
+                }
+            ]
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+	"addLayerMaps": [
+        {
+            "slug": "Oil_Pipelines",
+			"visibility": true
+        },
+		{
+            "slug": "Gas_Pipelines",
+			"visibility": true			
+        },
+        {
+            "slug": "Major_Ports",
+			"visibility": true
+        },
+        {
+            "slug": "National_Waste_Management_Facilites",
+			"visibility": true
+        },
+        {
+            "slug": "Oil_Pipelines",
+			"visibility": true
+        },
+		{
+            "slug": "Ferry_Terminals",
+			"visibility": true
+        }
+    ]
+}

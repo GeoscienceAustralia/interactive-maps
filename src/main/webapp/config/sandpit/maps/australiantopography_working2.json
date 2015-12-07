@@ -1,0 +1,118 @@
+{
+    "id": "australiantopography",
+    "title": "Australian Topography",
+    "datumProjection": "EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+			114.36,
+			-29.36
+		],
+		[
+			116.99,
+			-31.75
+		]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Australian Topography"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/geographic-information/australiantopography/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/geographic-information/australiantopography/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "GEODATA TOPO 250K Series 3",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-eab0-7506-e044-00144fdd4fa6/GEODATA+TOPO+250K+Series+3+-+Packaged+%28Personal+Geodatabase+format%29"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "expoart"
+            },
+            {
+                "id": "draw"
+            },
+			 {
+            "id": "identifyTool",
+            "toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+            "toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+            "config": {
+                "titleText": "Identify features",
+                "panelHeading": "Identify Features",
+                "symbol": "<img src=\"content/marker/zoom-32.png\"/>",
+                "propertiesOfInterest": ["MAP_UNIT","Pixel Value"],
+                "propertiesAlias": ["MAP_UNIT","Pixel Value"],
+                "primaryPropertyName": "",
+                "showEmptyFeatures": true,
+                "requiresGeometry": true,
+                "markerUrl": "content/marker/marker-identify.png",
+                "markerWidth": "55",
+                "markerHeight": "40",
+                "endpoints": [			
+			{ "url": "/gis/rest/services/groundwater/RechargeDischarge/MapServer", "featureType": "Surface_Water_Management_Area_2006", "featurePrefix": "groundwater_RechargeDischarge", "geometryName": "Shape", "layers":"3,4,5,6,7,12", "imageDisplay": "600,550,96", "featureTitle": "myTest Feature Title", "queryType": "ArcGISREST" }
+			]
+			}
+			}
+        ]
+    },	
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS"
+        },
+        {
+            "slug": "Australian_Topographic_250K_Mosaic",
+            "visibility": false
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+	"addLayerMaps": [
+        {
+            "slug": "Oil_Pipelines",
+			"visibility": true
+        },
+		{
+            "slug": "Gas_Pipelines",
+			"visibility": true			
+        },
+        {
+            "slug": "Major_Ports",
+			"visibility": true
+        },
+		{
+            "slug": "Ferry_Terminals",
+			"visibility": true
+        }
+    ]
+}

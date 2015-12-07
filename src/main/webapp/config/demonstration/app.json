@@ -1,0 +1,112 @@
+{
+    "title": "Demonstration Framework (BETA)",
+    "id": "demonstration",
+    "blurb": "Geoscience Australia is the Australian Government's national mapping agency. We provide authoritative geographic information services and products to enable evidence-based decision making, deliver government policy, assist industry development needs and support community wellbeing.",
+    "headerConfig": {
+        "title": "Geographic Information",
+        "backgroundImageUrl": "resources/img/header_bg.png"
+    },
+    "maps": [
+        {
+            "title": "Australian Topography Framework Demonstration (BETA)",
+			"tags": "3D_Demonstration_Map",
+            "id": "australiantopographyol3",
+            "previewImageUrl": "content/national-location-information/australiantopography/mapPreview.png",
+            "previewDescription": "The Australian Topographic map is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and infrastructure themes."
+        },        
+		{
+            "id": "geology",
+			"tags": "3D_Demonstration_Map",
+            "title" : "Australian and Region Surface Geology Framework Demonstration (BETA)",
+            "previewImageUrl": "content/minerals/geology/mapPreview.png",
+            "previewDescription": "National scale coverages of surface geology with topography base map.  Australian Surface Geology (1:1M & 1:2.5M) using 2012 data release."
+        },
+		{
+			"tags": "3D_Demonstration_Map",
+            "title": "Treaties with France Framework Demonstration (BETA)",
+            "id": "twf",
+            "previewImageUrl": "content/amsis/twf/mapPreview.jpg",
+            "previewDescription": "Treaties in force between the Commonwealth of Australia and the Republic of France."
+        },
+		{
+			"tags": "Demonstration_Optional_Map",
+            "title": "National Energy (BETA)",
+			"applicationUrl": "/interactive-maps/api/config/demonstration/NationalEnergy.htm",
+            "previewImageUrl": "/interactive-maps/api/config/demonstration/NationalEnergy.png",
+            "previewDescription": "Infrastructure refers to the fundamental facilities and systems serving a country, city, or area, including the services and facilities necessary for its economy to function."
+        },
+		{
+			"tags": "Demonstration_Optional_Map",
+            "title": "Where do Earthquakes Occur? (BETA)",
+			"applicationUrl": "/interactive-maps/api/config/demonstration/Where do Earthquakes Occur Example.htm",
+            "previewImageUrl": "/interactive-maps/api/config/demonstration/Where do Earthquakes Occur.png",
+            "previewDescription": "No part of Earth's surface is free from earthquakes, but some regions experience them more frequently. They are most common at tectonic plate boundaries where different plates meet."
+        },		
+		{
+			"tags": "Demonstration_Technical_Fixed_Map",
+            "title": "Fixed map in text (BETA)",
+			"applicationUrl": "/interactive-maps/api/config/demonstration/FixedMap.htm",
+            "previewImageUrl": "/interactive-maps/api/config/demonstration/FixedMap.png",
+            "previewDescription": "Treaties in force between the Commonwealth of Australia and the Republic of France."
+        },
+        {
+            "tags":"Demonstration_Technical_Fixed_Map",
+            "title": "Embedded 3D map",
+            "applicationUrl": "/interactive-maps/api/config/demonstration/Embedded3D.html",
+            "previewImageUrl": "/interactive-maps/api/config/demonstration/Embedded3DMap.png",
+            "previewDescription": "Default embedded map to a 3D view with no code."
+        },
+        {
+            "tags":"Demonstration_Technical_Fixed_Map",
+            "title": "Embedded Switch Frameworks",
+            "applicationUrl": "/interactive-maps/api/config/demonstration/EmbeddedVersion.html",
+            "previewImageUrl": "/interactive-maps/api/config/demonstration/FixedMap.png",
+            "previewDescription": "Switch between OpenLayers 2 and OpenLayers 3 in the embedded map by a button click."
+        },
+        {
+            "tags":"Demonstration_Technical_Fixed_Map",
+            "title": "Embedded Zoom to extent",
+            "applicationUrl": "/interactive-maps/api/config/demonstration/EmbeddedZoom1.html",
+            "previewImageUrl": "/interactive-maps/api/config/demonstration/FixedMap.png",
+            "previewDescription": "Zoom to extent via simple mapController API."
+        },
+        {
+            "tags":"Demonstration_Technical_Fixed_Map",
+            "title": "Simple geo-web-toolkit example",
+            "applicationUrl": "/interactive-maps/api/config/demonstration/SimpleToolkitMapExample.html",
+            "previewImageUrl": "/interactive-maps/api/config/demonstration/FixedMap.png",
+            "previewDescription": "Create a map with position, zoom and OpenStreet map as a base layer."
+        },
+        {
+            "tags":"Demonstration_Technical_Fixed_Map",
+            "title": "Embedded Add WMS",
+            "applicationUrl": "/interactive-maps/api/config/demonstration/EmbeddedAddWMS.html",
+            "previewImageUrl": "/interactive-maps/api/config/demonstration/FixedMap.png",
+            "previewDescription": "Update an embedded map by adding a WMS layer."
+        },
+        {
+            "tags":"Demonstration_Technical_Fixed_Map",
+            "title": "Toolkit UI Embedded integration example.",
+            "applicationUrl": "/interactive-maps/api/config/demonstration/ToolkitUIEmbeddedExample.html",
+            "previewImageUrl": "/interactive-maps/api/config/demonstration/FixedMap.png",
+            "previewDescription": "Use of only the UI component of the geo-web-toolkit from a parent side with embedded Interaction-Maps."
+        }
+    ],
+	"tags": [
+        {
+            "id": "3D_Demonstration_Map",
+            "description": "Demonstration of Openlayers version 3 and Cesium development for Interactive Maps.",
+            "title": "2D/3D Demonstration Map"
+        },
+		{
+            "id": "Demonstration_Optional_Map",
+            "description": "Demonstrates optional configurations.",
+            "title": "Demonstration Map Options"
+        },
+        {
+            "id": "Demonstration_Technical_Fixed_Map",
+            "description": "Demonstrates technical capabilities with a fixed map in a text page. Note the map still has a stored configuration.",
+            "title": "Demonstration Fixed Map"
+        }
+	]
+}

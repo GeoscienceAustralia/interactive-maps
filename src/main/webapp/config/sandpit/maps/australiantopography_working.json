@@ -1,0 +1,215 @@
+{
+    "id": "australiantopography",
+    "title": "Australian Topography",
+    "datumProjection": "EPSG:102100",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+			114.36,
+			-29.36
+		],
+		[
+			116.99,
+			-31.75
+		]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Australian Topography"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/geographic-information/australiantopography/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/geographic-information/australiantopography/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "GEODATA TOPO 250K Series 3",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-eab0-7506-e044-00144fdd4fa6/GEODATA+TOPO+250K+Series+3+-+Packaged+%28Personal+Geodatabase+format%29"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "expoart"
+            },
+            {
+                "id": "draw"
+            },
+			{
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "CLASS",
+                        "FEATURETYPE",
+                        "TYPE",
+                        "ROUTENAME",
+                        "SECTIONNAME",
+                        "NAME",
+                        "PERENNIALITY",
+                        "HIERARCHY",
+                        "FORMATION",
+                        "NRN",
+                        "SRN",
+                        "GAUGE",
+                        "OWNER",
+                        "RELATIONSHIP",
+                        "STATUS",
+                        "TRACKS",
+                        "POPULATION",
+                        "FEATURERELIABILITY",
+                        "FEATURESOURCE",
+                        "ATTRIBUTERELIABILITY",
+                        "ATTRIBUTESOURCE",
+                        "PLANIMETRICACCURACY",
+                        "SOURCE",
+                        "CREATIONDATE",
+                        "RETIREMENTDATE",
+                        "REVISED",
+                        "UPPERSCALE",
+                        "USCERTAINTY",
+                        "TEXTNOTE",
+                        "METADATACOMMENT",
+                        "ELEVATION",
+                        "AUSHYDRO_ID",
+						"Pixel Value"
+                    ],
+                    "propertiesAlias": [
+                        "Class",
+                        "Feature Type",
+                        "Type",
+                        "Route Name",
+                        "Section Name",
+                        "Name",
+                        "Perenniality",
+                        "Hierarchy",
+                        "Formation",
+                        "National Route Number",
+                        "State Route Number",
+                        "Gauge",
+                        "Owner",
+                        "Relationship",
+                        "Status",
+                        "Tracks",
+                        "Population",
+                        "Feature Reliability",
+                        "Feature Source",
+                        "Attribute Reliability",
+                        "Attribute Source",
+                        "Planimetric Accuracy (m)",
+                        "Source",
+                        "Creation Date",
+                        "Retirement Date",
+                        "Revised",
+                        "Upperscale",
+                        "Upperscale Certainty",
+                        "Textnote",
+                        "Metadata Comment",
+                        "Elevation",
+                        "Aushydro_Id",
+						"Pixel Value"
+                    ],
+					"primaryPropertyName": "FEATURETYPE",
+					"endpoints": [			
+						{
+						"featureTitle": "Total Magnetic Intensity 2015 greyscale",
+						"url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer", 
+						"geometryName": "Shape", "layers":"2", 
+						"imageDisplay": "600,550,96",						 
+						"queryType": "ArcGISREST" 
+						}
+					]
+                }
+            }
+        ]
+    },	
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        }
+    ],
+    "layerMaps": [		
+        {
+            "slug": "Australian_Topography_2014_ARCGIS"
+        },
+		{
+            "slug": "Average_Annual_Rainfall",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Average Annual Rainfall",
+            "url": "http://www-dev.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Average_Annual_Rainfall",
+            "metadataText": "This average precipitation grid are current as at 10/3/2011 and is version 3 of the Australian Water Availability Project. It is the average precipitation for all months from January 1900 until December 2010.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71645"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 0.3
+        },
+        {
+            "slug": "Australian_Topographic_250K_Mosaic",
+            "visibility": false
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+	"addLayerMaps": [
+        {
+            "slug": "Oil_Pipelines",
+			"visibility": true
+        },
+		{
+            "slug": "Gas_Pipelines",
+			"visibility": true			
+        },
+        {
+            "slug": "Major_Ports",
+			"visibility": true
+        },
+		{
+            "slug": "Ferry_Terminals",
+			"visibility": true
+        }
+    ]
+}

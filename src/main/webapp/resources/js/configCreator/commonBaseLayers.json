@@ -1,0 +1,62 @@
+{
+    "baseLayers": [
+        {
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "World Image",
+            "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "maxZoomLevel" : 12,
+            "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        },
+        {
+            "mapType": "GoogleStreet",
+            "visibility": false,
+            "name": "Google Street",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "maxZoomLevel" : 12,
+            "attribution":  "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
+        },
+        {
+            "mapType": "GoogleHybrid",
+            "visibility": false,
+            "name": "Google Hybrid",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "maxZoomLevel" : 12,
+            "attribution":  "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
+        },
+        {
+            "mapType": "GoogleSatellite",
+            "visibility": false,
+            "name": "Google Satellite",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "maxZoomLevel" : 12,
+            "attribution":  "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
+        },
+        {
+            "mapType": "GoogleTerrain",
+            "visibility": false,
+            "name": "Google Terrain",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "maxZoomLevel" : 12,
+            "attribution":  "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
+        },
+        {
+            "mapType": "XYZTileCache",
+            "visibility": false,
+            "name": "World Political Boundaries",
+            "url": "http://www.ga.gov.au/gis/rest/services/topography/World_Political_Boundaries_WM/MapServer",
+            "mapBGColor": "2356b9",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "maxZoomLevel" : 12,
+            "attribution": "Political <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        }
+    ]
+}

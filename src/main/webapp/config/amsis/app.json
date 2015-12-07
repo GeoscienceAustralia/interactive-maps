@@ -1,0 +1,141 @@
+{
+    "title": "AMSIS",
+    "id": "amsis",
+    "blurb": "Australian Marine Spatial Information System (AMSIS) is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction. The data has been sourced from Geoscience Australia, other Australian government agencies and some industry sources. AMSIS also contains the offshore mineral locations data that was used to create the Offshore Minerals Map. Information in this application should not be relied upon as the sole source of information for commercial and operational decisions. AMSIS should not be used for navigational purposes.",
+    "headerConfig": {
+        "title": "Applying geoscience to Australia's most important challenges",
+        "backgroundImageUrl": "resources/img/header_bg.png"
+    },
+    "maps": [
+        {
+            "title": "Seas and Submerged Lands Act 1973",
+            "tags": "MaritimeBoundaries",
+            "id": "sasla1973",
+            "previewImageUrl": "content/amsis/sasla1973/mapPreview.png",
+            "previewDescription": "An Act relating to Sovereignty in respect of certain Waters of the Sea and in respect of the Airspace over, and the Sea bed and Subsoil beneath, those Waters and to Sovereign Rights in respect of the Continental Shelf and the Exclusive Economic Zone and to certain rights of control in respect of the Contiguous Zone."
+        },
+        {
+            "title": "Offshore Petroleum and Greenhouse Gas Storage Act 2006",
+            "tags": "Petroleum&Minerals",
+            "id": "opggsa2006",
+            "previewImageUrl": "content/amsis/opggsa2006/mapPreview.png",
+            "previewDescription": "An Act about petroleum exploration and recovery, and the injection and storage of greenhouse gas substances, in offshore areas, and for other purposes."
+        },		
+		{
+            "title": "Commonwealth Coral Sea Fishery 2006",
+            "tags": "Fish",
+            "id": "ccsf2006",
+            "previewImageUrl": "content/amsis/fish/ccsf2006Preview.png",
+            "previewDescription": "Commonwealth Coral Sea Fishery 2006 web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006."
+        },
+		{
+            "title": "Commonwealth Bass Strait Scallop Fishery 2006",
+            "tags": "Fish",
+            "id": "cbssf2006",
+            "previewImageUrl": "content/amsis/fish/cbssf2006Preview.png",
+            "previewDescription": "Commonwealth  Bass Strait Scallop Fishery 2006 web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006."
+        },
+        {
+            "title": "Treaties with East Timor",
+            "tags": "Treaties",
+            "id": "twet",
+            "previewImageUrl": "content/amsis/twet/mapPreview.jpg",
+            "previewDescription": "Treaties in force between the Commonwealth of Australia and the Democratic Republic of East Timor."
+        },
+        {
+            "title": "Treaties with France",
+            "tags": "Treaties",
+            "id": "twf",
+            "previewImageUrl": "content/amsis/twf/mapPreview.jpg",
+            "previewDescription": "Treaties in force between the Commonwealth of Australia and the Republic of France."
+        },
+        {
+            "title": "Treaties with Indonesia",
+            "tags": "Treaties",
+            "id": "twi",
+            "previewImageUrl": "content/amsis/twi/mapPreview.jpg",
+            "previewDescription": "Treaties both in force and not yet in force between the Commonwealth of Australia and the Republic of Indonesia."
+        },
+        {
+            "title": "Treaties with New Zealand",
+            "tags": "Treaties",
+            "id": "twnz",
+            "previewImageUrl": "content/amsis/twnz/mapPreview.jpg",
+            "previewDescription": "Treaties in force between the Commonwealth of Australia and New Zealand."
+        },
+        {
+            "title": "Treaties with Papua New Guinea",
+            "tags": "Treaties",
+            "id": "twpn",
+            "previewImageUrl": "content/amsis/twpn/mapPreview.jpg",
+            "previewDescription": "Treaties in force between the Commonwealth of Australia and the Independent State of Papua New Guinea."
+        },
+        {
+            "title": "Treaties with Solomon Islands",
+            "tags": "Treaties",
+            "id": "twsi",
+            "previewImageUrl": "content/amsis/twsi/mapPreview.jpg",
+            "previewDescription": "Treaties in force between the Commonwealth of Australia and the Government of the Solomon Islands."
+        },
+        {
+            "title": "Legacy AMSIS",
+            "tags": "Original",
+            "previewImageUrl": "content/amsis/origionalAMSIS.png",
+            "previewDescription": "AMSIS is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction.",
+            "applicationUrl": "http://www.ga.gov.au/imf-amsis2/"
+        },
+		{
+            "title": "Data Contributors",
+            "tags": "Original",
+            "previewImageUrl": "content/amsis/contribute.png",
+            "previewDescription": "AMSIS contains data from Commonwealth agencies and industry sources.",
+            "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/data-contributors"
+        },
+		{
+            "title": "Australian Ocean Governance and Relevant Legislation",
+            "tags": "Original",
+            "previewImageUrl": "content/amsis/legislation.jpg",
+            "previewDescription": "This information provides an overview of legislation and background information which relates to data found in the Australian Marine Spatial Information System (AMSIS).",
+            "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/australian-ocean-governance-and-relevant-legislation"
+        },		
+        {
+            "title": "Petroleum Wells Database",
+            "tags": "Other",
+            "previewImageUrl": "content/amsis/petroleumWells.png",
+            "previewDescription": "Petroleum wells application.",
+            "applicationUrl": "http://dbforms.ga.gov.au/www/npm.well.search"
+        }
+    ],
+    "tags": [
+		{
+            "id": "Original",
+            "description": "Original AMSIS application and information.",
+            "title": "Original AMSIS"
+        },
+        {
+            "id": "MaritimeBoundaries",
+            "description": "The primary task for maritime boundary determination is the delineation of the baseline from which the outer limits of the various maritime zones are measured. This TSB consists of several components including normal baseline, straight baselines and bay and river closing lines.",
+            "title": "Maritime Boundaries"
+        },
+		{
+            "id": "Fish",
+            "description": "Fisheries management act.",
+            "title": "Fisheries Management Act"
+        },
+        {
+            "id": "Petroleum&Minerals",
+            "description": "Petroleum and mineral resource blocks as described by Australian legislation.",
+            "title": "Offshore Petroleum and Minerals"
+        },
+        {
+            "id": "Treaties",
+            "description": "The treaties shown on AMSIS are those related to various maritime agreements between Australia and neighbouring countries. The table below links the various treaties displayed in AMSIS with the text or details of the specific treaty. In some cases more than one treaty is relevant.",
+            "title": "Treaties"
+        },
+        {
+            "id": "Other",
+            "description": "Relevant AMSIS applications.",
+            "title": "Related Applications"
+        }
+    ]
+}

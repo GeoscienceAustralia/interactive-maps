@@ -1,0 +1,93 @@
+<div ng-if="configReady" ng-controller="applicationMapPageController">
+    <div >
+        <geo-map framework="{{geoConfig.framework}}" map-element-id="interactivemap" datum-projection="{{geoConfig.datumProjection}}"
+                display-projection="{{geoConfig.displayProjection}}"
+                center-position="{{geoConfig.centerPosition}}"
+                zoom-level="{{geoConfig.zoomLevel}}"
+                initial-extent="geoConfig.initialExtent"
+                >
+            <geo-map-layer ng-repeat="baseLayer in geoConfig.baseMaps"
+                          layer-name="{{baseLayer.name}}"
+                          layer-url="{{baseLayer.url}}"
+                          wrap-date-line="{{baseLayer.wrapDateLine}}"
+                          layer-type="{{baseLayer.mapType}}"
+                          layers="{{baseLayer.layers}}"
+                          is-base-layer="true"
+                          visibility="{{baseLayer.visibility}}"
+                          layer-attribution="{{baseLayer.attribution}}"
+                          refresh-layer="{{layer.refresh}}"
+                          max-zoom-level="{{baseLayer.maxZoomLevel}}"
+                          min-zoom-level="3"
+                          on-error="onBaseLayerError(message,layer)">
+            </geo-map-layer>
+
+            <geo-map-layer ng-repeat="layer in geoConfig.layerMaps"
+                          layer-name="{{layer.name}}"
+                          layer-url="{{layer.url}}"
+                          wrap-date-line="{{layer.wrapDateLine}}"
+                          layer-type="{{layer.mapType}}"
+                          layers="{{layer.layers}}"
+                          visibility="{{layer.visibility}}"
+                          opacity="{{layer.opacity}}"
+                          refresh-layer="{{layer.refresh}}"
+                          max-zoom-level="{{layer.maxZoomLevel}}"
+                          on-error="onLayerError(message,layer)">
+            </geo-map-layer>
+
+
+            <geo-map-layer ng-repeat="layer in geoConfig.searchTempLayers"
+                          layer-name="{{layer.name}}"
+                          layer-url="{{layer.url}}"
+                          wrap-date-line="{{layer.wrapDateLine}}"
+                          layer-type="{{layer.mapType}}"
+                          layers="{{layer.layers}}"
+                          visibility="{{layer.visibility}}"
+                          opacity="{{layer.opacity}}">
+            </geo-map-layer>
+
+            <geo-feature-layer ng-if="interrogateFeatures.length > 0" layer-name="interrogateResultLayer"
+                              visibility="'true'">
+                <geo-feature ng-repeat="feature in interrogateFeatures"
+                            geo-json-feature="feature">
+                </geo-feature>
+            </geo-feature-layer>
+
+            <geo-feature-layer ng-if="searchFeatures.length > 0" layer-name="SearchFeatureLayer"
+                              visibility="'true'"
+                              post-add-layer="resolveSearchTemplate(map,layer)"
+                              on-layer-destroy="cleanUpPopups(map)">
+                <geo-feature ng-repeat="feature in searchFeatures"
+                            geo-json-feature="feature"
+                            is-lon-lat-order-valid="feature.isLonLatOrderValid">
+                </geo-feature>
+            </geo-feature-layer>
+
+
+            <geo-map-marker ng_repeat="marker in currentGroup.markers"
+                           marker-icon="{{marker.icon}}"
+                           marker-long="{{marker.Long}}"
+                           marker-lat="{{marker.lat}}"
+                           marker-id="{{marker.id}}"
+                           marker-onClick="mapMarkerClicked(id)">
+            </geo-map-marker>
+
+            <geo-map-control map-control-name="OverviewMap" control-options="overviewMapOptions" pre-options-loaded="loadOverviewMapOptions(options)"
+                            map-control-id="mapOverviewControl"></geo-map-control>
+            <geo-map-control map-control-name="ScaleLine"></geo-map-control>
+            <!--            <geo-map-control map-control-name="WMSGetFeatureInfo"
+                                        map-control-id="getFeatureInfoControl"></geo-map-control>-->
+
+            <geo-map-control map-control-name="panzoombar" control-options="panzoombarControlOptions"></geo-map-control>
+            <geo-map-control ng-if="geoConfig.framework !== 'olv3'" map-control-name="interactivemapspermalink" control-options="permalinkControlOptions"></geo-map-control>
+            <geo-map-control map-control-name="attribution"></geo-map-control>
+            <geo-map-control map-control-name="mouseposition" control-options="mapControlOptions"></geo-map-control>
+            <geo-map-control ng-if="geoConfig.framework !== 'olv3'" map-control-name="measureline" control-options="measureLineControlOptions"
+                            map-control-id="myMeasureTest"></geo-map-control>
+            <geo-map-control ng-if="geoConfig.framework !== 'olv3'" map-control-name="measureline" control-options="measureLineControlOptions"
+                            map-control-id="myMeasureTestPlot"></geo-map-control>
+            <geo-map-control ng-if="geoConfig.framework !== 'olv3'" map-control-name="measurepolygon"
+                            control-options="measurePolygonControlOptions"></geo-map-control>
+        </geo-map>
+    </div>
+</div>
+

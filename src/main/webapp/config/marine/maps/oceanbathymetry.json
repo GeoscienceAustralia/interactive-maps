@@ -1,0 +1,84 @@
+{
+    "id": "oceanbathymetry",
+    "title": "Ocean Bathymetry",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            30,
+            10
+        ],
+        [
+            180,
+            -70
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Ocean Bathymetry"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/marine/oceanbathymetry/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/marine/oceanbathymetry/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            }           
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "visibility": false            
+        },
+        {
+            "slug": "Multibeam_50m_Bathymetry_2012_RGB",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Multibeam_Survey_Extents_2014",
+            "visibility": false,
+            "opacity": 0.5,
+            "queryFeatures": true
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

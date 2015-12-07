@@ -1,0 +1,792 @@
+{
+    "id": "rechargedischarge",
+    "title": "Recharge Discharge",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Recharge Discharge"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/water/rechargedischarge/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/water/rechargedischarge/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Review of mapping approaches to recharge and discharge estimation",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-f780-7506-e044-00144fdd4fa6/Review+of+mapping+approaches+to+recharge+and+discharge+estimation"
+                        },
+                        {
+                            "id": "Recharge and discharge estimation in data poor areas: User guide for the recharge and discharge estimation spreadsheets and MapConnect",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a412161b-2716-5d23-e044-00144fdd4fa6/Recharge+and+discharge+estimation+in+data+poor+areas%3A+User+guide+for+the+recharge+and+discharge+estimation+spreadsheets+and+MapConnect"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "titleText": "Field Site Data",
+                    "panelHeading": "Field Site Data",
+                    "propertiesOfInterest": [
+                        "TITLE",
+                        "AUTHOR",
+                        "DATE_",
+                        "LOCATION",
+                        "LATITUDE",
+                        "LONGITUDE",
+                        "TECHNIQUE",
+                        "LANDUSE_DETAILED",
+                        "LANDUSE_SIMPLIFIED",
+                        "COMMENTS",
+                        "RAINFALL_MM_YR",
+                        "RECHARGE_MM_YR"
+                    ],
+                    "propertiesAlias": [
+                        "Title",
+                        "Author",
+                        "Date",
+                        "Location",
+                        "Latitude",
+                        "Longitude",
+                        "Technique",
+                        "Landuse Detailed",
+                        "Landuse Simplified",
+                        "Comments",
+                        "Rainfall MM/YR",
+                        "Recharge MM/YR"
+                    ],
+                    "primaryPropertyName": "TITLE",
+                    "sizeOfBBox": 5,
+                    "endpoints": [                        
+						{ 
+							"url": "/gis/rest/services/groundwater/RechargeDischarge/MapServer", 
+							"featureType": "Surface_Water_Management_Area_2006", 
+							"featurePrefix": "groundwater_RechargeDischarge", 
+							"geometryName": "Shape", 
+							"layers":"3,4,5,6,7", 
+							"imageDisplay": "600,550,96", 
+							"featureTitle": "myTest Feature Title", 
+							"queryType": "ArcGISREST" 
+						}
+                    ]
+                }
+            },
+            {
+                "slug": "Identify_Export",
+                "config": {
+                    "titleText": "Site Query List",
+                    "panelHeading": "Site Query List",
+                    "propertiesOfInterest": [
+                        "TITLE",
+                        "TECHNIQUE",
+                        "Pixel Value"
+                    ],
+                    "propertiesAlias": [
+                        "Site Title",
+                        "Technique",
+                        "Pixel Value"
+                    ],
+                    "sizeOfBBox": 5,
+                    "endpoints": [
+                        {
+                            "queryUrl": "/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+                            "queryLayers": "Discharge_Database,Recharge_Database",
+                            "queryVersion": "1.1.0",
+                            "featureTitle": "Recharge Discharge",
+                            "queryType": "WMS"
+                        },
+                        {
+                            "url": "/gis/rest/services/groundwater/RechargeDischarge/MapServer",
+                            "geometryName": "Shape",
+                            "tolerance": "1",
+                            "layers": "all:3,4,5,6,7,8,9,10,11,12,13",
+                            "returnGeometry": false,
+                            "imageDisplay": "600,550,96",
+                            "queryType": "ArcGISREST"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        },
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography",
+            "opacity": 0.6
+        },
+        {
+            "slug": "Surface_Geology_Of_Australia",
+            "visibility": false,
+            "opacity": 0.6
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Chloride",
+            "groupId": "chloride",
+            "visibility": false,
+            "defaultLayerId": "Chloride_Deposition_in_Rainfall"
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Vegetation",
+            "groupId": "vegetation",
+            "visibility": false,
+            "defaultLayerId": "Vegetation_Type"
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Method of last resort (MOLR)",
+            "groupId": "MOLR",
+            "visibility": false,
+            "defaultLayerId": "MOLR_Best"
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Geology Cover",
+            "groupId": "geologycover",
+            "visibility": false,
+            "defaultLayerId": "Geology_Regolith"
+        },
+        {
+            "slug": "Average_Annual_Rainfall",
+            "visibility": false
+        },
+        {
+            "slug": "Evapotranspiration",
+            "visibility": false
+        },
+        {
+            "slug": "Surface_Water_Management_Area_2006",
+            "visibility": false
+        },
+        {
+            "slug": "Discharge_Database"
+        },
+        {
+            "slug": "Recharge_Database"
+        },
+        {
+            "slug": "Population_Centers"
+        }
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "MOLR",
+            "layerMaps": [
+                {
+                    "slope": "Method_Of_Last_Resort_Best",
+                    "visibility": false
+                },
+                {
+                    "slug": "Method_Of_Last_Resort_Upper",
+                    "visibility": false
+                },
+                {
+                    "slug": "Method_Of_Last_Resort_Lower",
+                    "visibility": false
+                }
+            ]
+        },
+        {
+            "groupId": "chloride",
+            "layerMaps": [
+                {
+                    "slug": "Chloride_Deposition_In_Rainfall",
+                    "visibility": false
+                },
+                {
+                    "slug": "Chloride_Deposition_In_Rainfall_Upper",
+                    "visibility": false
+                },
+                {
+                    "slug": "Chloride_Deposition_In_Rainfall_Lower",
+                    "visibility": false
+                }
+            ]
+        },
+        {
+            "groupId": "vegetation",
+            "layerMaps": [
+                {
+                    "slope": "Vegetation_Type",
+                    "visibility": false
+                },
+                {
+                    "slug": "Vegetation Cleared",
+                    "visibility": false
+                }
+            ]
+        },
+        {
+            "groupId": "geologycover",
+            "layerMaps": [
+                {
+                    "slug": "Geology Regolith",
+                    "visibility": false
+                },
+                {
+                    "slug": "Soil_Classification",
+                    "visibility": false
+                }
+            ]
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}
+
+
+
+{
+            "slug": "Average_Annual_Rainfall",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Average Annual Rainfall",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Average_Annual_Rainfall",
+            "metadataText": "This average precipitation grid are current as at 10/3/2011 and is version 3 of the Australian Water Availability Project. It is the average precipitation for all months from January 1900 until December 2010.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71645"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+        {
+            "slug": "Chloride_Deposition_In_Rainfall",
+			"extent": [[99,10],[169,-55]],
+            "id": "Chloride_Deposition_in_Rainfall",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Chloride Deposition in Rainfall",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Chloride_Deposition_in_Rainfall",
+            "metadataText": "The chloride deposition dataset is created by taking observational chloride in rainfall data from 291 sites across Australia and interpolating it to form a gridded data set at a resolution of 0.05? x 0.05? for the region of Australia. This dataset (and the derivative 95% confidence interval for upper and lower datasets) were created by CSIRO.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71620"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+        {
+            "slug": "Chloride_Deposition_In_Rainfall_Upper",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Chloride Deposition in Rainfall Upper",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Chloride_Deposition_in_Rainfall_Upper",
+            "metadataText": "The chloride deposition dataset is created by taking observational chloride in rainfall data from 291 sites across Australia and interpolating it to form a gridded data set at a resolution of 0.05? x 0.05? for the region of Australia. This dataset (and the derivative 95% confidence interval for upper and lower datasets) were created by CSIRO.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71620"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+        {
+            "slug": "Chloride_Deposition_In_Rainfall_Lower",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Chloride Deposition in Rainfall Lower",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Chloride_Deposition_in_Rainfall_Lower",
+            "metadataText": "The chloride deposition dataset is created by taking observational chloride in rainfall data from 291 sites across Australia and interpolating it to form a gridded data set at a resolution of 0.05? x 0.05? for the region of Australia. This dataset (and the derivative 95% confidence interval for upper and lower datasets) were created by CSIRO.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71620"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+		{
+            "slug": "Discharge_Database",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Discharge Database",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Discharge_Database",
+            "metadataText": "This data set compiles information on components of the water balance from plot scale studies around Australia and in particular those studies that have identified groundwater discharge through vegetation as a component of the water balance. The data has been collated from published literature in journal article and reports. It provides spatial coverage of field estimates of discharge conducted across Australia as identified by the review: O'Grady A, Carter J and Holland K (2010) Review of Australian groundwater discharge studies of terrestrial systems. CSIRO: Water for a Healthy Country National Research. http://www.clw.csiro.au/publications/waterforahealthycountry/2010/wfhc-review-australian-groundwater-discharge-studies.pdf",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71619"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+		{
+            "slug": "Evapotranspiration",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Evapotranspiration",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Evapotranspiration",
+            "metadataText": "This dataset is the mean annual surface evaporation between 1981 and 2006 and estimates potential evaporation using a variety of methods as as well as intermediary datasets. The main intermediary datasets relate to surface radiation but also include windspeed, vapour pressure deficit and air temperature. In addition, two 'reference datasets' are included: FAO56 crop reference evapotranspiration (Allen et al., 1998) and 'PenPan' evaporation (Rotstayn et al. 2006), which is synthetic US Class A pan evaporation. The source data (maximum and minimum air temperature, vapour pressure) are not available through this website (see Jones et al. (2009) for access). Each dataset describes a specific variable for a specific time-step. That is, data are supplied as daily values as well as monthly and annual aggregates/averages. Long-term (1981-2006) annual averages are also provided. Specifics on the source data and the formulations used to generate each variable are outlined fully in Donohue et al. (2009). CSIRO Land and Water is the custodian of this dataset and it can be downloaded from http://www-data.wron.csiro.au/ts/climate/evaporation/donahue For full metadata, can acquire it at the above website or can see the publications: Donohue R. J., McVicar T. R. & Roderick M. L. (2010) Assessing the ability of potential evaporation formulations to capture the dynamics in evaporative demand within a changing climate. Journal of Hydrology, 386, 186-197, doi:10.1016/j.jhydrol.2010.03.020 or Donohue R. J., McVicar T. R. & Roderick M. L. (2009) Generating Australian potential evaporation data suitable for assessing the dynamics in evaporative demand within a changing climate. CSIRO: Water for a Healthy Country National Research Flagship, Canberra. http://www.clw.csiro.au/publications/waterforahealthycountry/2009/wfhc-evaporative-demand-dynamics.pdf for more information.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71621"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+		{
+            "slug": "Geology Regolith",
+            "id": "Geology_Regolith",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Geology Regolith",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Geology_Regolith,Geology_Regolith_Cover",
+            "metadataText": "The Geology Regolith dataset is a generalised version based on regolith type of the Surface Geology of Australia (2010 edition) released by Geoscience Australia. This dataset is a seamless national coverage of outcrop and surficial geology, compiled for use at or around 1:1 million scale. The data maps outcropping bedrock geology and unconsolidated or poorly consolidated regolith material covering bedrock.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71644"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+		{
+            "slope": "Method_Of_Last_Resort_Best",
+            "id": "Method of last resort (MORL) Best",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Method of last resort (MORL) Best",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "MOLR_Best",
+            "metadataText": "This dataset (and the derivative 95% confidence interval for upper and lower datasets) were created by CSIRO and provides a spatial coverage of estimates of the long term average annual recharge estimates across Australia. It is based upon regression equations between soil order, vegetation type and long term average annual rainfall. More details on the method used to estimate this dataset are provided in the report: Leaney et al (2011) Recharge and discharge estimation in data poor areas: Scientific reference guide. CSIRO: Water for a Healthy Country National Research Flagship.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71607"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+        {
+            "slug": "Method_Of_Last_Resort_Upper",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Method of last resort (MORL) Upper",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "MOLR_Upper",
+            "metadataText": "This dataset (and the derivative 95% confidence interval for upper and lower datasets) were created by CSIRO and provides a spatial coverage of estimates of the long term average annual recharge estimates across Australia. It is based upon regression equations between soil order, vegetation type and long term average annual rainfall. More details on the method used to estimate this dataset are provided in the report: Leaney et al (2011) Recharge and discharge estimation in data poor areas: Scientific reference guide. CSIRO: Water for a Healthy Country National Research Flagship ",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71607"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+        {
+            "slug": "Method_Of_Last_Resort_Lower",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Method of last resort (MORL) Lower",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "MOLR_Lower",
+            "metadataText": "This dataset (and the derivative 95% confidence interval for upper and lower datasets) were created by CSIRO and provides a spatial coverage of estimates of the long term average annual recharge estimates across Australia. It is based upon regression equations between soil order, vegetation type and long term average annual rainfall. More details on the method used to estimate this dataset are provided in the report: Leaney et al (2011) Recharge and discharge estimation in data poor areas: Scientific reference guide. CSIRO: Water for a Healthy Country National Research Flagship ",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71607"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+		{
+            "slug": "MDBEPShapes",
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "MDBEPShapes",
+            "url": "http://intranet-dev.ga.gov.au/gis/rest/services/topography/MDBEP_Shapes/MapServer",
+            "layers": [
+                "0",
+                "1",
+                "3",
+                "4"
+            ],
+            "opacity": 1,
+            "metadataText": "Test.",
+            "ogcLinks": [
+                {
+                    "description": "REST",
+                    "url": "http://intranet-dev.ga.gov.au/gis/rest/services/topography/MDBEP_Shapes/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://intranet-dev.ga.gov.au/gis/services/topography/MDBEP_Shapes/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://intranet-dev.ga.gov.au/gis/rest/services/topography/MDBEP_Shapes/MapServer?f=lyr&v=9.3"
+                }
+            ]
+        },
+		{
+            "slug": "Recharge_Database",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Recharge Database",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Recharge_Database",
+            "metadataText": "This dataset was created by CSIRO and provides a spatial coverage of field estimates of recharge conducted across Australia as identified by the review: Crosbie, R. S., Jolly, I. D., Leaney, F. W., Petheram, C., and Wohling, D.: Review of Australian groundwater recharge studies, CSIRO Water for a Healthy Country National Research Flagship, Canberra, 79 pp., 2010a http://www.clw.csiro.au/publications/waterforahealthycountry/2010/wfhc-review-Australian-recharge.pdf A more detailed description of the data is provided in: Crosbie, R. S., I. D. Jolly, F. W. Leaney, and C. Petheram (2010), Can the dataset of field based recharge estimates in Australia be used to predict recharge in data-poor areas?, Hydrol. Earth Syst. Sc., 14(10), 2023-2038. http://www.hydrol-earth-syst-sci.net/14/2023/2010/hess-14-2023-2010.pdf",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71608"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+		{
+            "slug": "Soil_Classification",
+            "mapType": "WMS",
+            "visibility": false,
+            "queryFeatures": false,
+            "name": "Soil Classification",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Soil_Classification,Soil_Classification_Cover",
+            "metadataText": "The soil landscapes map is a vector data set showing the soil landscape polygons from the ten sheets of the Atlas of Australian Soils. Attributes include the Atlas of Australian Soils map unit (soil landscape) and dominant soil type attributes. The digital version of the Atlas of Australian Soils was created by NRIC (National Resource Information Centre) in 1991 from scanned tracings of the published hardcopy maps (1 - 10), Northcote et al. (1960 - 1968). The Atlas of Australian Soils (Northcote et al, 1960-68) was compiled by CSIRO in the 1960's to provide a consistent national description of Australia's soils. It comprises a series of ten maps and associated explanatory notes, compiled by K.H. Northcote and others. The maps were published at a scale of 1:2,000,000, but the original compilation was at scales from 1:250,000 to 1:500,000.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71643"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+		{
+            "slug": "Surface_Water_Management_Area_2006",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Surface Water Management Area 2006",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Surface_Water_Management_Area_2006",
+            "metadataText": "The purpose of the Groundwater theme is to provide input data to the Recharge and Discharge Estimation Tools. 10 national scale datasets are provided, including vegetation, soil and rainfall. The Groundwater theme allows you to preview and interrogate all available layers.",
+            "opacity": 1
+        },
+		 {
+            "slug": "Vegetation Cleared",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Vegetation Cleared",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Vegetation_Cleared",
+            "metadataText": "This dataset is a union of the Integrated Vegetation Cover 2009 (IVC)obtained from BRS and the draft version of the Dynamic Land Cover Map based on MODIS Data, obtained from Geoscience Australia. The categories for this dataset are No, Yes, Requires further investigation, Urban and Water. The IVC dataset was classified into Cleared (annual crops and built up areas), Not Cleared (native forests, shrublands, plantations, perennial crops and water bodies) and Further Investigation Required (native grasslands and minimally modified pasture, horticultural trees and shrubs). The draft version of the Dynamic Land Cover Map presents land cover information for every 250m by 250m area of the country from April 2000 to April 2008. The classification scheme used to describe land cover categories in the Dynamic Land Cover Map conforms to the 2007 International Standards Organisation (ISO) land cover standard (19144-2). These reflect the structural character of vegetation, ranging from cultivated and managed land covers (crops and pastures) to natural land covers such as closed forest and sparse, open grasslands. This dataset was reclassified into Cleared, Not Cleared and Further investigation required. Cleared - Extraction Sites, Bare Areas, Rainfed Cropping, Irrigated Cropping and Irrigated Pasture and Rainfed Pasture Not Cleared - Wetlands, Forbs (open and closed), Tussock, Alpine and Hummock Grasses (Open, Closed and sparse), Shrubs (open and closed), Rainfed Sugar, Irrigated Sugar and Trees (Open, closed, scattered and sparse) and water bodies. To obtain urban areas, the dataset was unioned with the 250k topographic map series obtained from Geoscience Australia. These two datasets were joined together and where they correlated, ie both cleared, or both not cleared, were labelled accordingly, and where there was a conflict it was classified as Further investigation required.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },
+        {
+            "slug": "Vegetation_Type",
+            "id": "Vegetation_Type",
+            "mapType": "WMS",
+            "visibility": true,
+            "queryFeatures": false,
+            "name": "Vegetation Type",
+            "url": "http://intranet-test.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer",
+            "layers": "Vegetation_Type",
+            "metadataText": "The source data for this dataset is the draft version of the Dynamic Land Cover Map based on MODIS Data, obtained from Geoscience Australia. The Dynamic Land Cover Map presents land cover information for every 250m by 250m area of the country from April 2000 to April 2008. The classification scheme used to describe land cover categories in the Dynamic Land Cover Map conforms to the 2007 International Standards Organisation (ISO) land cover standard (19144-2). The Dynamic Land Cover Map shows Australian land covers clustered into 34 ISO classes. These reflect the structural character of vegetation, ranging from cultivated and managed land covers (crops and pastures) to natural land covers such as closed forest and sparse, open grasslands. This dataset was reclassified into Annuals, Perennials, Water Bodies and Urban Areas. Annuals - Extraction Sites, Bare Areas, Rainfed Cropping, Irrigated Cropping and Irrigated Pasture and Rainfed Pasture Perennials - Wetlands, Forbs (open and closed), Tussock, Alpine and Hummock Grasses (Open, Closed and sparse), Shrubs (open and closed), Rainfed Sugar Irrigated Sugar and Trees (Open, closed, scattered and sparse) Water Bodies - Inland Waterbodies and Salt Lakes To obtain urban areas, the dataset was unioned with the 250k topographic map series obtained from Geoscience Australia.",
+            "ogcLinks": [
+                {
+                    "description": "Data Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_71625"
+                },
+                {
+                    "description": "Service Metadata",
+                    "url": ""
+                },
+                {
+                    "description": "REST",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/groundwater/RechargeDischarge/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/RechargeDischarge/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1
+        },

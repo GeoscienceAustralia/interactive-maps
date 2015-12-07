@@ -1,0 +1,149 @@
+{
+    "id": "nationalmaptest",
+    "title": "National Map Dynamic Layers Test",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [99, 10],
+        [169, -55]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "National Map Dynamic Layers Test"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [		
+			{
+			"id" : "info",
+			"toolPanelUrl" : "resources/partial/infoPanel.html",
+			"toolToggleUrl": "resources/partial/infoToggle.html",			
+			"config": {
+				"titleText": "Download dataset",
+				"panelHeading": "Download Dataset",
+				"infoList": [
+					{ "id" : "GEODATA TOPO 250K Series 3", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-eab0-7506-e044-00144fdd4fa6/GEODATA+TOPO+250K+Series+3+-+Packaged+%28Personal+Geodatabase+format%29" }
+					]
+				}
+			},
+			{
+                "id": "export",
+                "toolPanelUrl" : "resources/partial/exportPanel.html",
+                "toolToggleUrl": "resources/partial/exportToggle.html",
+				"config": {
+					"titleText": "Print to PDF",
+					"panelHeading": "Print to PDF",
+					"url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+					"templatesList": ["Landscape_A4", "Portrait_A4", "Landscape_A3", "Portrait_A3"],
+					"markerUrl": "content/marker/marker-print.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+			},
+			{
+				"id": "identifyTool",
+				"toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+				"toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+				"config": {
+					"titleText": "Identify features",
+					"panelHeading": "Identify Features",
+					"symbol": "<img src=\"content/marker/identify.png\"/>",
+					"propertiesOfInterest": ["CLASS","FEATURETYPE","TYPE","ROUTENAME","SECTIONNAME","NAME","PERENNIALITY","HIERARCHY","FORMATION","NRN","SRN","GAUGE","OWNER","RELATIONSHIP","STATUS","TRACKS","POPULATION","FEATURERELIABILITY","FEATURESOURCE","ATTRIBUTERELIABILITY","ATTRIBUTESOURCE","PLANIMETRICACCURACY","SOURCE","CREATIONDATE","RETIREMENTDATE","REVISED","UPPERSCALE","USCERTAINTY","TEXTNOTE","METADATACOMMENT","ELEVATION","AUSHYDRO_ID"],
+					"propertiesAlias": ["Class","Feature Type","Type","Route Name","Section Name","Name","Perenniality","Hierarchy","Formation","National Route Number","State Route Number","Gauge","Owner","Relationship","Status","Tracks","Population","Feature Reliability","Feature Source","Attribute Reliability","Attribute Source","Planimetric Accuracy (m)","Source","Creation Date","Retirement Date","Revised","Upperscale","Upperscale Certainty","Textnote","Metadata Comment","Elevation","Aushydro_Id"],
+					"primaryPropertyName": "NAME",
+					"showEmptyFeatures": true,
+					"requiresGeometry": true,		
+					"markerUrl": "content/marker/marker-identify.png",
+					"markerWidth": "55",
+					"markerHeight": "40",
+					"endpoints": [
+						{
+							"queryUrl": "/gis/services/topography/Australian_Topography_2014/MapServer/WMSServer",
+							"queryLayers": "Populated_Places_8,Locations_7,TOPO250K_Mine_Locations,Caves,Pinnacles,TOPO250K_Lighthouses,TOPO250K_Aircraft_Facilities,TOPO250K_Aircraft_Runways,Railway_Stops,Railway_Crossings,Railways_3,TOPO250K_Road_Crossings,TOPO250K_Roads,TOPO250K_Ferry_Routes,TOPO250K_Reserves,TOPO250K_Prohibited_Areas,TOPO250K_Vertical_Obstructions,TOPO250K_Powerlines",
+							"queryVersion": "1.1.0",
+							"queryType": "WMS"
+						}
+					]
+				}
+			}			
+        ]
+    },
+    "baseMaps": [
+        {
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "World Image",
+            "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+			"maxZoomLevel" : 12,
+            "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a>"
+        }
+    ],
+    "layerMaps": [		
+		{
+            "mapType":"WMS",
+            "visibility":true,
+            "name":"Storage Tanks",
+			"layers":"Storage_Tanks",
+            "url":"http://www.ga.gov.au/gis/services/topography/Dynamic_National_Map_Culture_and_Infrastructure/MapServer/WMSServer",
+			"metadataText": "Blurb.",
+            "ogcLinks" : [
+			],
+            "opacity":1.0,
+            "layerTimeout": 5000
+        },
+		{
+            "mapType":"WMS",
+            "visibility":false,
+            "name":"Dynamic National Map Culture and Infrastructure",
+			"layers":"Storage_Tanks,Vertical_Obstructions,Cemetery_Points,Conveyors,Oil_And_Gas_Pipelines,Water_Pipelines,Powerlines,Mine_Areas,Recreation_Areas,Cemetery_Areas,Urban_Landscapes",
+            "url":"http://www.ga.gov.au/gis/services/topography/Dynamic_National_Map_Culture_and_Infrastructure/MapServer/WMSServer",
+			"metadataText": "Blurb.",
+            "ogcLinks" : [
+			],
+            "opacity":1.0,
+            "layerTimeout": 5000
+        },
+		{
+            "mapType":"WMS",
+            "visibility":false,
+            "name":"Dynamic National Map Elevation Relief and Physiography",
+			"layers":"Caves,Pinnacles,Spot_Elevations_Labels,Spot_Elevations,Horizontal_Control_Points_Labels,Horizontal_Contol_Points,Cliffs,Cuttings_And_Embankments,Sandridges,Contours_Labels,Contours_1Million_Scale,Contours_250K_Scale,Craters,Sands,Distorted_Surfaces,Outcrops,Hypsometric_Areas",
+            "url":"http://www.ga.gov.au/gis/services/topography/Dynamic_National_Map_Elevation_Relief_and_Physiography/MapServer/WMSServer",
+			"metadataText": "Blurb.",
+            "ogcLinks" : [
+			],
+            "opacity":1.0,
+            "layerTimeout": 5000
+        },
+		{
+            "mapType":"WMS",
+            "visibility":false,
+            "name":"Dynamic National Map Hydrography and Marine",
+			"layers":"Offshore_Rocks_and_Wrecks_Labels,Lighthouses_Labels,Reefs_and_Shoals_Labels,Locks_Labels,Waterfalls_Labels,Springs_Labels,Waterholes_Labels,Bores_Labels,Natural_Water_Points_Labels,Water_Storage_Points_Labels,Dam_Walls_Labels,Watercourse_Areas_Labels,Watercourses_Major_Rivers_National_Scale_to_5Million_Labels,Watercourses_Major_Rivers_Scale_5Million_to_300000_Labels,Watercourses_All_Rivers_Labels,Waterbody_Lakes_National_Scale_to_5Million_Labels,Waterbody_Lakes_Scale_5Million_to_300000_Labels,Waterbody_Reservoirs_National_Scale_to_300000_Labels,Waterbody_Extra_Lakes_and_Reservoirs_Labels,Waterbody_All_Lakes_Labels,Waterbody_All_Reservoirs_Labels,Swamps_and_Marine_Swamps_Labels,Offshore_Rocks_And_Wrecks,Lighthouses,Marine_Infrastructure_Lines,Reefs_And_Shoals,Locks,Waterfalls,Springs,Waterholes,Bores,Natural_Water_Points,Water_Storage_Points,Canal_Lines,Dam_Walls,Rapid_Lines,Spillways,Levees,Canal_Areas,Rapid_Areas,Watercourse_Areas,Pondage_Areas,Foreshore_Flats,Waterbody_Lakes_National_Scale_to_5Million,Waterbody_Lakes_Scale_5Million_to_300000,Waterbody_Reservoirs_National_Scale_to_300000,Waterbody_Extra_Lakes_and_Reservoirs,Waterbody_All_Lakes,Waterbody_All_Reservoirs,Watercourses_Major_Rivers_National_Scale_to_5Million,Watercourses_Major_Rivers_Scale_5Million_to_300000,Watercourses_All_Rivers,Flats_SwampsAndMarineSwamps,Flats_LandSubjectToInundation,Flats_SalineCoastalFlats",
+            "url":"http://www.ga.gov.au/gis/services/topography/Dynamic_National_Map_Hydrography_and_Marine/MapServer/WMSServer",
+			"metadataText": "Blurb.",
+            "ogcLinks" : [
+			],
+            "opacity":1.0,
+            "layerTimeout": 5000
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

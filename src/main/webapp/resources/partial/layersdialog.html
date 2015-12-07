@@ -1,0 +1,11 @@
+<div>
+	<div ui-jq="dialog" ui-options="geoConfig.rightDialogConfig">
+		<div ng-repeat="layer in layers">
+			{{layer.groupName}}
+			<div ng-repeat="layer in layers | filter:filterBaseLayers">
+				<input type="checkbox" ng-checked="layer.visibility"
+					ng-click='layerClicked(layer.id)'> {{layer.name}}</input>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,159 @@
+{
+    "id": "MDBEP",
+    "title": "Murray-Darling Basin - Elevation Project",
+    "previewImageUrl": "content/geographic-information/MDBEP/mapPreview.png",
+    "previewDescription": "Geoscience Australia provides advice, expertise and support to the Murray Darling Basin in capturing high resolution elevation products.",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv3",
+    "initialExtent": [
+        [140, -29],
+        [151, -35]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Murray-Darling Basin - Elevation Project"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/geographic-information/MDBEP/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/geographic-information/MDBEP/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+		{
+                "id": "export",
+                "toolPanelUrl" : "resources/partial/exportPanel.html",
+                "toolToggleUrl": "resources/partial/exportToggle.html",
+				"config": {
+					"titleText": "Print PDF",
+					"panelHeading": "Print PDF",
+					"url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+					"templatesList": ["Landscape_A4", "Portrait_A4", "Landscape_A3", "Portrait_A3"],
+					"markerUrl": "content/marker/marker-print.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+		},
+		{
+				"id": "identifyTool",
+				"toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+				"toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+				"config": {
+					"titleText": "Identify features",
+					"panelHeading": "Identify Features",
+					"symbol": "<img src=\"content/marker/identify.png\"/>",
+					"propertiesOfInterest": ["ID","PIXEL"],
+					"propertiesAlias": ["Id","Pixel"],
+					"primaryPropertyName": "ID",
+					"showEmptyFeatures": true,
+					"requiresGeometry": true,		
+					"markerUrl": "content/marker/marker-identify.png",
+					"markerWidth": "55",
+					"markerHeight": "40"
+				}
+			}		
+        ]
+    },
+    "baseMaps": [
+		{
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "World Image",
+            "url": "http://www-test.ga.gov.au/gis/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+			"maxZoomLevel" : 12,
+            "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+        },
+        {
+            "mapType": "XYZTileCache",
+            "visibility": false,
+            "name": "World Political Boundaries",
+            "url": "http://www-test.ga.gov.au/gis/rest/services/topography/World_Political_Boundaries_WM/MapServer",
+            "mapBGColor": "194584",
+            "opacity": 1.0,
+            "wrapDateLine": true,
+            "attribution": "World Political Boundaries <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>"
+        }
+		
+    ],
+    "layerMaps": [
+		
+		{
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Elevation z54",
+            "queryFeatures" : true,
+            "queryUrl": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone54/ImageServer/WMSServer",
+            "queryUrlType":"WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "0",
+            "url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone54/ImageServer/WMSServer",
+            "layers": "0",
+            "opacity": 1,
+            "metadataText": "Test.",
+            "ogcLinks" : [{"description": "REST","url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone54/ImageServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone54/ImageServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone54/ImageServer?f=lyr&v=9.3"}]
+        },
+		{
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Elevation z55",
+            "queryFeatures" : true,
+            "queryUrl": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone55/ImageServer/WMSServer",
+            "queryUrlType":"WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "0",
+            "url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone55/ImageServer/WMSServer",
+            "layers": "0",
+            "opacity": 1,
+            "metadataText": "Test.",
+            "ogcLinks" : [{"description": "REST","url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone55/ImageServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone55/ImageServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone55/ImageServer?f=lyr&v=9.3"}]
+        },
+		{
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Elevation z56",
+            "queryFeatures" : true,
+            "queryUrl": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone56/ImageServer/WMSServer",
+            "queryUrlType":"WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "0",
+            "url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone56/ImageServer/WMSServer",
+            "layers": "0",
+            "opacity": 1,
+            "metadataText": "Test.",
+            "ogcLinks" : [{"description": "REST","url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone56/ImageServer"},
+			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone56/ImageServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone56/ImageServer?f=lyr&v=9.3"}]
+        },
+		{
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "MDBEPShapes",
+            "url": "http://intranet-dev.ga.gov.au/gis/rest/services/topography/MDBEP_Shapes/MapServer",
+            "layers": ["0", "1", "3", "4"],
+            "opacity": 1,
+            "metadataText": "Test.",
+            "ogcLinks" : [{"description": "REST","url": "http://intranet-dev.ga.gov.au/gis/rest/services/topography/MDBEP_Shapes/MapServer"},
+			{"description": "WMS Capabilities","url": "http://intranet-dev.ga.gov.au/gis/services/topography/MDBEP_Shapes/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://intranet-dev.ga.gov.au/gis/rest/services/topography/MDBEP_Shapes/MapServer?f=lyr&v=9.3"}]
+        }			
+       ]
+}

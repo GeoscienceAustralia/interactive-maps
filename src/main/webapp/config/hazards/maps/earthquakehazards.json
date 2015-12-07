@@ -1,0 +1,109 @@
+{
+    "id": "earthquakehazards",
+    "title": "Earthquake Hazards",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Earthquake Hazards"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/hazards/earthquakehazards/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/hazards/earthquakehazards/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+			{
+            "id": "identifyTool",
+            "toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+            "toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+            "config": {
+                "titleText": "Identify features",
+                "panelHeading": "Identify Features",
+                "symbol": "<img src=\"content/marker/zoom-32.png\"/>",
+                "propertiesOfInterest": ["cont_val","Pixel value"],
+                "propertiesAlias": ["Contour Value (g)","Pixel Value (g)"],
+                "primaryPropertyName": "",
+                "showEmptyFeatures": true,
+                "requiresGeometry": false,
+                "markerUrl": "content/marker/marker-identify.png",
+                "markerWidth": "55",
+                "markerHeight": "40",
+                "endpoints": [			
+					{
+					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer", 
+					"geometryName": "Shape", 
+					"layers":"1", 
+					"imageDisplay": "600,550,96", 
+					"featureTitle": "0.0s Response Spectral Acceleration (RSA)", 
+					"queryType": "ArcGISREST" 
+					},
+					{ 
+					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer", 
+					"geometryName": "Shape", 
+					"layers":"0", 
+					"imageDisplay": "600,550,96", 
+					"featureTitle": "RSA Contours", 
+					"queryType": "ArcGISREST" 
+					}
+			]
+			}
+			}
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_XYZ"
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS"
+        },
+        {
+            "slug": "Earthquake_Hazards",
+            "opacity": 0.7,
+            "queryFeatures": true
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

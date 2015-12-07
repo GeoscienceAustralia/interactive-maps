@@ -1,0 +1,418 @@
+<style>
+    .configFullScreen {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 33px;
+    }
+
+    .configFullScreen .mapOuterContainer .mapContainer {
+        width: 100%;
+    }
+
+    .configButton {
+        width: 100%;
+        height: 33px;
+    }
+
+    .minimize {
+        width: 56%;
+        margin-left: 4%;
+        float: left;
+        height: 100%;
+        padding-bottom: 33px;
+    }
+
+    .mapOuterContainer .mapContainer {
+        height: 79 !important;
+    }
+
+    .mapOuterContainer {
+        padding-bottom: 23px;
+    }
+
+    .displayInline {
+        display: block;
+    }
+
+    .mapLayersSearch ul {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .browseWMS .modal-dialog {
+        min-width: 1280px;
+    }
+
+</style>
+<div style="height:100%;">
+<div ng-hide="isFullScreen" style="width:40%;float:left;height:100%;overflow-y: auto;">
+<accordion>
+<accordion-group heading="Map details" is-open="accordions.mapDetailsIsOpen">
+    <div ng-controller="mapDetailsAccordion">
+        <form name="mapDetails">
+            <div class="form-group" ng-class="{'has-error': mapDetails.config_id.$invalid}">
+                <label class="control-label" for="config_id">Config ID</label>
+                <input type="text" id="config_id" name="config_id" ng-model="config.id" class="form-control"
+                       ng-change="modelChanged()" required/>
+            </div>
+
+            <div class="form-group" ng-class="{'has-error': mapDetails.config_title.$invalid}">
+                <label class="control-label" for="config_title">Title</label>
+                <input type="text" id="config_title" name="config_title" ng-model="config.title" ng-change="modelChanged()"
+                       class="form-control" required/>
+            </div>
+
+            <div class="form-group"
+                 ng-class="{'has-error': mapDetails.config_headerTitle.$error.required}">
+                <label class="control-label" for="config_headerTitle">Header Title</label>
+                <input type="text" id="config_headerTitle" name="config_headerTitle"
+                       ng-model="config.headerConfig.title"
+                       class="form-control" ng-change="modelChanged()" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="config_previewImageUrl">Preview Image Url</label>
+                <input type="text" id="config_previewImageUrl" ng-model="config.previewImageUrl"
+                       ng-change="modelChanged()" class="form-control"/>
+            </div>
+
+            <div class="form-group">
+                <label for="config_previewDescription">Preview Description</label>
+                <input type="text" id="config_previewDescription" ng-model="config.previewDescription"
+                       ng-change="modelChanged()" class="form-control"/>
+            </div>
+
+            <div>
+                <div style="float:left; width:40%; margin-bottom: 15px;">
+                    <label for="config_datumProjection">Map projection</label>
+                    <select ng-model="config.datumProjection" id="config_datumProjection" class="form-control"
+                            ng-change="modelChanged()" style="width:100%; display: block;">
+                        <option></option>
+                        <option style="font-weight: bold">EPSG:3857</option>
+                        <option>EPSG:102100</option>
+                        <option>EPSG:4326</option>
+                        <option>EPSG:900913</option>
+                        <option>CRS:84</option>
+                        <option>EPSG:102113</option>
+                    </select>
+                </div>
+
+
+                <div style="float:left; width:40%; margin-bottom: 15px;margin-left: 10%">
+                    <label for="config_displayProjection">Display projection</label>
+                    <select ng-model="config.displayProjection" id="config_displayProjection" class="form-control"
+                            ng-change="modelChanged()" style="width:100%; display: block;">
+                        <option></option>
+                        <option style="font-weight: bold">EPSG:4326</option>
+                        <option>EPSG:102100</option>
+                        <option>EPSG:900913</option>
+                        <option>CRS:84</option>
+                        <option>EPSG:3857</option>
+                        <option>EPSG:102113</option>
+                    </select>
+                </div>
+            </div>
+
+            <br style="clear:both;"/>
+
+            <div class="form-group">
+                <label for="config_frameworkVersion">Framework</label>
+                <select name="config_frameworkVersion" id="config_frameworkVersion" ng-model="config.framework" class="form-control">
+                    <option value="olv2">OpenLayers 2</option>
+                    <option value="olv3">OpenLayers 3</option>
+                </select>
+            </div>
+
+            <br style="clear:both;"/>
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" data-target="#mapExtent">Map Extent</a></li>
+                <li><a data-toggle="tab" data-target="#mapCenterPosition">Map Center Position</a></li>
+            </ul>
+
+            <div class="tab-content" style="margin-bottom: 15px;margin-top: 15px;">
+                <div id="mapExtent" class="tab-pane fade in active">
+                    <div class="form-group" style="float:left; width:40%; margin-right:10%;"
+                         ng-class="{'has-error': mapDetails.config_centerTLPositionLat.$invalid}">
+                        <label class="control-label" for="config_centerTLPositionLat">Top left latitude</label>
+                        <input type="number" name="config_centerTLPositionLat" min="-90" max="90"
+                               ng-model="config.initialExtent[0][1]"
+                               class="form-control" ng-change="modelChanged()" id="config_centerTLPositionLat" required/>
+                    </div>
+
+                    <div class="form-group" style="float:left; width:40%; margin-right:5px;"
+                         ng-class="{'has-error': mapDetails.config_centerTLPositionLong.$invalid}">
+                        <label class="control-label" for="config_centerTLPositionLong">Top left longitude</label>
+                        <input type="number" name="config_centerTLPositionLong"
+                               ng-model="config.initialExtent[0][0]"
+                               class="form-control" ng-change="modelChanged()" id="config_centerTLPositionLong" required/>
+                    </div>
+
+                    <div class="form-group" style="float:left; width:40%; margin-right:10%;"
+                         ng-class="{'has-error': mapDetails.config_centerBRPositionLat.$invalid}">
+                        <label class="control-label" for="config_centerBRPositionLat">Bottom right latitude</label>
+                        <input type="number" name="config_centerBRPositionLat" min="-90" max="90"
+                               ng-model="config.initialExtent[1][1]"
+                               class="form-control" ng-change="modelChanged()" id="config_centerBRPositionLat" required/>
+                    </div>
+
+                    <div class="form-group" style="float:left; width:40%;"
+                         ng-class="{'has-error': mapDetails.config_centerBRPositionLong.$invalid}">
+                        <label class="control-label" for="config_centerBRPositionLong">Bottom right longitude</label>
+                        <input type="number" name="config_centerBRPositionLong"
+                               ng-model="config.initialExtent[1][0]"
+                               class="form-control" ng-change="modelChanged()" id="config_centerBRPositionLong" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" class="btn btn-default form-control" aria-label="Populate Extent Coordinates" title="Populate Extent Coordinates"
+                                ng-click="populateExtent()">
+                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="mapCenterPosition" class="tab-pane fade" style="margin-bottom: 15px;">
+                    <div class="form-group" style="float:left; width:40%; margin-right:10%;"
+                         ng-class="{'has-error': mapDetails.configPositionLat.$invalid}">
+                        <label class="control-label" for="configPositionLat">Latitude Center Position</label>
+                        <input type="number" name="configPositionLat" min="-90" max="90"
+                               ng-model="config.centerPosition.lat"
+                               class="form-control" ng-change="modelChanged()" id="configPositionLat" required/>
+                    </div>
+                    <div class="form-group" style="float:left; width:40%; margin-right:5px;"
+                         ng-class="{'has-error': mapDetails.configPositionLon.$invalid}">
+                        <label class="control-label" for="configPositionLon">Longitude Center Position</label>
+                        <input type="number" name="configPositionLon"
+                               ng-model="config.centerPosition.lon"
+                               class="form-control" ng-change="modelChanged()" id="configPositionLon" required/>
+                    </div>
+
+                    <div class="form-group" style="float:left; padding-top:23px;">
+                        <button type="button" class="btn btn-default" aria-label="Populate Center Coordinates" label="Populate Center Coordinates"
+                                ng-click="populateCenterPosition()">
+                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <div class="form-group" style="float:left; width:15%; margin-right:5%;">
+                        <label class="control-label" for="config_zoomLevel">Zoom level</label>
+                        <input type="number" name="config_zoomLevel" id="config_zoomLevel" ng-model="config.zoomLevel"
+                               class="form-control"
+                               ng-change="modelChanged()" min="0" max="30" />
+                    </div>
+                </div>
+            </div>
+            <br />
+        </form>
+    </div>
+</accordion-group>
+<accordion-group heading="Navigation" is-open="accordions.navigationIsOpen">
+    <div ng-controller="navigationAccordion">
+        <div class="form-group control-group">
+            <i class="glyphicon"
+               ng-model="config.aboutConfig.enabled" id="config_aboutConfig"
+               ng-class="{'glyphicon-minus-sign': config.aboutConfig.enabled === true,'glyphicon-plus-sign': !config.aboutConfig.enabled}"
+               ng-style="{'color': config.aboutConfig.enabled ? 'red' : 'green'}"
+               ng-click="addRemoveAboutPage()"></i>
+            <label for="config_aboutConfig">Include About page panel template</label>
+        </div>
+        <label for="config_aboutBodyUrl">About body URL</label>
+        <input type="text" id="config_aboutBodyUrl" ng-model="config.aboutConfig.bodyUrl" class="form-control"
+               ng-change="modelChanged()"/>
+
+        <div class="form-group control-group">
+            <i class="glyphicon"
+               id="config_requiresTermsAndConditions" ng-model="config.requiresTermsAndConditions.enabled"
+               ng-class="{'glyphicon-minus-sign': config.requiresTermsAndConditions === true,'glyphicon-plus-sign': !config.requiresTermsAndConditions}"
+               ng-style="{'color': config.requiresTermsAndConditions ? 'red' : 'green'}"
+               ng-click="addRemoveTermsAndConditions()"></i>
+            <label for="config_requiresTermsAndConditions">Requires terms and conditions</label>
+        </div>
+        <div class="form-group control-group">
+            <i class="glyphicon"
+               id="config_layerConfig" ng-model="config.layersConfig.enabled"
+               ng-class="{'glyphicon-minus-sign': config.layersConfig.enabled === true,'glyphicon-plus-sign': !config.layersConfig.enabled}"
+               ng-style="{'color': config.layersConfig.enabled ? 'red' : 'green'}"
+               ng-click="addRemoveLayersPanelTemplate()"></i>
+            <label for="config_layerConfig">Include layers panel template</label>
+        </div>
+        <div class="form-group control-group">
+            <i class="glyphicon"
+               id="config_legendConfig" ng-model="config.legendConfig.enabled"
+               ng-class="{'glyphicon-minus-sign': config.legendConfig.enabled === true,'glyphicon-plus-sign': !config.legendConfig.enabled}"
+               ng-style="{'color': config.legendConfig.enabled ? 'red' : 'green'}"
+               ng-click="addRemoveLegendConfigTemplate()"></i>
+            <label for="config_legendConfig">Include legend panel template</label>
+        </div>
+    </div>
+</accordion-group>
+<accordion-group heading="Tools" is-open="accordions.toolsIsOpen">
+    <div ng-controller="toolsAccordion">
+        <div class="form-group control-group" ng-repeat="tool in commonTools">
+            <i class="glyphicon"
+               ng-class="{'glyphicon-minus-sign': toolAlreadyAdded(commonTools[$index]),'glyphicon-plus-sign': !toolAlreadyAdded(commonTools[$index])}"
+               ng-style="{'color': toolAlreadyAdded(commonTools[$index]) ? 'red' : 'green'}"
+               ng-click="addRemoveToolFromJSON($index)"></i>
+            <span>{{tool.description}}</span>
+        </div>
+    </div>
+</accordion-group>
+<accordion-group heading="Base map layers" is-open="accordions.baseLayersIsOpen">
+    <div ng-controller="baseMapLayerAccordion">
+        <div class="form-group panel-body">
+            <label for="config_previewDescription">Map type</label>
+            <select ng-model="baseLayerConfig.mapType" class="form-control">
+                <option value="-1">-- Select base layer --</option>
+                <option ng-repeat="baseLayer in commonBaseLayers" value="{{$index}}"
+                        ng-bind="baseLayer.name"></option>
+                <option value="XYZTileCache">Custom XYZ Tile Cache</option>
+                <option value="WMS">Custom WMS</option>
+                <option value="WFS">Custom WFS</option>
+            </select>
+
+            <div ng-show="showCustomBaseLayerOptions()">
+                <div class="form-group control-group">
+                    <input type="checkbox" id="config_baseLayerVisibility"
+                           ng-model="baseLayerConfig.visibility"/>
+                    <label for="config_baseLayerVisibility">Default base layer</label>
+                </div>
+
+                <label for="config_baseLayer_name">Base layer name</label>
+                <input type="text" id="config_baseLayer_name" ng-model="baseLayerConfig.name"
+                       class="form-control"/>
+
+                <div ng-show="baseLayerConfig.mapType.indexOf('Google') !== 0">
+                    <label for="config_baseLayer_url">URL</label>
+                    <input type="text" id="config_baseLayer_url" ng-model="baseLayerConfig.url"
+                           class="form-control"/>
+                </div>
+
+                <div ng-show="baseLayerConfig.mapType.indexOf('Google') !== 0">
+                    <label for="config_baseLayer_attribution">Attribution</label>
+                    <input type="text" id="config_baseLayer_attribution" ng-model="baseLayerConfig.attribution"
+                           class="form-control"/>
+                </div>
+
+                <div class="form-group control-group">
+                    <input type="checkbox" id="config_baseLayerWrapDateLine"
+                           ng-model="baseLayerConfig.wrapDateLine"/>
+                    <label for="config_baseLayerWrapDateLine">Wrap date line</label>
+                </div>
+            </div>
+            <div class="form-group control-group" style="margin-top: 15px">
+                <button type="button" class="btn btn-primary" ng-click="addBaseLayer()"
+                        ng-disabled="!baseLayerConfig || baseLayerConfig.mapType == -1 || baseLayerConfig.mapType == null">
+                    Add base layer
+                </button>
+            </div>
+        </div>
+        <h3>Added base layers</h3>
+
+        <div ng-repeat="baseLayer in config.baseMaps">
+            <i class="glyphicon glyphicon-minus-sign" style="color:red"
+               ng-model="config.aboutConfig.enabled" ng-click="removeBaseLayer($index)"></i>
+            <span ng-bind="baseLayer.name"></span>
+        </div>
+    </div>
+</accordion-group>
+<accordion-group heading="Map layers" is-open="accordions.mapLayersIsOpen" >
+    <div ng-controller="mapLayerAccordion">
+        <div class="form-group">
+            <div class="mapLayersSearch control-group">
+                <label for="config_layerType">Search</label>
+                <input ng-model="selected" typeahead="result as result.name for result in layerCriteria | filter:$viewValue"
+                       typeahead-on-select="onSelected($item, $model, $label); selected = '';"
+                       typeahead-wait-ms="200" typeahead-editable="true" type="text"
+                       id="config_layerType" class="form-control"/>
+            </div>
+            <br/>
+            <div class="control-group panel">
+                <h4>Layer details</h4>
+                <label for="config_previewDescription">Map type</label>
+                <select ng-model="layerMap.mapType" class="form-control">
+                    <option value="">-- Select a layer type --</option>
+                    <option value="XYZTileCache">XYZTileCache</option>
+                    <option value="ArcGISCache">ArcGISCache</option>
+                    <option value="WMS">WMS</option>
+                </select>
+
+                <div class="form-group control-group">
+                    <input type="checkbox" id="config_layerMapVisibility" ng-model="layerMap.visibility" value="true" />
+                    <label for="config_layerMapVisibility">Default layer map visibility</label>
+                </div>
+                <div class="control-group">
+                    <label for="config_layerMap_name">Layer name</label>
+                    <input type="text" id="config_layerMap_name" ng-model="layerMap.name" class="form-control"/>
+                </div>
+
+                <div class="control-group">
+                    <label for="config_layerMap_url">URL</label>
+                    <input type="text" id="config_layerMap_url" ng-model="layerMap.url" class="form-control"/>
+                </div>
+
+                <div class="control-group" ng-show="layerMap.mapType === 'WMS'">
+                    <button id="baseMapsImportWMSLayer" type="button" class="btn btn-default form-control" ng-disabled="layerMap.url == null || layerMap.url.length === 0 || browseWMSLoading" ng-click="browseWMS()">
+                        <span ng-show="!browseWMSLoading" class="glyphicon glyphicon-import" aria-hidden="true">Browse...</span>
+                        <div class="progress" ng-show="browseWMSLoading">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                Loading...
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="control-group" ng-show="layerMap.mapType === 'WMS'">
+                    <label for="config_layerMap_layers">Layers</label>
+                    <input type="text" id="config_layerMap_layers" ng-model="layerMap.layers" class="form-control"/>
+                </div>
+                <div class="control-group">
+                    <label for="config_layerMap_opacity">Opacity default</label>
+                    <input type="text" id="config_layerMap_opacity" ng-model="layerMap.opacity" class="form-control"/>
+                </div>
+
+            </div>
+
+            <br/>
+            <button type="button" ng-click="addLayerMap(layerMap)" class="btn btn-primary">Add layer map</button>
+        </div>
+        <h3>Added map layers</h3>
+
+        <div ng-repeat="layer in config.layerMaps">
+            <i class="glyphicon glyphicon-minus-sign" style="color:red"
+               ng-model="config.aboutConfig.enabled" ng-click="removeLayerMap($index)"></i>
+            <a href="" ng-click="copyLayerToTemplate($index)" ng-bind="layer.name"></a>
+        </div>
+    </div>
+</accordion-group>
+<accordion-group heading="Map config" is-open="accordions.mapConfigIsOpen">
+    <div ng-controller="mapConfigAccordion">
+        <div><textarea ng-model="configPreview.val" style="width:100%;height:300px;margin-bottom: 10px;"/></div>
+        <button type="button" ng-click="populateTestData()" class="btn-danger">Populate test data</button>
+        <button type="button" ng-click="resetConfig()">Reset config</button>
+        <button type="button" id="saveConfigJSON" ng-click="saveJSON()" class="btn-primary">
+            Export Config File
+        </button>
+    </div>
+</accordion-group>
+</accordion>
+<button type="button" ng-click="previewMap()" class="btn-primary btn-lg" ng-bind="previewButtonText" style="margin:5px"></button>
+</div>
+<div ng-class="{configFullScreen : isFullScreen, minimize :!isFullScreen}">
+    <!--<div style="height:100%" ng-if="configPreviewReady" ng-include="'resources/partial/mapPreview.html'"></div>-->
+    <div ng-if="configPreviewReady" style="width:100%;height:100%;">
+        <iframe ng-if="configPreviewReady" id="mapFrame" src="embedded.html#/local/configCreatorMap" frameborder="0" style="width:100%;height:100%"></iframe>
+    </div>
+
+    <button type="button" ng-hide="!configPreviewReady" ng-click="showFullScreen()" class="btn-primary configButton">
+        {{buttonText}}
+    </button>
+    <div style="height:100%" ng-if="!configPreviewReady">
+        <div ng-show="refreshing">
+            <h3>Loading...</h3>
+        </div>
+        <div ng-show="!refreshing">
+            <h3>No config loaded</h3>
+        </div>
+    </div>
+</div>
+</div>

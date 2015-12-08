@@ -23,7 +23,7 @@
     "angular-bootstrap": "~0.10.0",
     "angulartics": "~0.17.0",
     "angular-sanitize": "~1.3.11",
-    "geo-web-toolkit": "git://github.com/GeoscienceAustralia/geo-web-toolkit#e6e0bfbf2997b699899b1d5f27f713f409185fee",
+    "geo-web-toolkit": "git://github.com/GeoscienceAustralia/geo-web-toolkit#0.20.1",
     "jquery": "~2.1.4",
     "jquery-ui": "~1.11.4",
     "bootstrap": "3.0.3",

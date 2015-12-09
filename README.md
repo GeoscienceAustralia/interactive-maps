@@ -29,4 +29,4 @@ The application can be built using Maven by running the following command
 
 mvn clean package
 
-This will generate gamaps.war in the target folder. This can then be deployed to your application server.
+This will generate interactive-maps.war in the target folder. This can then be deployed to your application server.

@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="/interactive-maps/webjars/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/interactive-maps/webjars/jquery-ui/1.10.2/themes/base/jquery-ui.css" />
+    <link href="/interactive-maps/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/interactive-maps/bower_components/jquery-ui/themes/base/jquery-ui.css" />
 
-    <script src="/interactive-maps/webjars/jquery/1.10.1/jquery.min.js"></script>
-    <script src="/interactive-maps/webjars/jquery-ui/1.10.2/ui/jquery-ui.js"></script>
-    <script src="/interactive-maps/webjars/angularjs/1.2.8/angular.js"></script>
-    <script src="/interactive-maps/webjars/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.js"></script>
-    <script src="/interactive-maps/webjars/angular-ui-utils/0.1.0/ui-utils.js"></script>
-    <script src="/interactive-maps/webjars/geo-web-toolkit/1.2.4-SNAPSHOT/geo-web-toolkit-min.js"></script>
+    <script src="/interactive-maps/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/interactive-maps/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/interactive-maps/bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="/interactive-maps/bower_components/angular/angular.js"></script>
+    <script src="/interactive-maps/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/interactive-maps/bower_components/angular-ui-utils/ui-utils.js"></script>
+    <script src="/interactive-maps/bower_components/geo-web-toolkit/dist/geo-web-toolkit-min.js"></script>
+    <script src="/interactive-maps/bower_components/OpenLayers-2.13.1/OpenLayers.js"></script>
     <title>Geo-web-toolkit UI with embedded</title>
     <script>
-        var app = angular.module('simpleMap',['gawebtoolkit.ui']);
+        var app = angular.module('simpleMap',['geowebtoolkit.ui']);
 
         app.controller('mainController', ['$scope',function ($scope) {
             window.addEventListener('message', function (event) {
@@ -50,7 +52,7 @@
         frameborder="0" id="mapFrame"
         style="float:right;left:50px;top:50px;width:400px;height:300px;border:1px solid black;"></iframe>
 <div ng-controller="mainController" style="width:400px">
-    <ga-layer-control ng-repeat="layer in myLayers" layer-data="layer" map-controller="mapController"></ga-layer-control>
+    <geo-layer-control ng-repeat="layer in myLayers" layer-data="layer" map-controller="mapController"></geo-layer-control>
 </div>
 <p>
     Quisque augue justo, lacinia vitae augue quis, interdum condimentum neque. Donec vel maximus magna. Ut scelerisque eros nec massa iaculis maximus. Integer eget leo tempor, venenatis magna id, luctus quam. In a velit sit amet mauris tincidunt lacinia. Duis in mauris non metus sodales pretium vel ut lorem. Integer congue molestie feugiat. Duis ante justo, suscipit et viverra id, ornare eget mauris. Donec a congue quam, vitae euismod erat. Vestibulum ultricies justo diam, nec iaculis lacus mattis a.

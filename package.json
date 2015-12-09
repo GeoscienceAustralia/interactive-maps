@@ -6,6 +6,7 @@
   },
   "devDependencies": {
     "bower": "^1.6.5",
+    "express": "~4.13.3",
     "grunt": "^0.4.4",
     "grunt-angular-modules-graph": "^0.3.1",
     "grunt-cli": "^0.1.13",
@@ -26,6 +27,7 @@
     "karma-jasmine": "~0.2.2",
     "karma-junit-reporter": "~0.2",
     "karma-phantomjs-launcher": "~0.1.1",
-    "karma-requirejs": "^0.2.1"
+    "karma-requirejs": "^0.2.1",
+    "request": "^2.67.0"
   }
 }

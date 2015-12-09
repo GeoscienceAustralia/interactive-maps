@@ -21,15 +21,7 @@ The application also contains a config creator (BETA) which allows you to easily
 
 ## Running locally
 
-Run npm and bower install from the directory where you have the project checked out
-
-Make sure all NPM dependencies are installed.
-
-npm install
-
-Make sure all Bower dependencies are installed.
-
-bower install
+[Please refer to the wiki](https://github.com/GeoscienceAustralia/interactive-maps/wiki/Running-locally)
 
 ## Building
 

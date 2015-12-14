@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="/interactive-maps/webjars/jquery/1.10.1/jquery.min.js"></script>
-    <script src="/interactive-maps/webjars/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="/interactive-maps/webjars/jquery-ui/1.10.2/ui/jquery-ui.js"></script>
-    <script src="/interactive-maps/webjars/angularjs/1.2.8/angular.js"></script>
-    <script src="/interactive-maps/webjars/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.js"></script>
-    <script src="/interactive-maps/webjars/angular-ui-utils/0.1.0/ui-utils.js"></script>
-    <script src="/interactive-maps/webjars/geo-web-toolkit/1.2.4-SNAPSHOT/geo-web-toolkit-min.js"></script>
-    <script src="/interactive-maps/webjars/openlayers/2.13.1/OpenLayers.js"></script>
+    <script src="/interactive-maps/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/interactive-maps/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/interactive-maps/bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="/interactive-maps/bower_components/angular/angular.js"></script>
+    <script src="/interactive-maps/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/interactive-maps/bower_components/angular-ui-utils/ui-utils.js"></script>
+    <script src="/interactive-maps/bower_components/geo-web-toolkit/dist/geo-web-toolkit-min.js"></script>
+    <script src="/interactive-maps/bower_components/OpenLayers-2.13.1/OpenLayers.js"></script>
     <title>Geo-web-toolkit simple example</title>
     <script>
-        var app = angular.module('simpleMap',['gawebtoolkit.core']);
+        var app = angular.module('simpleMap',['geowebtoolkit.core']);
     </script>
 </head>
 <body ng-app="simpleMap">
@@ -26,9 +26,9 @@
     <div id="map" style="height:80%;width:100%;border:1px solid black;"></div>
 </div>
 
-<ga-map id="geoWebToolkit" map-element-id="map" zoom-level="4" center-position="[130, -25]">
-    <ga-osm-layer></ga-osm-layer>
-</ga-map>
+<geo-map id="geoWebToolkit" map-element-id="map" zoom-level="4" center-position="[130, -25]">
+    <geo-osm-layer></geo-osm-layer>
+</geo-map>
 <p>
     Quisque augue justo, lacinia vitae augue quis, interdum condimentum neque. Donec vel maximus magna. Ut scelerisque eros nec massa iaculis maximus. Integer eget leo tempor, venenatis magna id, luctus quam. In a velit sit amet mauris tincidunt lacinia. Duis in mauris non metus sodales pretium vel ut lorem. Integer congue molestie feugiat. Duis ante justo, suscipit et viverra id, ornare eget mauris. Donec a congue quam, vitae euismod erat. Vestibulum ultricies justo diam, nec iaculis lacus mattis a.
 </p>

@@ -23,13 +23,24 @@
                     }
 
                     HealthService.checkService(layers[i].url, i).then(function (result) {
-                        layers[result.id].status = true;
+                        layers[result.id].isValid = true;
+                        layers[result.id].status = result.data.status;
                     }, function error(err) {
-                        layers[err.id].status = false;
-                        console.log(err.reason);
+                        var message = '';
+
+                        if (err.data != '') {
+                            message = err.data;
+                        } else if (err.statusText != '') {
+                            message = err.statusText;
+                        }
+
+                        layers[err.id].isValid = false;
+                        layers[err.id].status = err.status;
+                        layers[err.id].message = message;
                     });
                 } else {
-                    layers[i].status = true;
+                    layers[i].isValid = true;
+                    layers[i].status = 200;
                 }
             }
             $scope.layers = layers;

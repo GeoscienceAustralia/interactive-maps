@@ -7,14 +7,20 @@
         <table class="table">
             <thead>
             <tr>
-                <th>URL</th>
-                <th style="text-align:center;">Status</th>
+                <th class="col-md-6">URL</th>
+                <th class="col-md-2">Status</th>
+                <th class="col-md-2">Message</th>
+                <th class="col-md-2" style="text-align:center;">Result</th>
             </tr>
             </thead>
             <tbody>
             <tr ng-repeat="layer in layers">
                 <td>{{layer.name}}</td>
-                <td ng-class="(layer.status==true) ? 'healthGood' : 'healthBad'"><img/></td>
+                <td>{{layer.status}}</td>
+                <td>{{layer.message}}</td>
+                <td ng-if="layer.isValid==true" class="healthGood"><img/></td>
+                <td ng-if="layer.isValid==false" class="healthBad"><img/></td>
+                <td ng-if="layer.isValid==null" class="healthSpinner"><img/></td>
             </tr>
             </tbody>
         </table>

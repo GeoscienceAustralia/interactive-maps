@@ -24,21 +24,24 @@ app.service('HealthService', ['$http', '$q', 'geoConfig', function ($http, $q, g
             var deferred = $q.defer();
 
             var requestParams = {
-                url: url
-//                ,
-//                proxy : geoConfig().defaultOptions.proxyHost
+                url: geoConfig().defaultOptions.proxyHost + url,
+                proxy : geoConfig().defaultOptions.proxyHost
             };
 
-            var layerListPromise = $http.get(url).success(function (response) {
+            var layerListPromise = $http.get(requestParams.url).then(function (response) {
+
                 var returnObject = {
                     'data': response,
                     'id': id
                 };
                 deferred.resolve(returnObject);
-            }).error(function (data, status, headers, config) {
+            }).catch(function (response) {
                 var returnObject = {
-                    'reason': 'Check service failed for ' + url,
-                    'id': id
+                    'id': id,
+                    'url': url,
+                    'data': response.data,
+                    'status': response.status,
+                    'statusText': response.statusText
                 };
                 deferred.reject(returnObject)
             });

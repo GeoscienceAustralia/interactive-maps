@@ -13,9 +13,8 @@
             };
 
             $scope.saveJSON = function () {
-                var string = JSON.stringify($scope.configPreview, null, "\t");
+                var string = angular.toJson($scope.configPreview, null, "\t");
                 var encodedString = configCreatorService.b64EncodeUnicode(string);
-                console.log(encodedString);
                 var dataUrl = 'data:application/octet-stream;base64,' + encodedString;
                 var anchor = document.createElement('a');
                 anchor.setAttribute('href', dataUrl);

@@ -200,7 +200,7 @@ app.controller('configCreatorController', ['$scope', '$log', '$timeout', '$http'
         $scope.modelChanged = function () {
             if ($scope.config) {
                 $scope.applyDefaultValues();
-                $scope.configPreview.val = JSON.stringify($scope.config, null, "\t");
+                $scope.configPreview.val = angular.toJson($scope.config, true);
             }
         };
 

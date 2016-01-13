@@ -3,6 +3,7 @@
     "title": "Australian Topography",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
+	"framework":"olv3",
     "initialExtent": [
         [
             99,
@@ -132,9 +133,9 @@
                         "Creation Date",
                         "Retirement Date",
                         "Revised",
-                        "Upperscale",
-                        "Upperscale Certainty",
-                        "Textnote",
+                        "Upper scale",
+                        "Upper scale Certainty",
+                        "Text note",
                         "Metadata Comment",
                         "Elevation",
                         "Aushydro_Id"

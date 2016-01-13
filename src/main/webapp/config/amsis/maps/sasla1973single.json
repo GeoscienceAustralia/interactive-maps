@@ -194,28 +194,24 @@
 				
 				"id": "Seas and Submerged Lands Act Combined",
 				"slug": "Seas and Submerged Lands Act Combined",
-				"extent": [[99,10],[169,-55]],
+				"extent": [[30,10],[180,-70]],
 				"mapType": "ArcGISCache",
 				"visibility": true,
-				"name": "Australian Topographic 250K Mosaic",
+				"name": "Seas and Submerged Lands Act Combined",
 				"url": "http://intranet-test.ga.gov.au/gis/rest/services/Seas_and_Submerged_Lands_Act_Combined_WM/MapServer",
-				"metadataText": "This cached map service contains the NATMAP 1:250,000 scale maps from the NATMAP Digital Maps 2008 DVD, produced by Geoscience Australia's National Mapping Division and its predecessor, the Australian Surveying and Land Information Group (AUSLIG), in the form of a single mosaic based on GDA94 geographic projection. This is the largest scale at which published topographic maps cover the entire continent. The maps have been revised using a variety of data sources, including SPOT and Landsat satellite imagery, other government agency information and data supplied by private companies and individuals.",
+				"metadataText": "Datasets illustrating the georegulatory framework of the Seas and Submerged Lands Act 1973 and Australia's Maritime Limits. An Act relating to Sovereignty in respect of certain Waters of the Sea and in respect of the Airspace over, and the Sea bed and Subsoil beneath, those Waters and to Sovereign Rights in respect of the Continental Shelf and the Exclusive Economic Zone and to certain rights of control in respect of the Contiguous Zone.",
 				"ogcLinks": [
 					{
-						"description": "Service Metadata",
-						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_4fbb4152-91d1-427c-b985-fe06c7d7751e/NATMAP+Digital+Maps+250K+2008+Edition+WMS"
+					"description": "Service Metadata",
+					"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_83170"
 					},
 					{
 						"description": "Service Metadata (REST)",
-						"url": "http://www.ga.gov.au/gisimg/rest/services/topography/NATMAP_Digital_Maps_250K_2008Edition/ImageServer"
+						"url": "http://intranet-test.ga.gov.au/gis/rest/services/Seas_and_Submerged_Lands_Act/MapServer"
 					},
 					{
 						"description": "WMS Capabilities",
-						"url": "http://www.ga.gov.au/gisimg/services/topography/NATMAP_Digital_Maps_250K_2008Edition/ImageServer/WMSServer?request=GetCapabilities&service=WMS"
-					},
-					{
-						"description": "ArcMap Layerfile",
-						"url": "http://www.ga.gov.au/gisimg/rest/services/topography/NATMAP_Digital_Maps_250K_2008Edition/ImageServer?f=lyr&v=9.3"
+						"url": "http://intranet-test.ga.gov.au/gis/services/Seas_and_Submerged_Lands_Act/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 					}
 				],
 				"opacity": 1,

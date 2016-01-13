@@ -123,28 +123,22 @@
     },
 	"addLayerMaps": [
         {
-            "slug": "Oil_Pipelines",
-			"visibility": true
+            "slug": "National_Electricty_Lines"
         },
 		{
-            "slug": "Gas_Pipelines",
-			"visibility": true			
-        },
-        {
-            "slug": "Major_Ports",
-			"visibility": true
-        },
-        {
-            "slug": "National_Waste_Management_Facilites",
-			"visibility": true
-        },
-        {
-            "slug": "Oil_Pipelines",
-			"visibility": true
+            "slug": "National_Electricty_Substations"
         },
 		{
-            "slug": "Ferry_Terminals",
-			"visibility": true
+            "slug": "Ferry_Terminals"
+		},
+		{
+            "slug": "Major_Ports"
+		},
+		{
+            "slug": "Oil_Pipelines"
+        },
+		{
+            "slug": "Gas_Pipelines"
         }
     ]
 }

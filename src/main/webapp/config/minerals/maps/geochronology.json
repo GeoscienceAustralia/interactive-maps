@@ -3,15 +3,16 @@
     "title": "Geochronology",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
+	"framework":"olv3",
     "initialExtent": [
-        [
-            30,
-            10
-        ],
-        [
-            176,
-            -75
-        ]
+		[
+		65.04,
+		15.2
+		],
+		[
+		162.77,
+		-59.76
+		]
     ],
     "requiresTermsAndConditions": false,
     "headerConfig": {

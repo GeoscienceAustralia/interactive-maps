@@ -1,13 +1,13 @@
 {
-	"id": "surfacehydrology",
-	"title": "NewSurface Hydrology",
-	"previewImageUrl": "content/water/surfacehydrology/mapPreview.gif",
-	"previewDescription": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes.",
-	"datumProjection": "EPSG:3857",
-	"displayProjection": "EPSG:4326",
-	"framework":"olv3",
-	"initialExtent": [
-		[
+    "id": "surfacehydrology",
+    "title": "Surface Hydrology",
+    "previewImageUrl": "content/water/surfacehydrology/mapPreview.gif",
+    "previewDescription": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes.",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv3",	
+    "initialExtent": [
+        [
             112,
             -9
         ],
@@ -15,19 +15,18 @@
             154,
             -45
         ]
-	],
-	"requiresTermsAndConditions": false,
-	"headerConfig": {
-		"title": "New Surface Hydrology"
-	},
-	"aboutConfig": {
-		"enabled": true,
-		"bodyUrl": "content/water/surfacehydrology/about.html"
-	},
-	"layersConfig": {
-		"enabled": true,
-		"open": false
-	},
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Surface Hydrology"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/water/surfacehydrology/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
 	"overviewOptions": {
 		"layers": [
 			{
@@ -35,114 +34,92 @@
 			}
 		]
 	},
-	"baseLayersConfig": {
-		"enabled": true
-	},
-	"legendConfig": {
-		"enabled": true,
-		"legendUrl": "content/water/surfacehydrology/legend.html"
-	},
-	"toolsConfig": {
-		"enabled": true,
-		"timeout": 5000,
-		"tools": [
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/water/surfacehydrology/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
 			{
-				"id": "addLayer"
-			},
-			{
-				"id": "export"
-			},
-			{
-				"id": "identifyTool",
-				"config": {
-					"propertiesOfInterest": [
-						"FEATURETYPE",
-						"TYPE",
-						"NAME",
-						"PERENNIALITY",
-						"HIERARCHY",
-						"FEATURERELIABILITY",
-						"FEATURESOURCE",
-						"ATTRIBUTERELIABILITY",
-						"ATTRIBUTESOURCE",
-						"PLANIMETRICACCURACY",
-						"SOURCE",
-						"CREATIONDATE",
-						"RETIREMENTDATE",
-						"REVISED",
-						"UPPERSCALE",
-						"USCERTAINTY",
-						"TEXTNOTE",
-						"AUSHYDRO_ID"
-					],
-					"propertiesAlias": [
-						"Feature Type",
-						"Type",
-						"Name",
-						"Perenniality",
-						"Hierarchy",
-						"Feature Reliability",
-						"Feature Source",
-						"Attribute Reliability",
-						"Attribute Source",
-						"Planimetric Accuracy",
-						"Source",
-						"Creation Date",
-						"Retirement Date",
-						"Revised",
-						"Upperscale",
-						"Uscertainty",
-						"Textnote",
-						"Aushydro Id"
-					],
-					"primaryPropertyName": "NAME"
-				}
-			}
-		]
-	},
-	"baseMaps": [
-		{
-			"slug": "World_Political_Boundaries_WMS",
-			"maxZoomLevel": 13
-		}
-	],
-	"layerMaps": [
-		{
-			"slug": "Hillshade"
-		},
-		{
-			"extent": [[99,10],[169,-55]],
-			"mapType": "ArcGISCache",
-			"visibility": true,
-			"name": "New Surface Hydrology",
-			"url": "http://intranet-dev.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer",
-			"metadataText": "The Surface Hydrology new blurb.",
-			"ogcLinks": [],
-			"opacity": 1,
-			"queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/topography/AusHydro_WM/MapServer/WMSServer",
-			"queryUrlType": "WMS",
-			"queryVersion": "1.1.1",
-			"queryLayers": "AusHydro_Canal_Line,AusHydro_DamWalls,AusHydro_Levees,AusHydro_RapidLines,AusHydro_Spillways,AusHydro_Water_Pipeline,AusHydro_Flats,AusHydro_Flats_3,AusHydro_PondageAreas_2,AusHydro_ForeshoreFlats_2,AusHydro_Lakes_3,AusHydro_WatercourseAreas_2,AusHydro_Rivers_3",
-			"layerTimeout": 5000
-		},
-		{
-            "slug": "Drainage_Divisions",
-			"extent": [[99,10],[169,-55]],
-            "mapType": "ArcGISCache",
-            "visibility": true,
-            "name": "Drainage Divisions",
-            "url": "http://intranet-dev.ga.gov.au/gis/rest/services/Drainage_Divisions/MapServer",            
-            "opacity": 0.3,
-            "layerTimeout": 5000			
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "FEATURETYPE",
+                        "TYPE",
+                        "NAME",
+                        "PERENNIALITY",
+                        "HIERARCHY",
+                        "FEATURERELIABILITY",
+                        "FEATURESOURCE",
+                        "ATTRIBUTERELIABILITY",
+                        "ATTRIBUTESOURCE",
+                        "PLANIMETRICACCURACY",
+                        "SOURCE",
+                        "CREATIONDATE",
+                        "RETIREMENTDATE",
+                        "REVISED",
+                        "UPPERSCALE",
+                        "USCERTAINTY",
+                        "TEXTNOTE",
+                        "AUSHYDRO_ID"
+                    ],
+                    "propertiesAlias": [
+                        "Feature Type",
+                        "Type",
+                        "Name",
+                        "Perenniality",
+                        "Hierarchy",
+                        "Feature Reliability",
+                        "Feature Source",
+                        "Attribute Reliability",
+                        "Attribute Source",
+                        "Planimetric Accuracy",
+                        "Source",
+                        "Creation Date",
+                        "Retirement Date",
+                        "Revised",
+                        "Upperscale",
+                        "Uscertainty",
+                        "Textnote",
+                        "Aushydro Id"
+                    ],
+                    "primaryPropertyName": "NAME"
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Political_Boundaries_XYZ",
+			"maxZoomLevel": 12
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Hillshade_And_Vegetation"
         },
-		{
-			"slug": "Population_Centres"
-		}
-	],
-	"search": {
-		"type": "geonames",
-		"typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
-		"primaryWfsProperty": "name"
-	}
+        {
+            "slug": "Surface_Hydrology",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Population_Centres"
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
 }

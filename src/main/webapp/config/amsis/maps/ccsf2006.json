@@ -252,8 +252,7 @@
 			"opacity": 1,
 			"wrapDateLine": true,
 			"maxZoomLevel": 16,
-			"attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a>",
-			"$$hashKey": "025"
+			"attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a>"
 		},
 		{
 			"slug": "World_Political_Boundaries_WMS",
@@ -264,8 +263,7 @@
 			"layers": "Countries",
 			"opacity": 1,
 			"wrapDateLine": true,
-			"attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>",
-			"$$hashKey": "026"
+			"attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
 		},
 		{
 			"slug": "Google_Hybrid",
@@ -274,8 +272,7 @@
 			"name": "Google Hybrid",
 			"opacity": 1,
 			"wrapDateLine": true,
-			"attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps",
-			"$$hashKey": "027"
+			"attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
 		}
 	],
 	"layerMaps": [
@@ -320,8 +317,7 @@
 			"queryVersion": "1.1.1",
 			"queryLayers": "Populated_Places_8,Locations_7,TOPO250K_Mine_Locations,Caves,Pinnacles,TOPO250K_Lighthouses,TOPO250K_Homesteads,TOPO250K_Building_Points,TOPO250K_Aircraft_Facilities,TOPO250K_Aircraft_Runways,Railway_Stops,Railway_Crossings,Railways_3,TOPO250K_Road_Crossings,TOPO250K_Roads,AusHydro_Flats_3,AusHydro_PondageAreas_2,AusHydro_ForeshoreFlats_2,AusHydro_Rivers_3,AusHydro_WatercourseAreas_2,AusHydro_Lakes_3,TOPO250K_Ferry_Routes,TOPO250K_Built_Up_Areas,TOPO250K_Reserves,TOPO250K_Prohibited_Areas,TOPO250K_Vertical_Obstructions,TOPO250K_Powerlines,TOPO250K_Framework_Boundaries,TOPO250K_Pipelines,TOPO250K_Mine_Areas,TOPO250K_Native_Vegetation,Cultivated_Areas",
 			"opacity": 0.5,
-			"layerTimeout": 5000,
-			"$$hashKey": "02B"
+			"layerTimeout": 5000
 		},
 		{
 			"slug": "Commonwealth_Coral_Sea_Fishery_2006",
@@ -346,8 +342,7 @@
 					"description": "Service Metadata (REST)",
 					"url": "http://tiles.arcgis.com/tiles/wfNKYeHsOyaFyPw3/arcgis/rest/services/AMSIS_Commonwealth_Coral_Sea_Fishery_2006/MapServer"
 				}
-			],
-			"$$hashKey": "02C"
+			]
 		}
 	],
 	"groupedLayers": [

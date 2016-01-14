@@ -156,6 +156,12 @@
             "slug": "National_Electricty_Substations"
         },
 		{
+            "slug": "Ferry_Terminals"
+		},
+		{
+            "slug": "Major_Ports"
+		},
+		{
             "slug": "Oil_Pipelines"
         },
 		{

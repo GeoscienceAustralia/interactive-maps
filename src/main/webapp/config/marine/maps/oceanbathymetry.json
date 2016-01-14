@@ -3,6 +3,7 @@
     "title": "Ocean Bathymetry",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
+	"framework":"olv3",
     "initialExtent": [
         [
             30,

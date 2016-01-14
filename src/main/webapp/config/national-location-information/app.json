@@ -40,12 +40,7 @@
             "applicationUrl": "http://nedf.ga.gov.au/geoportal/catalog/main/home.page"
         }
     ],
-    "tags": [
-		{
-            "id": "Infrastructure",
-            "description": "Detailed Australian topographic infrastructure web services.",
-            "title": "Topographic Infrastructure"
-        },
+    "tags": [		
         {
             "id": "Other",
             "description": "Relevant geographic mapping applications.",

@@ -31,21 +31,7 @@
             "previewImageUrl": "content/national-location-information/nedf.png",
             "previewDescription": "The NEDF-Portal has been developed to serve as a 'Virtual Data Repository' and on-line portal that allows easy discovery and access to existing elevation data holdings and metadata.",
             "applicationUrl": "http://nedf.ga.gov.au/geoportal/catalog/main/home.page"
-        },
-		{
-            "title": "National Energy",
-			"tags": "Infrastructure",
-            "id": "nationalenergy",
-            "previewImageUrl": "content/national-location-information/nationalenergy/mapPreview.png",
-            "previewDescription": "This map depicts a collection of national energy map services."
-        },
-		{
-            "title": "National Transport",
-			"tags": "Infrastructure",
-            "id": "nationaltransport",
-            "previewImageUrl": "content/national-location-information/nationaltransport/mapPreview.png",
-            "previewDescription": "The national transport datasets represent major ports in Australian waters that include infrastructure facilities where maritime vessels have the ability to load and unload commodities. "
-        },
+        },		
         {
             "title": "National Elevation Data Framework Portal",
             "tags": "Other",

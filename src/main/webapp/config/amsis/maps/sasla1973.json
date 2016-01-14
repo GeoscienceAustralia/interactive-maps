@@ -81,7 +81,39 @@
                 "id": "clientMeasure"
             },
             {
-                "id": "distanceBoundary"
+                "id": "distanceBoundary",
+                "config": {
+                    "boundaries": [
+                        {
+                            "id": "Australian Coastline",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToAustralianCoast/"
+                        },
+                        {
+                            "id": "Coastal Waters",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToCoastalWatersLimit/"
+                        },
+                        {
+                            "id": "Territorial Sea",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToTerritorialSeaZoneLimit/"
+                        },
+                        {
+                            "id": "Contiguous Zone",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContiguousZoneLimit/"
+                        },
+                        {
+                            "id": "Exclusive Economic Zone",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneLimit/"
+                        },
+                        {
+                            "id": "Exclusive Economic Zone as Amended by the Perth Treaty 1997",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneAmendedPerthLimit/"
+                        },
+                        {
+                            "id": "Continental Shelf",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContinentalShelf/"
+                        }
+                    ]
+                }
             },
             {
                 "id": "identifyTool",
@@ -144,12 +176,38 @@
             "slug": "Australian_Topography_2014_ARCGIS",
             "visibility": false
         },
-		 {
-            "isGroupedLayers": true,
-            "groupTitle": "Sea and Submerged Land Act Layers",
-            "groupId": "ssla",
-            "visibility": true,
-            "defaultLayerId": "CWTH_SSLA_All_Layers"
+        {
+            "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
+            "visibility": false,
+            "opacity": 0.3
+        },
+        {
+            "slug": "Contiguous_Zone_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Continental_Shelf_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Territorial_Sea_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Coastal_Waters_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Straight_Baselines_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Normal_Baselines_AMB_2014",
+            "opacity": 0.3
         },
         {
             "slug": "Seas_And_Submerged_Lands_Act_1973_Reference_Map"
@@ -185,82 +243,5 @@
 		{
 			"slug": "Commonwealth_Coral_Sea_Fishery_2006"
 		}
-    ],
-	 "groupedLayers": [
-        {
-            "groupId": "ssla",
-            "layerMaps": [
-                {
-				"id": "CWTH_SSLA_All_Layers",
-				"slug": "CWTH_SSLA_All_Layers",
-				"extent": [[99,10],[169,-55]],
-				"mapType": "ArcGISCache",
-				"visibility": true,
-				"name": "Combined Sea and Submerged Land Act",
-				"url": "http://intranet-test.ga.gov.au/gis/rest/services/CWTH_SSLA_All_Layers/MapServer",
-				"metadataText": "Lines and polygons of layers associated with the Sea and Submerged Land Act. Includes Normal Baselines, Straight Baselines, Coastal Waters, Territorial Sea, Limits of Continental Shelf, Contigous Zone, Exclusive Ecomonmic Zone.",
-				"ogcLinks": [
-					{
-						"description": "Service Metadata (REST)",
-						"url": "http://intranet-test.ga.gov.au/gis/rest/services/CWTH_SSLA_All_Layers/MapServer"
-					},
-					{
-						"description": "WMS Capabilities",
-						"url": "http://intranet-test.ga.gov.au/gis/services/CWTH_SSLA_All_Layers/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-					},
-					{
-						"description": "ArcMap Layerfile",
-						"url": "http://intranet-test.ga.gov.au/gis/rest/services/CWTH_SSLA_All_Layers/MapServer?f=lyr&v=9.3"
-					}
-				],
-				"queryFeatures": true,
-				"queryUrl": "http://intranet-test.ga.gov.au/gis/rest/services/CWTH_SSLA_All_Layers/MapServer",
-				"queryUrlType": "WMS",
-				"queryVersion": "1.1.1",
-				"queryLayers": "Populated_Places_8,Locations_7,TOPO250K_Mine_Locations,Caves,Pinnacles,TOPO250K_Lighthouses,TOPO250K_Homesteads,TOPO250K_Building_Points,TOPO250K_Aircraft_Facilities,TOPO250K_Aircraft_Runways,Railway_Stops,Railway_Crossings,Railways_3,TOPO250K_Road_Crossings,TOPO250K_Roads,AusHydro_Flats_3,AusHydro_PondageAreas_2,AusHydro_ForeshoreFlats_2,AusHydro_Rivers_3,AusHydro_WatercourseAreas_2,AusHydro_Lakes_3,TOPO250K_Ferry_Routes,TOPO250K_Built_Up_Areas,TOPO250K_Reserves,TOPO250K_Prohibited_Areas,TOPO250K_Vertical_Obstructions,TOPO250K_Powerlines,TOPO250K_Framework_Boundaries,TOPO250K_Pipelines,TOPO250K_Mine_Areas,TOPO250K_Native_Vegetation,Cultivated_Areas",
-				"opacity": 0.3,
-				"layerTimeout": 5000
-				},
-				{
-					"id": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
-					"slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
-					"opacity": 0.3
-				},
-				{
-					"id": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
-					"slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
-					"visibility": false,
-					"opacity": 0.3
-				},
-				{
-					"id": "Contiguous_Zone_AMB_2014",
-					"slug": "Contiguous_Zone_AMB_2014",
-					"opacity": 0.3
-				},
-				{
-					"id": "Continental_Shelf_AMB_2014",
-					"slug": "Continental_Shelf_AMB_2014",
-					"opacity": 0.3
-				},
-				{
-					"id": "Territorial_Sea_AMB_2014",
-					"slug": "Territorial_Sea_AMB_2014",
-					"opacity": 0.3
-				},				
-				{
-					"id": "Coastal_Waters_AMB_2014",
-					"slug": "Coastal_Waters_AMB_2014",
-					"opacity": 0.3
-				},
-				{
-					"slug": "Straight_Baselines_AMB_2014",
-					"opacity": 0.3
-				},		
-				{
-					"slug": "Normal_Baselines_AMB_2014",
-					"opacity": 0.3
-				}
-            ]
-        }
     ]
 }

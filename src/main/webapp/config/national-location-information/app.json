@@ -20,7 +20,7 @@
             "previewDescription": "The Australian Global Map Contribution contains layers which have been developed by Geoscience Australia to match the 1 million scale Global Map specifications.  It includes features such as Airports, Roads, Coastlines and Landcover."
         },
 		{
-            "title": "National Map Basemaps",
+            "title": "National Map Basemap",
             "id": "nationalmap",
             "previewImageUrl": "content/national-location-information/nationalmap/mapPreview.png",
             "previewDescription": "This is a map of the world, Australia and it's external territories. These basemaps have been created specifically for display in the National Map application."

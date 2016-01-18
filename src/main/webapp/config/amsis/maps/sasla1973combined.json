@@ -322,6 +322,16 @@
 					"queryUrlType": "WMS",
 					"queryVersion": "1.1.1",
 					"queryLayers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit,Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit"
+				},
+				{
+					"id": "Territorial_Sea_AMB_2014",
+					"slug": "Territorial_Sea_AMB_2014",
+					"opacity": 0.4
+				},
+				{
+					"id": "Contiguous_Zone_AMB_2014",
+					"slug": "Contiguous_Zone_AMB_2014",
+					"opacity": 0.4
 				},				
 				{
 					"id": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
@@ -335,16 +345,10 @@
 					"opacity": 0.4
 				},
 				{
-					"id": "Contiguous_Zone_AMB_2014",
-					"slug": "Contiguous_Zone_AMB_2014",
-					"opacity": 0.4
-				},
-				{
 					"id": "Continental_Shelf_AMB_2014",
 					"slug": "Continental_Shelf_AMB_2014",
 					"opacity": 0.4
-				}
-				
+				}				
             ]
         }
     ]

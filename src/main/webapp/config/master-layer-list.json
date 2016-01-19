@@ -33,8 +33,7 @@
 			"queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "AirborneSurveys2014"
-			
+            "queryLayers": "AirborneSurveys2014"			
         },
         {
             "slug": "All_Geochronology",
@@ -1142,7 +1141,11 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "GravityAnomaly2010_HSI"
         },
         {
             "slug": "Gravity_Anomaly_2010_Greyscale",
@@ -1178,7 +1181,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "GravityAnomaly2010_greyscale"
         },
         {
             "slug": "Gravity_Bouguer_Onshore_2010_Greyscale",
@@ -1214,7 +1220,11 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "GravityBouguerOnshore2010_greyscale"
+
         },
         {
             "slug": "Hillshade_And_Vegetation",
@@ -2595,7 +2605,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_ternary_KThU"
         },
         {
             "slug": "Radiometrics_2015_Unfiltered_Dose",
@@ -2631,7 +2644,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_unfiltered_dose"
         },
         {
             "slug": "Radiometrics_2015_Unfiltered_PcK",
@@ -2667,7 +2683,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_unfiltered_pcK"
         },
         {
             "slug": "Radiometrics_2015_Unfiltered_PpmTh",
@@ -2703,7 +2722,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_unfiltered_ppmTh"
         },
         {
             "slug": "Radiometrics_2015_Unfiltered_PpmU",
@@ -2739,7 +2761,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_unfiltered_ppmU"
         },
         {
             "slug": "Radiometrics_2015_Filtered_Dose",
@@ -2775,7 +2800,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_filtered_dose"
         },
         {
             "slug": "Radiometrics_2015_Filtered_PcK",
@@ -2811,7 +2839,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_filtered_pcK"
         },
         {
             "slug": "Radiometrics_2015_Filtered_PpmTh",
@@ -2847,7 +2878,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_filtered_ppmTh"
         },
         {
             "slug": "Radiometrics_2015_Filtered_PpmU",
@@ -2883,7 +2917,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_filtered_ppmU"
         },
         {
             "slug": "Radiometrics_2015_Filtered_ThK_Ratio",
@@ -2919,7 +2956,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_filtered_ThK_ratio"
         },
         {
             "slug": "Radiometrics_2015_Filtered_UK_Ratio",
@@ -2955,7 +2995,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_filtered_UK_ratio"
         },
         {
             "slug": "Radiometrics_2015_Filtered_UTh_Ratio",
@@ -2991,7 +3034,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_filtered_UTh_ratio"
         },
         {
             "slug": "Radiometrics_2015_Filtered_U2Th_Ratio",
@@ -3027,7 +3073,10 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Radiometrics2015_filtered_U2Th_ratio"
         },
         {
             "slug": "Rb_Sr",
@@ -4895,7 +4944,11 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryFeatures": true,
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "TotalMagneticIntensity2015_HSI"
         },
         {
             "slug": "Total_Magnetic_Intensity_2015_Greyscale",
@@ -4927,7 +4980,11 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
-            "queryFeatures": false
+            "queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "TotalMagneticIntensity2015_greyscale"
         },
         {
             "slug": "Water_Confidence",

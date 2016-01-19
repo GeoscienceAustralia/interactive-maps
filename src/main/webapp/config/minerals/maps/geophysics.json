@@ -107,7 +107,12 @@
 						"contactType",
                         "Stretched value",
                         "Pixel Value",
-						"FEATURETYPE"
+						"FEATURETYPE",
+						"Red",
+						"Green",
+						"Blue",
+						"Stretched value",
+						"Pixel Value"
                     ],
                     "propertiesAlias": [
                         "Survey Id",
@@ -148,7 +153,12 @@
 						"Contact Type",
                         "Stretched value",
                         "Pixel Value",
-						"Feature type"
+						"Feature type",
+						"Red",
+						"Green",
+						"Blue",
+						"Stretched value",
+						"Pixel Value"
                     ],
                     "primaryPropertyName": "SURVEYNAME"
                 }

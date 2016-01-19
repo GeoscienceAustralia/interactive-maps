@@ -105,14 +105,12 @@
                         "TIESPACING",
 						"plotSymbol",
 						"contactType",
-                        "Stretched value",
-                        "Pixel Value",
 						"FEATURETYPE",
 						"Red",
 						"Green",
 						"Blue",
-						"Stretched value",
-						"Pixel Value"
+                        "Stretched value",
+                        "Pixel Value"
                     ],
                     "propertiesAlias": [
                         "Survey Id",
@@ -151,14 +149,12 @@
                         "Tie Spacing",
 						"Plot Symbol",
 						"Contact Type",
-                        "Stretched value",
-                        "Pixel Value",
 						"Feature type",
 						"Red",
 						"Green",
 						"Blue",
-						"Stretched value",
-						"Pixel Value"
+                        "Stretched value",
+                        "Pixel Value"
                     ],
                     "primaryPropertyName": "SURVEYNAME"
                 }

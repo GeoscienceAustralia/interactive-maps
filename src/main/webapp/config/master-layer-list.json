@@ -1181,6 +1181,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -1220,6 +1221,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2605,6 +2607,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2644,6 +2647,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2683,6 +2687,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2722,6 +2727,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2761,6 +2767,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2800,6 +2807,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2839,6 +2847,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2878,6 +2887,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2917,6 +2927,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2956,6 +2967,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -2995,6 +3007,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -3034,6 +3047,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
@@ -3073,6 +3087,7 @@
                     "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",

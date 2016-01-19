@@ -6,7 +6,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Airborne Surveys 2014",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "AirborneSurveys2014",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -18,19 +18,19 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AirborneSurveys2014"
@@ -123,8 +123,8 @@
 			"extent": [[99,10],[169,-55]],
             "mapType": "ArcGISCache",
             "visibility": true,
-            "name": "Australian Topography 2014",
-            "url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer",
+            "name": "Australian Topography",
+            "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer",
             "metadataText": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes. Features includes hillsides, vegetation, contours, built up areas, terrain, rivers, lakes, roads, rail, elevation and islands.",
             "ogcLinks": [
 				{
@@ -133,15 +133,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer?f=lyr&v=9.3"
                 }
             ],
 			"queryFeatures": true,
@@ -1021,7 +1021,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Geophysics Reference Map",
-            "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
             "layers": "Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8",
             "metadataText": "This is a topographic reference map showing the populated places of Australia.",
             "ogcLinks": [
@@ -1031,11 +1031,11 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -1115,7 +1115,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Gravity Anomaly 2010 HSI",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "GravityAnomaly2010_HSI",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -1131,15 +1131,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -1151,7 +1151,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Gravity Anomaly 2010 greyscale",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "GravityAnomaly2010_greyscale",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -1167,15 +1167,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -1187,7 +1187,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Gravity Bouguer Onshore 2010 greyscale",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "GravityBouguerOnshore2010_greyscale",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -1203,15 +1203,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -1222,7 +1222,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Hillshade and Vegetation",
-            "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
             "layers": "TOPO250K_Prohibited_Areas,TOPO250K_Reserves,Reserves_1,TOPO250K_Recreation_Areas,Cultivated_Areas,Native_Vegetation_1,TOPO250K_Native_Vegetation,Hillshade_1_second,Hillshade_3_second",
             "metadataText": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes.",
             "ogcLinks": [
@@ -1232,11 +1232,11 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -1252,7 +1252,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Hillshade and Vegetation",
-            "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
             "layers": "Hillshade_1_second,Hillshade_3_second",
             "metadataText": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes.",
             "ogcLinks": [
@@ -1262,11 +1262,11 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -2507,7 +2507,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Population Centres",
-            "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
             "layers": "Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8",
             "metadataText": "This is a topographic reference map showing the populated places of Australia.",
             "ogcLinks": [
@@ -2517,11 +2517,11 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -2568,7 +2568,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 ternary KThU",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_ternary_KThU",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2584,15 +2584,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2604,7 +2604,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 unfiltered dose",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_unfiltered_dose",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2620,15 +2620,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2640,7 +2640,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 unfiltered pcK",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_unfiltered_pcK",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2656,15 +2656,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2676,7 +2676,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 unfiltered ppmTh",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_unfiltered_ppmTh",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2692,15 +2692,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2712,7 +2712,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 unfiltered ppmU",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_unfiltered_ppmU",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2728,15 +2728,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2748,7 +2748,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 filtered dose",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_filtered_dose",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2764,15 +2764,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2784,7 +2784,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 filtered pcK",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_filtered_pcK",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2800,15 +2800,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2820,7 +2820,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 filtered ppmTh",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_filtered_ppmTh",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2836,15 +2836,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2856,7 +2856,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 filtered ppmU",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_filtered_ppmU",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2872,15 +2872,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2892,7 +2892,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 filtered ThK ratio",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_filtered_ThK_ratio",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2908,15 +2908,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2928,7 +2928,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 filtered UK ratio",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_filtered_UK_ratio",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2944,15 +2944,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -2964,7 +2964,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 filtered UTh ratio",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_filtered_UTh_ratio",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -2980,15 +2980,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -3000,7 +3000,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Radiometrics 2015 filtered U2Th ratio",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "Radiometrics2015_filtered_U2Th_ratio",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -3016,15 +3016,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -4177,7 +4177,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Seas and Submerged Lands Act 1973 Reference Map",
-            "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
             "layers": "Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8",
             "metadataText": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes.",
             "ogcLinks": [
@@ -4187,11 +4187,11 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Australian_Topography_2014_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -4872,7 +4872,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Total Magnetic Intensity 2015 HSI",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "TotalMagneticIntensity2015_HSI",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -4884,15 +4884,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false
@@ -4904,7 +4904,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Total Magnetic Intensity 2015 greyscale",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer",
             "layers": "TotalMagneticIntensity2015_greyscale",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -4916,15 +4916,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geophysical_Grids/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/earth_science/Geoscience_Australia_National_Geophysical_Grids/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geophysical_Grids/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": false

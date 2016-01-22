@@ -1,0 +1,119 @@
+{
+	"id": "offshoreoilandgasacreage",
+	"datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"title": "Offshore Oil and Gas",
+	"initialExtent": [
+		[
+			110.21,
+			-6.4
+		],
+		[
+			132.8,
+			-27.16
+		]
+	],
+	"headerConfig": {
+		"title": "Offshore Oil and Gas"
+	},
+	"aboutConfig": {
+		"enabled": true,
+		"bodyUrl": "content/environmentalacreage/aboutAcreage.html"
+	},
+	"layersConfig": {
+		"enabled": true
+	},
+	"legendConfig": {
+		"enabled": true,
+		"legendUrl": "content/environmentalacreage/legendAcreage.html"
+	},
+	"toolsConfig": {
+		"tools": [
+			{
+				"enabled": true,
+				"id": "addLayer",
+				"description": "Add layer tool",
+				"toolPanelUrl": "resources/partial/addLayerPanel.html",
+				"toolToggleUrl": "resources/partial/addLayerToggle.html",
+				"sortNumber": 2,
+				"config": {
+					"titleText": "Add layers"
+				}
+			}
+		]
+	},
+	"baseMaps": [
+		{
+		 "slug": "National_Color_Base_Map"
+		}
+	],
+	"layerMaps": [
+		{
+		"slug": "Offshore Oil Fields"
+		},
+		{		
+		"slug": "Offshore Gas Fields"
+		},
+		{
+		"slug": "Oil_Pipelines"
+        },
+		{
+		"slug": "Gas_Pipelines"
+        },
+		{
+		"slug": "Gas Discovery Age",
+		"visibility": true
+		},
+		{
+		"slug": "Oil Discovery Age",
+		"visibility": true
+		},
+		{
+		"slug": "Wells 2014",
+		"visibility": true
+		},
+		{
+		"slug": "Oil and Gas Infrastructure"
+		}
+	],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }	,
+    "addLayerMaps": [
+        {
+		"slug": "Offshore Profile Surveys"
+		},
+		{
+		"slug" : "Backscatter"
+		},
+		{
+		"slug": "MARS Acreage 2016"
+		},
+		{
+		"slug": "Geology Units"
+		},
+		{					
+		"slug": "OffShore Sedimentary Basins Oct 2014"
+		},
+		{					
+		"slug": "Australia Onshelf 13 Class Seascape"
+		},
+		{
+		"slug": "Acreage Basins 2016"
+		},
+		{		
+		"slug": "Proposed Acreage Release Areas 2016"
+		},
+		{
+		"slug": "SeabedSand"
+		},
+		{
+		"slug": "Seabed Mud"
+		},
+		{
+		"slug": "SeabedGravel"
+		}
+    ]
+}

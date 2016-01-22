@@ -1,0 +1,247 @@
+﻿{
+    "id": "sasla1973",
+    "title": "Seas and Submerged Lands Act 1973",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv3",
+    "initialExtent": [
+        [
+            30,
+            10
+        ],
+        [
+            180,
+            -70
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": true,
+    "termsAndConditionsUrl": "content/amsis/termsAndConditions.html",
+    "cookieExpirationInDays": 7,
+    "termsAndConditionsCookieName": "amsis",
+    "headerConfig": {
+        "title": "Seas and Submerged Lands Act 1973"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/amsis/sasla1973/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/amsis/sasla1973/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Seas and Submerged Lands Act 1973 - Australian Maritime Boundaries 2014 - Geodatabase",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_83170"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "addLayer"
+            },
+            {
+            "id": "export",
+            "toolPanelUrl": "resources/partial/exportPanel.html",
+            "toolToggleUrl": "resources/partial/exportToggle.html",
+            "config": {
+                "titleText": "Print to PDF",
+                "panelHeading": "Print to PDF",
+                "url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+                "templatesList": [
+                    "SSLA_Landscape_A4",
+					"Landscape_A4",
+                    "Portrait_A4",
+                    "Landscape_A3",
+                    "Portrait_A3"
+                ],
+                "markerUrl": "content/marker/marker-print.png",
+                "markerWidth": "55",
+                "markerHeight": "40"
+				}
+			},
+            {
+                "id": "draw"
+            },
+            {
+                "id": "clientMeasure"
+            },
+            {
+                "id": "distanceBoundary",
+                "config": {
+                    "boundaries": [
+                        {
+                            "id": "Australian Coastline",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToAustralianCoast/"
+                        },
+                        {
+                            "id": "Coastal Waters",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToCoastalWatersLimit/"
+                        },
+                        {
+                            "id": "Territorial Sea",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToTerritorialSeaZoneLimit/"
+                        },
+                        {
+                            "id": "Contiguous Zone",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContiguousZoneLimit/"
+                        },
+                        {
+                            "id": "Exclusive Economic Zone",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneLimit/"
+                        },
+                        {
+                            "id": "Exclusive Economic Zone as Amended by the Perth Treaty 1997",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneAmendedPerthLimit/"
+                        },
+                        {
+                            "id": "Continental Shelf",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContinentalShelf/"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "NAME",
+                        "OBJNAM",
+                        "CATLIM",
+                        "CATBDY",
+                        "NOBJNM",
+                        "NATION",
+                        "STATES",
+                        "VERTJN",
+                        "SORHCS",
+                        "PHCS",
+                        "LEGSOU",
+                        "FRLI_REF",
+                        "DATE",
+                        "LEVEL_ADMIN",
+                        "IP_OWNER",
+                        "LICENCE",
+                        "DISCLAIMER",
+                        "COMMENT"
+                    ],
+                    "propertiesAlias": [
+                        "Name",
+                        "Object Name",
+                        "Catlim",
+                        "Catbdy",
+                        "Nobjnm",
+                        "Nation",
+                        "States",
+                        "Vertjn",
+                        "Sorhcs",
+                        "Phcs",
+                        "Legsou",
+                        "Frli Ref",
+                        "Date",
+                        "Level Admin",
+                        "Ip Owner",
+                        "Licence",
+                        "Disclaimer",
+                        "Comment"
+                    ],
+                    "primaryPropertyName": "CATLIM"
+                }
+            },
+            {
+                "id": "legalInterest"
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_WMS"
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "visibility": false
+        },
+        {
+            "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
+            "visibility": false,
+            "opacity": 0.3
+        },
+        {
+            "slug": "Contiguous_Zone_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Continental_Shelf_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Territorial_Sea_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Coastal_Waters_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Straight_Baselines_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Normal_Baselines_AMB_2014",
+            "opacity": 0.3
+        },
+        {
+            "slug": "Seas_And_Submerged_Lands_Act_1973_Reference_Map"
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+    "addLayerMaps": [
+        {
+            "slug": "Offshore_Areas_Of_The_States_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Scheduled_Areas_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Australian_Petroleum_Blocks_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Treaties_Of_Australia_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+		{
+			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006"
+		},
+		{
+			"slug": "Commonwealth_Coral_Sea_Fishery_2006"
+		}
+    ]
+}

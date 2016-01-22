@@ -1,0 +1,133 @@
+{
+	"id": "environmentalacreage",
+	"datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"title": "Offshore Environment",
+	"initialExtent": [
+		[
+			98.56,
+			8.38
+		],
+		[
+			142.28,
+			-37.77
+		]
+	],
+	"headerConfig": {
+		"title": "Offshore Environment"
+	},
+	"aboutConfig": {
+		"enabled": true,
+		"bodyUrl": "content/environmentalacreage/aboutAcreage.html"
+	},
+	"layersConfig": {
+		"enabled": true
+	},
+	"legendConfig": {
+		"enabled": true,
+		"legendUrl": "content/environmentalacreage/legendAcreage.html"
+	},
+	"toolsConfig": {
+		"tools": [
+			{
+				"enabled": true,
+				"id": "addLayer",
+				"description": "Add layer tool",
+				"toolPanelUrl": "resources/partial/addLayerPanel.html",
+				"toolToggleUrl": "resources/partial/addLayerToggle.html",
+				"sortNumber": 2,
+				"config": {
+					"titleText": "Add layers"
+				}
+			}
+		]
+	},
+	"baseMaps": [
+		{
+		 "slug": "National_Color_Base_Map"
+		}
+	],
+	"layerMaps": [		
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Offshore Units",
+            "groupId": "Offshore Units",
+            "visibility": true,
+            "defaultLayerId": "OffShore Sedimentary Basins Oct 2014"
+        },
+		{
+		"slug": "Offshore Profile Surveys"
+		},
+		{
+		"slug" : "Backscatter"
+		},
+		{
+		"slug": "MARS Acreage 2016"
+		}
+	],
+	"groupedLayers": 
+		[
+			{
+				"groupId": "Offshore Units",
+				"layerMaps": [
+					{
+					"slug": "OffShore Sedimentary Basins Oct 2014"
+					},
+					{
+					"slug": "Australia On-Shelf 13 Class Seascape"
+					},
+					{
+					"slug": "Geology Units"
+					}
+				]
+			}
+		]
+	,
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+    "addLayerMaps": [
+        {
+		"slug": "Offshore Oil Fields"
+		},
+		{		
+		"slug": "Offshore Gas Fields"
+		},
+		{
+		"slug": "Oil_Pipelines"
+        },
+		{
+		"slug": "Gas_Pipelines"
+        },
+		{
+		"slug": "Gas Discovery Age"
+		},
+		{
+		"slug": "Oil Discovery Age"
+		},
+		{
+		"slug": "Wells 2014"
+		},
+		{
+		"slug": "Oil and Gas Infrastructure"
+		},
+		{
+		"slug": "Acreage Basins 2016"
+		},
+		{		
+		"slug": "Proposed Acreage Release Areas 2016"
+		},
+		{
+		"slug": "SeabedSand"
+		},
+		{
+		"slug": "Seabed Mud"
+		},
+		{
+		"slug": "SeabedGravel"
+		}
+    ]
+}
+		

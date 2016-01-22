@@ -1,0 +1,355 @@
+﻿{
+    "id": "sasla1973",
+    "title": "Seas and Submerged Lands Act 1973",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv3",
+    "initialExtent": [
+        [
+            30,
+            10
+        ],
+        [
+            180,
+            -70
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": true,
+    "termsAndConditionsUrl": "content/amsis/termsAndConditions.html",
+    "cookieExpirationInDays": 7,
+    "termsAndConditionsCookieName": "amsis",
+    "headerConfig": {
+        "title": "Seas and Submerged Lands Act 1973"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/amsis/sasla1973/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/amsis/sasla1973/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Seas and Submerged Lands Act 1973 - Australian Maritime Boundaries 2014 - Geodatabase",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_83170"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "addLayer"
+            },
+            {
+            "id": "export",
+            "toolPanelUrl": "resources/partial/exportPanel.html",
+            "toolToggleUrl": "resources/partial/exportToggle.html",
+            "config": {
+                "titleText": "Print to PDF",
+                "panelHeading": "Print to PDF",
+                "url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+                "templatesList": [
+                    "SSLA_Landscape_A4",
+					"Landscape_A4",
+                    "Portrait_A4",
+                    "Landscape_A3",
+                    "Portrait_A3"
+                ],
+                "markerUrl": "content/marker/marker-print.png",
+                "markerWidth": "55",
+                "markerHeight": "40"
+				}
+			},
+            {
+                "id": "draw"
+            },
+            {
+                "id": "clientMeasure"
+            },
+            {
+                "id": "distanceBoundary"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "NAME",
+                        "OBJNAM",
+                        "CATLIM",
+                        "CATBDY",
+                        "NOBJNM",
+                        "NATION",
+                        "STATES",
+                        "VERTJN",
+                        "SORHCS",
+                        "PHCS",
+                        "LEGSOU",
+                        "FRLI_REF",
+                        "DATE",
+                        "LEVEL_ADMIN",
+                        "IP_OWNER",
+                        "LICENCE",
+                        "DISCLAIMER",
+                        "COMMENT"
+                    ],
+                    "propertiesAlias": [
+                        "Name",
+                        "Object Name",
+                        "Catlim",
+                        "Catbdy",
+                        "Nobjnm",
+                        "Nation",
+                        "States",
+                        "Vertjn",
+                        "Sorhcs",
+                        "Phcs",
+                        "Legsou",
+                        "Frli Ref",
+                        "Date",
+                        "Level Admin",
+                        "Ip Owner",
+                        "Licence",
+                        "Disclaimer",
+                        "Comment"
+                    ],
+                    "primaryPropertyName": "CATLIM"
+                }
+            },
+            {
+                "id": "legalInterest"
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_WMS"
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "visibility": false
+        },
+		 {
+            "isGroupedLayers": true,
+            "groupTitle": "Sea and Submerged Land Act Layers",
+            "groupId": "ssla",
+            "visibility": true,
+            "defaultLayerId": "Seas and Submerged Lands Act Combined"
+        },
+        {
+            "slug": "Seas_And_Submerged_Lands_Act_1973_Reference_Map"
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+    "addLayerMaps": [
+        {
+            "slug": "Offshore_Areas_Of_The_States_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Scheduled_Areas_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Australian_Petroleum_Blocks_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Treaties_Of_Australia_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+		{
+			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006"
+		},
+		{
+			"slug": "Commonwealth_Coral_Sea_Fishery_2006"
+		}
+    ],
+	 "groupedLayers": [
+        {
+            "groupId": "ssla",
+            "layerMaps": [			
+				{
+				
+				"id": "Combined Seas and Submerged Lands Act",
+				"slug": "Combined Seas and Submerged Lands Act",
+				"extent": [[30,10],[180,-70]],
+				"mapType": "ArcGISCache",
+				"visibility": true,
+				"name": "Combined Seas and Submerged Lands Act",
+				"url": "http://intranet-test.ga.gov.au/gis/rest/services/Seas_and_Submerged_Lands_Act_Combined_WM/MapServer",
+				"metadataText": "Datasets illustrating the georegulatory framework of the Seas and Submerged Lands Act 1973 and Australia's Maritime Limits. An Act relating to Sovereignty in respect of certain Waters of the Sea and in respect of the Airspace over, and the Sea bed and Subsoil beneath, those Waters and to Sovereign Rights in respect of the Continental Shelf and the Exclusive Economic Zone and to certain rights of control in respect of the Contiguous Zone.",
+				"ogcLinks": [
+					{
+					"description": "Service Metadata",
+					"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_83170"
+					},
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://intranet-test.ga.gov.au/gis/rest/services/Seas_and_Submerged_Lands_Act/MapServer"
+					},
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-test.ga.gov.au/gis/services/Seas_and_Submerged_Lands_Act/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"opacity": 1,
+				"layerTimeout": 5000,
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-test.ga.gov.au/gis/services/Seas_and_Submerged_Lands_Act/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Continental_Shelf_AMB2014_Limit,Continental_Shelf_AMB2014_Points,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit,Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit"				
+				},
+				{
+				"id": "Combined Normal and Straight Baselines",
+				"slug": "Combined Normal and Straight Baselines",
+				"extent": [[30,10],[180,-70]],
+				"mapType": "WMS",
+				"visibility": true,
+				"name": "Combined Normal and Straight Baselines",
+				"url": "http://intranet-test.ga.gov.au/gis/services/Seas_and_Submerged_Lands_Act/MapServer/WMSServer",
+				"layers": "Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit",
+				"metadataText": "Normal and Straight Baselines defined under the Seas and Submerged Lands (Territorial Sea Baseline) Proclamation 2006.",
+				"ogcLinks": [
+					{
+						"description": "Service Metadata",
+						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_83170"
+					},
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://intranet-test.ga.gov.au/gis/rest/services/Seas_and_Submerged_Lands_Act/MapServer"
+					},
+					{
+						"description": "WMS Capabilities",
+						"url": "http://intranet-test.ga.gov.au/gis/services/Seas_and_Submerged_Lands_Act/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],
+				"opacity": 1,
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-test.ga.gov.au/gis/services/Seas_and_Submerged_Lands_Act/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit"
+				},
+				{
+					"id": "Combined Normal, Straight Baselines and Territorial Sea",
+					"slug": "Combined Normal, Straight Baselines and Territorial Sea",
+					"extent": [[30,10],[180,-70]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Combined Normal, Straight Baselines and Territorial Sea",
+					"url": "http://intranet-test.ga.gov.au/gis/services/Seas_and_Submerged_Lands_Act/MapServer/WMSServer",
+					"layers": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit,Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit",
+					"metadataText": "Normal, Straight Baselines and Territorial Sea under the Seas and Submerged Lands Act 1973",
+					"ogcLinks": [
+						{
+							"description": "Service Metadata",
+							"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_14449938-bb6f-4e45-a50e-bbfbe2d19601/Treaty_PNG_Territorial_Sea_AMB2014a"
+						},
+						{
+							"description": "Service Metadata (REST)",
+							"url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer"
+						},
+						{
+							"description": "WMS Capabilities",
+							"url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+						},
+						{
+							"description": "ArcMap Layerfile",
+							"url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer?f=lyr&v=9.3"
+						}
+					],
+					"opacity": 1,
+					"queryFeatures": true,
+					"queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer/WMSServer",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.1.1",
+					"queryLayers": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit,Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit"
+				},
+				{
+					"id": "Combined Normal, Straight Baselines, Territorial and Contiguous Sea",
+					"slug": "Combined Normal, Straight Baselines and Territorial and Contiguous Sea",
+					"extent": [[30,10],[180,-70]],
+					"mapType": "WMS",
+					"visibility": true,
+					"name": "Combined Normal, Straight Baselines and Territorial and Contiguous Sea",
+					"url": "http://intranet-test.ga.gov.au/gis/services/Seas_and_Submerged_Lands_Act/MapServer/WMSServer",
+					"layers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit,Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit",
+					"metadataText": "Normal, Straight Baselines and Territorial Sea under the Seas and Submerged Lands Act 1973",
+					"ogcLinks": [
+						{
+							"description": "Service Metadata",
+							"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_14449938-bb6f-4e45-a50e-bbfbe2d19601/Treaty_PNG_Territorial_Sea_AMB2014a"
+						},
+						{
+							"description": "Service Metadata (REST)",
+							"url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer"
+						},
+						{
+							"description": "WMS Capabilities",
+							"url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+						},
+						{
+							"description": "ArcMap Layerfile",
+							"url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer?f=lyr&v=9.3"
+						}
+					],
+					"opacity": 1,
+					"queryFeatures": true,
+					"queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer/WMSServer",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.1.1",
+					"queryLayers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit,Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit"
+				},
+				{
+					"id": "Territorial_Sea_AMB_2014",
+					"slug": "Territorial_Sea_AMB_2014",
+					"opacity": 0.4
+				},
+				{
+					"id": "Contiguous_Zone_AMB_2014",
+					"slug": "Contiguous_Zone_AMB_2014",
+					"opacity": 0.4
+				},				
+				{
+					"id": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
+					"slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
+					"opacity": 0.4
+				},
+				{
+					"id": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
+					"slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
+					"visibility": false,
+					"opacity": 0.4
+				},
+				{
+					"id": "Continental_Shelf_AMB_2014",
+					"slug": "Continental_Shelf_AMB_2014",
+					"opacity": 0.4
+				}				
+            ]
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "title": "Sentinel",
+    "id": "sentinel",
+    "blurb": "The Sentinel system supplies sensor and satellite data and near-real-time feeds for natural hazards such as bushfire fire and floods.",
+    "headerConfig": 
+		{
+        "title": "Applying geoscience to Australia's most important challenges",
+        "backgroundImageUrl": "resources/img/header_bg.png"
+		},
+    "maps": [
+        {
+            "title": "Sentinel Hotspots",
+            "id": "sentinelhotspots",
+            "previewImageUrl": "content/sentinel/hotspots/mapPreview.png",
+            "previewDescription": "Sentinel hotspots is a national bushfire monitoring system that provides timely information about hotspots to emergency service managers across Australia. The mapping system allows users to identify fire locations with a potential risk to communities and property."
+        },
+		{
+            "title": "Sentinel Floods",
+            "id": "sentinelfloods",
+            "previewImageUrl": "content/sentinel/floods/mapPreview.png",
+            "previewDescription": "Sentinel floods provides satellite data, reports and feeds for flood risk mapping."
+        },   
+		{		
+			"title": "What is a flood?",
+			"tags": "Reference",
+            "previewImageUrl": "content/sentinel/WhatFlood.png",
+            "previewDescription": "A simple definition of flooding is water where it is not wanted.",
+			"applicationUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/basics/what"
+		}
+    ],
+    "tags": [
+		{
+            "id": "Reference",
+            "description": "Geoscience Australia reference data for hazard mapping.",
+            "title": "Reference Data"
+        }
+    ]
+}

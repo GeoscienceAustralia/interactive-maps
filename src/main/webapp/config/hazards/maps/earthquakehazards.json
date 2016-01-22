@@ -67,16 +67,16 @@
                 "markerHeight": "40",
                 "endpoints": [			
 					{
-					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer", 
-					"geometryName": "Shape", 
-					"layers":"1", 
-					"imageDisplay": "600,550,96", 
+					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer",
+					"geometryName": "Shape",
+					"layers":"1",
+					"imageDisplay": "600,550,96",
 					"featureTitle": "0.0s Response Spectral Acceleration (RSA)", 
 					"queryType": "ArcGISREST" 
 					},
 					{ 
-					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer", 
-					"geometryName": "Shape", 
+					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer",
+					"geometryName": "Shape",
 					"layers":"0", 
 					"imageDisplay": "600,550,96", 
 					"featureTitle": "RSA Contours", 

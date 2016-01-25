@@ -3,16 +3,15 @@
     "title": "Sentinel Hotspots",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",
     "initialExtent": [
-        [
-            123,
-            -8
-        ],
-        [
-            132,
-            -12
-        ]
+		[
+		76.14,
+		20.75
+		],
+		[
+		185.83,
+		-60.91
+		]
     ],
     "requiresTermsAndConditions": true,
     "termsAndConditionsUrl": "content/sentinel/termsAndConditions.html",
@@ -40,7 +39,7 @@
 	},
     "legendConfig": {
         "enabled": true,
-        "legendUrl": "content/amsis/twet/legend.html"
+        "legendUrl": "content/sentinel/hotspots/legend.html"
     },
     "toolsConfig": {
         "enabled": true,

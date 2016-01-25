@@ -26,6 +26,20 @@
             "previewImageUrl": "content/sentinel/WhatFlood.png",
             "previewDescription": "A simple definition of flooding is water where it is not wanted.",
 			"applicationUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/basics/what"
+		},
+		{
+			"title": "View in Google Earth (KML)",
+			"tags": "Data",
+            "previewImageUrl": "content/sentinel/KML.png",
+            "previewDescription": "Current hotspots in Google Earth and KML.",
+			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/sentinel/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sentinel:hotspot_current&outputFormat=application%2Fvnd.google-earth.kml%2Bxml"
+		},
+		{
+			"title": "RSS feed",
+			"tags": "Data",
+            "previewImageUrl": "content/sentinel/KML.png",
+            "previewDescription": "Current hotspots RSS (ATOM) feed.",
+			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/wms/reflect?layers=hotspot_current&format=application/atom+xml"
 		}
     ],
     "tags": [
@@ -33,6 +47,11 @@
             "id": "Reference",
             "description": "Geoscience Australia reference data for hazard mapping.",
             "title": "Reference Data"
+        },
+		{
+            "id": "Data",
+            "description": "Data links and feeds.",
+            "title": "Sentinel Data"
         }
     ]
 }

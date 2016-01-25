@@ -1,0 +1,160 @@
+{
+    "id": "sentinelhotspots",
+    "title": "Sentinel Hotspots",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv3",
+    "initialExtent": [
+        [
+            123,
+            -8
+        ],
+        [
+            132,
+            -12
+        ]
+    ],
+    "requiresTermsAndConditions": true,
+    "termsAndConditionsUrl": "content/sentinel/termsAndConditions.html",
+    "cookieExpirationInDays": 7,
+    "termsAndConditionsCookieName": "sentinelhotspots",
+    "headerConfig": {
+        "title": "Sentinel Hotspots"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/sentinel/hotspots/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/amsis/twet/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Download Sentinel Hotspots Product Description",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-f914-7506-e044-00144fdd4fa6/Sentinel+Hotspots"
+                        },
+						{
+                            "id": "Sentinel Hotspots KML",
+                            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sentinel:hotspot_current&outputFormat=application%2Fvnd.google-earth.kml%2Bxml"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "addLayer"
+            },
+            {
+            "id": "export",
+            "toolPanelUrl": "resources/partial/exportPanel.html",
+            "toolToggleUrl": "resources/partial/exportToggle.html",
+            "config": {
+                "titleText": "Print to PDF",
+                "panelHeading": "Print to PDF",
+                "url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+                "templatesList": [
+					"Landscape_A4",
+                    "Portrait_A4",
+                    "Landscape_A3",
+                    "Portrait_A3"
+                ],
+                "markerUrl": "content/marker/marker-print.png",
+                "markerWidth": "55",
+                "markerHeight": "40"
+				}
+			},
+            {
+                "id": "draw"
+            },
+            {
+                "id": "clientMeasure"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "titleText": "Identify treaties",
+                    "panelSize":"large",
+                    "panelHeading": "Identify Treaties",
+                    "propertiesOfInterest": [
+                        "LOCATION"
+                    ],
+                    "propertiesAlias": [
+                        "LOCATION"
+                    ],
+                    "primaryPropertyName": "LOCATION"
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "Google_Satellite"
+        }
+    ],
+    "layerMaps": [ 
+			{
+            "slug": "hotspot_current",
+			"extent": [[99,10],[169,-55]],
+            "id": "hotspot_current",
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Sentinel Current Hotspots",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+            "layers": "hotspot_current",
+            "metadataText": "Hotspots are point data, derived from (a growing number of) satellite-born instruments that detect light in the thermal wavelengths. Typically, the satellite data are processed with a specific algorithm that highlights areas with an unusually high temperature.",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-f914-7506-e044-00144fdd4fa6/Sentinel+Hotspots"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 1,
+			"queryFeatures": true,
+            "queryUrl": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "hotspot_current",
+            "layerTimeout": 5000
+        }
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "",
+            "layerMaps": []
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+    "addLayerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS"
+        }
+    ]
+}

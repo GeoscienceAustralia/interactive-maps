@@ -95,10 +95,50 @@
                     "panelSize":"large",
                     "panelHeading": "Identify Treaties",
                     "propertiesOfInterest": [
-                        "LOCATION"
+                        "latitude",
+						"longitude",
+						"temp_kelvin",
+						"datetime",
+						"power",
+						"confidence",
+						"age_hours",
+						"australian_state",
+						"id",
+						"satellite",
+						"satellite_nssdc",
+						"satellite_operating_agency",
+						"sensor",
+						"orbit",
+						"start_dt",
+						"stop_dt",
+						"filename",
+						"process_dt",
+						"process_algorithm",
+						"process_algorithm_version",
+						"load_dt"
                     ],
                     "propertiesAlias": [
-                        "LOCATION"
+						"Latitude",
+						"Longitude",
+						"Temp Kelvin",
+						"Date time",
+						"Power",
+						"Confidence",
+						"Age Hours",
+						"Australian State",
+                        "Id",
+						"Satellite",
+						"Satellite NSSDC",
+						"Satellite Operating Agency",
+						"Sensor",
+						"Orbit",
+						"Start date",
+						"Stop date",
+						"Filename",
+						"Process date",
+						"Process Algorithm",
+						"Process Algorithm Version",
+						"Load date"
                     ],
                     "primaryPropertyName": "LOCATION"
                 }
@@ -137,6 +177,7 @@
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "hotspot_current",
+			"queryInfoFormat": "application/json",
             "layerTimeout": 5000
         }
     ],

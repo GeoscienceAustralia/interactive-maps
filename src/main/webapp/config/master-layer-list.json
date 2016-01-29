@@ -1080,6 +1080,37 @@
             "queryLayers": "Built Up Area,Watercourse,Inland Water,Aqueduct Canals,Road Minor,Road Major,Railroad,Bridge,Political Boundary Line,Coastline,Railyard,Airport,Political Boundary Point,Miscellaneous Drainage,Miscellaneous Population,Built Up Points",
             "layerTimeout": 5000
         },
+		{
+            "slug": "Globalmap_Landcover",
+			"extent": [[99,10],[169,-55]],
+            "id": "Globalmap_landcover",
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Globalmap Landcover",
+            "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer",
+            "layers": "Landcover",
+            "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_607a8dd6-29fb-4dbd-9dde-aee6967439e2/Global+Map"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1,
+            "layerTimeout": 5000
+        },
         {
             "slug": "Google_Street",
             "mapType": "GoogleStreet",
@@ -1318,7 +1349,7 @@
             ],
             "opacity": 1,
             "layerTimeout": 5000
-        },
+        },		
         {
             "slug": "Intertidal_Dominate_Landform",
 			"extent": [[99,10],[169,-55]],
@@ -1385,28 +1416,27 @@
             "slug": "Landcover",
 			"extent": [[99,10],[169,-55]],
             "id": "landcover",
-            "mapType": "WMS",
+            "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Landcover",
-            "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer",
-            "layers": "Landcover",
-            "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
+            "url": "http://www.ga.gov.au/gis/rest/services/earth_observation/Landcover_WM/MapServer",
+            "metadataText": "The Landcover cached map service (Web Mercator) is the first nationally consistent and thematically comprehensive land cover reference for Australia. It is the result of a collaboration between Geoscience Australia and the Australian Bureau of Agriculture and Resource Economics and Sciences, and provides a base-line for identifying and reporting on change and trends in vegetation cover and extent.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_607a8dd6-29fb-4dbd-9dde-aee6967439e2/Global+Map"
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_46fe3590-f018-4392-a7e5-5a99638d3095/Australian+Landcover+cached+map+service+%28Web+Mercator%29"
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"
+                    "url": "http://www.ga.gov.au/gis/rest/services/earth_observation/Landcover_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://www.ga.gov.au/gis/services/earth_observation/Landcover_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://www.ga.gov.au/gis/rest/services/earth_observation/Landcover_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -5521,6 +5551,31 @@
                 }
             ]
         },
+		{
+			"slug": "ESRI_Imagery",
+			"extent": [
+				[
+				135.53,
+				-31.61
+				],
+				[
+					157.11,
+					-49.34
+				]
+			],
+			"mapType": "ArcGISCache",
+			"visibility": true,
+			"name": "World Imagery from ArcGIS Online",
+			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+			"attribution": "ESRI ArcGIS Online",
+			"metadataText": "World Imagery provides one meter or better satellite and aerial imagery in many parts of the world and lower resolution satellite imagery worldwide. The map includes 15m TerraColor imagery at small and mid-scales (591M down to 72k) and 2.5m SPOT Imagery (288k to 72k) for the world, and USGS 15m Landsat imagery for Antarctica. The map features 0.3m resolution imagery in the continental United States and 0.6m resolution imagery in parts of Western Europe from Digital Globe. Recent 1m USDA NAIP imagery is available in select states of the US. In other parts of the world, 1 meter resolution imagery is available from GeoEye IKONOS, Getmapping, AeroGRID, IGN Spain, and IGP Portugal. Additionally, imagery at different resolutions has been contributed by the GIS User Community.",
+			"ogcLinks": [
+				{
+					"description": "Service Metadata (REST)",
+					"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+				}
+			]
+		},
         {
             "slug": "World_Image_XYZ",
             "mapType": "XYZTileCache",

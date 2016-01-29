@@ -37,7 +37,7 @@
 		{
 			"title": "RSS feed",
 			"tags": "Data",
-            "previewImageUrl": "content/sentinel/KML.png",
+            "previewImageUrl": "content/sentinel/RSS.png",
             "previewDescription": "Current hotspots RSS (ATOM) feed.",
 			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/wms/reflect?layers=hotspot_current&format=application/atom+xml"
 		}

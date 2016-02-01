@@ -85,9 +85,9 @@
             {
                 "id": "identifyTool",
                 "config": {
-                    "titleText": "Identify treaties",
-                    "panelSize":"medium",
-                    "panelHeading": "Identify Treaties",
+                    "titleText": "Identify",
+                    "panelSize":"small",
+                    "panelHeading": "Identify",
                     "propertiesOfInterest": [
                         "latitude",
 						"longitude",
@@ -110,14 +110,14 @@
 						"process_algorithm",
 						"process_algorithm_version",
 						"load_dt",
-						"Classvalue",
-						"PixelValue",
-						"SA4_NAME11",
-						"SA4_CODE11",
+						"LGA_NAME_2015",
+						"LGA_CODE_2015",
 						"STATE",						
 						"SA1_CODE",
 						"POPULATION_ESTIMATE",
 						"NUMBER_OF_RESIDENTIAL_DWELLINGS",
+						"NUMBER_OF_COMMERCIAL_BUILDINGS",
+						"NUMBER_OF_INDUSTRIAL_BUILDINGS",
 						"NUMBER_OF_SEPARATE_HOUSES",
 						"NUMBER_OF_SEMI_DETACHED_HOUSES",
 						"NUMBER_OF_2_STOREY_APARTMENTS",
@@ -149,14 +149,14 @@
 						"Process algorithm",
 						"Process algorithm version",
 						"Load date",
-						"Class value",
-						"Pixel value",
-						"Statistical Areas Level 1 Name",
-						"Statistical Area Level 1 Code",
+						"Local Government Area name",
+						"Local Government Area code",
 						"State",
 						"Statistical Area Level 1 code",
 						"Population estimate",
-						"Total number of residential dwellings",						
+						"Total number of residential dwellings",	
+						"Total number of commercial buildings",
+						"Total number of industrial buildings",
 						"Total number of separate houses",
 						"Number of separate houses",
 						"Number of semi detached houses",
@@ -178,14 +178,7 @@
 			"visibility": true
 		}
     ],
-    "layerMaps": [
-			{
-            "isGroupedLayers": true,
-            "groupTitle": "Sentinel Image Layers",
-            "groupId": "Sentinel_Layers",
-            "visibility": false,
-            "defaultLayerId": "sentinel_modis_mosaic"
-			},			
+    "layerMaps": [						
 			{
 			"slug": "ESRI_Imagery",
 			"extent": [
@@ -200,7 +193,7 @@
 			],
 			"mapType": "ArcGISCache",
 			"visibility": true,
-			"opacity": 0.6,
+			"opacity": 0.65,
 			"name": "Imagery from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
 			"attribution": "ESRI ArcGIS Online",
@@ -217,7 +210,28 @@
             "groupTitle": "National Exposure Information System",
             "groupId": "NEXIS_Layers",
             "visibility": false,
-            "defaultLayerId": "NEXIS_Residential_Building_Exposure_SA1"
+            "defaultLayerId": "NEXIS_Population"
+			},
+			{
+            "isGroupedLayers": true,
+            "groupTitle": "Burnt Area",
+            "groupId": "Burnt_Area",
+            "visibility": false,
+            "defaultLayerId": "sentinel_burnt_area_this_month"
+			},
+			{
+            "isGroupedLayers": true,
+            "groupTitle": "Sentinel Image Layers",
+            "groupId": "Sentinel_Layers",
+            "visibility": false,
+            "defaultLayerId": "sentinel_modis_mosaic"
+			},
+			{
+            "isGroupedLayers": true,
+            "groupTitle": "Satellite Passes",
+            "groupId": "Last_Pass",
+            "visibility": false,
+            "defaultLayerId": "sentinel_last_pass_aqua"
 			},
 			{
             "slug": "sentinel_hotspot_current",
@@ -259,7 +273,7 @@
 				"mapType": "WMS",
 				"layers": "NEXIS_PEOPLE_per_100m,NEXIS_PEOPLE_per_500m,NEXIS_PEOPLE_per_1000m,NEXIS_PEOPLE_per_5000m,NEXIS_PEOPLE_per_10000m",
 				"visibility": true,
-				"opacity": 1,
+				"opacity": 0.75,
 				"name": "NEXIS Population Density",
 				"url": "http://services.ga.gov.au/gis/services/NEXIS_Residential_Population_Density/MapServer/WMSServer",
 				"attribution": "ESRI ArcGIS Online",
@@ -285,13 +299,124 @@
 				"queryFeatures": false
 				},
 				{
+				"slug": "NEXIS_Residential_Building_Exposure_LGA",
+				"id": "NEXIS_Residential_Building_Exposure_LGA",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "Local_Government_Area_2015,NEXIS_Residential_Building_Exposure_LGA",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Residential Building Exposure LGA",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Statistical Area Level 1 (LGA) polygon layers providing national exposure information for residential buildings.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2452622b-a457-ea07-e053-12a3070a91d8/NEXIS+Building+Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "NEXIS_Residential_Building_Exposure_LGA",
+				"layerTimeout": 5000
+				},
+				{
+				"slug": "NEXIS_Commercial_Building_Exposure_LGA",
+				"id": "NEXIS_Commercial_Building_Exposure_LGA",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "Local_Government_Area_2015,NEXIS_Commercial_Building_Exposure_LGA",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Commercial Building Exposure LGA",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Statistical Area Level 1 (LGA) polygon layers providing national exposure information for commercial buildings.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2452622b-a457-ea07-e053-12a3070a91d8/NEXIS+Building+Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "NEXIS_Commercial_Building_Exposure_LGA",
+				"layerTimeout": 5000
+				},
+				{
+				"slug": "NEXIS_Industrial_Building_Exposure_LGA",
+				"id": "NEXIS_Industrial_Building_Exposure_LGA",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "NEXIS_Industrial_Building_Exposure_LGA",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Industrial Building Exposure LGA",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Local Government Areas (LGA) polygon layers providing national exposure information for industrial buildings.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2452622b-a457-ea07-e053-12a3070a91d8/NEXIS+Building+Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "NEXIS_Industrial_Building_Exposure_LGA",
+				"layerTimeout": 5000
+				},
+				{
 				"slug": "NEXIS_Residential_Building_Exposure_SA1",
 				"id": "NEXIS_Residential_Building_Exposure_SA1",
 				"extent": [[99,10],[169,-55]],
 				"mapType": "WMS",
 				"layers": "Statistical_Area_4,NEXIS_Residential_Building_Exposure_SA1",
 				"visibility": true,
-				"opacity": 1,
+				"opacity": 0.75,
 				"name": "NEXIS Residential Building Exposure SA1",
 				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
 				"attribution": "ESRI ArcGIS Online",
@@ -318,7 +443,7 @@
 				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
 				"queryUrlType": "WMS",
 				"queryVersion": "1.1.1",
-				"queryLayers": "Statistical_Area_4,NEXIS_Residential_Building_Exposure_SA1",
+				"queryLayers": "NEXIS_Residential_Building_Exposure_SA1",
 				"layerTimeout": 5000
 				},
 				{
@@ -328,7 +453,7 @@
 				"mapType": "WMS",
 				"layers": "Statistical_Area_4,NEXIS_Commercial_Building_Exposure_SA1",
 				"visibility": true,
-				"opacity": 1,
+				"opacity": 0.75,
 				"name": "NEXIS Commercial Building Exposure SA1",
 				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
 				"attribution": "ESRI ArcGIS Online",
@@ -355,7 +480,7 @@
 				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
 				"queryUrlType": "WMS",
 				"queryVersion": "1.1.1",
-				"queryLayers": "Statistical_Area_4,NEXIS_Commercial_Building_Exposure_SA1",
+				"queryLayers": "NEXIS_Commercial_Building_Exposure_SA1",
 				"layerTimeout": 5000
 				},
 				{
@@ -365,11 +490,11 @@
 				"mapType": "WMS",
 				"layers": "Statistical_Area_4,NEXIS_Industrial_Building_Exposure_SA1",
 				"visibility": true,
-				"opacity": 1,
-				"name": "NEXIS Commercial Building Exposure SA1",
+				"opacity": 0.75,
+				"name": "NEXIS Industrial Building Exposure SA1",
 				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
 				"attribution": "ESRI ArcGIS Online",
-				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Statistical Area Level 1 (SA1) polygon layers providing national exposure information for commercial buildings.",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Statistical Area Level 1 (SA1) polygon layers providing national exposure information for industrial buildings.",
 				"ogcLinks": [
 					{
                     "description": "Service Metadata",
@@ -392,14 +517,63 @@
 				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
 				"queryUrlType": "WMS",
 				"queryVersion": "1.1.1",
-				"queryLayers": "Statistical_Area_4,NEXIS_Commercial_Building_Exposure_SA1",
+				"queryLayers": "NEXIS_Industrial_Building_Exposure_SA1",
 				"layerTimeout": 5000
 				}
+				
 			]
 		},
         {
             "groupId": "Sentinel_Layers",
-            "layerMaps": [
+            "layerMaps": [				
+			{
+            "slug": "sentinel_modis_mosaic",
+			"id": "sentinel_modis_mosaic",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Sentinel MODIS Mosaic",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+            "layers": "modis_mosaic_l1b",
+            "metadataText": "Moderate Resolution Imaging Spectroradiometer (MODIS) is the key instrument aboard the satellites Terra (EOS AM-1), launched on 18 December 1999, and Aqua (EOS PM-1), launched on 4 May 2002. MODIS views almost the entire surface of the Earth every day, acquiring data in 36 spectral bands over a 2330 km swath.",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_landsat_mosaic",
+			"id": "sentinel_landsat_mosaic",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Sentinel Landsat Mosaic",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+            "layers": "landsat_mosaic_2004_ecw",
+            "metadataText": "Geoscience Australia is distributing Landsat MSS, TM and ETM+ data for 19 epochs or time frames ranging from 1972 to 2010 covering Australia. This data has been provided by the Department of Climate Change and Energy Efficiency formerly known as the Australian Greenhouse Office (AGO). This data is only available through Geoscience Australia and not through the Department of Climate Change and Energy Efficiency. Epoch.",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-f8cf-7506-e044-00144fdd4fa6/Landsat+Mosaic"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
 			{
             "slug": "Landcover",
 			"extent": [[99,10],[169,-55]],
@@ -429,17 +603,191 @@
             ],
             "opacity": 0.6,
             "layerTimeout": 5000
-			},			
+			}
+			]
+        },
+		{
+            "groupId": "Last_Pass",
+            "layerMaps": [			
 			{
-            "slug": "sentinel_modis_mosaic",
-			"id": "sentinel_modis_mosaic",
+            "slug": "sentinel_last_pass_aqua",
+			"id": "sentinel_last_pass_aqua",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": false,
-            "name": "Sentinel MODIS Mosaic",
-            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
-            "layers": "modis_mosaic_l1b",
-            "metadataText": "Moderate Resolution Imaging Spectroradiometer (MODIS) is the key instrument aboard the satellites Terra (EOS AM-1), launched on 18 December 1999, and Aqua (EOS PM-1), launched on 4 May 2002. MODIS views almost the entire surface of the Earth every day, acquiring data in 36 spectral bands over a 2330 km swath.",
+            "name": "Last Pass AQUA",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=satellite%3D%27AQUA%27",
+            "layers": "satellite_pass_last_hotspot",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_last_pass_noaa",
+			"id": "sentinel_last_pass_noaa",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Last Pass NOAA 19",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=satellite%3D%27NOAA%2019%27",
+            "layers": "satellite_pass_last_hotspot",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_last_pass_terra",
+			"id": "sentinel_last_pass_terra",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Last Pass TERRA",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=satellite%3D%27TERRA%27",
+            "layers": "satellite_pass_last_hotspot",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_last_pass_suomi",
+			"id": "sentinel_last_pass_suomi",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Last Pass SUOMI NPP",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=satellite%3D%27SUOMI%20NPP%27",
+            "layers": "satellite_pass_last_hotspot",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+						
+			{
+            "slug": "sentinel_next_pass_aqua",
+			"id": "sentinel_next_pass_aqua",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Next Pass AQUA",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=satellite%3D%27AQUA%27",
+            "layers": "satellite_pass_next_hotspot",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_next_pass_noaa",
+			"id": "sentinel_next_pass_noaa",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Next Pass NOAA 19",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=satellite%3D%27NOAA%2019%27",
+            "layers": "satellite_pass_next_hotspot",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_next_pass_terra",
+			"id": "sentinel_next_pass_terra",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Next Pass TERRA",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=satellite%3D%27TERRA%27",
+            "layers": "satellite_pass_next_hotspot",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_next_pass_suomi",
+			"id": "sentinel_next_pass_suomi",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "Next Pass SUOMI NPP",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=satellite%3D%27SUOMI%20NPP%27",
+            "layers": "satellite_pass_next_hotspot",
+            "metadataText": "",
             "ogcLinks": [
                 {
                     "description": "Service Metadata",
@@ -455,7 +803,84 @@
             "layerTimeout": 5000
 			}
 			]
-        }
+		},
+		{
+            "groupId": "Burnt_Area",
+            "layerMaps": [						
+			{
+            "slug": "sentinel_burnt_area_this_month",
+			"id": "sentinel_burnt_area_this_month",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "MODIS burnt area this month",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+            "layers": "umd_burnt_areas_month_-0",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_burnt_area_last_month",
+			"id": "sentinel_burnt_area_last_month",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "MODIS burnt area last month",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+            "layers": "umd_burnt_areas_month_-1",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_burnt_area_last_six_months",
+			"id": "sentinel_burnt_area_last_six_months",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "MODIS burnt area last six months",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+            "layers": "umd_burnt_areas",
+            "metadataText": "",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c6de0bb5-1ba1-635e-e044-00144fdd4fa6/Satellite+Imagery"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 0.6,
+			"queryFeatures": false,
+            "layerTimeout": 5000
+			}
+			]
+		}		
     ],
     "search": {
         "type": "geonames",

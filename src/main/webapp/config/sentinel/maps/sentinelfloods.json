@@ -1,6 +1,6 @@
 {
-    "id": "wofs",
-    "title": "Water Observations from Space",
+    "id": "sentinelfloods",
+    "title": "Sentinel Floods",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
 	"framework":"olv3",
@@ -16,28 +16,21 @@
     ],
     "requiresTermsAndConditions": false,
     "headerConfig": {
-        "title": "Water Observations from Space"
+        "title": "Sentinel Floods"
     },
     "aboutConfig": {
         "enabled": true,
-        "bodyUrl": "content/water/wofs/about.html"
+        "bodyUrl": "content/sentinel/hotspots/aboutsentinelfloods.html"
     },
     "layersConfig": {
         "enabled": true
-    },
-	"overviewOptions": {
-		"layers": [
-			{
-            "slug": "National_Color_Base_Map"
-			}
-		]
-	},
+    },	
     "baseLayersConfig": {
         "enabled": true
     },
     "legendConfig": {
         "enabled": true,
-        "legendUrl": "content/water/wofs/legend.html"
+        "legendUrl": "content/sentinel/floods/legend.html"
     },
     "toolsConfig": {
         "enabled": true,
@@ -61,10 +54,43 @@
                 "id": "identifyTool",
                 "config": {
                     "propertiesOfInterest": [
-                        "GRAY_INDEX"
+                        "GRAY_INDEX",
+						"LGA_NAME_2015",
+						"LGA_CODE_2015",
+						"STATE",						
+						"SA1_CODE",
+						"POPULATION_ESTIMATE",
+						"NUMBER_OF_RESIDENTIAL_DWELLINGS",
+						"NUMBER_OF_COMMERCIAL_BUILDINGS",
+						"NUMBER_OF_INDUSTRIAL_BUILDINGS",
+						"NUMBER_OF_SEPARATE_HOUSES",
+						"NUMBER_OF_SEMI_DETACHED_HOUSES",
+						"NUMBER_OF_2_STOREY_APARTMENTS",
+						"NUMBER_OF_3_STOREY_APARTMENTS",
+						"NUMBER_OF_4_PLUS_STOREY_APARTMENTS",
+						"NUMBER_OF_BUILDINGS_PRE_1980",
+						"NUMBER_OF_BUILDINGS_POST_1981",
+						"NUMBER_OF_BUILDINGS_WITH_UNKNOWN_AGE"
                     ],
                     "propertiesAlias": [
-                        "Pixel Value"
+                        "Pixel Value",
+						"Local Government Area name",
+						"Local Government Area code",
+						"State",
+						"Statistical Area Level 1 code",
+						"Population estimate",
+						"Total number of residential dwellings",	
+						"Total number of commercial buildings",
+						"Total number of industrial buildings",
+						"Total number of separate houses",
+						"Number of separate houses",
+						"Number of semi detached houses",
+						"Number of 2 storey apartments",
+						"Number of 3 storey apartments",
+						"Number of 4 plus storey apartments",
+						"Number of buildings pre 1980",
+						"Number of buildings post 1981",
+						"Number of buildings with unknown age"
                     ],
                     "endpoints": [
                         {
@@ -114,38 +140,55 @@
     },
     "baseMaps": [
         {
-            "slug": "World_Image_XYZ"
-        }
+			"slug": "National_Color_Base_Map",
+			"visibility": true
+		},
+		{
+			"slug": "World_Political_Boundaries_XYZ",
+			"visibility": true
+		}
     ],
     "layerMaps": [
         {
-            "slug": "Australian_Topography_2014_ARCGIS",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/geoportal/catalog/search/resource/details.page?uuid=%7B8239E8C0-2D4F-49C2-9A86-159566568965%7D"
-                },
-                {
-                    "description": "REST",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/NATMAP_Digital_Maps_250K_2008Edition/ImageServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/topography/NATMAP_Digital_Maps_250K_2008Edition/ImageServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/NATMAP_Digital_Maps_250K_2008Edition/ImageServer?f=lyr&v=9.3"
-                }
-            ]
-        },
+			"slug": "ESRI_Imagery",
+			"extent": [
+				[
+				135.53,
+				-31.61
+				],
+				[
+					157.11,
+					-49.34
+				]
+			],
+			"mapType": "ArcGISCache",
+			"visibility": true,
+			"opacity": 0.65,
+			"name": "Imagery from ArcGIS Online",
+			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+			"attribution": "ESRI ArcGIS Online",
+			"metadataText": "World Imagery provides one meter or better satellite and aerial imagery in many parts of the world and lower resolution satellite imagery worldwide. The map includes 15m TerraColor imagery at small and mid-scales (591M down to 72k) and 2.5m SPOT Imagery (288k to 72k) for the world, and USGS 15m Landsat imagery for Antarctica. The map features 0.3m resolution imagery in the continental United States and 0.6m resolution imagery in parts of Western Europe from Digital Globe. Recent 1m USDA NAIP imagery is available in select states of the US. In other parts of the world, 1 meter resolution imagery is available from GeoEye IKONOS, Getmapping, AeroGRID, IGN Spain, and IGP Portugal. Additionally, imagery at different resolutions has been contributed by the GIS User Community.",
+			"ogcLinks": [
+				{
+					"description": "Service Metadata (REST)",
+					"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+				}
+			]
+		},	
         {
             "isGroupedLayers": true,
             "groupTitle": "Water Observations from Space",
             "groupId": "wofs",
             "visibility": true,
             "defaultLayerId": "FilteredSummary"
-        }
+        },
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "National Exposure Information System",
+            "groupId": "NEXIS_Layers",
+            "visibility": false,
+            "defaultLayerId": "NEXIS_Population"
+		}
     ],
     "groupedLayers": [
         {
@@ -172,7 +215,267 @@
                     "opacity": 0.7
                 }
             ]
-        }
+        },
+		{
+            "groupId": "NEXIS_Layers",
+            "layerMaps": [
+				{
+				"slug": "NEXIS_Population",
+				"id": "NEXIS_Population",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "NEXIS_PEOPLE_per_100m,NEXIS_PEOPLE_per_500m,NEXIS_PEOPLE_per_1000m,NEXIS_PEOPLE_per_5000m,NEXIS_PEOPLE_per_10000m",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Population Density",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Residential_Population_Density/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "National Exposure Information System (NEXIS) population density is a representation of the number of people per NEXIS residential building within a neighbourhood radius. Population density is calculated by the number of people within 10sqkm, 5sqkm, 1sqkm, 500sqm and 100sqm.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_49934bf4-0acf-4676-8aae-a36253c0354d/NEXIS_National_Exposure_Information_System_Population_Density_Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Residential_Population_Density/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": false
+				},
+				{
+				"slug": "NEXIS_Residential_Building_Exposure_LGA",
+				"id": "NEXIS_Residential_Building_Exposure_LGA",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "Local_Government_Area_2015,NEXIS_Residential_Building_Exposure_LGA",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Residential Building Exposure LGA",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Statistical Area Level 1 (LGA) polygon layers providing national exposure information for residential buildings.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2452622b-a457-ea07-e053-12a3070a91d8/NEXIS+Building+Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "NEXIS_Residential_Building_Exposure_LGA",
+				"layerTimeout": 5000
+				},
+				{
+				"slug": "NEXIS_Commercial_Building_Exposure_LGA",
+				"id": "NEXIS_Commercial_Building_Exposure_LGA",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "Local_Government_Area_2015,NEXIS_Commercial_Building_Exposure_LGA",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Commercial Building Exposure LGA",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Statistical Area Level 1 (LGA) polygon layers providing national exposure information for commercial buildings.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2452622b-a457-ea07-e053-12a3070a91d8/NEXIS+Building+Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "NEXIS_Commercial_Building_Exposure_LGA",
+				"layerTimeout": 5000
+				},
+				{
+				"slug": "NEXIS_Industrial_Building_Exposure_LGA",
+				"id": "NEXIS_Industrial_Building_Exposure_LGA",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "NEXIS_Industrial_Building_Exposure_LGA",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Industrial Building Exposure LGA",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Local Government Areas (LGA) polygon layers providing national exposure information for industrial buildings.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2452622b-a457-ea07-e053-12a3070a91d8/NEXIS+Building+Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "NEXIS_Industrial_Building_Exposure_LGA",
+				"layerTimeout": 5000
+				},
+				{
+				"slug": "NEXIS_Residential_Building_Exposure_SA1",
+				"id": "NEXIS_Residential_Building_Exposure_SA1",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "Statistical_Area_4,NEXIS_Residential_Building_Exposure_SA1",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Residential Building Exposure SA1",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Statistical Area Level 1 (SA1) polygon layers providing national exposure information for residential buildings.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2452622b-a457-ea07-e053-12a3070a91d8/NEXIS+Building+Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "NEXIS_Residential_Building_Exposure_SA1",
+				"layerTimeout": 5000
+				},
+				{
+				"slug": "NEXIS_Commercial_Building_Exposure_SA1",
+				"id": "NEXIS_Commercial_Building_Exposure_SA1",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "Statistical_Area_4,NEXIS_Commercial_Building_Exposure_SA1",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Commercial Building Exposure SA1",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Statistical Area Level 1 (SA1) polygon layers providing national exposure information for commercial buildings.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2452622b-a457-ea07-e053-12a3070a91d8/NEXIS+Building+Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "NEXIS_Commercial_Building_Exposure_SA1",
+				"layerTimeout": 5000
+				},
+				{
+				"slug": "NEXIS_Industrial_Building_Exposure_SA1",
+				"id": "NEXIS_Industrial_Building_Exposure_SA1",
+				"extent": [[99,10],[169,-55]],
+				"mapType": "WMS",
+				"layers": "Statistical_Area_4,NEXIS_Industrial_Building_Exposure_SA1",
+				"visibility": true,
+				"opacity": 0.75,
+				"name": "NEXIS Industrial Building Exposure SA1",
+				"url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"attribution": "ESRI ArcGIS Online",
+				"metadataText": "The National Exposure Information System (NEXIS) Building Exposure web service is a set of ABS Statistical Area Level 1 (SA1) polygon layers providing national exposure information for industrial buildings.",
+				"ogcLinks": [
+					{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2452622b-a457-ea07-e053-12a3070a91d8/NEXIS+Building+Exposure+ESRI+Mapserver"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Residential_Population_Density/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/NEXIS_Building_Exposure/MapServer?f=lyr&v=9.3"
+                }
+				],
+				"queryFeatures": true,
+				"queryUrl": "http://services.ga.gov.au/gis/services/NEXIS_Building_Exposure/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "NEXIS_Industrial_Building_Exposure_SA1",
+				"layerTimeout": 5000
+				}
+				
+			]
+		}
     ],
     "search": {
         "type": "geonames",

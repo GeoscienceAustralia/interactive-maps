@@ -19,11 +19,18 @@
             "id": "sentinelfloods",
             "previewImageUrl": "content/sentinel/floods/mapPreview.png",
             "previewDescription": "Sentinel floods provides satellite data, reports and feeds for flood risk mapping."
-        },   
+        },
+		{		
+			"title": "Sentinel Hotspots Help",
+			"tags": "Reference",
+            "previewImageUrl": "content/sentinel/WhatFlood.png",
+            "previewDescription": "A simple definition of flooding is water where it is not wanted.",
+			"applicationUrl": "http://sentinel.ga.gov.au/#/help"
+		},		
 		{		
 			"title": "What is a flood?",
 			"tags": "Reference",
-            "previewImageUrl": "content/sentinel/WhatFlood.png",
+            "previewImageUrl": "content/sentinel/HotHelp.png",
             "previewDescription": "A simple definition of flooding is water where it is not wanted.",
 			"applicationUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/basics/what"
 		},
@@ -40,6 +47,13 @@
             "previewImageUrl": "content/sentinel/RSS.png",
             "previewDescription": "Current hotspots RSS (ATOM) feed.",
 			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/wms/reflect?layers=hotspot_current&format=application/atom+xml"
+		},
+		{
+			"title": "WMS GetCaps",
+			"tags": "Data",
+            "previewImageUrl": "content/sentinel/WMSGet.png",
+            "previewDescription": "Current hotspots WMS Get Capabilities.",
+			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
 		}
     ],
     "tags": [

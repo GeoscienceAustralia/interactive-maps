@@ -176,7 +176,12 @@
         {
 			"slug": "National_Color_Base_Map",
 			"visibility": true
+		},
+		{
+			"slug": "World_Political_Boundaries_XYZ",
+			"visibility": true
 		}
+		
     ],
     "layerMaps": [						
 			{
@@ -234,11 +239,24 @@
             "defaultLayerId": "sentinel_last_pass_aqua"
 			},
 			{
-            "slug": "sentinel_hotspot_current",
+            "isGroupedLayers": true,
+            "groupTitle": "Sentinel Hotspots",
+            "groupId": "Sentinel_Hotspots",
+            "visibility": true,
+            "defaultLayerId": "sentinel_hotspot_current_72_all"
+			}
+    ],
+    "groupedLayers": [
+		{
+            "groupId": "Sentinel_Hotspots",
+            "layerMaps": [
+			{
+            "slug": "sentinel_hotspot_current_72_all",
+			"id": "sentinel_hotspot_current_72_all",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
-            "name": "Sentinel Current Hotspots",
+            "name": "Sentinel Current Hotspots 72 hrs (AVHRR, MODIS, VIIRS)",
             "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
             "layers": "hotspot_current",
             "metadataText": "Hotspots are point data, derived from (a growing number of) satellite-born instruments that detect light in the thermal wavelengths. Typically, the satellite data are processed with a specific algorithm that highlights areas with an unusually high temperature.",
@@ -260,9 +278,68 @@
             "queryLayers": "hotspot_current",
 			"queryInfoFormat": "application/json",
             "layerTimeout": 5000
-        }
-    ],
-    "groupedLayers": [
+			},
+			{
+            "slug": "sentinel_hotspot_current_48_all",
+			"id": "sentinel_hotspot_current_48_all",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Sentinel Current Hotspots 48 hrs (AVHRR, MODIS, VIIRS)",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=age_hours%3C%3D24",
+            "layers": "hotspot_current",
+            "metadataText": "Hotspots are point data, derived from (a growing number of) satellite-born instruments that detect light in the thermal wavelengths. Typically, the satellite data are processed with a specific algorithm that highlights areas with an unusually high temperature.",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-f914-7506-e044-00144fdd4fa6/Sentinel+Hotspots"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 1,
+			"queryFeatures": true,
+            "queryUrl": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=age_hours%3C%3D24",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "hotspot_current",
+			"queryInfoFormat": "application/json",
+            "layerTimeout": 5000
+			},
+			{
+            "slug": "sentinel_hotspot_current_24_all",
+			"id": "sentinel_hotspot_current_24all",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Sentinel Current Hotspots 24 hrs (AVHRR, MODIS, VIIRS)",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=age_hours%3C%3D24",
+            "layers": "hotspot_current",
+            "metadataText": "Hotspots are point data, derived from (a growing number of) satellite-born instruments that detect light in the thermal wavelengths. Typically, the satellite data are processed with a specific algorithm that highlights areas with an unusually high temperature.",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-f914-7506-e044-00144fdd4fa6/Sentinel+Hotspots"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
+                }
+            ],
+            "opacity": 1,
+			"queryFeatures": true,
+            "queryUrl": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?CQL_FILTER=age_hours%3C%3D24",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "hotspot_current",
+			"queryInfoFormat": "application/json",
+            "layerTimeout": 5000
+			}
+			
+			]
+		},
 		{
             "groupId": "NEXIS_Layers",
             "layerMaps": [
@@ -805,7 +882,7 @@
 			]
 		},
 		{
-            "groupId": "Burnt_Area",
+            "groupId": "Burnt_Area",			
             "layerMaps": [						
 			{
             "slug": "sentinel_burnt_area_this_month",

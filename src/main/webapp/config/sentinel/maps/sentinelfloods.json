@@ -1,6 +1,6 @@
 {
-    "id": "wofs",
-    "title": "Water Observations from Space",
+    "id": "sentinelfloods",
+    "title": "Sentinel Floods",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
 	"framework":"olv3",
@@ -16,28 +16,21 @@
     ],
     "requiresTermsAndConditions": false,
     "headerConfig": {
-        "title": "Water Observations from Space"
+        "title": "Sentinel Floods"
     },
     "aboutConfig": {
         "enabled": true,
-        "bodyUrl": "content/water/wofs/about.html"
+        "bodyUrl": "content/sentinel/hotspots/aboutsentinelfloods.html"
     },
     "layersConfig": {
         "enabled": true
-    },
-	"overviewOptions": {
-		"layers": [
-			{
-            "slug": "National_Color_Base_Map"
-			}
-		]
-	},
+    },	
     "baseLayersConfig": {
         "enabled": true
     },
     "legendConfig": {
         "enabled": true,
-        "legendUrl": "content/water/wofs/legend.html"
+        "legendUrl": "content/sentinel/floods/legend.html"
     },
     "toolsConfig": {
         "enabled": true,

@@ -2,6 +2,7 @@
     "id": "nationalmarineterminals",
     "title": "Test Cache",
     "datumProjection": "EPSG:3857",
+	
     "displayProjection": "EPSG:4326",
     "initialExtent": [
         [

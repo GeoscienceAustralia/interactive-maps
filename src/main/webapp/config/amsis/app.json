@@ -79,21 +79,21 @@
         },
         {
             "title": "Legacy AMSIS",
-            "tags": "Original",
+            "tags": "Legacy",
             "previewImageUrl": "content/amsis/origionalAMSIS.png",
             "previewDescription": "AMSIS is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction.",
             "applicationUrl": "http://www.ga.gov.au/imf-amsis2/"
         },
 		{
             "title": "Data Contributors",
-            "tags": "Original",
+            "tags": "Legacy",
             "previewImageUrl": "content/amsis/contribute.png",
             "previewDescription": "AMSIS contains data from Commonwealth agencies and industry sources.",
             "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/data-contributors"
         },
 		{
             "title": "Australian Ocean Governance and Relevant Legislation",
-            "tags": "Original",
+            "tags": "Legacy",
             "previewImageUrl": "content/amsis/legislation.jpg",
             "previewDescription": "This information provides an overview of legislation and background information which relates to data found in the Australian Marine Spatial Information System (AMSIS).",
             "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/australian-ocean-governance-and-relevant-legislation"
@@ -108,9 +108,9 @@
     ],
     "tags": [
 		{
-            "id": "Original",
-            "description": "Original AMSIS application and information.",
-            "title": "Original AMSIS"
+            "id": "Legacy",
+            "description": "Legacy AMSIS application and information.",
+            "title": "Legacy AMSIS"
         },
         {
             "id": "MaritimeBoundaries",

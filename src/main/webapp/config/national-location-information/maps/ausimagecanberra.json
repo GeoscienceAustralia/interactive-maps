@@ -5,6 +5,7 @@
     "previewDescription": "Ausimage Canberra 2014 is an OGC WMS web service of high resolution aerial imagery (10 cm to 18 cm) over Canberra and Queanbeyan, acquired in February and April 2014.",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
+	"framework":"olv2",	
     "initialExtent": [
         [140, -29],
         [151, -35]

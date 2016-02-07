@@ -3,7 +3,7 @@
     "title": "Australian and Region Surface Geology Ext Prod",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",
+	"framework":"olv2",	
     "initialExtent": [
         [
             70,

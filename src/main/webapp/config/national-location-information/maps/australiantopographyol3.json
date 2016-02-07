@@ -25,6 +25,13 @@
     "layersConfig": {
         "enabled": true
     },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
     "baseLayersConfig": {
         "enabled": true
     },
@@ -43,7 +50,13 @@
                         {
                             "id": "GEODATA TOPO 250K Series 3",
                             "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-eab0-7506-e044-00144fdd4fa6/GEODATA+TOPO+250K+Series+3+-+Packaged+%28Personal+Geodatabase+format%29"
-                        }
+                        },
+						{ "id" : "National Onshore Oil Pipeline Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0f41bfd1-67bf-7a2a-e053-10a3070a4514/National+Onshore+Oil+Pipelines+Database" },
+						{ "id" : "National Onshore Gas Pipeline Database", "url" : 	"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0a3ae167-c002-5f77-e054-00144fdd4fa6/National+Onshore+Gas+Pipelines+Database" },
+						{ "id" : "National Major Ports Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_04ca8df7-4b3b-73a3-e054-00144fdd4fa6/National+Major+Ports+Database" },
+						{ "id" : "National Ferry Terminals Database", "url" : 	"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_04ca8df7-4b3a-73a3-e054-00144fdd4fa6/National+Ferry+Terminals+Database" },
+						{ "id" : "National Electricity Transmission Lines Database", "url" : "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1185c97c-c042-be90-e053-12a3070a969b/National+Electricity+Transmission+Lines+Database" },
+						{ "id" : "National Electricity Transmission Substations", "url" : 	"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_13be62a4-4fe3-f812-e053-12a3070a22be/National+Electricity+Transmission+Substations" }
                     ]
                 }
             },
@@ -55,44 +68,6 @@
             },
             {
                 "id": "draw"
-            },
-			 {
-                "id": "clientMeasure"
-            },
-			{
-                "id": "distanceBoundary",
-                "config": {
-                    "boundaries": [
-                        {
-                            "id": "Australian Coastline",
-                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToAustralianCoast/"
-                        },
-                        {
-                            "id": "Coastal Waters",
-                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToCoastalWatersLimit/"
-                        },
-                        {
-                            "id": "Territorial Sea",
-                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToTerritorialSeaZoneLimit/"
-                        },
-                        {
-                            "id": "Contiguous Zone",
-                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContiguousZoneLimit/"
-                        },
-                        {
-                            "id": "Exclusive Economic Zone",
-                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneLimit/"
-                        },
-                        {
-                            "id": "Exclusive Economic Zone as Amended by the Perth Treaty 1997",
-                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneAmendedPerthLimit/"
-                        },
-                        {
-                            "id": "Continental Shelf",
-                            "url": "/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContinentalShelf/"
-                        }
-                    ]
-                }
             },
             {
                 "id": "identifyTool",
@@ -158,18 +133,15 @@
                         "Creation Date",
                         "Retirement Date",
                         "Revised",
-                        "Upperscale",
-                        "Upperscale Certainty",
-                        "Textnote",
+                        "Upper scale",
+                        "Upper scale Certainty",
+                        "Text note",
                         "Metadata Comment",
                         "Elevation",
                         "Aushydro_Id"
                     ],
 					"primaryPropertyName": "FEATURETYPE"
                 }
-            },
-			{
-                "id": "legalInterest"
             }
         ]
     },	
@@ -194,20 +166,22 @@
     },
 	"addLayerMaps": [
         {
-            "slug": "Oil_Pipelines",
-			"visibility": true
+            "slug": "National_Electricty_Lines"
         },
 		{
-            "slug": "Gas_Pipelines",
-			"visibility": true			
-        },
-        {
-            "slug": "Major_Ports",
-			"visibility": true
+            "slug": "National_Electricty_Substations"
         },
 		{
-            "slug": "Ferry_Terminals",
-			"visibility": true
+            "slug": "Ferry_Terminals"
+		},
+		{
+            "slug": "Major_Ports"
+		},
+		{
+            "slug": "Oil_Pipelines"
+        },
+		{
+            "slug": "Gas_Pipelines"
         }
     ]
 }

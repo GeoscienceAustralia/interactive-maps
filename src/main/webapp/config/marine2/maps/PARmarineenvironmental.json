@@ -1,6 +1,6 @@
 {
-    "id": "marineenvironmental",
-    "title": "Marine Environmental",
+    "id": "PARmarineenvironmental",
+    "title": "Proposed Acreage Marine Environmental",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
@@ -17,7 +17,7 @@
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
     "headerConfig": {
-        "title": "Marine Environmental"
+        "title": "Proposed Acreage Marine Environmental"
     },
     "aboutConfig": {
         "enabled": true

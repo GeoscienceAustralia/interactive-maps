@@ -54,6 +54,14 @@
     ],
     "layerMaps": [
 		{
+		"name": "Bathymetry Topography",
+		"visibility":true,
+		"mapType": "WMS",
+		"url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WMSServer",
+		"layers": "Australian_Bathymetry_Topography",		
+		"opacity": "0.5"
+		},
+		{
 		"slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
 		"opacity": 0.3
 		},
@@ -75,14 +83,6 @@
             "visibility": false,
             "defaultLayerId": "Intertidal - Dominate Landform"
         },
-		{
-		"name": "Seabed Sand",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/MarineEnvironmental/MapServer/WMSServer",
-		"layers": "sand_nnw,mud_nnw",		
-		"opacity": "1"
-		},
 		{
 		"name": "Seascapes",
 		"visibility":true,

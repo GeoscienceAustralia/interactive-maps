@@ -1,6 +1,6 @@
 {
-    "id": "marinegeology",
-    "title": "Marine Geology",
+    "id": "PARmarinegeology",
+    "title": "Proposed Acreage Marine Geology",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
@@ -17,7 +17,7 @@
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
     "headerConfig": {
-        "title": "Marine Geology"
+        "title": "Proposed Acreage Marine Geology"
     },
     "aboutConfig": {
         "enabled": true

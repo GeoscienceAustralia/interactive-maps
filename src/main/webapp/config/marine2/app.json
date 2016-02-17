@@ -1,0 +1,56 @@
+{
+    "id": "marine2",
+    "title": "Marine and Coastal",
+    "blurb": "Information regarding Australia's coasts and estuaries, seabed mapping and Antarctica. Coasts and estuaries form a dynamic, transition zone between the land and the sea and help Australians achieve many economic, social and environmental benefits. As an island continent, Australia has sovereign rights over a vast area of ocean, along with the fishery, mineral, and petroleum resources found in that area.",
+    "headerConfig": {
+        "title": "Applying geoscience to Australia's most important challenges"
+    },
+    "maps": [
+        {
+            "title": "Marine Bathymetry",
+            "id": "marinebathymetry",
+            "previewImageUrl": "content/marine/acreage/marinebathymetry.png",
+            "previewDescription": "Marine Bathymetry."
+        },
+		{
+            "title": "Marine Geology",
+            "id": "marinegeology",
+            "previewImageUrl": "content/marine/acreage/marinegeology.png",
+            "previewDescription": "Marine Geology."
+        },
+		{
+            "title": "Marine Environmental",
+            "id": "marineenvironmental",
+            "previewImageUrl": "content/marine/acreage/marineenviromental.png",
+            "previewDescription": "Bathymetry is the study and mapping of seafloor topography. It involves obtaining measurements of the depth of the ocean and is equivalent to mapping the topography on land."
+        },
+		{
+            "title": "Proposed Acreage Marine Bathymetry",
+			"tags": "Proposed Acreage",
+            "id": "PARmarinebathymetry",
+            "previewImageUrl": "content/marine/acreage/PARmarinebathymetry.png",
+            "previewDescription": "Proposed Acreage Marine Bathymetry."
+        },
+		{
+            "title": "Proposed Acreage Marine Geology",
+			"tags": "Proposed Acreage",
+            "id": "PARmarinegeology",
+            "previewImageUrl": "content/marine/acreage/PARmarinegeology.png",
+            "previewDescription": "Proposed Acreage Marine Geology."
+        },
+		{
+            "title": "Proposed Acreage Marine Environmental",
+			"tags": "Proposed Acreage",
+            "id": "PARmarineenvironmental",
+            "previewImageUrl": "content/marine/acreage/PARmarineenviromental.png",
+            "previewDescription": "Proposed Acreage Marine Environmental."
+        }
+    ],
+    "tags": [
+        {
+            "id": "Proposed Acreage",
+            "description": "Proposed Acreage Release 2016.",
+            "title": "Proposed Acreage"
+        }
+    ]
+}

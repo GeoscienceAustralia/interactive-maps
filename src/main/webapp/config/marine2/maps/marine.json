@@ -1,0 +1,67 @@
+{
+    "id": "marineX",
+    "title": "MarineX",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv2",	
+    "initialExtent": [
+        [
+            30,
+            10
+        ],
+        [
+            180,
+            -70
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "MarineX"
+    },
+    "aboutConfig": {
+        "enabled": true
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/marine/marinebathymetry/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            }           
+        ]
+    },
+    "baseMaps": [
+        {
+		"slug": "National_Color_Base_Map"
+		}
+    ],
+    "layerMaps": [
+        
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

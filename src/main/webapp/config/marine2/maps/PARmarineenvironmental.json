@@ -1,11 +1,11 @@
 {
-    "id": "marinegeology",
-    "title": "Marine Geology",
+    "id": "marineenvironmental",
+    "title": "Marine Environmental",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
     "initialExtent": [
-		[
+        [
 		107.74,
 		-3.52
 		],
@@ -17,7 +17,7 @@
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
     "headerConfig": {
-        "title": "Marine Geology"
+        "title": "Marine Environmental"
     },
     "aboutConfig": {
         "enabled": true
@@ -36,8 +36,7 @@
 		]
 	},
     "legendConfig": {
-        "enabled": true,
-        "legendUrl": "content/marine/marinebathymetry/legend.html"
+        "enabled": true
     },
     "toolsConfig": {
         "enabled": true,
@@ -54,6 +53,10 @@
 		}
     ],
     "layerMaps": [
+		{
+		"slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
+		"opacity": 0.3
+		},
 		{
             "slug": "Geomorphology_Scale_Guide",
             "opacity": 0.5
@@ -73,45 +76,40 @@
             "defaultLayerId": "Intertidal - Dominate Landform"
         },
 		{
-		"name": "OffShore Sedimentary Basins Oct 2014",
-		"visibility":false,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "OffShore_Sedimetary_Basins_Oct_2014",		
-		"opacity": "0.5"
-		},
-		{
-		"name": "Geology Units",
+		"name": "Seabed Sand",
 		"visibility":true,
 		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "Geology Units",		
-		"opacity": "0.5"
-		},
-		{
-		"name": "Acreage Basins 2016",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "Acreage_Basins_2016",		
-		"opacity": "0.7"
-		},
-		{
-		"name": "Oil and Gas Fields",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "Oil_Fields,Gas_Fields",		
+		"url": "http://intranet-dev.ga.gov.au/gis/services/MarineEnvironmental/MapServer/WMSServer",
+		"layers": "sand_nnw,mud_nnw",		
 		"opacity": "1"
 		},
 		{
-		"name": "Oil and Gas Infrastructure",
+		"name": "Seascapes",
 		"visibility":true,
 		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "Infrastructure_23October_2014",		
+		"url": "http://intranet-dev.ga.gov.au/gis/services/MarineEnvironmental/MapServer/WMSServer",
+		"layers": "Australia_onshelf_13class_seascapes",		
+		"opacity": "0.5"
+		},
+		{
+		"name": "Coastal Compartment",
+		"visibility":true,
+		"mapType": "WMS",
+		"url": "http://intranet-dev.ga.gov.au/gis/services/MarineEnvironmental/MapServer/WMSServer",
+		"layers": "Divisions,Primary_compartments,Secondary_compartments",		
+		"opacity": "0.3"
+		},
+		{
+		"name": "Coastal Compartment Points",
+		"visibility":true,
+		"mapType": "WMS",
+		"url": "http://intranet-dev.ga.gov.au/gis/services/MarineEnvironmental/MapServer/WMSServer",
+		"layers": "Secondary_points,Primary_points",		
 		"opacity": "1"
 		},
+		{
+		"slug": "Treaties_Of_Australia_AMB_2014"
+        },
 		{
 		"name": "Proposed Acreage Release",
 		"visibility":true,
@@ -119,7 +117,7 @@
 		"url": "http://intranet-dev.ga.gov.au/gis/services/ProposedAcreageReleaseAreas/MapServer/WMSServer",
 		"layers": "ProposedAcreageReleaseAreas2016",		
 		"opacity": "0.75"
-		}
+		}		
     ],
     "groupedLayers": [
         {

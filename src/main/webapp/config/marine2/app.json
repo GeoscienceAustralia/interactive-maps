@@ -21,7 +21,7 @@
 		{
             "title": "Marine Environmental",
             "id": "marineenvironmental",
-            "previewImageUrl": "content/marine/acreage/marineenviromental.png",
+            "previewImageUrl": "content/marine/acreage/marineenvironmental.png",
             "previewDescription": "Marine Environmental."
         },
 		{
@@ -42,7 +42,7 @@
             "title": "Proposed Acreage Marine Environmental",
 			"tags": "Proposed Acreage",
             "id": "PARmarineenvironmental",
-            "previewImageUrl": "content/marine/acreage/PARmarineenviromental.png",
+            "previewImageUrl": "content/marine/acreage/PARmarineenvironmental.png",
             "previewDescription": "Proposed Acreage Marine Environmental."
         }
     ],

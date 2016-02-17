@@ -145,6 +145,40 @@
             "visibility": false
         },
 		{
+		"id": "Exclusive Economic Zone as Amended by the Perth Treaty",
+		"extent": [[61,-9],[173,-64]],
+		"mapType": "WMS",
+		"visibility": false,
+		"name": "Exclusive Economic Zone as Amended by the Perth Treaty",
+		"url": "http://intranet-test.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer/WMSServer",
+		"layers": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
+		"metadataText": "Line and polygon depicting the Australian EEZ as modified by the application of the Treaty between the Government of Australia and the Government of the Republic of Indonesia establishing an Exclusive Economic Zone Boundary and Certain Seabed Boundaries (Perth, 14 march 1997) [1997] ATNIF 9 - (not yet in force). NOTE: This is the standard depiction of the Australian EEZ.",
+		"ogcLinks": [
+			{
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a8b40a5b-4880-4905-9741-634e78b24229/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014a/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014a/MapServer?f=lyr&v=9.3"
+                }
+		],
+		"opacity": 0.4,
+		"queryFeatures": true,
+		"queryUrl": "http://intranet-test.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer/WMSServer",
+		"queryUrlType": "WMS",
+		"queryVersion": "1.1.1",
+		"queryLayers": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit"
+		},
+		{
 		"id": "Contiguous Zone",
 		"extent": [[61,-9],[173,-64]],
 		"mapType": "WMS",

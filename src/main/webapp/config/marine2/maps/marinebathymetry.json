@@ -1,0 +1,76 @@
+{
+    "id": "marinebathymetry",
+    "title": "Marine Bathymetry",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv2",	
+    "initialExtent": [
+        [
+            30,
+            10
+        ],
+        [
+            180,
+            -70
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Marine Bathymetry"
+    },
+    "aboutConfig": {
+        "enabled": true
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/marine/marinebathymetry/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+                "id": "addLayer"
+            },
+            {
+                "id": "export"
+            }           
+        ]
+    },
+    "baseMaps": [
+        {
+		"slug": "National_Color_Base_Map"
+		}
+    ],
+    "layerMaps": [
+        {
+            "slug": "Multibeam_50m_Bathymetry_2012_RGB",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Multibeam_Survey_Extents_2014",
+            "visibility": false,
+            "opacity": 0.5,
+            "queryFeatures": true
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

@@ -24,20 +24,6 @@
             "id": "nationalmap",
             "previewImageUrl": "content/national-location-information/nationalmap/mapPreview.png",
             "previewDescription": "This is a map of the world, Australia and it's external territories. These basemaps have been created specifically for display in the National Map application."
-        },		
-        {
-            "title": "National Elevation Data Framework Portal",
-            "tags": "Other",
-            "previewImageUrl": "content/national-location-information/nedf.png",
-            "previewDescription": "The NEDF-Portal has been developed to serve as a 'Virtual Data Repository' and on-line portal that allows easy discovery and access to existing elevation data holdings and metadata.",
-            "applicationUrl": "http://nedf.ga.gov.au/geoportal/catalog/main/home.page"
-        },		
-        {
-            "title": "National Elevation Data Framework Portal",
-            "tags": "Other",
-            "previewImageUrl": "content/national-location-information/nedf.png",
-            "previewDescription": "The NEDF-Portal has been developed to serve as a 'Virtual Data Repository' and on-line portal that allows easy discovery and access to existing elevation data holdings and metadata.",
-            "applicationUrl": "http://nedf.ga.gov.au/geoportal/catalog/main/home.page"
         }
     ],
     "tags": [		

@@ -31,6 +31,13 @@
             "previewImageUrl": "content/hazards/recentearthquakes.png",
             "previewDescription": "Earthquakes are one of the natural hazards which Geoscience Australia monitors and assesses in order to inform risk mitigation and emergency management activities.",
             "applicationUrl": "http://www.ga.gov.au/earthquakes/"
+        },
+        {
+            "title": "Australian Flood Risk Information Portal",
+            "tags": "Other",
+            "previewImageUrl": "content/water/afrip.png",
+            "previewDescription": "Search for maps and flood studies by address, town name or by selecting a point on the map.",
+            "applicationUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/afrip?utm_source=promotion&utm_medium=homepage&utm_content=Flood_Studies&utm_campaign=Online-Tools"
         }
     ],
     "tags": [

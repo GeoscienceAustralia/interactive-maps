@@ -1,61 +1,34 @@
 {
-    "id": "template",
-    "datumProjection": "EPSG:3857",
-    "displayProjection": "EPSG:4326",
-    "initialExtent": [
-        [99,10],
-        [169,-55]
+  "id": "template",
+  "datumProjection": "EPSG:3857",
+  "displayProjection": "EPSG:4326",
+  "title": "template",
+  "headerConfig": {
+    "title": "Template"
+  },
+  "initialExtent": [
+    [
+      90.5,
+      13.73
     ],
-	"headerConfig": {
-        "title": "Template"
-    }
-    "baseMaps": [
-        {
-		"id": "World_Image_XYZ"
-        },
-        {
-            "mapType": "XYZTileCache",
-            "visibility": false,
-            "name": "XYZ Tile Cache GA World Image",
-            "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
-            "mapBGColor": "194584",
-            "opacity": 1.0,
-            "wrapDateLine": true,
-            "attribution": "<u><<a target='_blank' href='/interactive-maps/api/config/samples/maps/basemapsample.json'>Sample Code</a>></u> World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
-        },
-		{
-            "mapType": "GoogleStreet",
-            "visibility": false,
-            "name": "Google Street",
-            "opacity": 1.0,
-            "wrapDateLine": true,
-			"attribution":  "<u><<a target='_blank' href='/interactive-maps/api/config/samples/maps/basemapsample.json'>Sample Code</a>></u> Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
-        },
-		{
-            "mapType": "GoogleTerrain",
-            "visibility": false,
-            "name": "Google Terrain",
-            "opacity": 1.0,
-            "wrapDateLine": true,
-			"attribution":  "<u><<a target='_blank' href='/interactive-maps/api/config/samples/maps/basemapsample.json'>Sample Code</a>></u> Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
-        },
-		{
-            "mapType": "GoogleHybrid",
-            "visibility": false,
-            "name": "Google Hybrid",
-            "opacity": 1.0,
-            "wrapDateLine": true,
-			"attribution":  "<u><<a target='_blank' href='/interactive-maps/api/config/samples/maps/basemapsample.json'>Sample Code</a>></u> Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
-        },
-		{
-            "mapType": "GoogleSatellite",
-            "visibility": false,
-            "name": "Google Satellite",
-            "opacity": 1.0,
-            "wrapDateLine": true,
-			"attribution":  "<u><<a target='_blank' href='/interactive-maps/api/config/samples/maps/basemapsample.json'>Sample Code</a>></u> Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
-        }
-    ],
-    "layerMaps": [      
+    [
+      171.62,
+      -58.05
     ]
+  ],
+  "centerPosition": {},
+  "baseMaps": [
+    {
+      "mapType": "XYZTileCache",
+      "visibility": true,
+      "name": "World Image",
+      "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+      "mapBGColor": "194584",
+      "opacity": 1,
+      "wrapDateLine": true,
+      "maxZoomLevel": 12,
+      "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+    }
+  ],
+  "layerMaps": []
 }

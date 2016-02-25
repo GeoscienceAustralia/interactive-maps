@@ -24,6 +24,13 @@
             "id": "nationalmap",
             "previewImageUrl": "content/national-location-information/nationalmap/mapPreview.png",
             "previewDescription": "This is a map of the world, Australia and it's external territories. These basemaps have been created specifically for display in the National Map application."
+        },
+        {
+            "title": "Elevation Information System (ELVIS)",
+            "tags": "Other",
+            "previewImageUrl": "content/national-location-information/ELVIS.png",
+            "previewDescription": "Ensuring decision makers, investors and the community have access to the best available elevation data describing Australia's landforms and sea bed to address the needs of today and the decades ahead.",
+            "applicationUrl": "http://www.ga.gov.au/elvis/"
         }
     ],
     "tags": [		

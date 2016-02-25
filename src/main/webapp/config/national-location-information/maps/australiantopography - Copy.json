@@ -28,7 +28,7 @@
 	"overviewOptions": {
 		"layers": [
 			{
-            "id": "National_Color_Base_Map"
+            "slug": "National_Color_Base_Map"
 			}
 		]
 	},
@@ -147,15 +147,15 @@
     },	
     "baseMaps": [
         {
-            "id": "World_Image_XYZ"
+            "slug": "World_Image_XYZ"
         }
     ],
     "layerMaps": [
         {
-            "id": "Australian_Topography_2014_ARCGIS"
+            "slug": "Australian_Topography_2014_ARCGIS"
         },
         {
-            "id": "Australian_Topographic_250K_Mosaic",
+            "slug": "Australian_Topographic_250K_Mosaic",
             "visibility": false
         }
     ],
@@ -166,22 +166,22 @@
     },
 	"addLayerMaps": [
         {
-            "id": "National_Electricty_Lines"
+            "slug": "National_Electricty_Lines"
         },
 		{
-            "id": "National_Electricty_Substations"
+            "slug": "National_Electricty_Substations"
         },
 		{
-            "id": "Ferry_Terminals"
+            "slug": "Ferry_Terminals"
 		},
 		{
-            "id": "Major_Ports"
+            "slug": "Major_Ports"
 		},
 		{
-            "id": "Oil_Pipelines"
+            "slug": "Oil_Pipelines"
         },
 		{
-            "id": "Gas_Pipelines"
+            "slug": "Gas_Pipelines"
         }
     ]
 }

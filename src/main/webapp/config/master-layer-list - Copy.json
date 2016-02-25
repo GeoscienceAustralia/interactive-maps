@@ -1,7 +1,7 @@
 {
     "layers": [
         {
-            "id": "Airborne_Surveys_2014",
+            "slug": "Airborne_Surveys_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -36,8 +36,9 @@
             "queryLayers": "AirborneSurveys2014"			
         },
         {
-            "id": "All_Geochronology",
+            "slug": "All_Geochronology",
 			"extent": [[30,10],[176,-75]],
+            "id": "All_Geochronology",
             "mapType": "WMS",
             "visibility": true,
             "name": "All Geochronology",
@@ -71,7 +72,7 @@
             "queryLayers": "U-PbTIMSconventional,U-PbSHRIMPmagmatic,U-PbSHRIMPmaximumDepositional,U-PbSHRIMPmetamorphic,Rb-Sr,Sm-Nd"
         },
         {
-            "id": "Antarctica_10_Million_Geology",
+            "slug": "Antarctica_10_Million_Geology",
 			"extent": [[-180,-60],[180,-90]],
             "mapType": "WMS",
             "visibility": true,
@@ -88,7 +89,7 @@
             "opacity": 1
         },        
         {
-            "id": "Australian_Topographic_250K_Mosaic",
+            "slug": "Australian_Topographic_250K_Mosaic",
 			"extent": [[99,10],[169,-55]],
             "mapType": "ArcGISCache",
             "visibility": true,
@@ -117,7 +118,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "Australian_Topography_2014_ARCGIS",
+            "slug": "Australian_Topography_2014_ARCGIS",
 			"extent": [[99,10],[169,-55]],
             "mapType": "ArcGISCache",
             "visibility": true,
@@ -151,7 +152,7 @@
             "layerTimeout": 5000
         },
 		{
-			"id": "Ausimage_Canberra_2014",
+			"slug": "Ausimage_Canberra_2014",
 			"extent": [[148.46, -34.72],[149.85, -35.98]],
             "mapType": "WMS",
 			"opacity": 1,
@@ -167,7 +168,7 @@
 			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gisimg/rest/services/earth_observation/Ausimage_Canberra_2014/ImageServer?f=lyr&v=9.3"}]
         },
         {
-            "id": "Australian_Petroleum_Blocks_AMB_2014",
+            "slug": "Australian_Petroleum_Blocks_AMB_2014",
 			"extent": [[30,10],[180,-70]],
             "mapType": "ArcGISCache",
             "visibility": true,
@@ -200,7 +201,7 @@
             "opacity": 1
         },
         {
-            "id": "AUS_GA_1:5M_Metamorphic_Geology_Polygons",
+            "slug": "AUS_GA_1:5M_Metamorphic_Geology_Polygons",
 			"extent": [[99,10],[169,-55]],
             "id": "AUS GA 5M Metamorphic Geology Polygons",
             "mapType": "WMS",
@@ -231,7 +232,7 @@
             "queryFeatures": false
         },
         {
-            "id": "AUS_GA_1:5M_Geological_Regions",
+            "slug": "AUS_GA_1:5M_Geological_Regions",
 			"extent": [[99,10],[169,-55]],
             "id": "AUS GA 5M Geological Regions",
             "mapType": "WMS",
@@ -262,7 +263,7 @@
             "queryFeatures": false
         },        
         {
-            "id": "Clear_Observations",
+            "slug": "Clear_Observations",
 			"extent": [[99,10],[169,-55]],
             "id": "ClearObservations",
             "mapType": "WMS",
@@ -288,7 +289,7 @@
             ]
         },
         {
-            "id": "Coastal_Waters_AMB_2014",
+            "slug": "Coastal_Waters_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -322,7 +323,7 @@
             "queryLayers": "Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Area,Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Limit"
         },
 		{
-			"id": "Commonwealth_Bass_Strait_Scallop_Fishery_2006",
+			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006",
 			"extent": [
 				[
 				135.53,
@@ -346,7 +347,7 @@
 			]
 		},
 		{
-			"id": "Commonwealth_Coral_Sea_Fishery_2006",
+			"slug": "Commonwealth_Coral_Sea_Fishery_2006",
 			"extent": [
 				[
 				125.49,
@@ -371,7 +372,7 @@
 			]
 		},
         {
-            "id": "Contiguous_Zone_AMB_2014",
+            "slug": "Contiguous_Zone_AMB_2014",
 			"extent": [[30,10],[180,-70]],
             "mapType": "WMS",
             "visibility": true,
@@ -405,7 +406,7 @@
             "queryLayers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit"
         },
         {
-            "id": "Continental_Shelf_AMB_2014",
+            "slug": "Continental_Shelf_AMB_2014",
 			"extent": [[30,10],[180,-70]],
             "mapType": "WMS",
             "visibility": true,
@@ -439,7 +440,7 @@
             "queryLayers": "Continental_Shelf_AMB2014_Limit,Continental_Shelf_AMB2014_Points"
         },        
         {
-            "id": "Earthquake_Hazards",
+            "slug": "Earthquake_Hazards",
 			"extent": [[99,10],[169,-55]],
             "id": "Australian earthquake hazard WMS",
             "mapType": "WMS",
@@ -483,7 +484,7 @@
             "queryLayers": "hazardContours,earthquakeHazard"
         },
         {
-            "id": "EASIA_CCOP 1:2M_Combined_Bedrock_And_Superficial_Geology_And_Age",
+            "slug": "EASIA_CCOP 1:2M_Combined_Bedrock_And_Superficial_Geology_And_Age",
 			"extent": [[82,50],[165,-20]],
             "mapType": "WMS",
             "visibility": true,
@@ -501,7 +502,7 @@
             "queryFeatures": false
         },
         {
-            "id": "East_Timor_Unitisation_Agreement",
+            "slug": "East_Timor_Unitisation_Agreement",
 			"extent": [[123,-8],[132,-12]],
             "mapType": "WMS",
             "visibility": true,
@@ -535,7 +536,7 @@
             "queryLayers": "East_Timor_Unitisation_Agreement_AMB2014_Points,East_Timor_Unitisation_Agreement_AMB2014_Limit"
         },
         {
-            "id": "East_Timor_Joint_Petroleum_Development_Area",
+            "slug": "East_Timor_Joint_Petroleum_Development_Area",
 			"extent": [[123,-8],[132,-12]],
             "mapType": "WMS",
             "visibility": true,
@@ -569,7 +570,7 @@
             "queryLayers": "East_Timor_Joint_Petroleum_Development_Area_AMB2014_Points,East_Timor_Joint_Petroleum_Development_Area_AMB2014_Limit"
         },
         {
-            "id": "East_Timor_Certain_Maritime_Arrangements_In_The_Timor_Sea_Treaty",
+            "slug": "East_Timor_Certain_Maritime_Arrangements_In_The_Timor_Sea_Treaty",
 			"extent": [[123,-8],[132,-12]],
             "mapType": "WMS",
             "visibility": true,
@@ -603,7 +604,7 @@
             "queryLayers": "East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Points,East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Limit"
         },
         {
-            "id": "Elevation",
+            "slug": "Elevation",
 			"extent": [[99,10],[169,-55]],
             "id": "elevation",
             "mapType": "WMS",
@@ -634,7 +635,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "Elevation_Z54",
+            "slug": "Elevation_Z54",
 			"extent": [[141,-32.5],[143,-34.6]],
             "mapType": "WMS",
             "visibility": true,
@@ -668,7 +669,7 @@
             ]
         },
         {
-            "id": "Elevation_Z55",
+            "slug": "Elevation_Z55",
 			"extent": [[147.1,-29],[150.7,-31]],
             "mapType": "WMS",
             "visibility": true,
@@ -702,7 +703,7 @@
             ]
         },
         {
-            "id": "Elevation_Z56",
+            "slug": "Elevation_Z56",
 			"extent": [[149.6,-30],[150,-31]],
             "mapType": "WMS",
             "visibility": true,
@@ -736,7 +737,7 @@
             ]
         },
         {
-            "id": "Environment",
+            "slug": "Environment",
 			"extent": [[99,10],[169,-55]],
             "id": "environment",
             "groupId": "geomorphology",
@@ -773,7 +774,7 @@
         },
         
         {
-            "id": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
+            "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
 			"extent": [[30,10],[180,-70]],
             "mapType": "WMS",
             "visibility": true,
@@ -807,7 +808,7 @@
             "queryLayers": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit"
         },
         {
-            "id": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
+            "slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
 			"extent": [[30,10],[180,-70]],
             "mapType": "WMS",
             "visibility": true,
@@ -841,7 +842,7 @@
             "queryLayers": "Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit,Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area"
         },
 		{
-			"id": "Ferry_Terminals",
+			"slug": "Ferry_Terminals",
 			"extent": [[99,10],[169,-55]],
 			"id": "Ferry Terminals",
 			"mapType": "WMS",
@@ -864,7 +865,7 @@
             "queryLayers": "National Passenger Ferry Terminals"
 		},
         {
-            "id": "France_Heard_McDonald_Islands_AMB_2014",
+            "slug": "France_Heard_McDonald_Islands_AMB_2014",
 			"extent": [[60,-49.9],[82.8,-58.6]],
             "mapType": "WMS",
             "visibility": true,
@@ -895,7 +896,7 @@
             "queryLayers": "France_Heard_and_McDonald_Islands_AMB2014_Points,France_Heard_and_McDonald_Islands_AMB2014_Limit"
         },
         {
-            "id": "France_New_Caledonia_AMB_2014",
+            "slug": "France_New_Caledonia_AMB_2014",
 			"extent": [[149,-11],[175,-32]],
             "mapType": "WMS",
             "visibility": true,
@@ -929,7 +930,7 @@
             "queryLayers": "France_New_Caledonia_AMB2014_Points,France_New_Caledonia_AMB2014_Limit"
         },		
 		{
-			"id": "Gas_Pipelines",
+			"slug": "Gas_Pipelines",
 			"extent": [[99,10],[169,-55]],
 			"id": "Gas Pipelines",
 			"mapType": "WMS",
@@ -948,7 +949,7 @@
 			"queryFeatures": false
 		},		
         {
-            "id": "Geology_Primary_Substrate",
+            "slug": "Geology_Primary_Substrate",
 			"extent": [[99,10],[169,-55]],
             "id": "Geology - Primary substrate",
             "mapType": "WMS",
@@ -983,7 +984,7 @@
             "queryLayers": "Geology - Primary substrate"			
         },        
         {
-            "id": "Geomorphology_Scale_Guide",
+            "slug": "Geomorphology_Scale_Guide",
 			"extent": [[99,10],[169,-55]],
             "mapType": "ArcGISCache",
             "visibility": true,
@@ -1014,7 +1015,7 @@
 			"queryFeatures": false
         },
         {
-            "id": "Geophysics_Reference_Map",
+            "slug": "Geophysics_Reference_Map",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -1044,7 +1045,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "Global_Map",
+            "slug": "Global_Map",
 			"extent": [[99,10],[169,-55]],
             "id": "globalmapvector",
             "mapType": "WMS",
@@ -1080,7 +1081,7 @@
             "layerTimeout": 5000
         },
 		{
-            "id": "Globalmap_Landcover",
+            "slug": "Globalmap_Landcover",
 			"extent": [[99,10],[169,-55]],
             "id": "Globalmap_landcover",
             "mapType": "WMS",
@@ -1111,7 +1112,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "Google_Street",
+            "slug": "Google_Street",
             "mapType": "GoogleStreet",
             "visibility": true,
             "name": "Google Street",
@@ -1120,7 +1121,7 @@
             "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
         },
 		{
-            "id": "Google_Satellite",
+            "slug": "Google_Satellite",
             "mapType": "GoogleSatellite",
             "visibility": true,
             "name": "Google Satellite",
@@ -1129,7 +1130,7 @@
             "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
         },
 		{
-            "id": "Google_Hybrid",
+            "slug": "Google_Hybrid",
             "mapType": "GoogleHybrid",
             "visibility": true,
             "name": "Google Hybrid",
@@ -1138,7 +1139,7 @@
             "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
         },
         {
-            "id": "Gravity_Anomaly_2010_HSI",
+            "slug": "Gravity_Anomaly_2010_HSI",
 			"extent": [[99,10],[169,-55]],
             "id": "GravityAnomaly2010_HSI",
             "mapType": "WMS",
@@ -1178,7 +1179,7 @@
 			"queryLayers": "GravityAnomaly2010_HSI"
         },
         {
-            "id": "Gravity_Anomaly_2010_Greyscale",
+            "slug": "Gravity_Anomaly_2010_Greyscale",
 			"extent": [[99,10],[169,-55]],
             "id": "GravityAnomaly2010_greyscale",
             "mapType": "WMS",
@@ -1218,7 +1219,7 @@
 			"queryLayers": "GravityAnomaly2010_greyscale"
         },
         {
-            "id": "Gravity_Bouguer_Onshore_2010_Greyscale",
+            "slug": "Gravity_Bouguer_Onshore_2010_Greyscale",
 			"extent": [[99,10],[169,-55]],
             "id": "GravityBouguerOnshore2010_greyscale",
             "mapType": "WMS",
@@ -1259,7 +1260,7 @@
 
         },
         {
-            "id": "Hillshade_And_Vegetation",
+            "slug": "Hillshade_And_Vegetation",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -1289,7 +1290,7 @@
             "layerTimeout": 5000
         },
 		{
-            "id": "Hillshade",
+            "slug": "Hillshade",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -1319,7 +1320,7 @@
             "layerTimeout": 5000
         },
 		{
-            "id": "Hydrogeology",
+            "slug": "Hydrogeology",
 			"extent": [[99,10],[169,-55]],
             "id": "Hydrogeology",
             "mapType": "WMS",
@@ -1350,7 +1351,7 @@
             "layerTimeout": 5000
         },		
         {
-            "id": "Intertidal_Dominate_Landform",
+            "slug": "Intertidal_Dominate_Landform",
 			"extent": [[99,10],[169,-55]],
             "id": "Intertidal - dominate Landform",
             "mapType": "WMS",
@@ -1381,7 +1382,7 @@
             ]
         },
         {
-            "id": "Landuse",
+            "slug": "Landuse",
 			"extent": [[99,10],[169,-55]],
             "id": "landuse",
             "mapType": "WMS",
@@ -1412,7 +1413,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "Landcover",
+            "slug": "Landcover",
 			"extent": [[99,10],[169,-55]],
             "id": "landcover",
             "mapType": "ArcGISCache",
@@ -1442,7 +1443,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "Landform_Type",
+            "slug": "Landform_Type",
 			"extent": [[99,10],[169,-55]],
             "id": "landformType",
             "groupId": "geomorphology",
@@ -1474,7 +1475,7 @@
             ]
         },
         {
-            "id": "Landform_Subtype",
+            "slug": "Landform_Subtype",
 			"extent": [[99,10],[169,-55]],
             "id": "landformSubtype",
             "groupId": "geomorphology",
@@ -1511,7 +1512,7 @@
         },
 		{
 			"id": "LowerPercentile2y",
-			"id": "LowerPercentile2y",
+			"slug": "LowerPercentile2y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1534,7 +1535,7 @@
 		},
 		{
 			"id": "LowerPercentile5y",
-			"id": "LowerPercentile5y",
+			"slug": "LowerPercentile5y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1552,7 +1553,7 @@
 		},
 		{
 			"id": "LowerPercentile10y",
-			"id": "LowerPercentile10y",
+			"slug": "LowerPercentile10y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1570,7 +1571,7 @@
 		},
 		{
 			"id": "LowerPercentile20y",
-			"id": "LowerPercentile20y",
+			"slug": "LowerPercentile20y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1588,7 +1589,7 @@
 		},
 		{
 			"id": "LowerPercentile25y",
-			"id": "LowerPercentile25y",
+			"slug": "LowerPercentile25y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1606,7 +1607,7 @@
 		},
 		{
 			"id": "LowerPercentile50y",
-			"id": "LowerPercentile50y",
+			"slug": "LowerPercentile50y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1624,7 +1625,7 @@
 		},
 		{
 			"id": "LowerPercentile100y",
-			"id": "LowerPercentile100y",
+			"slug": "LowerPercentile100y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1642,7 +1643,7 @@
 		},
 		{
 			"id": "LowerPercentile200y",
-			"id": "LowerPercentile200y",
+			"slug": "LowerPercentile200y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1660,7 +1661,7 @@
 		},
 		{
 			"id": "LowerPercentile250y",
-			"id": "LowerPercentile250y",
+			"slug": "LowerPercentile250y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1678,7 +1679,7 @@
 		},
 		{
 			"id": "LowerPercentile500y",
-			"id": "LowerPercentile500y",
+			"slug": "LowerPercentile500y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1696,7 +1697,7 @@
 		},
 		{
 			"id": "LowerPercentile1000y",
-			"id": "LowerPercentile1000y",
+			"slug": "LowerPercentile1000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1714,7 +1715,7 @@
 		},
 		{
 			"id": "LowerPercentile2000y",
-			"id": "LowerPercentile2000y",
+			"slug": "LowerPercentile2000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1732,7 +1733,7 @@
 		},
 		{
 			"id": "LowerPercentile5000y",
-			"id": "LowerPercentile5000y",
+			"slug": "LowerPercentile5000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1750,7 +1751,7 @@
 		},
 		{
 			"id": "LowerPercentile10000y",
-			"id": "LowerPercentile10000y",
+			"slug": "LowerPercentile10000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1769,7 +1770,7 @@
 	
 		{
 			"id": "LocationParameter2y",
-			"id": "LocationParameter2y",
+			"slug": "LocationParameter2y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1792,7 +1793,7 @@
 		},
 		{
 			"id": "LocationParameter5y",
-			"id": "LocationParameter5y",
+			"slug": "LocationParameter5y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1810,7 +1811,7 @@
 		},
 		{
 			"id": "LocationParameter10y",
-			"id": "LocationParameter10y",
+			"slug": "LocationParameter10y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1828,7 +1829,7 @@
 		},
 		{
 			"id": "LocationParameter20y",
-			"id": "LocationParameter20y",
+			"slug": "LocationParameter20y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1846,7 +1847,7 @@
 		},
 		{
 			"id": "LocationParameter25y",
-			"id": "LocationParameter25y",
+			"slug": "LocationParameter25y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1864,7 +1865,7 @@
 		},
 		{
 			"id": "LocationParameter50y",
-			"id": "LocationParameter50y",
+			"slug": "LocationParameter50y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1882,7 +1883,7 @@
 		},
 		{
 			"id": "LocationParameter100y",
-			"id": "LocationParameter100y",
+			"slug": "LocationParameter100y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1900,7 +1901,7 @@
 		},
 		{
 			"id": "LocationParameter200y",
-			"id": "LocationParameter200y",
+			"slug": "LocationParameter200y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1918,7 +1919,7 @@
 		},
 		{
 			"id": "LocationParameter250y",
-			"id": "LocationParameter250y",
+			"slug": "LocationParameter250y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1936,7 +1937,7 @@
 		},
 		{
 			"id": "LocationParameter500y",
-			"id": "LocationParameter500y",
+			"slug": "LocationParameter500y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1954,7 +1955,7 @@
 		},
 		{
 			"id": "LocationParameter1000y",
-			"id": "LocationParameter1000y",
+			"slug": "LocationParameter1000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1972,7 +1973,7 @@
 		},
 		{
 			"id": "LocationParameter2000y",
-			"id": "LocationParameter2000y",
+			"slug": "LocationParameter2000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -1990,7 +1991,7 @@
 		},
 		{
 			"id": "LocationParameter5000y",
-			"id": "LocationParameter5000y",
+			"slug": "LocationParameter5000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -2008,7 +2009,7 @@
 		},
 		{
 			"id": "LocationParameter10000y",
-			"id": "LocationParameter10000y",
+			"slug": "LocationParameter10000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -2025,7 +2026,7 @@
 			"opacity": 0.8
 		},
         {
-            "id": "Muddy",
+            "slug": "Muddy",
 			"extent": [[99,10],[169,-55]],
             "id": "Muddy",
             "mapType": "WMS",
@@ -2055,7 +2056,7 @@
             "layerTimeout": 5000
         },		
         {
-            "id": "Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB_2014",
+            "slug": "Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2085,7 +2086,7 @@
             "queryLayers": "Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Points,Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Limit"
         },
         {
-            "id": "Papua_New_Guinea_Seabed_AMB_2014",
+            "slug": "Papua_New_Guinea_Seabed_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2115,7 +2116,7 @@
             "queryLayers": "Papua_New_Guinea_Seabed_AMB2014_Points,Papua_New_Guinea_Seabed_AMB2014_Limit"
         },
         {
-            "id": "Papua_New_Guinea_Territorial_Sea_AMB_2014",
+            "slug": "Papua_New_Guinea_Territorial_Sea_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2145,7 +2146,7 @@
             "queryLayers": "Papua_New_Guinea_Territorial_Sea_AMB2014_Points,Papua_New_Guinea_Territorial_Sea_AMB2014_Limit"
         },
         {
-            "id": "Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB_2014",
+            "slug": "Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2175,7 +2176,7 @@
             "queryLayers": "Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Points,Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Limit"
         },
 		{
-			"id": "Major_Ports",
+			"slug": "Major_Ports",
 			"extent": [[88,10],[169,-55]],
 			"id": "Major Ports",
 			"mapType": "WMS",
@@ -2198,7 +2199,7 @@
             "queryLayers": "National Major Ports"
 		},
         {
-            "id": "Multibeam_50m_Bathymetry_2012_RGB",
+            "slug": "Multibeam_50m_Bathymetry_2012_RGB",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2236,7 +2237,7 @@
             ]
         },
         {
-            "id": "Multibeam_Survey_Extents_2014",
+            "slug": "Multibeam_Survey_Extents_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2270,7 +2271,7 @@
             ]
         },
         {
-            "id": "National_Color_Base_Map",
+            "slug": "National_Color_Base_Map",
             "mapType": "XYZTileCache",
             "visibility": true,
             "name": "National Color Base Map",
@@ -2282,7 +2283,7 @@
             "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>, Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a> and <a target='_blank' href='https://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>"
         },
 		{
-            "id": "National_Electricty_Lines",
+            "slug": "National_Electricty_Lines",
             "mapType": "WMS",
             "visibility": true,
             "name": "National Electricity Transmission Lines",
@@ -2311,7 +2312,7 @@
             "layerTimeout": 5000
         },
 		{
-            "id": "National_Electricty_Substations",
+            "slug": "National_Electricty_Substations",
             "mapType": "WMS",
             "visibility": true,
             "name": "National Electricty Transmission Substations",
@@ -2340,7 +2341,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "New_Zealand_South",
+            "slug": "New_Zealand_South",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2370,7 +2371,7 @@
             "queryLayers": "New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Points,New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Limit"
         },
         {
-            "id": "New_Zealand_North",
+            "slug": "New_Zealand_North",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2400,7 +2401,7 @@
             "queryLayers": "New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Points,New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Limit"
         },
         {
-            "id": "Normal_Baselines_AMB_2014",
+            "slug": "Normal_Baselines_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2434,7 +2435,7 @@
             "queryLayers": "Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Points,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit"
         },
         {
-            "id": "NZL_GNS_1_1M_Lithostratigraphy",
+            "slug": "NZL_GNS_1_1M_Lithostratigraphy",
 			"extent": [[160,-30],[179,-52]],
             "mapType": "WMS",
             "visibility": true,
@@ -2452,7 +2453,7 @@
             "queryFeatures": false
         },
         {
-            "id": "Offshore_Areas_Of_The_States_AMB_2014",
+            "slug": "Offshore_Areas_Of_The_States_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2486,7 +2487,7 @@
             "queryLayers": "Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Area,Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Limit"
         },
 		{
-			"id": "Oil_Pipelines",
+			"slug": "Oil_Pipelines",
 			"extent": [[99,10],[169,-55]],
 			"id": "Oil Pipelines",
 			"mapType": "WMS",
@@ -2506,7 +2507,7 @@
 			
 		},
 		{
-			"id": "Onshore_Seismic_Surveys",
+			"slug": "Onshore_Seismic_Surveys",
 			"extent": [[99,10],[169,-55]],
 			"id": "Onshore Seismic Surveys",
 			"mapType": "WMS",
@@ -2524,7 +2525,7 @@
 			"queryFeatures": false			
 		},
 		{
-			"id": "ThermalWell",
+			"slug": "ThermalWell",
 			"extent": [[99,10],[169,-55]],
 			"id": "ThermalWell",
 			"mapType": "WMS",
@@ -2543,7 +2544,7 @@
 			"queryFeatures": false			
 		},
         {
-            "id": "Population_Centres",
+            "slug": "Population_Centres",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2573,7 +2574,7 @@
             "layerTimeout": 5000
         },
 		{
-            "id": "Railways",
+            "slug": "Railways",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -2603,7 +2604,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "Radiometrics_2015_Ternary_KThU",
+            "slug": "Radiometrics_2015_Ternary_KThU",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015ternaryKThU",
             "mapType": "WMS",
@@ -2643,7 +2644,7 @@
 			"queryLayers": "Radiometrics2015_ternary_KThU"
         },
         {
-            "id": "Radiometrics_2015_Unfiltered_Dose",
+            "slug": "Radiometrics_2015_Unfiltered_Dose",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015unfiltereddose",
             "mapType": "WMS",
@@ -2683,7 +2684,7 @@
 			"queryLayers": "Radiometrics2015_unfiltered_dose"
         },
         {
-            "id": "Radiometrics_2015_Unfiltered_PcK",
+            "slug": "Radiometrics_2015_Unfiltered_PcK",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015unfilteredpcK",
             "mapType": "WMS",
@@ -2723,7 +2724,7 @@
 			"queryLayers": "Radiometrics2015_unfiltered_pcK"
         },
         {
-            "id": "Radiometrics_2015_Unfiltered_PpmTh",
+            "slug": "Radiometrics_2015_Unfiltered_PpmTh",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015unfilteredppmTh",
             "mapType": "WMS",
@@ -2763,7 +2764,7 @@
 			"queryLayers": "Radiometrics2015_unfiltered_ppmTh"
         },
         {
-            "id": "Radiometrics_2015_Unfiltered_PpmU",
+            "slug": "Radiometrics_2015_Unfiltered_PpmU",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015unfilteredppmU",
             "mapType": "WMS",
@@ -2803,7 +2804,7 @@
 			"queryLayers": "Radiometrics2015_unfiltered_ppmU"
         },
         {
-            "id": "Radiometrics_2015_Filtered_Dose",
+            "slug": "Radiometrics_2015_Filtered_Dose",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015filtereddose",
             "mapType": "WMS",
@@ -2843,7 +2844,7 @@
 			"queryLayers": "Radiometrics2015_filtered_dose"
         },
         {
-            "id": "Radiometrics_2015_Filtered_PcK",
+            "slug": "Radiometrics_2015_Filtered_PcK",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015filteredpcK",
             "mapType": "WMS",
@@ -2883,7 +2884,7 @@
 			"queryLayers": "Radiometrics2015_filtered_pcK"
         },
         {
-            "id": "Radiometrics_2015_Filtered_PpmTh",
+            "slug": "Radiometrics_2015_Filtered_PpmTh",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015filteredppmTh",
             "mapType": "WMS",
@@ -2923,7 +2924,7 @@
 			"queryLayers": "Radiometrics2015_filtered_ppmTh"
         },
         {
-            "id": "Radiometrics_2015_Filtered_PpmU",
+            "slug": "Radiometrics_2015_Filtered_PpmU",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015filteredppmU",
             "mapType": "WMS",
@@ -2963,7 +2964,7 @@
 			"queryLayers": "Radiometrics2015_filtered_ppmU"
         },
         {
-            "id": "Radiometrics_2015_Filtered_ThK_Ratio",
+            "slug": "Radiometrics_2015_Filtered_ThK_Ratio",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015filteredThKratio",
             "mapType": "WMS",
@@ -3003,7 +3004,7 @@
 			"queryLayers": "Radiometrics2015_filtered_ThK_ratio"
         },
         {
-            "id": "Radiometrics_2015_Filtered_UK_Ratio",
+            "slug": "Radiometrics_2015_Filtered_UK_Ratio",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015filteredUKratio",
             "mapType": "WMS",
@@ -3043,7 +3044,7 @@
 			"queryLayers": "Radiometrics2015_filtered_UK_ratio"
         },
         {
-            "id": "Radiometrics_2015_Filtered_UTh_Ratio",
+            "slug": "Radiometrics_2015_Filtered_UTh_Ratio",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015filteredUThratio",
             "mapType": "WMS",
@@ -3083,7 +3084,7 @@
 			"queryLayers": "Radiometrics2015_filtered_UTh_ratio"
         },
         {
-            "id": "Radiometrics_2015_Filtered_U2Th_Ratio",
+            "slug": "Radiometrics_2015_Filtered_U2Th_Ratio",
 			"extent": [[99,10],[169,-55]],
             "id": "Radiometrics2015filteredU2Thratio",
             "mapType": "WMS",
@@ -3123,7 +3124,7 @@
 			"queryLayers": "Radiometrics2015_filtered_U2Th_ratio"
         },
         {
-            "id": "Rb_Sr",
+            "slug": "Rb_Sr",
 			"extent": [[99,10],[169,-55]],
             "id": "Rb-Sr",
             "mapType": "WMS",
@@ -3159,7 +3160,7 @@
             "queryLayers": "Rb-Sr"
         },        
         {
-            "id": "Regolith_Geochemistry",
+            "slug": "Regolith_Geochemistry",
 			"extent": [[99,10],[169,-55]],
             "id": "RegolithGeochemistry",
             "mapType": "WMS",
@@ -3200,7 +3201,7 @@
         },
 		{
 			"id": "ReturnPeriod2y",
-			"id": "ReturnPeriod2y",
+			"slug": "ReturnPeriod2y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3223,7 +3224,7 @@
 		},
 		{
 			"id": "ReturnPeriod5y",
-			"id": "ReturnPeriod5y",
+			"slug": "ReturnPeriod5y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3241,7 +3242,7 @@
 		},
 		{
 			"id": "ReturnPeriod10y",
-			"id": "ReturnPeriod10y",
+			"slug": "ReturnPeriod10y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3259,7 +3260,7 @@
 		},
 		{
 			"id": "ReturnPeriod20y",
-			"id": "ReturnPeriod20y",
+			"slug": "ReturnPeriod20y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3277,7 +3278,7 @@
 		},
 		{
 			"id": "ReturnPeriod25y",
-			"id": "ReturnPeriod25y",
+			"slug": "ReturnPeriod25y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3295,7 +3296,7 @@
 		},
 		{
 			"id": "ReturnPeriod50y",
-			"id": "ReturnPeriod50y",
+			"slug": "ReturnPeriod50y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3313,7 +3314,7 @@
 		},
 		{
 			"id": "ReturnPeriod100y",
-			"id": "ReturnPeriod100y",
+			"slug": "ReturnPeriod100y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3331,7 +3332,7 @@
 		},
 		{
 			"id": "ReturnPeriod200y",
-			"id": "ReturnPeriod200y",
+			"slug": "ReturnPeriod200y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3349,7 +3350,7 @@
 		},
 		{
 			"id": "ReturnPeriod250y",
-			"id": "ReturnPeriod250y",
+			"slug": "ReturnPeriod250y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3367,7 +3368,7 @@
 		},
 		{
 			"id": "ReturnPeriod500y",
-			"id": "ReturnPeriod500y",
+			"slug": "ReturnPeriod500y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3385,7 +3386,7 @@
 		},
 		{
 			"id": "ReturnPeriod1000y",
-			"id": "ReturnPeriod1000y",
+			"slug": "ReturnPeriod1000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3403,7 +3404,7 @@
 		},
 		{
 			"id": "ReturnPeriod2000y",
-			"id": "ReturnPeriod2000y",
+			"slug": "ReturnPeriod2000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3421,7 +3422,7 @@
 		},
 		{
 			"id": "ReturnPeriod5000y",
-			"id": "ReturnPeriod5000y",
+			"slug": "ReturnPeriod5000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3439,7 +3440,7 @@
 		},
 		{
 			"id": "ReturnPeriod10000y",
-			"id": "ReturnPeriod10000y",
+			"slug": "ReturnPeriod10000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3456,7 +3457,7 @@
 			"opacity": 0.8
 		},		
         {
-            "id": "Rock_Geochemistry",
+            "slug": "Rock_Geochemistry",
 			"extent": [[99,10],[169,-55]],
             "id": "RockGeochemistry",
             "mapType": "WMS",
@@ -3496,7 +3497,7 @@
             "queryLayers": "RockGeochemistry"
         },
 		{
-            "id": "Road",
+            "slug": "Road",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -3526,7 +3527,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "RockGeochemistry_Igneous",
+            "slug": "RockGeochemistry_Igneous",
 			"extent": [[99,10],[169,-55]],
             "id": "RockGeochemistryIgneous",
             "mapType": "WMS",
@@ -3566,7 +3567,7 @@
             "queryLayers": "RockGeochemistryIgneous"
         },
         {
-            "id": "RockGeochemistry_Metamorphic",
+            "slug": "RockGeochemistry_Metamorphic",
 			"extent": [[99,10],[169,-55]],
             "id": "RockGeochemistryMetamorphic",
             "mapType": "WMS",
@@ -3606,7 +3607,7 @@
             "queryLayers": "RockGeochemistryMetamorphic"
         },
         {
-            "id": "RockGeochemistry_Sedimentary",
+            "slug": "RockGeochemistry_Sedimentary",
 			"extent": [[99,10],[169,-55]],
             "id": "RockGeochemistrySedimentary",
             "mapType": "WMS",
@@ -3646,7 +3647,7 @@
             "queryLayers": "RockGeochemistrySedimentary"
         },
         {
-            "id": "Sandy",
+            "slug": "Sandy",
 			"extent": [[99,10],[169,-55]],
             "id": "sandy",
             "mapType": "WMS",
@@ -3681,7 +3682,7 @@
             "queryLayers": "Sandy"
         },
         {
-            "id": "Scheduled_Areas_AMB_2014",
+            "slug": "Scheduled_Areas_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,            
@@ -3716,7 +3717,7 @@
         },
 {
 			"id": "ScaleParameter2y",
-			"id": "ScaleParameter2y",
+			"slug": "ScaleParameter2y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3739,7 +3740,7 @@
 		},
 		{
 			"id": "ScaleParameter5y",
-			"id": "ScaleParameter5y",
+			"slug": "ScaleParameter5y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3757,7 +3758,7 @@
 		},
 		{
 			"id": "ScaleParameter10y",
-			"id": "ScaleParameter10y",
+			"slug": "ScaleParameter10y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3775,7 +3776,7 @@
 		},
 		{
 			"id": "ScaleParameter20y",
-			"id": "ScaleParameter20y",
+			"slug": "ScaleParameter20y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3793,7 +3794,7 @@
 		},
 		{
 			"id": "ScaleParameter25y",
-			"id": "ScaleParameter25y",
+			"slug": "ScaleParameter25y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3811,7 +3812,7 @@
 		},
 		{
 			"id": "ScaleParameter50y",
-			"id": "ScaleParameter50y",
+			"slug": "ScaleParameter50y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3829,7 +3830,7 @@
 		},
 		{
 			"id": "ScaleParameter100y",
-			"id": "ScaleParameter100y",
+			"slug": "ScaleParameter100y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3847,7 +3848,7 @@
 		},
 		{
 			"id": "ScaleParameter200y",
-			"id": "ScaleParameter200y",
+			"slug": "ScaleParameter200y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3865,7 +3866,7 @@
 		},
 		{
 			"id": "ScaleParameter250y",
-			"id": "ScaleParameter250y",
+			"slug": "ScaleParameter250y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3883,7 +3884,7 @@
 		},
 		{
 			"id": "ScaleParameter500y",
-			"id": "ScaleParameter500y",
+			"slug": "ScaleParameter500y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3901,7 +3902,7 @@
 		},
 		{
 			"id": "ScaleParameter1000y",
-			"id": "ScaleParameter1000y",
+			"slug": "ScaleParameter1000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3919,7 +3920,7 @@
 		},
 		{
 			"id": "ScaleParameter2000y",
-			"id": "ScaleParameter2000y",
+			"slug": "ScaleParameter2000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3937,7 +3938,7 @@
 		},
 		{
 			"id": "ScaleParameter5000y",
-			"id": "ScaleParameter5000y",
+			"slug": "ScaleParameter5000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3955,7 +3956,7 @@
 		},
 		{
 			"id": "ScaleParameter10000y",
-			"id": "ScaleParameter10000y",
+			"slug": "ScaleParameter10000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3973,7 +3974,7 @@
 		},
 		{
 			"id": "ShapeParameter2y",
-			"id": "ShapeParameter2y",
+			"slug": "ShapeParameter2y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -3996,7 +3997,7 @@
 		},
 		{
 			"id": "ShapeParameter5y",
-			"id": "ShapeParameter5y",
+			"slug": "ShapeParameter5y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4014,7 +4015,7 @@
 		},
 		{
 			"id": "ShapeParameter10y",
-			"id": "ShapeParameter10y",
+			"slug": "ShapeParameter10y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4032,7 +4033,7 @@
 		},
 		{
 			"id": "ShapeParameter20y",
-			"id": "ShapeParameter20y",
+			"slug": "ShapeParameter20y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4050,7 +4051,7 @@
 		},
 		{
 			"id": "ShapeParameter25y",
-			"id": "ShapeParameter25y",
+			"slug": "ShapeParameter25y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4068,7 +4069,7 @@
 		},
 		{
 			"id": "ShapeParameter50y",
-			"id": "ShapeParameter50y",
+			"slug": "ShapeParameter50y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4086,7 +4087,7 @@
 		},
 		{
 			"id": "ShapeParameter100y",
-			"id": "ShapeParameter100y",
+			"slug": "ShapeParameter100y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4104,7 +4105,7 @@
 		},
 		{
 			"id": "ShapeParameter200y",
-			"id": "ShapeParameter200y",
+			"slug": "ShapeParameter200y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4122,7 +4123,7 @@
 		},
 		{
 			"id": "ShapeParameter250y",
-			"id": "ShapeParameter250y",
+			"slug": "ShapeParameter250y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4140,7 +4141,7 @@
 		},
 		{
 			"id": "ShapeParameter500y",
-			"id": "ShapeParameter500y",
+			"slug": "ShapeParameter500y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4158,7 +4159,7 @@
 		},
 		{
 			"id": "ShapeParameter1000y",
-			"id": "ShapeParameter1000y",
+			"slug": "ShapeParameter1000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4176,7 +4177,7 @@
 		},
 		{
 			"id": "ShapeParameter2000y",
-			"id": "ShapeParameter2000y",
+			"slug": "ShapeParameter2000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4194,7 +4195,7 @@
 		},
 		{
 			"id": "ShapeParameter5000y",
-			"id": "ShapeParameter5000y",
+			"slug": "ShapeParameter5000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4212,7 +4213,7 @@
 		},
 		{
 			"id": "ShapeParameter10000y",
-			"id": "ShapeParameter10000y",
+			"slug": "ShapeParameter10000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -4229,7 +4230,7 @@
 			"opacity": 0.8
 		},	
         {
-            "id": "Seabed_Features",
+            "slug": "Seabed_Features",
 			"extent": [[99,10],[169,-55]],
             "id": "SeabedFeatures",
             "mapType": "WMS",
@@ -4265,7 +4266,7 @@
             "queryLayers": "geomorphic_features"
         },
         {
-            "id": "Seas_And_Submerged_Lands_Act_1973_Reference_Map",
+            "slug": "Seas_And_Submerged_Lands_Act_1973_Reference_Map",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4295,7 +4296,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "Seismic_Geochemistry",
+            "slug": "Seismic_Geochemistry",
 			"extent": [[99,10],[169,-55]],
             "id": "SeismicGeochemistry",
             "mapType": "WMS",
@@ -4335,7 +4336,7 @@
             "queryLayers": "SeismicGeochemistry"
         },
         {
-            "id": "Sm_Nd",
+            "slug": "Sm_Nd",
 			"extent": [[99,10],[169,-55]],
             "id": "Sm-Nd",
             "mapType": "WMS",
@@ -4371,7 +4372,7 @@
             "queryLayers": "Sm-Nd"
         },        
         {
-            "id": "Solomon_Islands_AMB_2014",
+            "slug": "Solomon_Islands_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4405,7 +4406,7 @@
             "queryLayers": "Solomon_Islands_AMB2014_Points,Solomon_Islands_AMB2014_Limit"
         },
         {
-            "id": "Straight_Baselines_AMB_2014",
+            "slug": "Straight_Baselines_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4439,7 +4440,7 @@
             "queryLayers": "Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit"
         },
         {
-            "id": "Subtidal_Dominate_Landform",
+            "slug": "Subtidal_Dominate_Landform",
 			"extent": [[99,10],[169,-55]],
             "id": "Subtidal - dominate landform",
             "mapType": "WMS",
@@ -4474,7 +4475,7 @@
             "queryLayers": "Subtidal - dominate landform"
         },
         {
-            "id": "Surface_Geology_Of_Australia",
+            "slug": "Surface_Geology_Of_Australia",
 			"extent": [[99,10],[169,-55]],
             "id": "surfaceGeology",
             "mapType": "ArcGISCache",
@@ -4509,7 +4510,7 @@
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines,AUS_GA_1M_GUPoly_Lithostratigraphy,AUS_GA_1M_GULine,AUS_GA_1M_Contacts,AUS_GA_1M_Faults,AUS_GA_1M_MiscLines"
         },
         {
-            "id": "Surface_Geology_Of_Australia_2500K",
+            "slug": "Surface_Geology_Of_Australia_2500K",
             "extent": [[99,10],[169,-55]],
             "id": "surfaceGeology",
             "mapType": "WMS",
@@ -4544,7 +4545,7 @@
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines"
         },
 		{
-            "id": "Surface_Geology_Of_Australia_2500K_WM",
+            "slug": "Surface_Geology_Of_Australia_2500K_WM",
             "extent": [[99,10],[169,-55]],
             "id": "surfaceGeology",
             "mapType": "ArcGISCache",
@@ -4579,7 +4580,7 @@
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines"
         },
 		{
-            "id": "Surface_Geology_Of_Australia_1M",
+            "slug": "Surface_Geology_Of_Australia_1M",
 			"extent": [[99,10],[169,-55]],
             "opacity": 1,
             "visibility": true,
@@ -4615,7 +4616,7 @@
 			
         },
         {
-            "id": "Surface_Hydrology",
+            "slug": "Surface_Hydrology",
 			"extent": [[99,10],[169,-55]],
             "mapType": "ArcGISCache",
             "visibility": true,
@@ -4653,7 +4654,7 @@
             "layerTimeout": 5000
         },        
         {
-            "id": "Treaties_Of_Australia_AMB_2014",
+            "slug": "Treaties_Of_Australia_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4687,7 +4688,7 @@
             "queryLayers": "East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Points,East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Limit,East_Timor_Joint_Petroleum_Development_Area_AMB2014_Points,East_Timor_Joint_Petroleum_Development_Area_AMB2014_Limit,East_Timor_Unitisation_Agreement_AMB2014_Points,East_Timor_Unitisation_Agreement_AMB2014_Limit,France_Heard_and_McDonald_Islands_AMB2014_Points,France_Heard_and_McDonald_Islands_AMB2014_Limit,France_New_Caledonia_AMB2014_Points,France_New_Caledonia_AMB2014_Limit,Indonesia_1971_Seabed_Treaty_AMB2014_Points,Indonesia_1971_Seabed_Treaty_AMB2014_Limit,Indonesia_1972_Seabed_Treaty_AMB2014_Points,Indonesia_1972_Seabed_Treaty_AMB2014_Limit,Indonesia_Perth_Treaty_1997_Exclusive_Economic_Zone_AMB2014_Points,Indonesia_Perth_Treaty_1997_Exclusive_Economic_Zone_AMB2014_Line,Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Points,Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Limit,Indonesia_Memorandum_of_Understanding_AMB2014_Points,Indonesia_Memorandum_of_Understanding_AMB2014_Limit,Indonesia_Perth_Treaty_1997_Area_of_Overlapping_Jurisdiction_Area,Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Points,Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Limit,New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Points,New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Limit,New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Points,New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Limit,Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Points,Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Limit,Papua_New_Guinea_Seabed_AMB2014_Points,Papua_New_Guinea_Seabed_AMB2014_Limit,Papua_New_Guinea_Territorial_Sea_AMB2014_Points,Papua_New_Guinea_Territorial_Sea_AMB2014_Limit,Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Points,Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Limit,Solomon_Islands_AMB2014_Points,Solomon_Islands_AMB2014_Limit"
         },
         {
-            "id": "Territorial_Sea_AMB_2014",
+            "slug": "Territorial_Sea_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4721,7 +4722,7 @@
             "queryLayers": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit"
         },
         {
-            "id": "Treaty_Indonesia_Perth_Treaty_Area_Of_Overlapping_Jurisdiction_AMB_2014",
+            "slug": "Treaty_Indonesia_Perth_Treaty_Area_Of_Overlapping_Jurisdiction_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4755,7 +4756,7 @@
             "queryLayers": "Indonesia_Perth_Treaty_1997_Area_of_Overlapping_Jurisdiction_Area"
         },
         {
-            "id": "Treaty_Indonesia_Provisional_Fisheries_Surveillance_And_Enforcement_Line_AMB_2014",
+            "slug": "Treaty_Indonesia_Provisional_Fisheries_Surveillance_And_Enforcement_Line_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4789,7 +4790,7 @@
             "queryLayers": "Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Points,Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Limit"
         },
         {
-            "id": "Treaty_Indonesia_1997_Exclusive_Economic_Zone_AMB_2014",
+            "slug": "Treaty_Indonesia_1997_Exclusive_Economic_Zone_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4823,7 +4824,7 @@
             "queryLayers": "Indonesia_Perth_Treaty_1997_Exclusive_Economic_Zone_AMB2014_Points,Indonesia_1971_Seabed_Treaty_AMB2014_Line"
         },
         {
-            "id": "Treaty_Indonesia_1997_Perth_Treaty_Seabed_AMB_2014",
+            "slug": "Treaty_Indonesia_1997_Perth_Treaty_Seabed_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4857,7 +4858,7 @@
             "queryLayers": "Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Points,Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Line"
         },
         {
-            "id": "Treaty_Indonesia_Memorandum_Of_Understanding_AMB_2014",
+            "slug": "Treaty_Indonesia_Memorandum_Of_Understanding_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4891,7 +4892,7 @@
             "queryLayers": "Indonesia_Memorandum_of_Understanding_AMB2014_Points,Indonesia_Memorandum_of_Understanding_AMB2014_Limit"
         },
         {
-            "id": "Treaty_Indonesia_1972_Seabed_AMB_2014",
+            "slug": "Treaty_Indonesia_1972_Seabed_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4925,7 +4926,7 @@
             "queryLayers": "Indonesia_1972_Seabed_Treaty_AMB2014_Points,Indonesia_1972_Seabed_Treaty_AMB2014_Limit"
         },
         {
-            "id": "Treaty_Indonesia_1971_Seabed_AMB_2014",
+            "slug": "Treaty_Indonesia_1971_Seabed_AMB_2014",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
@@ -4959,7 +4960,7 @@
             "queryLayers": "Indonesia_1971_Seabed_Treaty_AMB2014_Points,Indonesia_1971_Seabed_Treaty_AMB2014_Limit"
         },
         {
-            "id": "Total_Magnetic_Intensity_2015_HSI",
+            "slug": "Total_Magnetic_Intensity_2015_HSI",
 			"extent": [[99,10],[169,-55]],
             "id": "TotalMagneticIntensity2015_HSI",
             "mapType": "WMS",
@@ -4995,7 +4996,7 @@
             "queryLayers": "TotalMagneticIntensity2015_HSI"
         },
         {
-            "id": "Total_Magnetic_Intensity_2015_Greyscale",
+            "slug": "Total_Magnetic_Intensity_2015_Greyscale",
 			"extent": [[99,10],[169,-55]],
             "id": "TotalMagneticIntensity2015_greyscale",
             "mapType": "WMS",
@@ -5031,7 +5032,7 @@
 			"queryLayers": "TotalMagneticIntensity2015_greyscale"
         },
         {
-            "id": "Water_Confidence",
+            "slug": "Water_Confidence",
 			"extent": [[99,10],[169,-55]],
             "id": "Confidence",
             "mapType": "WMS",
@@ -5057,7 +5058,7 @@
             ]
         },
         {
-            "id": "U_Pb_SHRIMP_Magmatic",
+            "slug": "U_Pb_SHRIMP_Magmatic",
 			"extent": [[99,10],[169,-55]],
             "id": "U-PbSHRIMPmagmatic",
             "mapType": "WMS",
@@ -5089,7 +5090,7 @@
             "queryLayers": "U-PbSHRIMPmagmatic"
         },
         {
-            "id": "U_Pb_SHRIMP_Maximum_Depositional",
+            "slug": "U_Pb_SHRIMP_Maximum_Depositional",
 			"extent": [[99,10],[169,-55]],
             "id": "U-PbSHRIMPmaximumDepositional",
             "mapType": "WMS",
@@ -5121,7 +5122,7 @@
             "queryLayers": "U-PbSHRIMPmaximumDepositional"
         },
         {
-            "id": "U_Pb_SHRIMP_Metamorphic",
+            "slug": "U_Pb_SHRIMP_Metamorphic",
 			"extent": [[99,10],[169,-55]],
             "id": "U-PbSHRIMPmetamorphic",
             "mapType": "WMS",
@@ -5153,7 +5154,7 @@
             "queryLayers": "U-PbSHRIMPmetamorphic"
         },
         {
-            "id": "U_Pb_TIMS_Conventional",
+            "slug": "U_Pb_TIMS_Conventional",
 			"extent": [[99,10],[169,-55]],
             "id": "U-PbTIMSconventional",
             "mapType": "WMS",
@@ -5186,7 +5187,7 @@
         },
 		{
 			"id": "UpperPercentile2y",
-			"id": "UpperPercentile2y",
+			"slug": "UpperPercentile2y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5209,7 +5210,7 @@
 		},
 		{
 			"id": "UpperPercentile5y",
-			"id": "UpperPercentile5y",
+			"slug": "UpperPercentile5y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5227,7 +5228,7 @@
 		},
 		{
 			"id": "UpperPercentile10y",
-			"id": "UpperPercentile10y",
+			"slug": "UpperPercentile10y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5245,7 +5246,7 @@
 		},
 		{
 			"id": "UpperPercentile20y",
-			"id": "UpperPercentile20y",
+			"slug": "UpperPercentile20y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5263,7 +5264,7 @@
 		},
 		{
 			"id": "UpperPercentile25y",
-			"id": "UpperPercentile25y",
+			"slug": "UpperPercentile25y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5281,7 +5282,7 @@
 		},
 		{
 			"id": "UpperPercentile50y",
-			"id": "UpperPercentile50y",
+			"slug": "UpperPercentile50y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5299,7 +5300,7 @@
 		},
 		{
 			"id": "UpperPercentile100y",
-			"id": "UpperPercentile100y",
+			"slug": "UpperPercentile100y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5317,7 +5318,7 @@
 		},
 		{
 			"id": "UpperPercentile200y",
-			"id": "UpperPercentile200y",
+			"slug": "UpperPercentile200y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5335,7 +5336,7 @@
 		},
 		{
 			"id": "UpperPercentile250y",
-			"id": "UpperPercentile250y",
+			"slug": "UpperPercentile250y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5353,7 +5354,7 @@
 		},
 		{
 			"id": "UpperPercentile500y",
-			"id": "UpperPercentile500y",
+			"slug": "UpperPercentile500y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5371,7 +5372,7 @@
 		},
 		{
 			"id": "UpperPercentile1000y",
-			"id": "UpperPercentile1000y",
+			"slug": "UpperPercentile1000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5389,7 +5390,7 @@
 		},
 		{
 			"id": "UpperPercentile2000y",
-			"id": "UpperPercentile2000y",
+			"slug": "UpperPercentile2000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5407,7 +5408,7 @@
 		},
 		{
 			"id": "UpperPercentile5000y",
-			"id": "UpperPercentile5000y",
+			"slug": "UpperPercentile5000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5425,7 +5426,7 @@
 		},
 		{
 			"id": "UpperPercentile10000y",
-			"id": "UpperPercentile10000y",
+			"slug": "UpperPercentile10000y",
 			"extent": [[99,10],[169,-55]],
 			"mapType": "WMS",
 			"visibility": true,
@@ -5442,7 +5443,7 @@
 			"opacity": 0.8
 		},
         {
-            "id": "Vegetation",
+            "slug": "Vegetation",
 			"extent": [[99,10],[169,-55]],
             "id": "vegetation",
             "mapType": "WMS",
@@ -5473,7 +5474,7 @@
             "layerTimeout": 5000
         },
         {
-            "id": "Water_Observations",
+            "slug": "Water_Observations",
 			"extent": [[99,10],[169,-55]],
             "id": "WaterObservations",
             "mapType": "WMS",
@@ -5499,7 +5500,7 @@
             ]
         },
         {
-            "id": "Water_Summary",
+            "slug": "Water_Summary",
 			"extent": [[99,10],[169,-55]],
             "id": "WaterSummary",
             "mapType": "WMS",
@@ -5525,7 +5526,7 @@
             ]
         },
         {
-            "id": "Water_Summary_Filtered",
+            "slug": "Water_Summary_Filtered",
 			"extent": [[99,10],[169,-55]],
             "id": "WaterSummaryFiltered",
             "mapType": "WMS",
@@ -5551,7 +5552,7 @@
             ]
         },
 		{
-			"id": "ESRI_Imagery",
+			"slug": "ESRI_Imagery",
 			"extent": [
 				[
 				135.53,
@@ -5576,7 +5577,8 @@
 			]
 		},
         {
-			"id": "World_Image_XYZ",
+			"id": "World_Image_XYZ"
+            "slug": "World_Image_XYZ",
             "mapType": "XYZTileCache",
             "visibility": true,
             "name": "World Image",
@@ -5588,7 +5590,7 @@
             "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a>"
         },		
         {
-            "id": "World_Image_WMS",
+            "slug": "World_Image_WMS",
             "mapType": "WMS",
             "visibility": true,
             "name": "World Image",
@@ -5600,7 +5602,7 @@
             "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a>"
         },
         {
-            "id": "World_Political_Boundaries_XYZ",
+            "slug": "World_Political_Boundaries_XYZ",
             "mapType": "XYZTileCache",
             "visibility": true,
             "name": "World Political Boundaries",
@@ -5611,7 +5613,7 @@
             "attribution": "World Political Boundaries <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>"
         },
         {
-            "id": "World_Political_Boundaries_WMS",
+            "slug": "World_Political_Boundaries_WMS",
             "mapType": "WMS",
             "visibility": false,
             "name": "World Political Boundaries",

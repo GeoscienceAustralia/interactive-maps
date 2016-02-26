@@ -97,7 +97,7 @@
             "previewImageUrl": "content/amsis/legislation.jpg",
             "previewDescription": "This information provides an overview of legislation and background information which relates to data found in the Australian Marine Spatial Information System (AMSIS).",
             "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/australian-ocean-governance-and-relevant-legislation"
-        },		
+        },
         {
             "title": "Petroleum Wells Database",
             "tags": "Other",
@@ -109,7 +109,7 @@
     "tags": [
 		{
             "id": "Legacy",
-            "description": "Legacy AMSIS application and information.",
+            "description": "The legacy AMSIS contains data from 2006-2014, this data is being migrated to the current AMSIS (see below). The legacy version will be shut down when the process is completed.",
             "title": "Legacy AMSIS"
         },
         {

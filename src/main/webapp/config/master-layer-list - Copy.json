@@ -5577,7 +5577,6 @@
 			]
 		},
         {
-			"id": "World_Image_XYZ"
             "slug": "World_Image_XYZ",
             "mapType": "XYZTileCache",
             "visibility": true,

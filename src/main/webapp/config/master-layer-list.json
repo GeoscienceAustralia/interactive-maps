@@ -374,70 +374,70 @@
         {
             "slug": "Contiguous_Zone_AMB_2014",
 			"extent": [[30,10],[180,-70]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Contiguous Zone AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Contiguous_Zone_AMB2014a/MapServer/WMSServer",
-            "layers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit",
-            "metadataText": "Lines and polygons depicting the limit and extent of the Contiguous Zone. Seas and Submerged Lands (Limits of Contiguous Zone) Proclamation 1999. ",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_8d81cdfc-dadd-47e9-8665-34ebfab3093a/CWTH_SSLA_1973_Contiguous_Zone_AMB2014+Esri+MapServer"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Contiguous_Zone_AMB2014a/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Contiguous_Zone_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Contiguous_Zone_AMB2014a/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "opacity": 1,
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Contiguous_Zone_AMB2014a/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit"
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Contiguous Zone",
+			"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"layers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit,Continental_Shelf_AMB2014_Points",
+			"metadataText": "Lines and polygons depicting the limit and extent of the Contiguous Zone. Seas and Submerged Lands (Limits of Contiguous Zone) Proclamation 1999.",
+			"ogcLinks": [
+					{
+						"description": "Service Metadata",
+						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f62-da6e-e053-10a3070a6b6b/CWTH+SSLA+1973+Contiguous+Zone+AMB2014a+ESRI+Mapserver"
+					},
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer"
+					},
+					{
+						"description": "WMS Capabilities",
+						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					},
+					{
+						"description": "ArcMap Layerfile",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer?f=lyr&v=9.3"
+					}
+			],
+			"opacity": 0.75,
+			"queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit,Continental_Shelf_AMB2014_Points"
         },
         {
             "slug": "Continental_Shelf_AMB_2014",
 			"extent": [[30,10],[180,-70]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Continental Shelf AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Continental_Shelf_AMB2014a/MapServer/WMSServer",
-            "layers": "Continental_Shelf_AMB2014_Limit,Continental_Shelf_AMB2014_Points",
-            "metadataText": "Line depicting the limit of the continental shelf made under the Seas and Submerged Lands (Limits of Continental Shelf) Proclamation 2012",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_61c4a11c-cd0a-4677-ae24-2304f1c3a901/CWTH_SSLA_1973_Continental_Shelf_AMB2014+Esri+MapServer"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Continental_Shelf_AMB2014a/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Continental_Shelf_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Continental_Shelf_AMB2014a/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "opacity": 1,
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Continental_Shelf_AMB2014a/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "Continental_Shelf_AMB2014_Limit,Continental_Shelf_AMB2014_Points"
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Continental Shelf",
+			"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"layers": "Continental_Shelf_AMB2014_Limit,Continental_Shelf_AMB2014_Points",
+			"metadataText": "Line depicting the limit of the continental shelf made under the Seas and Submerged Lands (Limits of Continental Shelf) Proclamation 2012.",
+			"ogcLinks": [
+				{
+						"description": "Service Metadata",
+						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f65-da6e-e053-10a3070a6b6b/CWTH+SSLA+1973+Continental+Shelf+AMB2014a+ESRI+Mapserver"
+					},
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer"
+					},
+					{
+						"description": "WMS Capabilities",
+						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					},
+					{
+						"description": "ArcMap Layerfile",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer?f=lyr&v=9.3"
+					}
+			],
+			"opacity": 0.75,
+			"queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Continental_Shelf_AMB2014_Limit,Continental_Shelf_AMB2014_Points"
         },        
         {
             "slug": "Earthquake_Hazards",
@@ -776,70 +776,70 @@
         {
             "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
 			"extent": [[30,10],[180,-70]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Exclusive Economic Zone as Amended by the Perth Treaty 1997 AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014a/MapServer/WMSServer",
-            "layers": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
-            "metadataText": "Line and polygon depicting the Australian EEZ as modified by the application of the Treaty between the Government of Australia and the Government of the Republic of Indonesia establishing an Exclusive Economic Zone Boundary and Certain Seabed Boundaries (Perth, 14 march 1997) [1997] ATNIF 9 - (not yet in force). NOTE: This is the standard depiction of the Australian EEZ.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a8b40a5b-4880-4905-9741-634e78b24229/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014a/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014a/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "opacity": 1,
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_Amended_by_Perth_Treaty_AMB2014a/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit"
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Exclusive Economic Zone as Amended by the Perth Treaty 1997",
+			"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"layers": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
+			"metadataText": "Line and polygon depicting the Australian EEZ as modified by the application of the Treaty between the Government of Australia and the Government of the Republic of Indonesia establishing an Exclusive Economic Zone Boundary and Certain Seabed Boundaries (Perth, 14 march 1997) [1997] ATNIF 9 - (not yet in force). NOTE: This is the standard depiction of the Australian EEZ.",
+			"ogcLinks": [
+					{
+						"description": "Service Metadata",
+						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f68-da6e-e053-10a3070a6b6b/CWTH+SSLA+1973+Exclusive+Economic+Zone+Amended+by+Perth+Treaty+AMB2014a+ESRI+Mapserver"
+					},
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer"
+					},
+					{
+						"description": "WMS Capabilities",
+						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					},
+					{
+						"description": "ArcMap Layerfile",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer?f=lyr&v=9.3"
+					}
+			],
+			"opacity": 0.75,
+			"queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit"
         },
         {
             "slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
 			"extent": [[30,10],[180,-70]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Exclusive Economic Zone as Proclaimed 1973 AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_As_Proclaimed_AMB2014a/MapServer/WMSServer",
-            "layers": "Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
-            "metadataText": "Lines and polygons depicting the outer limit and extent of the Austraian EEZ as proclaimed by the Seas and Submerged Lands Act 1973 - Proclamation under section 10B (26/07/1994). NOTE: Although this proclamation reamins in force, for many matters the limit modified by the action of the Treaty between the Government of Australia and the Government of the Republic of Indonesia establishing an Exclusive Economic Zone Boundary and Certain Seabed Boundaries (Perth, 14 march 1997) [1997] ATNIF 9 - (not yet in force) applies.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_5acb6f4b-72b8-4590-bb83-52164e9bcdc3/CWTH_SSLA_1973_Exclusive_Economic_Zone_As_Proclaimed_AMB2014a+Esri+MapServer"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_As_Proclaimed_AMB2014a/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_As_Proclaimed_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_As_Proclaimed_AMB2014a/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "opacity": 1,
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Exclusive_Economic_Zone_As_Proclaimed_AMB2014a/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit,Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area"
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Exclusive Economic Zone as Proclaimed 1973",
+			"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"layers": "Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
+			"metadataText": "Lines and polygons depicting the outer limit and extent of the Austraian EEZ as proclaimed by the Seas and Submerged Lands Act 1973 - Proclamation under section 10B (26/07/1994). NOTE: Although this proclamation reamins in force, for many matters the limit modified by the action of the Treaty between the Government of Australia and the Government of the Republic of Indonesia establishing an Exclusive Economic Zone Boundary and Certain Seabed Boundaries (Perth, 14 march 1997) [1997] ATNIF 9 - (not yet in force) applies.",
+			"ogcLinks": [
+					{
+						"description": "Service Metadata",
+						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f6b-da6e-e053-10a3070a6b6b/CWTH+SSLA+1973+Exclusive+Economic+Zone+As+Proclaimed+AMB2014a+ESRI+Mapserver"
+					},
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer"
+					},
+					{
+						"description": "WMS Capabilities",
+						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					},
+					{
+						"description": "ArcMap Layerfile",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer?f=lyr&v=9.3"
+					}
+			],
+			"opacity": 0.75,
+			"queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit,Continental_Shelf_AMB2014_Points"
         },
 		{
 			"slug": "Ferry_Terminals",
@@ -2402,38 +2402,38 @@
         },
         {
             "slug": "Normal_Baselines_AMB_2014",
-			"extent": [[99,10],[169,-55]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Normal Baselines AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Normal_Baselines_AMB2014a/MapServer/WMSServer",
-            "layers": "Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Points,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit",
-            "metadataText": "Normal Baseline defined under the Seas and Submerged Lands (Territorial Sea Baseline) Proclamation 2006.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a9fec3a8-78ea-4d7f-a220-cf6b5b3ebf93/CWTH_SSLA_1973_Normal_Baselines_AMB2014a"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Normal_Baselines_AMB2014a/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Normal_Baselines_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Normal_Baselines_AMB2014a/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "opacity": 1,
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Normal_Baselines_AMB2014a/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Points,Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit"
-        },
+			"extent": [[30,10],[180,-70]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Normal Baselines",
+			"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"layers": "Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014",
+			"metadataText": "Normal Baseline defined under the Seas and Submerged Lands (Territorial Sea Baseline) Proclamation 2006.",
+			"ogcLinks": [
+					{
+						"description": "Service Metadata",
+						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f6e-da6e-e053-10a3070a6b6b/CWTH+SSLA+1973+Normal+Baselines+AMB2014a+ESRI+Mapserver"
+					},
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer"
+					},
+					{
+						"description": "WMS Capabilities",
+						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					},
+					{
+						"description": "ArcMap Layerfile",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer?f=lyr&v=9.3"
+					}
+			],
+			"opacity": 0.75,
+			"queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014"
+		},
         {
             "slug": "NZL_GNS_1_1M_Lithostratigraphy",
 			"extent": [[160,-30],[179,-52]],
@@ -3971,7 +3971,7 @@
 				}
 			],
 			"opacity": 0.8
-		},
+		},		
 		{
 			"id": "ShapeParameter2y",
 			"slug": "ShapeParameter2y",
@@ -4265,6 +4265,37 @@
             "queryVersion": "1.1.1",
             "queryLayers": "geomorphic_features"
         },
+		{				
+			"slug": "Seas_and_Submerged_Lands_Act_Combined",
+			"extent": [[30,10],[180,-70]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Seas and Submerged Lands Act Combined",
+			"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"layers": "Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014,Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit,Continental_Shelf_AMB2014_Limit,Continental_Shelf_AMB2014_Points,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit,Continental_Shelf_AMB2014_Points,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
+			"metadataText": "Datasets illustrating the georegulatory framework of the Seas and Submerged Lands Act 1973 and Australia's Maritime Limits. An Act relating to Sovereignty in respect of certain Waters of the Sea and in respect of the Airspace over, and the Sea bed and Subsoil beneath, those Waters and to Sovereign Rights in respect of the Continental Shelf and the Exclusive Economic Zone and to certain rights of control in respect of the Contiguous Zone.",
+			"ogcLinks": [
+				{
+						"description": "Service Metadata",
+						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a9fec3a8-78ea-4d7f-a220-cf6b5b3ebf93/CWTH_SSLA_1973_Normal_Baselines_AMB2014a"
+					},
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://services.ga.gov.au/gis/rest/services/Seas_and_Submerged_Lands_Act_Combined_WM/MapServer"
+					},
+					{
+						"description": "ArcMap Layerfile",
+						"url": "http://services.ga.gov.au/gis/rest/services/Seas_and_Submerged_Lands_Act_Combined_WM/MapServer?f=lyr&v=9.3"
+					}
+			],
+			"opacity": 0.5,
+			"layerTimeout": 5000,
+			"queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Baselines_Normal_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014,Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit,Continental_Shelf_AMB2014_Limit,Continental_Shelf_AMB2014_Points,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area,Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit,Continental_Shelf_AMB2014_Points,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area,Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit"				
+		},
         {
             "slug": "Seas_And_Submerged_Lands_Act_1973_Reference_Map",
 			"extent": [[99,10],[169,-55]],
@@ -4407,37 +4438,37 @@
         },
         {
             "slug": "Straight_Baselines_AMB_2014",
-			"extent": [[99,10],[169,-55]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Straight Baselines AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Straight_Baselines_AMB2014a/MapServer/WMSServer",
-            "layers": "Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit",
-            "metadataText": "Straight Baseline defined under the Seas and Submerged Lands (Territorial Sea Baseline) Proclamation 2006.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a950007b-bd18-473e-99ed-6f94b905913f/CWTH_SSLA_1973_Straight_Baselines_AMB2014a"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Straight_Baselines_AMB2014a/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Straight_Baselines_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Straight_Baselines_AMB2014a/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "opacity": 1,
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Straight_Baselines_AMB2014a/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014_Limit"
+			"extent": [[30,10],[180,-70]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Straight Baselines",
+			"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"layers": "Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014",
+			"metadataText": "Straight Baselines defined under the Seas and Submerged Lands (Territorial Sea Baseline) Proclamation 2006.",
+			"ogcLinks": [
+					{
+						"description": "Service Metadata",
+						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f71-da6e-e053-10a3070a6b6b/CWTH+SSLA+1973+Straight+Baselines+AMB2014a+ESRI+Mapserver"
+					},			
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer"
+					},
+					{
+						"description": "WMS Capabilities",
+						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					},
+					{
+						"description": "ArcMap Layerfile",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer?f=lyr&v=9.3"
+					}
+			],
+			"opacity": 0.75,
+			"queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014"
         },
         {
             "slug": "Subtidal_Dominate_Landform",
@@ -4689,37 +4720,37 @@
         },
         {
             "slug": "Territorial_Sea_AMB_2014",
-			"extent": [[99,10],[169,-55]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Territorial Sea AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer/WMSServer",
-            "layers": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit",
-            "metadataText": "Lines and polygons depicting the outer limit and extent of the territorial sea - Seas and Submerged Lands Act 1973 - Proclamation under section 7 (09/11/1990). Data metadata: http://www.ga.gov.au/metadata-gateway/metadata/record/82315/",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_14449938-bb6f-4e45-a50e-bbfbe2d19601/Treaty_PNG_Territorial_Sea_AMB2014a"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "opacity": 1,
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_SSLA_1973_Territorial_Sea_AMB2014a/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit"
+			"extent": [[30,10],[180,-70]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Territorial Sea",
+			"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"layers": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit",
+			"metadataText": "Lines and polygons depicting the outer limit and extent of the territorial sea - Seas and Submerged Lands Act 1973 - Proclamation under section 7 (09/11/1990). Data metadata: http://www.ga.gov.au/metadata-gateway/metadata/record/82315/",
+			"ogcLinks": [
+					{
+						"description": "Service Metadata",
+						"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f74-da6e-e053-10a3070a6b6b/CWTH+SSLA+1973+Territorial+Sea+AMB2014a+ESRI+Mapserver"
+					},
+					{
+						"description": "Service Metadata (REST)",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer"
+					},
+					{
+						"description": "WMS Capabilities",
+						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					},
+					{
+						"description": "ArcMap Layerfile",
+						"url": "http://services.ga.gov.au/gis/rest/services/SSLA_1973_AMB2014a/MapServer?f=lyr&v=9.3"
+					}
+			],
+			"opacity": 0.75,
+			"queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area,Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit"
         },
         {
             "slug": "Treaty_Indonesia_Perth_Treaty_Area_Of_Overlapping_Jurisdiction_AMB_2014",
@@ -5614,7 +5645,7 @@
         {
             "slug": "World_Political_Boundaries_WMS",
             "mapType": "WMS",
-            "visibility": false,
+            "visibility": true,
             "name": "World Political Boundaries",
             "url": "http://www.ga.gov.au/gis/services/topography/World_Political_Boundaries_WM/MapServer/WMSServer",
             "layers": "Countries",

@@ -173,28 +173,32 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Australian Petroleum Blocks AMB 2014a",
-            "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer",
             "metadataText": "Petroleum Blocks cut to the AMB 2014a epoch. This dataset is a digital realisation of the Blocks as defined under Section 33 (3) of the Offshore Petroleum and Greenhouse Gas Storage Act 2006. The blocks are created using a 5 minute by 5 minute graticular section that has been trimmed to the extent of the Offshore Area (defined in the same Act). The dataset is comprised of both points and polygons, and is densified to ensure the geometry will remain correct regardless of projection. The dataset's coverage includes areas of coastal waters and land within the constitutional limits of the States and territories, however in these areas the data is indicative only. For titles within the limits of the coastal waters, the relevant State agency should be consulted.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_132cbd8e-b000-0670-e053-12a3070add7e/Australian+Petroleum+Blocks+2014a+-+Geodatabase"
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f56-da6e-e053-10a3070a6b6b/CWTH+OPGGSA+2006+Petroleum+Blocks+AMB2014a+ESRI+Mapserver"
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+				{
+                    "description": "WFS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer/WFSServer?request=GetCapabilities&service=WFS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/CWTH_OPGGSA_2006_Petroleum_Blocks_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Block_MapSheets,OPGGSA_Points_2014,OPGGSA_Blocks_2014",
@@ -2459,29 +2463,29 @@
             "visibility": true,
             "queryFeatures": true,
             "name": "Offshore Areas of the States AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_OPGGSA_2006_Offshore_Areas_of_the_States_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/CWTH_OPGGSA_2006_AMB2014a/MapServer/WMSServer",
             "layers": "Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Area,Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Limit",
             "metadataText": "This dataset is a digital realisation of the Offshore Areas of the States and Territories as defined under Section 8 of the Offshore Petroleum and Greenhouse Gas Storage Act 2006. The dataset is comprised of points, lines and polylines, and is densified to ensure the geometry will remain correct regardless of projection.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_d87bc314-f949-4903-8c9a-5b836f875fc6/CWTH_OPGGSA_2006_Offshore_Areas_of_the_States_AMB2014a+Esri+MapServer"
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f50-da6e-e053-10a3070a6b6b/CWTH+OPGGSA+2006+Offshore+Areas+of+the+States+AMB2014a+ESRI+Mapserver"
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_OPGGSA_2006_Offshore_Areas_of_the_States_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/CWTH_OPGGSA_2006_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_OPGGSA_2006_Offshore_Areas_of_the_States_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/CWTH_OPGGSA_2006_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_OPGGSA_2006_Offshore_Areas_of_the_States_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/CWTH_OPGGSA_2006_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_OPGGSA_2006_Offshore_Areas_of_the_States_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/CWTH_OPGGSA_2006_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Area,Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Limit"
@@ -3687,30 +3691,30 @@
             "mapType": "WMS",
             "visibility": true,            
             "name": "Scheduled Areas AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_OPGGSA_2006_Scheduled_Areas_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/CWTH_OPGGSA_2006_AMB2014a/MapServer/WMSServer",
             "layers": "Scheduled_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Limit,Scheduled_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Points",
             "metadataText": "This dataset is a digital realisation of the Scheduled Areas of the States and Territories as defined under Section 8 and Schedule 1 of the Offshore Petroleum and Greenhouse Gas Storage Act 2006. The dataset is comprised of points, lines and polylines, and is densified to ensure the geometry will remain correct regardless of projection.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_841d13e9-2cb7-4abd-bfff-7f5fce4d5c55/CWTH_OPGGSA_2006_Scheduled_Areas_AMB2014a"
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f53-da6e-e053-10a3070a6b6b/CWTH+OPGGSA+2006+Scheduled+Areas+AMB2014a+ESRI+Mapserver"
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_OPGGSA_2006_Scheduled_Areas_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/CWTH_OPGGSA_2006_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_OPGGSA_2006_Scheduled_Areas_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/CWTH_OPGGSA_2006_AMB2014a/MapServer/WMSServer"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_OPGGSA_2006_Scheduled_Areas_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/CWTH_OPGGSA_2006_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
 			"queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_OPGGSA_2006_Scheduled_Areas_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/CWTH_OPGGSA_2006_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Scheduled_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Limit,Scheduled_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Points"

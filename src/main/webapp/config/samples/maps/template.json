@@ -2,9 +2,9 @@
   "id": "template",
   "datumProjection": "EPSG:3857",
   "displayProjection": "EPSG:4326",
-  "title": "template",
+  "title": "Template title",
   "headerConfig": {
-    "title": "Template"
+    "title": "Template header title"
   },
   "toolsConfig": {
     "tools": []

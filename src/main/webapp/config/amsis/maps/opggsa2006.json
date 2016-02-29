@@ -165,16 +165,12 @@
         {
             "slug": "World_Political_Boundaries_WMS",
             "visibility": false
-        },
-        {
-            "slug": "Google_Hybrid",
-            "visibility": false
         }
     ],
     "layerMaps": [
         {
-            "slug": "Australian_Topography_2014_ARCGIS",
-            "visibility": false
+            "slug": "National_Color_Base_Map",
+			"opacity": 0.5
         },
         {
             "slug": "Offshore_Areas_Of_The_States_AMB_2014",
@@ -188,9 +184,6 @@
         {
             "slug": "Australian_Petroleum_Blocks_AMB_2014",
             "queryFeatures": true
-        },
-        {
-            "slug": "Population_Centres"
         }
     ],
     "groupedLayers": [

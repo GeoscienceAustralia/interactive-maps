@@ -171,46 +171,49 @@
         }
     ],
     "layerMaps": [
-        {
-            "slug": "Australian_Topography_2014_ARCGIS",
-            "visibility": false
+		{
+            "slug": "National_Color_Base_Map",
+			"opacity": 0.5
         },
         {
             "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
-            "opacity": 0.3
+            "opacity": 0.5,
+			"visibility": false
         },
         {
             "slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
             "visibility": false,
-            "opacity": 0.3
-        },
-        {
-            "slug": "Contiguous_Zone_AMB_2014",
-            "opacity": 0.3
-        },
-        {
-            "slug": "Continental_Shelf_AMB_2014",
-            "opacity": 0.3
-        },
-        {
-            "slug": "Territorial_Sea_AMB_2014",
-            "opacity": 0.3
-        },
-        {
-            "slug": "Coastal_Waters_AMB_2014",
-            "opacity": 0.3,
+            "opacity": 0.5,
 			"visibility": false
         },
         {
+            "slug": "Contiguous_Zone_AMB_2014",
+            "opacity": 0.5,
+			"visibility": false
+        },
+        {
+            "slug": "Continental_Shelf_AMB_2014",
+            "opacity": 0.5,
+			"visibility": false
+        },
+        {
+            "slug": "Territorial_Sea_AMB_2014",
+            "opacity": 0.5,
+			"visibility": false
+        },       
+        {
             "slug": "Straight_Baselines_AMB_2014",
-            "opacity": 0.3
+            "opacity": 0.5,
+			"visibility": false
         },
         {
             "slug": "Normal_Baselines_AMB_2014",
-            "opacity": 0.3
+            "opacity": 0.5,
+			"visibility": false
         },
-        {
-            "slug": "Seas_And_Submerged_Lands_Act_1973_Reference_Map"
+		{
+            "slug": "Seas_and_Submerged_Lands_Act_Combined",
+            "opacity": 0.35
         }
     ],
     "search": {

@@ -3,7 +3,6 @@
     "title": "Seas and Submerged Lands Act 1973",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	
     "initialExtent": [
         [
             30,
@@ -199,7 +198,8 @@
         },
         {
             "slug": "Coastal_Waters_AMB_2014",
-            "opacity": 0.3
+            "opacity": 0.3,
+			"visibility": false
         },
         {
             "slug": "Straight_Baselines_AMB_2014",
@@ -234,7 +234,7 @@
         },
         {
             "slug": "Treaties_Of_Australia_AMB_2014",
-            "opacity": 0.5,
+            "opacity": 0.75,
             "queryFeatures": true
         },
 		{

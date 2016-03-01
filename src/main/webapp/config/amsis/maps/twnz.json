@@ -76,8 +76,7 @@
             {
                 "id": "identifyTool",
                 "config": {
-                    "titleText": "Identify treaties",
-                    "panelHeading": "Identify Treaties",
+                    "panelSize":"medium",
                     "propertiesOfInterest": [
                         "NAME",
                         "OBJNAM",

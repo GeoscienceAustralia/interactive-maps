@@ -298,7 +298,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Coastal Waters AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer/WMSServer",
             "layers": "Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Area,Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Limit",
             "metadataText": "Lines and Polygons depicting the limit and extent of Section 3 of the Coastal Waters (State Powers) Act 1980 and Coastal Waters (Northern Territories Powers) Act 1980. NOTE: the Polygon depicting the area of the coastal waters is not constrained on the seaward side. The polygon includes areas that fall within the constitutional limits of the States. When information depicting the seaward constitutional limit of the States becomes available, the polygon will be constrained. Data metadata: http://www.ga.gov.au/metadata-gateway/metadata/record/82323/",
             "ogcLinks": [
@@ -308,20 +308,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/CWTH_CW_Act_1980_Coastal_Waters_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Area,Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Limit"
@@ -511,30 +511,30 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "East Timor Unitisation Agreement",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_East_Timor_Unitisation_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "East_Timor_Unitisation_Agreement_AMB2014_Points,East_Timor_Unitisation_Agreement_AMB2014_Limit",
             "metadataText": "Agreement between the Government of Australia and the Government of the Democratic Republic of Timor-Leste relating to the unitisation of the Sunrise and Troubadour Fields (Dili, 6 March 2003) [2007] ATS 11. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94",
             "ogcLinks": [
                 {
                     "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_05063d31-95ba-4d68-9af5-79e915b56872/Treaty_East_Timor_CMATS_AMB2014+Esri+MapServer"
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f1d-da6e-e053-10a3070a6b6b/Treaty+East+Timor+Unitisation+AMB2014a+ESRI+Mapserver"
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_East_Timor_Unitisation_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_East_Timor_Unitisation_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/rest/services/legislation/Treaty_East_Timor_Unitisation_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_East_Timor_Unitisation_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "East_Timor_Unitisation_Agreement_AMB2014_Points,East_Timor_Unitisation_Agreement_AMB2014_Limit"
@@ -545,30 +545,30 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "East Timor Joint Petroleum Development Area",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_East_Timor_JPDA_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "East_Timor_Joint_Petroleum_Development_Area_AMB2014_Points,East_Timor_Joint_Petroleum_Development_Area_AMB2014_Limit",
             "metadataText": "Timor Sea treaty between the Government of East Timor and the Government of Australia (20 May 2002) [2003] ATS 13. Joint Petroleum Development Zone. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_7db72d8e-4af9-4fa5-a7aa-405e71ce0015/Treaty_East_Timor_JPDA_AMB2014+Esri+MapServer"
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_184c15be-3f1a-da6e-e053-10a3070a6b6b/Treaty+East+Timor+JPDA+AMB2014a+ESRI+Mapserver"
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_East_Timor_JPDA_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_East_Timor_JPDA_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_East_Timor_JPDA_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_East_Timor_JPDA_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "East_Timor_Joint_Petroleum_Development_Area_AMB2014_Points,East_Timor_Joint_Petroleum_Development_Area_AMB2014_Limit"
@@ -579,7 +579,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "East Timor Certain Maritime Arrangements in the Timor Sea Treaty",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_East_Timor_CMATS_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Points,East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Limit",
             "metadataText": "Treaty between Australia and the Democratic Republic of Timor-Leste on Certain Maritime Arrangements in the Timor Sea (Sydney, 23 February 2006) [2007] ATS 12. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94",
             "ogcLinks": [
@@ -589,20 +589,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_East_Timor_CMATS_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_East_Timor_CMATS_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_East_Timor_CMATS_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_East_Timor_CMATS_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Points,East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Limit"
@@ -874,27 +874,27 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "France Heard McDonald Islands AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_France_Heard_McDonald_Islands_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "France_Heard_and_McDonald_Islands_AMB2014_Points,France_Heard_and_McDonald_Islands_AMB2014_Limit",
             "metadataText": "Agreement on the Maritime Delimitation between the Government of Australian and the Government of the French Republic (Melbourne, 4 January 1982) [1983] ATS 3 - Heard and McDonald Islands and Iles Kerguelen. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
 				{"description": "Service Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0d3c960a-180a-4456-9447-faa19a7e39a6/Treaty_France_Heard_McDonald_Islands_AMB2014"},
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_France_Heard_McDonald_Islands_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_France_Heard_McDonald_Islands_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_France_Heard_McDonald_Islands_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_France_Heard_McDonald_Islands_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "France_Heard_and_McDonald_Islands_AMB2014_Points,France_Heard_and_McDonald_Islands_AMB2014_Limit"
@@ -905,7 +905,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "France New Caledonia AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_France_New_Caledonia_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServe",
             "layers": "France_New_Caledonia_AMB2014_Points,France_New_Caledonia_AMB2014_Limit",
             "metadataText": "Agreement on maritime delimitation between the Government of Australia and the Government of the French Republic (Melbourne, 4 January 19820 [1983] ATS 3 - Australian Mainland and Nouvelle Caledonie. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
@@ -915,20 +915,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_France_New_Caledonia_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_France_New_Caledonia_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_France_New_Caledonia_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_France_New_Caledonia_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServe",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "France_New_Caledonia_AMB2014_Points,France_New_Caledonia_AMB2014_Limit"
@@ -2065,26 +2065,26 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Papua New Guinea Fisheries Jurisdiction Line AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Fisheries_Jurisdiction_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Points,Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Limit",
             "metadataText": "Fisheries Jurisdiction Line - Treaty between Australia and the Independant State of Papua New Guinea concerning Sovereignty and Maritime Boundaries in the area between the two Countries, including the area known as Torres Strait, and Related Matters (Sydney, 18 December 1978) [1985] ATS 4. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
-                {
+               {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_PNG_Fisheries_Jurisdiction_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Fisheries_Jurisdiction_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_PNG_Fisheries_Jurisdiction_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Fisheries_Jurisdiction_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Points,Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Limit"
@@ -2095,26 +2095,26 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Papua New Guinea Seabed AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Seabed_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Papua_New_Guinea_Seabed_AMB2014_Points,Papua_New_Guinea_Seabed_AMB2014_Limit",
             "metadataText": "Seabed jurisdciction Line - Treaty between Australia and the Independant State of Papua New Guinea concerning Sovereignty and Maritime Boundaries in the area between the two Countries, including the area known as Torres Strait, and Related Matters (Sydney, 18 December 1978) [1985] ATS 4. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_PNG_Seabed_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Seabed_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_PNG_Seabed_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Seabed_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Papua_New_Guinea_Seabed_AMB2014_Points,Papua_New_Guinea_Seabed_AMB2014_Limit"
@@ -2125,26 +2125,26 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Papua New Guinea Territorial Sea AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Territorial_Sea_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Papua_New_Guinea_Territorial_Sea_AMB2014_Points,Papua_New_Guinea_Territorial_Sea_AMB2014_Limit",
             "metadataText": "Outer Limit of the territorial sea of certain Australian islands and cays - Treaty between Australia and the Independant State of Papua New Guinea concerning Sovereignty and Maritime Boundaries in the area between the two Countries, including the area known as Torres Strait, and Related Matters (Sydney, 18 December 1978) [1985] ATS 4. The outer limit of the territorial sea of the islands of Aubusi, Boigu and Moimi, Dauan, Kaumag and Saibai, Deliverance, Turnagain and Anchor Cay, East Cay, Black Rocks, Pearce Cay, Bramble Cay, Turu Cay, Kerr Islet. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_PNG_Territorial_Sea_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Territorial_Sea_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_PNG_Territorial_Sea_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Territorial_Sea_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Papua_New_Guinea_Territorial_Sea_AMB2014_Points,Papua_New_Guinea_Territorial_Sea_AMB2014_Limit"
@@ -2155,26 +2155,26 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Papua New Guinea Torres Strait Protected Zone AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Torres_Strait_Protected_Zone_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Points,Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Limit",
             "metadataText": "Protected Zone - Treaty between Australia and the Independant State of Papua New Guinea concerning Sovereignty and Maritime Boundaries in the area between the two Countries, including the area known as Torres Strait, and Related Matters (Sydney, 18 December 1978) [1985] ATS 4. The principal purpose of the Parties in establishing the Protected Zone, and in determining its northern, southern, eastern and western boundaries, is to acknowledge and protect the traditional way of life and livelihood of the traditional inhabitants including their traditional fishing and free movement. A further purpose of the Parties in establishing the Protected Zone is to protect and preserve the marine environment and indigenous fauna and flora in and in the vicinity of the Protected Zone.",
             "ogcLinks": [
-                {
+               {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_PNG_Torres_Strait_Protected_Zone_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Torres_Strait_Protected_Zone_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_PNG_Torres_Strait_Protected_Zone_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_PNG_Torres_Strait_Protected_Zone_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Points,Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Limit"
@@ -2350,26 +2350,26 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "New Zealand South",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_New_Zealand_South_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Points,New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Limit",
             "metadataText": "Treaty between the Government of Australia and the Government of New Zealand Establishing Certain Exclusive Economic Zone Boundaries and Continental Shelf Boundaries (Adelaide, 25 July 2004) [2006] ATS 4 -Line delimiting the EEZs and continental shelves between Macquarie Island and Campbell and Auckland Islands. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_New_Zealand_South_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_New_Zealand_South_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_New_Zealand_South_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_New_Zealand_South_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Points,New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Limit"
@@ -2380,26 +2380,26 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "New Zealand North",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_New_Zealand_North_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Points,New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Limit",
             "metadataText": "Treaty between the Government of Australia and the Government of New Zealand Establishing Certain Exclusive Economic Zone Boundaries and Continental Shelf Boundaries (Adelaide, 25 July 2004) [2006] ATS 4 - Line delimiting Australia and New Zealand EEZs and continental shelf in the region extending from Lord Howe Rise, past Lord Howe and Norfolk Islands to Three Kings Ridge. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_New_Zealand_North_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_New_Zealand_North_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_New_Zealand_North_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_New_Zealand_North_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Points,New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Limit"
@@ -4412,7 +4412,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Solomon Islands AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Solomon_Islands_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Solomon_Islands_AMB2014_Points,Solomon_Islands_AMB2014_Limit",
             "metadataText": "Agreement between the Government of Australia and the Government of Solomon Islands establishing Certain Sea and Seabed Boundaries (Honiara, 13 September 1988) [1989] ATS 12. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodromic) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94. Data metadata: http://www.ga.gov.au/metadata-gateway/metadata/record/82322/",
             "ogcLinks": [
@@ -4422,20 +4422,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_Solomon_Islands_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Solomon_Islands_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_Solomon_Islands_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_Solomon_Islands_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Solomon_Islands_AMB2014_Points,Solomon_Islands_AMB2014_Limit"
@@ -4762,7 +4762,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Treaty Indonesia Perth Treaty Area of Overlapping Jurisdiction AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_Perth_Treaty_Area_of_Overlapping_Jurisdiction_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Indonesia_Perth_Treaty_1997_Area_of_Overlapping_Jurisdiction_Area",
             "metadataText": "Treaty between the Government of Australia and the Government of the Republic of Indonesia establishing an Exclusive Economic Zone Boundary and Certain Seabed Boundaries (Perth, 14 march 1997) [1997] ATNIF 9 - Area of overlapping jurisdiction over which Australia exercises sovereign rights over the seabed and Indonesia soveregn rights over the water column. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
@@ -4772,20 +4772,20 @@
                 },
 				{
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_Indonesia_Perth_Treaty_Area_of_Overlapping_Jurisdiction_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_Perth_Treaty_Area_of_Overlapping_Jurisdiction_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_Perth_Treaty_Area_of_Overlapping_Jurisdiction_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_Perth_Treaty_Area_of_Overlapping_Jurisdiction_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Indonesia_Perth_Treaty_1997_Area_of_Overlapping_Jurisdiction_Area"
@@ -4796,7 +4796,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Treaty Indonesia Provisional Fisheries Surveillance and Enforcement Line AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_PFSEL_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Points,Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Limit",
             "metadataText": "Memorandum of Understanding Indonesia Traditional Fisherman 1974, MOU Indonesia PFSEL 1981 (PFSEL). Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94",
             "ogcLinks": [
@@ -4806,20 +4806,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_Indonesia_PFSEL_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_PFSEL_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_PFSEL_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_PFSEL_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Points,Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Limit"
@@ -4830,7 +4830,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Treaty Indonesia 1997 Exclusive Economic Zone AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_EEZ_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Indonesia_Perth_Treaty_1997_Exclusive_Economic_Zone_AMB2014_Points,Indonesia_Perth_Treaty_1997_Exclusive_Economic_Zone_AMB2014_Line",
             "metadataText": "Treaty between the Government of Australia and the Government of the Republic of Indonesia establishing an Exclusive Economic Zone Boundary and Certain Seabed Boundaries (Perth, 14 march 1997) [1997] ATNIF 9 - Line delimiting the exclusive economic zone boundary between Australia and Indonesia. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
@@ -4840,20 +4840,20 @@
                 },			
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_EEZ_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_EEZ_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_EEZ_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_EEZ_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Indonesia_Perth_Treaty_1997_Exclusive_Economic_Zone_AMB2014_Points,Indonesia_1971_Seabed_Treaty_AMB2014_Line"
@@ -4864,7 +4864,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Treaty Indonesia 1997 Perth Treaty Seabed AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_Seabed_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Points,Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Limit",
             "metadataText": "Treaty between the Government of Australia and the Government of the Republic of Indonesia establishing an Exclusive Economic Zone Boundary and Certain Seabed Boundaries (Perth, 14 march 1997) [1997] ATNIF 9 - Western Extension of the seabed boundary.",
             "ogcLinks": [
@@ -4874,20 +4874,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_Seabed_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_Seabed_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_Seabed_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1997_Perth_Treaty_Seabed_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Points,Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Line"
@@ -4898,7 +4898,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Treaty Indonesia Memorandum of Understanding AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_MOU_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Indonesia_Memorandum_of_Understanding_AMB2014_Points,Indonesia_Memorandum_of_Understanding_AMB2014_Limit",
             "metadataText": "Memorandum of Understanding between the Governments of Australia and the Government of the Republic of Indonesia regarding the Operations of Indonesian Traditional Fisherman in Areas of the Australian Exclusive Fishing Zone and Continental Shelf 1974. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodrome) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94.",
             "ogcLinks": [
@@ -4908,20 +4908,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_Indonesia_MOU_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_MOU_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_MOU_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_MOU_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Indonesia_Memorandum_of_Understanding_AMB2014_Points,Indonesia_Memorandum_of_Understanding_AMB2014_Limit"
@@ -4932,7 +4932,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Treaty Indonesia 1972 Seabed AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1972_Seabed_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Indonesia_1972_Seabed_Treaty_AMB2014_Points,Indonesia_1972_Seabed_Treaty_AMB2014_Limit",
             "metadataText": "Agreement between the Government of the Commonwealth of Australia and the Government of the Republic of Indonesia establishing Certain Seabed Boundaries in the Area of the Timor and Arafura Seas, supplementary to the Agreement of 18 May 1971 (Jakarta, 9 October 1972) [1973] ATS 32.",
             "ogcLinks": [
@@ -4942,20 +4942,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_Indonesia_1972_Seabed_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1972_Seabed_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1972_Seabed_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1972_Seabed_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Indonesia_1972_Seabed_Treaty_AMB2014_Points,Indonesia_1972_Seabed_Treaty_AMB2014_Limit"
@@ -4966,7 +4966,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Treaty Indonesia 1971 Seabed AMB 2014",
-            "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1971_Seabed_AMB2014a/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "layers": "Indonesia_1971_Seabed_Treaty_AMB2014_Points,Indonesia_1971_Seabed_Treaty_AMB2014_Limit",
             "metadataText": "Agreement between the Government of the Commonwealth of Australia and the Government of the Republic of Indonesia establishing Certain Seabed Boundaries (Canberra, 18 May 1971) [1973] ATS 31.",
             "ogcLinks": [
@@ -4976,20 +4976,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_Indonesia_1971_Seabed_AMB2014a/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1971_Seabed_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1971_Seabed_AMB2014a/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_Indonesia_1971_Seabed_AMB2014a/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Indonesia_1971_Seabed_Treaty_AMB2014_Points,Indonesia_1971_Seabed_Treaty_AMB2014_Limit"

@@ -200,7 +200,7 @@ app.controller('configCreatorController', ['$scope', '$log', '$timeout', '$http'
         $scope.modelChanged = function () {
             if ($scope.config) {
                 $scope.applyDefaultValues();
-                $scope.configPreview.val = angular.toJson($scope.config, true);
+                $scope.configPreview.val = JSON.stringify($scope.config, null, "\t");
             }
         };
 
@@ -210,8 +210,8 @@ app.controller('configCreatorController', ['$scope', '$log', '$timeout', '$http'
 
         $scope.$watch('configPreview.val', function () {
             if ($scope.configPreview.val) {
-                if ($scope.configPreview.val !== angular.toJson($scope.config)) {
-                    $scope.config = angular.fromJson($scope.configPreview.val);
+                if ($scope.configPreview.val !== JSON.stringify($scope.config,null, "\t")) {
+                    $scope.config = angular.fromJson($scope.configPreview.val,true);
                     //$scope.configCreatorService.updateJSONConfigOutput();
                     configCreatorService.updateJSONConfigOutput();
                 }

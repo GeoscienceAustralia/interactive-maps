@@ -167,17 +167,19 @@
     },
     "baseMaps": [
 		{
-            "slug": "ESRI_Imagery"
+            "slug": "ESRI_Imagery",
+			"maxZoomLevel": 12
         },
         {
             "slug": "World_Image_WMS"
         }
     ],
-    "layerMaps": [
+    "layerMaps": [		
 		{
-            "slug": "National_Color_Base_Map",
-			"opacity": 0.5
-        },
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1,
+			"visibility": true
+        },		
         {
             "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
             "opacity": 0.5,

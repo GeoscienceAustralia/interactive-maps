@@ -160,7 +160,8 @@
     },
     "baseMaps": [
 		{
-            "slug": "ESRI_Imagery"
+            "slug": "ESRI_Imagery",
+			"maxZoomLevel": 15
         },
         {
             "slug": "World_Image_WMS"
@@ -172,8 +173,9 @@
     ],
     "layerMaps": [
         {
-            "slug": "National_Color_Base_Map",
-			"opacity": 0.5
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1,
+			"visibility": true
         },
         {
             "slug": "Offshore_Areas_Of_The_States_AMB_2014",

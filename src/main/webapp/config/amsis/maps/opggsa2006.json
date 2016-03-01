@@ -159,6 +159,9 @@
         ]
     },
     "baseMaps": [
+		{
+            "slug": "ESRI_Imagery"
+        },
         {
             "slug": "World_Image_WMS"
         },

@@ -16,7 +16,7 @@
             "id": "templatelink",
             "title" : "Link to configCreator",
             "previewImageUrl": "content/samples/configCreator.png",
-            "previewDescription": "Link to starting Template for configCreator."
+            "previewDescription": "Link to starting Template for configCreator.",
 			"applicationUrl": "http://np.ga.gov.au/interactive-maps/index.html#/configCreator/theme/samples/map/template"
         },
 		{

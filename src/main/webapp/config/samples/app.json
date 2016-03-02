@@ -13,8 +13,8 @@
             "previewDescription": "Base map sample showing all kinds of selectable base maps."
         },
 		{
-            "id": "basemapsample",
-            "title" : "Base Map Sample",
+            "id": "wmslayersample",
+            "title" : "WMS Layer Sample",
             "previewImageUrl": "content/samples/wmslayersample.png",
             "previewDescription": "Base map sample showing all kinds of selectable base maps."
         }

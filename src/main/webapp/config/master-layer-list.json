@@ -4413,7 +4413,7 @@
             "visibility": true,
             "name": "Solomon Islands AMB 2014",
             "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
-            "layers": "Solomon_Islands_AMB2014a_Points,Solomon_Islands_AMB2014a_Limit",
+            "layers": "Solomon_Islands_AMB2014_Points,Solomon_Islands_AMB2014_Limit",
             "metadataText": "Agreement between the Government of Australia and the Government of Solomon Islands establishing Certain Sea and Seabed Boundaries (Honiara, 13 September 1988) [1989] ATS 12. Services created from the original treaty documents and densified using the line geometry defined in the treaty (geodesic or loxodromic) with a vertex placed at least every 0.5 nautical miles. This will ensure the geometry of the lines is preserved regardless of projection utilised by a Geographic Information System. Where the original datum of the treaty is not specified as GDA94, all defined points have been transformation by Geoscience Australia's National Geospatial Reference Systems Section to GDA94. Data metadata: http://www.ga.gov.au/metadata-gateway/metadata/record/82322/",
             "ogcLinks": [
                 {
@@ -4438,7 +4438,7 @@
             "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "Solomon_Islands_AMB2014a_Points,Solomon_Islands_AMB2014a_Limit"
+            "queryLayers": "Solomon_Islands_AMB2014_Points,Solomon_Islands_AMB2014_Limit"
         },
         {
             "slug": "Straight_Baselines_AMB_2014",

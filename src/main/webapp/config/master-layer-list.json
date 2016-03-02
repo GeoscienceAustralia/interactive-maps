@@ -5625,7 +5625,7 @@
 			],
 			"mapType": "ArcGISCache",
 			"visibility": true,
-			"name": "World Imagery from ArcGIS Online",
+			"name": "World Boundaries and Places from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
 			"attribution": "ESRI ArcGIS Online",
 			"metadataText": "This map presents country boundaries, first order (State/Province) internal administrative boundaries for most countries, second order administrative boundaries for the United States (counties) and some countries in Europe, and place names for the world. The map was developed by Esri using administrative and cities data from Esri; DeLorme basemap layers for the world; HERE data for North America, Europe, Australia, New Zealand, South America and Central America, Africa, and most of the Middle East; OpenStreetMap data for some features in select African countries; MapmyIndia data in India; and feature names from the GIS user community. This map is designed for use with maps with darker backgrounds, such as World Imagery. For more information on this map, including the terms of use, visit us online.",

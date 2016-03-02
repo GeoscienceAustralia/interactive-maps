@@ -76,7 +76,7 @@
             {
                 "id": "identifyTool",
                 "config": {
-                    "panelSize":"medium",
+                    "panelSize":"small",
                     "propertiesOfInterest": [
                         "NAME",
                         "OBJNAM",

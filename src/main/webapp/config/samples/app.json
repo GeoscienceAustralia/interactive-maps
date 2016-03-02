@@ -7,14 +7,27 @@
     },
     "maps": [
         {
-            "id": "basemapsample",
-            "title" : "Base Map Sample",
-            "previewImageUrl": "content/samples/basemapsamples.png",
-            "previewDescription": "Base map sample showing all kinds of selectable base maps."
+            "id": "template",
+            "title" : "Starting Template",
+            "previewImageUrl": "content/samples/configCreator.png",
+            "previewDescription": "Starting Template for configCreator."
+        },
+		{
+            "id": "templatelink",
+            "title" : "Link to configCreator",
+            "previewImageUrl": "content/samples/configCreator.png",
+            "previewDescription": "Link to starting Template for configCreator."
+			"applicationUrl": "http://np.ga.gov.au/interactive-maps/index.html#/configCreator/theme/samples/map/template"
         },
 		{
             "id": "basemapsample",
             "title" : "Base Map Sample",
+            "previewImageUrl": "content/samples/basemapsample.png",
+            "previewDescription": "Base map sample showing all kinds of selectable base maps."
+        },
+		{
+            "id": "wmslayersample",
+            "title" : "WMS Layer Sample",
             "previewImageUrl": "content/samples/wmslayersample.png",
             "previewDescription": "Base map sample showing all kinds of selectable base maps."
         }

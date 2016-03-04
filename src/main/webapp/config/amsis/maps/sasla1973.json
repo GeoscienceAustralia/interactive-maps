@@ -168,7 +168,7 @@
     },
     "baseMaps": [
 		{
-            "slug": "ESRI_Imagery",
+			"slug": "ESRI_Imagery",
 			"maxZoomLevel": 12
         },
         {
@@ -216,12 +216,7 @@
             "slug": "Normal_Baselines_AMB_2014",
             "opacity": 0.5,
 			"visibility": false
-        },
-		{				
-			"slug": "Seas_and_Submerged_Lands_Act_Combined",
-            "opacity": 0.5,
-			"visibility": true			
-		}
+        }
     ],
     "search": {
         "type": "geonames",

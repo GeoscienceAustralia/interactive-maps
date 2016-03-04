@@ -178,44 +178,36 @@
     "layerMaps": [		
 		{
             "slug": "ESRI_World_Boundaries_and_Places",
-            "opacity": 	1,
-			"visibility": true
+            "opacity": 	1
         },		
         {
             "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
-            "opacity": 0.5,
-			"visibility": false
+            "opacity": 0.5
         },
         {
             "slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
             "visibility": false,
-            "opacity": 0.5,
-			"visibility": false
+            "opacity": 0.5
         },
         {
             "slug": "Contiguous_Zone_AMB_2014",
-            "opacity": 0.5,
-			"visibility": false
+            "opacity": 0.5
         },
         {
             "slug": "Continental_Shelf_AMB_2014",
-            "opacity": 0.5,
-			"visibility": false
+            "opacity": 0.5
         },
         {
             "slug": "Territorial_Sea_AMB_2014",
-            "opacity": 0.5,
-			"visibility": false
+            "opacity": 0.5
         },       
         {
             "slug": "Straight_Baselines_AMB_2014",
-            "opacity": 0.5,
-			"visibility": false
+            "opacity": 0.5
         },
         {
             "slug": "Normal_Baselines_AMB_2014",
-            "opacity": 0.5,
-			"visibility": false
+            "opacity": 0.5
         }
     ],
     "search": {

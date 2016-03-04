@@ -6,18 +6,44 @@
         "title": "Interactive Maps Code Samples"
     },
     "maps": [
-        {
+		{
+            "id": "templatelink",
+			"tags": "ConfigCreator",
+            "title" : "Link to configCreator template",
+            "previewImageUrl": "content/samples/configCreator.png",
+            "previewDescription": "Link to starting Template for configCreator.",
+			"applicationUrl": "http://np.ga.gov.au/interactive-maps/#/configCreator/theme/samples/map/template"
+        },
+		{
             "id": "template",
+			"tags": "ConfigCreator",
             "title" : "Starting Template",
             "previewImageUrl": "content/samples/configCreator.png",
             "previewDescription": "Starting Template for configCreator."
         },
 		{
-            "id": "templatelink",
-            "title" : "Link to configCreator",
+            "id": "templatelink2",
+			"tags": "ConfigCreator",
+            "title" : "Link to raw configCreator",
             "previewImageUrl": "content/samples/configCreator.png",
             "previewDescription": "Link to starting Template for configCreator.",
-			"applicationUrl": "http://np.ga.gov.au/interactive-maps/index.html#/configCreator/theme/samples/map/template"
+			"applicationUrl": "http://np.ga.gov.au/interactive-maps/#/configCreator"
+        },
+		{
+            "id": "templatelink3",
+			"tags": "ConfigCreator",
+            "title" : "Example link to configCreator for Australian Topography",
+            "previewImageUrl": "content/samples/configCreator.png",
+            "previewDescription": "Link to config for Australian Topography.",
+			"applicationUrl": "http://np.ga.gov.au/interactive-maps/#/configCreator/theme/national-location-information/map/australiantopography"
+        },
+		{
+            "id": "templatelink4",
+			"tags": "ConfigCreator",
+            "title" : "Link to configCreator Exercise Book. This is not an official product of Geoscience Australia.",
+            "previewImageUrl": "content/samples/configCreatorExercises.png",
+            "previewDescription": "Link to configCreator Exercise Book.",
+			"applicationUrl": "http://np.ga.gov.au/interactive-maps/content/samples/Interactive_Maps_configCreator_Exercise_Book.pdf"
         },
 		{
             "id": "basemapsample",
@@ -31,5 +57,12 @@
             "previewImageUrl": "content/samples/wmslayersample.png",
             "previewDescription": "Base map sample showing all kinds of selectable base maps."
         }
-    ]
+    ],
+	"tags": [
+		{
+            "id": "ConfigCreator",
+            "description": "The configCreator allows users to see the configs behind the maps.",
+            "title": "configCreator"
+        }
+	]
 }

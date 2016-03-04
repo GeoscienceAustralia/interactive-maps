@@ -73,44 +73,12 @@
             "defaultLayerId": "Intertidal - Dominate Landform"
         },
 		{
-		"name": "OffShore Sedimentary Basins Oct 2014",
-		"visibility":false,
+		"name": "Australian Seabed Features",
+		"visibility":true,
 		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "OffShore_Sedimetary_Basins_Oct_2014",		
+		"url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WMSServer",
+		"layers": "Geomorphic_Features",		
 		"opacity": "0.5"
-		},
-		{
-		"name": "Geology Units",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "Geology Units",		
-		"opacity": "0.5"
-		},
-		{
-		"name": "Acreage Basins 2016",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "Acreage_Basins_2016",		
-		"opacity": "0.7"
-		},
-		{
-		"name": "Oil and Gas Fields",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "Oil_Fields,Gas_Fields",		
-		"opacity": "1"
-		},
-		{
-		"name": "Oil and Gas Infrastructure",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/SteveMarineGeology/MapServer/WMSServer",
-		"layers": "Infrastructure_23October_2014",		
-		"opacity": "1"
 		}
     ],
     "groupedLayers": [

@@ -5598,7 +5598,7 @@
 				-49.34
 				]
 			],
-			"mapType": "ArcGISCache",
+			"mapType": "XYZTileCache",
 			"visibility": true,
 			"name": "World Imagery from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
@@ -5609,8 +5609,9 @@
 					"description": "Service Metadata (REST)",
 					"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
 				}
-			]
-		},
+			],
+			"wrapDateLine": true
+        },
 		{
 			"slug": "ESRI_World_Boundaries_and_Places",
 			"extent": [
@@ -5623,7 +5624,7 @@
 				-49.34
 				]
 			],
-			"mapType": "ArcGISCache",
+			"mapType": "XYZTileCache",
 			"visibility": true,
 			"name": "World Boundaries and Places from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
@@ -5634,7 +5635,8 @@
 					"description": "Service Metadata (REST)",
 					"url": "http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer"
 				}
-			]
+			],
+			"wrapDateLine": true
 		},
         {
             "slug": "World_Image_XYZ",

@@ -5638,6 +5638,28 @@
 			],
 			"wrapDateLine": true
 		},
+		{
+			"slug": "World_Heritage_Areas_Australia",
+			"extent": [[72,-10],[168,-55]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "World Heritage Areas Australia",
+			"url": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas/MapServer/WMSServer",
+			"layers": "World_Heritage_Areas_Australia",
+			"metadataText": "Australian heritage places that are of outstanding universal value and have been included on this United Nations Educational, Scientific and Cultural Organisation (UNESCO) - managed World Heritage list.",
+			"ogcLinks": [
+				{
+					"description": "WMS Capabilities",
+					"url": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				}
+			],
+			"opacity": 0.8,
+			"queryFeatures": true,
+			"queryUrl": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.3.0",
+			"queryLayers": "World_Heritage_Areas_Australia"
+		},
         {
             "slug": "World_Image_XYZ",
             "mapType": "XYZTileCache",

@@ -80,7 +80,39 @@
                 "id": "clientMeasure"
             },
             {
-                "id": "distanceBoundary"
+                "id": "distanceBoundary",
+                "config": {
+                    "boundaries": [
+                        {
+                            "id": "Australian Coastline",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToAustralianCoast/"
+                        },
+                        {
+                            "id": "Coastal Waters",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToCoastalWatersLimit/"
+                        },
+                        {
+                            "id": "Territorial Sea",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToTerritorialSeaZoneLimit/"
+                        },
+                        {
+                            "id": "Contiguous Zone",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContiguousZoneLimit/"
+                        },
+                        {
+                            "id": "Exclusive Economic Zone",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneLimit/"
+                        },
+                        {
+                            "id": "Exclusive Economic Zone as Amended by the Perth Treaty 1997",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneAmendedPerthLimit/"
+                        },
+                        {
+                            "id": "Continental Shelf",
+                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContinentalShelf/"
+                        }
+                    ]
+                }
             },
             {
                 "id": "identifyTool",

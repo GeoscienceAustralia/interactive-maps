@@ -25,32 +25,32 @@
             "previewDescription": "Marine Environmental."
         },
 		{
-            "title": "Proposed Acreage Marine Bathymetry",
-			"tags": "Proposed Acreage",
+            "title": "Acreage Marine Bathymetry",
+			"tags": "Acreage",
             "id": "PARmarinebathymetry",
             "previewImageUrl": "content/marine/acreage/PARmarinebathymetry.png",
-            "previewDescription": "Proposed Acreage Marine Bathymetry."
+            "previewDescription": "Acreage Marine Bathymetry."
         },
 		{
-            "title": "Proposed Acreage Marine Geology",
-			"tags": "Proposed Acreage",
+            "title": "Acreage Marine Geology",
+			"tags": "Acreage",
             "id": "PARmarinegeology",
             "previewImageUrl": "content/marine/acreage/PARmarinegeology.png",
-            "previewDescription": "Proposed Acreage Marine Geology."
+            "previewDescription": "Acreage Marine Geology."
         },
 		{
-            "title": "Proposed Acreage Marine Environmental",
-			"tags": "Proposed Acreage",
+            "title": "Acreage Marine Environmental",
+			"tags": "Acreage",
             "id": "PARmarineenvironmental",
             "previewImageUrl": "content/marine/acreage/PARmarineenvironmental.png",
-            "previewDescription": "Proposed Acreage Marine Environmental."
+            "previewDescription": "Acreage Marine Environmental."
         }
     ],
     "tags": [
         {
-            "id": "Proposed Acreage",
-            "description": "Proposed Acreage Release 2016.",
-            "title": "Proposed Acreage"
+            "id": "Acreage",
+            "description": "Acreage Release 2016.",
+            "title": "Acreage"
         }
     ]
 }

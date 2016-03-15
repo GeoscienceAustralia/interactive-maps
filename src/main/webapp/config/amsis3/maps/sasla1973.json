@@ -80,39 +80,7 @@
                 "id": "clientMeasure"
             },
             {
-                "id": "distanceBoundary",
-                "config": {
-                    "boundaries": [
-                        {
-                            "id": "Australian Coastline",
-                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToAustralianCoast/"
-                        },
-                        {
-                            "id": "Coastal Waters",
-                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToCoastalWatersLimit/"
-                        },
-                        {
-                            "id": "Territorial Sea",
-                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToTerritorialSeaZoneLimit/"
-                        },
-                        {
-                            "id": "Contiguous Zone",
-                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContiguousZoneLimit/"
-                        },
-                        {
-                            "id": "Exclusive Economic Zone",
-                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneLimit/"
-                        },
-                        {
-                            "id": "Exclusive Economic Zone as Amended by the Perth Treaty 1997",
-                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToExclusiveEconomicZoneAmendedPerthLimit/"
-                        },
-                        {
-                            "id": "Continental Shelf",
-                            "url": "http://www.ga.gov.au/gisgp/rest/services/marine_coastal/AMSIS_DistanceTo_Service/GPServer/DistanceToContinentalShelf/"
-                        }
-                    ]
-                }
+                "id": "distanceBoundary"
             },
             {
                 "id": "identifyTool",
@@ -182,7 +150,8 @@
         },		
         {
             "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
-            "opacity": 0.5
+            "visibility": false,
+			"opacity": 0.5
         },
         {
             "slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
@@ -191,23 +160,33 @@
         },
         {
             "slug": "Contiguous_Zone_AMB_2014",
-            "opacity": 0.5
+            "visibility": false,
+			"opacity": 0.5
         },
         {
             "slug": "Continental_Shelf_AMB_2014",
-            "opacity": 0.5
+            "visibility": false,
+			"opacity": 0.5
         },
         {
             "slug": "Territorial_Sea_AMB_2014",
-            "opacity": 0.5
+            "visibility": false,
+			"opacity": 0.5
         },       
         {
             "slug": "Straight_Baselines_AMB_2014",
-            "opacity": 0.5
+            "visibility": false,
+			"opacity": 0.5
         },
         {
             "slug": "Normal_Baselines_AMB_2014",
-            "opacity": 0.5
+            "visibility": false,
+			"opacity": 0.5
+        },
+		{
+            "slug": "Seas_and_Submerged_Lands_Act_Combined",
+            "visibility": true,
+			"opacity": 0.5
         }
     ],
     "search": {

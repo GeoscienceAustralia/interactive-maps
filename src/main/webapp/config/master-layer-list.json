@@ -5632,7 +5632,7 @@
 			"visibility": true,
 			"name": "World Imagery from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
-			"attribution": "ESRI ArcGIS Online",
+			"attribution": "ESRI ArcGIS Online <a target='_blank' href='http://www.arcgis.com/home/item.html?id=86de95d4e0244cba80f0fa2c9403a7b2'>World Imagery</a>",
 			"metadataText": "World Imagery provides one meter or better satellite and aerial imagery in many parts of the world and lower resolution satellite imagery worldwide. The map includes 15m TerraColor imagery at small and mid-scales (591M down to 72k) and 2.5m SPOT Imagery (288k to 72k) for the world, and USGS 15m Landsat imagery for Antarctica. The map features 0.3m resolution imagery in the continental United States and 0.6m resolution imagery in parts of Western Europe from Digital Globe. Recent 1m USDA NAIP imagery is available in select states of the US. In other parts of the world, 1 meter resolution imagery is available from GeoEye IKONOS, Getmapping, AeroGRID, IGN Spain, and IGP Portugal. Additionally, imagery at different resolutions has been contributed by the GIS User Community.",
 			"ogcLinks": [
 				{
@@ -5658,7 +5658,7 @@
 			"visibility": true,
 			"name": "World Boundaries and Places from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
-			"attribution": "ESRI ArcGIS Online",
+			"attribution": "ESRI ArcGIS Online <a target='_blank' href='http://www.arcgis.com/home/item.html?id=a842e359856a4365b1ddf8cc34fde079'>World Boundaries and Places</a>",
 			"metadataText": "This map presents country boundaries, first order (State/Province) internal administrative boundaries for most countries, second order administrative boundaries for the United States (counties) and some countries in Europe, and place names for the world. The map was developed by Esri using administrative and cities data from Esri; DeLorme basemap layers for the world; HERE data for North America, Europe, Australia, New Zealand, South America and Central America, Africa, and most of the Middle East; OpenStreetMap data for some features in select African countries; MapmyIndia data in India; and feature names from the GIS user community. This map is designed for use with maps with darker backgrounds, such as World Imagery. For more information on this map, including the terms of use, visit us online.",
 			"ogcLinks": [
 				{

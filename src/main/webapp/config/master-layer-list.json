@@ -3978,7 +3978,7 @@
 		},
 		{
 		"slug": "Seas_and_Submerged_Lands_Act_Combined",
-		"extent": [[30,10],[180,-70]],
+		"extent": [[30,-4],[177,-70]],
 		"mapType": "ArcGISCache",
 		"visibility": true,
 		"name": "Seas and Submerged Lands Act Combined",

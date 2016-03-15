@@ -112,7 +112,7 @@
 					"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 				}
 			],
-			"opacity": 0.7,
+			"opacity": 0.5,
 			"queryFeatures": true,
 			"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"queryUrlType": "WMS",

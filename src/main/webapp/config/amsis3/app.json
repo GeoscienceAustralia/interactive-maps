@@ -111,6 +111,11 @@
             "title": "Offshore Petroleum and Minerals"
         },
 		{
+            "id": "Treaties",
+            "description": "The treaties shown on AMSIS are those related to various maritime agreements between Australia and neighbouring countries. The table below links the various treaties displayed in AMSIS with the text or details of the specific treaty. In some cases more than one treaty is relevant.",
+            "title": "Treaties"
+        },
+		{
             "id": "Legacy",
             "description": "The legacy AMSIS contains data from 2006-2014. The legacy data will moved into regular AMSIS as new services and data are supplied by contributing agencies.",
             "title": "Legacy AMSIS"

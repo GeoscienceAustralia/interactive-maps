@@ -92,11 +92,7 @@
             "slug": "World_Image_WMS"
         }
     ],
-    "layerMaps": [		
-		{
-            "slug": "ESRI_World_Boundaries_and_Places",
-            "opacity": 	1
-        },		
+    "layerMaps": [
 		{
 			"slug": "Australian_Whale_Sanctuary_Legacy",
 			"extent": [[72,-10],[168,-55]],
@@ -209,7 +205,11 @@
 			"queryUrlType": "WMS",
 			"queryVersion": "1.3.0",
 			"queryLayers": "Ocean_Disposal_Areas,Ocean_Disposal_Points_Chemical_Dump,Ocean_Disposal_Points_Chemical_Dump,Ocean_Disposal_Points_Ammo_Dump"
-		}
+		},
+		{
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1
+        }
     ],
     "search": {
         "type": "geonames",

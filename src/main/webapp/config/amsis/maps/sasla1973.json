@@ -143,11 +143,7 @@
             "slug": "World_Image_WMS"
         }
     ],
-    "layerMaps": [		
-		{
-            "slug": "ESRI_World_Boundaries_and_Places",
-            "opacity": 	1
-        },		
+    "layerMaps": [
         {
             "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
             "visibility": false,
@@ -187,6 +183,10 @@
             "slug": "Seas_and_Submerged_Lands_Act_Combined",
             "visibility": true,
 			"opacity": 0.5
+        },
+		{
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1
         }
     ],
     "search": {

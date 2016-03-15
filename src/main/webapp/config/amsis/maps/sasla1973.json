@@ -185,7 +185,7 @@
         },
 		{
             "slug": "Seas_and_Submerged_Lands_Act_Combined",
-            "visibility": false,
+            "visibility": true,
 			"opacity": 0.5
         }
     ],

@@ -21,7 +21,7 @@ The application also contains a config creator (BETA) which allows you to easily
 
 ## Running locally
 
-[Please refer to the wiki](https://github.com/GeoscienceAustralia/interactive-maps/wiki/Running-locally)
+[Please refer to the wiki](https://github.com/GeoscienceAustralia/interactive-maps/wiki/Running-locally-with-Tomcat-or-NodeJS)
 
 ## Building
 

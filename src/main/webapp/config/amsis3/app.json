@@ -16,49 +16,49 @@
         },
         {
             "title": "Offshore Petroleum and Greenhouse Gas Storage Act 2006",
-            "tags": "Petroleum&Minerals",
+            "tags": "OffshorePetroleum",
             "id": "opggsa2006",
             "previewImageUrl": "content/amsis/opggsa2006/mapPreview.png",
             "previewDescription": "An Act about petroleum exploration and recovery, and the injection and storage of greenhouse gas substances, in offshore areas, and for other purposes."
         },
         {
             "title": "Treaties with East Timor",
-            "tags": "Treaties",
+            "tags": "MaritimeBoundaries",
             "id": "twet",
             "previewImageUrl": "content/amsis/twet/mapPreview.jpg",
             "previewDescription": "Treaties in force between the Commonwealth of Australia and the Democratic Republic of East Timor."
         },
         {
             "title": "Treaties with France",
-            "tags": "Treaties",
+            "tags": "MaritimeBoundaries",
             "id": "twf",
             "previewImageUrl": "content/amsis/twf/mapPreview.jpg",
             "previewDescription": "Treaties in force between the Commonwealth of Australia and the Republic of France."
         },
         {
             "title": "Treaties with Indonesia",
-            "tags": "Treaties",
+            "tags": "MaritimeBoundaries",
             "id": "twi",
             "previewImageUrl": "content/amsis/twi/mapPreview.jpg",
             "previewDescription": "Treaties both in force and not yet in force between the Commonwealth of Australia and the Republic of Indonesia."
         },
         {
             "title": "Treaties with New Zealand",
-            "tags": "Treaties",
+            "tags": "MaritimeBoundaries",
             "id": "twnz",
             "previewImageUrl": "content/amsis/twnz/mapPreview.jpg",
             "previewDescription": "Treaties in force between the Commonwealth of Australia and New Zealand."
         },
         {
             "title": "Treaties with Papua New Guinea",
-            "tags": "Treaties",
+            "tags": "MaritimeBoundaries",
             "id": "twpn",
             "previewImageUrl": "content/amsis/twpn/mapPreview.jpg",
             "previewDescription": "Treaties in force between the Commonwealth of Australia and the Independent State of Papua New Guinea."
         },
         {
             "title": "Treaties with Solomon Islands",
-            "tags": "Treaties",
+            "tags": "MaritimeBoundaries",
             "id": "twsi",
             "previewImageUrl": "content/amsis/twsi/mapPreview.jpg",
             "previewDescription": "Treaties in force between the Commonwealth of Australia and the Government of the Solomon Islands."
@@ -106,19 +106,34 @@
             "title": "Maritime Boundaries"
         },
         {
-            "id": "Petroleum&Minerals",
+            "id": "OffshorePetroleum",
             "description": "Petroleum and mineral resource blocks as described by Australian legislation.",
-            "title": "Offshore Petroleum and Minerals"
+            "title": "Offshore Petroleum"
         },
 		{
-            "id": "Treaties",
-            "description": "The treaties shown on AMSIS are those related to various maritime agreements between Australia and neighbouring countries. The table below links the various treaties displayed in AMSIS with the text or details of the specific treaty. In some cases more than one treaty is relevant.",
-            "title": "Treaties"
+            "id": "OffshoreMinerals",
+            "description": "Offshore Minerals as described by Australian legislation.",
+            "title": "Offshore Minerals"
         },
 		{
-            "id": "Legacy",
-            "description": "The legacy AMSIS contains data from 2006-2014. The legacy data will moved into regular AMSIS as new services and data are supplied by contributing agencies.",
-            "title": "Legacy AMSIS"
+            "id": "Environment",
+            "description": "",
+            "title": "Environmental areas as described by Australian legislation."
+        },
+		{
+            "id": "Fisheries",
+            "description": "Australian fisheries areas as described by Australian legislation.",
+            "title": "Fisheries"
+        },
+		{
+            "id": "NativeTitle",
+            "description": "Australian native title as described by Australian legislation.",
+            "title": "Native Title"
+        },
+		{
+            "id": "Regulatory",
+            "description": "Australian marine regulatory layers.",
+            "title": "Regulatory"
         },
         {
             "id": "Other",

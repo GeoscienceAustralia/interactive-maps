@@ -1,6 +1,6 @@
 {
-    "title": "AMSIS",
-    "id": "amsis",
+    "id": "amsis3",
+	"title": "AMSIS",    
     "blurb": "Australian Marine Spatial Information System (AMSIS) is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction. The data has been sourced from Geoscience Australia, other Australian government agencies and some industry sources. AMSIS also contains the offshore mineral locations data that was used to create the Offshore Minerals Map. Information in this application should not be relied upon as the sole source of information for commercial and operational decisions. AMSIS should not be used for navigational purposes.",
     "headerConfig": {
         "title": "Applying geoscience to Australia's most important challenges",

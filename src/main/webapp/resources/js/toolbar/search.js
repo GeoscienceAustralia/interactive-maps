@@ -49,7 +49,7 @@ app.controller('searchController', [ '$scope', 'externalToolService', function (
 
         if (data.length === 1) {
             $scope.mapController.setCenter(data[0].geometry.coordinates[1], data[0].geometry.coordinates[0], data[0].crs.properties.name);
-            $scope.mapController.zoomTo(8);
+            $scope.mapController.zoomTo(17);
         } else {
             var extentPoints = [];
             var projection;

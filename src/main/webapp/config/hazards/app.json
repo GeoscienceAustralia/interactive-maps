@@ -19,6 +19,12 @@
             "previewDescription": "Earthquake hazard web map service created by Geoscience Australia. The service contains the 2013 Earthquake Hazard map, as a raster and contours."
         },
         {
+            "id": "sentinel",
+            "title": "Sentinel",
+            "previewImageUrl": "content/hazards/earthquakehazards/mapPreview.png",
+            "previewDescription": "Earthquake hazard web map service created by Geoscience Australia. The service contains the 2013 Earthquake Hazard map, as a raster and contours."
+        },
+        {
             "title": "Sentinel Hotspots",
             "tags": "Other",
             "previewImageUrl": "content/hazards/sentinel.png",

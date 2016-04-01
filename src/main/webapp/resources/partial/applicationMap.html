@@ -290,6 +290,10 @@
     <img src="resources/img/globe.png" title="Set initial extent" ng-click="setInitialExtent()"/>
 </div>
 
+<div class="setCurrentLocationBtn" ng-controller="resetMapPositionController">
+    <img src="resources/img/target.png" title="Set initial extent" ng-click="setCurrentLocation()"/>
+</div>
+
 <!-- Search Container -->
 <div class="searchContainer" ng-controller="searchController" >
 	<div ng-if="searchReady && mapController != null" id="search" >

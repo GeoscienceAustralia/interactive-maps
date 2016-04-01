@@ -491,7 +491,7 @@ img.olTileImage {
 .olControlPanZoomBar {
 	left: inherit !important;
 	right: 10px;
-	top: 125px !important;
+	top: 150px !important;
     margin-right: 25px;
 	/* top: inherit !important; */
 	-webkit-transition: all 0.3s ease;
@@ -1558,6 +1558,19 @@ div .olControlNoSelect {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    cursor: pointer; cursor: hand;
+}
+
+.setCurrentLocationBtn {
+    right:10px;
+    top: 200px;
+    position: absolute;
+    height: 25px;width: 25px;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer; cursor: hand;
 }
 
 /* Device specific media queries */

@@ -3,7 +3,7 @@
     "title": "Offshore Petroleum and Greenhouse Gas Storage Act 2006",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv2",	
+	"framework":"olv3",	
     "initialExtent": [
         [
             38,

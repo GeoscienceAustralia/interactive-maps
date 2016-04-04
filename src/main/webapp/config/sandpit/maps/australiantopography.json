@@ -3,6 +3,7 @@
     "title": "Australian Topography",
     "datumProjection": "EPSG:102100",
     "displayProjection": "EPSG:4326",
+	"framework":"olv3",
     "initialExtent": [
         [
 			114.36,

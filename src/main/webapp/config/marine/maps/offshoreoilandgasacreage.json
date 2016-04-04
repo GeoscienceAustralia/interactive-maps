@@ -2,7 +2,7 @@
 	"id": "offshoreoilandgasacreage",
 	"datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv2",	
+	"framework":"olv3",	
 	"title": "Offshore Oil and Gas",
 	"initialExtent": [
 		[

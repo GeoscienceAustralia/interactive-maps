@@ -5,7 +5,7 @@
     "previewDescription": "Geoscience Australia provides advice, expertise and support to the ATSB in sea floor mapping (bathymetric survey) and the underwater search.",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv2",	
+	"framework":"olv3",	
     "initialExtent": [
         [80, -15],
         [121, -45]

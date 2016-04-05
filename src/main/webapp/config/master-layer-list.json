@@ -2228,15 +2228,11 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-				{
-                    "description": "WCS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012/ImageServer/WCSServer?request=GetCapabilities&service=WCS"
+                    "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer/WMSServer?f=lyr&v=9.3"
+                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer?f=lyr&v=9.3"
                 }                
             ]
         },
@@ -2268,9 +2264,13 @@
                     "description": "WMS Capabilities",
                     "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
+				{
+                    "description": "WFS Capabilities",
+                    "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+                },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer?f=lyr&v=9.3"
+                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_Survey_Extents/MapServer?f=lyr&v=9.3"
                 }                
             ]
         },

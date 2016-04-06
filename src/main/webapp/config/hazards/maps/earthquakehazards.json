@@ -3,7 +3,7 @@
     "title": "Earthquake Hazards",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv2",,	
+	"framework":"olv2",	
     "initialExtent": [
         [
             99,

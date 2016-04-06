@@ -5,7 +5,7 @@
     "previewDescription": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes.",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv2",,
+	"framework":"olv2",
     "initialExtent": [
         [
             112,

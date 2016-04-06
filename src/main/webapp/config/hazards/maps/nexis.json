@@ -3,7 +3,7 @@
     "title": "National Exposure Information System",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",	
+	"framework":"olv2",,	
     "initialExtent": [
         [
 			72.56,

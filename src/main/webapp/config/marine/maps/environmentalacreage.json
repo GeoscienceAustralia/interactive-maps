@@ -2,7 +2,7 @@
 	"id": "environmentalacreage",
 	"datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",	
+	"framework":"olv2",,	
 	"title": "Offshore Environment",
 	"initialExtent": [
 		[

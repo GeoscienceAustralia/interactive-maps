@@ -5643,6 +5643,32 @@
 			"wrapDateLine": true
         },
 		{
+			"slug": "ESRI_Dark_Gray",
+			"extent": [
+				[
+				135.53,
+				-31.61
+				],
+				[
+				157.11,
+				-49.34
+				]
+			],
+			"mapType": "XYZTileCache",
+			"visibility": true,
+			"name": "World Imagery from ArcGIS Online",
+			"url": "http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer",
+			"attribution": "ESRI ArcGIS Online <a target='_blank' href='http://www.arcgis.com/home/item.html?id=86de95d4e0244cba80f0fa2c9403a7b2'>Dark Grey</a>",
+			"metadataText": "This map draws attention to your thematic content by providing a neutral background with minimal colors, labels, and features. Only key information is represented to provide geographic context, allowing your data to come to the foreground. This dark gray map supports bright colors, creating a visually compelling map graphic which helps your reader see the patterns intended. This map was developed by Esri using HERE data, DeLorme basemap layers, OpenStreetMap contributors, Esri basemap data, and select data from the GIS user community. Worldwide coverage is provided from Level 0 (1:591M scale) through Level 10 (1:577k scale). In North America, Central and South America, Africa, India, Australia & New Zealand, Pacific Islands, and select countries in the Middle East from Level 11 (1:288k scale) through Level 16 (1:9k scale).",
+			"ogcLinks": [
+				{
+					"description": "Service Metadata (REST)",
+					"url": "http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer"
+				}
+			],
+			"wrapDateLine": true
+        },
+		{
 			"slug": "ESRI_World_Boundaries_and_Places",
 			"extent": [
 				[

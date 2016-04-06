@@ -3,7 +3,7 @@
     "title": "Treaties with Solomon Islands",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",	
+	"framework":"olv2",,	
     "initialExtent": [
         [
             150,

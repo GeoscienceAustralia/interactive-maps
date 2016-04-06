@@ -173,18 +173,18 @@
                 </div>
                 <div id="mapCenterPosition" class="tab-pane fade" style="margin-bottom: 15px;">
                     <div class="form-group" style="float:left; width:40%; margin-right:10%;"
-                         ng-class="{'has-error': mapDetails.configPositionLat.$invalid}">
-                        <label class="control-label" for="configPositionLat">Latitude Center Position</label>
-                        <input type="number" name="configPositionLat" min="-90" max="90"
-                               ng-model="config.centerPosition.lat"
-                               class="form-control" ng-change="modelChanged()" id="configPositionLat" required/>
-                    </div>
-                    <div class="form-group" style="float:left; width:40%; margin-right:5px;"
                          ng-class="{'has-error': mapDetails.configPositionLon.$invalid}">
                         <label class="control-label" for="configPositionLon">Longitude Center Position</label>
                         <input type="number" name="configPositionLon"
-                               ng-model="config.centerPosition.lon"
+                               ng-model="config.centerPosition[0]"
                                class="form-control" ng-change="modelChanged()" id="configPositionLon" required/>
+                    </div>
+                    <div class="form-group" style="float:left; width:40%; margin-right:5px;"
+                         ng-class="{'has-error': mapDetails.configPositionLat.$invalid}">
+                        <label class="control-label" for="configPositionLat">Latitude Center Position</label>
+                        <input type="number" name="configPositionLat"
+                               ng-model="config.centerPosition[1]"
+                               class="form-control" ng-change="modelChanged()" id="configPositionLat" required/>
                     </div>
 
                     <div class="form-group" style="float:left; padding-top:23px;">

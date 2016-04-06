@@ -16,6 +16,7 @@
                         [0,0]
                     ];
                 }
+                resetCenterPosition();
 
                 /* Fix to show correct value with OL specific for longitude
                  * $scope.config.initialExtent[1][0] = parseFloat(me[3][1].toFixed(2)) > 180 ?
@@ -33,6 +34,7 @@
             };
 
             $scope.populateCenterPosition = function () {
+                resetInitialExtent();
                 var currentExtent = $scope.mapController.getCurrentMapExtent();
                 var tl = (currentExtent[0][1] - currentExtent[3][1]) / 2;
                 var br = (currentExtent[0][0] - currentExtent[3][0]) / 2;
@@ -40,12 +42,20 @@
                 var tlsum = currentExtent[0][1] - Math.abs(tl);
                 var brsum = currentExtent[0][0] + Math.abs(br);
                 $timeout(function () {
-                    $scope.config.centerPosition = $scope.config.centerPosition || {};
-                    $scope.config.centerPosition.lat = parseFloat(tlsum.toFixed(2));
-                    $scope.config.centerPosition.lon = parseFloat(brsum.toFixed(2));
+                    $scope.config.centerPosition = $scope.config.centerPosition || [];
+                    $scope.config.centerPosition[1] = parseFloat(tlsum.toFixed(2));
+                    $scope.config.centerPosition[0] = parseFloat(brsum.toFixed(2));
                     $scope.modelChanged();
                 });
             };
+
+            function resetInitialExtent() {
+                $scope.config.initialExtent = null;
+            }
+
+            function resetCenterPosition() {
+                $scope.config.centerPosition = null;
+            }
         }]);
 })();
 

@@ -3,7 +3,7 @@
 	"title": "Commonwealth Coral Sea Fishery 2006",
 	"datumProjection": "EPSG:3857",
 	"displayProjection": "EPSG:4326",
-	"framework":"olv3",	
+	"framework":"olv2",,	
 	"initialExtent": [
 		[
 			131.03,

@@ -6,13 +6,13 @@
 	"framework":"olv2",	
     "initialExtent": [
         [
-            70,
-            10
-        ],
-        [
-            180,
-            -70
-        ]
+		65.04,
+		15.2
+		],
+		[
+		162.77,
+		-59.76
+		]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,

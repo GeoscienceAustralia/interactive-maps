@@ -3,7 +3,7 @@
     "title": "Marine Seabed",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv2",,	
+	"framework":"olv2",	
     "initialExtent": [
         [99, 10],
         [169, -55]

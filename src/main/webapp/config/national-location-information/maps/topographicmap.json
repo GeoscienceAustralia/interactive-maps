@@ -3,6 +3,7 @@
 	"datumProjection": "EPSG:3857",
 	"displayProjection": "EPSG:4326",
 	"title": "Topographic Base Map",
+	"framework":"olv2",	
 	"headerConfig": {
 		"title": "Topographic Base Map"
 	},

@@ -24,7 +24,8 @@
         '$log',
         'GeoLayerService',
         'geoConfig',
-        function ($scope, $routeParams, MeasureDistanceService, ExportService, interactiveMapsTermsAndConditions, $modal, geoTemplateService, $timeout, $log,GeoLayerService,appDefaults) {
+        'MasterLayersService',
+        function ($scope, $routeParams, MeasureDistanceService, ExportService, interactiveMapsTermsAndConditions, $modal, geoTemplateService, $timeout, $log,GeoLayerService,appDefaults,MasterLayersService) {
             $scope.interrogateFeatures = [];
             $scope.searchFeatures = [];
 
@@ -139,7 +140,9 @@
                 if(configOverview.layers == null) {
                     return configuredOverviewOptions;
                 }
+                //populate from master layer list
                 var configuredCustomLayers = angular.copy(configOverview.layers);
+                configuredCustomLayers = MasterLayersService.loadFromMasterLayerList(configuredCustomLayers);
                 configuredOverviewOptions.layers = [];
                 for (var i = 0; i < configuredCustomLayers.length; i++) {
                     var layerArgs = configuredCustomLayers[i];

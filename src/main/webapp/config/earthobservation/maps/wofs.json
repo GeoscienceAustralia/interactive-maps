@@ -3,7 +3,7 @@
     "title": "Water Observations from Space",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",
+	"framework":"olv2",
     "initialExtent": [
         [
             99,
@@ -114,8 +114,11 @@
     },
     "baseMaps": [
         {
-            "slug": "World_Image_XYZ"
-        }
+            "slug": "ESRI_Dark_Gray"
+        },
+		{
+			"slug"" "ESRI_Imagery"
+		}
     ],
     "layerMaps": [
         {

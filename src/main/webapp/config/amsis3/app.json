@@ -65,28 +65,28 @@
         },		
 		{
             "title": "Fisheries Legacy Services",
-            "tags": "Legacy",
+            "tags": "Fisheries",
 			"id": "fisherieslegacy",
             "previewImageUrl": "content/amsis/fisheries.png",
             "previewDescription": "The Act relating to the management of Fisheries is The Fisheries Management Act 1991."
         },
 		{
             "title": "Regulatory Legacy Services",
-            "tags": "Legacy",
+            "tags": "Regulatory",
 			"id": "regulartorylegacy",
             "previewImageUrl": "content/amsis/regulatory.png",
             "previewDescription": "Map of Australian Maritime Regulatory features, featuring data from supplied by the Australian Maritime Safety Authority"
         },
 		{
             "title": "Environment Legacy Services",
-            "tags": "Legacy",
+            "tags": "Environment",
 			"id": "environmentlegacy",
             "previewImageUrl": "content/amsis/environment.png",
             "previewDescription": "Map of Australian Maritime Environment features, featuring data from supplied by the Department of Environment, legacy and new"
         },
 		{
             "title": "Australian Ocean Governance and Relevant Legislation",
-            "tags": "Legacy",
+            "tags": "Other",
             "previewImageUrl": "content/amsis/legislation.jpg",
             "previewDescription": "This information provides an overview of legislation and background information which relates to data found in the Australian Marine Spatial Information System (AMSIS).",
             "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/australian-ocean-governance-and-relevant-legislation"
@@ -137,8 +137,8 @@
         },
         {
             "id": "Other",
-            "description": "Relevant AMSIS applications.",
-            "title": "Related Applications"
+            "description": "Relevant AMSIS information and applications.",
+            "title": "Related Information and Applications"
         }
     ]
 }

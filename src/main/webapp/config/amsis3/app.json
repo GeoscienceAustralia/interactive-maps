@@ -75,14 +75,14 @@
             "tags": "Regulatory",
 			"id": "regulartorylegacy",
             "previewImageUrl": "content/amsis/regulatory.png",
-            "previewDescription": "Map of Australian Maritime Regulatory features, featuring data from supplied by the Australian Maritime Safety Authority"
+            "previewDescription": "Map of Australian Maritime Regulatory features, featuring data from supplied by the Australian Maritime Safety Authority."
         },
 		{
             "title": "Environment Legacy Services",
             "tags": "Environment",
 			"id": "environmentlegacy",
             "previewImageUrl": "content/amsis/environment.png",
-            "previewDescription": "Map of Australian Maritime Environment features, featuring data from supplied by the Department of Environment, legacy and new"
+            "previewDescription": "Map of Australian Maritime Environment features, featuring data from supplied by the Department of Environment, legacy and new."
         },
 		{
             "title": "Australian Ocean Governance and Relevant Legislation",
@@ -117,8 +117,8 @@
         },
 		{
             "id": "Environment",
-            "description": "",
-            "title": "Environmental areas as described by Australian legislation."
+            "description": "Environmental areas as described by Australian legislation.",
+            "title": "Environment"
         },
 		{
             "id": "Fisheries",

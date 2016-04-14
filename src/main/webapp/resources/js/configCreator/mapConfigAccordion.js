@@ -13,9 +13,8 @@
             };
 
             $scope.saveJSON = function () {
-                var string = angular.toJson($scope.configPreview, null, "\t");
-                var encodedString = configCreatorService.b64EncodeUnicode(string);
-                var dataUrl = 'data:application/octet-stream;base64,' + encodedString;
+                var encodedString = configCreatorService.b64EncodeUnicode($scope.configPreview.val);
+                var dataUrl = 'data:text/json;base64,' + encodedString;
                 var anchor = document.createElement('a');
                 anchor.setAttribute('href', dataUrl);
                 anchor.setAttribute('download', $scope.config.id + '.json');

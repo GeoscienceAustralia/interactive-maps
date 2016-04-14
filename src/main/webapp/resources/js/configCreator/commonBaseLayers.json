@@ -12,36 +12,9 @@
             "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
         },
         {
-            "mapType": "GoogleStreet",
-            "visibility": false,
-            "name": "Google Street",
-            "opacity": 1.0,
-            "wrapDateLine": true,
-            "maxZoomLevel" : 12,
-            "attribution":  "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
-        },
-        {
-            "mapType": "GoogleHybrid",
-            "visibility": false,
-            "name": "Google Hybrid",
-            "opacity": 1.0,
-            "wrapDateLine": true,
-            "maxZoomLevel" : 12,
-            "attribution":  "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
-        },
-        {
             "mapType": "GoogleSatellite",
             "visibility": false,
             "name": "Google Satellite",
-            "opacity": 1.0,
-            "wrapDateLine": true,
-            "maxZoomLevel" : 12,
-            "attribution":  "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and Google Maps"
-        },
-        {
-            "mapType": "GoogleTerrain",
-            "visibility": false,
-            "name": "Google Terrain",
             "opacity": 1.0,
             "wrapDateLine": true,
             "maxZoomLevel" : 12,

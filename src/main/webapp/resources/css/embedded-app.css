@@ -31,7 +31,7 @@ body {
 }
 
 
-@media screen and (max-width: 640px), screen and (max-height: 640px) {
+@media screen and (max-width: 480px), screen and (max-height: 480px) {
     .olControlMousePosition {
         display: none !important;
     }

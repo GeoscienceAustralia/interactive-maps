@@ -106,7 +106,7 @@ app.service('QueryService', ['WMSDataService', '$q', '$http', function (WMSDataS
                             event));
                     }
                     if (ep.queryType === 'ArcGISREST') {
-                        promises.push(service.QueryArcGISRESTByConfiguredEndpoint(mapController, ep, event, toolConfigData));
+                        promises.push(service.QueryArcGISRESTByConfiguredEndpoint(mapController, ep, event, 'EPSG:4326',toolConfigData));
                     }
                     postCreateCallback(ep, endPointIndex);
                 }

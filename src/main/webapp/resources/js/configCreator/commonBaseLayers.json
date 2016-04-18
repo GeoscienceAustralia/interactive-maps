@@ -30,6 +30,9 @@
             "wrapDateLine": true,
             "maxZoomLevel" : 12,
             "attribution": "Political <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
-        }
+        },
+		{
+			"slug": "ESRI_Imagery"
+		}
     ]
 }

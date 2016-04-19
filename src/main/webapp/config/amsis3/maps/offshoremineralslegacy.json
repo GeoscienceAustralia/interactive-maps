@@ -23,7 +23,7 @@
     },
     "aboutConfig": {
         "enabled": true,
-        "bodyUrl": "content/amsis/sasla1973/about.html"
+        "bodyUrl": "content/amsis/amsislegacy/aboutlegacy.html"
     },
     "layersConfig": {
         "enabled": true
@@ -40,17 +40,6 @@
         "timeout": 5000,
         "tools": [
             {
-                "id": "info",
-                "config": {
-                    "infoList": [
-                        {
-                            "id": "Seas and Submerged Lands Act 1973 - Australian Maritime Boundaries 2014 - Geodatabase",
-                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_83170"
-                        }
-                    ]
-                }
-            },
-            {
                 "id": "addLayer"
             },
             {
@@ -65,19 +54,6 @@
             {
                 "id": "distanceBoundary"
 			},
-            {
-                "id": "identifyTool",
-                "config": {
-					"panelSize":"small",
-                    "propertiesOfInterest": [
-                        "NAME"
-                    ],
-                    "propertiesAlias": [
-                        "Name"
-                    ],
-                    "primaryPropertyName": "NAME"
-                }
-            },
             {
                 "id": "legalInterest"
             }
@@ -94,30 +70,121 @@
     ],
     "layerMaps": [
 		{
-			"slug": "Australian_Whale_Sanctuary_Legacy",
-			"extent": [[72,-10],[168,-55]],
-			"mapType": "WMS",
-			"visibility": true,
-			"name": "Australian Whale Sanctuary Legacy",
-			"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
-			"layers": "Australian_Whale_Sanctuary",
-			"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision. Dataset of the external limits of the Australian Whale Sanctuary.",
-			"ogcLinks": [
-				{
-					"description": "WMS Capabilities",
-					"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-				}
-			],
-			"opacity": 0.5,
-			"queryFeatures": true,
-			"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
-			"queryUrlType": "WMS",
-			"queryVersion": "1.3.0",
-			"queryLayers": "Australian_Whale_Sanctuary"
+		"slug": "Offshore_Mineral_Occur_Non_ECS_Mineral_Locations",
+		"extent": [[72,-10],[168,-55]],
+		"mapType": "WMS",
+		"visibility": true,
+		"name": "Offshore Mineral Occur Non ECS Mineral Locations",
+		"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"layers": "Offshore_Mineral_Occur_Non_ECS_Mineral_Locations",
+		"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision. Dataset of the external limits of the Offshore Mineral Leases.",
+		"ogcLinks": [
+			{
+				"description": "WMS Capabilities",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer??request=GetCapabilities&service=WMS"
+			}
+		],
+		"opacity": 1,
+		"queryFeatures": true,
+		"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"queryUrlType": "WMS",
+		"queryVersion": "1.3.0",
+		"queryLayers": "Offshore_Mineral_Occur_Non_ECS_Mineral_Locations"
+		},
+		{
+		"slug": "Offshore_Mineral_Occur_ECS_Mineral_Locations",
+		"extent": [[72,-10],[168,-55]],
+		"mapType": "WMS",
+		"visibility": true,
+		"name": "Offshore Mineral Occur ECS Mineral Locations",
+		"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"layers": "Offshore_Mineral_Occur_ECS_Mineral_Locations",
+		"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision. Dataset of the external limits of the Offshore Mineral Leases.",
+		"ogcLinks": [
+			{
+				"description": "WMS Capabilities",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer??request=GetCapabilities&service=WMS"
+			}
+		],
+		"opacity": 1,
+		"queryFeatures": true,
+		"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"queryUrlType": "WMS",
+		"queryVersion": "1.3.0",
+		"queryLayers": "Offshore_Mineral_Occur_ECS_Mineral_Locations"
+		},
+		{
+		"slug": "Offshore_Mineral_Areas",
+		"extent": [[72,-10],[168,-55]],
+		"mapType": "WMS",
+		"visibility": true,
+		"name": "Offshore Mineral Areas",
+		"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"layers": "Offshore_Mineral_Areas",
+		"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision. Dataset of the external limits of the Offshore Mineral Leases.",
+		"ogcLinks": [
+			{
+				"description": "WMS Capabilities",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer??request=GetCapabilities&service=WMS"
+			}
+		],
+		"opacity": 1,
+		"queryFeatures": true,
+		"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"queryUrlType": "WMS",
+		"queryVersion": "1.3.0",
+		"queryLayers": "Offshore_Mineral_Areas"
+		},
+		{
+            "slug": "Continental_Shelf_AMB_2014"
+		},
+		{
+		"slug": "Offshore_Mineral_Occur_Coal",
+		"extent": [[140.64,-35.68],[152.01,-41.52]],
+		"mapType": "WMS",
+		"visibility": true,
+		"name": "Offshore Mineral Occur Coal",
+		"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"layers": "Offshore_Mineral_Occur_Coal",
+		"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision. Dataset of the external limits of the Offshore Mineral Leases.",
+		"ogcLinks": [
+			{
+				"description": "WMS Capabilities",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+			}
+		],
+		"opacity": 0.8,
+		"queryFeatures": true,
+		"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"queryUrlType": "WMS",
+		"queryVersion": "1.3.0",
+		"queryLayers": "Offshore_Mineral_Occur_Coal"
+		},
+		{
+		"slug": "Offshore_Mineral_Leases",
+		"extent": [[147.33,-40.6],[148.04,-40.96]],
+		"mapType": "WMS",
+		"visibility": true,
+		"name": "Offshore Mineral Leases",
+		"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"layers": "Offshore_Mineral_Leases",
+		"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision. Dataset of the external limits of the Offshore Mineral Leases.",
+		"ogcLinks": [
+			{
+				"description": "WMS Capabilities",
+				"url": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer??request=GetCapabilities&service=WMS"
+			}
+		],
+		"opacity": 0.8,
+		"queryFeatures": true,
+		"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_OffshoreMinerals_Legacy/MapServer/WMSServer",
+		"queryUrlType": "WMS",
+		"queryVersion": "1.3.0",
+		"queryLayers": "Offshore_Mineral_Leases"
 		},		
 		{
-            "slug": "ESRI_World_Boundaries_and_Places",
-            "opacity": 	1
+		"slug": "ESRI_World_Boundaries_and_Places",
+		"opacity": 	1
         }
     ],
     "search": {

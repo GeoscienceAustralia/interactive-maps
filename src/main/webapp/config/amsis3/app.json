@@ -63,6 +63,20 @@
             "previewImageUrl": "content/amsis/twsi/mapPreview.jpg",
             "previewDescription": "Treaties in force between the Commonwealth of Australia and the Government of the Solomon Islands."
         },		
+        {
+            "title": "Offshore Minerals Legacy Services",
+            "tags": "OffshoreMinerals",
+            "id": "offshoremineralslegacy",
+            "previewImageUrl": "content/amsis/twsi/mapPreview.jpg",
+            "previewDescription": "Treaties in force between the Commonwealth of Australia and the Government of the Solomon Islands."
+        },
+		{
+            "title": "Native Title",
+            "tags": "NativeTitle",
+            "id": "nativetitle",
+            "previewImageUrl": "content/amsis/nativetitle.jpg",
+            "previewDescription": "Services supplied by the National Native Title Tribunal."
+        },		
 		{
             "title": "Fisheries Legacy Services",
             "tags": "Fisheries",

@@ -5,13 +5,13 @@
     "displayProjection": "EPSG:4326",
     "initialExtent": [
         [
-            30,
-            10
-        ],
-        [
-            180,
-            -70
-        ]
+			58.42,
+			10.31
+		],
+		[
+			184.45,
+			-66.9
+		]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": true,
@@ -40,17 +40,6 @@
         "timeout": 5000,
         "tools": [
             {
-                "id": "info",
-                "config": {
-                    "infoList": [
-                        {
-                            "id": "Seas and Submerged Lands Act 1973 - Australian Maritime Boundaries 2014 - Geodatabase",
-                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_83170"
-                        }
-                    ]
-                }
-            },
-            {
                 "id": "addLayer"
             },
             {
@@ -65,19 +54,6 @@
             {
                 "id": "distanceBoundary"
 			},
-            {
-                "id": "identifyTool",
-                "config": {
-					"panelSize":"small",
-                    "propertiesOfInterest": [
-                        "NAME"
-                    ],
-                    "propertiesAlias": [
-                        "Name"
-                    ],
-                    "primaryPropertyName": "NAME"
-                }
-            },
             {
                 "id": "legalInterest"
             }

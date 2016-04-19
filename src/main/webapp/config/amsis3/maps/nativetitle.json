@@ -1,0 +1,212 @@
+﻿{
+    "id": "nativetitle",
+    "title": "Native Title",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+    "initialExtent": [
+        [
+			80.73,
+			16.54
+		],
+		[
+			185.5,
+			-63.08
+		]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": true,
+    "termsAndConditionsUrl": "content/amsis/termsAndConditions.html",
+    "cookieExpirationInDays": 7,
+    "termsAndConditionsCookieName": "amsis",
+    "headerConfig": {
+        "title": "Native Title"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/amsis/nativetitle/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/amsis/nativetitle/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "National Native Title Tribunal Downloads",
+                            "url": "http://www.nntt.gov.au/assistance/Geospatial/Pages/Spatial-aata.aspx"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "addLayer"
+            },
+            {
+				"id": "export"
+			},
+            {
+                "id": "draw"
+            },
+            {
+                "id": "clientMeasure"
+            },
+            {
+                "id": "distanceBoundary"
+			},
+            {
+                "id": "identifyTool",
+                "config": {
+					"panelSize":"small",
+                    "propertiesOfInterest": [
+                        "NAME"
+                    ],
+                    "propertiesAlias": [
+                        "Name"
+                    ],
+                    "primaryPropertyName": "NAME"
+                }
+            },
+            {
+                "id": "legalInterest"
+            }
+        ]
+    },
+    "baseMaps": [
+		{
+			"slug": "World_Political_Boundaries_XYZ",
+			"maxZoomLevel": 12
+        },
+		{
+			"slug": "ESRI_Imagery"
+        },
+        {
+            "slug": "World_Image_WMS"
+        }
+    ],
+    "layerMaps": [
+		{
+			"slug": "Native_Title_Nat",
+			"extent": [[72,-10],[168,-55]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Determinations of Native Title",
+			"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map",
+			"layers": "Native_Title_Nat",
+			"metadataText": "This dataset depicts the boundaries of native title representative body areas. Boundary data has been compiled by NNTT based on reference material sourced from the Department of Families, Housing, Community Services and Indigenous Affairs (FaHCSIA) and spatial data sourced from Geoscience Australia, Department of Natural Resources and Water, Qld, Sinclair Knight Merz Pty Ltd and the National Native Title Tribunal.",
+			"ogcLinks": [
+				{
+					"description": "WMS Capabilities",
+					"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map&SERVICE=WMS&REQUEST=GetCapabilities"
+				}
+			]
+		},
+		{
+			"slug": "NTDA_Register_Nat",
+			"extent": [[72,-10],[168,-55]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Registered Native Title Determination Applications",
+			"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map",
+			"layers": "NTDA_Register_Nat",
+			"metadataText": "This dataset depicts the boundaries of native title representative body areas. Boundary data has been compiled by NNTT based on reference material sourced from the Department of Families, Housing, Community Services and Indigenous Affairs (FaHCSIA) and spatial data sourced from Geoscience Australia, Department of Natural Resources and Water, Qld, Sinclair Knight Merz Pty Ltd and the National Native Title Tribunal.",
+			"ogcLinks": [
+				{
+					"description": "WMS Capabilities",
+					"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map&SERVICE=WMS&REQUEST=GetCapabilities"
+				}
+			]
+		},		
+		{
+			"slug": "NTDA_Schedule_Nat",
+			"extent": [[72,-10],[168,-55]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Schedule of Native Title Determination Applications",
+			"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map",
+			"layers": "NTDA_Schedule_Nat",
+			"metadataText": "This dataset depicts the boundaries of native title representative body areas. Boundary data has been compiled by NNTT based on reference material sourced from the Department of Families, Housing, Community Services and Indigenous Affairs (FaHCSIA) and spatial data sourced from Geoscience Australia, Department of Natural Resources and Water, Qld, Sinclair Knight Merz Pty Ltd and the National Native Title Tribunal.",
+			"ogcLinks": [
+				{
+					"description": "WMS Capabilities",
+					"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map&SERVICE=WMS&REQUEST=GetCapabilities"
+				}
+			]
+		},
+		{
+			"slug": "ILUA_Registered_Notified_Nat",
+			"extent": [[72,-10],[168,-55]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Registered / Notified  Indigenous Land Use Agreements",
+			"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map",
+			"layers": "ILUA_Registered_Notified_Nat",
+			"metadataText": "This dataset depicts the boundaries of native title representative body areas. Boundary data has been compiled by NNTT based on reference material sourced from the Department of Families, Housing, Community Services and Indigenous Affairs (FaHCSIA) and spatial data sourced from Geoscience Australia, Department of Natural Resources and Water, Qld, Sinclair Knight Merz Pty Ltd and the National Native Title Tribunal.",
+			"ogcLinks": [
+				{
+					"description": "WMS Capabilities",
+					"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map&SERVICE=WMS&REQUEST=GetCapabilities"
+				}
+			]
+		},
+		{
+			"slug": "RATSIB Body",
+			"extent": [[72,-10],[168,-55]],
+			"mapType": "WMS",
+			"visibility": true,
+			"name": "Representative Aboriginal and Torres Strait Islander Body",
+			"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map",
+			"layers": "RATSIB_Nat",
+			"metadataText": "This dataset depicts the boundaries of native title representative body areas. Boundary data has been compiled by NNTT based on reference material sourced from the Department of Families, Housing, Community Services and Indigenous Affairs (FaHCSIA) and spatial data sourced from Geoscience Australia, Department of Natural Resources and Water, Qld, Sinclair Knight Merz Pty Ltd and the National Native Title Tribunal.",
+			"ogcLinks": [
+				{
+					"description": "WMS Capabilities",
+					"url": "http://www.ntv.nntt.gov.au/IntraMaps/WMS_Server/bin/mapserv.exe?map=c:\\IntraMaps\\NNTT\\WMS\\NativeTitle.map&SERVICE=WMS&REQUEST=GetCapabilities"
+				}
+			]
+		}
+		
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+    "addLayerMaps": [
+        {
+            "slug": "Offshore_Areas_Of_The_States_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Scheduled_Areas_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Australian_Petroleum_Blocks_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Treaties_Of_Australia_AMB_2014",
+            "opacity": 0.75,
+            "queryFeatures": true
+        },
+		{
+			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006"
+		},
+		{
+			"slug": "Commonwealth_Coral_Sea_Fishery_2006"
+		}
+    ]
+}

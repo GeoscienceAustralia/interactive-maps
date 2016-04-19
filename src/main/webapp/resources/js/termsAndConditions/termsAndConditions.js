@@ -34,7 +34,7 @@ app.controller('termsAndConditionsController', [ '$scope', '$modalInstance', 'ge
         };
 
         // Closes the modal and navigates to the theme the user came from
-        $scope.cancel = function () { console.log($scope)
+        $scope.cancel = function () {
             var path = $location.path().split('/map');
 
             if (path.length > 0) {

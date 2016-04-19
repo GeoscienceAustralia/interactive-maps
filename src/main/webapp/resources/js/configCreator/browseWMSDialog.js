@@ -66,7 +66,6 @@
             $scope.unregisterLayerLoadingEvent = function () {
                 var mapController = $scope.WMSLayerMapController;
                 var tempLayerId = mapController.getLayers()[1].id;
-                console.log(tempLayerId);
                 mapController.unRegisterLayerEvent(
                     tempLayerId,
                     "tileloadstart", loadStart);

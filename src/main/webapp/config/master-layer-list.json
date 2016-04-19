@@ -2497,7 +2497,7 @@
 			"mapType": "WMS",
 			"visibility": true,
 			"name": "National Onshore Oil Pipelines",
-			"url": "http://www.ga.gov.au/gis/services/topography/National_Onshore_Oil_Pipelines/MapServer/WMSServer",
+			"url": "http://services.ga.gov.au/gis/services/topography/Oil_Gas_Infrastructure/MapServer/WMSServer",
 			"layers": "Oil_Pipelines",
 			"metadataText": "The National Onshore Oil Pipelines Dataset represents the spatial locations of pipelines for the transmission of oil within mainland Australia complimented with feature attribution.",
 			"ogcLinks": [

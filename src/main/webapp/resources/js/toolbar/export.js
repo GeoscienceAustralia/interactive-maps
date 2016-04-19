@@ -74,7 +74,7 @@
             // Sets the defaults on the scope
             $scope.templateList = $scope.$parent.$parent.tool.config.templatesList;
             $scope.selectedTemplate = $scope.$parent.$parent.tool.config.templatesList[0];
-            $scope.roundScale = 'true';
+            $scope.roundScale = true;
 
             $scope.submitExportMap = function () {
                 $scope[$scope.$parent.tool.id].hasResult = false;

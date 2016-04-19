@@ -26,13 +26,43 @@ module.exports = function (config) {
             'src/main/webapp/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
             'src/main/webapp/bower_components/angular-ui-utils/ui-utils.js',
             'src/main/webapp/bower_components/geo-web-toolkit/dist/geo-web-toolkit-min.js',
+            'node_modules/karma-read-json/karma-read-json.js',
             'http://maps.google.com/maps/api/js?.js',
             'src/main/webapp/resources/jsnomin/ol.js',
             'src/main/webapp/resources/jsnomin/Cesium/Cesium.js',
             'src/main/webapp/resources/jsnomin/ol3cesium.js',
             'src/main/webapp/resources/**/*.js',
-            'src/test/webapp/resources/js/**/*.js'],
+            'src/main/webapp/resources/**/*.html',
+            'src/main/webapp/config/**/*.html',
+            {pattern: 'src/main/webapp/config/**/*.json', included: false},
+            'src/test/webapp/resources/js/**/*.js'
+        ],
+        ngHtml2JsPreprocessor: {
+            // strip this from the file path
+            stripPrefix: 'src/main/webapp/',
+            //stripSuffix: '.ext',
+            // prepend this to the
+            //prependPrefix: 'served/',
 
+            // or define a custom transform function
+            // - cacheId returned is used to load template
+            //   module(cacheId) will return template at filepath
+            //cacheIdFromPath: function(filepath) {
+            //    // example strips 'public/' from anywhere in the path
+            //    // module(app/templates/template.html) => app/public/templates/template.html
+            //    //var cacheId = filepath.strip('public/', '');
+            //    console.log(filepath);
+            //    return filepath;
+            //},
+
+            // - setting this option will create only a single module that contains templates
+            //   from all the files, so you can load them all with module('foo')
+            // - you may provide a function(htmlPath, originalPath) instead of a string
+            //   if you'd like to generate modules dynamically
+            //   htmlPath is a originalPath stripped and/or prepended
+            //   with all provided suffixes and prefixes
+            moduleName: 'htmlTemplates'
+        },
         // list of files to exclude
         exclude: [
             'src/test/**/karma*.js'
@@ -41,7 +71,8 @@ module.exports = function (config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'src/main/webapp/resources/js/**/*.js': [ 'coverage' ]
+            'src/main/webapp/resources/js/**/*.js': [ 'coverage' ],
+            'src/main/webapp/resources/**/*.html': ['ng-html2js']
         },
         coverageReporter: {
             type: 'lcov',
@@ -81,6 +112,7 @@ module.exports = function (config) {
             'karma-firefox-launcher',
             'karma-ie-launcher',
             'karma-html-reporter',
+            'karma-ng-html2js-preprocessor',
             'karma-coverage' ]
     });
 };

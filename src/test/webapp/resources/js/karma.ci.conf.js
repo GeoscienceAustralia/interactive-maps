@@ -10,7 +10,12 @@ module.exports = function (config) {
         autoWatch: false,
         reporters: [ 'progress', 'junit' ],
         browsers: [ 'PhantomJS' ],
-        plugins: [ 'karma-jasmine', 'karma-phantomjs-launcher', 'karma-junit-reporter' ],
+        plugins: [
+            'karma-jasmine',
+            'karma-phantomjs-launcher',
+            'karma-junit-reporter',
+            'karma-ng-html2js-preprocessor'
+        ],
         junitReporter: {
             outputFile: "target/surefire-reports/js-test-results.xml",
             suite: "jasmine-tests"

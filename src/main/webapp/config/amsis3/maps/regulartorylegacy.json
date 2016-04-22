@@ -23,7 +23,7 @@
     },
     "aboutConfig": {
         "enabled": true,
-        "bodyUrl": "content/amsis/sasla1973/about.html"
+        "bodyUrl": "content/amsis/amsislegacy/aboutlegacy.html"
     },
     "layersConfig": {
         "enabled": true

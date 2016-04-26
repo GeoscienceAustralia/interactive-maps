@@ -1,0 +1,121 @@
+{
+    "id": "landsat8",
+    "title": "Landsat 8 median pixel",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv3",	
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Landsat 8 median pixel"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/earthobservation/landsat8/aboutlandsat8.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },	
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/earthobservation/landsat8/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Landsat8 WCS",
+                            "url": "http://intranet-dev.ga.gov.au/gis/services/Landsat8/MapServer/WCSServer?request=GetCapabilities&service=WCS"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+			{
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "Red",
+						"Green",
+						"Blue"
+                    ],
+                    "propertiesAlias": [
+                        "Red",
+						"Green",
+						"Blue"
+                    ],
+                    "endpoints": [
+                        {
+                            "featureTitle": "Landsat 8 true colour median pixel",
+                            "queryUrl": "http://intranet-dev.ga.gov.au/gis/services/Landsat8/MapServer/WMSServer",
+                            "queryLayers": "AusMosaic_LS8_2014_15_321",
+                            "queryVersion": "1.1.0",
+                            "queryType": "WMS"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+			"slug": "National_Color_Base_Map",
+			"visibility": true
+		},
+		{
+			"slug": "World_Political_Boundaries_XYZ",
+			"visibility": true
+		}
+    ],
+    "layerMaps": [
+		{
+		"slug": "ESRI_World_Boundaries_and_Places"		
+		},
+		{
+		"slug": "Landst8",
+		"id": "Landst8",
+		"extent": [[99,10],[169,-55]],
+		"mapType": "WMS",
+		"layers": "AusMosaic_LS8_2014_15_321",
+		"visibility": true,
+		"opacity": 1,
+		"name": "Landst 8 median pixel",
+		"url": "http://intranet-dev.ga.gov.au/gis/services/Landsat8/MapServer/WMSServer",
+		"metadataText": "Landst 8 median pixel image from 2014 to 2015.",
+		"ogcLinks": [
+			{
+			"description": "WMS Capabilities",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/Landsat8/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+			},
+			{
+			"description": "WCS Capabilities",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/Landsat8/MapServer/WCSServer?request=GetCapabilities&service=WCS"
+			}
+		]		
+		}
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

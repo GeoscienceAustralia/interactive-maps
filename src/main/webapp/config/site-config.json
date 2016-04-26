@@ -6,6 +6,12 @@
     },
     "themes": [
         {
+            "id": "earthobservation",
+            "title": "Earth Observation and Satellite Imagery",
+            "previewImageUrl": "content/earthobservation/themePreview.png",
+            "previewDescription": "Australian Marine Spatial Information System (AMSIS) is a web based interactive mapping and decision support system that provides access to integrated government and non-government information in the Australian Marine Jurisdiction."
+        },
+		{
             "id": "amsis",
             "title": "Australian Marine Spatial Information System",
             "previewImageUrl": "content/amsis/themePreview.png",

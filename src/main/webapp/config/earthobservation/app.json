@@ -7,8 +7,14 @@
         "title": "Applying geoscience to Australia's most important challenges",
         "backgroundImageUrl": "resources/img/header_bg.png"
 		},
-    "maps": [
-        {
+    "maps": [        
+		{
+            "title": "Landsat 8 median pixel",
+            "id": "earthobservation",
+            "previewImageUrl": "content/earthobservation/lansdat8/mapPreview.png",
+            "previewDescription": "Landsat 8 true colour median pixel sampled from the 50% upper percentile pixel quality range in the winter months of 2014-2015. Product of the Australian Geoscience Data Cube."
+        },
+		{
             "title": "Sentinel Hotspots",
             "id": "sentinelhotspots",
             "previewImageUrl": "content/sentinel/hotspots/mapPreview.png",
@@ -47,13 +53,6 @@
             "previewImageUrl": "content/sentinel/RSS.png",
             "previewDescription": "Current hotspots RSS (ATOM) feed.",
 			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/wms/reflect?layers=hotspot_current&format=application/atom+xml"
-		},
-		{
-			"title": "WMS GetCaps",
-			"tags": "Data",
-            "previewImageUrl": "content/sentinel/WMSGet.png",
-            "previewDescription": "Current hotspots WMS Get Capabilities.",
-			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
 		}
     ],
     "tags": [

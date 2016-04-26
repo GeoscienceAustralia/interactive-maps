@@ -78,27 +78,22 @@
     },
     "baseMaps": [
         {
-			"slug": "National_Color_Base_Map",
-			"visibility": true
+			"slug": "ESRI_Imagery"
 		},
 		{
-			"slug": "World_Political_Boundaries_XYZ",
-			"visibility": true
+			"slug": "ESRI_Dark_Gray"
 		}
     ],
     "layerMaps": [
 		{
-		"slug": "ESRI_World_Boundaries_and_Places"		
-		},
-		{
-		"slug": "Landst8",
-		"id": "Landst8",
+		"slug": "Landsat8",
+		"id": "Landsat8",
 		"extent": [[99,10],[169,-55]],
 		"mapType": "WMS",
 		"layers": "AusMosaic_LS8_2014_15_321",
 		"visibility": true,
 		"opacity": 1,
-		"name": "Landst 8 median pixel",
+		"name": "Landsat 8 median pixel",
 		"url": "http://intranet-dev.ga.gov.au/gis/services/Landsat8/MapServer/WMSServer",
 		"metadataText": "Landst 8 median pixel image from 2014 to 2015.",
 		"ogcLinks": [
@@ -111,7 +106,12 @@
 			"url": "http://intranet-dev.ga.gov.au/gis/services/Landsat8/MapServer/WCSServer?request=GetCapabilities&service=WCS"
 			}
 		]		
+		},
+		{
+		"slug": "ESRI_World_Boundaries_and_Places",
+		"visibility": false
 		}
+		
     ],
     "search": {
         "type": "geonames",

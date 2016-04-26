@@ -10,7 +10,7 @@
     "maps": [        
 		{
             "title": "Landsat 8 median pixel",
-            "id": "earthobservation",
+            "id": "landsat8",
             "previewImageUrl": "content/earthobservation/lansdat8/mapPreview.png",
             "previewDescription": "Landsat 8 true colour median pixel sampled from the 50% upper percentile pixel quality range in the winter months of 2014-2015. Product of the Australian Geoscience Data Cube."
         },

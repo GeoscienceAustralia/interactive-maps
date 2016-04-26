@@ -5629,6 +5629,7 @@
 				]
 			],
 			"mapType": "XYZTileCache",
+			"opacity": 1,
 			"visibility": true,
 			"name": "World Imagery from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
@@ -5655,8 +5656,9 @@
 				]
 			],
 			"mapType": "XYZTileCache",
+			"opacity": 1,
 			"visibility": true,
-			"name": "World Imagery from ArcGIS Online",
+			"name": "Dark Grey from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer",
 			"attribution": "ESRI ArcGIS Online <a target='_blank' href='http://www.arcgis.com/home/item.html?id=86de95d4e0244cba80f0fa2c9403a7b2'>Dark Grey</a>",
 			"metadataText": "This map draws attention to your thematic content by providing a neutral background with minimal colors, labels, and features. Only key information is represented to provide geographic context, allowing your data to come to the foreground. This dark gray map supports bright colors, creating a visually compelling map graphic which helps your reader see the patterns intended. This map was developed by Esri using HERE data, DeLorme basemap layers, OpenStreetMap contributors, Esri basemap data, and select data from the GIS user community. Worldwide coverage is provided from Level 0 (1:591M scale) through Level 10 (1:577k scale). In North America, Central and South America, Africa, India, Australia & New Zealand, Pacific Islands, and select countries in the Middle East from Level 11 (1:288k scale) through Level 16 (1:9k scale).",
@@ -5681,6 +5683,7 @@
 				]
 			],
 			"mapType": "XYZTileCache",
+			"opacity": 1,
 			"visibility": true,
 			"name": "World Boundaries and Places from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
@@ -5699,6 +5702,7 @@
 			"extent": [[72,-10],[168,-55]],
 			"mapType": "WMS",
 			"visibility": true,
+			"opacity": 1,
 			"name": "World Heritage Areas Australia",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas/MapServer/WMSServer",
 			"layers": "World_Heritage_Areas_Australia",

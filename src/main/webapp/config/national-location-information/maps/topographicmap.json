@@ -1,0 +1,96 @@
+{
+	"id": "topographicmap",
+	"datumProjection": "EPSG:3857",
+	"displayProjection": "EPSG:4326",
+	"title": "Topographic Base Map",
+	"framework":"olv2",	
+	"headerConfig": {
+		"title": "Topographic Base Map"
+	},
+	"toolsConfig": {
+		"tools": []
+	},
+	"initialExtent": [
+		[
+			90.5,
+			13.73
+		],
+		[
+			171.62,
+			-58.05
+		]
+	],
+	"centerPosition": {},
+	"baseMaps": [
+		{
+		"slug": "ESRI_Imagery"
+		}
+	],
+	"layerMaps": [
+		{
+		"isGroupedLayers": true,
+		"groupTitle": "Topographic Maps",
+		"groupId": "topography",
+		"visibility": true,
+		"defaultLayerId": "topographicmap"
+        }
+	],
+	"groupedLayers": [
+        {
+		"groupId": "topography",
+		"layerMaps": [
+			{
+			"id": "topographicmap",
+			"mapType": "ArcGISCache",
+			"name": "Topographic Base Map",
+			"url": "http://intranet-test.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer",
+			"visibility": true,
+			"opacity": "1",
+			"maxZoomLevel": 12
+			},
+			{
+			"id": "topographicmap2",
+			"mapType": "XYZTileCache",
+			"url": "http://services.ga.gov.au/gis/rest/services/NationalMap_GreyScale_Topographic_Base_World_WM/MapServer",
+			"name": "Greyscale Topographic Base Map",
+			"visibility": true,
+			"opacity": "1"
+			},
+			{
+			"id": "topographicmap3",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Topography Map Populated Location and Oceans WMS",
+            "url": "http://intranet-test.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "layers": "Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8",
+            "metadataText": "This is a topographic reference map showing the populated places of Australia.",
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_286d6488-874b-4ccf-9d92-6c623502e598/Australian+Topography+2014+WMS"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/services/topography/Australian_Topography_2014_WM/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1,
+            "layerTimeout": 5000
+        }
+			]
+		}
+	],
+	"layersConfig": {
+		"enabled": true,
+		"open": true
+	}
+}

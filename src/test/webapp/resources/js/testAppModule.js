@@ -23,7 +23,8 @@ var app = angular.module('testApp',
         'ui.sortable',
         'ngStorage',
         'interactiveMaps.catalogue',
-        'interactiveMaps.layers-controllers'
+        'interactiveMaps.layers-controllers',
+        'htmlTemplates'
     ]);
 
 app.config([ '$routeProvider', '$locationProvider', '$provide',

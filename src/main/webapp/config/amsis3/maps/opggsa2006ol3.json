@@ -1,0 +1,271 @@
+{
+    "id": "opggsa2006",
+    "title": "Offshore Petroleum and Greenhouse Gas Storage Act 2006",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv2",	
+    "initialExtent": [
+        [
+            38,
+            -10
+        ],
+        [
+            172,
+            -62
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": true,
+    "termsAndConditionsUrl": "content/amsis/termsAndConditions.html",
+    "cookieExpirationInDays": 7,
+    "termsAndConditionsCookieName": "amsis",
+    "headerConfig": {
+        "title": "Offshore Petroleum and Greenhouse Gas Storage Act 2006"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/amsis/opggsa2006/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/amsis/opggsa2006/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "titleText": "Download dataset",
+                    "panelHeading": "Download Dataset",
+                    "infoList": [
+                        {
+                            "id": "Australian Petroleum Blocks (2006) - Geodatabase",
+                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0a744e05-b21e-5b88-e054-00144fdd4fa6/Australian+Petroleum+Blocks+%282006%29+-+Geodatabase"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "addLayer"
+            },
+            {
+            "id": "export",
+            "toolPanelUrl": "resources/partial/exportPanel.html",
+            "toolToggleUrl": "resources/partial/exportToggle.html",
+            "config": {
+                "titleText": "Print to PDF",
+                "panelHeading": "Print to PDF",
+                "url": "/gisgp/rest/services/topography/Print_Service/GPServer/PrintPoint/",
+                "templatesList": [
+                    "OPGGSA_Landscape_A4",
+					"Landscape_A4",
+                    "Portrait_A4",
+                    "Landscape_A3",
+                    "Portrait_A3"
+                ],
+                "markerUrl": "content/marker/marker-print.png",
+                "markerWidth": "55",
+                "markerHeight": "40"
+				}
+			},
+            {
+                "id": "draw"
+            },
+            {
+                "id": "clientMeasure"
+            },
+            {
+                "id": "distanceBoundary"
+            },
+            {
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "NAME",
+                        "OBJNAM",
+                        "CATLIM",
+                        "NATION",
+                        "SORHCS",
+                        "PHCS",
+                        "LEGSOU",
+                        "IP_OWNER",
+                        "LICENCE",
+                        "DISCLAIMER",
+                        "COMMENT",
+                        "FRLI_REF",
+                        "BLOCK_ID",
+                        "MAP_SHEET",
+						"Map_Sheet",
+                        "Block_Number",
+                        "Country",
+                        "Offshore_Area",
+                        "Epoch",
+                        "Datum",
+                        "ORIGIN_LAT_AGD66",
+                        "ORIGIN_LONG_AGD66",
+                        "Verticies",
+                        "NumOfVerticies",
+                        "Area_acres",
+                        "REGISTRY_NO",
+                        "IP_Owner",
+                        "Licence",
+                        "Disclaimer"
+                    ],
+                    "propertiesAlias": [
+                        "Name",
+                        "Object Name",
+                        "Catlim",
+                        "Nation",
+                        "Sorhcs",
+                        "Phcs",
+                        "Legsou",
+                        "Ip Owner",
+                        "Licence",
+                        "Disclaimer",
+                        "Comment",
+                        "Frli Ref",
+                        "Block Id",
+                        "Map Sheet",
+						"Map Sheet",
+                        "Block Number",
+                        "Country",
+                        "Offshore Area",
+                        "Epoch",
+                        "Datum",
+                        "Origin Lat AGD66",
+                        "Origin Long AGD66",
+                        "Verticies",
+                        "Number of Verticies",
+                        "Area Acres",
+                        "Registry No",
+                        "Ip Owner",
+                        "Licence",
+                        "Disclaimer"
+                    ],
+                    "primaryPropertyName": "NAME"
+                }
+            },
+            {
+                "id": "legalInterest"
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+            "slug": "World_Image_WMS"
+        },
+        {
+            "slug": "World_Political_Boundaries_WMS",
+            "visibility": false
+        },
+        {
+            "slug": "Google_Hybrid",
+            "visibility": false
+        }
+    ],
+    "layerMaps": [
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "visibility": false
+        },
+        {
+            "slug": "Offshore_Areas_Of_The_States_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Scheduled_Areas_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Australian_Petroleum_Blocks_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Population_Centres"
+        }
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "",
+            "layerMaps": []
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+    "addLayerMaps": [
+        {
+            "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
+            "opacity": 0.3,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Exclusive_Economic_Zone_As_Proclaimed_1973_AMB_2014",
+            "visibility": false,
+            "opacity": 0.3,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Contiguous_Zone_AMB_2014",
+            "opacity": 0.3,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Continental_Shelf_AMB_2014",
+            "opacity": 0.3,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Territorial_Sea_AMB_2014",
+            "opacity": 0.3,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Coastal_Waters_AMB_2014",
+            "opacity": 0.3,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Straight_Baselines_AMB_2014",
+            "opacity": 0.3,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Normal_Baselines_AMB_2014",
+            "opacity": 0.3,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Seas_And_Submerged_Lands_Act_1973_Reference_Map"
+        },
+        {
+            "slug": "Treaties_Of_Australia_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+		{
+			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006"
+		},
+		{
+			"slug": "Commonwealth_Coral_Sea_Fishery_2006"
+		}
+    ]
+}

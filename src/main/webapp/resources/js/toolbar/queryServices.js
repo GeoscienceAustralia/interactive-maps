@@ -106,7 +106,7 @@ app.service('QueryService', ['WMSDataService', '$q', '$http', function (WMSDataS
                             event));
                     }
                     if (ep.queryType === 'ArcGISREST') {
-                        promises.push(service.QueryArcGISRESTByConfiguredEndpoint(mapController, ep, event, toolConfigData));
+                        promises.push(service.QueryArcGISRESTByConfiguredEndpoint(mapController, ep, event, 'EPSG:4326',toolConfigData));
                     }
                     postCreateCallback(ep, endPointIndex);
                 }
@@ -150,32 +150,6 @@ app.service('QueryService', ['WMSDataService', '$q', '$http', function (WMSDataS
                         );
                     }
                     postCreateCallback(l, i);
-                }
-            }
-            if (mapConfig.groupedLayers && mapConfig.groupedLayers.length > 0) {
-                for (var groupIndex = 0; groupIndex < mapConfig.groupedLayers.length; groupIndex++) {
-                    var groupLayer = mapConfig.groupedLayers[groupIndex];
-                    for (var layerIndex = 0; layerIndex < groupLayer.layerMaps.length; layerIndex++) {
-                        var layer = groupLayer.layerMaps[layerIndex];
-                        if (layer.queryFeatures === true && layer.visibility == true) {
-                            preCreateCallback(layer, promises.length - 1);
-                            //Provided endpoint override, eg if layer is XYZ, WMS alternate url provided
-                            if (layer.queryUrl != null) {
-                                if (layer.queryUrlType === 'WMS') {
-                                    promises.push(service.QueryWMSFeaturesByLayer(mapController, layer, event, toolConfigData));
-                                }
-                                if (layer.queryType === 'WFS') {
-                                    promises.push(service.QueryWFSFeaturesByLayer(mapController, layer, event));
-                                }
-                            } else {
-                                //No query override provided, use layer information to query
-                                promises.push(
-                                    WMSDataService.getWMSFeaturesByLayerId(mapController.getMapInstance(), layer.url, layer.id, event.xy)
-                                );
-                            }
-                            postCreateCallback(layer, promises.length - 1);
-                        }
-                    }
                 }
             }
 

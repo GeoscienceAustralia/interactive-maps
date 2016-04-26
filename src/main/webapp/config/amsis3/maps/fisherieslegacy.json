@@ -135,7 +135,7 @@
 			"queryUrl": "http://intranet-dev.ga.gov.au/gis/services/AMSIS_Fisheries_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.3.0",
-			"queryLayers": "Marine_Protected_Areas"
+			"queryLayers": "Aquaculture_NSW,Aquaculture_Zones_SA,Aquaculture_Sites_SA,Acquaculture_Licences_SA,Acquaculture_Leases_SA,Aquaculture_WA,Aquaculture_TAS"
 		},
 		{
             "slug": "ESRI_World_Boundaries_and_Places",

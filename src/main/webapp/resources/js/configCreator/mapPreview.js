@@ -56,6 +56,7 @@ app.controller('configCreatorController', ['$scope', '$log', '$timeout', '$http'
                 [0, 0],
                 [0, 0]
             ];
+            $scope.config.framework = $scope.config.framework || 'olv2';
         };
 
         $scope.$watch('accordions.mapConfigIsOpen', function (newVal, oldVal) {

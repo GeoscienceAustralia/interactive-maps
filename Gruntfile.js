@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                 var assets = useref.assets();
                 return gulp.src('src/main/webapp/index.html')
                     .pipe(assets)
-                    .pipe(gulpif('*.js', uglify()))
+                    .pipe(gulpif(['*.js', '!node_modules/ol3-cesium/dist/Cesium.js'], uglify()))
                     .pipe(gulpif('*.css', minifyCss()))
                     .pipe(assets.restore())
                     .pipe(useref())
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
                 var assets = useref.assets();
                 return gulp.src('src/main/webapp/embedded.html')
                     .pipe(assets)
-                    .pipe(gulpif('*.js', uglify()))
+                    .pipe(gulpif(['*.js', '!node_modules/ol3-cesium/dist/Cesium.js'], uglify()))
                     .pipe(gulpif('*.css', minifyCss()))
                     .pipe(assets.restore())
                     .pipe(useref())

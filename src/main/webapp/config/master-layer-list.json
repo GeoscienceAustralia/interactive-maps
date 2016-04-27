@@ -2287,6 +2287,18 @@
             "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>, Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a> and <a target='_blank' href='https://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>"
         },
 		{
+            "slug": "National_GreyScale_Base_Map",
+            "mapType": "XYZTileCache",
+            "visibility": true,
+            "name": "National Grey Scale Base Map",
+            "url": "http://services.ga.gov.au/gis/rest/services/NationalMap_GreyScale_Topographic_Base_World_WM/MapServer",
+            "mapBGColor": "#ffffff",
+            "opacity": 1,
+            "wrapDateLine": true,
+            "maxZoomLevel": 16,
+            "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>, Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a> and <a target='_blank' href='https://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>"
+        },
+		{
             "slug": "National_Electricty_Lines",
             "mapType": "WMS",
             "visibility": true,

@@ -11,7 +11,7 @@
 		{
             "title": "Landsat 8 median pixel",
             "id": "landsat8",
-            "previewImageUrl": "content/earthobservation/lansdat8/mapPreview.png",
+            "previewImageUrl": "content/earthobservation/landsat8/mapPreview.png",
             "previewDescription": "Landsat 8 true colour median pixel sampled from the 50% upper percentile pixel quality range in the winter months of 2014-2015. Product of the Australian Geoscience Data Cube."
         },
 		{
@@ -21,25 +21,11 @@
             "previewDescription": "Sentinel hotspots is a national bushfire monitoring system that provides timely information about hotspots to emergency service managers across Australia. The mapping system allows users to identify fire locations with a potential risk to communities and property."
         },
 		{
-            "title": "Sentinel Floods",
-            "id": "sentinelfloods",
+            "title": "Water Observations from Space",
+            "id": "wofs",
             "previewImageUrl": "content/sentinel/floods/mapPreview.png",
-            "previewDescription": "Sentinel floods provides satellite data, reports and feeds for flood risk mapping."
+            "previewDescription": "Water Observations from Space (WOfS) is a web service displaying historical surface water observations derived from satellite imagery for all of Australia."
         },
-		{		
-			"title": "Sentinel Hotspots Help",
-			"tags": "Reference",
-            "previewImageUrl": "content/sentinel/WhatFlood.png",
-            "previewDescription": "A simple definition of flooding is water where it is not wanted.",
-			"applicationUrl": "http://sentinel.ga.gov.au/#/help"
-		},		
-		{		
-			"title": "What is a flood?",
-			"tags": "Reference",
-            "previewImageUrl": "content/sentinel/HotHelp.png",
-            "previewDescription": "A simple definition of flooding is water where it is not wanted.",
-			"applicationUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/basics/what"
-		},
 		{
 			"title": "View in Google Earth (KML)",
 			"tags": "Data",
@@ -58,11 +44,6 @@
     "tags": [
 		{
             "id": "Sentinel",
-            "description": "Geoscience Australia reference data for hazard mapping.",
-            "title": "Reference Data"
-        },
-		{
-            "id": "Reference",
             "description": "Geoscience Australia reference data for hazard mapping.",
             "title": "Reference Data"
         },

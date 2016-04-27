@@ -3,7 +3,7 @@
     "title": "Sentinel Hotspots",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",	
+	"framework":"olv3",
     "initialExtent": [
 		[
 		76.14,

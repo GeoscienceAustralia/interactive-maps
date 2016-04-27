@@ -1,9 +1,6 @@
 {
   "name": "interactive-maps",
   "version": "0.2.1-SNAPSHOT",
-  "dependencies": {
-    "fuzzysearch": "^1.0.3"
-  },
   "devDependencies": {
     "bower": "^1.6.5",
     "express": "~4.13.3",

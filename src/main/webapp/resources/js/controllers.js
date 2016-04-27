@@ -183,8 +183,8 @@ app.controller('applicationController', ['$scope', '$http', '$rootScope', '$rout
 
 /* Controller for configurable header
  * Mainly controls breadcrumbs and search*/
-app.controller('headerController', [ '$scope', '$routeParams', '$q', '$timeout', '$location', '$localStorage',
-    function ($scope, $routeParams, $q, $timeout, $location, $localStorage) {
+app.controller('headerController', [ '$scope', '$routeParams', '$q', '$timeout', '$location',
+    function ($scope, $routeParams, $q, $timeout, $location) {
         'use strict';
         function getParameterByName(name) {
             name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");

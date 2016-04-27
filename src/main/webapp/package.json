@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fuzzysearch": "^1.0.3",
+    "ol3-cesium":"3.9.4"
+  }
+}

@@ -1,18 +1,18 @@
 {
     "title": "Earth Observation and Satellite Imagery",
     "id": "earthobservation",
-    "blurb": "Geoscience Australia provides Earth observation services, expert advice, and information for decision makers.",
+    "blurb": "Geoscience Australia provides Earth observation services, expert advice, and information for decision makers. We are Australia's principal earth resource satellite ground station and data processing facility.",
     "headerConfig": 
 		{
         "title": "Applying geoscience to Australia's most important challenges",
         "backgroundImageUrl": "resources/img/header_bg.png"
 		},
-    "maps": [        
+    "maps": [
 		{
-            "title": "Landsat 8 median pixel",
+            "title": "Landsat 8 winter 2015",
             "id": "landsat8",
             "previewImageUrl": "content/earthobservation/landsat8/mapPreview.png",
-            "previewDescription": "Landsat 8 true colour median pixel sampled from the 50% upper percentile pixel quality range in the winter months of 2014-2015. Product of the Australian Geoscience Data Cube."
+            "previewDescription": "Australia as seen from the spectral bands of the Landsat 8 satellite. Product of the Australian Geoscience Data Cube."
         },
 		{
             "title": "Sentinel Hotspots",
@@ -24,8 +24,16 @@
             "title": "Water Observations from Space",
             "id": "wofs",
             "previewImageUrl": "content/sentinel/floods/mapPreview.png",
-            "previewDescription": "Water Observations from Space (WOfS) is a web service displaying historical surface water observations derived from satellite imagery for all of Australia."
+            "previewDescription": "Water Observations from Space (WOfS) is a web service displaying historical surface water observations derived from satellite imagery for all of Australia. Product of the Australian Geoscience Data Cube."
         },
+		{
+			"title": "Australian Geoscience Data Cube",
+			"tags": "Information",
+            "previewImageUrl": "content/earthobservation/agdc.png",
+            "previewDescription": "The Australian Geoscience Data Cube provides an integrated gridded data analysis environment for decades of analysis ready earth observation satellite and related data from multiple satellite and other acquisition systems.",
+			"applicationUrl": "http://www.datacube.org.au/"
+		},
+		
 		{
 			"title": "View in Google Earth (KML)",
 			"tags": "Data",
@@ -43,14 +51,14 @@
     ],
     "tags": [
 		{
-            "id": "Sentinel",
-            "description": "Geoscience Australia reference data for hazard mapping.",
-            "title": "Reference Data"
+            "id": "Information",
+            "description": "Information sites for Earth Observation.",
+            "title": "Information"
         },
 		{
-            "id": "Data",
+            "id": "Data Links",
             "description": "Data links and feeds.",
-            "title": "Sentinel Data"
+            "title": "Reference Data"
         }
     ]
 }

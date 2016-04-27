@@ -65,7 +65,7 @@ app.controller('applicationController', ['$scope', '$http', '$rootScope', '$rout
         //$scope.currentPage = "default";
 
         $scope.$on('$routeChangeStart', function (event, currentRoute, prevRoute) {
-            if (currentRoute.params && currentRoute.params.reload) {
+            if (currentRoute && currentRoute.params && currentRoute.params.reload) {
                 $location.path($location.path().replace('/r/reload/theme', '/theme'));
                 $location.replace();
             }

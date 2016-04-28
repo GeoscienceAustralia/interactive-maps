@@ -1,39 +1,39 @@
 {
     "title": "Earth Observation and Satellite Imagery",
     "id": "earthobservation",
-    "blurb": "Geoscience Australia provides Earth observation services, expert advice, and information for decision makers.",
+    "blurb": "Geoscience Australia provides Earth observation services, expert advice, and information for decision makers. We are Australia's principal earth resource satellite ground station and data processing facility.",
     "headerConfig": 
 		{
         "title": "Applying geoscience to Australia's most important challenges",
         "backgroundImageUrl": "resources/img/header_bg.png"
 		},
     "maps": [
-        {
+		{
+            "title": "Landsat 8 winter 2015",
+            "id": "landsat8",
+            "previewImageUrl": "content/earthobservation/landsat8/mapPreview.png",
+            "previewDescription": "Australia as seen from the spectral bands of the Landsat 8 satellite. Product of the Australian Geoscience Data Cube."
+        },
+		{
             "title": "Sentinel Hotspots",
             "id": "sentinelhotspots",
             "previewImageUrl": "content/sentinel/hotspots/mapPreview.png",
             "previewDescription": "Sentinel hotspots is a national bushfire monitoring system that provides timely information about hotspots to emergency service managers across Australia. The mapping system allows users to identify fire locations with a potential risk to communities and property."
         },
 		{
-            "title": "Sentinel Floods",
-            "id": "sentinelfloods",
+            "title": "Water Observations from Space",
+            "id": "wofs",
             "previewImageUrl": "content/sentinel/floods/mapPreview.png",
-            "previewDescription": "Sentinel floods provides satellite data, reports and feeds for flood risk mapping."
+            "previewDescription": "Water Observations from Space (WOfS) is a web service displaying historical surface water observations derived from satellite imagery for all of Australia. Product of the Australian Geoscience Data Cube."
         },
-		{		
-			"title": "Sentinel Hotspots Help",
-			"tags": "Reference",
-            "previewImageUrl": "content/sentinel/WhatFlood.png",
-            "previewDescription": "A simple definition of flooding is water where it is not wanted.",
-			"applicationUrl": "http://sentinel.ga.gov.au/#/help"
-		},		
-		{		
-			"title": "What is a flood?",
-			"tags": "Reference",
-            "previewImageUrl": "content/sentinel/HotHelp.png",
-            "previewDescription": "A simple definition of flooding is water where it is not wanted.",
-			"applicationUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/basics/what"
+		{
+			"title": "Australian Geoscience Data Cube",
+			"tags": "Information",
+            "previewImageUrl": "content/earthobservation/agdc.png",
+            "previewDescription": "The Australian Geoscience Data Cube provides an integrated gridded data analysis environment for decades of analysis ready earth observation satellite and related data from multiple satellite and other acquisition systems.",
+			"applicationUrl": "http://www.datacube.org.au/"
 		},
+		
 		{
 			"title": "View in Google Earth (KML)",
 			"tags": "Data",
@@ -47,30 +47,18 @@
             "previewImageUrl": "content/sentinel/RSS.png",
             "previewDescription": "Current hotspots RSS (ATOM) feed.",
 			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/wms/reflect?layers=hotspot_current&format=application/atom+xml"
-		},
-		{
-			"title": "WMS GetCaps",
-			"tags": "Data",
-            "previewImageUrl": "content/sentinel/WMSGet.png",
-            "previewDescription": "Current hotspots WMS Get Capabilities.",
-			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/wms?service=wms&version=1.1.1&request=getcapabilities"
 		}
     ],
     "tags": [
 		{
-            "id": "Sentinel",
-            "description": "Geoscience Australia reference data for hazard mapping.",
-            "title": "Reference Data"
+            "id": "Information",
+            "description": "Information sites for Earth Observation.",
+            "title": "Information"
         },
 		{
-            "id": "Reference",
-            "description": "Geoscience Australia reference data for hazard mapping.",
-            "title": "Reference Data"
-        },
-		{
-            "id": "Data",
+            "id": "Data Links",
             "description": "Data links and feeds.",
-            "title": "Sentinel Data"
+            "title": "Reference Data"
         }
     ]
 }

@@ -67,36 +67,36 @@
             "title": "Offshore Minerals Legacy Services",
             "tags": "OffshoreMinerals",
             "id": "offshoremineralslegacy",
-            "previewImageUrl": "content/amsis/twsi/mapPreview.jpg",
-            "previewDescription": "Treaties in force between the Commonwealth of Australia and the Government of the Solomon Islands."
+            "previewImageUrl": "content/amsis/offshoreminerals.png",
+            "previewDescription": "Map of Australian offshore mineral features. These services are supplied as legacy services until they can be replaced with more current data."
         },
 		{
             "title": "Native Title",
             "tags": "NativeTitle",
             "id": "nativetitle",
-            "previewImageUrl": "content/amsis/nativetitle.jpg",
-            "previewDescription": "Services supplied by the National Native Title Tribunal."
-        },		
+            "previewImageUrl": "content/amsis/nativetitle.png",
+            "previewDescription": "Services supplied by the National Native Title Tribunal. Whilst these datasets do not form part of the statutory registers, they enable visualization."
+        },
 		{
             "title": "Fisheries Legacy Services",
             "tags": "Fisheries",
 			"id": "fisherieslegacy",
             "previewImageUrl": "content/amsis/fisheries.png",
-            "previewDescription": "The Act relating to the management of Fisheries is The Fisheries Management Act 1991."
+            "previewDescription": "The act relating to the management of Fisheries is the Fisheries Management Act 1991. These services are supplied as legacy services until they can be replaced with more current data."
         },
-		{
+		{ 
             "title": "Regulatory Legacy Services",
             "tags": "Regulatory",
 			"id": "regulartorylegacy",
             "previewImageUrl": "content/amsis/regulatory.png",
-            "previewDescription": "Map of Australian Maritime Regulatory features, featuring data from supplied by the Australian Maritime Safety Authority."
+            "previewDescription": "Map of Australian Maritime Regulatory legacy features, featuring data from supplied by the Australian Maritime Safety Authority."
         },
 		{
             "title": "Environment Legacy Services",
             "tags": "Environment",
 			"id": "environmentlegacy",
             "previewImageUrl": "content/amsis/environment.png",
-            "previewDescription": "Map of Australian Maritime Environment features, featuring data from supplied by the Department of Environment, legacy and new."
+            "previewDescription": "Map of Australian Maritime Environment features, featuring data from supplied by the Department of Environment. These services are supplied as legacy services until they can be replaced with more current data."
         },
 		{
             "title": "Australian Ocean Governance and Relevant Legislation",

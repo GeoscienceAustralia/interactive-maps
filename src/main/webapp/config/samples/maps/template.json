@@ -1,0 +1,38 @@
+{
+  "id": "template",
+  "datumProjection": "EPSG:3857",
+  "displayProjection": "EPSG:4326",
+  "title": "Template title",
+  "headerConfig": {
+    "title": "Template header title"
+  },
+  "toolsConfig": {
+    "tools": []
+  },
+  "initialExtent": [
+    [
+      90.5,
+      13.73
+    ],
+    [
+      171.62,
+      -58.05
+    ]
+  ],
+  "centerPosition": {},
+  "baseMaps": [
+    {
+      "mapType": "XYZTileCache",
+      "visibility": true,
+      "name": "World Image",
+      "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+      "mapBGColor": "194584",
+      "opacity": 1,
+      "wrapDateLine": true,
+      "maxZoomLevel": 12,
+      "attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+    }
+  ],
+  "layerMaps": [
+  ]
+}

@@ -1,17 +1,16 @@
 {
-    "id": "earthquakehazards",
-    "title": "Earthquake Hazards",
+    "id": "sentinel",
+    "title": "Sentinel",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv2",
+    "framework": "olv2",
     "initialExtent": [
         [
             99,
             10
         ],
         [
-            169,
-            -55
+            169, -55
         ]
     ],
     "zoomLevel": 10,
@@ -21,18 +20,18 @@
     },
     "aboutConfig": {
         "enabled": true,
-        "bodyUrl": "content/hazards/earthquakehazards/about.html"
+        "bodyUrl": "content/hazards/sentinel/about.html"
     },
     "layersConfig": {
         "enabled": true
     },
-	"overviewOptions": {
-		"layers": [
-			{
-            "slug": "National_Color_Base_Map"
-			}
-		]
-	},
+    "overviewOptions": {
+        "layers": [
+            {
+                "slug": "National_Color_Base_Map"
+            }
+        ]
+    },
     "baseLayersConfig": {
         "enabled": true
     },
@@ -47,7 +46,7 @@
             {
                 "id": "clientMeasure"
             },
-			{
+            {
                 "id": "addLayer"
             },
             {
@@ -56,42 +55,42 @@
             {
                 "id": "draw"
             },
-			{
-            "id": "identifyTool",
-            "toolPanelUrl": "resources/partial/interrogateDataPanel.html",
-            "toolToggleUrl": "resources/partial/interrogateDataToggle.html",
-            "config": {
-                "titleText": "Identify features",
-                "panelHeading": "Identify Features",
-                "symbol": "<img src=\"content/marker/zoom-32.png\"/>",
-                "propertiesOfInterest": ["cont_val","Pixel value"],
-                "propertiesAlias": ["Contour Value (g)","Pixel Value (g)"],
-                "primaryPropertyName": "",
-                "showEmptyFeatures": true,
-                "requiresGeometry": false,
-                "markerUrl": "content/marker/marker-identify.png",
-                "markerWidth": "55",
-                "markerHeight": "40",
-                "endpoints": [
-					{
-					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer",
-					"geometryName": "Shape",
-					"layers":"1",
-					"imageDisplay": "600,550,96",
-					"featureTitle": "0.0s Response Spectral Acceleration (RSA)",
-					"queryType": "ArcGISREST"
-					},
-					{
-					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer",
-					"geometryName": "Shape",
-					"layers":"0",
-					"imageDisplay": "600,550,96",
-					"featureTitle": "RSA Contours",
-					"queryType": "ArcGISREST"
-					}
-			]
-			}
-			}
+            {
+                "id": "identifyTool",
+                "toolPanelUrl": "resources/partial/interrogateDataPanel.html",
+                "toolToggleUrl": "resources/partial/interrogateDataToggle.html",
+                "config": {
+                    "titleText": "Identify features",
+                    "panelHeading": "Identify Features",
+                    "symbol": "<img src=\"content/marker/zoom-32.png\"/>",
+                    "propertiesOfInterest": ["cont_val", "Pixel value"],
+                    "propertiesAlias": ["Contour Value (g)", "Pixel Value (g)"],
+                    "primaryPropertyName": "",
+                    "showEmptyFeatures": true,
+                    "requiresGeometry": false,
+                    "markerUrl": "content/marker/marker-identify.png",
+                    "markerWidth": "55",
+                    "markerHeight": "40",
+                    "endpoints": [
+                        {
+                            "url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer",
+                            "geometryName": "Shape",
+                            "layers": "1",
+                            "imageDisplay": "600,550,96",
+                            "featureTitle": "0.0s Response Spectral Acceleration (RSA)",
+                            "queryType": "ArcGISREST"
+                        },
+                        {
+                            "url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer",
+                            "geometryName": "Shape",
+                            "layers": "0",
+                            "imageDisplay": "600,550,96",
+                            "featureTitle": "RSA Contours",
+                            "queryType": "ArcGISREST"
+                        }
+                    ]
+                }
+            }
         ]
     },
     "baseMaps": [
@@ -101,19 +100,372 @@
     ],
     "layerMaps": [
         {
-            "id": "SentinelHotspots",
-            "slug": "Sentinel_Hotspots",
+            "isGroupedLayers": true,
+            "groupTitle": "Next Satellite Passes",
+            "groupId": "nextsatellitepasses",
+            "visibility": false,
+            "defaultLayerId": "AQUA"
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Last Satellite Passes",
+            "groupId": "lastsatellitepasses",
+            "visibility": false,
+            "defaultLayerId": "AQUA"
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "MODIS Burnt Areas",
+            "groupId": "modisburntareas",
+            "visibility": false,
+            "defaultLayerId": "October2015"
+        },
+        {
+            "id": "Landsat Mosaic",
             "extent": [
                 [99, 10],
                 [169, -55]
             ],
             "mapType": "WMS",
-            "visibility": true,
-            "name": "Scale parameter for GEV distribution 10 000 years",
+            "visibility": false,
+            "name": "Landsat Mosaic",
             "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
-            "layers": "hotspot_current",
+            "layers": "sentinel:landsat_mosaic_2004_ecw",
             "metadataText": "Scale parameter for GEV distribution.",
             "opacity": 0.8
+        },
+        {
+            "id": "MODIS Mosaic",
+            "extent": [
+                [99, 10],
+                [169, -55]
+            ],
+            "mapType": "WMS",
+            "visibility": false,
+            "name": "MODIS Mosaic",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+            "layers": "sentinel:modis_mosaic_l1b",
+            "metadataText": "Scale parameter for GEV distribution.",
+            "opacity": 0.8
+        },
+        {
+            "slug": "Landcover",
+            "visibility": false,
+            "opacity": 0.8
+        },
+        {
+            "slug": "Australian_Topography_2014_ARCGIS",
+            "visibility": false,
+            "opacity": 0.8
+        },
+        {
+            "isGroupedLayers": true,
+            "groupTitle": "Hotspots",
+            "groupId": "hotspots",
+            "visibility": true,
+            "defaultLayerId": "hotspotslast24hours"
+        }
+    ],
+    "groupedLayers": [
+        {
+            "groupId": "hotspots",
+            "layerMaps": [
+                {
+                    "id": "hotspotslast2hours",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "Last 2 hours",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=age_hours%3C%3D2",
+                    "layers": "hotspot_current",
+                    "metadataText": "",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "hotspotslast6hours",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "Last 6 hours",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=age_hours%3C%3D6",
+                    "layers": "hotspot_current",
+                    "metadataText": "",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "hotspotslast24hours",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "Last 24 hours",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=age_hours%3C%3D24",
+                    "layers": "hotspot_current",
+                    "metadataText": "",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "hotspotslast48hours",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "Last 48 hours",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=age_hours%3C%3D48",
+                    "layers": "hotspot_current",
+                    "metadataText": "Scale parameter for GEV distribution.",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "hotspotslast72hours",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "Last 72 hours",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=age_hours%3C%3D72",
+                    "layers": "hotspot_current",
+                    "metadataText": "",
+                    "opacity": 0.8
+                }
+            ]
+        },
+        {
+            "groupId": "modisburntareas",
+            "layerMaps": [
+                {
+                    "id": "November2015",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "November 2015",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+                    "layers": "sentinel:umd_burnt_areas_month_-0",
+                    "metadataText": "",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "October2015",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "October 2015",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+                    "layers": "sentinel:umd_burnt_areas_month_-1",
+                    "metadataText": "",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "September2015",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "September 2015",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+                    "layers": "sentinel:umd_burnt_areas_month_-2",
+                    "metadataText": "",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "August2015",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "August 2015",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+                    "layers": "sentinel:umd_burnt_areas_month_-3",
+                    "metadataText": "",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "July2015",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "July 2015",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+                    "layers": "sentinel:umd_burnt_areas_month_-2",
+                    "metadataText": "",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "June2015",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "June 2015",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+                    "layers": "sentinel:umd_burnt_areas_month_-3",
+                    "metadataText": "",
+                    "opacity": 0.8
+                },
+                {
+                    "id": "Past 6 months",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "June 2015",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+                    "layers": "sentinel:umd_burnt_areas",
+                    "metadataText": "",
+                    "opacity": 0.8
+                }
+            ]
+        },
+        {
+            "groupId": "lastsatellitepasses",
+            "layerMaps": [
+                {
+                    "id": "AQUA",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "AQUA",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=satellite%3D%27AQUA%27",
+                    "layers": "sentinel:satellite_pass_last_hotspot",
+                    "metadataText": "",
+                    "opacity": 0.5
+                },
+                {
+                    "id": "NOAA19",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "NOAA 19",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=satellite%3D%27NOAA%2019%27",
+                    "layers": "sentinel:satellite_pass_last_hotspot",
+                    "metadataText": "",
+                    "opacity": 0.5
+                },
+                {
+                    "id": "TERRA",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "TERRA",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=satellite%3D%27TERRA%27",
+                    "layers": "sentinel:satellite_pass_last_hotspot",
+                    "metadataText": "",
+                    "opacity": 0.5
+                },
+                {
+                    "id": "SUOMINPP",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "SUOMI NPP",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=satellite%3D%27SUOMI%20NPP%27",
+                    "layers": "sentinel:satellite_pass_last_hotspot",
+                    "metadataText": "",
+                    "opacity": 0.5
+                }
+            ]
+        },
+        {
+            "groupId": "nextsatellitepasses",
+            "layerMaps": [
+                {
+                    "id": "AQUA",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "AQUA",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=satellite%3D%27AQUA%27",
+                    "layers": "sentinel:satellite_pass_next_hotspot",
+                    "metadataText": "",
+                    "opacity": 0.5
+                },
+                {
+                    "id": "NOAA19",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "NOAA 19",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=satellite%3D%27NOAA%2019%27",
+                    "layers": "sentinel:satellite_pass_next_hotspot",
+                    "metadataText": "",
+                    "opacity": 0.5
+                },
+                {
+                    "id": "TERRA",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "TERRA",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=satellite%3D%27TERRA%27",
+                    "layers": "sentinel:satellite_pass_next_hotspot",
+                    "metadataText": "",
+                    "opacity": 0.5
+                },
+                {
+                    "id": "SUOMINPP",
+                    "extent": [
+                        [99, 10],
+                        [169, -55]
+                    ],
+                    "mapType": "WMS",
+                    "visibility": false,
+                    "name": "SUOMI NPP",
+                    "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms?&CQL_FILTER=satellite%3D%27SUOMI%20NPP%27",
+                    "layers": "sentinel:satellite_pass_next_hotspot",
+                    "metadataText": "",
+                    "opacity": 0.5
+                }
+            ]
         }
     ],
     "search": {

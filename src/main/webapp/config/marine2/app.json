@@ -7,43 +7,28 @@
     },
     "maps": [
         {
-            "title": "Marine Bathymetry",
+            "title": "Marine and Coastal Data",
             "id": "marinebathymetry",
             "previewImageUrl": "content/marine/acreage/marinebathymetry.png",
-            "previewDescription": "Marine Bathymetry."
+            "previewDescription": "A compilation of national marine and coastal datasets managed and distributed by Geoscience Australia."
         },
 		{
-            "title": "Marine Geology",
+            "title": "Bathymetry",
+            "id": "marinebathymetry",
+            "previewImageUrl": "content/marine/acreage/marinebathymetry.png",
+            "previewDescription": "Visualisation of the highest resolution bathymetric data available for download on the Geoscience Australia website."
+        },
+		{
+            "title": "Geology,  Gemorphology and Geophysics of the Northwest Shelf",
             "id": "marinegeology",
             "previewImageUrl": "content/marine/acreage/marinegeology.png",
-            "previewDescription": "Marine Geology."
+            "previewDescription": "A compilation of  marine and coastal geological,  geomorphological and geophysical data over the Northwest Shelf."
         },
 		{
-            "title": "Marine Environmental",
+            "title": "Environmental Management Data",
             "id": "marineenvironmental",
             "previewImageUrl": "content/marine/acreage/marineenvironmental.png",
-            "previewDescription": "Marine Environmental."
-        },
-		{
-            "title": "Acreage Marine Bathymetry",
-			"tags": "Acreage",
-            "id": "PARmarinebathymetry",
-            "previewImageUrl": "content/marine/acreage/PARmarinebathymetry.png",
-            "previewDescription": "Acreage Marine Bathymetry."
-        },
-		{
-            "title": "Acreage Marine Geology",
-			"tags": "Acreage",
-            "id": "PARmarinegeology",
-            "previewImageUrl": "content/marine/acreage/PARmarinegeology.png",
-            "previewDescription": "Acreage Marine Geology."
-        },
-		{
-            "title": "Acreage Marine Environmental",
-			"tags": "Acreage",
-            "id": "PARmarineenvironmental",
-            "previewImageUrl": "content/marine/acreage/PARmarineenvironmental.png",
-            "previewDescription": "Acreage Marine Environmental."
+            "previewDescription": "A compilation of significant biological and environmental management web services and datasets managed and distributed by the Department of Environment and  CSIRO."
         }
     ],
     "tags": [

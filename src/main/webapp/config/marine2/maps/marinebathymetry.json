@@ -6,13 +6,13 @@
 	"framework":"olv2",	
     "initialExtent": [
         [
-            30,
-            10
-        ],
-        [
-            180,
-            -70
-        ]
+			1.51,
+			53.2
+		],
+		[
+			253.58,
+			-81.37
+		]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
@@ -20,7 +20,8 @@
         "title": "Marine Bathymetry"
     },
     "aboutConfig": {
-        "enabled": true
+        "enabled": true,
+		"bodyUrl": "content/marine/marinebathymetry/about.html"
     },
     "layersConfig": {
         "enabled": true
@@ -46,24 +47,70 @@
 			{
                 "id": "addLayer"
             },
+			{
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id":"Australian Bathymetry and Topography 2009 WCS",
+							"url":"http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WCSServer?request=GetCapabilities&service=WCS"
+                        },
+						{
+                            "id":"Multibeam 50m Bathymetry 2012 WCS",
+							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012/ImageServer/WCSServer?request=GetCapabilities&service=WCS"
+                        },
+						{
+							"id":"Multibeam Survey Extents 2014 WFS",
+							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+						}
+						
+						
+						
+                    ]
+                }
+            },
             {
                 "id": "export"
-            }           
+            },
+			{
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+						"ENO",
+						"SURVEY_COD",
+                        "Pixel Value"
+                    ],
+                    "propertiesAlias": [
+						"ENO",
+						"SURVEY_COD",
+						"Pixel Value"
+                    ],
+					"primaryPropertyName": "FEATURETYPE"
+                }
+            }			
         ]
     },
     "baseMaps": [
+		{
+			"slug": "ESRI_Imagery",
+			"maxZoomLevel": 12
+        },
         {
 		"slug": "National_Color_Base_Map"
 		}
     ],
     "layerMaps": [
+		{
+            "slug": "Australian_Bathymetry_Topography",
+			"queryFeatures": true
+		},
         {
             "slug": "Multibeam_50m_Bathymetry_2012_RGB",
             "queryFeatures": true
         },
         {
             "slug": "Multibeam_Survey_Extents_2014",
-            "visibility": false,
+            "visibility": true,
             "opacity": 0.5,
             "queryFeatures": true
         }

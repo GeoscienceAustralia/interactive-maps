@@ -8,7 +8,7 @@
     "maps": [
         {
             "title": "Marine and Coastal Data",
-            "id": "marinebathymetry",
+            "id": "marinecoastal",
             "previewImageUrl": "content/marine/acreage/marinebathymetry.png",
             "previewDescription": "A compilation of national marine and coastal datasets managed and distributed by Geoscience Australia."
         },
@@ -29,13 +29,6 @@
             "id": "marineenvironmental",
             "previewImageUrl": "content/marine/acreage/marineenvironmental.png",
             "previewDescription": "A compilation of significant biological and environmental management web services and datasets managed and distributed by the Department of Environment and  CSIRO."
-        }
-    ],
-    "tags": [
-        {
-            "id": "Acreage",
-            "description": "Acreage Release 2016.",
-            "title": "Acreage"
         }
     ]
 }

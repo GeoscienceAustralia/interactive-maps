@@ -204,6 +204,40 @@
             "queryLayers": "Block_MapSheets,OPGGSA_Points_2014,OPGGSA_Blocks_2014",
             "opacity": 1
         },
+		{
+            "slug": "Australian_Bathymetry_Topography",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Australian Bathymetry and Topography 2009",            
+            "url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WMSServer",
+            "layers": "Australian_Bathymetry_Topography",
+            "opacity": 1,
+            "metadataText": "This web service describes the bathymetry dataset of the Australian Exclusive Economic Zone and beyond. Bathymetry data were compiled by Geoscience Australia from multibeam and single beam data (derived from multiple sources), Australian Hydrographic Service (AHS) Laser Airborne Depth Sounding (LADS) data, Royal Australian Navy (RAN) fairsheets, the General Bathymetric Chart of the Oceans (GEBCO) bathymetric model, the 2 arc minute ETOPO (Smith and Sandwell, 1997) and 1 arc minute ETOPO satellite derived bathymetry (Amante and Eakins, 2008). Topographic data (onshore data) is based on the revised Australian 0.0025dd topography grid (Geoscience Australia, 2008), the 0.0025dd New Zealand topography grid (Geographx, 2008) and the 90m SRTM DEM (Jarvis et al, 2008).",
+            "ogcLinks": [
+				{	
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_b7e441d4-238d-4bc2-9704-41e76bd43e10/Multibeam_50m_Bathymetry_2012"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer?f=lyr&v=9.3"
+                }                
+            ],
+			"queryFeatures": true,
+            "queryUrl": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WMSServer",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "Australian_Bathymetry_Topography"
+        },
         {
             "slug": "AUS_GA_1:5M_Metamorphic_Geology_Polygons",
 			"extent": [[99,10],[169,-55]],

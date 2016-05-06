@@ -1,9 +1,9 @@
 {
-    "id": "marineX",
-    "title": "MarineX",
+    "id": "marinecoastal",
+    "title": "marinecoastal",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",	
+	"framework":"olv2",	
     "initialExtent": [
         [
             30,
@@ -17,7 +17,7 @@
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
     "headerConfig": {
-        "title": "MarineX"
+        "title": "Marine and Coastal Data"
     },
     "aboutConfig": {
         "enabled": true

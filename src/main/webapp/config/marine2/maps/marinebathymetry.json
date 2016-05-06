@@ -73,17 +73,56 @@
                 "id": "export"
             },
 			{
+                "id": "distanceBoundary"
+            },
+			{
                 "id": "identifyTool",
                 "config": {
                     "propertiesOfInterest": [
 						"ENO",
 						"SURVEY_COD",
+						"SURVEY_NAM",
+						"ID",
+						"DATATYPE",
+						"VESSEL",
+						"START_DATE",
+						"END_DATE",
+						"START_PORT",
+						"DATA_OWNER",
+						"N_LAT",
+						"S_LAT",
+						"W_LONG",
+						"E_LONG",
+						"AREA_KM2",
+						"SYSTEM",
+						"RELEASE_DA",
+						"IP_DETAILS",
+						"LEADER",
+						"E_PORT",
                         "Pixel Value"
                     ],
                     "propertiesAlias": [
 						"ENO",
 						"SURVEY_COD",
-						"Pixel Value"
+						"SURVEY_NAM",
+						"ID",
+						"DATATYPE",
+						"VESSEL",
+						"START_DATE",
+						"END_DATE",
+						"START_PORT",
+						"DATA_OWNER",
+						"N_LAT",
+						"S_LAT",
+						"W_LONG",
+						"E_LONG",
+						"AREA_KM2",
+						"SYSTEM",
+						"RELEASE_DA",
+						"IP_DETAILS",
+						"LEADER",
+						"E_PORT",
+                        "Pixel Value"
                     ],
 					"primaryPropertyName": "FEATURETYPE"
                 }
@@ -103,7 +142,7 @@
 		{
             "slug": "Australian_Bathymetry_Topography",
 			"queryFeatures": true,
-			"opacity":0.3
+			"opacity":0.4
 		},
         {
             "slug": "Multibeam_50m_Bathymetry_2012_RGB",

@@ -91,37 +91,9 @@
     "layerMaps": [
 		{
 			"slug": "Geological_Provinces_Sedimentary_Basins",
-			"name": "Geological Provinces Sedimentary Basins",
-			"mapType": "WMS",
-			"visibility": true,
-			"url": "http://services.ga.gov.au/gis/services/Geological_Provinces_2013/MapServer/WMSServer",
-			"name": "Geological_Provinces_2013",
-			"opacity": "1",
-			"layers": "SedimentaryBasins-Cenozoic,SedimentaryBasins-MesozoicCenozoic,SedimentaryBasins-Mesozoic,SedimentaryBasins-PaleozoicCenozoic,SedimentaryBasins-PaleozoicMesozoic,SedimentaryBasins-LatePaleozoic,SedimentaryBasins-EarlyToLatePaleozoic,SedimentaryBasins-EarlyPaleozoic,SedimentaryBasins-Mesoproterozoic,SedimentaryBasins-Paleoproterozoic,SedimentaryBasins-ArcheanPaleoproterozoic",
-			"metadataText": "The Australian Geological Provinces web map service contains descriptions of the fundamental geological elements of the Australian continent and offshore surrounds. Province types include sedimentary basins, tectonic provinces such as cratons and orogens, igneous provinces, and metallogenic provinces. Spatial data has been captured largely at approximately 1:1M scale for intended use between 1:2M and 1:5M scale. The full 2D spatial extent (i.e. including the extent of a province under any overlying cover material) of each province has been captured.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_2680f4bb-8493-14fc-e053-10a3070a4107/Geological+Provinces+2013+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Geological_Provinces_2013/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Geological_Provinces_2013/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Geological_Provinces_2013/MapServer?f=lyr&v=9.3"
-                }
-            ],
-			"queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/gis/services/Geological_Provinces_2013/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "SedimentaryBasins-Cenozoic,SedimentaryBasins-MesozoicCenozoic,SedimentaryBasins-Mesozoic,SedimentaryBasins-PaleozoicCenozoic,SedimentaryBasins-PaleozoicMesozoic,SedimentaryBasins-LatePaleozoic,SedimentaryBasins-EarlyToLatePaleozoic,SedimentaryBasins-EarlyPaleozoic,SedimentaryBasins-Mesoproterozoic,SedimentaryBasins-Paleoproterozoic,SedimentaryBasins-ArcheanPaleoproterozoic"
+			"opacity": 0.5,
+			"layers": "SedimentaryBasins-PaleozoicCenozoic,SedimentaryBasins-PaleozoicMesozoic",
+            "queryLayers": "SedimentaryBasins-PaleozoicCenozoic,SedimentaryBasins-PaleozoicMesozoic"
 		},
 		{
 			"slug": "Seabed_Features",

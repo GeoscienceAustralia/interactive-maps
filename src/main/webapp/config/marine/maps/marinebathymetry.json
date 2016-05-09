@@ -124,7 +124,7 @@
 						"E_PORT",
                         "Pixel Value"
                     ],
-					"primaryPropertyName": "FEATURETYPE"
+					"primaryPropertyName": "SURVEY_NAM"
                 }
             }			
         ]

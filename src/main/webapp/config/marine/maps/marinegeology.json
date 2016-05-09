@@ -5,14 +5,7 @@
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
     "initialExtent": [
-        [
-            99,
-            10
-        ],
-        [
-            169,
-            -55
-        ]
+        [52,18],[178,-65]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
@@ -20,7 +13,8 @@
         "title": "Marine Geology"
     },
     "aboutConfig": {
-        "enabled": true
+        "enabled": true,
+		"bodyUrl": "content/marine/marinegeology/about.html"
     },
     "layersConfig": {
         "enabled": true
@@ -37,7 +31,7 @@
 	},
     "legendConfig": {
         "enabled": true,
-        "legendUrl": "content/marine/marinebathymetry/legend.html"
+        "legendUrl": "content/marine/marinegeology/legend.html"
     },
     "toolsConfig": {
         "enabled": true,
@@ -116,6 +110,15 @@
             "groupId": "smartline",
             "visibility": false,
             "defaultLayerId": "Intertidal - Dominate Landform"
+        },
+		{
+            "slug": "Airborne_Surveys_2014",
+            "opacity": 1,
+			"visibility": false,
+        },
+		{
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1
         }
 		
     ],

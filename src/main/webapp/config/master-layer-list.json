@@ -1115,6 +1115,7 @@
         },
 		{
 			"slug": "Geological_Provinces_Sedimentary_Basins",
+			"extent":  [[108,-3],[172,-49]],
 			"name": "Geological Provinces Sedimentary Basins",
 			"mapType": "WMS",
 			"visibility": true,

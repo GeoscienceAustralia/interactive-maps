@@ -299,6 +299,37 @@
             ],
             "opacity": 1,
             "queryFeatures": false
+        },
+		{
+            "slug": "Browse_Basin_Bathymetry_2014_GA0345_GA0346_TAN1411",
+			"extent": [[99,10],[169,-55]],
+            "id": "Browse_Basin_Bathymetry_2014_GA0345_GA0346_TAN1411",
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Browse Basin Bathymetry 2014",
+            "url": "http://services.ga.gov.au/gis/rest/services/Browse_Basin_Bathymetry_2014_GA0345_GA0346_TAN1411/MapServer",
+            "layers": "Browse_Basin_Bathymetry_AUV,Browse_Basin_Bathymetry",
+            "metadataText": "This web service displays the results of a marine survey conducted by Geoscience Australia in Commonwealth waters of the north-eastern Browse Basin (Caswell Sub-basin) between 9 October and 9 November 2014. The additional codes GA-0345 and GA-0346 refer to Geoscience Australia (GA) internal codes and TAN1411 is the vessel survey number given by the RV Tangaroa for 2014.",
+            "ogcLinks": [
+                {
+                    "description": "Dataset Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_27893c73-858d-998e-e053-12a3070ad3c1/Browse+Basin+Marine+Survey%2C+2014+%28GA-0345%2CGA-0346+and+TAN1411%29+-+High+Resolution+Bathymetry+Grids+WMS"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "hhttp://services.ga.gov.au/gis/rest/services/Browse_Basin_Bathymetry_2014_GA0345_GA0346_TAN1411/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1,
+            "queryFeatures": false
         },        
         {
             "slug": "Clear_Observations",

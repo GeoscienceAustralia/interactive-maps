@@ -1,16 +1,34 @@
 {
     "id": "marine",
     "title": "Marine and Coastal",
-    "blurb": "Information regarding Australia's coasts and estuaries, seabed mapping and Antarctica. Coasts and estuaries form a dynamic, transition zone between the land and the sea and help Australians achieve many economic, social and environmental benefits. As an island continent, Australia has sovereign rights over a vast area of ocean, along with the fishery, mineral, and petroleum resources found in that area.",
+    "blurb": "Information regarding Australia's seafloor, coasts and estuaries. As an island continent, Australia has sovereign rights over a vast area of ocean and seafloor along with the fishery, mineral, and petroleum resources found in this zone. Coasts and estuaries form the dynamic, transition zone between the land and the sea and provide Australians  many economic, social and environmental benefits.",
     "headerConfig": {
         "title": "Applying geoscience to Australia's most important challenges"
     },
     "maps": [
         {
-            "title": "Ocean Bathymetry",
-            "id": "oceanbathymetry",
-            "previewImageUrl": "content/marine/oceanbathymetry/mapPreview.png",
-            "previewDescription": "Bathymetry is the study and mapping of seafloor topography. It involves obtaining measurements of the depth of the ocean and is equivalent to mapping the topography on land."
+            "title": "Bathymetry",
+            "id": "marinebathymetry",
+            "previewImageUrl": "content/marine/marinebathymetry/marinebathymetry.png",
+            "previewDescription": "Visualisation of the highest resolution bathymetric data available for download on the Geoscience Australia website."
+        },
+		{
+            "title": "Geology,  Gemorphology and Geophysics of the Northwest Shelf",
+            "id": "marinegeology",
+            "previewImageUrl": "content/marine/acreage/marinegeology.png",
+            "previewDescription": "A compilation of  marine and coastal geological,  geomorphological and geophysical data over the Northwest Shelf."
+        },
+		{
+            "title": "Marine and Coastal Data",
+            "id": "marinecoastal",
+            "previewImageUrl": "content/marine/marinebathymetry/marinebathymetry.png",
+            "previewDescription": "A compilation of national marine and coastal datasets managed and distributed by Geoscience Australia."
+        },		
+		{
+            "title": "Environmental Management Data",
+            "id": "marineenvironmental",
+            "previewImageUrl": "content/marine/acreage/marineenvironmental.png",
+            "previewDescription": "A compilation of significant biological and environmental management web services and datasets managed and distributed by the Department of Environment and  CSIRO."
         }
     ]
 }

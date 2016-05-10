@@ -4400,6 +4400,10 @@
                     "description": "WMS Capabilities",
                     "url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
+				{
+                    "description": "WFS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+                },
                 {
                     "description": "ArcMap Layerfile",
                     "url": "http://www.ga.gov.au/gis/rest/services/marine_coastal/Australian_Seabed_Features/MapServer?f=lyr&v=9.3"
@@ -4615,6 +4619,42 @@
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
 			"queryLayers": "Baselines_Straight_Seas_and_Submerged_Lands_Territorial_Sea_Baseline_Proclamation_2006_AMB2014"
+        },
+		{
+            "slug": "Submarine_Canyons_of_Australia",
+			"extent": [[99,10],[169,-55]],
+            "id": "Submarine_Canyons_of_Australia",
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Submarine Canyons of Australia",
+            "url": "http://www.ga.gov.au/gis/services/marine_coastal/National_Submarine_Canyons_of_Australia/MapServer/WMSServer",
+            "layers": "National Submarine Canyon Dataset",
+			"metadataText": "On the Australian margin, submarine canyons have formed along all sides of the continent and are exposed to the potential influence of large-scale ocean currents, including the Leeuwin Current and the East Australian Current. Recognised in marine bioregional plans as potential biodiversity hotspots, many of these canyons sit within the new national network of Commonwealth Marine Reserves. This GIS polygon layer contains 753 submarine canyons along the Australian continental margin and external territories. The locations and extents of these canyons were derived from a range of bathymetry datasets. The layer has attributes describing the canyon's shape, morphometric and geographic characteristics. The definitions are as follows. SHAPE_Leng: Perimeter SHAPE_Area: Planar area centreli_L: Centreline length; total length of canyon/sub-canyons centreline(s) MBG_Width: Minimum bounding rectangle width MBG_Length: Minimum bounding rectangle length MBG_Orient: Minimum bounding rectangle orientation len_wid_ra: Length to width ratio; a measure of elongation; larger the value the more elongate the canyon border_ind: Border index; a measure of geometric complexity; larger he value the more fractal the canyon compactnes: a measure of compactness; larger the value the more compact the canyon (or the smaller its border) no_branch: Number of sub-canyons head_incis: Head incision; incision deph of canyon head head_depth: Head depth; water depth of canyon head foot_depth: Foot depth; water depth of canyon foot depth_rang: Depth range; depth range between canyon head and foot slope_mean: Slope mean; average slope gradients within canyon polygon slope_std: Slope standard deviation; standard deviation of the slope gradients within canyon polygon slope_rang: Slope range; range between maximum and minimum slope gradients within canyon polygon surArea1: Surface area; 3-D surface area of canyon rugosity: Rugosity; roughness of canyon surface volume: Volume; 3-D volume enclosed by the canyon bottom and walls head_x: X coordinate of canyon head; in Asia south Equidistant Conic projection head_y: Y coordinate of canyon head; in Asia south Equidistant Conic projection foot_x: X coordinate of canyon foot; in Asia south Equidistant Conic projection foot_y: Y coordinate of canyon foot; in Asia south Equidistant Conic projection h_f_dist: Head to foot distance; euclidian distance between canyon head and foot h_f_slope: head to foot slope; slope gradient between canyon head and foot dist_shelf: Distance to shelf; euclidian distance of canyon to shelf break; a distance of zero indicates that canyon touchs or intersects the shelf break or within the continental shelf near_canyo: Nearest canyon; euclidian distance to the nearest canyon dist_coast: Distance to coast; euclidian distance of canyon to Australian coast focal_var: Focal variety; number of neighbouring canyons within a nominated proximity inci_depth: Incision depth; averged depth of canyon area that incises into shelf break; slope-confined canyons have values of zero inci_area: Incision area; area of canyon area that incises into shelf break; slope-confined canyons have values of zero slope15: Percentage of slope gradient greater than 15 degree; percentage of canyon area with slope gradients greater than 15 degree sinuosity: a measure of the quality of being sinuous; larger the value the more sinuous the canyon shelf_inci: Shelf incision; shlef-incising canyons have value of 1; slope-confined canyons have value of zero dist_river: Distance to revier; euclidian distance to the mouth of the nearest permanent river uncertain: Uncertainty; mapping uncertainty assigned to canyon; larger the value the more uncertain the mapping is marine_reg: Marine region; the location of the canyon in one of the marine regions canyon_nam: The name of canyon if known map_region: Map region; the location of canyon in one of the map regions Please refer to Marine Geology 357, 362-383 for details of mapping methods.",			
+            "opacity": 1,
+            "ogcLinks": [
+                {
+                    "description": "Service Metadata",
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_e3dd1af5-7b05-50fd-e044-00144fdd4fa6/National+Submarine+Canyons+of+Australia"
+                },
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://www.ga.gov.au/gis/rest/services/marine_coastal/National_Submarine_Canyons_of_Australia/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://www.ga.gov.au/gis/services/marine_coastal/National_Submarine_Canyons_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://www.ga.gov.au/gis/rest/services/marine_coastal/National_Submarine_Canyons_of_Australia/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "layerTimeout": 5000,
+			"queryFeatures": true,
+            "queryUrl": "http://www.ga.gov.au/gis/services/marine_coastal/National_Submarine_Canyons_of_Australia/MapServer/WMSServer",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "National Submarine Canyon Dataset"
         },
         {
             "slug": "Subtidal_Dominate_Landform",

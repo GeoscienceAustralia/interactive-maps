@@ -15,20 +15,8 @@
 		{
             "title": "Geology,  Gemorphology and Geophysics of the Northwest Shelf",
             "id": "marinegeology",
-            "previewImageUrl": "content/marine/acreage/marinegeology.png",
+            "previewImageUrl": "content/marine/marinegeology/marinegeology.png",
             "previewDescription": "A compilation of  marine and coastal geological,  geomorphological and geophysical data over the Northwest Shelf."
-        },
-		{
-            "title": "Marine and Coastal Data",
-            "id": "marinecoastal",
-            "previewImageUrl": "content/marine/marinebathymetry/marinebathymetry.png",
-            "previewDescription": "A compilation of national marine and coastal datasets managed and distributed by Geoscience Australia."
-        },		
-		{
-            "title": "Environmental Management Data",
-            "id": "marineenvironmental",
-            "previewImageUrl": "content/marine/acreage/marineenvironmental.png",
-            "previewDescription": "A compilation of significant biological and environmental management web services and datasets managed and distributed by the Department of Environment and  CSIRO."
         }
     ]
 }

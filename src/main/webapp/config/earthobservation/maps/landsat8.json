@@ -41,7 +41,7 @@
                 "config": {
                     "infoList": [
                         {
-                            "id": "Landsat8 WCS",
+                            "id": "Landsat8 Web Coverage Service",
                             "url": "http://intranet-dev.ga.gov.au/gis/services/Landsat8/MapServer/WCSServer?request=GetCapabilities&service=WCS"
                         }
                     ]
@@ -81,7 +81,12 @@
 			"slug": "ESRI_Imagery"
 		},
 		{
-			"slug": "ESRI_Dark_Gray"
+			"slug": "ESRI_Dark_Gray",
+			"visibility": false
+		},
+		{
+			"slug": "National_GreyScale_Base_Map",
+			"visibility": false
 		}
     ],
     "layerMaps": [

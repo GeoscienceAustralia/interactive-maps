@@ -1,26 +1,20 @@
 {
     "id": "marinegeology",
-    "title": "Marine Geology",
+    "title": "Geology, Gemorphology and Geophysics of the Northwest Shelf",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",	
+	"framework":"olv2",	
     "initialExtent": [
-        [
-            99,
-            10
-        ],
-        [
-            169,
-            -55
-        ]
+        [52,18],[178,-65]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
     "headerConfig": {
-        "title": "Marine Geology"
+        "title": "Geology, Gemorphology and Geophysics of the Northwest Shelf"
     },
     "aboutConfig": {
-        "enabled": true
+        "enabled": true,
+		"bodyUrl": "content/marine/marinegeology/about.html"
     },
     "layersConfig": {
         "enabled": true
@@ -37,7 +31,7 @@
 	},
     "legendConfig": {
         "enabled": true,
-        "legendUrl": "content/marine/marinebathymetry/legend.html"
+        "legendUrl": "content/marine/marinegeology/legend.html"
     },
     "toolsConfig": {
         "enabled": true,
@@ -45,17 +39,78 @@
         "tools": [
 			{
                 "id": "addLayer"
-            }           
+            },
+			{
+                "id": "info",
+                "config": {
+                    "infoList": [
+						{
+                            "id":"Geomorphology WFS",
+							"url":"http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Environment_WM/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+                        },
+						{
+							"description": "Seabed Features WFS",
+							"url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+						},
+                        {
+                            "id":"National Submarine Canyons of Australia Shapefile",
+							"url":"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_e3dd1af5-7b05-50fd-e044-00144fdd4fa6/National+Submarine+Canyons+of+Australia"
+                        },
+						{
+                            "id":"National Submarine Canyons of Australia WFS",
+							"url":"http://www.ga.gov.au/gis/services/marine_coastal/National_Submarine_Canyons_of_Australia/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+                        }						
+                    ]
+                }
+            },
+            {
+                "id": "export"
+            },
+			{
+                "id": "distanceBoundary"
+            },
+			{
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+						"PROVINCEID",
+						"NAME"
+                    ],
+                    "propertiesAlias": [
+						"PROVINCEID",
+						"NAME"
+                    ],
+					"primaryPropertyName": "NAME"
+                }
+            }
         ]
     },
     "baseMaps": [
+        {
+			"slug": "ESRI_Imagery",
+			"maxZoomLevel": 14
+        },
         {
 		"slug": "National_Color_Base_Map"
 		}
     ],
     "layerMaps": [
 		{
+			"slug": "Geological_Provinces_Sedimentary_Basins",
+			"opacity": 0.5,
+			"layers": "SedimentaryBasins-PaleozoicCenozoic,SedimentaryBasins-PaleozoicMesozoic",
+            "queryLayers": "SedimentaryBasins-PaleozoicCenozoic,SedimentaryBasins-PaleozoicMesozoic"
+		},
+		{
+			"slug": "Seabed_Features",
+			"opacity": 0.5
+		},
+		{
             "slug": "Geomorphology_Scale_Guide",
+            "opacity": 0.6
+        },
+		{
+            "slug": "Submarine_Canyons_of_Australia",
             "opacity": 0.5
         },
 		{
@@ -73,13 +128,15 @@
             "defaultLayerId": "Intertidal - Dominate Landform"
         },
 		{
-		"name": "Australian Seabed Features",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WMSServer",
-		"layers": "Geomorphic_Features",		
-		"opacity": "0.5"
-		}
+            "slug": "Airborne_Surveys_2014",
+            "opacity": 1,
+			"visibility": false
+        },
+		{
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1
+        }
+		
     ],
     "groupedLayers": [
         {

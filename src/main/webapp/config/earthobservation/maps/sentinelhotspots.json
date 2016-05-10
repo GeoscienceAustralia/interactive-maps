@@ -3,7 +3,7 @@
     "title": "Sentinel Hotspots",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",
+	"framework":"olv2",	
     "initialExtent": [
 		[
 		76.14,
@@ -198,7 +198,7 @@
 			],
 			"mapType": "ArcGISCache",
 			"visibility": true,
-			"opacity": 0.65,
+			"opacity": 0.8,
 			"name": "Imagery from ArcGIS Online",
 			"url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
 			"attribution": "ESRI ArcGIS Online",

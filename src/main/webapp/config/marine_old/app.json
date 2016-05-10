@@ -1,0 +1,16 @@
+{
+    "id": "marine",
+    "title": "Marine and Coastal",
+    "blurb": "Information regarding Australia's coasts and estuaries, seabed mapping and Antarctica. Coasts and estuaries form a dynamic, transition zone between the land and the sea and help Australians achieve many economic, social and environmental benefits. As an island continent, Australia has sovereign rights over a vast area of ocean, along with the fishery, mineral, and petroleum resources found in that area.",
+    "headerConfig": {
+        "title": "Applying geoscience to Australia's most important challenges"
+    },
+    "maps": [
+        {
+            "title": "Ocean Bathymetry",
+            "id": "oceanbathymetry",
+            "previewImageUrl": "content/marine/oceanbathymetry/mapPreview.png",
+            "previewDescription": "Bathymetry is the study and mapping of seafloor topography. It involves obtaining measurements of the depth of the ocean and is equivalent to mapping the topography on land."
+        }
+    ]
+}

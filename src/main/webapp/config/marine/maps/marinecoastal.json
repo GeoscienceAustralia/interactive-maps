@@ -1,9 +1,9 @@
 {
-    "id": "marinebathymetry",
-    "title": "Marine Bathymetry",
+    "id": "marinecoastal",
+    "title": "marinecoastal",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
-	"framework":"olv3",	
+	"framework":"olv2",	
     "initialExtent": [
         [
             30,
@@ -17,7 +17,7 @@
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
     "headerConfig": {
-        "title": "Marine Bathymetry"
+        "title": "Marine and Coastal Data"
     },
     "aboutConfig": {
         "enabled": true
@@ -57,16 +57,7 @@
 		}
     ],
     "layerMaps": [
-        {
-            "slug": "Multibeam_50m_Bathymetry_2012_RGB",
-            "queryFeatures": true
-        },
-        {
-            "slug": "Multibeam_Survey_Extents_2014",
-            "visibility": false,
-            "opacity": 0.5,
-            "queryFeatures": true
-        }
+        
     ],
     "search": {
         "type": "geonames",

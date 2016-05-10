@@ -1,0 +1,163 @@
+{
+    "id": "marinebathymetry",
+    "title": "Marine Bathymetry",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv2",	
+    "initialExtent": [
+        [
+			1.51,
+			53.2
+		],
+		[
+			253.58,
+			-81.37
+		]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Marine Bathymetry"
+    },
+    "aboutConfig": {
+        "enabled": true,
+		"bodyUrl": "content/marine/marinebathymetry/about.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/marine/marinebathymetry/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+                "id": "addLayer"
+            },
+			{
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id":"Australian Bathymetry and Topography 2009 WCS",
+							"url":"http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WCSServer?request=GetCapabilities&service=WCS"
+                        },
+						{
+                            "id":"Multibeam 50m Bathymetry 2012 WCS",
+							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012/ImageServer/WCSServer?request=GetCapabilities&service=WCS"
+                        },
+						{
+							"id":"Multibeam Survey Extents 2014 WFS",
+							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+						}
+						
+						
+						
+                    ]
+                }
+            },
+            {
+                "id": "export"
+            },
+			{
+                "id": "distanceBoundary"
+            },
+			{
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+						"ENO",
+						"SURVEY_COD",
+						"SURVEY_NAM",
+						"ID",
+						"DATATYPE",
+						"VESSEL",
+						"START_DATE",
+						"END_DATE",
+						"START_PORT",
+						"DATA_OWNER",
+						"N_LAT",
+						"S_LAT",
+						"W_LONG",
+						"E_LONG",
+						"AREA_KM2",
+						"SYSTEM",
+						"RELEASE_DA",
+						"IP_DETAILS",
+						"LEADER",
+						"E_PORT",
+                        "Pixel Value"
+                    ],
+                    "propertiesAlias": [
+						"ENO",
+						"SURVEY_COD",
+						"SURVEY_NAM",
+						"ID",
+						"DATATYPE",
+						"VESSEL",
+						"START_DATE",
+						"END_DATE",
+						"START_PORT",
+						"DATA_OWNER",
+						"N_LAT",
+						"S_LAT",
+						"W_LONG",
+						"E_LONG",
+						"AREA_KM2",
+						"SYSTEM",
+						"RELEASE_DA",
+						"IP_DETAILS",
+						"LEADER",
+						"E_PORT",
+                        "Pixel Value"
+                    ],
+					"primaryPropertyName": "SURVEY_NAM"
+                }
+            }			
+        ]
+    },
+    "baseMaps": [
+		{
+			"slug": "ESRI_Imagery",
+			"maxZoomLevel": 12
+        },
+        {
+		"slug": "National_Color_Base_Map"
+		}
+    ],
+    "layerMaps": [
+		{
+            "slug": "Australian_Bathymetry_Topography",
+			"queryFeatures": true,
+			"opacity":0.4
+		},
+        {
+            "slug": "Multibeam_50m_Bathymetry_2012_RGB",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Multibeam_Survey_Extents_2014",
+            "visibility": true,
+            "opacity": 0.5,
+            "queryFeatures": true
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

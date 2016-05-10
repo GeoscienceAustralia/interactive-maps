@@ -220,6 +220,7 @@
 <!-- endbuild -->
 <!--build:js lib/js/angular.min.js-->
 <script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
 <!-- endbuild -->
 <!--build:js lib/js/ui-utils.min.js-->
 <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
@@ -245,13 +246,21 @@
     ga('create', 'UA-1501753-1', 'ga.gov.au');
 </script>
 <script src="resources/js/sortable.js"></script>
-<script src="resources/js/xml2json.js"></script>
-
+<!--build:js lib/js/xml2json.min.js-->
+<script src="bower_components/x2js/xml2json.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/angularLocalStorage.min.js-->
 <script src="resources/js/ngStorage.js"></script>
-
-<script src="resources/jsnomin/ol.js"></script>
-<script src="resources/jsnomin/Cesium/Cesium.js"></script>
-<script src="resources/jsnomin/ol3cesium.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/ol.min.js-->
+<script src="bower_components/ol3-bower/ol-debug.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/ol3cesium.min.js -->
+<script src="node_modules/ol3-cesium/dist/ol3cesium.js"></script>
+<!-- endbuild -->
+<!--build:js lib/js/Cesium.min.js-->
+<script src="node_modules/ol3-cesium/dist/Cesium.js"></script>
+<!-- endbuild -->
 <!--build:js lib/js/OpenLayers.min.js-->
 <script src="bower_components/OpenLayers-2.13.1/OpenLayers.js"></script>
 <!-- endbuild -->
@@ -315,10 +324,10 @@
 <script src="resources/jsnomin/placeholders.js"></script>
 <script src="resources/js/toolbar/export.js"></script>
 <script src="resources/js/toolbar/info.js"></script>
-<script src="resources/js/ngCsv.js"></script>
+<script src="bower_components/ng-csv/build/ng-csv.js"></script>
 <script src="resources/js/toolbar/interrogateExport.js"></script>
 <script src="resources/js/toolbar/queryServices.js"></script>
-<script src="resources/jsnomin/fuzzysearch.js"></script>
+<script src="bower_components/ngFuzzySearch/ngFuzzySearch.js"></script>
 <script src="resources/js/health/health.js"></script>
 <script src="resources/js/health/health-controller.js"></script>
 <script src="resources/js/health/health-services.js"></script>

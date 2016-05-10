@@ -20,6 +20,7 @@
     "angularjs": "~1.2.8",
     "angular-route": "~1.3.20",
     "angular-mocks": "~1.3.20",
+    "angular-cookies": "~1.3.20",
     "angular-bootstrap": "~0.10.0",
     "angulartics": "~0.17.0",
     "angular-sanitize": "~1.3.11",
@@ -29,8 +30,13 @@
     "bootstrap": "3.0.3",
     "modernizr": "~2.6.2",
     "webshim": "~1.14.2",
-    "OpenLayers-2.13.1": "https://github.com/openlayers/openlayers/releases/download/release-2.13.1/OpenLayers-2.13.1.zip"
-  },"resolutions": {
+    "OpenLayers-2.13.1": "https://github.com/openlayers/openlayers/releases/download/release-2.13.1/OpenLayers-2.13.1.zip",
+    "ng-csv": "~0.3.6",
+    "ol3-bower": "~3.10.1",
+    "ngFuzzySearch": "~1.1.0",
+    "x2js": "~1.2.0"
+  },
+  "resolutions": {
     "angular": "~1.3.20",
     "angular-animate": "~1.3.20",
     "bootstrap": "3.0.3"

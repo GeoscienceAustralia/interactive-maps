@@ -30,7 +30,8 @@
             'ngCsv',
             'ngSanitize',
             'interactiveMaps.queryServices',
-            'interactiveMaps.catalogue'
+            'interactiveMaps.catalogue',
+            'ngFuzzySearch'
         ]);
     app.config([ '$routeProvider', '$locationProvider', '$provide', '$analyticsProvider',
         function ($routeProvider, $locationProvider, $provide, $analyticsProvider) {

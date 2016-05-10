@@ -1,8 +1,8 @@
 {
   "name": "interactive-maps",
   "version": "0.2.1-SNAPSHOT",
-  "dependencies": {
-    "fuzzysearch": "^1.0.3"
+  "scripts": {
+    "postinstall":"cd src/main/webapp && npm install"
   },
   "devDependencies": {
     "bower": "^1.6.5",

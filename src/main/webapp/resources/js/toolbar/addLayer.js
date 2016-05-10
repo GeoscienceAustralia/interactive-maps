@@ -31,7 +31,7 @@
         };
     } ]);
 
-    app.controller('addLayerPanelController', [ '$scope', '$http', 'toolService', function ($scope, $http, toolService) {
+    app.controller('addLayerPanelController', [ '$scope', '$http', 'fuzzySearch', function ($scope, $http, fuzzySearch) {
         $scope.layerClass = "addLayer";
 
         $scope.searchLayerSorter = function () {
@@ -209,7 +209,7 @@
         };
 
         $scope.fuzzySearch = function (layer) {
-            return fuzzysearch($scope.selected.toLowerCase(), layer.name.toLowerCase());
+            return fuzzySearch.find($scope.selected.toLowerCase(), layer.name.toLowerCase());
         }
     } ]);
 })();

@@ -5,7 +5,7 @@
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
     "initialExtent": [
-        [52,18],[178,-65]
+        [-36,52],[233,-82]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
@@ -14,7 +14,8 @@
     },
     "aboutConfig": {
         "enabled": true,
-		"bodyUrl": "content/marine/marinegeology/about.html"
+		"bodyUrl": "content/marine/marinegeology/about.html",
+		"open": true
     },
     "layersConfig": {
         "enabled": true

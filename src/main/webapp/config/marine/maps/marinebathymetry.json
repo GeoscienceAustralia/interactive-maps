@@ -5,14 +5,7 @@
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
     "initialExtent": [
-        [
-			1.51,
-			53.2
-		],
-		[
-			253.58,
-			-81.37
-		]
+        [-36,52],[233,-82]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
@@ -21,10 +14,11 @@
     },
     "aboutConfig": {
         "enabled": true,
-		"bodyUrl": "content/marine/marinebathymetry/about.html"
+		"bodyUrl": "content/marine/marinebathymetry/about.html",
+		"open": true
     },
     "layersConfig": {
-        "enabled": true
+        "enabled": true		
     },
     "baseLayersConfig": {
         "enabled": true

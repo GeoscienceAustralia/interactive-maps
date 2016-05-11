@@ -24,6 +24,7 @@ var app = angular.module('testApp',
         'ngStorage',
         'interactiveMaps.catalogue',
         'interactiveMaps.layers-controllers',
+        'ngFuzzySearch',
         'htmlTemplates'
     ]);
 

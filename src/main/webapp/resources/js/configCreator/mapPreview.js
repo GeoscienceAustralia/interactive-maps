@@ -4,8 +4,8 @@ var $ = $ || {};
 
 var app = angular.module('interactiveMaps.configCreator.mapPreview', [ 'interactiveMaps.services' ]);
 
-app.controller('configCreatorController', ['$scope', '$log', '$timeout', '$http', 'GeoMapService', 'configCreatorService', '$localStorage', '$routeParams', '$location', 'MasterLayersService',
-    function ($scope, $log, $timeout, $http, GeoMapService, configCreatorService, $localStorage, $routeParams, $location, MasterLayersService) {
+app.controller('configCreatorController', ['$scope', '$log', '$timeout', '$http', 'GeoMapService', 'configCreatorService','$routeParams', '$location', 'MasterLayersService',
+    function ($scope, $log, $timeout, $http, GeoMapService, configCreatorService, $routeParams, $location, MasterLayersService) {
         "use strict";
         $scope.$emit('configDataLoaded', {headerConfig: {title: 'Config Creator (Beta)'}});
         MasterLayersService.initMasterLists();

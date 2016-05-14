@@ -5,7 +5,14 @@
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
     "initialExtent": [
-        [-36,52],[233,-82]
+        [
+            80,
+            2
+        ],
+        [
+            134,
+            -37
+        ]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
@@ -63,10 +70,7 @@
                         }						
                     ]
                 }
-            },
-            {
-                "id": "export"
-            },
+            },            
 			{
                 "id": "distanceBoundary"
             },

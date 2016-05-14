@@ -5,7 +5,14 @@
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
     "initialExtent": [
-        [-36,52],[233,-82]
+        [
+            50,
+            10
+        ],
+        [
+            180,
+            -55
+        ]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
@@ -62,9 +69,6 @@
 						
                     ]
                 }
-            },
-            {
-                "id": "export"
             },
 			{
                 "id": "distanceBoundary"
@@ -147,6 +151,10 @@
             "visibility": true,
             "opacity": 0.5,
             "queryFeatures": true
+        },
+		{
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1
         }
     ],
     "search": {

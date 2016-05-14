@@ -1,16 +1,16 @@
 {
     "id": "marineenvironmental",
-    "title": "Marine Environmental",
+    "title": "Environmental Management Data",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
     "initialExtent": [
         [
-            99,
+            50,
             10
         ],
         [
-            169,
+            180,
             -55
         ]
     ],
@@ -20,7 +20,9 @@
         "title": "Marine Environmental"
     },
     "aboutConfig": {
-        "enabled": true
+        "enabled": true,
+		"bodyUrl": "content/marine/marineenvironmental/about.html",
+		"open": true
     },
     "layersConfig": {
         "enabled": true
@@ -49,112 +51,72 @@
     },
     "baseMaps": [
         {
+			"slug": "ESRI_Imagery",
+			"maxZoomLevel": 12
+        },
+        {
 		"slug": "National_Color_Base_Map"
 		}
     ],
-    "layerMaps": [
-		{
-		"name": "Bathymetry Topography",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WMSServer",
-		"layers": "Australian_Bathymetry_Topography",		
-		"opacity": "0.5"
-		},
-		{
-		"slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
-		"opacity": 0.3
-		},
-		{
-            "slug": "Geomorphology_Scale_Guide",
-            "opacity": 0.5
-        },
+    "layerMaps": [		
 		{
             "isGroupedLayers": true,
-            "groupTitle": "Coastal Geomorphology",
-            "groupId": "geomorphology",
+            "groupTitle": "Living Atlas Species occurrences",
+            "groupId": "Species_occurrences",
             "visibility": true,
-            "defaultLayerId": "environment"
-        },
-		{
-            "isGroupedLayers": true,
-            "groupTitle": "Coastal Geomorphology Smartline",
-            "groupId": "smartline",
-            "visibility": false,
             "defaultLayerId": "Intertidal - Dominate Landform"
-        },
-		{
-		"name": "Seascapes",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/MarineEnvironmental/MapServer/WMSServer",
-		"layers": "Australia_onshelf_13class_seascapes",		
-		"opacity": "0.5"
-		},
-		{
-		"name": "Coastal Compartment",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/MarineEnvironmental/MapServer/WMSServer",
-		"layers": "Divisions,Primary_compartments,Secondary_compartments",		
-		"opacity": "0.3"
-		},
-		{
-		"name": "Coastal Compartment Points",
-		"visibility":true,
-		"mapType": "WMS",
-		"url": "http://intranet-dev.ga.gov.au/gis/services/MarineEnvironmental/MapServer/WMSServer",
-		"layers": "Secondary_points,Primary_points",		
-		"opacity": "1"
-		},
-		{
-		"slug": "Treaties_Of_Australia_AMB_2014"
         }
     ],
-    "groupedLayers": [
+	"groupedLayers": [
         {
-            "groupId": "geomorphology",
+            "groupId": "Species_occurrences",
             "layerMaps": [
                 {
-                    "slug": "Environment",
-                    "opacity": 0.75
-                },
-                {
-                    "slug": "Landform_Type",
-                    "visibility": false,
-                    "opacity": 0.75
-                },
-                {
-                    "slug": "Landform_Subtype",
-                    "visibility": false,
-                    "opacity": 0.75
-                }
-            ]
-        },
-        {
-            "groupId": "smartline",
-            "layerMaps": [
-                {
-                    "slug": "Intertidal_Dominate_Landform",
-                    "visibility": false
-                },
-                {
-                    "slug": "Subtidal_Dominate_Landform",
-                    "visibility": false
-                },
-                {
-                    "slug": "Geology_Primary_Substrate",
-                    "visibility": false,
-                    "queryFeatures": true
-                },
-                {
-                    "slug": "Muddy",
-                    "visibility": false
-                },
-                {
-                    "slug": "Sandy",
-                    "visibility": false
-                }
+				"id": "Whale_Shark",
+				"slug": "Whale_Shark",
+				"name": "Whale Shark",
+				"visibility":true,
+				"mapType": "WMS",
+				"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Rhincodon typus",
+				"layers": "species:Rhincodon_typus",		
+				"opacity": "0.5",
+				"layerTimeout": 5000,
+				"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Whale Shark.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Rhincodon typus?request=GetCapabilities&service=WMS"
+						}
+					],
+				"queryFeatures": true,
+				"queryUrl": "http://intranet-test.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "species:Rhincodon_typus"
+				},
+				{
+				"id": "Pygmy_Blue_Whale",
+				"slug": "Pygmy_Blue_Whale",
+				"name": "Pygmy Blue Whale",
+				"visibility":true,
+				"mapType": "WMS",
+				"url": "http://biocache.ala.org.au/ws/ogc/ows?q=subspecies:Balaenoptera musculus brevicauda",
+				"layers": "species:Balaenoptera_musculus",		
+				"opacity": "0.5",
+				"layerTimeout": 5000,
+				"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Whale Shark.",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Balaenoptera musculus brevicauda?request=GetCapabilities&service=WMS"
+						}
+					],
+				"queryFeatures": true,
+				"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=subspecies:Balaenoptera musculus brevicauda",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "species:Balaenoptera_musculus"
+				}
             ]
         }
     ],

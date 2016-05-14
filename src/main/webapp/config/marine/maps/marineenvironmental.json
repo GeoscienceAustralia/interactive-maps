@@ -81,7 +81,7 @@
 				"layers": "species:Rhincodon_typus",		
 				"opacity": "0.5",
 				"layerTimeout": 5000,
-				"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Whale Shark.",
+				"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Whale Shark (Rhincodon typus).",
 					"ogcLinks": [
 						{
 							"description": "WMS Capabilities",
@@ -104,7 +104,7 @@
 				"layers": "species:Balaenoptera_musculus",		
 				"opacity": "0.5",
 				"layerTimeout": 5000,
-				"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Whale Shark.",
+				"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Whale Shark (Balaenoptera musculus brevicauda).",
 					"ogcLinks": [
 						{
 							"description": "WMS Capabilities",
@@ -113,6 +113,29 @@
 					],
 				"queryFeatures": true,
 				"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=subspecies:Balaenoptera musculus brevicauda",
+				"queryUrlType": "WMS",
+				"queryVersion": "1.1.1",
+				"queryLayers": "species:Balaenoptera_musculus"
+				},
+				{
+				"id": "Humpback_Whale",
+				"slug": "Humpback_Whale",
+				"name": "Humpback Whale",
+				"visibility":true,
+				"mapType": "WMS",
+				"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Megaptera novaeangliae",
+				"layers": "species:Balaenoptera_musculus",		
+				"opacity": "0.5",
+				"layerTimeout": 5000,
+				"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Humpback Whale (Megaptera novaeangliae).",
+					"ogcLinks": [
+						{
+							"description": "WMS Capabilities",
+							"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Megaptera novaeangliae?request=GetCapabilities&service=WMS"
+						}
+					],
+				"queryFeatures": true,
+				"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Megaptera novaeangliae",
 				"queryUrlType": "WMS",
 				"queryVersion": "1.1.1",
 				"queryLayers": "species:Balaenoptera_musculus"

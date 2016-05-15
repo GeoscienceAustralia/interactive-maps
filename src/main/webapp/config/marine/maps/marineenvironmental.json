@@ -72,6 +72,10 @@
             "groupId": "Department_of_Environment",
             "visibility": true,
             "defaultLayerId": "Australias_Commonwealth_Marine_Reserves"
+        },
+		{
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1
         }
     ],
 	"groupedLayers": [

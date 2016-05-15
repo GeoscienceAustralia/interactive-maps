@@ -15,6 +15,12 @@
             "previewDescription": "Australia as seen from the spectral bands of the Landsat 8 satellite. Product of the Australian Geoscience Data Cube."
         },
 		{
+            "title": "Nadir BRDF Adjusted Reflectance",
+            "id": "nadirBRDFAdjustedReflectance",
+            "previewImageUrl": "content/earthobservation/nadir/NadirBRDFAdjusted.png",
+            "previewDescription": "Lake dissapointment landsat 8 Band 1 Nadir BRDF adjusted reflectance 0.43-0.45 2013-12-27 THREDDS sample."
+        },		
+		{
             "title": "Sentinel Hotspots",
             "id": "sentinelhotspots",
             "previewImageUrl": "content/sentinel/hotspots/mapPreview.png",

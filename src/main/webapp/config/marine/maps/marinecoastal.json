@@ -48,9 +48,87 @@
 			{
                 "id": "addLayer"
             },
-            {
-                "id": "export"
-            }           
+			{
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id":"Australian Bathymetry and Topography 2009 WCS",
+							"url":"http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WCSServer?request=GetCapabilities&service=WCS"
+                        },
+						{
+                            "id":"Multibeam 50m Bathymetry 2012 WCS",
+							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012/ImageServer/WCSServer?request=GetCapabilities&service=WCS"
+                        },
+						{
+							"id":"Multibeam Survey Extents 2014 WFS",
+							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+						}
+						
+						
+						
+                    ]
+                }
+            },
+			{
+                "id": "distanceBoundary"
+            },
+			{
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+						"Name",
+						"Extent",
+						"Descriptio",
+						"Start",
+						"End",
+						"Division",
+						"Description",						
+						"Geology",
+						"Geomorphology",
+						"Landforms",
+						"Aspect",
+						"Criteria",
+						"SURVEY_ENO",
+						"SURVEY_ID",
+						"SURVEY_NAME",
+						"SAMPLE_ID",
+						"SAMPLE_NO",
+						"SAMPLE_TYPE",
+						"ACQUIRE_DATE",
+						"LATITUDE",
+						"LONGITUDE",
+						"SAMPLEID",
+						"PixelValue"
+                    ],
+                    "propertiesAlias": [
+						"Name",
+						"Extent",
+						"Description",
+						"Start",
+						"End",
+						"Division",
+						"Description",
+						"Geology",
+						"Geomorphology",
+						"Landforms",
+						"Aspect",
+						"Criteria",
+						"Survey ENO",
+						"Survey Id",
+						"Survey Name",
+						"Sample Id",
+						"Sample Number",
+						"Sample Type",
+						"Acquire Date",
+						"Latitude",
+						"Longitude",
+						"Sample Id",
+						"Pixel Value"
+                    ],
+					"primaryPropertyName": "SURVEY_NAM"
+                }
+            }       
         ]
     },
     "baseMaps": [
@@ -186,7 +264,7 @@
             "queryUrl": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "Carnarvon_Shelf_Survey_GA0308_Towed-video_transects,Bonaparte_Gulf_Survey_GA0322_Towed-video_transects,Bonaparte_Gulf_Survey_GA0325_Towed-video_transects,Petrel_Sub-basin_Survey_GA0335_Towed-vdeo_transects,Oceanic_Shoals_CMR_Survey_GA0339_Towed-video_transects,Leveque_Shelf_Survey_GA0340_Towed-video_transects,Caswell_Sub-basin_Survey_GA0345_ROV_video_transects"
+            "queryLayers": "Carnarvon_Shelf_Survey_GA0308_Towed-video_transects,Bonaparte_Gulf_Survey_GA0322_Towed-video_transects,Bonaparte_Gulf_Survey_GA0325_Towed-video_transects,Petrel_Sub-basin_Survey_GA0335_Towed-video_transects,Oceanic_Shoals_CMR_Survey_GA0339_Towed-video_transects,Leveque_Shelf_Survey_GA0340_Towed-video_transects,Caswell_Sub-basin_Survey_GA0345_ROV_video_transects"
 		},
 		{
 		"name": "Marine Sediments Database of Australia",
@@ -347,6 +425,10 @@
 					"queryUrlType": "WMS",
 					"queryVersion": "1.1.1",
 					"queryLayers": "NNW_shelf_modelled_gravel_content"
+				},
+				{
+					"slug": "ESRI_World_Boundaries_and_Places",
+					"opacity": 	1
 				}
             ]
         }

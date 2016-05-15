@@ -140,11 +140,32 @@
 		{
             "slug": "Australian_Bathymetry_Topography",
 			"queryFeatures": true,
-			"opacity":0.4
+			"opacity":0.3
 		},
         {
-            "slug": "Multibeam_50m_Bathymetry_2012_RGB",
-            "queryFeatures": true
+            "slug": "Marine_Survey_Multibeam_Bathymetry",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "ArcGISCache",
+            "visibility": true,
+            "name": "Marine Survey Multibeam Bathymetry",
+            "url": "http://intranet-test.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Bathymetry_WM/MapServer",
+            "metadataText": "A tile cache of the Marine Survey Multibeam Bathymetry Web Map Service.It contains the highest-resolution multibeam bathymetry grids available for download on Geoscience Australia’s website. These bathymetry grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the bathymetry grids. Bathymetry grids have been rendered over a rainbow colour-ramp with minimum and maximum depth values unique for each survey. These values are specified in each survey's layer description. The resolution of each bathymetry grid is also specified in each survey's layer description.",
+            "ogcLinks": [                
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Bathymetry/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/Marine_Survey_Multibeam_Bathymetry/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Bathymetry/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1,
+            "layerTimeout": 5000
         },
         {
             "slug": "Multibeam_Survey_Extents_2014",

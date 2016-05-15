@@ -8,49 +8,46 @@
 		"title": "Lake Dissapointment Landsat 8 Band 1 Nadir BRDF Adjusted Reflectance 0.43-0.45 2013-12-27 Thredds"
 	},
 	"toolsConfig": {
+		"enabled": true,
+		"timeout": 5000,
 		"tools": [
-			"enabled": true,
-			"timeout": 5000,
 			{
-                "id": "addLayer"
-            },
+				"id": "addLayer"
+			},
 			{
-                "id": "info",
-                "config": {
-                    "infoList": [
-                        {
-                            "id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -12 -26 WCS",
-							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-12_-26_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
-                        },
-						{
-                            "id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -11 -26 WCS",
-							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-11_-26_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
-                        },
-						{
-							"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -10 -26 WFS",
-							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-10_-26_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
-						},
-						{
-                            "id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -12 -27 WCS",
-							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-12_-27_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
-                        },
-						{
-                            "id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -11 -27 WCS",
-							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-11_-27_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
-                        },
-						{
-							"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -10 -27 WFS",
-							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-10_-27_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
-						}
-						
-						
-						
-                    ]
-                }
-            },
+			"id": "info",
+			"config": {
+				"infoList": [
+					{
+						"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -12 -26 WCS",
+						"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-12_-26_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+					},
+					{
+						"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -11 -26 WCS",
+						"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-11_-26_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+					},
+					{
+						"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -10 -26 WFS",
+						"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-10_-26_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+					},
+					{
+						"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -12 -27 WCS",
+						"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-12_-27_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+					},
+					{
+						"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -11 -27 WCS",
+						"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-11_-27_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+					},
+					{
+						"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -10 -27 WFS",
+						"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-10_-27_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+					}
+				]
+			}
+			},
 			{
-                "id": "distanceBoundary"
-            }
+				"id": "distanceBoundary"
+			}
 		]
 	},
 	"initialExtent": [

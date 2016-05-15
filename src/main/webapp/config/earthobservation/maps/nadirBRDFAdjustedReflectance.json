@@ -1,5 +1,5 @@
 {
-	"id": "template",
+	"id": "nadirBRDFAdjustedReflectance",
 	"datumProjection": "EPSG:3857",
 	"displayProjection": "EPSG:4326",
 	"framework":"olv2",	
@@ -9,6 +9,8 @@
 	},
 	"toolsConfig": {
 		"tools": [
+			"enabled": true,
+			"timeout": 5000,
 			{
                 "id": "addLayer"
             },

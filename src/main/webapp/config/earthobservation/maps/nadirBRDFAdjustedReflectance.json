@@ -71,7 +71,6 @@
 	"layersConfig": {
         "enabled": true
     },
-	"centerPosition": null,
 	"baseMaps": [
 		{
 			"slug": "ESRI_Imagery",

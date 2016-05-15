@@ -839,7 +839,11 @@
                     "description": "ArcMap Layerfile",
                     "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Environment_WM/MapServer?f=lyr&v=9.3"
                 }
-            ]
+            ],
+			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Environment_WM/MapServer/WMSServer",
+			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
+			"queryVersion": "1.1.0",
+			"queryType": "WMS"
         },
         
         {
@@ -1576,7 +1580,11 @@
                     "description": "ArcMap Layerfile",
                     "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Landform_Type_WM/MapServer?f=lyr&v=9.3"
                 }
-            ]
+            ],
+			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
+			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
+			"queryVersion": "1.1.0",
+			"queryType": "WMS"
         },
         {
             "slug": "Landform_Subtype",
@@ -1612,7 +1620,11 @@
                     "description": "ArcMap Layerfile",
                     "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Landform_Subtype_WM/MapServer?f=lyr&v=9.3"
                 }
-            ]
+            ],
+			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
+			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
+			"queryVersion": "1.1.0",
+			"queryType": "WMS"
         },
 		{
 			"id": "LowerPercentile2y",

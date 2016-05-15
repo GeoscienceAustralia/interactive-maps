@@ -1,0 +1,147 @@
+{
+	"id": "template",
+	"datumProjection": "EPSG:3857",
+	"displayProjection": "EPSG:4326",
+	"framework":"olv2",	
+	"title": "Lake Dissapointment Landsat 8 Band 1 Nadir BRDF Adjusted Reflectance 0.43-0.45 2013-12-27 Thredds",
+	"headerConfig": {
+		"title": "Lake Dissapointment Landsat 8 Band 1 Nadir BRDF Adjusted Reflectance 0.43-0.45 2013-12-27 Thredds"
+	},
+	"toolsConfig": {
+		"tools": [
+			{
+                "id": "addLayer"
+            },
+			{
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -12 -26 WCS",
+							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-12_-26_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+                        },
+						{
+                            "id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -11 -26 WCS",
+							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-11_-26_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+                        },
+						{
+							"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -10 -26 WFS",
+							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-10_-26_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+						},
+						{
+                            "id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -12 -27 WCS",
+							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-12_-27_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+                        },
+						{
+                            "id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -11 -27 WCS",
+							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-11_-27_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+                        },
+						{
+							"id":"Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -10 -27 WFS",
+							"url":"http://dapds00.nci.org.au/thredds/wcs/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-10_-27_2013.nc?service=WCS&version=1.0.0&request=GetCapabilities"
+						}
+						
+						
+						
+                    ]
+                }
+            },
+			{
+                "id": "distanceBoundary"
+            },
+		]
+	},
+	"initialExtent": [
+		[
+			113.71,
+			-17.89
+		],
+		[
+			126.37,
+			-29.18
+		]
+	],
+	"aboutConfig": {
+        "enabled": true,
+		"bodyUrl": "content/earthobservation/Nadir/about.html",
+		"open": true
+    },
+	"layersConfig": {
+        "enabled": true
+    },
+	"centerPosition": null,
+	"baseMaps": [
+		{
+			"slug": "ESRI_Imagery",
+			"maxZoomLevel": 12
+        },
+        {
+		"slug": "National_Color_Base_Map"
+		}
+	],
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+	"layerMaps": [
+		{
+            "slug": "Surface_Hydrology",
+            "queryFeatures": true
+        },		
+		{
+			"url": "http://dapds00.nci.org.au/thredds/wms/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-10_-27_2013.nc?&ELEVATION=0&TIME=2013-12-27T01%3A52%3A08.809Z&STYLES=boxfill%2Frainbow&COLORSCALERANGE=384%2C679&NUMCOLORBANDS=20&LOGSCALE=false",
+			"name": "Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -10 -27",
+			"opacity": "1",
+			"mapType": "WMS",
+			"layers": "band_1",
+			"visibility": true
+		},
+		{
+			"url": "http://dapds00.nci.org.au/thredds/wms/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-11_-27_2013.nc?&ELEVATION=0&TIME=2013-12-27T01%3A52%3A08.809Z&STYLES=boxfill%2Frainbow&COLORSCALERANGE=384%2C679&NUMCOLORBANDS=20&LOGSCALE=false",
+			"name": "Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -11 -27",
+			"opacity": "1",
+			"mapType": "WMS",
+			"layers": "band_1",
+			"visibility": true
+		},
+		{
+			"url": "http://dapds00.nci.org.au/thredds/wms/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-12_-27_2013.nc?&ELEVATION=0&TIME=2013-12-27T01%3A52%3A08.809Z&STYLES=boxfill%2Frainbow&COLORSCALERANGE=384%2C679&NUMCOLORBANDS=20&LOGSCALE=false",
+			"name": "Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -12 -27",
+			"opacity": "1",
+			"mapType": "WMS",
+			"layers": "band_1",
+			"visibility": true
+		},
+{
+			"url": "http://dapds00.nci.org.au/thredds/wms/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-10_-26_2013.nc?&ELEVATION=0&TIME=2013-12-27T01%3A52%3A08.809Z&STYLES=boxfill%2Frainbow&COLORSCALERANGE=384%2C679&NUMCOLORBANDS=20&LOGSCALE=false",
+			"name": "Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -10 -26",
+			"opacity": "1",
+			"mapType": "WMS",
+			"layers": "band_1",
+			"visibility": true
+		},
+		{
+			"url": "http://dapds00.nci.org.au/thredds/wms/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-11_-26_2013.nc?&ELEVATION=0&TIME=2013-12-27T01%3A52%3A08.809Z&STYLES=boxfill%2Frainbow&COLORSCALERANGE=384%2C679&NUMCOLORBANDS=20&LOGSCALE=false",
+			"name": "Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -11 -26",
+			"opacity": "1",
+			"mapType": "WMS",
+			"layers": "band_1",
+			"visibility": true
+		},
+		{
+			"url": "http://dapds00.nci.org.au/thredds/wms/rs0/tiles/EPSG3577/LS8_OLI_TIRS_NBART/LS8_OLI_TIRS_NBART_3577_-12_-26_2013.nc?&ELEVATION=0&TIME=2013-12-27T01%3A52%3A08.809Z&STYLES=boxfill%2Frainbow&COLORSCALERANGE=384%2C679&NUMCOLORBANDS=20&LOGSCALE=false",
+			"name": "Nadir BRDF Adjusted Reflectance 0.43-0.45 Tile -12 -26",
+			"opacity": "1",
+			"mapType": "WMS",
+			"layers": "band_1",
+			"visibility": true
+		},		
+		{
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1
+        }
+	]
+}

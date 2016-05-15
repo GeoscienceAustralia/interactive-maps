@@ -63,7 +63,7 @@
 	],
 	"aboutConfig": {
         "enabled": true,
-		"bodyUrl": "content/earthobservation/Nadir/about.html",
+		"bodyUrl": "content/earthobservation/nadir/about.html",
 		"open": true
     },
 	"layersConfig": {

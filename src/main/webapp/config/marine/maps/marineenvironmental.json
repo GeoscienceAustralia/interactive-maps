@@ -293,6 +293,29 @@
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
 			"queryLayers": "Key_Ecological_Features"
+			},
+			{
+			"id": "Ramsar_Wetlands_of_Australia",
+			"slug": "Ramsar_Wetlands_of_Australia",
+			"name": "Ramsar Wetlands of Australia",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Ramsar_Wetlands/MapServer/WMSServer",
+			"layers": "Key_Ecological_Features",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "National dataset of Australia's Ramsar Wetlands. This project was initiated by the Wetlands Section of the Australian Government Department of Sustainability, Environment, Water, Population and Communities. Spatial data was sourced from the relevant State and Territory agencies and compiled into a single national coverage.",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://www.environment.gov.au/mapping/services/ogc_services/Ramsar_Wetlands/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					}
+				],			
+			"queryFeatures": true,
+			"queryUrl": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "Key_Ecological_Features"
 			}
 		]
 	}

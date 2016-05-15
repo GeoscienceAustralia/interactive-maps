@@ -46,6 +46,67 @@
         "tools": [
 			{
                 "id": "addLayer"
+            },			
+			{
+                "id": "distanceBoundary"
+            },
+			{
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+						"Network",
+						"MPA_NAME",
+						"ZONE",
+						"IUCN",
+						"Lable",
+						"STATUS",
+						"LEGEND",						
+						"Area_km2",
+						"ResZoneL",
+						"PLACE_ID",
+						"FILE_",
+						"NAME",
+						"STATUS",
+						"IUCN_MGT",
+						"BIOGEOPROV",
+						"NATURAL",
+						"CULTURAL",
+						"STATE",
+						"HECTARES",
+						"ADDRESS",
+						"INSCRIBED",						
+						"Name",						
+						"Type",
+						"State"						
+                    ],
+                    "propertiesAlias": [
+						"Network",
+						"MPA_NAME",
+						"ZONE",
+						"IUCN",
+						"Lable",
+						"STATUS",
+						"LEGEND",						
+						"Area_km2",
+						"ResZoneL",
+						"PLACE_ID",
+						"FILE_",
+						"NAME",
+						"STATUS",
+						"IUCN_MGT",
+						"BIOGEOPROV",
+						"NATURAL",
+						"CULTURAL",
+						"STATE",
+						"HECTARES",
+						"ADDRESS",
+						"INSCRIBED",						
+						"Name",						
+						"Type",
+						"State"	
+                    ],
+					"primaryPropertyName": "SURVEY_NAM"
+                }
             }           
         ]
     },
@@ -100,7 +161,7 @@
 					}
 				],
 			"queryFeatures": true,
-			"queryUrl": "http://intranet-test.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/getFeatureInfo",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
 			"queryLayers": "species:Rhincodon_typus"
@@ -115,7 +176,7 @@
 			"layers": "species:Balaenoptera_musculus",		
 			"opacity": "1",
 			"layerTimeout": 5000,
-			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Whale Shark (Balaenoptera musculus brevicauda).",
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Pygmy Blue Whale (Balaenoptera musculus brevicauda).",
 				"ogcLinks": [
 					{
 						"description": "WMS Capabilities",
@@ -150,6 +211,213 @@
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
 			"queryLayers": "species:Balaenoptera_musculus"
+			},
+			{
+			"id": "Australian_Snubfin_Dolphin",
+			"slug": "Australian_Snubfin_Dolphin",
+			"name": "Australian Snubfin Dolphin",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Orcaella heinsohni",
+			"layers": "species:Orcaella_heinsohni",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Australian Snubfin Dolphin (Orcaella heinsohni).",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Orcaella heinsohni?request=GetCapabilities&service=WMS"
+					}
+				],
+			"queryFeatures": true,
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Orcaella heinsohni",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "species:Orcaella_heinsohni"
+			},
+			{
+			"id": "Indopacific_Humpback_Dolphin",
+			"slug": "Indopacific_Humpback_Dolphin",
+			"name": "Indopacific Humpback Dolphin",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Sousa chinensis",
+			"layers": "species:Sousa_chinensis",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Indopacific Humpback Dolphin (Sousa chinensis).",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Sousa chinensis?request=GetCapabilities&service=WMS"
+					}
+				],
+			"queryFeatures": true,
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Sousa chinensis",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "species:Sousa_chinensis"
+			},
+			{
+			"id": "Indian_Bottlenose_Dolphin",
+			"slug": "Indian_Bottlenose_Dolphin",
+			"name": "Indian Bottlenose Dolphin",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Tursiops aduncus",
+			"layers": "species:Sousa_chinensis",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Indian Bottlenose Dolphin (Tursiops aduncus).",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Tursiops aduncus?request=GetCapabilities&service=WMS"
+					}
+				],
+			"queryFeatures": true,
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Tursiops aduncus",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "species:Sousa_chinensis"
+			},
+			{
+			"id": "Dugong",
+			"slug": "Dugong",
+			"name": "Dugong",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Dugong dugon",
+			"layers": "species:Sousa_chinensis",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Dugong (Dugong dugon).",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Dugong dugon?request=GetCapabilities&service=WMS"
+					}
+				],
+			"queryFeatures": true,
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Dugong dugon",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "species:Dugong_dugon"
+			},
+			{
+			"id": "Flatback_Turtle",
+			"slug": "Flatback_Turtle",
+			"name": "Flatback Turtle",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Natator depressus",
+			"layers": "species:Natator_depressus",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Flatback Turtle (Natator depressus).",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Natator depressus?request=GetCapabilities&service=WMS"
+					}
+				],
+			"queryFeatures": true,
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Natator depressus",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "species:Natator_depressus"
+			},
+			{
+			"id": "Green_Turtle",
+			"slug": "Green_Turtle",
+			"name": "Green Turtle",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Chelonia mydas",
+			"layers": "species:Chelonia_mydas",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Flatback Turtle (Chelonia mydas).",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Chelonia mydas?request=GetCapabilities&service=WMS"
+					}
+				],
+			"queryFeatures": true,
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Chelonia mydas",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "species:Chelonia_mydas"
+			},
+			{
+			"id": "Olive_Ridley_Turtle",
+			"slug": "Olive_Ridley_Turtle",
+			"name": "Olive Ridley Turtle",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Lepidochelys olivacea",
+			"layers": "species:Lepidochelys_olivacea",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Flatback Turtle (Lepidochelys olivacea).",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Lepidochelys olivacea?request=GetCapabilities&service=WMS"
+					}
+				],
+			"queryFeatures": true,
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Lepidochelys olivacea",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "species:Lepidochelys_olivacea"
+			},
+			{
+			"id": "Loggerhead_Turtle",
+			"slug": "Loggerhead_Turtle",
+			"name": "Loggerhead Turtle",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Caretta caretta",
+			"layers": "species:Caretta_caretta",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Flatback Turtle (Caretta caretta).",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Caretta caretta?request=GetCapabilities&service=WMS"
+					}
+				],
+			"queryFeatures": true,
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Caretta caretta",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "species:Caretta_caretta"
+			},
+			{
+			"id": "Hawksbill_Turtle",
+			"slug": "Hawksbill_Turtle",
+			"name": "Hawksbill Turtle",
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Eretmochelys imbricata",
+			"layers": "species:Eretmochelys_imbricata",		
+			"opacity": "1",
+			"layerTimeout": 5000,
+			"metadataText": "Atlas of Living Australia(WMS) - Species occurrences. Flatback Turtle (Eretmochelys imbricata).",
+				"ogcLinks": [
+					{
+						"description": "WMS Capabilities",
+						"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Eretmochelys imbricata?request=GetCapabilities&service=WMS"
+					}
+				],
+			"queryFeatures": true,
+			"queryUrl": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Eretmochelys imbricata",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "species:Eretmochelys_imbricata"
 			}
 		]
 	},

@@ -19,7 +19,7 @@
             "previewDescription": "A compilation of  marine and coastal geological,  geomorphological and geophysical data over the Northwest Shelf."
         },
 		{
-            "title": "Marine and Coastal Data",
+            "title": "Marine and Coastal Data (Internal GA only)",
             "id": "marinecoastal",
             "previewImageUrl": "content/marine/marinecoastal/marinecoastal.png",
             "previewDescription": "A compilation of national marine and coastal datasets managed and distributed by Geoscience Australia."

@@ -9,7 +9,7 @@
 		},
     "maps": [
 		{
-            "title": "Landsat 8 winter 2015",
+            "title": "Landsat 8 winter 2015 (Internal GA only)",
             "id": "landsat8",
             "previewImageUrl": "content/earthobservation/landsat8/mapPreview.png",
             "previewDescription": "Australia as seen from the spectral bands of the Landsat 8 satellite. Product of the Australian Geoscience Data Cube."

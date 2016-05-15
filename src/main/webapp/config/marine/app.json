@@ -7,7 +7,7 @@
     },
     "maps": [
         {
-            "title": "Bathymetry",
+            "title": "Bathymetry (Internal GA only)",
             "id": "marinebathymetry",
             "previewImageUrl": "content/marine/marinebathymetry/marinebathymetry.png",
             "previewDescription": "Visualisation of the highest resolution bathymetric data available for download on the Geoscience Australia website."

@@ -218,7 +218,7 @@
 		"name": "Marine Survey Backscatter",
 		"visibility":false,
 		"mapType": "ArcGISCache",
-		"url": "http://services.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Backscatter_WM/MapServer",
+		"url": "http://intranet-test.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Backscatter_WM/MapServer",
 		"opacity": "0.75",
 		"layerTimeout": 5000,
 		"metadataText": "The Marine Survey Multibeam Backscatter Web Map Service contains the highest-resolution multibeam backscatter grids available for download on Geoscience Australia’s website. These backscatter grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the backscatter grids. Backscatter grids have been rendered over a yellow-bronze colour-ramp with minimum and maximum decibel values being -40 and -10 dB respectively. The resolution of each backscatter grid is also specified in each survey's layer description.",

@@ -5,14 +5,14 @@
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
     "initialExtent": [
-        [
-            50,
-            10
-        ],
-        [
-            180,
-            -55
-        ]
+       [
+			100.19,
+			-7.21
+		],
+		[
+			127.13,
+			-30.37
+		]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
@@ -52,6 +52,22 @@
                 "id": "info",
                 "config": {
                     "infoList": [
+						{
+                            "id":"Marine Sediments (MARS) Database of Australia",
+							"url":"http://dbforms.ga.gov.au/pls/www/npm.mars.search"
+                        },
+						{
+                            "id":"Australian Coastal Sediment Compartments",
+							"url":"http://www.ga.gov.au/metadata-gateway/metadata/record/87838/"
+                        },
+						{
+                            "id":"Australian Marine Video and Imagery Data",
+							"url":"http://dapds00.nci.org.au/thredds/catalog/fk1/catalog.html"
+                        },
+						{
+                            "id":"Predicted Sand, Mud and Gravel Content of Australia’s North-northwest Shelf",
+							"url":"http://www.ga.gov.au/metadata-gateway/metadata/record/76999/"
+                        },
                         {
                             "id":"Australian Bathymetry and Topography 2009 WCS",
 							"url":"http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WCSServer?request=GetCapabilities&service=WCS"
@@ -145,7 +161,7 @@
 		"name": "Seascapes of Australias Continental Shelf",
 		"visibility":true,
 		"mapType": "WMS",
-		"url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+		"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 		"layers": "Seascapes_of_Australian_Continental_Shelf",
 		"opacity": "0.4",
 		"layerTimeout": 5000,
@@ -157,19 +173,19 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://intranet-test.ga.gov.au/gis/rest/services/Acreage_Release_Environmental_Data/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Acreage_Release_Environmental_Data/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://intranet-test.ga.gov.au/gis/rest/services/Acreage_Release_Environmental_Data/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Acreage_Release_Environmental_Data/MapServer?f=lyr&v=9.3"
                 }
             ],
 			"queryFeatures": true,
-            "queryUrl": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Seascapes_of_Australian_Continental_Shelf"
@@ -185,7 +201,7 @@
 		"name": "Australian Coastal Sediment Compartments",
 		"visibility":true,
 		"mapType": "WMS",
-		"url": "http://intranet-test.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
+		"url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
 		"layers": "Divisions,Primary_compartments,Secondary_compartments",		
 		"opacity": "0.5",
 		"layerTimeout": 5000,
@@ -209,7 +225,7 @@
                 }                
             ],
 			"queryFeatures": true,
-            "queryUrl": "http://intranet-test.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Divisions,Primary_compartments,Secondary_compartments"
@@ -241,7 +257,7 @@
 		"name": "Towed Underwater Video Transects",
 		"visibility":false,
 		"mapType": "WMS",
-		"url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+		"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 		"layers": "Carnarvon_Shelf_Survey_GA0308_Towed-video_transects,Bonaparte_Gulf_Survey_GA0322_Towed-video_transects,Bonaparte_Gulf_Survey_GA0325_Towed-video_transects,Petrel_Sub-basin_Survey_GA0335_Towed-video_transects,Oceanic_Shoals_CMR_Survey_GA0339_Towed-video_transects,Leveque_Shelf_Survey_GA0340_Towed-video_transects,Caswell_Sub-basin_Survey_GA0345_ROV_video_transects",		
 		"opacity": "1",
 		"layerTimeout": 5000,
@@ -249,7 +265,7 @@
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -261,7 +277,7 @@
                 }                
             ],
 			"queryFeatures": true,
-            "queryUrl": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Carnarvon_Shelf_Survey_GA0308_Towed-video_transects,Bonaparte_Gulf_Survey_GA0322_Towed-video_transects,Bonaparte_Gulf_Survey_GA0325_Towed-video_transects,Petrel_Sub-basin_Survey_GA0335_Towed-video_transects,Oceanic_Shoals_CMR_Survey_GA0339_Towed-video_transects,Leveque_Shelf_Survey_GA0340_Towed-video_transects,Caswell_Sub-basin_Survey_GA0345_ROV_video_transects"
@@ -270,7 +286,7 @@
 		"name": "Marine Sediments Database of Australia",
 		"visibility":false,
 		"mapType": "WMS",
-		"url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+		"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 		"layers": "Marine_Sediments_Database_MARS",		
 		"opacity": "1",
 		"layerTimeout": 5000,
@@ -278,7 +294,7 @@
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -290,7 +306,7 @@
                 }                
             ],
 			"queryFeatures": true,
-            "queryUrl": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Marine_Sediments_Database_MARS"
@@ -299,7 +315,7 @@
 		"name": "Coastal Compartment Points",
 		"visibility":false,
 		"mapType": "WMS",
-		"url": "http://intranet-test.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
+		"url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
 		"layers": "Secondary_points,Primary_points",		
 		"opacity": "1",
 		"layerTimeout": 5000,
@@ -323,7 +339,7 @@
                 }                
             ],
 			"queryFeatures": true,
-            "queryUrl": "http://intranet-test.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Secondary_points,Primary_points"
@@ -339,7 +355,7 @@
 				"name": "Gravel Content of Australia's Northwest Shelf",
 				"visibility":true,
 				"mapType": "WMS",
-				"url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+				"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 				"layers": "NNW_shelf_modelled_gravel_content",
 				"opacity": "0.75",
 				"layerTimeout": 5000,
@@ -347,7 +363,7 @@
 					"ogcLinks": [
 						{
 							"description": "Service Metadata (REST)",
-							"url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+							"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 						},
 						{
 							"description": "WMS Capabilities",
@@ -359,7 +375,7 @@
 						}                
 					],
 					"queryFeatures": true,
-					"queryUrl": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+					"queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 					"queryUrlType": "WMS",
 					"queryVersion": "1.1.1",
 					"queryLayers": "NNW_shelf_modelled_gravel_content"
@@ -370,7 +386,7 @@
 				"name": "Mud Content of Australia's Northwest Shelf",
 				"visibility":true,
 				"mapType": "WMS",
-				"url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+				"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 				"layers": "NNW_shelf_modelled_mud_content",
 				"opacity": "0.75",
 				"layerTimeout": 5000,
@@ -378,7 +394,7 @@
 					"ogcLinks": [
 						{
 							"description": "Service Metadata (REST)",
-							"url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+							"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 						},
 						{
 							"description": "WMS Capabilities",
@@ -390,7 +406,7 @@
 						}                
 					],
 					"queryFeatures": true,
-					"queryUrl": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+					"queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 					"queryUrlType": "WMS",
 					"queryVersion": "1.1.1",
 					"queryLayers": "NNW_shelf_modelled_mud_content"
@@ -401,7 +417,7 @@
 				"name": "Sand Content of Australia's Northwest Shelf",
 				"visibility":true,
 				"mapType": "WMS",
-				"url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+				"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 				"layers": "NNW_shelf_modelled_gravel_content",
 				"opacity": "0.75",
 				"layerTimeout": 5000,
@@ -409,7 +425,7 @@
 					"ogcLinks": [
 						{
 							"description": "Service Metadata (REST)",
-							"url": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+							"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 						},
 						{
 							"description": "WMS Capabilities",
@@ -421,7 +437,7 @@
 						}                
 					],
 					"queryFeatures": true,
-					"queryUrl": "http://intranet-test.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+					"queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 					"queryUrlType": "WMS",
 					"queryVersion": "1.1.1",
 					"queryLayers": "NNW_shelf_modelled_gravel_content"

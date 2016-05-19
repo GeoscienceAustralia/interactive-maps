@@ -6,13 +6,13 @@
 	"framework":"olv2",	
     "initialExtent": [
         [
-            50,
-            10
-        ],
-        [
-            180,
-            -55
-        ]
+			100.19,
+			-7.21
+		],
+		[
+			127.13,
+			-30.37
+		]
     ],
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
@@ -38,7 +38,8 @@
 		]
 	},
     "legendConfig": {
-        "enabled": true
+        "enabled": true,
+		"legendUrl": "content/marine/marinecoastal/legend.html"
     },
     "toolsConfig": {
         "enabled": true,
@@ -46,6 +47,44 @@
         "tools": [
 			{
                 "id": "addLayer"
+            },
+			{
+                "id": "info",
+                "config": {
+                    "infoList": [
+						{
+                            "id":"Australia's network of Commonwealth Marine Reserves",
+							"url":"http://www.environment.gov.au/fed/catalog/search/resource/details.page?uuid=%7B2E8DD19C-1B93-4D90-BD1C-128DDC4A2998%7D"
+                        },
+						{
+                            "id":"Marine Key Ecological Features",
+							"url":"http://www.environment.gov.au/fed/catalog/search/resource/details.page?uuid=%7BDEC30942-9AD7-4B4E-AB3C-D8DF9F40F8AC%7D"
+                        },
+						{
+                            "id":"Department of Environment’s Web Services",
+							"url":"http://www.environment.gov.au/about-us/environmental-information-data/web-services"
+                        },
+						{
+                            "id":"The Atlas of Living Australia – Spatial Portal",
+							"url":"http://spatial.ala.org.au/"
+                        },
+                        {
+                            "id":"Australian Bathymetry and Topography 2009 WCS",
+							"url":"http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WCSServer?request=GetCapabilities&service=WCS"
+                        },
+						{
+                            "id":"Multibeam 50m Bathymetry 2012 WCS",
+							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012/ImageServer/WCSServer?request=GetCapabilities&service=WCS"
+                        },
+						{
+							"id":"Multibeam Survey Extents 2014 WFS",
+							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+						}
+						
+						
+						
+                    ]
+                }
             },			
 			{
                 "id": "distanceBoundary"

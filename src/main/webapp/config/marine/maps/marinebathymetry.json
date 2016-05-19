@@ -59,11 +59,7 @@
 						{
                             "id":"50 m Multibeam Dataset of Australia 2012",
 							"url":"http://www.ga.gov.au/scientific-topics/marine/bathymetry/50m-multibeam-dataset-of-australia-2012/50m-multibeam-dataset"
-                        },
-						{
-                            "id":"Marine Survey Multibeam Bathymetry WMS",
-							"url":"http://services.ga.gov.au/gis/services/Marine_Survey_Multibeam_Bathymetry/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                        },
+                        },						
                         {
                             "id":"Australian Bathymetry and Topography 2009 WCS",
 							"url":"http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WCSServer?request=GetCapabilities&service=WCS"
@@ -157,7 +153,7 @@
 		},        
         {
             "slug": "Multibeam_Survey_Extents_2014",
-            "visibility": false,
+            "visibility": true,
             "opacity": 0.5,
             "queryFeatures": true
         },

@@ -1055,7 +1055,7 @@
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Geology - Primary substrate"			
-        },        
+        },	        
         {
             "slug": "Geomorphology_Scale_Guide",
 			"extent": [[99,10],[169,-55]],
@@ -1124,7 +1124,7 @@
 			"mapType": "WMS",
 			"visibility": true,
 			"url": "http://services.ga.gov.au/gis/services/Geological_Provinces_2013/MapServer/WMSServer",
-			"name": "Geological_Provinces_2013",
+			"name": "Geological Provinces 2013",
 			"opacity": "1",
 			"layers": "SedimentaryBasins-Cenozoic,SedimentaryBasins-MesozoicCenozoic,SedimentaryBasins-Mesozoic,SedimentaryBasins-PaleozoicCenozoic,SedimentaryBasins-PaleozoicMesozoic,SedimentaryBasins-LatePaleozoic,SedimentaryBasins-EarlyToLatePaleozoic,SedimentaryBasins-EarlyPaleozoic,SedimentaryBasins-Mesoproterozoic,SedimentaryBasins-Paleoproterozoic,SedimentaryBasins-ArcheanPaleoproterozoic",
 			"metadataText": "The Australian Geological Provinces web map service contains descriptions of the fundamental geological elements of the Australian continent and offshore surrounds. Province types include sedimentary basins, tectonic provinces such as cratons and orogens, igneous provinces, and metallogenic provinces. Spatial data has been captured largely at approximately 1:1M scale for intended use between 1:2M and 1:5M scale. The full 2D spatial extent (i.e. including the extent of a province under any overlying cover material) of each province has been captured.",
@@ -2148,6 +2148,20 @@
             "name": "Marine Survey Bathymetry",
             "url": "http://services.ga.gov.au/gis/services/Marine_Survey_Multibeam_Bathymetry/MapServer/WMSServer",
             "layers": "GA4301_2m,GA0334_N_2m,GA0334_S_2m,GA0333_1m,GA2461_4m,GA0305_beecrofthead_1m,GA0305_darlingrd_1m,GA0305_entrance_3m,GA0305_governorhead_1m,GA0305_stgeorge_1m,GA0305_jb_n_1m,GA0305_jb_s1_1m,GA0305_jb_s2_1m,GA0305_jb_s3_1m,GA0305_jb_s4_1m,GA0305_pointperpendicular_1m,GA0315_friars_1m,GA0315_fortescue_1point6m,GA0315_freycinet_1point6m,GA0315_huon_1m,GA0315_portarthur_1point6m,GA0315_sisters_1point6m,GA0315_tinderbox_1m,GA0315_maria_1m,GA0308_cloates_3m,GA0308_far_north_3m,GA0308_north1_3m,GA0308_north2_3m,GA0308_north3_3m,GA0308_south_3m,GA0340_a1_2m,GA0340_a10_2m,GA0340_a2_2m,G0340_a3_2m,GA0340_a4_2m,GA0340_a5_2m,GA0339_grid1_2m,GA0339_grid2_2m,GA0339_grid3_2m,GA0339_grid4_2m,GA0325_a_10m,GA0325_b_10m,GA0325_c_10m,GA0325_d_10m,GA0335_area1_2m,GA0335_area2_2m,GA2476_wallaby_100m,GA2476_exmouth_100m,GA2476_houtman_100m,GA2476_perth_100m,GA2413_50m,GA0336_1_2m,GA0336_2a_2m,GA0336_2b_2m,GA0336_3_2m,GA0336_4a_2m,GA0336_4b_2m,GA0336_5_2m,GA0336_6_2m,GA0336_7_2m,GA0336_8_2m,GA0336_9_2m,GA0293_50m,GA0352_9_1m,GA0352_17_1m,GA0352_2_1m,GA0352_3_1m,GA0352_4_1m,GA0352_5_1m,GA0352_6_1m,GA0352_7_1m,GA0352_8_1m,GA0352_1_1m,GA0352_10_1m,GA0352_11_1m,GA0352_12_1m,GA0352_13_1m,GA0352_14_1m,GA0352_15_1m,GA0352_16_1m,GA2436_6_20m,GA2436_4_35m,GA2436_7_40m,GA24326_3_40m,GA2436_5_40m,GA2436_1_50m,GA2436_2_50m,GA2436_3_50m,GA2436_6_50m,GA2436_6_100m,Macquarie_UTM58S_100m,Macquarie_UTM57S_100m,bremer_UTM51S_50m,bremer_UTM50S_100m,bremer_UTM50S_50m,bremer_UTM51S_100m,GA0346_A4_1m,GA0346_A3_1m,GA0345_7_7m,GA0345_6_7m,GA0345_5_5m,GA0345_4_2m,GA0345_3_2m,GA0345_2_2m,GA0345_1_2m",
+			"ogcLinks": [                
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Bathymetry/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/Marine_Survey_Multibeam_Bathymetry/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Bathymetry/MapServer?f=lyr&v=9.3"
+                }
+            ],
             "opacity": 1,
 			"metadataText": "The Marine Survey Multibeam Bathymetry Web Map Service contains the highest-resolution multibeam bathymetry grids available for download on Geoscience Australia’s website. These bathymetry grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the bathymetry grids. Bathymetry grids have been rendered over a rainbow colour-ramp with minimum and maximum depth values unique for each survey. These values are specified in each survey's layer description. The resolution of each bathymetry grid is also specified in each survey's layer description.",
 			"queryFeatures": false			
@@ -2162,11 +2176,50 @@
             "layers": "GA4301_2m,GA0334_N_2m,GA0334_S_2m,GA0333_1m,GA0315_friars_3m,GA0315_fortescue_2m,GA0315_freycinet_4m,GA0315_portarthur_1m,GA0315_huon_1m,GA0315_tinderbox_3m,GA0315_maria_1m,GA0308_gnaraloo_3m,GA0308_mandu1_3m,GA0308_mandu2_3m,GA0308_mandu3_3m,GA0308_pointcloates_3m,GA0345_a1_5m,GA0345_a2_5m,GA0345_a3_5m,GA0345_a4_5m,GA0345_a6b_5m,GA0345_a7_5m,GA0345_a8_5m,GA0345_b1_5m,GA0345_c1_5m,GA0345_c2b_5m,GA0345_f1b_5m,GA0345_m1_5m,GA0340_a1_2m,GA0340_a2_2m,GA0340_a3_2m,GA0340_a4_2m,GA0340_a5_2m,GA0340_a10_2m,GA0339_grid1_2m,GA0339_grid2_2m,GA0339_grid3_2m,GA0339_grid4_2m,GA0325_a_10m,GA0325_b_10m,GA0325_c_10m,GA0325_d_10m,GA2476_200m",
             "opacity": 1,
 			"metadataText": "The Marine Survey Multibeam Backscatter Web Map Service contains the highest-resolution multibeam backscatter grids available for download on Geoscience Australia’s website. These backscatter grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the backscatter grids. Backscatter grids have been rendered over a yellow-bronze colour-ramp with minimum and maximum decibel values being -40 and -10 dB respectively. The resolution of each backscatter grid is also specified in each survey's layer description.",
+			"ogcLinks": [                
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Backscatter/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/Marine_Survey_Multibeam_Backscatter/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Backscatter/MapServer?f=lyr&v=9.3"
+                }
+            ],
 			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Marine_Survey_Multibeam_Backscatter/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "GA4301_2m,GA0334_N_2m,GA0334_S_2m,GA0333_1m,GA0315_friars_3m,GA0315_fortescue_2m,GA0315_freycinet_4m,GA0315_portarthur_1m,GA0315_huon_1m,GA0315_tinderbox_3m,GA0315_maria_1m,GA0308_gnaraloo_3m,GA0308_mandu1_3m,GA0308_mandu2_3m,GA0308_mandu3_3m,GA0308_pointcloates_3m,GA0345_a1_5m,GA0345_a2_5m,GA0345_a3_5m,GA0345_a4_5m,GA0345_a6b_5m,GA0345_a7_5m,GA0345_a8_5m,GA0345_b1_5m,GA0345_c1_5m,GA0345_c2b_5m,GA0345_f1b_5m,GA0345_m1_5m,GA0340_a1_2m,GA0340_a2_2m,GA0340_a3_2m,GA0340_a4_2m,GA0340_a5_2m,GA0340_a10_2m,GA0339_grid1_2m,GA0339_grid2_2m,GA0339_grid3_2m,GA0339_grid4_2m,GA0325_a_10m,GA0325_b_10m,GA0325_c_10m,GA0325_d_10m,GA2476_200m"
+        },
+		{
+            "slug": "Marine_Survey_Geomorphology",
+			"extent": [[44,-8],[162,-69]],
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Marine Survey Geomorphology",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "layers": "Davis_Coast_Survey_GA4301_geomorphology,Petrel_Sub-basin_Survey_GA0335_or_SOL5463_geomorphology,Oceanic_Shoal_Survey_GA0339_or_SOL5650_geomorphology,Leveque_Shelf_Survey_GA0340_or_SOL5754_bedform_field,Leveque_Shelf_Survey_GA0340_or_SOL5754_geomorphology,Vlaming_Sub-basin_Survey_GA0334_sandwave_field,Vlaming_Sub-basin_Survey_GA0334_geomorphology",
+            "ogcLinks": [                
+                {
+                    "description": "Service Metadata (REST)",
+                    "url": "http://services.ga.gov.au/gis/rest/services/Marine_Survey_Geomorphology/MapServer"
+                },
+                {
+                    "description": "WMS Capabilities",
+                    "url": "http://services.ga.gov.au/gis/services/Marine_Survey_Geomorphology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },
+                {
+                    "description": "ArcMap Layerfile",
+                    "url": "http://services.ga.gov.au/gis/rest/services/Marine_Survey_Geomorphology/MapServer?f=lyr&v=9.3"
+                }
+            ],
+            "opacity": 1,
+            "layerTimeout": 5000
         },
         {
             "slug": "Muddy",

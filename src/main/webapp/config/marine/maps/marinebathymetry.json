@@ -61,15 +61,15 @@
 							"url":"http://www.ga.gov.au/scientific-topics/marine/bathymetry/50m-multibeam-dataset-of-australia-2012/50m-multibeam-dataset"
                         },						
                         {
-                            "id":"Australian Bathymetry and Topography 2009 WCS",
+                            "id":"Australian Bathymetry and Topography 2009 Web Coverage Service GetCapabilites",
 							"url":"http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WCSServer?request=GetCapabilities&service=WCS"
                         },
 						{
-                            "id":"Multibeam 50m Bathymetry 2012 WCS",
+                            "id":"Multibeam 50m Bathymetry 2012 Web Coverage Service GetCapabilites",
 							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012/ImageServer/WCSServer?request=GetCapabilities&service=WCS"
                         },
 						{
-							"id":"Multibeam Survey Extents 2014 WFS",
+							"id":"Multibeam Survey Extents 2014 Web Feature Service GetCapabilites",
 							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer/WFSServer?request=GetCapabilities&service=WFS"
 						}
 						
@@ -189,5 +189,36 @@
 			}
 		]
 	}
-]
+],
+    "addLayerMaps": [
+		{
+            "slug": "Seas_and_Submerged_Lands_Act_Combined",
+            "visibility": true,
+			"opacity": 0.5
+        },
+        {
+            "slug": "Offshore_Areas_Of_The_States_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Scheduled_Areas_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Australian_Petroleum_Blocks_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Treaties_Of_Australia_AMB_2014",
+            "opacity": 0.75,
+            "queryFeatures": true
+        },
+		{
+			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006"
+		},
+		{
+			"slug": "Commonwealth_Coral_Sea_Fishery_2006"
+		}
+    ]
 }

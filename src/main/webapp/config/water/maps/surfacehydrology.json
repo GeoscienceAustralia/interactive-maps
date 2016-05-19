@@ -48,6 +48,17 @@
 			{
                 "id": "addLayer"
             },
+			{
+                "id": "info",
+                "config": {
+                    "infoList": [
+						{
+                            "id":"Surface Hydrology Web Coverage Service GetCapabilites",
+							"url":"http://www.ga.gov.au/gis/services/topography/AusHydro/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+                        }					
+                    ]
+                }
+            },
             {
                 "id": "export"
             },

@@ -7,13 +7,13 @@
     },
     "maps": [
         {
-            "title": "Bathymetry (Internal GA only)",
+            "title": "Bathymetry",
             "id": "marinebathymetry",
             "previewImageUrl": "content/marine/marinebathymetry/marinebathymetry.png",
             "previewDescription": "Visualisation of the highest resolution bathymetric data available for download on the Geoscience Australia website."
         },
 		{
-            "title": "Geology,  Gemorphology and Geophysics of the Northwest Shelf",
+            "title": "Geology, Geomorphology and Geophysics of the Northwest Shelf",
             "id": "marinegeology",
             "previewImageUrl": "content/marine/marinegeology/marinegeology.png",
             "previewDescription": "A compilation of  marine and coastal geological,  geomorphological and geophysical data over the Northwest Shelf."

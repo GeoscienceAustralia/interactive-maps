@@ -1219,25 +1219,6 @@
             "queryVersion": "1.1.1",
             "queryLayers": "France_New_Caledonia_AMB2014_Points,France_New_Caledonia_AMB2014_Limit"
         },		
-		{
-			"slug": "Gas_Pipelines",
-			"extent": [[99,10],[169,-55]],
-			"id": "Gas Pipelines",
-			"mapType": "WMS",
-			"visibility": true,
-			"name": "National Onshore Gas Pipelines",
-			"url": "http://www.ga.gov.au/gis/services/topography/National_Onshore_Gas_Pipelines/MapServer/WMSServer",
-			"layers": "Gas_Pipelines",
-			"metadataText": "The National Onshore Gas Pipelines Dataset represents the spatial locations of pipelines for the transmission of natural gas within mainland Australia complimented with feature attribution.",
-			"ogcLinks": [
-			{"description": "Service Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_88069774-d935-44ac-aa07-6a3802807c7f/National_Onshore_Gas_Pipelines+Esri+Mapserver"},
-			{"description": "Service Metadata (REST)","url": "http://www.ga.gov.au/gis/rest/services/topography/National_Onshore_Gas_Pipelines/MapServer"},
-			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/National_Onshore_Gas_Pipelines/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
-			{"description": "WFS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/National_Onshore_Gas_Pipelines/MapServer/WFSServer?request=GetCapabilities&service=WFS"},
-			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/topography/National_Onshore_Gas_Pipelines/MapServer?f=lyr&v=9.3"}],   
-			"opacity": 1.0,
-			"queryFeatures": false
-		},		
         {
             "slug": "Geology_Primary_Substrate",
 			"extent": [[99,10],[169,-55]],
@@ -2771,29 +2752,6 @@
 			"queryVersion": "1.1.1",
 			"queryLayers": "species:Balaenoptera_musculus"
 			},
-		{
-			"slug": "Major_Ports",
-			"extent": [[88,10],[169,-55]],
-			"id": "Major Ports",
-			"mapType": "WMS",
-			"visibility": true,
-			"name": "National Major Ports",
-			"url": "http://www.ga.gov.au/gis/services/topography/National_Major_Ports/MapServer/WMSServer",
-			"layers": "National Major Ports",
-			"metadataText": "This point dataset contains major ports in Australian waters that include infrastructure facilities where maritime vessels have the ability to load and unload commodities.",
-			"ogcLinks": [
-			{"description": "Service Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c7ea0a14-654d-4da8-a5bb-64ef6f6051e0/National_Major_Ports+Esri+Mapserver"},
-			{"description": "Service Metadata (REST)","url": "http://www.ga.gov.au/gis/rest/services/topography/National_Major_Ports/MapServer"},
-			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/National_Major_Ports/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
-			{"description": "WFS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/National_Major_Ports/MapServer/WFSServer?request=GetCapabilities&service=WFS"},
-			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/topography/National_Major_Ports/MapServer?f=lyr&v=9.3"}],            
-			"opacity": 1.0,
-			"queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/topography/National_Major_Ports/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "National Major Ports"
-		},
         {
             "slug": "Multibeam_50m_Bathymetry_2012_RGB",
 			"extent": [[99,10],[169,-55]],
@@ -2889,64 +2847,6 @@
             "wrapDateLine": true,
             "maxZoomLevel": 16,
             "attribution": "Geoscience Australia <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>, Natural Earth <a target='_blank' href='http://www.naturalearthdata.com/about/'>Terms of Use</a> and <a target='_blank' href='https://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>"
-        },
-		{
-            "slug": "National_Electricty_Lines",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "National Electricity Transmission Lines",
-            "url": "http://www.ga.gov.au/gis/services/topography/National_Electricity_Transmission_Lines/MapServer/WMSServer",
-			"layers":"National_Electricity_Transmission_Lines",
-            "metadataText": "The National Electricity Transmission Lines dataset presents the spatial location; in line format, of all known high voltage electricity transmission lines that make up the electricity transmission network within Australia.",
-            "ogcLinks": [
-                {
-                    "description": "REST",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/National_Electricity_Transmission_Lines/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/National_Electricity_Transmission_Lines/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/National_Electricity_Transmission_Lines/MapServer?f=lyr&v=9.3"
-                },
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_bf592467-1a24-4671-907d-202279ac7f2f/National_Electricity_Transmission_Lines+ESRI+Mapserver"
-                }
-            ],
-            "opacity": 1,
-            "layerTimeout": 5000
-        },
-		{
-            "slug": "National_Electricty_Substations",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "National Electricty Transmission Substations",
-            "url": "http://www.ga.gov.au/gis/services/topography/National_Electricity_Transmission_Substations/MapServer/WMSServer",
-			"layers":"National_Electricity_Transmission_Substations",
-            "metadataText": "This National Electricity Transmission Substations dataset presents the spatial locations; in point format, of all known electricity transmission substations within Australia.",
-            "ogcLinks": [
-                {
-                    "description": "REST",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/National_Electricity_Transmission_Substations/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/National_Electricity_Transmission_Substations/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/National_Electricity_Transmission_Substations/MapServer?f=lyr&v=9.3"
-                },
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_bf592467-1a24-4671-907d-202279ac7f2f/National_Electricity_Transmission_Substations+ESRI+Mapserver"
-                }
-            ],
-            "opacity": 1,
-            "layerTimeout": 5000
         },
         {
             "slug": "New_Zealand_South",
@@ -3094,26 +2994,6 @@
             "queryVersion": "1.1.1",
             "queryLayers": "Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Area,Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Limit"
         },
-		{
-			"slug": "Oil_Pipelines",
-			"extent": [[99,10],[169,-55]],
-			"id": "Oil Pipelines",
-			"mapType": "WMS",
-			"visibility": true,
-			"name": "National Onshore Oil Pipelines",
-			"url": "http://services.ga.gov.au/gis/services/topography/Oil_Gas_Infrastructure/MapServer/WMSServer",
-			"layers": "Oil_Pipelines",
-			"metadataText": "The National Onshore Oil Pipelines Dataset represents the spatial locations of pipelines for the transmission of oil within mainland Australia complimented with feature attribution.",
-			"ogcLinks": [
-			{"description": "Service Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0f41bfd1-67bf-7a2a-e053-10a3070a4514/National+Onshore+Oil+Pipelines+Database"},
-			{"description": "Service Metadata (REST)","url": "http://www.ga.gov.au/gis/rest/services/topography/National_Onshore_Oil_Pipelines/MapServer"},
-			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/National_Onshore_Oil_Pipelines/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
-			{"description": "WFS Capabilities","url": "http://www.ga.gov.au/gis/services/topography/National_Onshore_Oil_Pipelines/MapServer/WFSServer?request=GetCapabilities&service=WFS"},
-			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/topography/National_Onshore_Oil_Pipelines/MapServer?f=lyr&v=9.3"}],			
-			"opacity": 1.0,
-			"queryFeatures": false
-			
-		},
 		{
 			"slug": "Onshore_Seismic_Surveys",
 			"extent": [[99,10],[169,-55]],

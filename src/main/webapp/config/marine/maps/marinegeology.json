@@ -57,11 +57,11 @@
 							"url":"http://www.ga.gov.au/metadata-gateway/metadata/record/69797"
                         },						
 						{
-                            "id":"Geomorphology WFS",
+                            "id":"Geomorphology Web Feature Service GetCapabilites",
 							"url":"http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Environment_WM/MapServer/WFSServer?request=GetCapabilities&service=WFS"
                         },
 						{
-							"description": "Seabed Features WFS",
+							"description": "Seabed Features Web Feature Service GetCapabilites",
 							"url": "http://www.ga.gov.au/gis/services/marine_coastal/Australian_Seabed_Features/MapServer/WFSServer?request=GetCapabilities&service=WFS"
 						},
                         {
@@ -69,7 +69,7 @@
 							"url":"http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_e3dd1af5-7b05-50fd-e044-00144fdd4fa6/National+Submarine+Canyons+of+Australia"
                         },
 						{
-                            "id":"National Submarine Canyons of Australia WFS",
+                            "id":"National Submarine Canyons of Australia Web Feature Service GetCapabilites",
 							"url":"http://www.ga.gov.au/gis/services/marine_coastal/National_Submarine_Canyons_of_Australia/MapServer/WFSServer?request=GetCapabilities&service=WFS"
                         }						
                     ]

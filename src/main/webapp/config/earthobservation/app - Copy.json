@@ -1,0 +1,70 @@
+{
+    "title": "Earth Observation and Satellite Imagery",
+    "id": "earthobservation",
+    "blurb": "Geoscience Australia provides Earth observation services, expert advice, and information for decision makers. We are Australia's principal earth resource satellite ground station and data processing facility.",
+    "headerConfig": 
+		{
+        "title": "Applying geoscience to Australia's most important challenges",
+        "backgroundImageUrl": "resources/img/header_bg.png"
+		},
+    "maps": [
+		{
+            "title": "Landsat 8 winter 2015 (Internal GA only)",
+            "id": "landsat8",
+            "previewImageUrl": "content/earthobservation/landsat8/mapPreview.png",
+            "previewDescription": "Australia as seen from the spectral bands of the Landsat 8 satellite. Product of the Australian Geoscience Data Cube."
+        },
+		{
+            "title": "Nadir BRDF Adjusted Reflectance",
+            "id": "nadirBRDFAdjustedReflectance",
+            "previewImageUrl": "content/earthobservation/nadir/NadirBRDFAdjusted.png",
+            "previewDescription": "Lake dissapointment landsat 8 Band 1 Nadir BRDF adjusted reflectance 0.43-0.45 2013-12-27 THREDDS sample."
+        },		
+		{
+            "title": "Sentinel Hotspots",
+            "id": "sentinelhotspots",
+            "previewImageUrl": "content/sentinel/hotspots/mapPreview.png",
+            "previewDescription": "Sentinel hotspots is a national bushfire monitoring system that provides timely information about hotspots to emergency service managers across Australia. The mapping system allows users to identify fire locations with a potential risk to communities and property."
+        },
+		{
+            "title": "Water Observations from Space",
+            "id": "wofs",
+            "previewImageUrl": "content/sentinel/floods/mapPreview.png",
+            "previewDescription": "Water Observations from Space (WOfS) is a web service displaying historical surface water observations derived from satellite imagery for all of Australia. Product of the Australian Geoscience Data Cube."
+        },
+		{
+			"title": "Australian Geoscience Data Cube",
+			"tags": "Information",
+            "previewImageUrl": "content/earthobservation/agdc.png",
+            "previewDescription": "The Australian Geoscience Data Cube provides an integrated gridded data analysis environment for decades of analysis ready earth observation satellite and related data from multiple satellite and other acquisition systems.",
+			"applicationUrl": "http://www.datacube.org.au/"
+		},
+		
+		{
+			"title": "View in Google Earth (KML)",
+			"tags": "Data",
+            "previewImageUrl": "content/sentinel/KML.png",
+            "previewDescription": "Current hotspots in Google Earth and KML.",
+			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/sentinel/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sentinel:hotspot_current&outputFormat=application%2Fvnd.google-earth.kml%2Bxml"
+		},
+		{
+			"title": "RSS feed",
+			"tags": "Data",
+            "previewImageUrl": "content/sentinel/RSS.png",
+            "previewDescription": "Current hotspots RSS (ATOM) feed.",
+			"applicationUrl": "http://sentinel.ga.gov.au/geoserver/wms/reflect?layers=hotspot_current&format=application/atom+xml"
+		}
+    ],
+    "tags": [
+		{
+            "id": "Information",
+            "description": "Information sites for Earth Observation.",
+            "title": "Information"
+        },
+		{
+            "id": "Data Links",
+            "description": "Data links and feeds.",
+            "title": "Reference Data"
+        }
+    ]
+}

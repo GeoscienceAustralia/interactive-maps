@@ -1058,6 +1058,7 @@
                     "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Environment_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
 			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Environment_WM/MapServer/WMSServer",
 			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
 			"queryVersion": "1.1.0",
@@ -1888,6 +1889,7 @@
                     "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Landform_Type_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
 			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
 			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
 			"queryVersion": "1.1.0",
@@ -1928,6 +1930,7 @@
                     "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Landform_Subtype_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
+			"queryFeatures": true,
 			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
 			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
 			"queryVersion": "1.1.0",
@@ -2561,7 +2564,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Marine Survey Geomorphology",
-            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Marine_Survey_Geomorphology/MapServer/WMSServer",
             "layers": "Davis_Coast_Survey_GA4301_geomorphology,Petrel_Sub-basin_Survey_GA0335_or_SOL5463_geomorphology,Oceanic_Shoal_Survey_GA0339_or_SOL5650_geomorphology,Leveque_Shelf_Survey_GA0340_or_SOL5754_bedform_field,Leveque_Shelf_Survey_GA0340_or_SOL5754_geomorphology,Vlaming_Sub-basin_Survey_GA0334_sandwave_field,Vlaming_Sub-basin_Survey_GA0334_geomorphology",
             "ogcLinks": [                
                 {
@@ -2578,7 +2581,8 @@
                 }
             ],
             "opacity": 1,
-            "layerTimeout": 5000
+            "layerTimeout": 5000,
+			"queryFeatures": false
         },
         {
             "slug": "Muddy",

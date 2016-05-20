@@ -88,65 +88,7 @@
             },			
 			{
                 "id": "distanceBoundary"
-            },
-			{
-                "id": "identifyTool",
-                "config": {
-                    "propertiesOfInterest": [
-						"Network",
-						"MPA_NAME",
-						"ZONE",
-						"IUCN",
-						"Lable",
-						"STATUS",
-						"LEGEND",						
-						"Area_km2",
-						"ResZoneL",
-						"PLACE_ID",
-						"FILE_",
-						"NAME",
-						"STATUS",
-						"IUCN_MGT",
-						"BIOGEOPROV",
-						"NATURAL",
-						"CULTURAL",
-						"STATE",
-						"HECTARES",
-						"ADDRESS",
-						"INSCRIBED",						
-						"Name",						
-						"Type",
-						"State"						
-                    ],
-                    "propertiesAlias": [
-						"Network",
-						"MPA_NAME",
-						"ZONE",
-						"IUCN",
-						"Lable",
-						"STATUS",
-						"LEGEND",						
-						"Area_km2",
-						"ResZoneL",
-						"PLACE_ID",
-						"FILE_",
-						"NAME",
-						"STATUS",
-						"IUCN_MGT",
-						"BIOGEOPROV",
-						"NATURAL",
-						"CULTURAL",
-						"STATE",
-						"HECTARES",
-						"ADDRESS",
-						"INSCRIBED",						
-						"Name",						
-						"Type",
-						"State"	
-                    ],
-					"primaryPropertyName": "SURVEY_NAM"
-                }
-            }           
+            }
         ]
     },
     "baseMaps": [

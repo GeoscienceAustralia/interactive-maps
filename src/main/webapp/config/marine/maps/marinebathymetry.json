@@ -154,7 +154,7 @@
         {
             "slug": "Multibeam_Survey_Extents_2014",
             "visibility": true,
-            "opacity": 0.5,
+            "opacity": 0.3,
             "queryFeatures": true
         },
 		{
@@ -213,12 +213,6 @@
             "slug": "Treaties_Of_Australia_AMB_2014",
             "opacity": 0.75,
             "queryFeatures": true
-        },
-		{
-			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006"
-		},
-		{
-			"slug": "Commonwealth_Coral_Sea_Fishery_2006"
-		}
+        }
     ]
 }

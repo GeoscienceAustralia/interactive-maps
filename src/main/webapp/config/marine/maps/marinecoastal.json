@@ -65,7 +65,7 @@
 							"url":"http://dapds00.nci.org.au/thredds/catalog/fk1/catalog.html"
                         },
 						{
-                            "id":"Predicted Sand, Mud and Gravel Content of Australia’s North-northwest Shelf",
+                            "id":"Predicted Sand, Mud and Gravel Content of Australia's North-northwest Shelf",
 							"url":"http://www.ga.gov.au/metadata-gateway/metadata/record/76999/"
                         },
                         {
@@ -85,6 +85,9 @@
 						
                     ]
                 }
+            },
+			{
+                "id": "clientMeasure"
             },
 			{
                 "id": "distanceBoundary"

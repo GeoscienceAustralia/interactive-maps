@@ -74,6 +74,9 @@
                         }						
                     ]
                 }
+            },
+			{
+                "id": "clientMeasure"
             },            
 			{
                 "id": "distanceBoundary"

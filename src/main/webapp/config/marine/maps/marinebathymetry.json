@@ -51,11 +51,7 @@
 			{
                 "id": "info",
                 "config": {
-                    "infoList": [
-						{
-                            "id":"Australian Bathymetry and Topography 2009",
-							"url":"http://www.ga.gov.au/metadata-gateway/metadata/record/83562"
-                        },
+                    "infoList": [					
 						{
                             "id":"50 m Multibeam Dataset of Australia 2012",
 							"url":"http://www.ga.gov.au/scientific-topics/marine/bathymetry/50m-multibeam-dataset-of-australia-2012/50m-multibeam-dataset"
@@ -79,6 +75,9 @@
                 }
             },
 			{
+                "id": "clientMeasure"
+            },
+			{
                 "id": "distanceBoundary"
             },
 			{
@@ -94,6 +93,7 @@
 						"START_DATE",
 						"END_DATE",
 						"START_PORT",
+						"E_PORT",
 						"DATA_OWNER",
 						"N_LAT",
 						"S_LAT",
@@ -103,31 +103,30 @@
 						"SYSTEM",
 						"RELEASE_DA",
 						"IP_DETAILS",
-						"LEADER",
-						"E_PORT",
+						"LEADER",						
                         "Pixel Value"
                     ],
                     "propertiesAlias": [
 						"ENO",
-						"SURVEY_COD",
-						"SURVEY_NAM",
-						"ID",
-						"DATATYPE",
-						"VESSEL",
-						"START_DATE",
-						"END_DATE",
-						"START_PORT",
-						"DATA_OWNER",
-						"N_LAT",
-						"S_LAT",
-						"W_LONG",
-						"E_LONG",
-						"AREA_KM2",
-						"SYSTEM",
-						"RELEASE_DA",
-						"IP_DETAILS",
-						"LEADER",
-						"E_PORT",
+						"Survey Code",
+						"Survey Name",
+						"Id",
+						"Data Type",
+						"Vessel",
+						"Start Date",
+						"End Date",
+						"Start Port",
+						"End Port",
+						"Data Owner",
+						"North Latitude",
+						"South Latitude",
+						"West Longitude",
+						"East Longitude",
+						"Area km sq",
+						"System",
+						"Release Data",
+						"IP Details",
+						"Leader",						
                         "Pixel Value"
                     ],
 					"primaryPropertyName": "SURVEY_NAM"

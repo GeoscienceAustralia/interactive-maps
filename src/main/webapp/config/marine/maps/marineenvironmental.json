@@ -39,7 +39,7 @@
 	},
     "legendConfig": {
         "enabled": true,
-		"legendUrl": "content/marine/marinecoastal/legend.html"
+		"legendUrl": "content/marine/marineenvironmental/legend.html"
     },
     "toolsConfig": {
         "enabled": true,
@@ -61,11 +61,11 @@
 							"url":"http://www.environment.gov.au/fed/catalog/search/resource/details.page?uuid=%7BDEC30942-9AD7-4B4E-AB3C-D8DF9F40F8AC%7D"
                         },
 						{
-                            "id":"Department of Environment’s Web Services",
+                            "id":"Department of Environment's Web Services",
 							"url":"http://www.environment.gov.au/about-us/environmental-information-data/web-services"
                         },
 						{
-                            "id":"The Atlas of Living Australia – Spatial Portal",
+                            "id":"The Atlas of Living Australia Spatial Portal",
 							"url":"http://spatial.ala.org.au/"
                         },
                         {
@@ -85,6 +85,9 @@
 						
                     ]
                 }
+            },
+			{
+                "id": "clientMeasure"
             },			
 			{
                 "id": "distanceBoundary"

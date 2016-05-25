@@ -91,6 +91,7 @@
 		{
 			"slug": "Australias_Commonwealth_Marine_Reserves",
 			"name": "Australias Commonwealth Marine Reserves - IUCN Zone",
+			"extent": [[70,-8],[170,-58]],
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Commonwealth_Marine_Reserves_IUCN/MapServer/WMSServer",
@@ -113,6 +114,7 @@
 		{
 			"slug": "Australias_Key_Ecological_Features",
 			"name": "Australias Key Ecological Features",
+			"extent": [[109,-8],[171,-46]],
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features/MapServer/WMSServer",
@@ -220,6 +222,7 @@
 		{
 		"slug": "Australian_Coastal_Sediment_Compartments",
 		"name": "Australian Coastal Sediment Compartments",
+		"extent": [[99,-7],[169,-55]],
 		"visibility":true,
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
@@ -460,6 +463,7 @@
 		{
 		"slug": "Coastal_Compartment_Points",
 		"name": "Coastal Compartment Points",
+		"extent": [[99,10],[169,-55]],
 		"visibility":false,
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
@@ -548,6 +552,7 @@
 		{
 			"slug": "Commonwealth_Heritage_List_Australia",
 			"name": "Commonwealth Heritage List Australia",
+			"extent": [[62,-10],[167,-67]],
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Commonwealth_Heritage_List/MapServer/WMSServer",
@@ -663,6 +668,7 @@
 		{
 			"slug": "Collaborative_Australian_Protected_Areas_Database",
 			"name": "Collaborative Australian Protected Areas Database (CAPAD) 2014",
+			"extent": [[60,-10],[167,-69]],
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/capad/MapServer/WMSServer",
@@ -685,6 +691,7 @@
 		{
 			"slug": "Directory_of_Important_Wetlands",
 			"name": "Directory of Important Wetlands",
+			"extent": [[73,-10],[159,-53]],
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Important_Wetlands/MapServer/WMSServer",
@@ -1219,7 +1226,38 @@
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "France_New_Caledonia_AMB2014_Points,France_New_Caledonia_AMB2014_Limit"
-        },		
+        },
+		{
+				"slug": "Gravel_Content_of_Australias_Northwest_Shelf",
+				"name": "Gravel Content of Australia's Northwest Shelf",
+				"extent": [[112,-8],[142,-25]],
+				"visibility":true,
+				"mapType": "WMS",
+				"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+				"layers": "NNW_shelf_modelled_gravel_content",
+				"opacity": "0.75",
+				"layerTimeout": 5000,
+				"metadataText": "This dataset provides the spatially continuous data of predicted seabed gravel content (sediment fraction greater than 2000 um) expressed as a weight percentage ranging from 0 to 100%, presented in 0.0025 decimal degree (dd) resolution raster grids format and ascii text file. The dataset covers the north-northwest region of the Australian continental EEZ. This dataset supersedes previous predictions of seabed gravel content for the region with demonstrated improvements in accuracy. Accuracy of predictions varies based on density of underlying data and level of seabed complexity. Artefacts occur in this dataset as a result of insufficient samples in relevant areas. This dataset is intended for use at regional scale. The dataset may not be appropriate for use at local scales in areas where sample density is insufficient to detect local variation in sediment properties. To obtain the most accurate interpretation of sediment distribution in these areas, it is recommended that additional samples be collected and interpolations updated. The dataset can be downloaded at the following URL http://www.ga.gov.au/metadata-gateway/metadata/record/76997.",
+					"ogcLinks": [
+						{
+							"description": "Service Metadata (REST)",
+							"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+						},
+						{
+							"description": "WMS Capabilities",
+							"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+						},
+						{
+							"description": "ArcMap Layerfile",
+							"url": "http://services.ga.gov.au/gis/rest/services/Acreage_Release_Environmental_Data/MapServer?f=lyr&v=9.3"
+						}                
+					],
+					"queryFeatures": true,
+					"queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.1.1",
+					"queryLayers": "NNW_shelf_modelled_gravel_content"
+		},		
         {
             "slug": "Geology_Primary_Substrate",
 			"extent": [[99,10],[169,-55]],
@@ -2477,6 +2515,7 @@
 		"slug": "Marine_Sediments_Database_of_Australia",
 		"name": "Marine Sediments Database of Australia",
 		"visibility":true,
+		"extent": [[110,-9],[113,-23]],
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 		"layers": "Marine_Sediments_Database_MARS",		
@@ -2495,7 +2534,11 @@
                 {
                     "description": "ArcMap Layerfile",
                     "url": "http://services.ga.gov.au/gis/rest/services/Acreage_Release_Environmental_Data/MapServer?f=lyr&v=9.3"
-                }                
+                },
+				{
+					"description":"Marine Sediments (MARS) Database of Australia",
+					"url":"http://dbforms.ga.gov.au/pls/www/npm.mars.search"
+				}
             ],
 			"queryFeatures": true,
             "queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
@@ -2531,7 +2574,7 @@
         },
 		{
             "slug": "Marine_Survey_Backscatter",
-			"extent": [[99,10],[169,-55]],
+			"extent": [[77,-10],[148,-70]],
             "mapType": "WMS",
             "visibility": true,
             "name": "Marine Survey Backscatter",
@@ -2614,7 +2657,39 @@
                 }
             ],
             "layerTimeout": 5000
-        },		
+        },
+		{
+				"id": "Mud_Content_of_Australias_Northwest_Shelf",
+				"slug": "Mud_Content_of_Australias_Northwest_Shelf",
+				"name": "Mud Content of Australia's Northwest Shelf",
+				"extent": [[112,-8],[142,-25]],
+				"visibility":true,
+				"mapType": "WMS",
+				"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+				"layers": "NNW_shelf_modelled_mud_content",
+				"opacity": "0.75",
+				"layerTimeout": 5000,
+				"metadataText": "This dataset provides the spatially continuous data of predicted seabed mud content (sediment fraction finer than 63 um) expressed as a weight percentage ranging from 0 to 100%, presented in 0.0025 decimal degree (dd) resolution raster grids format and an ascii text file. The dataset covers the north-northwest region of the Australian continental EEZ. This dataset supersedes previous predictions of seabed mud content for the region with demonstrated improvements in accuracy. Accuracy of predictions varies based on density of underlying data and level of seabed complexity. Artefacts occur in this dataset as a result of insufficient samples in relevant areas. This dataset is intended for use at regional scale. The dataset may not be appropriate for use at local scales in areas where sample density is insufficient to detect local variation in sediment properties. To obtain the most accurate interpretation of sediment distribution in these areas, it is recommended that additional samples be collected and interpolations updated. The dataset can be downloaded at the following URL http://www.ga.gov.au/metadata-gateway/metadata/record/76998.",
+					"ogcLinks": [
+						{
+							"description": "Service Metadata (REST)",
+							"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+						},
+						{
+							"description": "WMS Capabilities",
+							"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+						},
+						{
+							"description": "ArcMap Layerfile",
+							"url": "http://services.ga.gov.au/gis/rest/services/Acreage_Release_Environmental_Data/MapServer?f=lyr&v=9.3"
+						}                
+					],
+					"queryFeatures": true,
+					"queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+					"queryUrlType": "WMS",
+					"queryVersion": "1.1.1",
+					"queryLayers": "NNW_shelf_modelled_mud_content"
+		},
         {
             "slug": "Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB_2014",
 			"extent": [[99,10],[169,-55]],
@@ -3121,6 +3196,7 @@
 		{
 			"slug": "Ramsar_Wetlands_of_Australia",
 			"name": "Ramsar Wetlands of Australia",
+			"extent": [[96,-10],[159,-42]],
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Ramsar_Wetlands/MapServer/WMSServer",
@@ -4183,6 +4259,37 @@
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistrySedimentary"
         },
+		{
+			"slug": "Sand_Content_of_Australias_Northwest_Shelf",
+			"name": "Sand Content of Australia's Northwest Shelf",
+			"extent": [[112,-8],[142,-25]],
+			"visibility":true,
+			"mapType": "WMS",
+			"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+			"layers": "NNW_shelf_modelled_gravel_content",
+			"opacity": "0.75",
+			"layerTimeout": 5000,
+			"metadataText": "This dataset provides the spatially continuous data of predicted seabed sand content (sediment fraction 63 - 2000 um) expressed as a weight percentage ranging from 0 to 100%, presented in 0.0025 decimal degree (dd) resolution raster grids format and an ascii text file. The dataset covers the north-northwest region of the Australian continental EEZ. This dataset supersedes previous predictions of seabed sand content for the region with demonstrated improvements in accuracy. Accuracy of predictions varies based on density of underlying data and level of seabed complexity. Artefacts occur in this dataset as a result of insufficient samples in relevant areas. This dataset is intended for use at regional scale. The dataset may not be appropriate for use at local scales in areas where sample density is insufficient to detect local variation in sediment properties. To obtain the most accurate interpretation of sediment distribution in these areas, it is recommended that additional samples be collected and interpolations updated. The dataset can be downloaded at the following URL http://www.ga.gov.au/metadata-gateway/metadata/record/76999.",
+			"ogcLinks": [
+				{
+					"description": "Service Metadata (REST)",
+					"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				},
+				{
+					"description": "WMS Capabilities",
+					"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+				},
+				{
+					"description": "ArcMap Layerfile",
+					"url": "http://services.ga.gov.au/gis/rest/services/Acreage_Release_Environmental_Data/MapServer?f=lyr&v=9.3"
+				}                
+			],
+			"queryFeatures": true,
+			"queryUrl": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
+			"queryUrlType": "WMS",
+			"queryVersion": "1.1.1",
+			"queryLayers": "NNW_shelf_modelled_gravel_content"
+		},
         {
             "slug": "Sandy",
 			"extent": [[99,10],[169,-55]],
@@ -4542,6 +4649,7 @@
 		{
 		"slug":  "Seascapes_of_Australias_Continental_Shelf",
 		"name": "Seascapes of Australias Continental Shelf",
+		"extent": [[112,-8],[142,-25]],
 		"visibility":true,
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
@@ -5706,6 +5814,7 @@
 		{
 		"slug": "Towed_Underwater_Video_Transects",
 		"name": "Towed Underwater Video Transects",
+		"extent": [[113,-10],[130,-23]],
 		"visibility":false,
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
@@ -5784,6 +5893,7 @@
 		{
 			"slug": "World_Heritage_Areas",
 			"name": "World Heritage Areas",
+			"extent": [[72,-10],[167,-55]],
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas_label/MapServer/WMSServer",

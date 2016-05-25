@@ -23,12 +23,26 @@
             "id": "marinecoastal",
             "previewImageUrl": "content/marine/marinecoastal/marinecoastal.png",
             "previewDescription": "A compilation of national marine and coastal datasets managed and distributed by Geoscience Australia."
-        },		
+        },
 		{
             "title": "Environmental Management Data",
             "id": "marineenvironmental",
             "previewImageUrl": "content/marine/marineenvironmental/marineenvironmental.png",
             "previewDescription": "A compilation of significant biological and environmental management web services and datasets managed and distributed by the Department of Environment and CSIRO."
+        },
+		{
+			"title": "Marine Sediments (MARS) Database of Australia",
+			"tags": "Information",
+            "previewImageUrl": "content/marine/MARS.png",
+            "previewDescription": "The MARine Sediment (MARS) database contains detailed information on seabed sediment characteristics for samples collected from Australia's marine jurisdiction, including the Australian Antarctic Territory. It is an important scientific resource that includes survey and sample information such as locations, water depths and sample descriptions.",
+			"applicationUrl": "http://dbforms.ga.gov.au/pls/www/npm.mars.search"
+		}
+    ],
+	"tags": [
+		{
+            "id": "Information",
+            "description": "Information sites for Earth Observation.",
+            "title": "Information"
         }
     ]
 }

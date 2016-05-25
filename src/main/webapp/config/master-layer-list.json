@@ -2507,7 +2507,7 @@
             "slug": "Marine_Survey_Bathymetry",
             "mapType": "WMS",
             "visibility": true,
-            "name": "Marine Survey Bathymetry",
+            "name": "High Resolution Multibeam Bathymetry",
             "url": "http://services.ga.gov.au/gis/services/Marine_Survey_Multibeam_Bathymetry/MapServer/WMSServer",
             "layers": "GA4301_2m,GA0334_N_2m,GA0334_S_2m,GA0333_1m,GA2461_4m,GA0305_beecrofthead_1m,GA0305_darlingrd_1m,GA0305_entrance_3m,GA0305_governorhead_1m,GA0305_stgeorge_1m,GA0305_jb_n_1m,GA0305_jb_s1_1m,GA0305_jb_s2_1m,GA0305_jb_s3_1m,GA0305_jb_s4_1m,GA0305_pointperpendicular_1m,GA0315_friars_1m,GA0315_fortescue_1point6m,GA0315_freycinet_1point6m,GA0315_huon_1m,GA0315_portarthur_1point6m,GA0315_sisters_1point6m,GA0315_tinderbox_1m,GA0315_maria_1m,GA0308_cloates_3m,GA0308_far_north_3m,GA0308_north1_3m,GA0308_north2_3m,GA0308_north3_3m,GA0308_south_3m,GA0340_a1_2m,GA0340_a10_2m,GA0340_a2_2m,G0340_a3_2m,GA0340_a4_2m,GA0340_a5_2m,GA0339_grid1_2m,GA0339_grid2_2m,GA0339_grid3_2m,GA0339_grid4_2m,GA0325_a_10m,GA0325_b_10m,GA0325_c_10m,GA0325_d_10m,GA0335_area1_2m,GA0335_area2_2m,GA2476_wallaby_100m,GA2476_exmouth_100m,GA2476_houtman_100m,GA2476_perth_100m,GA2413_50m,GA0336_1_2m,GA0336_2a_2m,GA0336_2b_2m,GA0336_3_2m,GA0336_4a_2m,GA0336_4b_2m,GA0336_5_2m,GA0336_6_2m,GA0336_7_2m,GA0336_8_2m,GA0336_9_2m,GA0293_50m,GA0352_9_1m,GA0352_17_1m,GA0352_2_1m,GA0352_3_1m,GA0352_4_1m,GA0352_5_1m,GA0352_6_1m,GA0352_7_1m,GA0352_8_1m,GA0352_1_1m,GA0352_10_1m,GA0352_11_1m,GA0352_12_1m,GA0352_13_1m,GA0352_14_1m,GA0352_15_1m,GA0352_16_1m,GA2436_6_20m,GA2436_4_35m,GA2436_7_40m,GA24326_3_40m,GA2436_5_40m,GA2436_1_50m,GA2436_2_50m,GA2436_3_50m,GA2436_6_50m,GA2436_6_100m,Macquarie_UTM58S_100m,Macquarie_UTM57S_100m,bremer_UTM51S_50m,bremer_UTM50S_100m,bremer_UTM50S_50m,bremer_UTM51S_100m,GA0346_A4_1m,GA0346_A3_1m,GA0345_7_7m,GA0345_6_7m,GA0345_5_5m,GA0345_4_2m,GA0345_3_2m,GA0345_2_2m,GA0345_1_2m",
 			"ogcLinks": [                
@@ -2525,7 +2525,7 @@
                 }
             ],
             "opacity": 1,
-			"metadataText": "The Marine Survey Multibeam Bathymetry Web Map Service contains the highest-resolution multibeam bathymetry grids available for download on Geoscience Australia’s website. These bathymetry grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the bathymetry grids. Bathymetry grids have been rendered over a rainbow colour-ramp with minimum and maximum depth values unique for each survey. These values are specified in each survey's layer description. The resolution of each bathymetry grid is also specified in each survey's layer description.",
+			"metadataText": "The Marine Survey Multibeam Bathymetry Web Map Service contains the highest-resolution multibeam bathymetry grids available for download on Geoscience Australia's website. These bathymetry grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the bathymetry grids. Bathymetry grids have been rendered over a rainbow colour-ramp with minimum and maximum depth values unique for each survey. These values are specified in each survey's layer description. The resolution of each bathymetry grid is also specified in each survey's layer description.",
 			"queryFeatures": false			
         },
 		{
@@ -3123,7 +3123,7 @@
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Ramsar_Wetlands/MapServer/WMSServer",
-			"layers": "Key_Ecological_Features",		
+			"layers": "Ramsar_Wetlands",		
 			"opacity": "1",
 			"layerTimeout": 5000,
 			"metadataText": "National dataset of Australia's Ramsar Wetlands. This project was initiated by the Wetlands Section of the Australian Government Department of Sustainability, Environment, Water, Population and Communities. Spatial data was sourced from the relevant State and Territory agencies and compiled into a single national coverage.",
@@ -3134,10 +3134,10 @@
 					}
 				],			
 			"queryFeatures": true,
-			"queryUrl": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features/MapServer/WMSServer",
+			"queryUrl": "http://www.environment.gov.au/mapping/services/ogc_services/Ramsar_Wetlands/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
-			"queryLayers": "Key_Ecological_Features"
+			"queryLayers": "Ramsar_Wetlands"
 		},
         {
             "slug": "Radiometrics_2015_Ternary_KThU",

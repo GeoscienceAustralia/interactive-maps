@@ -5871,6 +5871,7 @@
 		{
 			"slug": "Whale_Shark",
 			"name": "Whale Shark",
+			"extent": [[72,-10],[167,-55]],
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Rhincodon typus",

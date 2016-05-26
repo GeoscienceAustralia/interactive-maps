@@ -96,7 +96,7 @@
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Commonwealth_Marine_Reserves_IUCN/MapServer/WMSServer",
 			"layers": "Australias Commonwealth Marine Reserves IUCN Zone",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Consistent with the Australian Government's commitment to develop a National Representative System of Marine Protected Areas (MPAs), networks of Commonwealth Marine Reserves has been proclaimed for Commonwealth waters across the South-west, North-west, North, Coral Sea and Temperate East Marine Regions. These networks build on previous Marine Protected Area proclamations, including the South-east network declared in 2007. This dataset is released under Creative Commons by Attribution-NonCommercial 3.0 Australia (CC BY-NC 3.0). IMPORTANT INFORMATION FOR MARINE USERS The Commonwealth marine reserves declared in November 2012 are under transitional arrangements until management plans come into effect in July 2014. Transitional arrangements involve NO CHANGES ON THE WATER for marine users. Note, there are no changes to management arrangements in the marine reserves that existed prior to the establishment of the new reserves, that is, the same restrictions on activities will continue to apply even where those reserves have been incorporated into new reserves. The South-east Network of Commonwealth Marine Reserves are managed under the South-east Commonwealth Marine Reserves Network Management Plan 2013-23, in place from 1 July 2013. More information is available at www.environment.gov.au/marinereserves This data contains spatial and contextual information about Commonwealth Marine Reserves under the jurisdiction of the Commonwealth governments Environment Protection and Biodiversity Conservation Act 1999, which are managed by the Australian Government Department of Sustainability, Environment, Water, Population and Communities (DSEWPaC). It does not include data on MPA's in other Australian jurisdictions (e.g. the Great Barrier Reef Marine Park, State/Territory parks), or Terrestrial Protected Areas with marine components (eg Pulu Keeling National Park).",
 				"ogcLinks": [
@@ -118,8 +118,8 @@
 			"visibility":true,
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features_named/MapServer/WMSServer",
-			"layers": "Key_Ecological_Features_named",		
-			"opacity": "0.5",
+			"layers": "0",		
+			"opacity": 0.5,
 			"layerTimeout": 5000,
 			"metadataText": "Key ecological features are the parts of the marine ecosystem that are considered to be of importance for a marine region's biodiversity or ecosystem function and integrity. Key ecological features (KEFs) meet one or more of the following criteria: 1. a species, group of species, or a community with a regionally important ecological role (e.g. a predator, prey that affects a large biomass or number of other marine species); 2. a species, group of species, or a community that is nationally or regionally important for biodiversity; 3. an area or habitat that is nationally or regionally important for: a) enhanced or high productivity (such as predictable upwellings - an upwelling occurs when cold nutrient-rich waters from the bottom of the ocean rise to the surface); b) aggregations of marine life (such as feeding, resting, breeding or nursery areas); c) biodiversity and endemism (species which only occur in a specific area); or 4. a unique seafloor feature, with known or presumed ecological properties of regional significance. KEFs have been identified by the Australian Government on the basis of advice from scientists about the ecological processes and characteristics of the area. A workshop held in Darwin in 2007 also contributed to this scientific advice and helped to underpin the identification of key ecological features. As new information becomes available, the spatial representations of identified key ecological features will continue to be refined and updated. Sixteen KEFs have been identified in the South-west Marine Region: 1. Commonwealth marine environment surrounding the Houtman Abrolhos Islands 2. Perth Canyon and adjacent shelf break, and other west coast canyons 3. Commonwealth marine environment within and adjacent to the west coast inshore lagoons 4. Commonwealth marine environment within and adjacent to Geographe Bay 5. Cape Mentelle upwelling 6. Naturaliste Plateau 7. Diamantina Fracture Zone 8. Albany Canyons group and adjacent shelf break 9. Commonwealth marine environment surrounding the Recherche Archipelago 10. Ancient coastline at 90-120 m depth 11. Kangaroo Island Pool, canyons and adjacent shelf break, and Eyre Peninsula upwellings. 12. Meso-scale eddies (points). 13. Western demersal slope and associated fish communities. 14. Western rock lobster. 15. Benthic invertebrate communities of the eastern Great Australian Bight. No spatial representation available. 16. Small pelagic fish of the South-west Marine Region. No spatial representation available. Thirteen KEFs have been identified in the North-west Marine Region: 1. Ancient coastline at 125 m depth contour 2. Ashmore Reef and Cartier Island and surrounding Commonwealth waters 3. Canyons linking the Argo Abyssal Plain and Scott Plateau 4. Canyons linking the Cuvier Abyssal Plain and the Cape Range Peninsula 5. Carbonate bank and terrace system of the Sahul Shelf 6. Commonwealth waters adjacent to Ningaloo Reef 7. Continental Slope Demersal Fish Communities 8. Exmouth Plateau 9. Glomar Shoals 10. Mermaid Reed and Commonwealth waters surrounding the Rowley Shoals 11. Pinnacles of the Bonaparte Basin 12. Seringapatam Reef and Commonwealth waters in the Scott Reef Complex 13. Wallaby Saddle Eight KEFs have been identified in the North Marine Region: 1. Carbonate bank and terrace system of the Van Diemen Rise 2. Shelf break and slope of the Arafura Shelf 3. Tributary canyons of the Arafura Depression 4. Gulf of Carpentaria basin 5. Gulf of Carpentaria coastal zone 6. Plateaux and saddle north-west of the Wellesley Islands 7. Pinnacles of the Bonaparte Basin 8. Submerged coral reefs of the Gulf of Carpentaria Three KEFs have been identified in the Coral Sea: 1. Tasmantid seamount chain 2. Reefs, cays and hebivorous fish of the Queensland Plateau 3. Reefs, cays and hebivorous fish of the Marion Plateau Eight KEFs were identified in the Temperate East marine Region: 1. Tasmantid seamount chain 2. Lord Howe seamount chain 3. Norfolk Ridge 4. Canyons on the eastern continental slope 5. Shelf rocky reefs 6. Elizabeth and Middleton reefs 7. Upwelling off Fraser Island 8. Tasman Front and eddy field Eight KEFs were identified in the South-east Marine Region. 1. Seamounts, east and south of Tasmania 2. West Tasmanian canyons 3. Bonney coast upwelling 4. Upwelling east of Eden 5. Big Horseshoe canyon 6. East Tasmania tropical convergence zone. No spatial representation available 7. Bass cascade. No spatial representation available 8. Shelf rocky reefs and hard substrate. No spatial representation available In order to create a spatial representation of KEFs for each Marine Region, some interpretation of the information was required. The Department has made every effort to use the best available spatial information and best judgement on how to spatially represent the features based on the scientific advice provided. This does not preclude others from making their own interpretation of available information.",
 				"ogcLinks": [
@@ -132,7 +132,7 @@
 			"queryUrl": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features_named/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
-			"queryLayers": "Key_Ecological_Features_named"
+			"queryLayers": "0"
 		},
 		{
 			"slug": "Australian_Snubfin_Dolphin",
@@ -141,7 +141,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Orcaella heinsohni",
 			"layers": "species:Orcaella_heinsohni",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Australian Snubfin Dolphin (Orcaella heinsohni).",
 				"ogcLinks": [
@@ -227,7 +227,7 @@
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
 		"layers": "Divisions,Primary_compartments,Secondary_compartments",		
-		"opacity": "1",
+		"opacity": 1,
 		"layerTimeout": 5000,
 		"metadataText": "The Australian Coastal Sediment Compartments Web Service provide a hierarchical spatial classification relevant to the assessment of sediment movement in the Australian coastal zone, and represent a tool to assist coastal planning and management. Additional spatial data layers produced during the development of the compartments are provided for reference.",
             "ogcLinks": [
@@ -468,7 +468,7 @@
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Australian_Coastal_Sediment_Compartments/MapServer/WMSServer",
 		"layers": "Secondary_points,Primary_points",		
-		"opacity": "1",
+		"opacity": 1,
 		"layerTimeout": 5000,
 		"metadataText": "The Australian Coastal Sediment Compartments Web Service provide a hierarchical spatial classification relevant to the assessment of sediment movement in the Australian coastal zone, and represent a tool to assist coastal planning and management. Additional spatial data layers produced during the development of the compartments are provided for reference.",
             "ogcLinks": [
@@ -557,7 +557,7 @@
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Commonwealth_Heritage_List/MapServer/WMSServer",
 			"layers": "0",		
-			"opacity": "0.5",
+			"opacity": 0.5,
 			"layerTimeout": 5000,
 			"metadataText": "These data provide locational and attribute information for places on the Commonwealth Heritage List as determined by the Australian Government Department of Sustainability, Environment, Water, Population and Communities, Heritage and Wildlife Division. Data consist of Commonwealth Heritage List polygons with attribute information describing the place name, class (indigenous, natural, historic), and status. Places subject to confidentiality agreements are not included in these data. Spatial data for places (mostly historic) in cities, is currently being derived using urban cadastral data. These sites are being incorporated into each new release, as they become available.",
 				"ogcLinks": [
@@ -673,7 +673,7 @@
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/capad/MapServer/WMSServer",
 			"layers": "Protected_Areas_2014",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "The Collaborative Australian Protected Areas Database (CAPAD) 2014 web service provides both spatial and text information about government, indigenous and privately protected areas for continental Australia. State and Territory conservation agencies supplied data current to 30 June 2014. This is the ninth version of the database, with previous versions released in 1997, 2000, 2002, 2004, 2006, 2008, 2010 and 2012. The Department also publishes protected areas data for the marine environment. 'CAPAD 2014-marine' contains spatial and text information about offshore protected areas, for both State and Commonwealth waters. Previous versions of CAPAD marine information have been published in 1997, 2002, 2004, 2008, 2010 and 2012. The department publishes a summary of the CAPAD data biennially on its website at http://www.environment.gov.au/capad",
 				"ogcLinks": [
@@ -696,7 +696,7 @@
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Important_Wetlands/MapServer/WMSServer",
 			"layers": "Directory of Important Wetlands in Australia",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "This is a web service for the polygon coverage representing the wetlands cited in the 'A Directory of Important Wetlands in Australia' Third Edition (EA, 2001), plus various additions for wetlands listed after 2001. This coverage is a compilation of various data sources and has been collected using a variety of methods. This dataset should therefore be used as an indicative guide only to wetland boundaries and locations. The data has been collated by the Australian Government Department of the Environment from various datasets including those supplied by the relevant State agencies. State agency contributors include the Queensland Environmental Protection Authority, NSW Department of Environment and Conservation and the Victorian Department of Sustainability and Environment. For the identification of wetland boundaries or locations in regard to the compliance of activities with relevant State legislation, the relevant State authority should be contacted to obtain the most recent and accurate wetland boundary information available. The criteria for the definition of a wetland used in this dataset is that adopted by the Ramsar Convention, namely: areas of marsh, fen, peatland or water, whether natural or artificial, permanent or temporary, with water that is static or flowing, fresh, brackish or salt, including areas of marine water the depth of which at low tide does not exceed six meters.",
 				"ogcLinks": [
@@ -718,7 +718,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Dugong dugon",
 			"layers": "species:Dugong_dugon",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Dugong (Dugong dugon).",
 				"ogcLinks": [
@@ -1147,7 +1147,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Natator depressus",
 			"layers": "species:Natator_depressus",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Flatback Turtle (Natator depressus).",
 				"ogcLinks": [
@@ -1235,7 +1235,7 @@
 				"mapType": "WMS",
 				"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 				"layers": "NNW_shelf_modelled_gravel_content",
-				"opacity": "0.75",
+				"opacity": 0.75,
 				"layerTimeout": 5000,
 				"metadataText": "This dataset provides the spatially continuous data of predicted seabed gravel content (sediment fraction greater than 2000 um) expressed as a weight percentage ranging from 0 to 100%, presented in 0.0025 decimal degree (dd) resolution raster grids format and ascii text file. The dataset covers the north-northwest region of the Australian continental EEZ. This dataset supersedes previous predictions of seabed gravel content for the region with demonstrated improvements in accuracy. Accuracy of predictions varies based on density of underlying data and level of seabed complexity. Artefacts occur in this dataset as a result of insufficient samples in relevant areas. This dataset is intended for use at regional scale. The dataset may not be appropriate for use at local scales in areas where sample density is insufficient to detect local variation in sediment properties. To obtain the most accurate interpretation of sediment distribution in these areas, it is recommended that additional samples be collected and interpolations updated. The dataset can be downloaded at the following URL http://www.ga.gov.au/metadata-gateway/metadata/record/76997.",
 					"ogcLinks": [
@@ -1362,7 +1362,7 @@
 			"visibility": true,
 			"url": "http://services.ga.gov.au/gis/services/Geological_Provinces_2013/MapServer/WMSServer",
 			"name": "Geological Provinces 2013",
-			"opacity": "1",
+			"opacity": 1,
 			"layers": "SedimentaryBasins-Cenozoic,SedimentaryBasins-MesozoicCenozoic,SedimentaryBasins-Mesozoic,SedimentaryBasins-PaleozoicCenozoic,SedimentaryBasins-PaleozoicMesozoic,SedimentaryBasins-LatePaleozoic,SedimentaryBasins-EarlyToLatePaleozoic,SedimentaryBasins-EarlyPaleozoic,SedimentaryBasins-Mesoproterozoic,SedimentaryBasins-Paleoproterozoic,SedimentaryBasins-ArcheanPaleoproterozoic",
 			"metadataText": "The Australian Geological Provinces web map service contains descriptions of the fundamental geological elements of the Australian continent and offshore surrounds. Province types include sedimentary basins, tectonic provinces such as cratons and orogens, igneous provinces, and metallogenic provinces. Spatial data has been captured largely at approximately 1:1M scale for intended use between 1:2M and 1:5M scale. The full 2D spatial extent (i.e. including the extent of a province under any overlying cover material) of each province has been captured.",
             "ogcLinks": [
@@ -1610,7 +1610,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Chelonia mydas",
 			"layers": "species:Chelonia_mydas",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Flatback Turtle (Chelonia mydas).",
 				"ogcLinks": [
@@ -1632,7 +1632,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Eretmochelys imbricata",
 			"layers": "species:Eretmochelys_imbricata",		
-			"opacity": "0.5",
+			"opacity": 0.5,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Flatback Turtle (Eretmochelys imbricata).",
 				"ogcLinks": [
@@ -1714,7 +1714,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Megaptera novaeangliae",
 			"layers": "species:Megaptera_novaeangliae",		
-			"opacity": "0.5",
+			"opacity": 0.5,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Humpback Whale (Megaptera novaeangliae).",
 				"ogcLinks": [
@@ -1767,7 +1767,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Tursiops aduncus",
 			"layers": "species:Tursiops_aduncus",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Indian Bottlenose Dolphin (Tursiops aduncus).",
 				"ogcLinks": [
@@ -1789,7 +1789,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Sousa chinensis",
 			"layers": "species:Sousa_chinensis",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Indopacific Humpback Dolphin (Sousa chinensis).",
 				"ogcLinks": [
@@ -1981,7 +1981,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Caretta caretta",
 			"layers": "species:Caretta_caretta",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Flatback Turtle (Caretta caretta).",
 				"ogcLinks": [
@@ -2519,7 +2519,7 @@
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 		"layers": "Marine_Sediments_Database_MARS",		
-		"opacity": "1",
+		"opacity": 1,
 		"layerTimeout": 5000,
 		"metadataText": "This layer consists of a subset of data (n = 264479) extracted from the MARine Sediment (MARS) database on 26 November 2015 using the following bounding box - 9.23485 (decimal degrees (dd), north), 131.239013 (dd, east), -23.586110 (dd, south) and 110.681228 (dd, west). Data is displayed according to the sampling method. The geocat for this dataset is 69869. The MARS database contains detailed information on seabed sediment characteristics for samples collected from Australia's marine jurisdiction, including the Australian Antarctic Territory. It is an important scientific resource that includes survey and sample information such as locations, water depths and sample descriptions. Data are also provided from quantitative analyses of the sediments, such as grain size, mud, sand, gravel and carbonate concentrations, mineralogy, age determinations, geochemical properties, and physical attributes for down-core samples including bulk density, p-wave velocity, porosity and magnetic susceptibility. New data are being added as they become available. Please contact us at marine.sediments@ga.gov.au if you wish to contribute marine sediment data to the MARS database or access the database at http://dbforms.ga.gov.au/pls/www/npm.mars.search",
             "ogcLinks": [
@@ -2667,7 +2667,7 @@
 				"mapType": "WMS",
 				"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 				"layers": "NNW_shelf_modelled_mud_content",
-				"opacity": "0.75",
+				"opacity": 0.75,
 				"layerTimeout": 5000,
 				"metadataText": "This dataset provides the spatially continuous data of predicted seabed mud content (sediment fraction finer than 63 um) expressed as a weight percentage ranging from 0 to 100%, presented in 0.0025 decimal degree (dd) resolution raster grids format and an ascii text file. The dataset covers the north-northwest region of the Australian continental EEZ. This dataset supersedes previous predictions of seabed mud content for the region with demonstrated improvements in accuracy. Accuracy of predictions varies based on density of underlying data and level of seabed complexity. Artefacts occur in this dataset as a result of insufficient samples in relevant areas. This dataset is intended for use at regional scale. The dataset may not be appropriate for use at local scales in areas where sample density is insufficient to detect local variation in sediment properties. To obtain the most accurate interpretation of sediment distribution in these areas, it is recommended that additional samples be collected and interpolations updated. The dataset can be downloaded at the following URL http://www.ga.gov.au/metadata-gateway/metadata/record/76998.",
 					"ogcLinks": [
@@ -2817,7 +2817,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=subspecies:Balaenoptera musculus brevicauda",
 			"layers": "species:Balaenoptera_musculus",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Pygmy Blue Whale (Balaenoptera musculus brevicauda).",
 				"ogcLinks": [
@@ -3099,7 +3099,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Lepidochelys olivacea",
 			"layers": "species:Lepidochelys_olivacea",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Flatback Turtle (Lepidochelys olivacea).",
 				"ogcLinks": [
@@ -3201,7 +3201,7 @@
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Ramsar_Wetlands/MapServer/WMSServer",
 			"layers": "Ramsar_Wetlands",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "National dataset of Australia's Ramsar Wetlands. This project was initiated by the Wetlands Section of the Australian Government Department of Sustainability, Environment, Water, Population and Communities. Spatial data was sourced from the relevant State and Territory agencies and compiled into a single national coverage.",
 				"ogcLinks": [
@@ -4267,7 +4267,7 @@
 			"mapType": "WMS",
 			"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 			"layers": "NNW_shelf_modelled_gravel_content",
-			"opacity": "0.75",
+			"opacity": 0.75,
 			"layerTimeout": 5000,
 			"metadataText": "This dataset provides the spatially continuous data of predicted seabed sand content (sediment fraction 63 - 2000 um) expressed as a weight percentage ranging from 0 to 100%, presented in 0.0025 decimal degree (dd) resolution raster grids format and an ascii text file. The dataset covers the north-northwest region of the Australian continental EEZ. This dataset supersedes previous predictions of seabed sand content for the region with demonstrated improvements in accuracy. Accuracy of predictions varies based on density of underlying data and level of seabed complexity. Artefacts occur in this dataset as a result of insufficient samples in relevant areas. This dataset is intended for use at regional scale. The dataset may not be appropriate for use at local scales in areas where sample density is insufficient to detect local variation in sediment properties. To obtain the most accurate interpretation of sediment distribution in these areas, it is recommended that additional samples be collected and interpolations updated. The dataset can be downloaded at the following URL http://www.ga.gov.au/metadata-gateway/metadata/record/76999.",
 			"ogcLinks": [
@@ -4654,7 +4654,7 @@
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 		"layers": "Seascapes_of_Australian_Continental_Shelf",
-		"opacity": "1",
+		"opacity": 1,
 		"layerTimeout": 5000,
 		"metadataText": "This layer consists of a map of 13 derived seascapes across the Australian continental shelf. Seascapes describe a layer of ecologically meaningful biophysical variable that spatially represent potential seabed habitats have been derived for the Australian margin and adjacent seabed in a new analysis of existing biophysical data. They were derived using the unsupervised ISOCLASS classification in the software package ERMapper. The dataset can be downloaded at the following URL http://services.ga.gov.au/metadata-gateway/metadata/record/69242.",
 		"ogcLinks": [
@@ -5819,7 +5819,7 @@
 		"mapType": "WMS",
 		"url": "http://services.ga.gov.au/gis/services/Acreage_Release_Environmental_Data/MapServer/WMSServer",
 		"layers": "Carnarvon_Shelf_Survey_GA0308_Towed-video_transects,Bonaparte_Gulf_Survey_GA0322_Towed-video_transects,Bonaparte_Gulf_Survey_GA0325_Towed-video_transects,Petrel_Sub-basin_Survey_GA0335_Towed-video_transects,Oceanic_Shoals_CMR_Survey_GA0339_Towed-video_transects,Leveque_Shelf_Survey_GA0340_Towed-video_transects,Caswell_Sub-basin_Survey_GA0345_ROV_video_transects",		
-		"opacity": "1",
+		"opacity": 1,
 		"layerTimeout": 5000,
 		"metadataText": "This is the Acreage Release Marine Environmental Data compiled web service to be updated each year with acreage release. It contains the following publicly available datasets, for the 2016 Acreage Release - Marine Survey Towed-video Transects, Marine Sediments Database Samples, Australian Seascapes, Seabed Mud Content on the Northwest Shelf, Seabed Sand Content of the Northwest Shelf and Seabed Gravel Content of the Northwest Shelf.",
             "ogcLinks": [
@@ -5876,7 +5876,7 @@
 			"mapType": "WMS",
 			"url": "http://biocache.ala.org.au/ws/ogc/ows?q=species:Rhincodon typus",
 			"layers": "species:Rhincodon_typus",		
-			"opacity": "1",
+			"opacity": 1,
 			"layerTimeout": 5000,
 			"metadataText": "Atlas of Living Australia Web Map Services - Species occurrences. Whale Shark (Rhincodon typus).",
 				"ogcLinks": [
@@ -5899,7 +5899,7 @@
 			"mapType": "WMS",
 			"url": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas_label/MapServer/WMSServer",
 			"layers": "World_Heritage_Areas_Australia_label",		
-			"opacity": "0.5",
+			"opacity": 0.5,
 			"layerTimeout": 5000,
 			"metadataText": "Australian heritage places that are of outstanding universal value and have been included on this United Nations Educational, Scientific and Cultural Organisation (UNESCO) - managed World Heritage list.",
 				"ogcLinks": [

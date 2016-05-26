@@ -1,0 +1,66 @@
+{
+	"id": "template",
+	"datumProjection": "EPSG:3857",
+	"displayProjection": "EPSG:4326",
+	"title": "Template title",
+	"headerConfig": {
+		"title": "Template header title"
+	},
+	"toolsConfig": {
+		"tools": []
+	},
+	"initialExtent": [
+		[
+			30,
+			10
+		],
+		[
+			180,
+			-70
+		]
+	],
+	"centerPosition": {},
+	"baseMaps": [
+		{
+			"mapType": "XYZTileCache",
+			"visibility": true,
+			"name": "World Image",
+			"url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+			"mapBGColor": "194584",
+			"opacity": 1,
+			"wrapDateLine": true,
+			"maxZoomLevel": 12,
+			"attribution": "World <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+		},
+		{
+			"mapType": "XYZTileCache",
+			"visibility": false,
+			"name": "World Political Boundaries",
+			"url": "http://www.ga.gov.au/gis/rest/services/topography/World_Political_Boundaries_WM/MapServer",
+			"mapBGColor": "2356b9",
+			"opacity": 1,
+			"wrapDateLine": true,
+			"maxZoomLevel": 12,
+			"attribution": "Political <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a> and <a target='_blank' href='http://www.naturalearthdata.com/'>Natural Earth</a>"
+		}
+	],
+	"layerMaps": [
+		{
+			"mapType": "ArcGISCache",
+			"url": "http://intranet-test.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Bathymetry_WM/MapServer",
+			"name": "Multibeam Bathymetry",
+			"opacity": "1",
+			"visibility": true
+		},
+		{
+			"mapType": "ArcGISCache",
+			"url": "http://intranet-test.ga.gov.au/gis/rest/services/Marine_Survey_Multibeam_Backscatter_WM/MapServer",
+			"name": "Multibeam Backscatter",
+			"opacity": "1",
+			"visibility": true
+		}
+	],
+	"layersConfig": {
+		"enabled": true
+	}
+}

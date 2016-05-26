@@ -1,0 +1,157 @@
+{
+    "id": "intertidal",
+    "title": "Intertidal Extent",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv2",	
+    "initialExtent": [
+        [
+            50,
+            8
+        ],
+        [
+            180,
+            -66
+        ]
+    ],
+    "zoomLevel": 0,
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Australian Geoscience Data Cube Intertidal Extent"
+    },
+    "aboutConfig": {
+        "enabled": true,
+		"bodyUrl": "content/earthobservation/intertidal/about.html",
+		"open": true
+    },
+    "layersConfig": {
+        "enabled": true		
+    },
+    "baseLayersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/earthobservation/intertidal/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+			{
+                "id": "addLayer"
+            },
+			{
+                "id": "clientMeasure"
+            },
+			{
+                "id": "distanceBoundary"
+            }			
+        ]
+    },
+    "baseMaps": [
+		{
+		"slug": "National_Color_Base_Map"
+		},
+		{
+		"slug": "ESRI_Imagery"
+        }
+    ],
+    "layerMaps": [		
+		{
+            "isGroupedLayers": true,
+            "groupTitle": "Intertidal Extent",
+            "groupId": "intertidal",
+            "visibility": true,
+            "defaultLayerId": "intertidal_relative"
+        },
+		{
+            "slug": "ESRI_World_Boundaries_and_Places",
+            "opacity": 	1,
+			"visibility": false
+        }
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    },
+	"groupedLayers": [
+        {
+		"groupId": "intertidal",
+		"layerMaps": [
+			{
+			"id": "intertidal_relative",
+            "slug": "intertidal_relative",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Intertidal Relative Model",
+			"layers": "intertidal:intertidal_relative_model",
+            "url": "http://eos-test.ga.gov.au/geoserver/intertidal/wms",
+            "metadataText": "Reflects the spatial extent of intertidal substratum exposed at each 10% percentile of the observed tidal range for the one degree Australian Geoscience Data Cube tile.",
+            "opacity": 0.75,
+            "layerTimeout": 5000
+			},
+			{
+			"id": "intertidal_low",
+            "slug": "intertidal_low",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "Low Tide Composite",
+			"layers": "intertidal:low_tide_composite",
+            "url": "http://eos-test.ga.gov.au/geoserver/intertidal/wms",
+            "metadataText": "Due the sun-synchronise nature of the various Landsat sensor observations; it is unlikely that the full physical extents of the tidal range in any tile will be observed. Hence, terminology has been adopted for the product to reflect the lowest modelled offset observed (LOT). These offsets are relative to Mean Sea Level, and have no consistent relationship to Lowest (LAT) and Highest Astronomical Tide (HAT).",
+            "opacity": 0.75,
+            "layerTimeout": 5000
+			},
+			{
+			"id": "intertidal_high",
+            "slug": "intertidal_high",
+			"extent": [[99,10],[169,-55]],
+            "mapType": "WMS",
+            "visibility": true,
+            "name": "High Tide Composite",
+			"layers": "intertidal:high_tide_composite",
+            "url": "http://eos-test.ga.gov.au/geoserver/intertidal/wms",
+            "metadataText": "Due the sun-synchronise nature of the various Landsat sensor observations; it is unlikely that the full physical extents of the tidal range in any tile will be observed. Hence, terminology has been adopted for the product to reflect the highest modelled tidal offset observed in a given tile (HOT). These offsets are relative to Mean Sea Level, and have no consistent relationship to Lowest (LAT) and Highest Astronomical Tide (HAT).",
+            "opacity": 0.75,
+            "layerTimeout": 5000
+			}
+		]
+	}
+],
+    "addLayerMaps": [
+		{
+            "slug": "Seas_and_Submerged_Lands_Act_Combined",
+            "visibility": true,
+			"opacity": 0.5
+        },
+        {
+            "slug": "Offshore_Areas_Of_The_States_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Scheduled_Areas_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Australian_Petroleum_Blocks_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Treaties_Of_Australia_AMB_2014",
+            "opacity": 0.75,
+            "queryFeatures": true
+        }
+    ]
+}

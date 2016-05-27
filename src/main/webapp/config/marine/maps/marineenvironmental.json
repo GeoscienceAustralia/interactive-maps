@@ -117,30 +117,7 @@
             "groupId": "Department_of_Environment",
             "visibility": true,
             "defaultLayerId": "Australias_Commonwealth_Marine_Reserves"
-        },
-		{
-			"slug": "Australias_Key_Ecological_Features",
-			"name": "Australias Key Ecological Features",
-			"extent": [[109,-8],[171,-46]],
-			"visibility":true,
-			"mapType": "WMS",
-			"url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features_named/MapServer/WMSServer",
-			"layers": "0",		
-			"opacity": "0.5",
-			"layerTimeout": 5000,
-			"metadataText": "Key ecological features are the parts of the marine ecosystem that are considered to be of importance for a marine region's biodiversity or ecosystem function and integrity. Key ecological features (KEFs) meet one or more of the following criteria: 1. a species, group of species, or a community with a regionally important ecological role (e.g. a predator, prey that affects a large biomass or number of other marine species); 2. a species, group of species, or a community that is nationally or regionally important for biodiversity; 3. an area or habitat that is nationally or regionally important for: a) enhanced or high productivity (such as predictable upwellings - an upwelling occurs when cold nutrient-rich waters from the bottom of the ocean rise to the surface); b) aggregations of marine life (such as feeding, resting, breeding or nursery areas); c) biodiversity and endemism (species which only occur in a specific area); or 4. a unique seafloor feature, with known or presumed ecological properties of regional significance. KEFs have been identified by the Australian Government on the basis of advice from scientists about the ecological processes and characteristics of the area. A workshop held in Darwin in 2007 also contributed to this scientific advice and helped to underpin the identification of key ecological features. As new information becomes available, the spatial representations of identified key ecological features will continue to be refined and updated. Sixteen KEFs have been identified in the South-west Marine Region: 1. Commonwealth marine environment surrounding the Houtman Abrolhos Islands 2. Perth Canyon and adjacent shelf break, and other west coast canyons 3. Commonwealth marine environment within and adjacent to the west coast inshore lagoons 4. Commonwealth marine environment within and adjacent to Geographe Bay 5. Cape Mentelle upwelling 6. Naturaliste Plateau 7. Diamantina Fracture Zone 8. Albany Canyons group and adjacent shelf break 9. Commonwealth marine environment surrounding the Recherche Archipelago 10. Ancient coastline at 90-120 m depth 11. Kangaroo Island Pool, canyons and adjacent shelf break, and Eyre Peninsula upwellings. 12. Meso-scale eddies (points). 13. Western demersal slope and associated fish communities. 14. Western rock lobster. 15. Benthic invertebrate communities of the eastern Great Australian Bight. No spatial representation available. 16. Small pelagic fish of the South-west Marine Region. No spatial representation available. Thirteen KEFs have been identified in the North-west Marine Region: 1. Ancient coastline at 125 m depth contour 2. Ashmore Reef and Cartier Island and surrounding Commonwealth waters 3. Canyons linking the Argo Abyssal Plain and Scott Plateau 4. Canyons linking the Cuvier Abyssal Plain and the Cape Range Peninsula 5. Carbonate bank and terrace system of the Sahul Shelf 6. Commonwealth waters adjacent to Ningaloo Reef 7. Continental Slope Demersal Fish Communities 8. Exmouth Plateau 9. Glomar Shoals 10. Mermaid Reed and Commonwealth waters surrounding the Rowley Shoals 11. Pinnacles of the Bonaparte Basin 12. Seringapatam Reef and Commonwealth waters in the Scott Reef Complex 13. Wallaby Saddle Eight KEFs have been identified in the North Marine Region: 1. Carbonate bank and terrace system of the Van Diemen Rise 2. Shelf break and slope of the Arafura Shelf 3. Tributary canyons of the Arafura Depression 4. Gulf of Carpentaria basin 5. Gulf of Carpentaria coastal zone 6. Plateaux and saddle north-west of the Wellesley Islands 7. Pinnacles of the Bonaparte Basin 8. Submerged coral reefs of the Gulf of Carpentaria Three KEFs have been identified in the Coral Sea: 1. Tasmantid seamount chain 2. Reefs, cays and hebivorous fish of the Queensland Plateau 3. Reefs, cays and hebivorous fish of the Marion Plateau Eight KEFs were identified in the Temperate East marine Region: 1. Tasmantid seamount chain 2. Lord Howe seamount chain 3. Norfolk Ridge 4. Canyons on the eastern continental slope 5. Shelf rocky reefs 6. Elizabeth and Middleton reefs 7. Upwelling off Fraser Island 8. Tasman Front and eddy field Eight KEFs were identified in the South-east Marine Region. 1. Seamounts, east and south of Tasmania 2. West Tasmanian canyons 3. Bonney coast upwelling 4. Upwelling east of Eden 5. Big Horseshoe canyon 6. East Tasmania tropical convergence zone. No spatial representation available 7. Bass cascade. No spatial representation available 8. Shelf rocky reefs and hard substrate. No spatial representation available In order to create a spatial representation of KEFs for each Marine Region, some interpretation of the information was required. The Department has made every effort to use the best available spatial information and best judgement on how to spatially represent the features based on the scientific advice provided. This does not preclude others from making their own interpretation of available information.",
-				"ogcLinks": [
-					{
-						"description": "WMS Capabilities",
-						"url": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features_named/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-					}
-				],			
-			"queryFeatures": true,
-			"queryUrl": "http://www.environment.gov.au/mapping/services/ogc_services/Key_Ecological_Features_named/MapServer/WMSServer",
-			"queryUrlType": "WMS",
-			"queryVersion": "1.1.1",
-			"queryLayers": "0"
-		},
+        },		
 		{
             "slug": "ESRI_World_Boundaries_and_Places",
             "opacity": 	1

@@ -106,7 +106,7 @@
     "layerMaps": [		
 		{
             "isGroupedLayers": true,
-            "groupTitle": "Living Atlas Species occurrences",
+            "groupTitle": "Atlas of Living Australia species occurrences",
             "groupId": "Species_occurrences",
             "visibility": true,
             "defaultLayerId": "Intertidal - Dominate Landform"

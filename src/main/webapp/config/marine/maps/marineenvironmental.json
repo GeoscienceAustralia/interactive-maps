@@ -106,14 +106,14 @@
     "layerMaps": [		
 		{
             "isGroupedLayers": true,
-            "groupTitle": "Living Atlas Species occurrences",
+            "groupTitle": "Atlas of Living Australia species occurrences",
             "groupId": "Species_occurrences",
             "visibility": true,
             "defaultLayerId": "Intertidal - Dominate Landform"
         },
 		{
             "isGroupedLayers": true,
-            "groupTitle": "Department of Environment",
+            "groupTitle": "Department of the Environment",
             "groupId": "Department_of_Environment",
             "visibility": true,
             "defaultLayerId": "Australias_Commonwealth_Marine_Reserves"

@@ -463,5 +463,36 @@
         "type": "geonames",
         "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
         "primaryWfsProperty": "name"
-    }
+    },
+    "addLayerMaps": [
+		{
+            "slug": "Seas_and_Submerged_Lands_Act_Combined",
+            "visibility": true,
+			"opacity": 0.5
+        },
+        {
+            "slug": "Offshore_Areas_Of_The_States_AMB_2014",
+            "opacity": 0.5,
+            "queryFeatures": true
+        },
+        {
+            "slug": "Scheduled_Areas_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Australian_Petroleum_Blocks_AMB_2014",
+            "queryFeatures": true
+        },
+        {
+            "slug": "Treaties_Of_Australia_AMB_2014",
+            "opacity": 0.75,
+            "queryFeatures": true
+        },
+		{
+			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006"
+		},
+		{
+			"slug": "Commonwealth_Coral_Sea_Fishery_2006"
+		}
+    ]
 }

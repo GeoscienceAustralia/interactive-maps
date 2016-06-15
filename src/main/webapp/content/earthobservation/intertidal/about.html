@@ -1,19 +1,23 @@
 <div>
 
 <p>
-<img alt="Intertidal Extent Image" style="float:right;border:1px solid #006983;margin:2px;" src="content/marine/marinebathymetry/about1.png"/>
-The Intertidal Extent product consists of a subset of the forthcoming national scale product generated from the 28 year Landsat archive managed in the Australian Geoscience Data Cube (AGDC). The AGDC is a collaborative project between GA, CSIRO and the NCI.
+<img alt="Intertidal Extent Image" style="float:right;border:1px solid #006983;margin:2px;" src="content/earthobservation/intertidal/about1.png"/>
+The Intertidal Extents Model (ITEM v1.0) product is a national scale gridded dataset characterising the spatial extents of the exposed intertidal zone, at intervals of the observed tidal range. The current version utilises all Landsat observations (5, 7, and 8) for Australian coastal regions (excluding off-shore Territories) between 1987 and 2015 (inclusive).
 </p>
 
 <p>
-The archive in the AGDC is managed in a consistent grid format, creating 1 degree x 1 degree tiles to store and analyse surface reflectance Landsat scenes (http://www.datacube.org.au/). The product in this beta release consists of a mosaic of four tiles covering the region from Latitude -24 to -26, and Longitude 152 to 154.
+The purpose of the ITEM v1.0 product is to assist in understanding the extent and elevation profile of the Australian intertidal zone. Examples of where this knowledge can contribute include environmental monitoring applications for migratory bird species, habitat mapping in coastal regions, hydrodynamic modelling, and geomorphology studies of features in the intertidal zone. Through attribution of the LOT and HOT values modelled for each cell, the extents model can be used to derive an elevation profile of the observed intertidal zone extent on a cell by cell basis. The method employed can be tailored based on user requirements. For example, by dividing the observed tidal range for a cell (HOT-LOT) into 10% interval values, contours can be assigned to the section of the Intertidal Extents Model contained in that cell. These can then be used as a standalone elevation data source, or interpolated to create a continuous intertidal digital elevation model for the cell. The ability to create an elevation model relative to MSL enables the data to be integrated as a complimentary data source, linking shallow water bathymetry and terrestrial elevation models.
+</p>
+<p>
+Australian Data Cube ARG25 Surface Reflactance and Pixel Quality Assessment, in conjunction with the OTPS TPX08 Atlas Tidal Model and Normalised Difference Water index (NDWI).
 </p>
 
 <p>
-The product utilises a continental scale tidal model developed by Oregon State University (http://volkov.oce.orst.edu/tides/tpxo8_atlas.html) to characterise the tidal offset level for each Landsat tile in the AGDC across 28 years of the archive (1987 – 2015).
-</p>
-<p>
-Tidal tagging of each tile allows the archive to be sorted and queried based on the modelled tidal stage. Combined with a water/ non-water classification based on the Normalised Difference Water Index (NDWI) (McFeeters, 1996), the extent of exposed intertidal area is derived for percentile intervals of the full observed tidal range.
+	<img alt="Australian Geoscience Data Cube Image" style="float:left;border:1px solid #006983;margin:2px;" src="content/earthobservation/intertidal/agdc-identity2-xsmall-rounded.png"/>
 </p>
 
+
+<p>
+	<a href="http://www.datacube.org.au/" target="amsisLink" title="Australian Geoscience Data Cube">Australian Geoscience Data Cube</a>
+</p>
 </div>

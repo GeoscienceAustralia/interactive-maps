@@ -46,6 +46,17 @@
         "timeout": 5000,
         "tools": [
 			{
+                "id": "info",
+                "config": {
+                    "infoList": [
+						{
+                            "id": "ITEM (v1.0) Web Coverage Service GetCapabilites",
+                            "url": "http://10.7.119.133:8080/geoserver/nemo/WCS?request=GetCapabilities&service=WCS"
+                        }
+                    ]
+                }
+            },
+			{
                 "id": "addLayer"
             },
 			{
@@ -60,8 +71,8 @@
                     "propertiesAlias": [
                         "Pixel Value",
 						"Name",
-						"Low Observed Tide (m)",
-						"High Oserved Tide (m)"						
+						"Lowest Observed Tide (m x 1000)",
+						"Highest Observed Tide (m x 1000)"						
                     ],
                     "endpoints": [
                         {
@@ -109,24 +120,6 @@
     ],
     "layerMaps": [		
 		{
-		"slug": "intertidal_confidence",
-		"extent": [[99,10],[169,-55]],
-		"mapType": "WMS",
-		"visibility": false,
-		"name": "Intertidal Confidence Model",
-		"layers": "IntertidalConfidence_1987_2015",
-		"url": "http://10.7.119.133:8080/geoserver/nemo/wms",
-		"metadataText": "The Intertidal Extents Model (ITEM v1.0) product is a national scale gridded dataset characterising the spatial extents of the exposed intertidal zone, at intervals of the observed tidal range. The current version utilises all Landsat observations (5, 7, and 8) for Australian coastal regions (excluding off-shore Territories) between 1987 and 2015 (inclusive). The Intertidal Extents Model (ITEM v1.0) consists of three datasets derived from the Landsat NBAR data managed in the Australian Geoscience Data Cube (AGDC) for the period 1987 to 2015. The Confidence Layer (ITEM_CL_mosaic_1987_2015.tif) reflects the confidence level of the Relative Extents Model, based on the distribution of classification metrics within each of the 10% intervals of the tidal range. The layer should be used to filter region/pixels in the model where the derived spatial extents may be adversely affected by data and modelling errors. Note: The confidence layer should be utilised on a cell-by-cell basis. Standard deviation values within the confidence layer for a particular cell are not comparable to other cells within the model. Attributes: Single Band Integer Raster: 0 - Model is invalid. Indicates pixels where data quality and/or number of observations have resulted in no available observations in one or more of the percentile interval subsets. -32767 - No Data All other values - The pixel-based average of the NDWI standard deviations calculated independently for each 10% percentile interval of the observed tidal range (x 1000).",
-		"ogcLinks": [
-			{
-				"description": "WMS Capabilities",
-				"url": "http://10.7.119.133:8080/geoserver/nemo/wms?request=GetCapabilities&service=WMS"
-			}
-		],
-		"opacity": 0.75,
-		"layerTimeout": 5000
-		},
-		{
 		"slug": "intertidal_extents",
 		"extent": [[99,10],[169,-55]],
 		"mapType": "WMS",
@@ -141,7 +134,25 @@
 				"url": "http://10.7.119.133:8080/geoserver/nemo/wms?request=GetCapabilities&service=WMS"
 			}
 		],
-		"opacity": 0.75,
+		"opacity": 1,
+		"layerTimeout": 5000
+		},
+		{
+		"slug": "intertidal_confidence",
+		"extent": [[99,10],[169,-55]],
+		"mapType": "WMS",
+		"visibility": false,
+		"name": "Intertidal Confidence Model",
+		"layers": "IntertidalConfidence_1987_2015",
+		"url": "http://10.7.119.133:8080/geoserver/nemo/wms",
+		"metadataText": "The Intertidal Extents Model (ITEM v1.0) product is a national scale gridded dataset characterising the spatial extents of the exposed intertidal zone, at intervals of the observed tidal range. The current version utilises all Landsat observations (5, 7, and 8) for Australian coastal regions (excluding off-shore Territories) between 1987 and 2015 (inclusive). The Intertidal Extents Model (ITEM v1.0) consists of three datasets derived from the Landsat NBAR data managed in the Australian Geoscience Data Cube (AGDC) for the period 1987 to 2015. The Confidence Layer (ITEM_CL_mosaic_1987_2015.tif) reflects the confidence level of the Relative Extents Model, based on the distribution of classification metrics within each of the 10% intervals of the tidal range. The layer should be used to filter region/pixels in the model where the derived spatial extents may be adversely affected by data and modelling errors. Note: The confidence layer should be utilised on a cell-by-cell basis. Standard deviation values within the confidence layer for a particular cell are not comparable to other cells within the model. Attributes: Single Band Integer Raster: 0 - Model is invalid. Indicates pixels where data quality and/or number of observations have resulted in no available observations in one or more of the percentile interval subsets. -32767 - No Data All other values - The pixel-based average of the NDWI standard deviations calculated independently for each 10% percentile interval of the observed tidal range (x 1000).",
+		"ogcLinks": [
+			{
+				"description": "WMS Capabilities",
+				"url": "http://10.7.119.133:8080/geoserver/nemo/wms?request=GetCapabilities&service=WMS"
+			}
+		],
+		"opacity": 1,
 		"layerTimeout": 5000
 		},
 		{

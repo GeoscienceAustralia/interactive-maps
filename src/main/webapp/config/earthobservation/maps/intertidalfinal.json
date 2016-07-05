@@ -81,7 +81,7 @@
                     "endpoints": [
                         {
                             "featureTitle": "Intertidal Coastal Cells",
-                            "queryUrl": "http://130.56.244.241/geoserver/ITEM/wms",
+                            "queryUrl": "http://geoserver.nci.org.au/geoserver/ITEM/wms",
                             "queryLayers": "IntertidalCoastalCells",
                             "queryVersion": "1.1.0",
                             "queryType": "WMS",
@@ -89,7 +89,7 @@
                         },
 						{
                             "featureTitle": "Intertidal Relative Model",
-                            "queryUrl": "http://130.56.244.241/geoserver/ITEM/wms",
+                            "queryUrl": "http://geoserver.nci.org.au/geoserver/ITEM/wms",
                             "queryLayers": "IntertidalRelative_1987_2015",
                             "queryVersion": "1.1.0",
                             "queryType": "WMS",
@@ -97,7 +97,7 @@
                         },
 						{
                             "featureTitle": "Intertidal Confidence Model",
-                            "queryUrl": "http://130.56.244.241/geoserver/ITEM/wms",
+                            "queryUrl": "http://geoserver.nci.org.au/geoserver/ITEM/wms",
                             "queryLayers": "IntertidalConfidence_1987_2015",
                             "queryVersion": "1.1.0",
                             "queryType": "WMS",
@@ -134,16 +134,8 @@
 		"metadataText": "The Relative Extents Model is derived by utilising modeled tidal information attributed to each observation, based on the time of acquisition. Tidal stage offsets are relative to Mean Sea Level, and modelled using the Oregon State University Tidal Prediction Software (OTPS) TPXO8 Atlas model <a href='http://volkov.oce.orst.edu/tides/otps.html' target='_blank'>http://volkov.oce.orst.edu/tides/otps.html</a>.<br>These observations are sorted and assigned to intervals of the observed tidal range. Median composite NDWI images for each tidal interval observation subset are then created and analysed, to derive the spatial extent of intertidal substratum exposed at each interval for the observed tidal range of a given cell. For further details see the ITEM v1.0 product description.<br><br>Attributes: 0 - Always water 1 - Exposed at lowest 0-10% of the observed tidal range 2 - Exposed at 10-20% of the observed tidal range 3 - Exposed at 20-30% of the observed tidal range 4 - Exposed at 30-40% of the observed tidal range 5 - Exposed at 40-50% of the observed tidal range 6 - Exposed at 50-60% of the observed tidal range 7 - Exposed at 60-70% of the observed tidal range 8 - Exposed at 70-80% of the observed tidal range 9 - Exposed at highest 80-100% of the observed tidal range (land)",
 		"ogcLinks": [
 			{
-				"description": "Dataset Metadata",
-				"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/100482"
-			},
-			{			
 				"description": "WMS Capabilities",
-				"url": "http://130.56.244.241/geoserver/ITEM/wms?request=GetCapabilities&service=WMS"
-			},
-			{
-				"description": "WCS Capabilities",
-				"url": "http://130.56.244.241/geoserver/ITEM/wcs?request=GetCapabilities&service=WCS"
+				"url": "http://geoserver.nci.org.au/geoserver/ITEM/wms?request=GetCapabilities&service=WMS"
 			}
 		],
 		"opacity": 1,
@@ -156,20 +148,12 @@
 		"visibility": false,
 		"name": "Intertidal Confidence Model",
 		"layers": "IntertidalConfidence_1987_2015",
-		"url": "http://130.56.244.241/geoserver/ITEM/wms",
+		"url": "http://geoserver.nci.org.au/geoserver/ITEM/wms",
 		"metadataText": "The Confidence Model Layer reflects the confidence level of the Relative Extents Model, based on the distribution of Normalized  Difference Water Index (NDWI) values within each of the intervals of the tidal range.<br>The Confidence Layer indicates the pixel based consistency of the NDWI values within each subset of observations, based on the tidal range. Higher standard deviation values indicate water/non-water changes not based on the tidal cycle, and hence lower confidence in the Relative Extents model.<br><br>Possible drivers of these changes include:<br>1) Inadequacies of the tidal model, due perhaps to complex coastal bathymetry or estuarine structures not captured in the model.<br>2) Change in the structure and exposure of water/non-water features over time, NOT driven by tidal variation. For example, movement of sand banks in estuaries and the construction of man-made features (ports etc.). Hence, this layer can also be used as an indicator of coastal change and/or instability.<br>3) Terrestrial/Inland water features not influenced by the tidal cycle.<br> The layer should always be used to interpret the model, and to filter region/pixels in the model where the derived spatial extents may be adversely affected by data and modelling errors.<br><br>Attributes: 0 - Model is invalid. Indicates pixels where data quality and/or number of observations have resulted in no available observations in one or more of the percentile interval subsets. -32767 - No Data. All other values - The pixel-based average of the NDWI standard deviations calculated independently for each percentile interval of the observed tidal range (x 1000).",
 		"ogcLinks": [
 			{
-				"description": "Dataset Metadata",
-				"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/100600"
-			},
-			{			
 				"description": "WMS Capabilities",
-				"url": "http://130.56.244.241/geoserver/ITEM/wms?request=GetCapabilities&service=WMS"
-			},
-			{
-				"description": "WCS Capabilities",
-				"url": "http://130.56.244.241/geoserver/ITEM/wcs?request=GetCapabilities&service=WCS"
+				"url": "http://geoserver.nci.org.au/geoserver/ITEM/wms?request=GetCapabilities&service=WMS"
 			}
 		],
 		"opacity": 1,
@@ -179,23 +163,15 @@
 		"slug": "intertidal_coastalcells",
 		"extent": [[99,10],[169,-55]],
 		"mapType": "WMS",
-		"visibility": false,
+		"visibility": true,
 		"name": "Intertidal Coastal Cells",
 		"layers": "IntertidalCoastalCells",
-		"url": "http://130.56.244.241/geoserver/ITEM/wms",
+		"url": "http://geoserver.nci.org.au/geoserver/ITEM/wms",
 		"metadataText": "The Coastal Cells layer identifies the location and extents of the 221 one degree by one degree AGDC cells used in the product, covering the mainland and Tasmanian coastline of the continent. Each cell includes information on the lowest (LOT) and highest (HOT) observed tides for the cell, and hence the observed tidal range (HOT-LOT), based on tidal modelling for the time of acquisition of each of the corresponding Landsat tile observations in the cell. Tidal stage offsets are relative to Mean Sea Level, and modelled using the Oregon State University Tidal Prediction Software (OTPS) TPXO8 Atlas model <a href='http://volkov.oce.orst.edu/tides/otps.html' target='_blank'>http://volkov.oce.orst.edu/tides/otps.html</a>.<br><br>Attributes: Lowest Observed Tide (LOT) - The lowest modelled tidal offset based on the acquisition times of all observations in the cell. Relative to Mean Sea Level (MSL) (m) x 1000. Highest Observed Tide (HOT) - The highest modelled tidal offset based on the acquisition times of all observations in the cell. Relative to Mean Sea Level (MSL) (m) x 1000.",
 		"ogcLinks": [
 			{
-				"description": "Dataset Metadata",
-				"url": "http://www.ga.gov.au/metadata-gateway/metadata/record/100482"
-			},
-			{			
 				"description": "WMS Capabilities",
-				"url": "http://130.56.244.241/geoserver/ITEM/wms?request=GetCapabilities&service=WMS"
-			},
-			{
-				"description": "WCS Capabilities",
-				"url": "http://130.56.244.241/geoserver/ITEM/wcs?request=GetCapabilities&service=WCS"
+				"url": "http://geoserver.nci.org.au/geoserver/ITEM/wms?request=GetCapabilities&service=WMS"
 			}
 		],
 		"opacity": 1,

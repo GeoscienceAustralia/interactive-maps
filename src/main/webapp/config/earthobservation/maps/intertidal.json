@@ -51,11 +51,11 @@
                     "infoList": [
 						{
                             "id": "ITEM (v1.0) Web Coverage Service GetCapabilites",
-                            "url": "http://geoserver.nci.org.au/geoserver/ITEM/WCS?request=GetCapabilities&service=WCS"
+                            "url": "http://130.56.244.241/geoserver/ITEM/WCS?request=GetCapabilities&service=WCS"
                         },
 						{
                             "id": "ITEM (v1.0) Web Feature Service GetCapabilites",
-                            "url": "http://geoserver.nci.org.au/geoserver/ITEM/WFS?request=GetCapabilities&service=WFS"
+                            "url": "http://130.56.244.241/geoserver/ITEM/WFS?request=GetCapabilities&service=WFS"
                         }
                     ]
                 }

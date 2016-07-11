@@ -212,7 +212,7 @@
                 }
             ],
 			"queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Populated_Places_8,Locations_7,TOPO250K_Mine_Locations,Caves,Pinnacles,TOPO250K_Lighthouses,TOPO250K_Homesteads,TOPO250K_Building_Points,TOPO250K_Aircraft_Facilities,TOPO250K_Aircraft_Runways,Railway_Stops,Railway_Crossings,Railways_3,TOPO250K_Road_Crossings,TOPO250K_Roads,AusHydro_Flats_3,AusHydro_PondageAreas_2,AusHydro_ForeshoreFlats_2,AusHydro_Rivers_3,AusHydro_WatercourseAreas_2,AusHydro_Lakes_3,TOPO250K_Ferry_Routes,TOPO250K_Built_Up_Areas,TOPO250K_Reserves,TOPO250K_Prohibited_Areas,TOPO250K_Vertical_Obstructions,TOPO250K_Powerlines,TOPO250K_Framework_Boundaries,TOPO250K_Pipelines,TOPO250K_Mine_Areas,TOPO250K_Native_Vegetation,Cultivated_Areas",
@@ -1330,7 +1330,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Geophysics Reference Map",
-            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "layers": "Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8",
             "metadataText": "This is a topographic reference map showing the populated places of Australia.",
             "ogcLinks": [
@@ -1340,15 +1340,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -1653,7 +1653,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Hillshade and Vegetation",
-            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "layers": "TOPO250K_Prohibited_Areas,TOPO250K_Reserves,Reserves_1,TOPO250K_Recreation_Areas,Cultivated_Areas,Native_Vegetation_1,TOPO250K_Native_Vegetation,Hillshade_1_second,Hillshade_3_second",
             "metadataText": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes.",
             "ogcLinks": [
@@ -1663,15 +1663,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -1683,7 +1683,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Hillshade and Vegetation",
-            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "layers": "Hillshade_1_second,Hillshade_3_second",
             "metadataText": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes.",
             "ogcLinks": [
@@ -1693,15 +1693,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -3139,7 +3139,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Population Centres",
-            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "layers": "Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8",
             "metadataText": "This is a topographic reference map showing the populated places of Australia.",
             "ogcLinks": [
@@ -3149,15 +3149,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -3169,7 +3169,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Australian Railways",
-            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "layers": "Railway_Crossing_Lines,Railway_Crossings,Railways_3,Railways_2,Railways_1,Railway_Stops",
             "metadataText": "This is a topographic railways map.",
             "ogcLinks": [
@@ -3179,15 +3179,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -4115,7 +4115,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Australian Roads",
-            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "layers": "Roads_1,Roads_2,Roads_3,Roads_4,TOPO250K_Roads,TOPO250K_Road_Crossings",
             "metadataText": "This is a topographic road map.",
             "ogcLinks": [
@@ -4125,15 +4125,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -5015,7 +5015,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Seas and Submerged Lands Act 1973 Reference Map",
-            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "layers": "Populated_Places_1,Populated_Places_2,Populated_Places_3,Populated_Places_4,Populated_Places_5,Populated_Places_6,Populated_Places_7,Populated_Places_8",
             "metadataText": "The Australian Topographic map service is seamless national dataset coverage for the whole of Australia. The map portrays detailed graphic representation of features that appear on the Earth's surface. These features include cultural, hydrography and relief themes.",
             "ogcLinks": [
@@ -5025,15 +5025,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Topographic_Base_Map_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,

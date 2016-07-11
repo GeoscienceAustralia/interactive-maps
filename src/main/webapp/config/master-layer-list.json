@@ -215,7 +215,7 @@
             "queryUrl": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "Populated_Places_8,Locations_7,TOPO250K_Mine_Locations,Caves,Pinnacles,TOPO250K_Lighthouses,TOPO250K_Homesteads,TOPO250K_Building_Points,TOPO250K_Aircraft_Facilities,TOPO250K_Aircraft_Runways,Railway_Stops,Railway_Crossings,Railways_3,TOPO250K_Road_Crossings,TOPO250K_Roads,AusHydro_Flats_3,AusHydro_PondageAreas_2,AusHydro_ForeshoreFlats_2,AusHydro_Rivers_3,AusHydro_WatercourseAreas_2,AusHydro_Lakes_3,TOPO250K_Ferry_Routes,TOPO250K_Built_Up_Areas,TOPO250K_Reserves,TOPO250K_Prohibited_Areas,TOPO250K_Vertical_Obstructions,TOPO250K_Powerlines,TOPO250K_Framework_Boundaries,TOPO250K_Pipelines,TOPO250K_Mine_Areas,TOPO250K_Native_Vegetation,Cultivated_Areas",
+            "queryLayers": "Populated_Places_8,Locations_7,TOPO250K_Mine_Locations,Caves,Pinnacles,TOPO250K_Lighthouses,TOPO250K_Homesteads,TOPO250K_Building_Points,TOPO250K_Aircraft_Facilities,TOPO250K_Aircraft_Runways,Railway_Stops,Railway_Crossings,Railways_3,TOPO250K_Road_Crossing_Lines,TOPO250K_Roads,AusHydro_Flats_3,AusHydro_PondageAreas_2,AusHydro_ForeshoreFlats_2,AusHydro_Rivers_3,AusHydro_WatercourseAreas_2,AusHydro_Lakes_3,TOPO250K_Ferry_Routes,TOPO250K_Built_Up_Areas,TOPO250K_Reserves,TOPO250K_Prohibited_Areas,TOPO250K_Vertical_Obstructions,TOPO250K_Powerlines,TOPO250K_Framework_Boundaries,TOPO250K_Pipelines,TOPO250K_Mine_Areas,TOPO250K_Native_Vegetation,Cultivated_Areas",
             "opacity": 1,
             "layerTimeout": 5000
         },
@@ -3170,7 +3170,7 @@
             "visibility": true,
             "name": "Australian Railways",
             "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
-            "layers": "Railway_Crossing_Lines,Railway_Crossings,Railways_3,Railways_2,Railways_1,Railway_Stops",
+            "layers": "Railway_Stations,Railway_Crossing_Pts,Railways_3,Railways_2,Railways_1",
             "metadataText": "This is a topographic railways map.",
             "ogcLinks": [
                  {
@@ -4116,7 +4116,7 @@
             "visibility": true,
             "name": "Australian Roads",
             "url": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
-            "layers": "Roads_1,Roads_2,Roads_3,Roads_4,TOPO250K_Roads,TOPO250K_Road_Crossings",
+            "layers": "Roads_1,Roads_2,Roads_3,Roads_4,TOPO250K_Roads,TOPO250K_Road_Crossing_Lines",
             "metadataText": "This is a topographic road map.",
             "ogcLinks": [
                  {

@@ -181,7 +181,7 @@
 		"mapType": "WMS",
 		"visibility": true,
 		"name": "Intertidal Coastal Cells",
-		"layers": "ItertidalCoastalCells",
+		"layers": "IntertidalCoastalCells",
 		"url": "http://gsds01.nci.org.au/geoserver/ITEM/wms",
 		"metadataText": "The Coastal Cells layer identifies the location and extents of the 221 one degree by one degree AGDC cells used in the product, covering the mainland and Tasmanian coastline of the continent. Each cell includes information on the lowest (LOT) and highest (HOT) observed tides for the cell, and hence the observed tidal range (HOT-LOT), based on tidal modelling for the time of acquisition of each of the corresponding Landsat tile observations in the cell. Tidal stage offsets are relative to Mean Sea Level, and modelled using the Oregon State University Tidal Prediction Software (OTPS) TPXO8 Atlas model <a href='http://volkov.oce.orst.edu/tides/otps.html' target='_blank'>http://volkov.oce.orst.edu/tides/otps.html</a>.<br><br>Attributes: Lowest Observed Tide (LOT) - The lowest modelled tidal offset based on the acquisition times of all observations in the cell. Relative to Mean Sea Level (MSL) (m) x 1000. Highest Observed Tide (HOT) - The highest modelled tidal offset based on the acquisition times of all observations in the cell. Relative to Mean Sea Level (MSL) (m) x 1000.",
 		"ogcLinks": [

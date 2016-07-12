@@ -16,9 +16,6 @@ module.exports = function (config) {
             'karma-junit-reporter',
             'karma-ng-html2js-preprocessor'
         ],
-        proxies: {
-            '/base/':'/'
-        },
         junitReporter: {
             outputFile: "target/surefire-reports/js-test-results.xml",
             suite: "jasmine-tests"

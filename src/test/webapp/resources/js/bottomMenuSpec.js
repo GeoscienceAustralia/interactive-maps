@@ -22,7 +22,7 @@ describe('addLayer tests',
                 '<geo-map map-element-id="map" framework="olv2" zoom-level="4" center-position="[130, -25]"' +
                 ' datum-projection="EPSG:102100" display-projection="EPSG:4326"> ' +
                 '<geo-map-layer layer-name="Australian Landsat Mosaic"' +
-                'layer-url="http://www.ga.gov.au/gisimg/services/topography/World_Bathymetry_Image_WM/MapServer/WMSServer"' +
+                'layer-url="http://www.ga.gov.au/gisimg/services/topography/World_Simple/MapServer/WMSServer"' +
                 'wrap-date-line="true"' +
                 'layer-type="WMS"' +
                 'is-base-layer="true"' +

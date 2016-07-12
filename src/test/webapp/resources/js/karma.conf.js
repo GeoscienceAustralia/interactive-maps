@@ -27,7 +27,6 @@ module.exports = function (config) {
             'src/main/webapp/bower_components/angular-ui-utils/ui-utils.js',
             'src/main/webapp/bower_components/geo-web-toolkit/dist/geo-web-toolkit-min.js',
             'node_modules/karma-read-json/karma-read-json.js',
-            'http://maps.google.com/maps/api/js?.js',
             'src/main/webapp/bower_components/ol3-bower/ol.js',
             'src/main/webapp/node_modules/ol3-cesium/dist/ol3cesium.js',
             'src/main/webapp/node_modules/ol3-cesium/dist/Cesium.js',

@@ -53,9 +53,9 @@ describe(
                 });
         }));
 
-        it('Should return the config for the requested theme', function () {
-            var config = service.getThemeConfig("hazards");
-            $httpBackend.expectGET('api/config/hazards/app.json');
-            $httpBackend.flush();
-        });
+        //it('Should return the config for the requested theme', function () {
+        //    var config = service.getThemeConfig("hazards");
+        //    $httpBackend.expectGET('api/config/hazards/app.json');
+        //    $httpBackend.flush();
+        //});
     });

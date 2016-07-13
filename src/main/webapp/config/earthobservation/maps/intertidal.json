@@ -82,7 +82,7 @@
                         {
                             "featureTitle": "Intertidal Coastal Cells",
                             "queryUrl": "http://gsds01.nci.org.au/geoserver/ITEM/wms",
-                            "queryLayers": "ItertidalCoastalCells",
+                            "queryLayers": "IntertidalCoastalCells",
                             "queryVersion": "1.1.0",
                             "queryType": "WMS",
 							"queryInfoFormat": "application/json"

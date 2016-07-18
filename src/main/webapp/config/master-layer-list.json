@@ -215,7 +215,7 @@
             "queryUrl": "http://services.ga.gov.au/gis/services/Topographic_Base_Map_WM/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "Populated_Places_8,Locations_7,TOPO250K_Mine_Locations,Caves,Pinnacles,TOPO250K_Lighthouses,TOPO250K_Homesteads,TOPO250K_Building_Points,TOPO250K_Aircraft_Facilities,TOPO250K_Aircraft_Runways,Railway_Stops,Railway_Crossings,Railways_3,TOPO250K_Road_Crossing_Lines,TOPO250K_Roads,AusHydro_Flats_3,AusHydro_PondageAreas_2,AusHydro_ForeshoreFlats_2,AusHydro_Rivers_3,AusHydro_WatercourseAreas_2,AusHydro_Lakes_3,TOPO250K_Ferry_Routes,TOPO250K_Built_Up_Areas,TOPO250K_Reserves,TOPO250K_Prohibited_Areas,TOPO250K_Vertical_Obstructions,TOPO250K_Powerlines,TOPO250K_Framework_Boundaries,TOPO250K_Pipelines,TOPO250K_Mine_Areas,TOPO250K_Native_Vegetation,Cultivated_Areas",
+            "queryLayers": "Populated_Places_8,Locations_7,TOPO250K_Mine_Pts,TOPO250K_Caves,TOPO250K_Pinnacles,TOPO250K_Lighthouses,TOPO250K_Homesteads,TOPO250K_Aircraft_Facilities,TOPO250K_Aircraft_Runways,Railway_Stations,Railway_Crossing_Pts,Railways_3,TOPO250K_Road_Crossing_Lines,TOPO250K_Roads,ForeshoreFlats_2,PondageAreas_2,Watercourse_Lines_3,Watercourse_Areas_2,Lakes_3,TOPO250K_Ferry_Routes,TOPO250K_Built_Up_Areas,TOPO250K_Reserves,TOPO250K_Prohibited_Areas,TOPO250K_Vertical_Obstructions,TOPO250K_Powerlines,TOPO250K_Framework_Boundaries,TOPO250K_Pipelines,TOPO250K_Mine_Areas,TOPO250K_Native_Vegetation,Cultivated_Areas",
             "opacity": 1,
             "layerTimeout": 5000
         },
@@ -2867,17 +2867,17 @@
             ]
         },
         {
-            "slug": "Multibeam_Survey_Extents_2014",
+            "slug": "Multibeam_Survey_Extents_2016,
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,
-            "name": "Multibeam Survey Extents 2014",
+            "name": "Multibeam Survey Extents 2016",
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Multibeam_Coverage_Extents_2016/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "GA_Multibeam_18_March_2015",
-            "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Multibeam_Coverage_Extents_2016/MapServer/WMSServer",
             "layers": "GA_Multibeam_18_March_2015",
             "opacity": 1,
             "metadataText": "Phase 1 outline November 2014.",
@@ -2888,16 +2888,12 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Multibeam_Coverage_Extents_2016/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-				{
-                    "description": "WFS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents/MapServer/WFSServer?request=GetCapabilities&service=WFS"
-                },
+                    "url": "http://services.ga.gov.au/gis/services/Multibeam_Coverage_Extents_2016/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                },				
                 {
                     "description": "ArcMap Layerfile",
                     "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_Survey_Extents/MapServer?f=lyr&v=9.3"

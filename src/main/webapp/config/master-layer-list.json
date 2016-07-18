@@ -2867,7 +2867,7 @@
             ]
         },
         {
-            "slug": "Multibeam_Survey_Extents_2016,
+            "slug": "Multibeam_Survey_Extents_2016",
 			"extent": [[99,10],[169,-55]],
             "mapType": "WMS",
             "visibility": true,

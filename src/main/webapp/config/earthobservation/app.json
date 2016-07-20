@@ -18,7 +18,7 @@
             "title": "Australian Geoscience Data Cube Intertidal Extent Model",
             "id": "intertidal",
             "previewImageUrl": "content/earthobservation/intertidal/mapPreview.png",
-            "previewDescription": "The Intertidal Extent Model (ITEM v1.0) product uses satellite imagery to measure the continental extent and elevation profile of the intertidal zone. This product demonstrates the progress of Geoscience Australia with the Australian Geoscience Data Cube."
+            "previewDescription": "The Intertidal Extent Model (ITEM v1.0) product uses satellite imagery to model the continental extent and elevation profile of the intertidal zone. This product demonstrates the progress of Geoscience Australia with the Australian Geoscience Data Cube."
         },
 		{
             "title": "Sentinel Hotspots",

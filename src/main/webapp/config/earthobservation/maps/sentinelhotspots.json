@@ -256,7 +256,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Sentinel Current Hotspots 72 hrs (AVHRR, MODIS, VIIRS)",
-            "url": "http://10.7.119.1:8080/geoserver/nemo/wms",
+            "url": "http://10.7.119.133:8080/geoserver/nemo/wms",
             "layers": "nemo:hotspots",
             "metadataText": "Hotspots are point data, derived from (a growing number of) satellite-born instruments that detect light in the thermal wavelengths. Typically, the satellite data are processed with a specific algorithm that highlights areas with an unusually high temperature.",
             "ogcLinks": [
@@ -271,7 +271,7 @@
             ],
             "opacity": 1,
 			"queryFeatures": true,
-            "queryUrl": "http://10.7.119.1:8080/geoserver/nemo/wms",
+            "queryUrl": "http://10.7.119.133:8080/geoserver/nemo/wms",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "nemo:hotspots",

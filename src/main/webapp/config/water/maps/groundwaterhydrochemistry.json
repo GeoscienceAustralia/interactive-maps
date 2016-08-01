@@ -44,8 +44,16 @@
                 "config": {
                     "infoList": [
                         {
-                            "id": "GEODATA TOPO 250K Series 3",
-                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-eab0-7506-e044-00144fdd4fa6/GEODATA+TOPO+250K+Series+3+-+Packaged+%28Personal+Geodatabase+format%29"
+                            "id": "Boreholes Web Feature Service",
+                            "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/boreholes/wfs?request=GetCapabilities&service=WFS"
+                        },
+						                        {
+                            "id": "Borehole Samples Web Feature Service",
+                            "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/borehole_samples/wfs?request=GetCapabilities&service=WFS"
+                        },
+						                        {
+                            "id": "Hydrochemistry Analyses Web Feature Service",
+                            "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/hydrochem_analyses/wfs?request=GetCapabilities&service=WFS"
                         }
                     ]
                 }

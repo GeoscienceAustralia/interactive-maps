@@ -172,10 +172,16 @@
             }
         ]
     },
-    "baseMaps": [        
+    "baseMaps": [
+        {
+			"slug": "National_Color_Base_Map",
+			"visibility": true
+		},
 		{
-		"slug": "ESRI_Imagery"
-        }
+			"slug": "World_Political_Boundaries_XYZ",
+			"visibility": true
+		}
+		
     ],
     "layerMaps": [						
 			{
@@ -238,11 +244,6 @@
             "groupId": "Sentinel_Hotspots",
             "visibility": true,
             "defaultLayerId": "sentinel_hotspot_current_72_all"
-			},
-			{
-            "slug": "ESRI_World_Boundaries_and_Places",
-            "opacity": 	1,
-			"visibility": true
 			}
     ],
     "groupedLayers": [
@@ -256,8 +257,8 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Sentinel Current Hotspots 72 hrs (AVHRR, MODIS, VIIRS)",
-            "url": "http://10.7.119.1:8080/geoserver/nemo/wms",
-            "layers": "nemo:hotspots",
+            "url": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
+            "layers": "hotspot_current",
             "metadataText": "Hotspots are point data, derived from (a growing number of) satellite-born instruments that detect light in the thermal wavelengths. Typically, the satellite data are processed with a specific algorithm that highlights areas with an unusually high temperature.",
             "ogcLinks": [
                 {
@@ -271,10 +272,10 @@
             ],
             "opacity": 1,
 			"queryFeatures": true,
-            "queryUrl": "http://10.7.119.1:8080/geoserver/nemo/wms",
+            "queryUrl": "http://sentinel.ga.gov.au/geoserver/sentinel/wms",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "nemo:hotspots",
+            "queryLayers": "hotspot_current",
 			"queryInfoFormat": "application/json",
             "layerTimeout": 5000
 			},

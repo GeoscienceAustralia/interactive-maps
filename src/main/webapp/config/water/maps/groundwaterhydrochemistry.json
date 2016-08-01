@@ -58,11 +58,41 @@
                 "config": {
                     "propertiesOfInterest": [
                         "NAME",
-						"DESCRIPTION"
+						"PURPOSE",
+						"STATUS",
+						"DRILLINGMETHOD",
+						"OPERATOR",
+						"DRILLER",
+						"DRILLSTARTDATE",
+						"STARTPOINT",
+						"ELEVATION_M",
+						"ELEVATION_SRS",
+						"LABEL",
+						"SPECIMENTYPE",
+						"MATERIALCLASS",
+						"SAMPLINGMETHOD",
+						"OBSERVEDPROPERTY",
+						"OBSERVEDVALUE",
+						"OBSERVEDVALUEUOM"						
                     ],
                     "propertiesAlias": [
-                        "Name",
-						"Description"
+						"Name",
+						"Purpose",
+						"Status",
+						"Drilling Method",
+						"Operator",
+						"Driller",
+						"Drill Start Date",
+						"Start Point",
+						"Elevation m",
+						"Elevation SRS",
+						"Label",
+						"Specimen Type",
+						"Material Class",
+						"Sampling MethodETHOD",
+						"Observed Property",
+						"Observed Value",
+						"Observed Value UOM"
                     ],
 					"primaryPropertyName": "NAME"
                 }
@@ -80,7 +110,7 @@
 			"url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/boreholes/wms",
 			"visibility": true,
 			"name": "Boreholes",
-			"layers": "boreholes:Boreholes",
+			"layers": "Boreholes",
 			"opacity": 1,
 			"metadataText": "Boreholes metadata.",
 			"ogcLinks": [
@@ -88,14 +118,19 @@
                     "description": "WMS Capabilities",
                     "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/boreholes/wms?request=GetCapabilities&service=WMS"
                 }
-			]
+			],
+            "queryFeatures": true,
+			"queryUrl": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/boreholes/wms",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "Boreholes"	
 		},
 		{
 			"mapType": "WMS",
 			"url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/borehole_samples/wms",
 			"visibility": true,
 			"name": "Borehole Samples",
-			"layers": "borehole_samples:BoreholeSamples",
+			"layers": "BoreholeSamples",
 			"opacity": 1,
 			"metadataText": "Borehole samples metadata.",
 			"ogcLinks": [
@@ -103,12 +138,17 @@
                     "description": "WMS Capabilities",
                     "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/borehole_samples/wms?request=GetCapabilities&service=WMS"
                 }
-			]
+			],
+            "queryFeatures": true,
+			"queryUrl": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/borehole_samples/wms",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "BoreholeSamples"	
 		},
 		{
 			"mapType": "WMS",
 			"url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/hydrochem_analyses/wms",
-			"visibility": false,
+			"visibility": true,
 			"name": "Hydrochemistry Analyses",
 			"layers": "HydrochemAnalyses",
 			"opacity": 1,
@@ -118,7 +158,12 @@
                     "description": "WMS Capabilities",
                     "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/hydrochem_analyses/wms?request=GetCapabilities&service=WMS"
                 }
-			]
+			],
+            "queryFeatures": true,
+			"queryUrl": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/hydrochem_analyses/wms",
+            "queryUrlType": "WMS",
+            "queryVersion": "1.1.1",
+            "queryLayers": "HydrochemAnalyses"	
 		}
 	]
 }

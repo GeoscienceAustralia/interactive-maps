@@ -5,16 +5,9 @@
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
     "initialExtent": [
-        [
-			90,
-			-5
-		],
-		[
-			158,
-			-48
-		]
+        [65,15],[162,-59]
     ],
-    "zoomLevel": 2,
+    "zoomLevel": 0,
     "requiresTermsAndConditions": false,
     "headerConfig": {
         "title": "Australian Geoscience Data Cube Intertidal Extent"
@@ -132,7 +125,7 @@
     "layerMaps": [		
 		{
 		"slug": "intertidal_extents",
-		"extent": [[99,10],[169,-55]],
+		"extent": [[65,15],[162,-59]],
 		"mapType": "WMS",
 		"visibility": true,
 		"name": "Intertidal Relative Extents Model",
@@ -158,7 +151,7 @@
 		},
 		{
 		"slug": "intertidal_confidence",
-		"extent": [[99,10],[169,-55]],
+		"extent": [[65,15],[162,-59]],
 		"mapType": "WMS",
 		"visibility": false,
 		"name": "Intertidal Confidence Model",
@@ -184,7 +177,7 @@
 		},
 		{
 		"slug": "intertidal_coastalcells",
-		"extent": [[99,10],[169,-55]],
+		"extent": [[65,15],[162,-59]],
 		"mapType": "WMS",
 		"visibility": true,
 		"name": "Intertidal Coastal Cells",

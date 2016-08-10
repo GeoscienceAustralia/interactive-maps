@@ -1,6 +1,6 @@
 {
-	"id": "groundwater",
-	"title": "Ground Water Hydrochemistry",
+	"id": "groundwaterhydrochemistry",
+	"title": "Groundwater Hydrochemistry",
 	"datumProjection": "EPSG:3857",
 	"displayProjection": "EPSG:4326",
 	"framework": "olv2",
@@ -15,10 +15,11 @@
 		]
 	],
 	"headerConfig": {
-		"title": "Ground Water Hydrochemistry"
+		"title": "Groundwater Hydrochemistry"
 	},
 	"layersConfig": {
-		"enabled": true
+		"enabled": true,
+		"open": true
 	},
 	"legendConfig": {
 		"enabled": true,
@@ -45,15 +46,15 @@
                     "infoList": [
                         {
                             "id": "Boreholes Web Feature Service",
-                            "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/boreholes/wfs?request=GetCapabilities&service=WFS"
+                            "url": "http://services.ga.gov.au/geoserver/boreholes/wfs?request=GetCapabilities&service=WFS"
                         },
-						                        {
+						{
                             "id": "Borehole Samples Web Feature Service",
-                            "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/borehole_samples/wfs?request=GetCapabilities&service=WFS"
+                            "url": "http://services.ga.gov.au/geoserver/borehole_samples/wfs?request=GetCapabilities&service=WFS"
                         },
 						                        {
                             "id": "Hydrochemistry Analyses Web Feature Service",
-                            "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/hydrochem_analyses/wfs?request=GetCapabilities&service=WFS"
+                            "url": "http://services.ga.gov.au/geoserver/hydrochem_analyses/wfs?request=GetCapabilities&service=WFS"
                         }
                     ]
                 }
@@ -115,28 +116,29 @@
 	"layerMaps": [
 		{
 			"mapType": "WMS",
-			"url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/boreholes/wms",
-			"visibility": true,
+			"url": "http://services.ga.gov.au/geoserver/boreholes/wms",
+			"visibility": false,
 			"name": "Boreholes",
-			"layers": "Boreholes",
+			"layers": "Boreholes",			
 			"opacity": 1,
 			"metadataText": "Boreholes metadata.",
 			"ogcLinks": [
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/boreholes/wms?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/geoserver/boreholes/wms?request=GetCapabilities&service=WMS"
                 }
 			],
             "queryFeatures": true,
-			"queryUrl": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/boreholes/wms",
+			"queryUrl": "http://services.ga.gov.au/geoserver/boreholes/wms",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "Boreholes"	
+            "queryLayers": "Boreholes",
+			"layerTimeout": 10000
 		},
 		{
 			"mapType": "WMS",
-			"url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/borehole_samples/wms",
-			"visibility": true,
+			"url": "http://services.ga.gov.au/geoserver/borehole_samples/wms",
+			"visibility": false,
 			"name": "Borehole Samples",
 			"layers": "BoreholeSamples",
 			"opacity": 1,
@@ -144,18 +146,19 @@
 			"ogcLinks": [
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/borehole_samples/wms?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/geoserver/borehole_samples/wms?request=GetCapabilities&service=WMS"
                 }
 			],
             "queryFeatures": true,
-			"queryUrl": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/borehole_samples/wms",
+			"queryUrl": "http://services.ga.gov.au/geoserver/borehole_samples/wms",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "BoreholeSamples"	
+            "queryLayers": "BoreholeSamples",
+			"layerTimeout": 10000			
 		},
 		{
 			"mapType": "WMS",
-			"url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/hydrochem_analyses/wms",
+			"url": "http://services.ga.gov.au/geoserver/hydrochem_analyses/wms",
 			"visibility": true,
 			"name": "Hydrochemistry Analyses",
 			"layers": "HydrochemAnalyses",
@@ -164,14 +167,15 @@
 			"ogcLinks": [
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/hydrochem_analyses/wms?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/geoserver/hydrochem_analyses/wms?request=GetCapabilities&service=WMS"
                 }
 			],
             "queryFeatures": true,
-			"queryUrl": "http://rhe-geoserv-dev01.dev.lan:8080/geoserver/hydrochem_analyses/wms",
+			"queryUrl": "http://services.ga.gov.au/geoserver/hydrochem_analyses/wms",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "HydrochemAnalyses"	
+            "queryLayers": "HydrochemAnalyses"	,
+			"layerTimeout": 10000
 		}
 	]
 }

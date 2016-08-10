@@ -18,7 +18,8 @@
 		"title": "Groundwater Hydrochemistry"
 	},
 	"layersConfig": {
-		"enabled": true
+		"enabled": true,
+		"open": true
 	},
 	"legendConfig": {
 		"enabled": true,

@@ -12,6 +12,12 @@
             "previewImageUrl": "content/water/surfacehydrology/mapPreview.png",
             "previewDescription": "The Surface Hydrology dataset provides a seamless surface hydrology layer for Australia at a nominal scale of 1:250,000."
         },
+		{
+            "title": "Groundwater Hydrochemistry",
+            "id": "groundwaterhydrochemistry",
+            "previewImageUrl": "content/water/groundwaterhydrochemistry/mapPreview.png",
+            "previewDescription": "The Hydro-Chemistry dataset provides access to Geoscience Australia holdings of chemical analysis information of groundwater samples. This information is intended to work with and be complimentary to the Bureau of Meteorology's Australian Groundwater Explorer."
+        },
         {
             "title": "Water Observations from Space (WOfS)",
             "id": "wofs",

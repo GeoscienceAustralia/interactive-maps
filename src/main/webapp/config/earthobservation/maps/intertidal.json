@@ -45,14 +45,6 @@
 						{
                             "id": "ITEM (v1.0) Data download",
                             "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_42b76130-9055-45ab-b34f-2b4ddef34cca/Intertidal+Extents+Model+Collection"
-                        },
-						{
-                            "id": "ITEM (v1.0) Web Coverage Service GetCapabilites",
-                            "url": "http://geoserver.nci.org.au/geoserver/ITEM/WCS?request=GetCapabilities&service=WCS"
-                        },
-						{
-                            "id": "ITEM (v1.0) Web Feature Service GetCapabilites",
-                            "url": "http://geoserver.nci.org.au/geoserver/ITEM/WFS?request=GetCapabilities&service=WFS"
                         }
                     ]
                 }

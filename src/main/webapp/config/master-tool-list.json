@@ -194,7 +194,7 @@
 				"endpoints": [
 					{
 						"featureTitle": "Contiguous Zone Seas and Submerged Lands Limits of Contiguous Zone Proclamation 1999 AMB2014 Limit",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -202,7 +202,7 @@
 					},
 					{
 						"featureTitle": "Contiguous Zone Seas and Submerged Lands Limits of Contiguous Zone Proclamation 1999 AMB2014 Area",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -210,7 +210,7 @@
 					},
 					{
 						"featureTitle": "Coastal Waters State and Northern Territory Powers Act 1980 AMB2014 Limit",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Limit",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -218,7 +218,7 @@
 					},
 					{
 						"featureTitle": "Coastal Waters State and Northern Territory Powers Act 1980 AMB2014 Area",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Area",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -226,7 +226,7 @@
 					},
 					{
 						"featureTitle": "Territorial Sea Seas and Submerged Lands Act 1973 Proclamation under section 7 09 11 1990 AMB2014 Limit",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -234,7 +234,7 @@
 					},
 					{
 						"featureTitle": "Territorial Sea Seas and Submerged Lands Act 1973 Proclamation under section 7 09 11 1990 AMB2014 Area",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -242,7 +242,7 @@
 					},
 					{
 						"featureTitle": "Continental Shelf AMB2014 Points",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Continental_Shelf_AMB2014_Points",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -250,7 +250,7 @@
 					},
 					{
 						"featureTitle": "Continental Shelf AMB2014 Limit",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Continental_Shelf_AMB2014_Limit",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -258,7 +258,7 @@
 					},
 					{
 						"featureTitle": "Exclusive Economic Zone Seas and Submerged Lands Act 1973 Proclamation under section 10B 26 07 1994 AMB2014 Limit",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -266,7 +266,7 @@
 					},
 					{
 						"featureTitle": "Exclusive Economic Zone Seas and Submerged Lands Act 1973 Proclamation under section 10B 26 07 1994 AMB2014 Area",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -274,7 +274,7 @@
 					},
 					{
 						"featureTitle": "Exclusive Economic Zone As Amended by the Perth Treaty 1997 Seas and Submerged Lands Act 1973 Proclamation under section 10B 26 07 1994 AMB2014 Limit",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -282,7 +282,7 @@
 					},
 					{
 						"featureTitle": "Exclusive Economic Zone As Amended by the Perth Treaty 1997 Seas and Submerged Lands Act 1973 Proclamation under section 10B 26 07 1994 AMB2014 Area",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",
@@ -290,7 +290,7 @@
 					},
 					{	
 						"featureTitle": "Scheduled Areas under the Offshore Petroleum and Greenhouse Gas Storage Act AMB2014 Points",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Scheduled_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Points",
 						"featurePrefix": "legislation_CWTH_OPGGSA_2006_Scheduled_Areas_AMB2014a",
 						"geometryName": "Shape",
@@ -298,7 +298,7 @@
 					},
 					{
 						"featureTitle": "Scheduled Areas under the Offshore Petroleum and Greenhouse Gas Storage Act AMB2014 Limit",
-						"url": "http://services.ga.gov.au/gis/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+						"url": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
 						"featureType": "Scheduled_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Limit",
 						"featurePrefix": "SSLA_1973_AMB2014a",
 						"geometryName": "Shape",

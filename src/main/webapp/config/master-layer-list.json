@@ -1889,7 +1889,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Intertidal - dominate Landform",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/WMSServer",
             "layers": "Intertidal - dominate landform",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -1905,7 +1905,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -2713,7 +2713,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Muddy",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/WMSServer",
             "layers": "Muddy",
             "opacity": 1,
             "ogcLinks": [
@@ -2727,7 +2727,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -4371,7 +4371,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Sandy",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/WMSServer",
             "layers": "Sandy",
             "opacity": 1,
             "ogcLinks": [
@@ -4385,7 +4385,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -4394,7 +4394,7 @@
             ],
             "layerTimeout": 5000,
 			"queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Sandy"
@@ -5300,7 +5300,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Subtidal - dominate landform",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/WMSServer",
             "layers": "Subtidal - dominate landform",
             "opacity": 1,
             "ogcLinks": [
@@ -5314,7 +5314,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -5323,7 +5323,7 @@
             ],
             "layerTimeout": 5000,
 			"queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/site_11/rest/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Subtidal - dominate landform"

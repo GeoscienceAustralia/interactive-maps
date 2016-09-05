@@ -2659,7 +2659,7 @@
             "url": "http://services.ga.gov.au/gis/services/Marine_Survey_Multibeam_Backscatter/MapServer/WMSServer",
             "layers": "GA4301_2m,GA0334_N_2m,GA0334_S_2m,GA0333_1m,GA0315_friars_3m,GA0315_fortescue_2m,GA0315_freycinet_4m,GA0315_portarthur_1m,GA0315_huon_1m,GA0315_tinderbox_3m,GA0315_maria_1m,GA0308_gnaraloo_3m,GA0308_mandu1_3m,GA0308_mandu2_3m,GA0308_mandu3_3m,GA0308_pointcloates_3m,GA0345_a1_5m,GA0345_a2_5m,GA0345_a3_5m,GA0345_a4_5m,GA0345_a6b_5m,GA0345_a7_5m,GA0345_a8_5m,GA0345_b1_5m,GA0345_c1_5m,GA0345_c2b_5m,GA0345_f1b_5m,GA0345_m1_5m,GA0340_a1_2m,GA0340_a2_2m,GA0340_a3_2m,GA0340_a4_2m,GA0340_a5_2m,GA0340_a10_2m,GA0339_grid1_2m,GA0339_grid2_2m,GA0339_grid3_2m,GA0339_grid4_2m,GA0325_a_10m,GA0325_b_10m,GA0325_c_10m,GA0325_d_10m,GA2476_200m",
             "opacity": 1,
-			"metadataText": "The Marine Survey Multibeam Backscatter Web Map Service contains the highest-resolution multibeam backscatter grids available for download on Geoscience Australia’s website. These backscatter grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the backscatter grids. Backscatter grids have been rendered over a yellow-bronze colour-ramp with minimum and maximum decibel values being -40 and -10 dB respectively. The resolution of each backscatter grid is also specified in each survey's layer description.",
+			"metadataText": "The Marine Survey Multibeam Backscatter Web Map Service contains the highest-resolution multibeam backscatter grids available for download on Geoscience Australiaï¿½s website. These backscatter grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the backscatter grids. Backscatter grids have been rendered over a yellow-bronze colour-ramp with minimum and maximum decibel values being -40 and -10 dB respectively. The resolution of each backscatter grid is also specified in each survey's layer description.",
 			"ogcLinks": [                
                 {
                     "description": "Service Metadata (REST)",
@@ -5475,7 +5475,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Surface Hydrology",
-            "url": "http://www.ga.gov.au/gis/rest/services/topography/AusHydro_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Surface_Hydrology_WM/MapServer",
             "metadataText": "The Surface Hydrology database provides a seamless surface hydrography layer for Australia at a nominal scale of 1:250,000. It consists of lines, points and polygons representing natural and man-made features such as water courses, lakes, dams and other water bodies. The natural water course layer consists of a linear network with a consistent topology that provide directional flow paths through the network for hydrological analysis. This network provides information on naming, hierarchy and perenniality.",
             "ogcLinks": [
                 {
@@ -5484,19 +5484,19 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/AusHydro/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Surface_Hydrology_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/AusHydro_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Surface_Hydrology_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "WFS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/AusHydro_WM/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Surface_Hydrology_WM/MapServer/WFSServer?request=GetCapabilities&service=WFS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/AusHydro_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Surface_Hydrology_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,

@@ -1038,7 +1038,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Environment",
-            "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Environment_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Environment_WM/MapServer",
             "opacity": 1,
             "tileSize": "256",
             "attribution": "Environment <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>",
@@ -1050,7 +1050,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Environment_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Environment_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1062,7 +1062,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Environment_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Environment_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
 			"queryFeatures": true,

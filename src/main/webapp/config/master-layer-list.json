@@ -348,7 +348,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "AUS GA 5M Metamorphic Geology Polygons",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer",
             "layers": "AUS_Metamorphic_Geology_5M",
             "metadataText": "The Surface Geology of Australia web map service provides two seamless national coverages of bedrock and surficial geology, compiled for use at 1:1 million scale and 1:2.5 million scale. It also contains 1:5M data for geological regions and metamorphic geology. The 1:1M data is limited so that it does not display at scales less than 1:1,500,000. The 1:2.5M data is limited so that it does not display at scales greater than 1:1,500,000. The data represents outcropping or near-outcropping bedrock units, and unconsolidated or poorly consolidated regolith material covering bedrock. Geological units are represented as polygon and line geometries, and are attributed with information regarding stratigraphic name and hierarchy, age, lithology, and primary data source. Layers are available for geological units coloured by lithostratigraphy, age, and lithology. The dataset also contains geological contacts, structural features such as faults and shears, and miscellaneous supporting lines like the boundaries of water and ice bodies",
             "ogcLinks": [
@@ -358,15 +358,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer ?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -379,7 +379,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "AUS GA 5M Geological Regions",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer",
             "layers": "AUS_GeoRegions_5M",
             "metadataText": "The Surface Geology of Australia web map service provides two seamless national coverages of bedrock and surficial geology, compiled for use at 1:1 million scale and 1:2.5 million scale. It also contains 1:5M data for geological regions and metamorphic geology. The 1:1M data is limited so that it does not display at scales less than 1:1,500,000. The 1:2.5M data is limited so that it does not display at scales greater than 1:1,500,000. The data represents outcropping or near-outcropping bedrock units, and unconsolidated or poorly consolidated regolith material covering bedrock. Geological units are represented as polygon and line geometries, and are attributed with information regarding stratigraphic name and hierarchy, age, lithology, and primary data source. Layers are available for geological units coloured by lithostratigraphy, age, and lithology. The dataset also contains geological contacts, structural features such as faults and shears, and miscellaneous supporting lines like the boundaries of water and ice bodies",
             "ogcLinks": [
@@ -389,15 +389,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer ?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -424,11 +424,11 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer ?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -741,7 +741,7 @@
             "visibility": true,
             "name": "Earthquake Hazards",
             "layers": "earthquakeHazard,hazardContours",
-            "url": "http://www.ga.gov.au/gis/services/hazards/EarthquakeHazard/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/site_11/services/Earthquake_Hazard/MapServer/WMSServer",
             "opacity": 1,
             "layerTimeout": 5000,
             "metadataText": "Earthquake hazard web map service created by Geoscience Australia. The service contains the 2013 Earthquake Hazard map, as a raster and contours. This map shows the peak ground acceleration (response spectral period of 0.0s) on rock expected for a 500 year return period, in units of g, evaluated for the geometric mean of the horizontal components. The map is the closest in return period and response spectral period to the current earthquake hazard map in the Australian Standard AS1170.4-2007.",
@@ -756,7 +756,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Earthquake_Hazard/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -764,7 +764,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Earthquake_Hazard/MapServer?f=lyr&v=9.3"
                 },
                 {
                     "description": "Product Metadata",
@@ -772,7 +772,7 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/hazards/EarthquakeHazard/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/site_11/services/Earthquake_Hazard/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "hazardContours,earthquakeHazard"
@@ -5335,7 +5335,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Surface Geology of Australia",
-            "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer",
             "opacity": 1,
             "layerTimeout": 5000,
             "metadataText": "The Surface Geology of Australia Web Map Service provides two seamless national coverages of bedrock and surficial geology, compiled for use at 1:1 million scale and 1:2.5 million scale. It also contains 1:5M data for geological regions and metamorphic geology. The 1:1M data is limited so that it does not display at scales less than 1:1,500,000. The 1:2.5M data is limited so that it does not display at scales greater than 1:1,500,000. The data represents outcropping or near-outcropping bedrock units, and unconsolidated or poorly consolidated regolith material covering bedrock. Geological units are represented as polygon and line geometries, and are attributed with information regarding stratigraphic name and hierarchy, age, lithology, and primary data source. Layers are available for geological units coloured by lithostratigraphy, age, and lithology. The dataset also contains geological contacts, structural features such as faults and shears, and miscellaneous supporting lines like the boundaries of water and ice bodies.",
@@ -5346,19 +5346,19 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines,AUS_GA_1M_GUPoly_Lithostratigraphy,AUS_GA_1M_GULine,AUS_GA_1M_Contacts,AUS_GA_1M_Faults,AUS_GA_1M_MiscLines"
@@ -5371,7 +5371,7 @@
             "visibility": true,
             "name": "Surface Geology of Australia 2500k",
             "layers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer",
             "opacity": 1,
             "metadataText": "The Surface Geology of Australia Web Map Service provides two seamless national coverages of bedrock and surficial geology, compiled for use at 1:1 million scale and 1:2.5 million scale. It also contains 1:5M data for geological regions and metamorphic geology. The 1:1M data is limited so that it does not display at scales less than 1:1,500,000. The 1:2.5M data is limited so that it does not display at scales greater than 1:1,500,000. The data represents outcropping or near-outcropping bedrock units, and unconsolidated or poorly consolidated regolith material covering bedrock. Geological units are represented as polygon and line geometries, and are attributed with information regarding stratigraphic name and hierarchy, age, lithology, and primary data source. Layers are available for geological units coloured by lithostratigraphy, age, and lithology. The dataset also contains geological contacts, structural features such as faults and shears, and miscellaneous supporting lines like the boundaries of water and ice bodies.",
             "ogcLinks": [
@@ -5381,19 +5381,19 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer/WMSServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/site_1/rest/services/GA_Surface_Geology/MapServer /WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines"
@@ -5406,7 +5406,7 @@
 			"maxZoomLevel": 10,
             "visibility": true,
             "name": "Surface Geology of Australia 2500k",
-            "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer",
             "opacity": 1,
             "metadataText": "The Surface Geology of Australia Web Map Service provides two seamless national coverages of bedrock and surficial geology, compiled for use at 1:1 million scale and 1:2.5 million scale. It also contains 1:5M data for geological regions and metamorphic geology. The 1:1M data is limited so that it does not display at scales less than 1:1,500,000. The 1:2.5M data is limited so that it does not display at scales greater than 1:1,500,000. The data represents outcropping or near-outcropping bedrock units, and unconsolidated or poorly consolidated regolith material covering bedrock. Geological units are represented as polygon and line geometries, and are attributed with information regarding stratigraphic name and hierarchy, age, lithology, and primary data source. Layers are available for geological units coloured by lithostratigraphy, age, and lithology. The dataset also contains geological contacts, structural features such as faults and shears, and miscellaneous supporting lines like the boundaries of water and ice bodies.",
             "ogcLinks": [
@@ -5416,19 +5416,19 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer/WMSServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/site_1/rest/services/GA_Surface_Geology/MapServer /WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines"
@@ -5440,7 +5440,7 @@
             "visibility": true,
             "name": "Surface Geology of Australia 1M",
             "layers": "AUS_GA_1M_GUPoly_Lithostratigraphy,AUS_GA_1M_GULine,AUS_GA_1M_Contacts,AUS_GA_1M_Faults,AUS_GA_1M_MiscLines",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer",
             "mapType": "WMS",
             "metadataText": "The Surface Geology of Australia Web Map Service provides two seamless national coverages of bedrock and surficial geology, compiled for use at 1:1 million scale and 1:2.5 million scale. It also contains 1:5M data for geological regions and metamorphic geology. The 1:1M data is limited so that it does not display at scales less than 1:1,500,000. The 1:2.5M data is limited so that it does not display at scales greater than 1:1,500,000. The data represents outcropping or near-outcropping bedrock units, and unconsolidated or poorly consolidated regolith material covering bedrock. Geological units are represented as polygon and line geometries, and are attributed with information regarding stratigraphic name and hierarchy, age, lithology, and primary data source. Layers are available for geological units coloured by lithostratigraphy, age, and lithology. The dataset also contains geological contacts, structural features such as faults and shears, and miscellaneous supporting lines like the boundaries of water and ice bodies.",
             "ogcLinks": [
@@ -5450,19 +5450,19 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Surface_Geology_of_Australia_WM/MapServer/WMSServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/earth_science/GA_Surface_Geology_of_Australia/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/site_1/rest/services/GA_Surface_Geology/MapServer /WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_1M_MiscLines,AUS_GA_1M_Faults,AUS_GA_1M_Contacts,AUS_GA_1M_GULine,AUS_GA_1M_GUPoly_Lithostratigraphy",

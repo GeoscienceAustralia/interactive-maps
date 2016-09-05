@@ -6380,7 +6380,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Vegetation",
-            "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer/WMSServer",
             "layers": "Vegetation",
             "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
             "ogcLinks": [
@@ -6394,7 +6394,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",

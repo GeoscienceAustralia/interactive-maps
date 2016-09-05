@@ -3817,7 +3817,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Rb-Sr",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer",
             "layers": "Rb-Sr",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -3833,7 +3833,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -3841,7 +3841,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Rb-Sr"
@@ -3881,7 +3881,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RegolithGeochemistry"
@@ -4178,7 +4178,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistry"
@@ -4248,7 +4248,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistryIgneous"
@@ -4288,7 +4288,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistryMetamorphic"
@@ -4328,7 +4328,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistrySedimentary"
@@ -4394,7 +4394,7 @@
             ],
             "layerTimeout": 5000,
 			"queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/Geomorphology_Smartline/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Sandy"
@@ -5148,7 +5148,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "SeismicGeochemistry"
@@ -5160,7 +5160,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Sm-Nd",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer",
             "layers": "Sm-Nd",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -5184,7 +5184,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Sm-Nd"
@@ -5323,7 +5323,7 @@
             ],
             "layerTimeout": 5000,
 			"queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/site_11/rest/services/Geomorphology_Smartline/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/site_11/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Subtidal - dominate landform"
@@ -5995,7 +5995,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "U-Pb SHRIMP Magmatic",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer",
             "layers": "U-PbSHRIMPmagmatic",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -6007,7 +6007,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -6015,7 +6015,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "U-PbSHRIMPmagmatic"
@@ -6027,7 +6027,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "U-Pb SHRIMP Maximum Depositional",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer",
             "layers": "U-PbSHRIMPmaximumDepositional",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -6039,7 +6039,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -6047,7 +6047,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "U-PbSHRIMPmaximumDepositional"
@@ -6059,7 +6059,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "U-Pb SHRIMP Metamorphic",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer",
             "layers": "U-PbSHRIMPmetamorphic",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -6071,7 +6071,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -6079,7 +6079,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "U-PbSHRIMPmetamorphic"
@@ -6091,7 +6091,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "U-Pb TIMS Conventional",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer",
             "layers": "U-PbTIMSconventional",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -6103,7 +6103,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -6111,7 +6111,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "U-PbTIMSconventional"

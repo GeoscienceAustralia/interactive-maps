@@ -1951,7 +1951,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Landcover",
-            "url": "http://www.ga.gov.au/gis/rest/services/earth_observation/Landcover_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Landcover_WM/MapServer",
             "metadataText": "The Landcover cached map service (Web Mercator) is the first nationally consistent and thematically comprehensive land cover reference for Australia. It is the result of a collaboration between Geoscience Australia and the Australian Bureau of Agriculture and Resource Economics and Sciences, and provides a base-line for identifying and reporting on change and trends in vegetation cover and extent.",
             "ogcLinks": [
                 {
@@ -1960,7 +1960,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_observation/Landcover_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Landcover_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1968,7 +1968,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_observation/Landcover_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Landcover_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,

@@ -3853,7 +3853,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Regolith Geochemistry",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "layers": "RegolithGeochemistry",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -3873,7 +3873,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -3881,7 +3881,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RegolithGeochemistry"
@@ -4150,7 +4150,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Rock Geochemistry",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "layers": "RockGeochemistry",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -4170,7 +4170,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -4178,7 +4178,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistry"
@@ -4220,7 +4220,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "RockGeochemistry Igneous",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "layers": "RockGeochemistryIgneous",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -4240,7 +4240,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -4248,7 +4248,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistryIgneous"
@@ -4260,7 +4260,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "RockGeochemistry Metamorphic",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "layers": "RockGeochemistryMetamorphic",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -4280,7 +4280,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -4288,7 +4288,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistryMetamorphic"
@@ -4300,7 +4300,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "RockGeochemistry Sedimentary",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "layers": "RockGeochemistrySedimentary",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -4320,7 +4320,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -4328,7 +4328,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistrySedimentary"
@@ -5120,7 +5120,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Seismic Geochemistry",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "layers": "SeismicGeochemistry",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -5140,7 +5140,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -5148,7 +5148,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "SeismicGeochemistry"

@@ -914,7 +914,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -922,7 +922,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -1406,7 +1406,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1414,7 +1414,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -1442,7 +1442,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1450,7 +1450,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -1930,7 +1930,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1938,7 +1938,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -6390,7 +6390,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -6398,7 +6398,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/topography/Global_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,

@@ -3869,7 +3869,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -3877,7 +3877,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
@@ -4166,7 +4166,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -4174,7 +4174,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
@@ -4236,7 +4236,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -4244,7 +4244,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
@@ -4276,7 +4276,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -4284,7 +4284,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
@@ -4316,7 +4316,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -4324,7 +4324,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
@@ -5136,7 +5136,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -5144,7 +5144,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,

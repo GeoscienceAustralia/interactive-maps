@@ -1299,7 +1299,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Geomorphology Scale Guide",
-            "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Scale_Guide_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer",
             "opacity": 1,
             "maxZoomLevel": 9,
             "queryFeatures": false,
@@ -1311,7 +1311,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Scale_Guide_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1319,7 +1319,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Scale_Guide_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
 			"queryFeatures": false

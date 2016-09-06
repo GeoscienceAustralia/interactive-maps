@@ -5172,15 +5172,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
@@ -6003,7 +6003,7 @@
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -6011,7 +6011,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
@@ -6035,7 +6035,7 @@
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -6043,7 +6043,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
@@ -6067,7 +6067,7 @@
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -6075,7 +6075,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
@@ -6099,7 +6099,7 @@
             "ogcLinks": [
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -6107,7 +6107,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,

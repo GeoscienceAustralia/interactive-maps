@@ -348,7 +348,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "AUS GA 5M Metamorphic Geology Polygons",
-            "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer /WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer/WMSServer",
             "layers": "AUS_Metamorphic_Geology_5M",
             "metadataText": "The Surface Geology of Australia web map service provides two seamless national coverages of bedrock and surficial geology, compiled for use at 1:1 million scale and 1:2.5 million scale. It also contains 1:5M data for geological regions and metamorphic geology. The 1:1M data is limited so that it does not display at scales less than 1:1,500,000. The 1:2.5M data is limited so that it does not display at scales greater than 1:1,500,000. The data represents outcropping or near-outcropping bedrock units, and unconsolidated or poorly consolidated regolith material covering bedrock. Geological units are represented as polygon and line geometries, and are attributed with information regarding stratigraphic name and hierarchy, age, lithology, and primary data source. Layers are available for geological units coloured by lithostratigraphy, age, and lithology. The dataset also contains geological contacts, structural features such as faults and shears, and miscellaneous supporting lines like the boundaries of water and ice bodies",
             "ogcLinks": [
@@ -362,7 +362,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -410,7 +410,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Browse Basin Bathymetry 2014",
-            "url": "http://services.ga.gov.au/gis/rest/services/Browse_Basin_Bathymetry_2014_GA0345_GA0346_TAN1411/MapServer",
+            "url": "http://services.ga.gov.au/gis/services/Browse_Basin_Bathymetry_2014_GA0345_GA0346_TAN1411/MapServer/WMSServer",
             "layers": "Browse_Basin_Bathymetry_AUV,Browse_Basin_Bathymetry",
             "metadataText": "This web service displays the results of a marine survey conducted by Geoscience Australia in Commonwealth waters of the north-eastern Browse Basin (Caswell Sub-basin) between 9 October and 9 November 2014. The additional codes GA-0345 and GA-0346 refer to Geoscience Australia (GA) internal codes and TAN1411 is the vessel survey number given by the RV Tangaroa for 2014.",
             "ogcLinks": [
@@ -424,7 +424,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer /WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",

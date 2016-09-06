@@ -1054,11 +1054,11 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Environment_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Environment_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "WFS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Environment_WM/MapServer/WMSServer?request=GetCapabilities&service=WFS"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Environment_WM/MapServer/WMSServer?request=GetCapabilities&service=WFS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -1066,7 +1066,7 @@
                 }
             ],
 			"queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Environment_WM/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/Geomorphology_Environment_WM/MapServer/WMSServer",
 			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
 			"queryVersion": "1.1.0",
 			"queryType": "WMS"
@@ -1315,7 +1315,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -1901,7 +1901,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer"
+                    "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1909,7 +1909,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
                 }
             ]
         },
@@ -2035,11 +2035,11 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geomorphology_Landform_Subtype_WM/MapServerMapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "WFS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WFS"
+                    "url": "http://services.ga.gov.au/gis/services/Geomorphology_Landform_Subtype_WM/MapServer/WMSServer?request=GetCapabilities&service=WFS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -2723,7 +2723,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer"
+                    "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -2731,7 +2731,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
                 }
             ],
             "layerTimeout": 5000

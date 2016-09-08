@@ -25,7 +25,8 @@
 
             $scope.browseWMS = function () {
                 $scope.browseWMSLoading = true;
-                GeoDataService.getLayersByWMSCapabilities($scope.layerMap.url, 'olv2').then(function (layers) {
+                var getCapsUrl = $scope.layerMap.url.toLowerCase().indexOf('service=wms') === -1 ? $scope.layerMap.url + '?service=wms' : $scope.layerMap.url;
+                GeoDataService.getLayersByWMSCapabilities(getCapsUrl, 'olv2').then(function (layers) {
                     $scope.browseWMSLoading = false;
                     var modalInstance = $modal.open({
                         animation: true,

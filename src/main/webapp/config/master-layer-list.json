@@ -1298,7 +1298,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Geomorphology Scale Guide",
-            "url": "http://services.ga.gov.au/gis/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/rest/services/Geomorphology_Scale_Guide_WM/MapServer",
             "opacity": 1,
             "maxZoomLevel": 9,
             "queryFeatures": false,
@@ -3803,7 +3803,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Regolith Geochemistry",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "layers": "RegolithGeochemistry",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -5454,7 +5454,7 @@
             "queryUrl": "http://services.ga.gov.au/gis/services/Surface_Hydrology_WM/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "AusHydro_Canal_Line,AusHydro_DamWalls,AusHydro_Levees,AusHydro_RapidLines,AusHydro_Spillways,AusHydro_Water_Pipeline,AusHydro_Flats,AusHydro_Flats_3,AusHydro_PondageAreas_2,AusHydro_ForeshoreFlats_2,AusHydro_Lakes_3,AusHydro_WatercourseAreas_2,AusHydro_Rivers_3",
+            "queryLayers": "Surface_HydroPoints_National,Surface_HydroPolys_National,Surface_HydroLines_National,Surface_HydroPoints_Regional,Surface_HydroPolys_Regional,Surface_HydroLines_Regional,Catchments,Basins",
             "layerTimeout": 5000
         },        
         {

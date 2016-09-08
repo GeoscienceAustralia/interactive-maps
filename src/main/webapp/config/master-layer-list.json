@@ -741,7 +741,7 @@
             "visibility": true,
             "name": "Earthquake Hazards",
             "layers": "earthquakeHazard,hazardContours",
-            "url": "http://services.ga.gov.au/services/Earthquake_Hazard/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard/MapServer/WMSServer",
             "opacity": 1,
             "layerTimeout": 5000,
             "metadataText": "Earthquake hazard web map service created by Geoscience Australia. The service contains the 2013 Earthquake Hazard map, as a raster and contours. This map shows the peak ground acceleration (response spectral period of 0.0s) on rock expected for a 500 year return period, in units of g, evaluated for the geometric mean of the horizontal components. The map is the closest in return period and response spectral period to the current earthquake hazard map in the Australian Standard AS1170.4-2007.",
@@ -760,7 +760,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/services/Earthquake_Hazard/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -772,7 +772,7 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/services/Earthquake_Hazard/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Earthquake_Hazard/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "hazardContours,earthquakeHazard"
@@ -904,7 +904,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Elevation",
-            "url": "http://services.ga.gov.au/services/Global_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer",
             "layers": "Elevation",
             "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
             "ogcLinks": [
@@ -918,7 +918,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/services/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -1070,8 +1070,7 @@
 			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
 			"queryVersion": "1.1.0",
 			"queryType": "WMS"
-        },
-        
+        },        
         {
             "slug": "Exclusive_Economic_Zone_As_Amended_By_The_Perth_Treaty_1997_AMB_2014",
 			"extent": [[30,10],[180,-70]],
@@ -1265,7 +1264,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Geology - Primary substrate",
-            "url": "http://services.ga.gov.au/services/Geomorphology_Smartline/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
             "layers": "Geology - Primary substrate",
             "opacity": 1,
             "ogcLinks": [
@@ -1288,7 +1287,7 @@
             ],
             "layerTimeout": 5000,
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/services/Geomorphology_Smartline/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Geology - Primary substrate"			
@@ -1299,7 +1298,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Geomorphology Scale Guide",
-            "url": "http://services.ga.gov.au/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer",
             "opacity": 1,
             "maxZoomLevel": 9,
             "queryFeatures": false,
@@ -1728,38 +1727,7 @@
 			"queryUrlType": "WMS",
 			"queryVersion": "1.1.1",
 			"queryLayers": "species:Megaptera_novaeangliae"
-		},
-		{
-            "slug": "Hydrogeology",
-			"extent": [[99,10],[169,-55]],
-            "id": "Hydrogeology",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Hydrogeology of Australia",
-            "url": "http://services.ga.gov.au/gis/services/Hydrogeology_of_Australia/MapServer/WMSServer",
-            "layers": "hydrogeology",
-            "metadataText": "This service shows the Principal Hydrogeological Divisions of Australia which was produced from the 1:5,000,000 scale Hydrogeology of Australia map (Jacobsen and Lau, 1987).",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_00898d05-045c-4bbe-b520-d69631cb903d/Hydrogeology+of+Australia+Map+Service"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/groundwater/Hydrogeology_of_Australia/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/groundwater/Hydrogeology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/groundwater/Hydrogeology_of_Australia/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "opacity": 1,
-            "layerTimeout": 5000
-        },
+		},		
 		{
 			"slug": "Indian_Bottlenose_Dolphin",
 			"name": "Indian Bottlenose Dolphin",
@@ -1998,7 +1966,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -2006,7 +1974,7 @@
                 }
             ],
 			"queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
 			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
 			"queryVersion": "1.1.0",
 			"queryType": "WMS"
@@ -3147,25 +3115,7 @@
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Area,Offshore_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Limit"
-        },
-		{
-			"slug": "Onshore_Seismic_Surveys",
-			"extent": [[99,10],[169,-55]],
-			"id": "Onshore Seismic Surveys",
-			"mapType": "WMS",
-			"visibility": true,
-			"name": "Onshore Seismic Surveys",
-			"url": "http://services.ga.gov.au/gis/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer/WMSServer",
-			"layers": "OnshoreSeismicSurveyLines",
-			"metadataText": "The Onshore Seismic Data of Australia is a collection of all land seismic traverses cross the Australian continent and its margins. The data includes raw and processed data in SEGY format. The metadata includes acquisition reports, processing reports, processed images, logs, and so on. The data acquisition was carried out in Australia from 1949-2012 by Geoscience Australia and various partners. The set of reflection and refraction data comprises over 12,000 km of coverage, and provides an insight into the variations in crustal architecture in the varied geological domains. The complete processed dataset was first available for public access in Oct 2013 (http://www.ga.gov.au/minerals/projects/current-projects/seismic-acquisition-processing.html ). The location of seismic traverses is shown by the Gallery link on the webpage. The new survey data will be updated on the webpage by the official data release date. The attribute structure of the dataset has also been revised to be more compatible with the GeoSciML data standard, published by the IUGS Commission for Geoscience Information. The onshore seismic data were collected with partner organizations: Australian Geodynamics Cooperative Research Centre, National Research Facility for Earth Sounding, Australian Nuclear Science and Technology Organisation, Cooperative Research Centre for Greenhouse Gas Technologies, Curtin University of Technology, Geological Survey of New South Wales, NSW Department of Mineral Resources, NSW Department of Primary Industries Mineral Resources, An organisation for a National Earth Science Infrastructure Program, Geological Survey Western Australia, Northern Territory Geological Survey, Primary Industries and Resources South Australia, Predictive Mineral Discovery Cooperative Research Centre, Queensland Geological Survey, GeoScience Victoria Department of Primary Industries, Tasmania Development and Resources, University of Western Australia.",
-			"ogcLinks": [
-			{"description": "Service Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_12fa048f-c6b5-4268-848b-4a2f8d13be3c/Geoscience+Australia+Onshore+Seismic+Surveys+Map+Service"},
-			{"description": "Service Metadata (REST)","url": "http://services.ga.gov.au/gis/rest/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer"},
-			{"description": "WMS Capabilities","url": "http://services.ga.gov.au/gis/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
-			{"description": "ArcMap Layerfile","url": "http://services.ga.gov.au/gis/rest/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer?f=lyr&v=9.3"}],			
-			"opacity": 1.0,
-			"queryFeatures": false			
-		},
+        },		
 		{
 			"slug": "Olive_Ridley_Turtle",
 			"name": "Olive Ridley Turtle",
@@ -5393,7 +5343,7 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/services/GA_Surface_Geology/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines"
@@ -5428,7 +5378,7 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/services/GA_Surface_Geology/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines"

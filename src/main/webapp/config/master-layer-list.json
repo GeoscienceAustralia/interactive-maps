@@ -1282,7 +1282,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
                 }
             ],
             "layerTimeout": 5000,
@@ -1298,7 +1298,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Geomorphology Scale Guide",
-            "url": "http://services.ga.gov.au/rest/services/Geomorphology_Scale_Guide_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer",
             "opacity": 1,
             "maxZoomLevel": 9,
             "queryFeatures": false,
@@ -1310,7 +1310,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Scale_Guide_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1318,7 +1318,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Scale_Guide_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
 			"queryFeatures": false
@@ -1950,7 +1950,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Landform Type",
-            "url": "http://services.ga.gov.au/rest/services/Geomorphology_Landform_Type_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Landform_Type_WM/MapServer",
             "opacity": 0.75,
             "tileSize": "256",
             "attribution": "Landform Type <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>",
@@ -1962,7 +1962,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Landform_Type_WM/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Landform_Type_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1970,7 +1970,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Landform_Type_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Landform_Type_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
 			"queryFeatures": true,

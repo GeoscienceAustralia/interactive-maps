@@ -42,7 +42,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "All Geochronology",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
             "layers": "Sm-Nd,U-PbSHRIMPmagmatic,U-PbSHRIMPmaximumDepositional,U-PbSHRIMPmetamorphic,U-PbTIMSconventional,Rb-Sr",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -54,19 +54,19 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geoscience_Australia_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "U-PbTIMSconventional,U-PbSHRIMPmagmatic,U-PbSHRIMPmaximumDepositional,U-PbSHRIMPmetamorphic,Rb-Sr,Sm-Nd"
@@ -741,7 +741,7 @@
             "visibility": true,
             "name": "Earthquake Hazards",
             "layers": "earthquakeHazard,hazardContours",
-            "url": "http://services.ga.gov.au/site_11/services/Earthquake_Hazard/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/services/Earthquake_Hazard/MapServer/WMSServer",
             "opacity": 1,
             "layerTimeout": 5000,
             "metadataText": "Earthquake hazard web map service created by Geoscience Australia. The service contains the 2013 Earthquake Hazard map, as a raster and contours. This map shows the peak ground acceleration (response spectral period of 0.0s) on rock expected for a 500 year return period, in units of g, evaluated for the geometric mean of the horizontal components. The map is the closest in return period and response spectral period to the current earthquake hazard map in the Australian Standard AS1170.4-2007.",
@@ -760,7 +760,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/hazards/EarthquakeHazard/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/services/Earthquake_Hazard/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -772,7 +772,7 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/site_11/services/Earthquake_Hazard/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/services/Earthquake_Hazard/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "hazardContours,earthquakeHazard"
@@ -904,7 +904,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Elevation",
-            "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/services/Global_Map/MapServer/WMSServer",
             "layers": "Elevation",
             "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
             "ogcLinks": [
@@ -918,7 +918,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/services/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -1066,7 +1066,7 @@
                 }
             ],
 			"queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/rest/services/Geomorphology_Environment_WM/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Environment_WM/MapServer/WMSServer",
 			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
 			"queryVersion": "1.1.0",
 			"queryType": "WMS"
@@ -1265,7 +1265,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Geology - Primary substrate",
-            "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/services/Geomorphology_Smartline/MapServer/WMSServer",
             "layers": "Geology - Primary substrate",
             "opacity": 1,
             "ogcLinks": [
@@ -1275,20 +1275,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
                 }
             ],
             "layerTimeout": 5000,
             "queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Geology - Primary substrate"			
@@ -1299,7 +1299,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Geomorphology Scale Guide",
-            "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer",
+            "url": "http://services.ga.gov.au/services/Geomorphology_Scale_Guide_WM/MapServer/WMSServer",
             "opacity": 1,
             "maxZoomLevel": 9,
             "queryFeatures": false,
@@ -1311,7 +1311,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer"
+                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Scale_Guide_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -1319,7 +1319,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Scale_Guide_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
 			"queryFeatures": false
@@ -1396,7 +1396,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Global Map",
-            "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer",
             "layers": "Built Up Area,Watercourse,Inland Water,Aqueduct Canals,Road Minor,Road Major,Railroad,Bridge,Political Boundary Line,Coastline,Railyard,Airport,Political Boundary Point,Miscellaneous Drainage,Miscellaneous Population,Built Up Points",
             "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world.",
             "ogcLinks": [
@@ -1410,7 +1410,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -1419,7 +1419,7 @@
             ],
             "opacity": 1,
 			"queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Built Up Area,Watercourse,Inland Water,Aqueduct Canals,Road Minor,Road Major,Railroad,Bridge,Political Boundary Line,Coastline,Railyard,Airport,Political Boundary Point,Miscellaneous Drainage,Miscellaneous Population,Built Up Points",
@@ -1432,7 +1432,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Globalmap Landcover",
-            "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer",
             "layers": "Landcover",
             "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
             "ogcLinks": [
@@ -1446,7 +1446,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -1736,7 +1736,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Hydrogeology of Australia",
-            "url": "http://www.ga.gov.au/gis/services/groundwater/Hydrogeology_of_Australia/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Hydrogeology_of_Australia/MapServer/WMSServer",
             "layers": "hydrogeology",
             "metadataText": "This service shows the Principal Hydrogeological Divisions of Australia which was produced from the 1:5,000,000 scale Hydrogeology of Australia map (Jacobsen and Lau, 1987).",
             "ogcLinks": [
@@ -1746,15 +1746,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/Hydrogeology_of_Australia/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/groundwater/Hydrogeology_of_Australia/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/groundwater/Hydrogeology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/groundwater/Hydrogeology_of_Australia/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/groundwater/Hydrogeology_of_Australia/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/groundwater/Hydrogeology_of_Australia/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -1920,7 +1920,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Landuse",
-            "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer",
             "layers": "Landuse",
             "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
             "ogcLinks": [
@@ -1934,7 +1934,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/topography/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -1982,7 +1982,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Landform Type",
-            "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Landform_Type_WM/MapServer",
+            "url": "http://services.ga.gov.au/rest/services/Geomorphology_Landform_Type_WM/MapServer",
             "opacity": 0.75,
             "tileSize": "256",
             "attribution": "Landform Type <a target='_blank' href='http://creativecommons.org/licenses/by/3.0/au/deed.en'>CC-By-Au</a>",
@@ -1994,19 +1994,19 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Landform_Type_WM/MapServer"
+                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Landform_Type_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Landform_Type_WM/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/rest/services/Geomorphology_Landform_Type_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
 			"queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
 			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
 			"queryVersion": "1.1.0",
 			"queryType": "WMS"
@@ -2047,7 +2047,7 @@
                 }
             ],
 			"queryFeatures": true,
-			"queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/Geomorphology_Landform_Subtype_WM/MapServerMapServer/WMSServer",
 			"queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
 			"queryVersion": "1.1.0",
 			"queryType": "WMS"
@@ -3155,14 +3155,14 @@
 			"mapType": "WMS",
 			"visibility": true,
 			"name": "Onshore Seismic Surveys",
-			"url": "http://www.ga.gov.au/gis/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer/WMSServer",
+			"url": "http://services.ga.gov.au/gis/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer/WMSServer",
 			"layers": "OnshoreSeismicSurveyLines",
 			"metadataText": "The Onshore Seismic Data of Australia is a collection of all land seismic traverses cross the Australian continent and its margins. The data includes raw and processed data in SEGY format. The metadata includes acquisition reports, processing reports, processed images, logs, and so on. The data acquisition was carried out in Australia from 1949-2012 by Geoscience Australia and various partners. The set of reflection and refraction data comprises over 12,000 km of coverage, and provides an insight into the variations in crustal architecture in the varied geological domains. The complete processed dataset was first available for public access in Oct 2013 (http://www.ga.gov.au/minerals/projects/current-projects/seismic-acquisition-processing.html ). The location of seismic traverses is shown by the Gallery link on the webpage. The new survey data will be updated on the webpage by the official data release date. The attribute structure of the dataset has also been revised to be more compatible with the GeoSciML data standard, published by the IUGS Commission for Geoscience Information. The onshore seismic data were collected with partner organizations: Australian Geodynamics Cooperative Research Centre, National Research Facility for Earth Sounding, Australian Nuclear Science and Technology Organisation, Cooperative Research Centre for Greenhouse Gas Technologies, Curtin University of Technology, Geological Survey of New South Wales, NSW Department of Mineral Resources, NSW Department of Primary Industries Mineral Resources, An organisation for a National Earth Science Infrastructure Program, Geological Survey Western Australia, Northern Territory Geological Survey, Primary Industries and Resources South Australia, Predictive Mineral Discovery Cooperative Research Centre, Queensland Geological Survey, GeoScience Victoria Department of Primary Industries, Tasmania Development and Resources, University of Western Australia.",
 			"ogcLinks": [
 			{"description": "Service Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_12fa048f-c6b5-4268-848b-4a2f8d13be3c/Geoscience+Australia+Onshore+Seismic+Surveys+Map+Service"},
-			{"description": "Service Metadata (REST)","url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer"},
-			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gis/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
-			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gis/rest/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer?f=lyr&v=9.3"}],			
+			{"description": "Service Metadata (REST)","url": "http://services.ga.gov.au/gis/rest/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer"},
+			{"description": "WMS Capabilities","url": "http://services.ga.gov.au/gis/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://services.ga.gov.au/gis/rest/services/earth_science/GA_Onshore_Seismic_Surveys/MapServer?f=lyr&v=9.3"}],			
 			"opacity": 1.0,
 			"queryFeatures": false			
 		},
@@ -3202,7 +3202,7 @@
 			{"description": "Service Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-f9e7-7506-e044-00144fdd4fa6/OZTemp+-+Interpreted+Temperature+at+5km+Depth+Image"},
 			{"description": "Service Metadata (REST)","url": "http://services.ga.gov.au/gis/rest/services/OzTemp_Well_Data/MapServer"},
 			{"description": "WMS Capabilities","url": "http://services.ga.gov.au/gis/services/OzTemp_Well_Data/MapServer?request=GetCapabilities&service=WMS"},
-			{"description": "WFS Capabilities","url": "http://www.ga.gov.au/gis/services/energy/OZTemp_Well_Data/MapServer/WFSServer?request=GetCapabilities&service=WFS"},
+			{"description": "WFS Capabilities","url": "http://services.ga.gov.au/gis/services/energy/OZTemp_Well_Data/MapServer/WFSServer?request=GetCapabilities&service=WFS"},
 			{"description": "ArcMap Layerfile","url": "http://services.ga.gov.au/gis/rest/services/OzTemp_Well_Data/MapServer?f=lyr&v=9.3"}],
 			"opacity": 1.0,
 			"queryFeatures": false			
@@ -3829,7 +3829,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -3837,11 +3837,11 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geoscience_Australia_Geochronology/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Rb-Sr"
@@ -3853,7 +3853,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Regolith Geochemistry",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
             "layers": "RegolithGeochemistry",
             "opacity": 1,
             "layerTimeout": 5000,
@@ -3881,7 +3881,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RegolithGeochemistry"
@@ -4178,7 +4178,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistry"
@@ -4248,7 +4248,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistryIgneous"
@@ -4288,7 +4288,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistryMetamorphic"
@@ -4328,7 +4328,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "RockGeochemistrySedimentary"
@@ -4381,7 +4381,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -4389,12 +4389,12 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
                 }
             ],
             "layerTimeout": 5000,
 			"queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/Geomorphology_Smartline/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Sandy"
@@ -5148,7 +5148,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochemical_Analyses/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "SeismicGeochemistry"
@@ -5184,7 +5184,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Sm-Nd"
@@ -5310,7 +5310,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -5318,12 +5318,12 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gis/rest/services/earth_science/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer?f=lyr&v=9.3"
                 }
             ],
             "layerTimeout": 5000,
 			"queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/site_11/services/Geomorphology_Smartline/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Subtidal - dominate landform"
@@ -5381,7 +5381,7 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer/WMSServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
@@ -5393,7 +5393,7 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/site_1/rest/services/GA_Surface_Geology/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/services/GA_Surface_Geology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines"
@@ -5428,7 +5428,7 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/site_1/rest/services/GA_Surface_Geology/MapServer /WMSServer",
+            "queryUrl": "http://services.ga.gov.au/services/GA_Surface_Geology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_2500K_GUPoly_Lithostratigraphy,AUS_GA_2500K_Contacts,AUS_GA_2500K_Faults,AUS_GA_2500K_MiscLines"
@@ -5462,7 +5462,7 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/site_1/rest/services/GA_Surface_Geology/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_1M_MiscLines,AUS_GA_1M_Faults,AUS_GA_1M_Contacts,AUS_GA_1M_GULine,AUS_GA_1M_GUPoly_Lithostratigraphy",
@@ -5501,7 +5501,7 @@
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/topography/AusHydro_WM/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Surface_Hydrology_WM/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AusHydro_Canal_Line,AusHydro_DamWalls,AusHydro_Levees,AusHydro_RapidLines,AusHydro_Spillways,AusHydro_Water_Pipeline,AusHydro_Flats,AusHydro_Flats_3,AusHydro_PondageAreas_2,AusHydro_ForeshoreFlats_2,AusHydro_Lakes_3,AusHydro_WatercourseAreas_2,AusHydro_Rivers_3",
@@ -5523,20 +5523,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gis/rest/services/legislation/Treaty_Australia_Complete/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gis/services/legislation/Treaty_Australia_Complete/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http:/www.ga.gov.au/gis/services/legislation/Treaty_Australia_Complete/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gis/services/legislation/Treaty_Australia_Complete/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Australian_Maritime_Boundary_Treaties_AMB2014a/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Points,East_Timor_Certain_Maritime_Arrangements_in_the_Timors_Sea_Treaty_AMB2014_Limit,East_Timor_Joint_Petroleum_Development_Area_AMB2014_Points,East_Timor_Joint_Petroleum_Development_Area_AMB2014_Limit,East_Timor_Unitisation_Agreement_AMB2014_Points,East_Timor_Unitisation_Agreement_AMB2014_Limit,France_Heard_and_McDonald_Islands_AMB2014_Points,France_Heard_and_McDonald_Islands_AMB2014_Limit,France_New_Caledonia_AMB2014_Points,France_New_Caledonia_AMB2014_Limit,Indonesia_1971_Seabed_Treaty_AMB2014_Points,Indonesia_1971_Seabed_Treaty_AMB2014_Limit,Indonesia_1972_Seabed_Treaty_AMB2014_Points,Indonesia_1972_Seabed_Treaty_AMB2014_Limit,Indonesia_Perth_Treaty_1997_Exclusive_Economic_Zone_AMB2014_Points,Indonesia_Perth_Treaty_1997_Exclusive_Economic_Zone_AMB2014_Line,Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Points,Indonesia_Perth_Treaty_1997_Seabed_AMB2014_Limit,Indonesia_Memorandum_of_Understanding_AMB2014_Points,Indonesia_Memorandum_of_Understanding_AMB2014_Limit,Indonesia_Perth_Treaty_1997_Area_of_Overlapping_Jurisdiction_Area,Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Points,Indonesia_Provisional_Fisheries_Surveillance_and_Enforcement_Line_AMB2014_Limit,New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Points,New_Zealand_Lord_Howe_Island_and_Norfolk_Island_AMB2014_Limit,New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Points,New_Zealand_Macquarie_Island_and_Auckland_and_Campbell_Islands_AMB2014_Limit,Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Points,Papua_New_Guinea_Fisheries_Jurisdiction_Line_AMB2014_Limit,Papua_New_Guinea_Seabed_AMB2014_Points,Papua_New_Guinea_Seabed_AMB2014_Limit,Papua_New_Guinea_Territorial_Sea_AMB2014_Points,Papua_New_Guinea_Territorial_Sea_AMB2014_Limit,Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Points,Papua_New_Guinea_Torres_Strait_Protected_Zone_AMB2014_Limit,Solomon_Islands_AMB2014_Points,Solomon_Islands_AMB2014_Limit"
@@ -6015,7 +6015,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "U-PbSHRIMPmagmatic"
@@ -6047,7 +6047,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "U-PbSHRIMPmaximumDepositional"
@@ -6079,7 +6079,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "U-PbSHRIMPmetamorphic"
@@ -6111,7 +6111,7 @@
                 }
             ],
             "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/site_11/services/GA_Geochronology/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "U-PbTIMSconventional"

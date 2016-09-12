@@ -57,32 +57,14 @@
                 "titleText": "Identify features",
                 "panelHeading": "Identify Features",
                 "symbol": "<img src=\"content/marker/zoom-32.png\"/>",
-                "propertiesOfInterest": ["cont_val","Pixel value"],
+                "propertiesOfInterest": ["cont_val","PixelValue"],
                 "propertiesAlias": ["Contour Value (g)","Pixel Value (g)"],
                 "primaryPropertyName": "",
                 "showEmptyFeatures": true,
                 "requiresGeometry": false,
                 "markerUrl": "content/marker/marker-identify.png",
                 "markerWidth": "55",
-                "markerHeight": "40",
-                "endpoints": [			
-					{
-					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer",
-					"geometryName": "Shape",
-					"layers":"1",
-					"imageDisplay": "600,550,96",
-					"featureTitle": "0.0s Response Spectral Acceleration (RSA)", 
-					"queryType": "ArcGISREST" 
-					},
-					{ 
-					"url": "http://www.ga.gov.au/gis/rest/services/hazards/EarthquakeHazard/MapServer",
-					"geometryName": "Shape",
-					"layers":"0", 
-					"imageDisplay": "600,550,96", 
-					"featureTitle": "RSA Contours", 
-					"queryType": "ArcGISREST" 
-					}
-			]
+                "markerHeight": "40"			
 			}
 			}
         ]
@@ -94,7 +76,8 @@
     ],
     "layerMaps": [
         {
-            "slug": "Australian_Topography_2014_ARCGIS"
+            "slug": "Australian_Topography_2014_ARCGIS",
+			 "queryFeatures": false
         },
         {
             "slug": "Earthquake_Hazards",

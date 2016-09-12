@@ -292,7 +292,7 @@
                     "endpoints": [
 						{
 							"featureTitle": "Geomorphology",
-                            "queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
+                            "queryUrl": "http://services.ga.gov.au/gis/services/Geomorphology_Landform_Type_WM/MapServer/WMSServer",
                             "queryLayers": "Landform Type Geomorphology Reclassified 25K,Landform Type Regolith Reclassified 25K,Landform Type Surface Geology Reclassified 25K,Landform Type Geomorphology Reclassified 50K,Landform Type Geomorphology Reclassified 100K,Landform Type OzEstuaries Reclassified 100K,Landform Type Offshore Geomorphology Reclassified 100K,Landform Type Surface Geology Reclassified 100K,Landform Type Surface Geology Reclassified 250K,Landform Type Surface Geology Reclassified 500K",
                             "queryVersion": "1.1.0",
                             "queryType": "WMS"
@@ -300,7 +300,7 @@
                         {
 							"featureTitle": "Geomorphology Smartline",
                             "queryType": "WMS",
-                            "queryUrl": "http://www.ga.gov.au/gis/services/earth_science/Geomorphology_Smartline/MapServer/WMSServer",
+                            "queryUrl": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
                             "queryLayers": "Intertidal - dominate landform",
                             "queryVersion": "1.1.0",
                             "queryFeatures": true

@@ -5412,7 +5412,7 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "AUS_GA_1M_MiscLines,AUS_GA_1M_Faults,AUS_GA_1M_Contacts,AUS_GA_1M_GULine,AUS_GA_1M_GUPoly_Lithostratigraphy",

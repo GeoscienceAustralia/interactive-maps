@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+	<StyledLayerDescriptor version="1.0.0"
+	xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+	xmlns="http://www.opengis.net/sld"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NamedLayer>
+	<Name>Sentinel</Name>
+	<UserStyle>
+		<Title>Sentinel</Title>
+		<FeatureTypeStyle>
+		<Rule>
+			<Name>Small Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>80</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>30001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>30000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>300</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>800</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Small Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>80</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>30001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>30000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>300</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>800</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+				<Rule>
+			<Name>Small Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>80</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>30001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>30000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>300</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>800</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+				<Rule>
+			<Name>Small Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>80</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>30001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>30000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>300</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>800</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+				<Rule>
+			<Name>Small Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>80</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>30001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>30000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>300</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsNotEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsNotEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:8080/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>800</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Small Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>600</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo> 
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Red.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>1200</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Small Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>600</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>2</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Purple.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>1200</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+				<Rule>
+			<Name>Small Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>600</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>6</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Orange.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>1200</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+				<Rule>
+			<Name>Small Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>600</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>24</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Yellow.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>1200</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+				<Rule>
+			<Name>Small Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>90001</MinScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>15</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Medium Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>90000</MaxScaleDenominator>          
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>60001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>100</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Large Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MinScaleDenominator>5001</MinScaleDenominator>
+			<MaxScaleDenominator>60000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>600</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		<Rule>
+			<Name>Largest Scale</Name>
+			<Title>Himawari hotspots detected from a satellite overpass within the last 2 hours</Title>
+			<ogc:Filter>
+				<ogc:And>
+					<ogc:PropertyIsGreaterThan>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>48</ogc:Literal>
+					</ogc:PropertyIsGreaterThan>
+					<ogc:PropertyIsLessThanOrEqualTo>
+						<ogc:PropertyName>age_hours</ogc:PropertyName>
+						<ogc:Literal>72</ogc:Literal>
+					</ogc:PropertyIsLessThanOrEqualTo>
+					<ogc:PropertyIsEqualTo>				
+						<ogc:PropertyName>sensor</ogc:PropertyName>
+						<ogc:Literal>Himawari-8</ogc:Literal>
+					</ogc:PropertyIsEqualTo>
+				</ogc:And>
+			</ogc:Filter>
+			<MaxScaleDenominator>5000</MaxScaleDenominator>
+			<PointSymbolizer>
+			<Graphic>
+			<ExternalGraphic>
+			<OnlineResource xlink:type="simple" xlink:href="http://localhost:100100/hotspots/ModisFire-Grey.png"/>
+			<Format>image/png</Format>
+			</ExternalGraphic>
+			<Size>1200</Size>
+			</Graphic>
+			</PointSymbolizer>
+		</Rule>
+		</FeatureTypeStyle>
+	</UserStyle>
+	</NamedLayer>
+</StyledLayerDescriptor>

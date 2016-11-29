@@ -7,7 +7,13 @@
         "title": "Applying geoscience to Australia's most important challenges",
         "backgroundImageUrl": "resources/img/header_bg.png"
 		},
-    "maps": [		
+    "maps": [
+		{
+            "title": "Landsat Latest Pixel",
+            "id": "latestlandsat",
+            "previewImageUrl": "content/earthobservation/latestlandsat/mapPreview.jpg",
+            "previewDescription": "Latest pixel of the landsat images, this product is a search to find the best aligned pixel over time. Some pixel searches go back over 250 days for the bext cloud free pixel."
+        },
 		{
             "title": "Water Observations from Space",
             "id": "wofs",

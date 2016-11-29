@@ -1,0 +1,97 @@
+{
+    "id": "pd",
+    "title": "Pixel Drill",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv2",
+    "initialExtent": [
+        [
+			115.65,
+			-30.34
+		],
+		[
+			118.98,
+			-33.08
+		]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Pixel Drill"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": ""
+    },
+    "layersConfig": {
+        "enabled": true
+    },
+	"overviewOptions": {
+		"layers": [
+			{
+            "slug": "National_Color_Base_Map"
+			}
+		]
+	},
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/water/wofs/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [            
+			{
+                "id": "addLayer"
+            },
+			{
+                "id": "identifyTool",
+	            "toolPanelUrl": "resources/pixeldrill/pixelDrillPanel.html",				
+                "config": {
+					"titleText": "Landsat Pixel Drill",
+					"panelHeading": "Landsat Pixel Drill",
+					"panelSize":"large",
+                    "propertiesOfInterest": [
+                        "GRAY_INDEX"
+                    ],
+                    "propertiesAlias": [
+                        "Pixel Value"
+                    ],
+                    "endpoints": [
+                        {
+                            "featureTitle": "WOFS Clear Observations (# times)",
+                            "queryUrl": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
+                            "queryLayers": "ClearObservations",
+                            "queryVersion": "1.1.0",
+                            "queryType": "WMS",
+							"queryInfoFormat": "application/json"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+		{
+			"slug": "ESRI_Imagery",
+			"visibility": false
+		},
+		{
+			"slug": "National_GreyScale_Base_Map",
+			"visibility": false
+		}
+    ],
+    "layerMaps": [
+        {
+			"slug": "Surface_Hydrology",
+			"opacity": 0.7
+		}
+    ],    
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

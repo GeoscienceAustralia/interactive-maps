@@ -1,0 +1,108 @@
+{
+    "id": "latestlandsat",
+    "title": "Landsat 8 median pixel",
+    "datumProjection": "EPSG:3857",
+    "displayProjection": "EPSG:4326",
+	"framework":"olv2",	
+    "initialExtent": [
+        [
+            99,
+            10
+        ],
+        [
+            169,
+            -55
+        ]
+    ],
+    "requiresTermsAndConditions": false,
+    "headerConfig": {
+        "title": "Landsat 8 median pixel"
+    },
+    "aboutConfig": {
+        "enabled": true,
+        "bodyUrl": "content/earthobservation/latestlandsat/aboutlatestlandsat.html"
+    },
+    "layersConfig": {
+        "enabled": true
+    },	
+    "baseLayersConfig": {
+        "enabled": true
+    },
+    "legendConfig": {
+        "enabled": true,
+        "legendUrl": "content/earthobservation/latestlandsat/legend.html"
+    },
+    "toolsConfig": {
+        "enabled": true,
+        "timeout": 5000,
+        "tools": [
+            {
+                "id": "info",
+                "config": {
+                    "infoList": [
+                        {
+                            "id": "Latest Pixel Landsat Web Service",
+                            "url": "http://intranet-dev.ga.gov.au/gis/services/latestlandsat/MapServer/WCSServer?request=GetCapabilities&service=WCS"
+                        }
+                    ]
+                }
+            },
+			{
+                "id": "addLayer"
+            },
+			{
+                "id": "identifyTool",
+                "config": {
+                    "propertiesOfInterest": [
+                        "Red",
+						"Green",
+						"Blue"
+                    ],
+                    "propertiesAlias": [
+                        "Red",
+						"Green",
+						"Blue"
+                    ],
+                    "endpoints": [
+                        {
+                            "featureTitle": "Landsat 8 true colour median pixel",
+                            "queryUrl": "http://intranet-dev.ga.gov.au/gis/services/latestlandsat/MapServer/WMSServer",
+                            "queryLayers": "AusMosaic_LS8_2014_15_321",
+                            "queryVersion": "1.1.0",
+                            "queryType": "WMS"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "baseMaps": [
+        {
+		"slug": "latestlandsat",
+		"id": "latestlandsat",
+		"extent": [[99,10],[169,-55]],
+		"mapType": "WMS",
+		"layers": "nemo:LandsatLatestPixel",
+		"visibility": true,
+		"opacity": 1,
+		"name": "Landsat 8 median pixel",
+		"url": "http://localhost:8080/geoserver/gwc/service/wms?SRS=EPSG:3857",
+		"metadataText": "Latest landsat pixel.",
+		"ogcLinks": [
+			{
+			"description": "WMS Capabilities",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/latestlandsat/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+			},
+			{
+			"description": "WCS Capabilities",
+			"url": "http://intranet-dev.ga.gov.au/gis/services/latestlandsat/MapServer/WCSServer?request=GetCapabilities&service=WCS"
+			}
+			]
+		}
+    ],
+    "search": {
+        "type": "geonames",
+        "typeAheadTemplateUrl": "resources/partial/placeNameSearchResultTemplate.html",
+        "primaryWfsProperty": "name"
+    }
+}

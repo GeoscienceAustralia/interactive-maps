@@ -8,43 +8,43 @@
         {
             "id": "amsis",
             "title": "Australian Marine Spatial Information System",
-            "previewImageUrl": "content/amsis/themePreview.png",
+            "previewImageUrl": "content/amsis/themePreview.jpg",
             "previewDescription": "Australian Marine Spatial Information System (AMSIS) is a web based interactive mapping and decision support system that provides access to integrated government and non-government information in the Australian Marine Jurisdiction."
         },
 		{
             "id": "earthobservation",
             "title": "Earth Observation and Satellite Imagery",
-            "previewImageUrl": "content/earthobservation/themePreview.png",
+            "previewImageUrl": "content/earthobservation/themePreview.jpg",
             "previewDescription": "Geoscience Australia provides Earth observation services, expert advice, and information for decision makers. We are Australia's principal earth resource satellite ground station and data processing facility."
         },				
         {
             "id": "national-location-information",
             "title": "National Location Information",
-            "previewImageUrl": "content/national-location-information/themePreview.png",
+            "previewImageUrl": "content/national-location-information/themePreview.jpg",
             "previewDescription": "Geoscience Australia provides authoritative geographic information services and products to enable evidence-based decision making, deliver government policy, assist industry development needs and support community wellbeing."
         },
         {
             "id": "minerals",
             "title": "Geology and Geophysics",
-            "previewImageUrl": "content/minerals/themePreview.png",
+            "previewImageUrl": "content/minerals/themePreview.jpg",
             "previewDescription": "Geoscience Australia provides pre-competitive geoscience information to address greenfield exploration challenges and identify new mineral provinces within Australia."
         },		
         {
             "id": "hazards",
             "title": "Hazards",
-            "previewImageUrl": "content/hazards/themePreview.png",
+            "previewImageUrl": "content/hazards/themePreview.jpg",
             "previewDescription": "Historically, bushfires, floods, earthquakes, landslides and cyclones have caused loss of life and significant damage to property and infrastructure."
         },
         {
             "id": "marine",
             "title": "Marine and Coastal",
-            "previewImageUrl": "content/marine/themePreview.png",
+            "previewImageUrl": "content/marine/themePreview.jpg",
             "previewDescription": "Information regarding Australia's coasts and estuaries, seabed mapping and Antarctica."
         },
         {
             "id": "water",
             "title": "Water",
-            "previewImageUrl": "content/water/themePreview.png",
+            "previewImageUrl": "content/water/themePreview.jpg",
             "previewDescription": "Geoscience Australia provides information and advice towards the management of Australia's groundwater and surface water resources."
         }
 		

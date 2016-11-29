@@ -66,7 +66,7 @@
                     "endpoints": [
                         {
                             "featureTitle": "Landsat 8 true colour median pixel",
-                            "queryUrl": "http://intranet-dev.ga.gov.au/gis/services/latestlandsat/MapServer/WMSServer",
+                            "queryUrl": "http://localhost:8080/geoserver/nemo/wms",
                             "queryLayers": "AusMosaic_LS8_2014_15_321",
                             "queryVersion": "1.1.0",
                             "queryType": "WMS"
@@ -86,16 +86,12 @@
 		"visibility": true,
 		"opacity": 1,
 		"name": "Landsat 8 median pixel",
-		"url": "http://localhost:8080/geoserver/gwc/service/wms?SRS=EPSG:3857",
+		"url": "http://localhost:8080/geoserver/nemo/wms",
 		"metadataText": "Latest landsat pixel.",
 		"ogcLinks": [
 			{
 			"description": "WMS Capabilities",
-			"url": "http://intranet-dev.ga.gov.au/gis/services/latestlandsat/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-			},
-			{
-			"description": "WCS Capabilities",
-			"url": "http://intranet-dev.ga.gov.au/gis/services/latestlandsat/MapServer/WCSServer?request=GetCapabilities&service=WCS"
+			"url": "http://localhost:8080/geoserver/nemo/wms?request=GetCapabilities&service=WMS"
 			}
 			]
 		}

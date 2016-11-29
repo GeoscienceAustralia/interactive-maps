@@ -12,7 +12,7 @@
             "title": "Landsat Latest Pixel",
             "id": "latestlandsat",
             "previewImageUrl": "content/earthobservation/latestlandsat/mapPreview.jpg",
-            "previewDescription": "Latest pixel of the landsat images, this product is a search to find the best aligned pixel over time. Some pixel searches go back over 250 days for the bext cloud free pixel."
+            "previewDescription": "Latest pixel of the landsat images. This Australian Geoscience Data Cube product finds the best landsat pixel from latest date backwards. Some pixel searches go back over 250 days for the best cloud free pixel."
         },
 		{
             "title": "Water Observations from Space",

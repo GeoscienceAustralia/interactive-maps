@@ -56,7 +56,7 @@
         <dependency>
             <groupId>org.tuckey</groupId>
             <artifactId>urlrewritefilter</artifactId>
-            <version>4.0.1-R353-2012-06-22</version>
+            <version>3.2.0</version>
         </dependency>
 	</dependencies>
 
@@ -282,11 +282,8 @@
 
     <distributionManagement>
         <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>ga-maven-int</id>
-            <name>Geoscience Internal Maven Repo</name>
-            <url>http://maven-int.ga.gov.au/nexus/content/repositories/snapshots/</url>
-            <layout>default</layout>
+            <id>nexus.gadevs</id>
+            <url>https://nexus.gadevs.ga/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 </project>

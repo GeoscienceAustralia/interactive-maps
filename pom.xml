@@ -282,8 +282,9 @@
 
     <distributionManagement>
         <repository>
-            <id>nexus.gadevs</id>
-            <url>https://nexus.gadevs.ga/repository/maven-releases/</url>
+            <id>ga-maven-int</id>
+            <name>Geoscience Internal Maven Repo</name>
+            <url>http://maven-int.ga.gov.au/nexus/content/repositories/snapshots/</url>
         </repository>
     </distributionManagement>
 </project>

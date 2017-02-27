@@ -366,7 +366,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer ?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer ?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -397,7 +397,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer ?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer ?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -428,7 +428,7 @@
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer ?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer ?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -737,34 +737,29 @@
             "slug": "Earthquake_Hazards",
 			"extent": [[99,10],[169,-55]],
             "id": "Australian earthquake hazard WMS",
-            "mapType": "WMS",
+            "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Earthquake Hazards",
-            "layers": "earthquakeHazard,hazardContours",
-            "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Earthquake_Hazard_WM/MapServer",
             "opacity": 1,
             "layerTimeout": 5000,
-            "metadataText": "Earthquake hazard web map service created by Geoscience Australia. The service contains the 2013 Earthquake Hazard map, as a raster and contours. This map shows the peak ground acceleration (response spectral period of 0.0s) on rock expected for a 500 year return period, in units of g, evaluated for the geometric mean of the horizontal components. The map is the closest in return period and response spectral period to the current earthquake hazard map in the Australian Standard AS1170.4-2007.",
+            "metadataText": "The service contains the 2013 Earthquake Hazard map, as a raster and contours. This map shows the peak ground acceleration (response spectral period of 0.01 seconds) on rock expected for a 500 year return period, in units of g, evaluated for the geometric mean of the horizontal components. The map is the closest in return period and response spectral period to the current earthquake hazard map in the Australian Standard AS1170.4-2007.",
             "ogcLinks": [
                 {
-                    "description": "Dataset Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_c2b79c7d-c73f-69a0-e044-00144fdd4fa6/Australian+Earthquakes+2011"
-                },
-                {
                     "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_4262860e-43e5-48c0-a57f-b990f59486ab/Australian+earthquake+hazard+map+service"
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0bf71062-c25c-4e5f-86d7-aed0e016a43d/Expected+Australian+Earthquake+Hazard+%28Web+Mercator%29+WMS"
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Earthquake_Hazard/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Earthquake_Hazard_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Earthquake_Hazard/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Earthquake_Hazard_WM/MapServer?f=lyr&v=9.3"
                 },
                 {
                     "description": "Product Metadata",
@@ -772,10 +767,10 @@
                 }
             ],
             "queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/gis/services/Earthquake_Hazard/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Earthquake_Hazard_WM/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "hazardContours,earthquakeHazard"
+            "queryLayers": "Hazard_contours,Earthquake_hazard"
         },
         {
             "slug": "EASIA_CCOP 1:2M_Combined_Bedrock_And_Superficial_Geology_And_Age",
@@ -1320,8 +1315,7 @@
                     "description": "ArcMap Layerfile",
                     "url": "http://services.ga.gov.au/gis/rest/services/Geomorphology_Scale_Guide_WM/MapServer?f=lyr&v=9.3"
                 }
-            ],
-			"queryFeatures": false
+            ]
         },
         {
             "slug": "Geophysics_Reference_Map",
@@ -1360,7 +1354,6 @@
 			"mapType": "WMS",
 			"visibility": true,
 			"url": "http://services.ga.gov.au/gis/services/Geological_Provinces_2013/MapServer/WMSServer",
-			"name": "Geological Provinces 2013",
 			"opacity": 1,
 			"layers": "SedimentaryBasins-Cenozoic,SedimentaryBasins-MesozoicCenozoic,SedimentaryBasins-Mesozoic,SedimentaryBasins-PaleozoicCenozoic,SedimentaryBasins-PaleozoicMesozoic,SedimentaryBasins-LatePaleozoic,SedimentaryBasins-EarlyToLatePaleozoic,SedimentaryBasins-EarlyPaleozoic,SedimentaryBasins-Mesoproterozoic,SedimentaryBasins-Paleoproterozoic,SedimentaryBasins-ArcheanPaleoproterozoic",
 			"metadataText": "The Australian Geological Provinces web map service contains descriptions of the fundamental geological elements of the Australian continent and offshore surrounds. Province types include sedimentary basins, tectonic provinces such as cratons and orogens, igneous provinces, and metallogenic provinces. Spatial data has been captured largely at approximately 1:1M scale for intended use between 1:2M and 1:5M scale. The full 2D spatial extent (i.e. including the extent of a province under any overlying cover material) of each province has been captured.",
@@ -2627,7 +2620,7 @@
             "url": "http://services.ga.gov.au/gis/services/Marine_Survey_Multibeam_Backscatter/MapServer/WMSServer",
             "layers": "GA4301_2m,GA0334_N_2m,GA0334_S_2m,GA0333_1m,GA0315_friars_3m,GA0315_fortescue_2m,GA0315_freycinet_4m,GA0315_portarthur_1m,GA0315_huon_1m,GA0315_tinderbox_3m,GA0315_maria_1m,GA0308_gnaraloo_3m,GA0308_mandu1_3m,GA0308_mandu2_3m,GA0308_mandu3_3m,GA0308_pointcloates_3m,GA0345_a1_5m,GA0345_a2_5m,GA0345_a3_5m,GA0345_a4_5m,GA0345_a6b_5m,GA0345_a7_5m,GA0345_a8_5m,GA0345_b1_5m,GA0345_c1_5m,GA0345_c2b_5m,GA0345_f1b_5m,GA0345_m1_5m,GA0340_a1_2m,GA0340_a2_2m,GA0340_a3_2m,GA0340_a4_2m,GA0340_a5_2m,GA0340_a10_2m,GA0339_grid1_2m,GA0339_grid2_2m,GA0339_grid3_2m,GA0339_grid4_2m,GA0325_a_10m,GA0325_b_10m,GA0325_c_10m,GA0325_d_10m,GA2476_200m",
             "opacity": 1,
-			"metadataText": "The Marine Survey Multibeam Backscatter Web Map Service contains the highest-resolution multibeam backscatter grids available for download on Geoscience Australia�s website. These backscatter grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the backscatter grids. Backscatter grids have been rendered over a yellow-bronze colour-ramp with minimum and maximum decibel values being -40 and -10 dB respectively. The resolution of each backscatter grid is also specified in each survey's layer description.",
+			"metadataText": "The Marine Survey Multibeam Backscatter Web Map Service contains the highest-resolution multibeam backscatter grids available for download on Geoscience Australia?s website. These backscatter grids were collected over numerous multibeam survey programs conducted in Australian mainland and Antarctic waters by both Geoscience Australia and our collaborators. Layers are grouped by survey or region and where available include both the Geoscience Australia and vessel survey identification numbers that contributed to the backscatter grids. Backscatter grids have been rendered over a yellow-bronze colour-ramp with minimum and maximum decibel values being -40 and -10 dB respectively. The resolution of each backscatter grid is also specified in each survey's layer description.",
 			"ogcLinks": [                
                 {
                     "description": "Service Metadata (REST)",
@@ -5300,7 +5293,7 @@
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer /WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/GA_Surface_Geology/MapServer /WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
@@ -6529,7 +6522,6 @@
 					"url": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 				}
 			],
-			"opacity": 0.8,
 			"queryFeatures": true,
 			"queryUrl": "http://www.environment.gov.au/mapping/services/ogc_services/World_Heritage_Areas/MapServer/WMSServer",
 			"queryUrlType": "WMS",

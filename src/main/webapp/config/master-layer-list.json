@@ -35,42 +35,7 @@
             "queryVersion": "1.1.1",
             "queryLayers": "AirborneSurveys2014"			
         },
-        {
-            "slug": "All_Geochronology",
-			"extent": [[30,10],[176,-75]],
-            "id": "All_Geochronology",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "All Geochronology",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "layers": "Sm-Nd,U-PbSHRIMPmagmatic,U-PbSHRIMPmaximumDepositional,U-PbSHRIMPmetamorphic,U-PbTIMSconventional,Rb-Sr",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. There are layers for SHRIMP, Sm-Nd, Rb-Sr and U-Pb. While the data used for SHRIMP and Sm-Nd is from new data releases, the data for Rb-Sr and U-Pb is the same as used in the National Geoscience Datasets service. Some data for Antarctica is included.",
-            "ogcLinks": [
-				{
-                    "description": "Dataset Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_612b9aff-ac19-49a1-b4db-4167dd4eb74f/Geoscience+Australia+Geochronology+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "U-PbTIMSconventional,U-PbSHRIMPmagmatic,U-PbSHRIMPmaximumDepositional,U-PbSHRIMPmetamorphic,Rb-Sr,Sm-Nd"
-        },
+        
         {
             "slug": "Antarctica_10_Million_Geology",
 			"extent": [[-180,-60],[180,-90]],
@@ -162,24 +127,24 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Australian Topographic 250K Mosaic",
-            "url": "http://www.ga.gov.au/gisimg/rest/services/topography/NATMAP_Digital_Maps_250K_2008Edition_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/NATMAP_Digital_Maps_250K_2008Edition_WM/MapServer",
             "metadataText": "This cached map service contains the NATMAP 1:250,000 scale maps from the NATMAP Digital Maps 2008 DVD, produced by Geoscience Australia's National Mapping Division and its predecessor, the Australian Surveying and Land Information Group (AUSLIG), in the form of a single mosaic based on GDA94 geographic projection. This is the largest scale at which published topographic maps cover the entire continent. The maps have been revised using a variety of data sources, including SPOT and Landsat satellite imagery, other government agency information and data supplied by private companies and individuals.",
             "ogcLinks": [
                 {
                     "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_4fbb4152-91d1-427c-b985-fe06c7d7751e/NATMAP+Digital+Maps+250K+2008+Edition+WMS"
+                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_93868914-e038-4227-a47d-7a04468adf1e/NATMAP+Digital+Maps+250K+-+2008+Edition+%28Web+Mercator%29+WMS"
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/NATMAP_Digital_Maps_250K_2008Edition/ImageServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/NATMAP_Digital_Maps_250K_2008Edition_WM/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/topography/NATMAP_Digital_Maps_250K_2008Edition/ImageServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/NATMAP_Digital_Maps_250K_2008Edition_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/NATMAP_Digital_Maps_250K_2008Edition/ImageServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/NATMAP_Digital_Maps_250K_2008Edition_WM/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
@@ -262,13 +227,13 @@
             "visibility": true,
             "name": "Ausimage Canberra 2014",
 			"layers": "0",
-            "url": "http://www.ga.gov.au/gisimg/services/earth_observation/Ausimage_Canberra_2014/ImageServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Ausimage_Canberra_2014/ImageServer/WMSServer",
             "metadataText": "Ausimage Canberra 2014 is an OGC WMS web service of high resolution aerial imagery (10 cm to 18 cm) over Canberra and Queanbeyan, acquired in February and April 2014.",
             "ogcLinks" : [			
-			{"description": "Service Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_fc3be0ce-f593-1c6a-e044-00144fdd4fa6/Ausimage+Canberra+2014"},			
-			{"description": "Service Metadata (REST)","url": "http://www.ga.gov.au/gisimg/rest/services/earth_observation/Ausimage_Canberra_2014/ImageServer"},
-			{"description": "WMS Capabilities","url": "http://www.ga.gov.au/gisimg/services/earth_observation/Ausimage_Canberra_2014/ImageServer/WMSServer?request=GetCapabilities&service=WMS"},
-			{"description": "ArcMap Layerfile","url": "http://www.ga.gov.au/gisimg/rest/services/earth_observation/Ausimage_Canberra_2014/ImageServer?f=lyr&v=9.3"}]
+			{"description": "Service Metadata","url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_0f8921d0-f6db-4020-8c85-8f334da4e885/AUSIMAGE+Aerial+Imagery+Canberra+2014+WMS"},			
+			{"description": "Service Metadata (REST)","url": "http://services.ga.gov.au/gis/rest/services/Ausimage_Canberra_2014/ImageServer"},
+			{"description": "WMS Capabilities","url": "http://services.ga.gov.au/gis/services/Ausimage_Canberra_2014/ImageServer/WMSServer?request=GetCapabilities&service=WMS"},
+			{"description": "ArcMap Layerfile","url": "http://services.ga.gov.au/gis/rest/services/Ausimage_Canberra_2014/ImageServer?f=lyr&v=9.3"}]
         },
         {
             "slug": "Australian_Petroleum_Blocks_AMB_2014",
@@ -922,109 +887,7 @@
             ],
             "opacity": 1,
             "layerTimeout": 5000
-        },
-        {
-            "slug": "Elevation_Z54",
-			"extent": [[141,-32.5],[143,-34.6]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Elevation z54",
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone54/ImageServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "0",
-            "url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone54/ImageServer/WMSServer",
-            "layers": "0",
-            "opacity": 1,
-            "metadataText": "DEMs derived from LiDAR data from a number of different elevation projects within MGA zone 54 are contained in this web service. This service will continually be updated with additional datasets. The GeoCat record for this service is: The current elevation projects in this service are: Murray-Darling Elevation Project 2013-2014 - Lower Darling, Geocat record: 78360.",
-            "ogcLinks": [
-				{
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_19ae9871-17e7-4176-9aaa-5cffcbbe313c/DigitalElevationModel_LiDAR_MGAZone54"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone54/ImageServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone54/ImageServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone54/ImageServer?f=lyr&v=9.3"
-                }
-            ]
-        },
-        {
-            "slug": "Elevation_Z55",
-			"extent": [[147.1,-29],[150.7,-31]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Elevation z55",
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone55/ImageServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "0",
-            "url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone55/ImageServer/WMSServer",
-            "layers": "0",
-            "opacity": 1,
-            "metadataText": "DEMs derived from LiDAR data from a number of different elevation projects within MGA zone 55 are contained in this web service. This service will continually be updated with additional datasets. The GeoCat record for this service is: The current elevation projects in this service are: Murray-Darling Elevation Project 2013-2014 - Namoi1 and Namoi2, Geocat record: 79221.",
-            "ogcLinks": [
-				{
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_19ae9871-17e7-4176-9aaa-5cffcbbe313c/DigitalElevationModel_LiDAR_MGAZone55"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone55/ImageServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone55/ImageServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone55/ImageServer?f=lyr&v=9.3"
-                }
-            ]
-        },
-        {
-            "slug": "Elevation_Z56",
-			"extent": [[149.6,-30],[150,-31]],
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Elevation z56",
-            "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone56/ImageServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "0",
-            "url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone56/ImageServer/WMSServer",
-            "layers": "0",
-            "opacity": 1,
-            "metadataText": "DEMs derived from LiDAR data from a number of different elevation projects within MGA zone 56 are contained in this web service. This service will continually be updated with additional datasets. The GeoCat record for this service is: The current elevation projects in this service are: Murray-Darling Elevation Project 2013-2014 - Namoi2, Geocat record: 79221.",
-            "ogcLinks": [
-				{
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_19ae9871-17e7-4176-9aaa-5cffcbbe313c/DigitalElevationModel_LiDAR_MGAZone56"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone56/ImageServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/topography/DEM_LiDAR_MGAZone56/ImageServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/topography/DEM_LiDAR_MGAZone56/ImageServer?f=lyr&v=9.3"
-                }
-            ]
-        },
+        },        
         {
             "slug": "Environment",
 			"extent": [[99,10],[169,-55]],
@@ -2935,7 +2798,7 @@
                 },				
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_Survey_Extents/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/site_3/rest/services/Multibeam_Coverage_Extents_2016/MapServer?f=lyr&v=9.3"
                 }                
             ]
         },
@@ -3753,82 +3616,7 @@
 			"queryVersion": "1.1.1",
 			"queryLayers": "Radiometrics2015_filtered_U2Th_ratio"
         },
-        {
-            "slug": "Rb_Sr",
-			"extent": [[99,10],[169,-55]],
-            "id": "Rb-Sr",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Rb-Sr",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "layers": "Rb-Sr",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. There are layers for SHRIMP, Sm-Nd, Rb-Sr and U-Pb. While the data used for SHRIMP and Sm-Nd is from new data releases, the data for Rb-Sr and U-Pb is the same as used in the National Geoscience Datasets service. Some data for Antarctica is included.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_612b9aff-ac19-49a1-b4db-4167dd4eb74f/Geoscience+Australia+Geochronology+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "Rb-Sr"
-        },        
-        {
-            "slug": "Regolith_Geochemistry",
-			"extent": [[99,10],[169,-55]],
-            "id": "RegolithGeochemistry",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Regolith Geochemistry",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "layers": "RegolithGeochemistry",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. OZCHEM is Geoscience Australia's national whole-rock geochemical database. This map service contains over 50000 analyses of rocks, regolith and stream sediments from many regions of Australia. Each analysis includes a geographic location and a geological description, which includes the host stratigraphic unit, where known, and the lithology. Most samples have been collected by Geoscience Australia's field parties.",
-            "ogcLinks": [
-                {
-                    "description": "Dataset Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-d0ec-7506-e044-00144fdd4fa6/OZCHEM+National+Whole+Rock+Geochemistry+Dataset"
-                },
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1ae6375d-da2f-43c8-a97a-76e18fac34c8/Geoscience+Australia+Geochemical+Analyses+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "RegolithGeochemistry"
-        },
+        
 		{
 			"id": "ReturnPeriod2y",
 			"slug": "ReturnPeriod2y",
@@ -4085,47 +3873,7 @@
 				}
 			],
 			"opacity": 0.8
-		},		
-        {
-            "slug": "Rock_Geochemistry",
-			"extent": [[99,10],[169,-55]],
-            "id": "RockGeochemistry",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Rock Geochemistry",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "layers": "RockGeochemistry",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. OZCHEM is Geoscience Australia's national whole-rock geochemical database. This map service contains over 50000 analyses of rocks, regolith and stream sediments from many regions of Australia. Each analysis includes a geographic location and a geological description, which includes the host stratigraphic unit, where known, and the lithology. Most samples have been collected by Geoscience Australia's field parties.",
-            "ogcLinks": [
-                {
-                    "description": "Dataset Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-d0ec-7506-e044-00144fdd4fa6/OZCHEM+National+Whole+Rock+Geochemistry+Dataset"
-                },
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1ae6375d-da2f-43c8-a97a-76e18fac34c8/Geoscience+Australia+Geochemical+Analyses+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "RockGeochemistry"
-        },
+		},		        
 		{
             "slug": "Road",
 			"extent": [[99,10],[169,-55]],
@@ -4156,126 +3904,8 @@
             "opacity": 1,
             "layerTimeout": 5000
         },
-        {
-            "slug": "RockGeochemistry_Igneous",
-			"extent": [[99,10],[169,-55]],
-            "id": "RockGeochemistryIgneous",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "RockGeochemistry Igneous",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "layers": "RockGeochemistryIgneous",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. OZCHEM is Geoscience Australia's national whole-rock geochemical database. This map service contains over 50000 analyses of rocks, regolith and stream sediments from many regions of Australia. Each analysis includes a geographic location and a geological description, which includes the host stratigraphic unit, where known, and the lithology. Most samples have been collected by Geoscience Australia's field parties.",
-            "ogcLinks": [
-                {
-                    "description": "Dataset Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-d0ec-7506-e044-00144fdd4fa6/OZCHEM+National+Whole+Rock+Geochemistry+Dataset"
-                },
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1ae6375d-da2f-43c8-a97a-76e18fac34c8/Geoscience+Australia+Geochemical+Analyses+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "RockGeochemistryIgneous"
-        },
-        {
-            "slug": "RockGeochemistry_Metamorphic",
-			"extent": [[99,10],[169,-55]],
-            "id": "RockGeochemistryMetamorphic",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "RockGeochemistry Metamorphic",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "layers": "RockGeochemistryMetamorphic",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. OZCHEM is Geoscience Australia's national whole-rock geochemical database. This map service contains over 50000 analyses of rocks, regolith and stream sediments from many regions of Australia. Each analysis includes a geographic location and a geological description, which includes the host stratigraphic unit, where known, and the lithology. Most samples have been collected by Geoscience Australia's field parties.",
-            "ogcLinks": [
-                {
-                    "description": "Dataset Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-d0ec-7506-e044-00144fdd4fa6/OZCHEM+National+Whole+Rock+Geochemistry+Dataset"
-                },
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1ae6375d-da2f-43c8-a97a-76e18fac34c8/Geoscience+Australia+Geochemical+Analyses+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "RockGeochemistryMetamorphic"
-        },
-        {
-            "slug": "RockGeochemistry_Sedimentary",
-			"extent": [[99,10],[169,-55]],
-            "id": "RockGeochemistrySedimentary",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "RockGeochemistry Sedimentary",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "layers": "RockGeochemistrySedimentary",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. OZCHEM is Geoscience Australia's national whole-rock geochemical database. This map service contains over 50000 analyses of rocks, regolith and stream sediments from many regions of Australia. Each analysis includes a geographic location and a geological description, which includes the host stratigraphic unit, where known, and the lithology. Most samples have been collected by Geoscience Australia's field parties.",
-            "ogcLinks": [
-                {
-                    "description": "Dataset Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-d0ec-7506-e044-00144fdd4fa6/OZCHEM+National+Whole+Rock+Geochemistry+Dataset"
-                },
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1ae6375d-da2f-43c8-a97a-76e18fac34c8/Geoscience+Australia+Geochemical+Analyses+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "RockGeochemistrySedimentary"
-        },
+        
+        
 		{
 			"slug": "Sand_Content_of_Australias_Northwest_Shelf",
 			"name": "Sand Content of Australia's Northwest Shelf",
@@ -5056,82 +4686,6 @@
             "opacity": 1,
             "layerTimeout": 5000
         },
-        {
-            "slug": "Seismic_Geochemistry",
-			"extent": [[99,10],[169,-55]],
-            "id": "SeismicGeochemistry",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Seismic Geochemistry",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "layers": "SeismicGeochemistry",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. OZCHEM is Geoscience Australia's national whole-rock geochemical database. This map service contains over 50000 analyses of rocks, regolith and stream sediments from many regions of Australia. Each analysis includes a geographic location and a geological description, which includes the host stratigraphic unit, where known, and the lithology. Most samples have been collected by Geoscience Australia's field parties.",
-            "ogcLinks": [
-                {
-                    "description": "Dataset Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_a05f7892-d0ec-7506-e044-00144fdd4fa6/OZCHEM+National+Whole+Rock+Geochemistry+Dataset"
-                },
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_1ae6375d-da2f-43c8-a97a-76e18fac34c8/Geoscience+Australia+Geochemical+Analyses+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochemical_Analyses/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochemical_Analyses/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "SeismicGeochemistry"
-        },
-        {
-            "slug": "Sm_Nd",
-			"extent": [[99,10],[169,-55]],
-            "id": "Sm-Nd",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "Sm-Nd",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "layers": "Sm-Nd",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. There are layers for SHRIMP, Sm-Nd, Rb-Sr and U-Pb. While the data used for SHRIMP and Sm-Nd is from new data releases, the data for Rb-Sr and U-Pb is the same as used in the National Geoscience Datasets service. Some data for Antarctica is included.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata",
-                    "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_612b9aff-ac19-49a1-b4db-4167dd4eb74f/Geoscience+Australia+Geochronology+WMS"
-                },
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "Sm-Nd"
-        },        
         {
             "slug": "Solomon_Islands_AMB_2014",
 			"extent": [[99,10],[169,-55]],
@@ -5931,134 +5485,6 @@
 			"queryVersion": "1.1.1",
 			"queryLayers": "World_Heritage_Areas_Australia_label"
 		},
-        {
-            "slug": "U_Pb_SHRIMP_Magmatic",
-			"extent": [[99,10],[169,-55]],
-            "id": "U-PbSHRIMPmagmatic",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "U-Pb SHRIMP Magmatic",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "layers": "U-PbSHRIMPmagmatic",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. There are layers for SHRIMP, Sm-Nd, Rb-Sr and U-Pb. While the data used for SHRIMP and Sm-Nd is from new data releases, the data for Rb-Sr and U-Pb is the same as used in the National Geoscience Datasets service. Some data for Antarctica is included.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "U-PbSHRIMPmagmatic"
-        },
-        {
-            "slug": "U_Pb_SHRIMP_Maximum_Depositional",
-			"extent": [[99,10],[169,-55]],
-            "id": "U-PbSHRIMPmaximumDepositional",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "U-Pb SHRIMP Maximum Depositional",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "layers": "U-PbSHRIMPmaximumDepositional",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. There are layers for SHRIMP, Sm-Nd, Rb-Sr and U-Pb. While the data used for SHRIMP and Sm-Nd is from new data releases, the data for Rb-Sr and U-Pb is the same as used in the National Geoscience Datasets service. Some data for Antarctica is included.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "U-PbSHRIMPmaximumDepositional"
-        },
-        {
-            "slug": "U_Pb_SHRIMP_Metamorphic",
-			"extent": [[99,10],[169,-55]],
-            "id": "U-PbSHRIMPmetamorphic",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "U-Pb SHRIMP Metamorphic",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "layers": "U-PbSHRIMPmetamorphic",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. There are layers for SHRIMP, Sm-Nd, Rb-Sr and U-Pb. While the data used for SHRIMP and Sm-Nd is from new data releases, the data for Rb-Sr and U-Pb is the same as used in the National Geoscience Datasets service. Some data for Antarctica is included.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "U-PbSHRIMPmetamorphic"
-        },
-        {
-            "slug": "U_Pb_TIMS_Conventional",
-			"extent": [[99,10],[169,-55]],
-            "id": "U-PbTIMSconventional",
-            "mapType": "WMS",
-            "visibility": true,
-            "name": "U-Pb TIMS Conventional",
-            "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "layers": "U-PbTIMSconventional",
-            "opacity": 1,
-            "layerTimeout": 5000,
-            "metadataText": "This map service was created to replace the GA National Geoscience Datasets service: to that end it should be used in conjunction with other GA map services. There are layers for SHRIMP, Sm-Nd, Rb-Sr and U-Pb. While the data used for SHRIMP and Sm-Nd is from new data releases, the data for Rb-Sr and U-Pb is the same as used in the National Geoscience Datasets service. Some data for Antarctica is included.",
-            "ogcLinks": [
-                {
-                    "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer"
-                },
-                {
-                    "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer?request=GetCapabilities&service=WMS"
-                },
-                {
-                    "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/GA_Geochronology/MapServer?f=lyr&v=9.3"
-                }
-            ],
-            "queryFeatures": true,
-			"queryUrl": "http://services.ga.gov.au/gis/services/GA_Geochronology/MapServer/WMSServer",
-            "queryUrlType": "WMS",
-            "queryVersion": "1.1.1",
-            "queryLayers": "U-PbTIMSconventional"
-        },
 		{
 			"id": "UpperPercentile2y",
 			"slug": "UpperPercentile2y",
@@ -6533,7 +5959,7 @@
             "mapType": "XYZTileCache",
             "visibility": true,
             "name": "World Image",
-            "url": "http://www.ga.gov.au/gisimg/rest/services/topography/World_Bathymetry_Image_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/World_Bathymetry_Imagery_WM/MapServer",
             "mapBGColor": "#194584",
             "opacity": 1,
             "wrapDateLine": true,
@@ -6545,7 +5971,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "World Image",
-            "url": "http://www.ga.gov.au/gisimg/services/topography/World_Bathymetry_Image_WM/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/World_Bathymetry_Imagery_WM/MapServer/WMSServer",
             "layers": "World Bathymetry Image,Bathy Areas,Australian Landsat,Hillshade 3 second",
             "opacity": 1,
             "wrapDateLine": true,

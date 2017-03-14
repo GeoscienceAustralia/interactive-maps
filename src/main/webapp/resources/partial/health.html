@@ -2,22 +2,27 @@
     <a class="anchor" id="help-Top"></a>
 
     <h2>Health Check</h2>
+	<h3>(Master Layer List Only)</h3>
 
     <div class="table-responsive">
         <table class="table">
             <thead>
             <tr>
-                <th class="col-md-6">URL</th>
-                <th class="col-md-2">Status</th>
+				<th class="col-md-2">Name</th>
+				<th class="col-md-1">Type</th>
+                <th class="col-md-6">URL</th>                
                 <th class="col-md-2">Message</th>
+				<th class="col-md-2">Status</th>
                 <th class="col-md-2" style="text-align:center;">Result</th>
             </tr>
             </thead>
             <tbody>
             <tr ng-repeat="layer in layers">
-                <td>{{layer.name}}</td>
-                <td>{{layer.status}}</td>
-                <td>{{layer.message}}</td>
+				<td>{{layer.name}}</td>
+				<td>{{layer.mapType}}</td>
+                <td style="word-wrap: break-word;max-width:300px;background-color:white;"><a href="{{layer.url}}" target="_blank">{{layer.url}}</a></td>                
+                <td style="word-wrap: break-word;max-width:150px;background-color:white;"><textarea rows="2" cols="10">{{layer.message}}</textarea></td>
+				<td>{{layer.status}}</td>
                 <td ng-if="layer.isValid==true" class="healthGood"><img/></td>
                 <td ng-if="layer.isValid==false" class="healthBad"><img/></td>
                 <td ng-if="layer.isValid==null" class="healthSpinner"><img/></td>

@@ -25,18 +25,6 @@
             "previewDescription": "These magnetic and radiometric datasets are a compilation of numerous geophysical surveys conducted over more than 50 years by Geoscience Australia, the State and Territory Geological Surveys and industry."
         },
         {
-            "id": "geochronology",
-            "title": "Geochronology",
-            "previewImageUrl": "content/minerals/geochronology/mapPreview.png",
-            "previewDescription": "National scale coverages of surface geology and geochronology. There are layers for SHRIMP, Sm-Nd, Rb-Sr and U-Pb."
-        },
-        {
-            "id": "geochemical",
-            "title": "Geochemistry",
-            "previewImageUrl": "content/minerals/geochemical/mapPreview.png",
-            "previewDescription": "OZCHEM is Geoscience Australia's national whole-rock geochemical database. This map service contains over 50,000 analyses of rocks, regolith and stream sediments from many regions of Australia."
-        },
-        {
             "title": "Geophysical Archive Data Delivery System",
             "tags": "Other",
             "previewImageUrl": "content/minerals/gadds.png",

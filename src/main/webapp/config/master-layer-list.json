@@ -2741,30 +2741,30 @@
             "visibility": true,
             "name": "Multibeam 50m Bathymetry 2012 RGB",
             "queryFeatures": true,
-            "queryUrl": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Multibeam_Bathymetric_50m_Colour_2012/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "0",
-            "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer/WMSServer",
             "layers": "0",
             "opacity": 1,
             "metadataText": "This map service contains the extents of the multibeam bathymetry data held by GA, as at August 2012, which lies within the boundaries of Australia's Extended Continental Shelf, as well as some data in international waters.",
             "ogcLinks": [
-				{	
+				{
                     "description": "Service Metadata",
                     "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_b7e441d4-238d-4bc2-9704-41e76bd43e10/Multibeam_50m_Bathymetry_2012"
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Multibeam_Bathymetric_50m_Colour_2012/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Multibeam_Bathymetric_50m_Colour_2012/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://www.ga.gov.au/gisimg/rest/services/marine_coastal/Multibeam_50m_Bathymetry_2012_RGB/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Multibeam_Bathymetric_50m_Colour_2012/MapServer?f=lyr&v=9.3"
                 }                
             ]
         },

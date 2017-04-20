@@ -1,6 +1,6 @@
 {
     "id": "marinegeology",
-    "title": "Geology, Geomorphology and Geophysics of the Northwest Shelf",
+    "title": "Geology, Geomorphology and Geophysics",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	

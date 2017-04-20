@@ -1123,7 +1123,7 @@
             "visibility": true,
             "name": "Geology - Primary substrate",
             "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
-            "layers": "Geology - Primary substrate",
+            "layers": "Geology_primary_substrate",
             "opacity": 1,
             "ogcLinks": [
                 {
@@ -1148,7 +1148,7 @@
 			"queryUrl": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "Geology - Primary substrate"			
+            "queryLayers": "Geology_primary_substrate"			
         },	        
         {
             "slug": "Geomorphology_Scale_Guide",
@@ -1714,7 +1714,7 @@
             "visibility": true,
             "name": "Intertidal - dominate Landform",
             "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
-            "layers": "Intertidal - dominate landform",
+            "layers": "Intertidal_dominate_landform",
             "opacity": 1,
             "layerTimeout": 5000,
             "metadataText": "This web service describes the distribution of seabed geomorphic features on the Australian continental margin, identified and mapped using the Australian Bathymetry and Topography dataset (Webster & Petkovic 2005). Twenty one feature types are shown for the seafloor within the Australian Marine Jurisdiction, including territories around Christmas Island, Cocos (Keeling) Island, Macquarie Island and Norfolk Island (Heam & Harris 2008).",
@@ -4798,7 +4798,7 @@
             "visibility": true,
             "name": "Subtidal - dominate landform",
             "url": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
-            "layers": "Subtidal - dominate landform",
+            "layers": "Subtidal_secondary_landform",
             "opacity": 1,
             "ogcLinks": [
                 {
@@ -4823,7 +4823,7 @@
             "queryUrl": "http://services.ga.gov.au/gis/services/Geomorphology_Smartline/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "Subtidal - dominate landform"
+            "queryLayers": "Subtidal_secondary_landform"
         },
         {
             "slug": "Surface_Geology_Of_Australia",

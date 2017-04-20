@@ -2744,9 +2744,9 @@
             "queryUrl": "http://services.ga.gov.au/gis/services/Multibeam_Bathymetric_50m_Colour_2012/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
-            "queryLayers": "0",
+            "queryLayers": "Image",
             "url": "http://services.ga.gov.au/gis/services/Multibeam_Bathymetric_50m_Colour_2012/MapServer/WMSServer",
-            "layers": "0",
+            "layers": "Image",
             "opacity": 1,
             "metadataText": "This map service contains the extents of the multibeam bathymetry data held by GA, as at August 2012, which lies within the boundaries of Australia's Extended Continental Shelf, as well as some data in international waters.",
             "ogcLinks": [

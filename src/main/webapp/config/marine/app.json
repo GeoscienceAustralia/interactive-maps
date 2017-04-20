@@ -13,10 +13,10 @@
             "previewDescription": "Visualisation of the highest resolution bathymetric data available for download on the Geoscience Australia website."
         },
 		{
-            "title": "Geology, Geomorphology and Geophysics of the Northwest Shelf",
+            "title": "Geology, Geomorphology and Geophysics",
             "id": "marinegeology",
             "previewImageUrl": "content/marine/marinegeology/marinegeology.png",
-            "previewDescription": "A compilation of  marine and coastal geological,  geomorphological and geophysical data over the Northwest Shelf."
+            "previewDescription": "A compilation of  marine and coastal geological, geomorphological and geophysical data."
         },
 		{
             "title": "Marine and Coastal Data",

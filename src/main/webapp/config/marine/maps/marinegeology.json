@@ -349,11 +349,6 @@
 			"visibility": true
         },
 		{
-            "slug": "Submarine_Canyons_of_Australia",
-            "opacity": 0.5,
-			"visibility": false
-        },
-		{
             "slug": "Marine_Survey_Geomorphology",
             "opacity": 0.5,
 			"visibility": false

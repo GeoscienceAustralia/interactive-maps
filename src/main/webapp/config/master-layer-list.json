@@ -1251,7 +1251,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Global Map",
-            "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Global_Map_Project_Australian_Base_Map/MapServer/WMSServer",
             "layers": "Built Up Area,Watercourse,Inland Water,Aqueduct Canals,Road Minor,Road Major,Railroad,Bridge,Political Boundary Line,Coastline,Railyard,Airport,Political Boundary Point,Miscellaneous Drainage,Miscellaneous Population,Built Up Points",
             "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world.",
             "ogcLinks": [
@@ -1261,20 +1261,20 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map_Project_Australian_Base_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Global_Map_Project_Australian_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map_Project_Australian_Base_Map/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,
 			"queryFeatures": true,
-            "queryUrl": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer",
+            "queryUrl": "http://services.ga.gov.au/gis/services/Global_Map_Project_Australian_Base_Map/MapServer/WMSServer",
             "queryUrlType": "WMS",
             "queryVersion": "1.1.1",
             "queryLayers": "Built Up Area,Watercourse,Inland Water,Aqueduct Canals,Road Minor,Road Major,Railroad,Bridge,Political Boundary Line,Coastline,Railyard,Airport,Political Boundary Point,Miscellaneous Drainage,Miscellaneous Population,Built Up Points",
@@ -1287,7 +1287,7 @@
             "mapType": "WMS",
             "visibility": true,
             "name": "Globalmap Landcover",
-            "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer",
+            "url": "http://services.ga.gov.au/gis/services/Global_Map_Project_Australian_Base_Map/MapServer/WMSServer",
             "layers": "Landcover",
             "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world..",
             "ogcLinks": [
@@ -1297,15 +1297,15 @@
                 },
                 {
                     "description": "Service Metadata (REST)",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map_Project_Australian_Base_Map/MapServer"
                 },
                 {
                     "description": "WMS Capabilities",
-                    "url": "http://services.ga.gov.au/gis/services/Global_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+                    "url": "http://services.ga.gov.au/gis/services/Global_Map_Project_Australian_Base_Map/MapServer/WMSServer?request=GetCapabilities&service=WMS"
                 },
                 {
                     "description": "ArcMap Layerfile",
-                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map/MapServer?f=lyr&v=9.3"
+                    "url": "http://services.ga.gov.au/gis/rest/services/Global_Map_Project_Australian_Base_Map/MapServer?f=lyr&v=9.3"
                 }
             ],
             "opacity": 1,

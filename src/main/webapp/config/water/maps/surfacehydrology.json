@@ -53,8 +53,8 @@
                 "config": {
                     "infoList": [
 						{
-                            "id":"Surface Hydrology Web Feature Service GetCapabilites",
-							"url":"http://www.ga.gov.au/gis/services/topography/AusHydro/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+                        "id":"Surface Hydrology Web Feature Service GetCapabilites",
+			"url":"http://services.ga.gov.au/site_1/services/Surface_Hydrology_WM/MapServer/WFSServer?request=GetCapabilities&service=WFS"
                         }					
                     ]
                 }

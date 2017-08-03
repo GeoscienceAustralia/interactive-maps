@@ -106,12 +106,7 @@
             "applicationUrl": "http://dbforms.ga.gov.au/www/npm.well.search"
         }
     ],
-    "tags": [
-		{
-            "id": "Legacy",
-            "description": "The legacy AMSIS contains data from 2006-2014, this data is being migrated to the current AMSIS (see below). The legacy version will be shut down when the process is completed.",
-            "title": "Legacy AMSIS"
-        },
+    "tags": [		
         {
             "id": "MaritimeBoundaries",
             "description": "The primary task for maritime boundary determination is the delineation of the baseline from which the outer limits of the various maritime zones are measured. This TSB consists of several components including normal baseline, straight baselines and bay and river closing lines.",
@@ -132,6 +127,11 @@
             "description": "The treaties shown on AMSIS are those related to various maritime agreements between Australia and neighbouring countries. The table below links the various treaties displayed in AMSIS with the text or details of the specific treaty. In some cases more than one treaty is relevant.",
             "title": "Treaties"
         },
+	{
+            "id": "Legacy",
+            "description": "The legacy AMSIS contains data from 2006-2014, this data is being migrated to the current AMSIS (see below). The legacy version will be shut down when the process is completed.",
+            "title": "Legacy AMSIS"
+        },	    
         {
             "id": "Other",
             "description": "Relevant AMSIS applications.",

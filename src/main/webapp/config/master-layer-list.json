@@ -1270,7 +1270,7 @@
             "visibility": true,
             "name": "Global Map",
             "url": "http://services.ga.gov.au/gis/services/Global_Map_Project_Australian_Base_Map/MapServer/WMSServer",
-            "layers": "Built_Up_Area,Watercourse,Inland_Water,Aqueduct_Canals,Road_Minor,Road_Major,Railroad,Bridge,Political_Boundary_Line,Coastline,Railyard,Airport,Political_Boundary_Point,Miscellaneous_Drainage,Miscellaneous_Population,Built_Up_Points",
+            "layers": "Built_Up_Area,Watercourse,Inland_Water,Aqueduct_And_Canal,Road_Minor,Road_Major,Railroad,Bridge,Political_Boundary_Line,Coastline,Railyard,Airport,Political_Boundary_Point,Miscellaneous_Drainage,Miscellaneous_Population,Built_Up_Points",
             "metadataText": "The purpose of the Global Map is to accurately describe the present status of the global environment in international cooperation of respective National Mapping Organizations (NMOs) of the world.",
             "ogcLinks": [
                 {

@@ -77,6 +77,20 @@
             "previewImageUrl": "content/amsis/twsi/mapPreview.jpg",
             "previewDescription": "Treaties in force between the Commonwealth of Australia and the Government of the Solomon Islands."
         },
+	 {
+            "title": "Environmental Management",
+	    "tags": "Environmental",
+            "id": "marineenvironmental",
+            "previewImageUrl": "content/marine/marineenvironmental/marineenvironmental.png",
+            "previewDescription": "A compilation of significant biological and environmental management web services and datasets managed and distributed by the Department of Environment and CSIRO."
+        },
+	{
+            "title": "Native Title",
+	    "tags": "NativeTitle",
+            "id": "nativetitle",
+            "previewImageUrl": "content/amsis/nativetitle.png",
+            "previewDescription": "Services supplied by the National Native Title Tribunal. Whilst these datasets do not form part of the statutory registers, they enable visualization."
+        },
         {
             "title": "Offshore Minerals Legacy Services",
             "tags": "Legacy",
@@ -142,6 +156,16 @@
             "id": "Treaties",
             "description": "The treaties shown on AMSIS are those related to various maritime agreements between Australia and neighbouring countries. The table below links the various treaties displayed in AMSIS with the text or details of the specific treaty. In some cases more than one treaty is relevant.",
             "title": "Treaties"
+        },
+	{
+            "id": "Environmental",
+            "description": "Maps that depict a collection of external environmental management and biological datasets. These services are managed, maintained and distributed by the Department of the Environment and the CSIRO.",
+            "title": "Environmental"
+        },
+	{
+            "id": "NativeTitle",
+            "description": "Maps that depict a collection of external native title datasets. These services are managed, maintained and distributed by the National Native Title Tribunal.",
+            "title": "Native Title"
         },
 		{
             "id": "Fish",

@@ -99,6 +99,34 @@
             "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/australian-ocean-governance-and-relevant-legislation"
         },
         {
+            "title": "Offshore Minerals Legacy Services",
+            "tags": "Legacy",
+            "id": "offshoremineralslegacy",
+            "previewImageUrl": "content/amsis/offshoreminerals.png",
+            "previewDescription": "Map of Australian offshore mineral features. These services are supplied as legacy services until they can be replaced with more current data."
+        },
+		{
+            "title": "Fisheries Legacy Services",
+            "tags": "Legacy",
+			"id": "fisherieslegacy",
+            "previewImageUrl": "content/amsis/fisheries.png",
+            "previewDescription": "The act relating to the management of Fisheries is the Fisheries Management Act 1991. These services are supplied as legacy services until they can be replaced with more current data."
+        },
+		{ 
+            "title": "Regulatory Legacy Services",
+            "tags": "Legacy",
+			"id": "regulartorylegacy",
+            "previewImageUrl": "content/amsis/regulatory.png",
+            "previewDescription": "Map of Australian Maritime Regulatory legacy features, featuring data from supplied by the Australian Maritime Safety Authority. These services are supplied as legacy services until they can be replaced with more current data."
+        },
+		{
+            "title": "Environment Legacy Services",
+            "tags": "Environment Legacy",
+			"id": "environmentlegacy",
+            "previewImageUrl": "content/amsis/environment.png",
+            "previewDescription": "Map of Australian Maritime Environment features, featuring data from supplied by the Department of Environment. These services are supplied as legacy services until they can be replaced with more current data."
+        },		
+        {
             "title": "Petroleum Wells Database",
             "tags": "Other",
             "previewImageUrl": "content/amsis/petroleumWells.png",
@@ -112,11 +140,6 @@
             "description": "The primary task for maritime boundary determination is the delineation of the baseline from which the outer limits of the various maritime zones are measured. This TSB consists of several components including normal baseline, straight baselines and bay and river closing lines.",
             "title": "Maritime Boundaries"
         },
-		{
-            "id": "Fish",
-            "description": "Fisheries management act.",
-            "title": "Fisheries Management Act"
-        },
         {
             "id": "Petroleum&Minerals",
             "description": "Petroleum and mineral resource blocks as described by Australian legislation.",
@@ -127,7 +150,12 @@
             "description": "The treaties shown on AMSIS are those related to various maritime agreements between Australia and neighbouring countries. The table below links the various treaties displayed in AMSIS with the text or details of the specific treaty. In some cases more than one treaty is relevant.",
             "title": "Treaties"
         },
-	{
+		{
+            "id": "Fish",
+            "description": "Fisheries management act.",
+            "title": "Fisheries Management Act"
+        },
+		{
             "id": "Legacy",
             "description": "The legacy AMSIS contains data from 2006-2014, this data is being migrated to the current AMSIS (see below). The legacy version will be shut down when the process is completed.",
             "title": "Legacy AMSIS"

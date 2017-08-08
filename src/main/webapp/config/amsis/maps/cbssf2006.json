@@ -72,35 +72,10 @@
 	],
 	"layerMaps": [
 		{
-			"slug": "Australian_Topography_2014_ARCGIS",
-			"visibility": true,
-			"opacity": 0.5
+			"slug": "Australian_Topography_2014_ARCGIS"
 		},
 		{
-			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006",
-			"extent": [
-				[
-				135.53,
-				-31.61
-				],
-				[
-					157.11,
-					-49.34
-				]
-			],
-			"mapType": "ArcGISCache",
-			"visibility": true,
-			"opacity": 1,
-			"name": "Commonwealth Bass Strait Scallop Fishery 2006",
-			"url": "http://tiles.arcgis.com/tiles/wfNKYeHsOyaFyPw3/arcgis/rest/services/AMSIS_Commonwealth_Bass_Strait_Scallop_Fishery_2006/MapServer",
-			"metadataText": "Bass Strait Scallop Fishery 2006. The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision.",
-			"ogcLinks": [
-				{
-					"description": "Service Metadata (REST)",
-					"url": "http://tiles.arcgis.com/tiles/wfNKYeHsOyaFyPw3/arcgis/rest/services/AMSIS_Commonwealth_Bass_Strait_Scallop_Fishery_2006/MapServer"
-				}
-			],
-			"queryFeatures": true
+			"slug": "Commonwealth_Bass_Strait_Scallop_Fishery_2006"
 		}
 	],
 	"groupedLayers": [

@@ -78,27 +78,6 @@
             "previewDescription": "Treaties in force between the Commonwealth of Australia and the Government of the Solomon Islands."
         },
         {
-            "title": "Legacy AMSIS",
-            "tags": "Legacy",
-            "previewImageUrl": "content/amsis/origionalAMSIS.png",
-            "previewDescription": "AMSIS is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction.",
-            "applicationUrl": "http://www.ga.gov.au/imf-amsis2/"
-        },
-		{
-            "title": "Data Contributors",
-            "tags": "Legacy",
-            "previewImageUrl": "content/amsis/contribute.png",
-            "previewDescription": "AMSIS contains data from Commonwealth agencies and industry sources.",
-            "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/data-contributors"
-        },
-		{
-            "title": "Australian Ocean Governance and Relevant Legislation",
-            "tags": "Legacy",
-            "previewImageUrl": "content/amsis/legislation.jpg",
-            "previewDescription": "This information provides an overview of legislation and background information which relates to data found in the Australian Marine Spatial Information System (AMSIS).",
-            "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/australian-ocean-governance-and-relevant-legislation"
-        },
-        {
             "title": "Offshore Minerals Legacy Services",
             "tags": "Legacy",
             "id": "offshoremineralslegacy",
@@ -132,7 +111,21 @@
             "previewImageUrl": "content/amsis/petroleumWells.png",
             "previewDescription": "Petroleum wells application.",
             "applicationUrl": "http://dbforms.ga.gov.au/www/npm.well.search"
-        }
+        },
+		{
+            "title": "Data Contributors",
+            "tags": "Legacy",
+            "previewImageUrl": "content/amsis/contribute.png",
+            "previewDescription": "AMSIS contains data from Commonwealth agencies and industry sources.",
+            "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/data-contributors"
+        },
+		{
+            "title": "Australian Ocean Governance and Relevant Legislation",
+            "tags": "Legacy",
+            "previewImageUrl": "content/amsis/legislation.jpg",
+            "previewDescription": "This information provides an overview of legislation and background information which relates to data found in the Australian Marine Spatial Information System (AMSIS).",
+            "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/australian-ocean-governance-and-relevant-legislation"
+        }		
     ],
     "tags": [		
         {

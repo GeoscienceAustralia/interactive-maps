@@ -6005,7 +6005,7 @@
             "visibility": true,
             "name": "World Image",
             "url": "http://services.ga.gov.au/gis/services/World_Bathymetry_Imagery_WM/MapServer/WMSServer",
-            "layers": "World Bathymetry Image,Bathy Areas,Australian Landsat,Hillshade 3 second",
+            "layers": "World_Bathymetry_Image,Bathy_Areas,Australian_Landsat,Hillshade_3_second",
             "opacity": 1,
             "wrapDateLine": true,
             "maxZoomLevel": 16,

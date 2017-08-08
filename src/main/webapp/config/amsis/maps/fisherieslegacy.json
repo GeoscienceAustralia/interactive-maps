@@ -1,6 +1,6 @@
 {
     "id": "fisherieslegacy",
-    "title": "AMSIS2 Fisheries Legacy",
+    "title": "AMSIS Fisheries Legacy",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
     "initialExtent": [
@@ -23,6 +23,7 @@
     },
     "aboutConfig": {
         "enabled": true,
+	"open": true,	    
         "bodyUrl": "content/amsis/sasla1973/about.html"
     },
     "layersConfig": {

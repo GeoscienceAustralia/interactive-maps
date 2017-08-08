@@ -1,6 +1,6 @@
 {
     "id": "environmentlegacy",
-    "title": "AMSIS2 Environment Legacy",
+    "title": "AMSIS Environment Legacy",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
     "initialExtent": [
@@ -23,6 +23,7 @@
     },
     "aboutConfig": {
         "enabled": true,
+	"open": true,
         "bodyUrl": "content/amsis/amsislegacy/aboutlegacy.html"
     },
     "layersConfig": {

@@ -19,7 +19,7 @@
     "cookieExpirationInDays": 7,
     "termsAndConditionsCookieName": "amsis",
     "headerConfig": {
-        "title": "AMSIS2 Environment Legacy"
+        "title": "AMSIS Environment Legacy"
     },
     "aboutConfig": {
         "enabled": true,

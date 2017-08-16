@@ -1,6 +1,6 @@
 {
     "id": "marineenvironmental",
-    "title": "Environmental Management Data",
+    "title": "Environment",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
 	"framework":"olv2",	
@@ -17,7 +17,7 @@
     "zoomLevel": 0,
     "requiresTermsAndConditions": false,
     "headerConfig": {
-        "title": "Marine Environmental"
+        "title": "Environment"
     },
     "aboutConfig": {
         "enabled": true,

@@ -78,9 +78,9 @@
             "previewDescription": "Treaties in force between the Commonwealth of Australia and the Government of the Solomon Islands."
         },
 	 {
-            "title": "Environmental Management",
-	    "tags": "Environmental",
-            "id": "marineenvironmental",
+            "title": "Environment",
+	    "tags": "Environment",
+            "id": "environment",
             "previewImageUrl": "content/marine/marineenvironmental/marineenvironmental.png",
             "previewDescription": "A compilation of significant biological and environmental management web services and datasets managed and distributed by the Department of Environment and CSIRO."
         },

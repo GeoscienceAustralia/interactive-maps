@@ -19,7 +19,7 @@
     "cookieExpirationInDays": 7,
     "termsAndConditionsCookieName": "amsis",
     "headerConfig": {
-        "title": "AMSIS2 Fisheries Legacy"
+        "title": "AMSIS Fisheries Legacy"
     },
     "aboutConfig": {
         "enabled": true,

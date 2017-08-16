@@ -27,11 +27,11 @@
             "applicationUrl": "http://sentinel.ga.gov.au"
         },
 		{
-			"title": "Australian Geoscience Data Cube",
+			"title": "Digital Earth Australia",
 			"tags": "Information",
-            "previewImageUrl": "content/earthobservation/agdc.png",
-            "previewDescription": "The Australian Geoscience Data Cube provides an integrated gridded data analysis environment for decades of analysis ready earth observation satellite and related data from multiple satellite and other acquisition systems.",
-			"applicationUrl": "http://www.datacube.org.au/"
+            "previewImageUrl": "content/earthobservation/dea.png",
+            "previewDescription": "DEA is a series of data structures and tools which organise and enable the analysis of large Earth observation satellite data collections.",
+			"applicationUrl": "http://www.ga.gov.au/dea"
 		}
     ],
     "tags": [

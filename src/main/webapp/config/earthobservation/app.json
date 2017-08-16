@@ -8,6 +8,12 @@
         "backgroundImageUrl": "resources/img/header_bg.png"
 		},
     "maps": [
+	    {
+            "title": "Digital Earth Australia",
+            "previewImageUrl": "content/earthobservation/DEA-Logo-Inline.png",
+            "previewDescription": "Digital Earth Australia (DEA) provides an integrated data analysis platform, delivering a unique capability to present, process, and interrogate Earth observation satellite data.",
+            "applicationUrl": "http://eos.ga.gov.au"
+        },
 		{
             "title": "Water Observations from Space",
             "id": "wofs",
@@ -29,7 +35,7 @@
 		{
 			"title": "Digital Earth Australia",
 			"tags": "Information",
-            "previewImageUrl": "content/earthobservation/dea.png",
+            "previewImageUrl": "content/earthobservation/DEA-Logo-Inline.png",
             "previewDescription": "DEA is a series of data structures and tools which organise and enable the analysis of large Earth observation satellite data collections.",
 			"applicationUrl": "http://www.ga.gov.au/dea"
 		}

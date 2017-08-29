@@ -149,7 +149,7 @@
         },
         {
             "id": "Petroleum&Minerals",
-            "description": "Petroleum and mineral resource blocks as described by Australian legislation.",
+            "description": "Maps that depict petroleum and mineral resource blocks as described by Australian legislation.",
             "title": "Offshore Petroleum and Minerals"
         },
         {
@@ -158,9 +158,9 @@
             "title": "Treaties"
         },
 	{
-            "id": "Environmental",
+            "id": "Environment",
             "description": "Maps that depict a collection of external environmental management and biological datasets. These services are managed, maintained and distributed by the Department of the Environment and the CSIRO.",
-            "title": "Environmental"
+            "title": "Environment"
         },
 	{
             "id": "NativeTitle",
@@ -169,7 +169,7 @@
         },
 		{
             "id": "Fish",
-            "description": "Fisheries management act.",
+            "description": "Maps that depict a collection of commonwealth fisheries.",
             "title": "Fisheries Management Act"
         },
 		{

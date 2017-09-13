@@ -91,13 +91,6 @@
             "previewImageUrl": "content/amsis/nativetitle.png",
             "previewDescription": "Services supplied by the National Native Title Tribunal. Whilst these datasets do not form part of the statutory registers, they enable visualization."
         },
-        {
-            "title": "Offshore Minerals Legacy Services",
-            "tags": "Legacy",
-            "id": "offshoremineralslegacy",
-            "previewImageUrl": "content/amsis/offshoreminerals.png",
-            "previewDescription": "Map of Australian offshore mineral features. These services are supplied as legacy services until they can be replaced with more current data."
-        },
 		{
             "title": "Fisheries Legacy Services",
             "tags": "Legacy",
@@ -105,26 +98,19 @@
             "previewImageUrl": "content/amsis/fisheries.png",
             "previewDescription": "The act relating to the management of Fisheries is the Fisheries Management Act 1991. These services are supplied as legacy services until they can be replaced with more current data."
         },
-		{ 
-            "title": "Regulatory Legacy Services",
-            "tags": "Legacy",
-			"id": "regulartorylegacy",
-            "previewImageUrl": "content/amsis/regulatory.png",
-            "previewDescription": "Map of Australian Maritime Regulatory legacy features, featuring data from supplied by the Australian Maritime Safety Authority. These services are supplied as legacy services until they can be replaced with more current data."
-        },
-		{
-            "title": "Environment Legacy Services",
-            "tags": "Environment Legacy",
-			"id": "environmentlegacy",
-            "previewImageUrl": "content/amsis/environment.png",
-            "previewDescription": "Map of Australian Maritime Environment features, featuring data from supplied by the Department of Environment. These services are supplied as legacy services until they can be replaced with more current data."
-        },		
         {
             "title": "Petroleum Wells Database",
             "tags": "Other",
             "previewImageUrl": "content/amsis/petroleumWells.png",
             "previewDescription": "Petroleum wells application.",
             "applicationUrl": "http://dbforms.ga.gov.au/www/npm.well.search"
+        },
+	    {
+            "title": "Legacy AMSIS",
+            "tags": "Legacy",
+            "previewImageUrl": "content/amsis/origionalAMSIS.png",
+            "previewDescription": "AMSIS is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction.",
+            "applicationUrl": "http://www.ga.gov.au/imf-amsis2/"
         },
 		{
             "title": "Data Contributors",

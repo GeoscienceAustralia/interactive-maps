@@ -195,6 +195,7 @@
 						"featureTitle": "Contiguous Zone Seas and Submerged Lands Limits of Contiguous Zone Proclamation 1999 AMB2014 Limit",
 						"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 						"queryLayers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area",
+						"queryVersion": "1.1.1",
 						"queryType": "WMS"
 					}
 				]

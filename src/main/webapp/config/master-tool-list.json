@@ -193,98 +193,98 @@
 				"endpoints": [
 					{
 					"featureTitle": "Contiguous Zone Seas and Submerged Lands Limits of Contiguous Zone Proclamation 1999 AMB2014 Limit",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Limit",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Contiguous Zone Seas and Submerged Lands Limits of Contiguous Zone Proclamation 1999 AMB2014 Area",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Contiguous_Zone_Seas_and_Submerged_Lands_Limits_of_Contiguous_Zone_Proclamation_1999_AMB2014_Area",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Coastal Waters State and Northern Territory Powers Act 1980 AMB2014 Limit",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Limit",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Coastal Waters State and Northern Territory Powers Act 1980 AMB2014 Area",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Coastal_Waters_State_and_Northern_Territory_Powers_Act_1980_AMB2014_Area",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Territorial Sea Seas and Submerged Lands Act 1973 Proclamation under section 7 09 11 1990 AMB2014 Limit",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Limit",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Territorial Sea Seas and Submerged Lands Act 1973 Proclamation under section 7 09 11 1990 AMB2014 Area",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Territorial_Sea_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_7_09_11_1990_AMB2014_Area",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Continental Shelf AMB2014 Points",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Continental_Shelf_AMB2014_Points",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Continental Shelf AMB2014 Limit",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Continental_Shelf_AMB2014_Limit",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Exclusive Economic Zone Seas and Submerged Lands Act 1973 Proclamation under section 10B 26 07 1994 AMB2014 Limit",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Exclusive Economic Zone Seas and Submerged Lands Act 1973 Proclamation under section 10B 26 07 1994 AMB2014 Area",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Exclusive_Economic_Zone_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Exclusive Economic Zone As Amended by the Perth Treaty 1997 Seas and Submerged Lands Act 1973 Proclamation under section 10B 26 07 1994 AMB2014 Limit",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Limit",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Exclusive Economic Zone As Amended by the Perth Treaty 1997 Seas and Submerged Lands Act 1973 Proclamation under section 10B 26 07 1994 AMB2014 Area",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Exclusive_Economic_Zone_As_Amended_by_the_Perth_Treaty_1997_Seas_and_Submerged_Lands_Act_1973_Proclamation_under_section_10B_26_07_1994_AMB2014_Area",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{	
 					"featureTitle": "Scheduled Areas under the Offshore Petroleum and Greenhouse Gas Storage Act AMB2014 Points",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Scheduled_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Points",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"
 					},
 					{
 					"featureTitle": "Scheduled Areas under the Offshore Petroleum and Greenhouse Gas Storage Act AMB2014 Limit",
-					"queryURL": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WFSServer",
+					"queryUrl": "http://services.ga.gov.au/site_9/services/SSLA_1973_AMB2014a/MapServer/WMSServer",
 					"queryLayers": "Scheduled_Areas_under_the_Offshore_Petroleum_and_Greenhouse_Gas_Storage_Act_AMB2014_Limit",
 					"queryVersion": "1.1.1",
 					"queryType": "WMS"

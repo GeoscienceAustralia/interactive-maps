@@ -10,7 +10,7 @@
     "maps": [
 	    {
             "title": "Digital Earth Australia",
-            "previewImageUrl": "content/earthobservation/DEA-Logo-Inline.png",
+            "previewImageUrl": "content/earthobservation/DEA-Logo.jpg",
             "previewDescription": "Digital Earth Australia (DEA) provides an integrated data analysis platform, delivering a unique capability to present, process, and interrogate Earth observation satellite data.",
             "applicationUrl": "http://eos.ga.gov.au"
         },

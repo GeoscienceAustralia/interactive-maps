@@ -49,11 +49,7 @@
                     "infoList": [
                         {
                             "id": "Water Observations from Space (WOFS)",
-                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_fafc45be-74f2-6b60-e044-00144fdd4fa6/Water+Observations+from+Space"
-                        },
-						{
-                            "id": "WOFS Web Coverage Service GetCapabilites",
-                            "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wcs?request=GetCapabilities&service=WCS"
+                            "url": "https://ecat.ga.gov.au/geonetwork/srv/eng/search#!fafc45be-74f2-6b60-e044-00144fdd4fa6"
                         }
                     ]
                 }

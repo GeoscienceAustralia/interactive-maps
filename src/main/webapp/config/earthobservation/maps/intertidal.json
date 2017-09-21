@@ -44,7 +44,7 @@
                     "infoList": [
 						{
                             "id": "ITEM (v1.0) Data download",
-                            "url": "http://www.ga.gov.au/metadata-gateway/metadata/record/gcat_42b76130-9055-45ab-b34f-2b4ddef34cca/Intertidal+Extents+Model+Collection"
+                            "url": "https://ecat.ga.gov.au/geonetwork/srv/eng/search#!42b76130-9055-45ab-b34f-2b4ddef34cca"
                         }
                     ]
                 }

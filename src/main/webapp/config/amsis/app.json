@@ -98,6 +98,27 @@
             "previewImageUrl": "content/amsis/fisheries.png",
             "previewDescription": "The act relating to the management of Fisheries is the Fisheries Management Act 1991. These services are supplied as legacy services until they can be replaced with more current data."
         },
+	{ 
+	"title": "Regulatory Legacy Services",
+	"tags": "Legacy",
+	"id": "regulartorylegacy",
+	"previewImageUrl": "content/amsis/regulatory.png",
+	"previewDescription": "Map of Australian Maritime Regulatory legacy features, featuring data from supplied by the Australian Maritime Safety Authority. These services are supplied as legacy services until they can be replaced with more current data."
+	},
+	{
+	"title": "Environment Legacy Services",
+	"tags": "Environment Legacy",
+	"id": "environmentlegacy",
+	"previewImageUrl": "content/amsis/environment.png",
+	"previewDescription": "Map of Australian Maritime Environment features, featuring data from supplied by the Department of Environment. These services are supplied as legacy services until they can be replaced with more current data."
+	},
+	{
+	"title": "Offshore Minerals Legacy Services",
+	"tags": "Legacy",
+	"id": "offshoremineralslegacy",
+	"previewImageUrl": "content/amsis/offshoreminerals.png",
+	"previewDescription": "Map of Australian offshore mineral features. These services are supplied as legacy services until they can be replaced with more current data."
+	},	    
         {
             "title": "Petroleum Wells Database",
             "tags": "Other",

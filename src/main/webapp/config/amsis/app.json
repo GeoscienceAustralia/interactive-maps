@@ -125,15 +125,8 @@
             "previewImageUrl": "content/amsis/petroleumWells.png",
             "previewDescription": "Petroleum wells application.",
             "applicationUrl": "http://dbforms.ga.gov.au/www/npm.well.search"
-        },
-	    {
-            "title": "Legacy AMSIS",
-            "tags": "Legacy",
-            "previewImageUrl": "content/amsis/origionalAMSIS.png",
-            "previewDescription": "AMSIS is a web based interactive mapping and decision support system that improves access to integrated government and non-government information in the Australian Marine Jurisdiction.",
-            "applicationUrl": "http://www.ga.gov.au/imf-amsis2/"
-        },
-		{
+        },	    
+	{
             "title": "Data Contributors",
             "tags": "Legacy",
             "previewImageUrl": "content/amsis/contribute.png",

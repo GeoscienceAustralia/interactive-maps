@@ -76,18 +76,18 @@
 			"mapType": "WMS",
 			"visibility": true,
 			"name": "Australian Whale Sanctuary Legacy",
-			"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"layers": "Australian_Whale_Sanctuary",
 			"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision. Dataset of the external limits of the Australian Whale Sanctuary.",
 			"ogcLinks": [
 				{
 					"description": "WMS Capabilities",
-					"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 				}
 			],
 			"opacity": 0.5,
 			"queryFeatures": true,
-			"queryUrl": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.3.0",
 			"queryLayers": "Australian_Whale_Sanctuary"
@@ -98,18 +98,18 @@
 			"mapType": "WMS",
 			"visibility": true,
 			"name": "Large Marine Domains Legacy",
-			"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"layers": "Large_Marine_Domains",
 			"metadataText": "The Large Marine Domains dataset contains a set of regional marine planning units for Australia's Exclusive Economic Zone developed in collaboration with the National Oceans Office (NOO) and the CSIRO Division of Marine Research in 1998. These planning units are a key requirement for supporting Australia's Oceans Policy announced by the Commonwealth government in December 1998. The boundaries define areas surrounding continental Australia and the external territories including Cocos Keeling Islands, Christmas Island, Norfolk Island, Lord Howe Island, Macquarie Island, Heard and McDonald Islands, and the Australian Antarctic Territory. Boundaries have undergone a series of changes since their inception. See the Lineage for more details on these changes. The data contained in this service is not authoritative and has not been updated since 2006. Users will need to contact the agency responsible for the data to check current validity and spatial precision.",
 			"ogcLinks": [
 				{
 					"description": "WMS Capabilities",
-					"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 				}
 			],
 			"opacity": 0.5,
 			"queryFeatures": true,
-			"queryUrl": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.3.0",
 			"queryLayers": "Australian_Whale_Sanctuary"
@@ -120,18 +120,18 @@
 			"mapType": "WMS",
 			"visibility": true,
 			"name": "Biomes Legacy",
-			"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"layers": "Biomes",
 			"metadataText": "The data set provides outlines for the maximum extent of the benthic Biomes of Australia's Exclusive Economic Zone for regions beyond the shelf break not including the offshore island territories and Australian Antarctic Territory. These data were compiled in 2004 as part of the draft national benthic marine bioregionalisation which is designed to provide improved knowledge of Australia's seabed. The Biomes represent bio-geographic regions that capture narrow spatial distributions and depth ranges in benthic faunal distributions, based on the assumption that the demersal fish distributions are a surrogate of marine faunal distributions. The narrow spatial distributions were revealed as strong patterns of bathymetric zoning for key indicator species on the upper to mid slope. Due to available data, biomes were only defined in water depths of less than 1,130 m. A total of three biomes were defined: upper slope, mid-upper slope, and mid slope. Each of the biomes is separated by a biotone. The Biomes data set includes the names of units in the attribute table as well as the area and perimeter of each unit.The data contained in this service is not authoritative and has not been updated since 2006. Users will need to contact the agency responsible for the data to check current validity and spatial precision. ",
 			"ogcLinks": [
 				{
 					"description": "WMS Capabilities",
-					"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 				}
 			],
 			"opacity": 0.5,
 			"queryFeatures": true,
-			"queryUrl": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.3.0",
 			"queryLayers": "Australian_Whale_Sanctuary"
@@ -142,18 +142,18 @@
 			"mapType": "WMS",
 			"visibility": true,
 			"name": "State Reserves Legacy",
-			"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"layers": "Marine_Parks_NSW,Aquatic_Reserves_NSW,Marine_Reserves_VIC,Marine_Reserves_SA,Aquatic_Reserves_SA,Marine_Reserves_NT,Marine_Reserves_QLD,Marine_Reserves_WA,Marine_Reserves_TAS",
 			"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision.<br><br>Marine Parks NSW,Aquatic Reserves NSW,Marine Reserves VIC,Marine Reserves SA,Aquatic Reserves SA,Marine Reserves NT,Marine Reserves QLD,Marine Reserves WA,Marine Reserves TAS",
 			"ogcLinks": [
 				{
 					"description": "WMS Capabilities",
-					"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 				}
 			],
 			"opacity": 0.8,
 			"queryFeatures": true,
-			"queryUrl": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.3.0",
 			"queryLayers": "Marine_Parks_NSW,Aquatic_Reserves_NSW,Marine_Reserves_VIC,Marine_Reserves_SA,Aquatic_Reserves_SA,Marine_Reserves_NT,Marine_Reserves_QLD,Marine_Reserves_WA,Marine_Reserves_TAS"
@@ -164,18 +164,18 @@
 			"mapType": "WMS",
 			"visibility": true,
 			"name": "Great Barrier Reef Legacy",
-			"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"layers": "GBRMPA_Management_Areas,GBRMPA_Planning_Zones,GBRMPA_Features",
 			"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision.<br>Amalgamated Great Barrier Reef (AGBR) Section that replaces all previouly existing sections. For administrative purposes , the AGBR Section is divided into 4 management areas.<br>Amended May 2009 re voids; copy of Zoning within the Great Barrier Reef Marine Park effective 1st July 2004.",
 			"ogcLinks": [
 				{
 					"description": "WMS Capabilities",
-					"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 				}
 			],
 			"opacity": 0.8,
 			"queryFeatures": true,
-			"queryUrl": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.3.0",
 			"queryLayers": "GBRMPA_Management_Areas,GBRMPA_Planning_Zones,GBRMPA_Features"
@@ -186,18 +186,18 @@
 			"mapType": "WMS",
 			"visibility": false,
 			"name": "Oil Disposal Legacy",
-			"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"layers": "Ocean_Disposal_Areas,Ocean_Disposal_Points_Chemical_Dump,Ocean_Disposal_Points_Chemical_Dump,Ocean_Disposal_Points_Ammo_Dump",
 			"metadataText": "The data contained in this service is not authoritative and has not been updated since 2006. This web service contains the legacy data found in the Australian Marine Spatial Information System (AMSIS) hosted by Geoscience Australia between 2006 and 2015, with a currency date of 2006. To honour the original licensing arrangements with the data holders, only the WMS is available. Users will need to contact the agency responsible for the data to check current validity and spatial precision.<br><br>Ocean Disposal Areas,Ocean Disposal Points Chemical Dump,Ocean Disposal Points Chemical Dump,Ocean Disposal Points Ammo Dump",
 			"ogcLinks": [
 				{
 					"description": "WMS Capabilities",
-					"url": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+					"url": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer?request=GetCapabilities&service=WMS"
 				}
 			],
 			"opacity": 0.8,
 			"queryFeatures": true,
-			"queryUrl": "http://intranet-test.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
+			"queryUrl": "http://services.ga.gov.au/gis/services/AMSIS_Environment_Legacy/MapServer/WMSServer",
 			"queryUrlType": "WMS",
 			"queryVersion": "1.3.0",
 			"queryLayers": "Ocean_Disposal_Areas,Ocean_Disposal_Points_Chemical_Dump,Ocean_Disposal_Points_Chemical_Dump,Ocean_Disposal_Points_Ammo_Dump"

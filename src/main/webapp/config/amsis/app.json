@@ -169,7 +169,7 @@
             "id": "Reference",
             "description": "Relevant AMSIS information.",
             "title": "Reference Information"
-        }
+        },
         {
             "id": "Related",
             "description": "Relevant AMSIS applications.",

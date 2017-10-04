@@ -1,6 +1,6 @@
 {
     "id": "environmentlegacy",
-    "title": "AMSIS Environment Legacy",
+    "title": "Environment Legacy",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
     "initialExtent": [
@@ -19,7 +19,7 @@
     "cookieExpirationInDays": 7,
     "termsAndConditionsCookieName": "amsis",
     "headerConfig": {
-        "title": "AMSIS Environment Legacy"
+        "title": "Environment Legacy"
     },
     "aboutConfig": {
         "enabled": true,

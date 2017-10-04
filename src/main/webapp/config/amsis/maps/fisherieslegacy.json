@@ -1,6 +1,6 @@
 {
     "id": "fisherieslegacy",
-    "title": "AMSIS Fisheries Legacy",
+    "title": "Fisheries Legacy",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
     "initialExtent": [
@@ -19,7 +19,7 @@
     "cookieExpirationInDays": 7,
     "termsAndConditionsCookieName": "amsis",
     "headerConfig": {
-        "title": "AMSIS Fisheries Legacy"
+        "title": "Fisheries Legacy"
     },
     "aboutConfig": {
         "enabled": true,

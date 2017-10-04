@@ -91,7 +91,7 @@
             "previewImageUrl": "content/amsis/nativetitle.png",
             "previewDescription": "Services supplied by the National Native Title Tribunal. Whilst these datasets do not form part of the statutory registers, they enable visualization."
         },
-		{
+	{
             "title": "Fisheries Legacy Services",
             "tags": "Legacy",
 			"id": "fisherieslegacy",
@@ -107,7 +107,7 @@
 	},
 	{
 	"title": "Environment Legacy Services",
-	"tags": "Environment Legacy",
+	"tags": "Legacy",
 	"id": "environmentlegacy",
 	"previewImageUrl": "content/amsis/environment.png",
 	"previewDescription": "Map of Australian Maritime Environment features, featuring data from supplied by the Department of Environment. These services are supplied as legacy services until they can be replaced with more current data."
@@ -120,22 +120,22 @@
 	"previewDescription": "Map of Australian offshore mineral features. These services are supplied as legacy services until they can be replaced with more current data."
 	},	    
         {
-            "title": "Petroleum Wells Database",
-            "tags": "Other",
-            "previewImageUrl": "content/amsis/petroleumWells.png",
-            "previewDescription": "Petroleum wells application.",
-            "applicationUrl": "http://dbforms.ga.gov.au/www/npm.well.search"
+        "title": "Petroleum Wells Database",
+        "tags": "Related",
+        "previewImageUrl": "content/amsis/petroleumWells.png",
+        "previewDescription": "Petroleum wells application.",
+        "applicationUrl": "http://dbforms.ga.gov.au/www/npm.well.search"
         },	    
 	{
             "title": "Data Contributors",
-            "tags": "Legacy",
+            "tags": "Reference",
             "previewImageUrl": "content/amsis/contribute.png",
             "previewDescription": "AMSIS contains data from Commonwealth agencies and industry sources.",
             "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/data-contributors"
         },
-		{
+	{
             "title": "Australian Ocean Governance and Relevant Legislation",
-            "tags": "Legacy",
+            "tags": "Reference",
             "previewImageUrl": "content/amsis/legislation.jpg",
             "previewDescription": "This information provides an overview of legislation and background information which relates to data found in the Australian Marine Spatial Information System (AMSIS).",
             "applicationUrl": "http://www.ga.gov.au/scientific-topics/marine/jurisdiction/amsis/australian-ocean-governance-and-relevant-legislation"
@@ -177,8 +177,13 @@
             "description": "The legacy AMSIS contains data from 2006-2014, this data is being migrated to the current AMSIS (see below). The legacy version will be shut down when the process is completed.",
             "title": "Legacy AMSIS"
         },	    
+	{
+            "id": "Reference",
+            "description": "Relevant AMSIS information.",
+            "title": "Reference Information"
+        }
         {
-            "id": "Other",
+            "id": "Related",
             "description": "Relevant AMSIS applications.",
             "title": "Related Applications"
         }

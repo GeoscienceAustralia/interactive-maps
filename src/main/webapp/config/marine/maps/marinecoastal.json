@@ -67,22 +67,7 @@
 						{
                             "id":"Predicted Sand, Mud and Gravel Content of Australia's North-northwest Shelf",
 							"url":"http://www.ga.gov.au/metadata-gateway/metadata/record/76999/"
-                        },
-                        {
-                            "id":"Australian Bathymetry and Topography 2009 Web Coverage Service GetCapabilites",
-							"url":"http://www.ga.gov.au/gis/services/marine_coastal/Australian_Bathymetry_Topography/MapServer/WCSServer?request=GetCapabilities&service=WCS"
-                        },
-						{
-                            "id":"Multibeam 50m Bathymetry 2012 Web Coverage Service GetCapabilites",
-							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_50m_Bathymetry_2012/ImageServer/WCSServer?request=GetCapabilities&service=WCS"
-                        },
-						{
-							"id":"Multibeam Survey Extents 2014 Web Feature Service GetCapabilites",
-							"url":"http://www.ga.gov.au/gisimg/services/marine_coastal/Multibeam_Survey_Extents_2014/MapServer/WFSServer?request=GetCapabilities&service=WFS"
-						}
-						
-						
-						
+                        }						
                     ]
                 }
             },

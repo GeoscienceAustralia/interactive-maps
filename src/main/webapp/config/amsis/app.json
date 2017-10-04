@@ -85,13 +85,6 @@
             "previewDescription": "A compilation of significant biological and environmental management web services and datasets managed and distributed by the Department of Environment and CSIRO."
         },
 	{
-            "title": "Native Title",
-	    "tags": "NativeTitle",
-            "id": "nativetitle",
-            "previewImageUrl": "content/amsis/nativetitle.png",
-            "previewDescription": "Services supplied by the National Native Title Tribunal. Whilst these datasets do not form part of the statutory registers, they enable visualization."
-        },
-	{
             "title": "Fisheries Legacy Services",
             "tags": "Legacy",
 			"id": "fisherieslegacy",
@@ -161,13 +154,8 @@
             "id": "Environment",
             "description": "Maps that depict a collection of external environmental management and biological datasets. These services are managed, maintained and distributed by the Department of the Environment and the CSIRO.",
             "title": "Environment"
-        },
+        },	
 	{
-            "id": "NativeTitle",
-            "description": "Maps that depict a collection of external native title datasets. These services are managed, maintained and distributed by the National Native Title Tribunal.",
-            "title": "Native Title"
-        },
-		{
             "id": "Fish",
             "description": "Maps that depict a collection of commonwealth fisheries.",
             "title": "Fisheries Management Act"

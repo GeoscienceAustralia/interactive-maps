@@ -1,6 +1,6 @@
 {
     "id": "regulatorylegacy",
-    "title": "AMSIS Regulatory Legacy",
+    "title": "Regulatory Legacy",
     "datumProjection": "EPSG:3857",
     "displayProjection": "EPSG:4326",
     "initialExtent": [
@@ -19,7 +19,7 @@
     "cookieExpirationInDays": 7,
     "termsAndConditionsCookieName": "amsis",
     "headerConfig": {
-        "title": "AMSIS2 Regulatory Legacy"
+        "title": "Regulatory Legacy"
     },
     "aboutConfig": {
         "enabled": true,

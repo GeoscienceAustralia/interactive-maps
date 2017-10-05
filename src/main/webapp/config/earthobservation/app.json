@@ -18,13 +18,13 @@
             "title": "Water Observations from Space",
             "id": "wofs",
             "previewImageUrl": "content/sentinel/floods/mapPreview.png",
-            "previewDescription": "Water Observations from Space (WOfS) is a web service displaying historical surface water observations derived from satellite imagery for all of Australia. Product of the Australian Geoscience Data Cube."
+            "previewDescription": "Water Observations from Space (WOfS) is a web service displaying historical surface water observations derived from satellite imagery for all of Australia. Product of Digital Earth Australia."
         },
 		{
-            "title": "Australian Geoscience Data Cube Intertidal Extent Model",
+            "title": "Intertidal Extent Model",
             "id": "intertidal",
             "previewImageUrl": "content/earthobservation/intertidal/mapPreview.png",
-            "previewDescription": "The Intertidal Extent Model (ITEM v1.0) product uses satellite imagery to model the continental extent and topography of the intertidal zone. This product demonstrates the progress of Geoscience Australia with the Australian Geoscience Data Cube."
+            "previewDescription": "The Intertidal Extent Model (ITEM v1.0) product uses satellite imagery to model the continental extent and topography of the intertidal zone. This product demonstrates the progress of Geoscience Australia with Digital Earth Australia."
         },
 		{
             "title": "Sentinel Hotspots",
@@ -44,7 +44,7 @@
 		{
             "id": "Information",
             "description": "Information sites for Earth Observation.",
-            "title": "Information"
+            "title": "Reference Information"
         }
     ]
 }

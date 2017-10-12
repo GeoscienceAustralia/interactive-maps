@@ -4,7 +4,7 @@
 
 	<groupId>au.gov.ga</groupId>
 	<artifactId>interactive-maps</artifactId>
-    <version>1.4.3-SNAPSHOT</version>
+    <version>1.4.5</version>
 	<packaging>war</packaging>
 
     <properties>

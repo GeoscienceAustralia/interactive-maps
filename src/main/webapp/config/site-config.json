@@ -1,6 +1,6 @@
 {
     "title": "Interactive Maps",
-    "blurb": "Interactive Maps is a discovery and exploration view of Geoscience Australia's geospatial services. The following scientific and decision support themes have curated content comprised of maps and functions. Each map has queries and functions with linked access to OGC (Open Geospatial Consortium) web services and metadata.",
+    "blurb": "Interactive Maps is designed to enhance the discovery of Geoscience Australia's geospatial services. It provides curated content to serve scientific and decision support applications and functions. The digital services provided are based on open data and standards.",
     "headerConfig": {
         "title": "Applying geoscience to Australia's most important challenges"
     },

@@ -4986,7 +4986,7 @@
             "mapType": "ArcGISCache",
             "visibility": true,
             "name": "Surface Hydrology",
-            "url": "http://services.ga.gov.au/gis/rest/services/Surface_Hydrology_WM/MapServer",
+            "url": "http://services.ga.gov.au/gis/rest/services/Surface_Hydrology/MapServer",
             "metadataText": "The Surface Hydrology database provides a seamless surface hydrography layer for Australia at a nominal scale of 1:250,000. It consists of lines, points and polygons representing natural and man-made features such as water courses, lakes, dams and other water bodies. The natural water course layer consists of a linear network with a consistent topology that provide directional flow paths through the network for hydrological analysis. This network provides information on naming, hierarchy and perenniality.",
             "ogcLinks": [
                 {

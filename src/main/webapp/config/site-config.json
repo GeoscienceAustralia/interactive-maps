@@ -11,6 +11,12 @@
             "previewImageUrl": "content/amsis/themePreview.jpg",
             "previewDescription": "Australian Marine Spatial Information System (AMSIS) is a web based interactive mapping and decision support system that provides access to integrated government and non-government information in the Australian Marine Jurisdiction."
         },
+	{
+            "id": "GAportal",
+            "title": "Geoscience Australia Portal",
+            "previewImageUrl": "content/national-location-information/nationalmap/mapPreview.png",
+            "previewDescription": "Geoscience Australia Portal provides access to Geoscience Australia data and other publically available data sources as well as suite of analytical and multi-criteria assessment tools to maximise the value of the data."
+    	},
 		{
             "id": "earthobservation",
             "title": "Earth Observation and Satellite Imagery",
